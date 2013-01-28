@@ -1,0 +1,2 @@
+#!/bin/sh
+python code/chatter.py config/burrito.xml config/trial.xml config/triggers.xml 

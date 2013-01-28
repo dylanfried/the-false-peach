@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import commands
+import os
+import re
+
+ss = os.listdir("saved_scripts")
+ss = [s for s in ss if re.match("^[0-9]+\.xml",s)]
+sn = [int(re.sub("^([0-9]+)\.xml$","\\1",s))  for s in ss] 
+n = max(sn)+1
+print "Making "+str(n)+".xml"
+commands.getoutput("cp config/burrito.xml saved_scripts/"+str(n)+".xml")

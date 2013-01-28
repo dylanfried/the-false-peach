@@ -1,0 +1,9 @@
+#!/bin/sh
+if [ $# -gt 0 ] ; then
+   python make_show/mk.py $1  > config/burrito.xml 
+   python code/chatter.py config/burrito.xml config/trial.xml config/triggers.xml 
+   exit 0
+fi
+python make_show/mk.py  > config/burrito.xml 
+python code/chatter.py config/burrito.xml config/trial.xml config/triggers.xml 
+

@@ -1,0 +1,194 @@
+<trial>
+   <sender>
+      <ip>192.168.1.113</ip>
+      <port>1234</port>
+      <play>True</play>
+   </sender>
+   <receiver>
+      <name>video</name>
+      <ip>192.168.1.110</ip>
+      <port>8113</port>
+      <scene_pause>1</scene_pause>
+      <actions>
+         <action>
+            <source>intro</source>
+            <target>/intro</target>
+         </action>
+         <action>
+            <source>outro</source>
+            <target>/outro</target>
+         </action>
+         <action>
+            <source>word</source>
+            <target>/word</target>
+         </action>
+         <action>
+            <source>affmax</source>
+            <target>/affmax</target>
+         </action>
+	 		<action>
+            <source>affvals</source>
+            <target>/affvals</target>
+         </action>
+         <action>
+            <source>affsmos</source>
+            <target>/affsmos</target>
+         </action>
+         <action>
+            <source>affmaxval</source>
+            <target>/affmaxval</target>
+         </action>
+         <action>
+            <source>stagedir.place</source>
+            <target>/stagedir.place</target>
+         </action>
+         <action>
+            <source>stagedir.bool</source>
+            <target>/stagedir.bool</target>
+         </action>
+         <action>
+            <source>stagedir.exit</source>
+            <target>/stagedir.exit</target>
+         </action>
+         <action>
+            <source>stagedir.entrance</source>
+            <target>/stagedir.entrance</target>
+         </action>
+         <action>
+            <source>stagedir.sound</source>
+            <target>/stagedir.sound</target>
+         </action>
+         <action>
+            <source>stagedir.voice</source>
+            <target>/stagedir.voice</target>
+         </action>
+         <action>
+            <source>stagedir.dumb</source>
+            <target>/stagedir.dumb</target>
+         </action>
+         <action>
+            <source>stagedir.action</source>
+            <target>/stagedir.action</target>
+         </action>
+         <action>
+            <source>stagedir.title</source>
+            <target>/stagedir.title</target>
+         </action>
+         <action>
+            <source>stagedir</source>
+            <target>/stagedir</target>
+         </action>
+         <action>
+            <source>character</source>
+            <target>/character</target>
+         </action>
+         <action>
+            <source>line</source>
+            <target>/line</target>
+         </action>
+         <action>
+            <source>style.video</source>
+            <target>/style.video</target>
+         </action>
+         <action>
+            <source>style.actor</source>
+            <target>/style.actor</target>
+         </action>
+         <action>
+            <source>style.sound</source>
+            <target>/style.sound</target>
+         </action>
+         <action>
+            <source>style.lights</source>
+            <target>/style.lights</target>
+         </action>
+         <action>
+            <source>style.set</source>
+            <target>/style.set</target>
+         </action>
+         <action>
+            <source>style.text</source>
+            <target>/style.text</target>
+         </action>
+         <action>
+            <source>style.timing</source>
+            <target>/style.timing</target>
+         </action>
+      </actions>
+   </reciever>
+<markov style="12_5_0">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="8_2_1">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="13_6_0">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="2_1_1">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="11_4_1">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+</trial>

@@ -1,0 +1,17 @@
+   <sm_filter>
+    <name>filtery</name>
+    <file>data/brute.txt</file>
+    <list_alternate>OPHELIA,HAMLET</list_alternate>
+    <train>
+      <selections>
+        <selection>
+          <acts>4</acts>
+        </selection>
+      </selections>
+    </train>
+    <generate>
+      <pattern type="pos">d</pattern>
+      <pattern type="pos">j</pattern>
+      <pattern type="pos">n</pattern>
+    </generate>
+   </sm_filter>

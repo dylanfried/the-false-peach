@@ -1,0 +1,45 @@
+<markov style="13_2_0">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="1_2_0">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>
+<markov style="8_4_1">
+<name>Gertrude</name>
+<file>data/nonewline.txt</file>
+<train>
+<acts>4</acts>
+<scenes>7</scenes>
+<lines>161-163</lines>
+<characters>Gertrude</characters>
+</train>
+<generate>
+<reset>True</reset>
+<length>15</length>
+<k>2</k>
+</generate>
+</markov>

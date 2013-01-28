@@ -1,0 +1,39 @@
+<triggerset>
+   <triggers stagedir='place'>
+      <word priority=1 pause=0>platform</word>
+      <word priority=1 pause=0>room</word>
+      <word priority=1 pause=0>hall</word>
+      <word priority=1 pause=0>plain</word>
+      <word priority=1 pause=0>closet</word>
+      <word priority=1 pause=0>churchyard</word>
+   </triggers>
+   <triggers stagedir='sound'>
+      <word priority=1 pause=5000>flourish</word>
+      <word priority=1 pause=5000>trumpets</word>
+      <word priority=1 pause=2000>shot</word>
+      <word priority=1 pause=4000>cock</word>
+      <word priority=2 pause=8000>ordnance</word>
+      <word priority=1 pause=8000>hautboys</word>
+      <word priority=1 pause=4000>noise</word>
+      <word priority=2 pause=9000>dead march</word>
+      <word priority=1 pause=6000>march</word>
+   </triggers>
+   <triggers stagedir='voice' wait='character'>
+      <word priority=1 pause=0>beneath</word>
+      <word priority=1 pause=0>within</word>
+      <word priority=1 pause=0>sings</word>
+   </triggers>
+   <triggers stagedir='entrance'>
+      <word priority=1 pause=3000>Ghost</word>
+   </triggers>
+   <triggers stagedir='action'>
+      <word priority=1 pause=3000>dies</word>
+      <word priority=1 pause=5000>grave</word>
+   </triggers>
+</triggerset>
+
+
+
+
+
+
