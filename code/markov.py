@@ -19,29 +19,9 @@ class Markov:
    # This takes care of the meat of the operation
    def initialize():
       
-   # This method does the actual generation of text. It takes the following parameters:
-   #  - length: the length of the text to generate (in number of words)
-   #  - order_ramp: a list of (order, word number) tuples giving the change in order over time
-   #  - emotional_ramp: a list of up to five lists, each of which gives the emotional ramp
-   #    for a single emption and is a list of 3-tuples of the form: (emotion, emotion level, word number)
-   #    giving the change in emotion of the five emotions over time. If any emotion is omitted, we will
-   #    not care about the affect level of that emotion. ex:
-   #
-   #     [{"emotion" : "fear, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
-   #                                         {"emotion_level":2.0,"word_number":10}]},
-   #      {"emotion" : "anger, "ramp_list" : [{"emotion_level": 3.0, "word_number":1}
-   #                                          {"emotion_level":2.0,"word_number":10}]},
-   #      {"emotion" : "joy, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
-   #                                        {"emotion_level":2.0,"word_number":10}]},
-   #      {"emotion" : "sadness, "ramp_list" : []},
-   #      {"emotion" : "freq, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
-   #                                         {"emotion_level":2.0,"word_number":10}]}]
-   
-   
-   #     [[{"emotion" : "fear", "emotion_level" : 3.0, "word_number": 1},
-   #       {"emotion" : "fear", "emotion_level" : 2.0, "word_number": 10}],
-   #      [{"emotion" : "anger", "emotion_level": 1.0, "word_number": 1},
-   #       {"emotion" : "anger", "emotion_level": 2.0, "word_number": 100}]]
-   def generate(order_ramp, emotional_ramp, length):
-      
+   # This method generates the single next element in the markov chain.
+   # -order: The order of the markov chain for this generation
+   # -emotion: A dictionary of the target emotional levels. ex:
+   #   {"anger" : 3.0, "fear" : 2.0, "joy": None, "sadness": None, "freq": 1.0}
+   # -secondary_key: This key contains the part of speech as a string.
    def generateNext(order, emotion, secondary_key):
