@@ -14,14 +14,16 @@ class Markov:
       self.order = order
       self.primary_key = primary_key
       self.secondary_key = secondary_key
+      self.lines_so_far = []
    
    # The initialize method initializes the markov chain
    # This takes care of the meat of the operation
    def initialize():
       
-   # This method generates the single next element in the markov chain.
+   # This method generates the single next element in the markov chain. This element is added to the lines_so_far and
+   # returned as well. This method will also incorporate the backoff logic.
    # -order: The order of the markov chain for this generation
    # -emotion: A dictionary of the target emotional levels. ex:
    #   {"anger" : 3.0, "fear" : 2.0, "joy": None, "sadness": None, "freq": 1.0}
    # -secondary_key: This key contains the part of speech as a string.
-   def generateNext(order, emotion, secondary_key):
+   def generateNext(order, emotion, secondary_key=None):
