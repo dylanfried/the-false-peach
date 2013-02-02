@@ -12,6 +12,7 @@ class Markov:
       self.max_order = max_order
       self.primary_key = primary_key
       self.lines_so_far = []
+      self.cursor = []
       
       # contexts holds the markov chain
       # It is a list where each element is a markov
@@ -21,7 +22,7 @@ class Markov:
       # strings representing the histories and the values being
       # arrays of lines
       self.contexts = []
-      for order in range(self.max_order):
+      for order in range(self.max_order + 1):
          self.contexts.append({})
    
    # The initialize method initializes the markov chain
@@ -35,17 +36,20 @@ class Markov:
          
          # We're generating a Markov chain
          # for each order up to the max_order
-         for order in range(max_order):
+         for order in range(max_order + 1):
             # Make sure that we've got enough
             # data for this order
             if len(current_lines) > order:
                # Get the history as a string of the last "order" words
-               history = " ".join([history_line[self.primary_key] for history_line in current_lines[(-1-order-1):-1]])
+               history = " ".join([history_line[self.primary_key] for history_line in current_lines[(-1-order):-1]])
                
                # If the history isn't already in the context, add it
                if not history in self.contexts[order]: self.contexts[order][history] = []
                # Add the most recent line to the context keyed on the preceding history
                self.contexts[i][history].append(current_lines[-1])
+               
+      # Set cursor to the first max_order lines
+      self.cursor = self_lines[:max_order]
       
       
    # This method generates the single next element in the markov chain. This element is added to the lines_so_far and
@@ -57,3 +61,18 @@ class Markov:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
    def generateNext(order, filters):
+      # Generate the string key from the cursor
+      history = " ".join([history_line[self.primary_key] for history_line in self.cursor])
+      
+      # TODO apply filters
+      
+      # Try to get the next move
+      if history in self.contexts[order].keys():
+         # We have the key already, let's grab the next element
+         self.lines_so_far.append(random.sample(self.contexts[order][history],1)[0])
+         # Update the cursor (pop off the first element and add the new line)
+         self.cursor.pop(0)
+         self.cursor.append(self.lines_so_far[-1])
+         
+         # Return the newest line:
+         return self.lines_so_far[-1]
