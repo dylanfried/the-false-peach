@@ -1,3 +1,5 @@
+import copy
+
 # This class will house the inner workings of the Markov chains. 
 # It should provide the functionality for both the POS Markov chain 
 # and the bucketed word Markov chain.
@@ -63,16 +65,38 @@ class Markov:
    def generateNext(order, filters):
       # Generate the string key from the cursor
       history = " ".join([history_line[self.primary_key] for history_line in self.cursor])
+
+      while order > -1:
+         # Check to see if we have this history/stem in our context
+         if history in self.contexts[order].keys():
+            # We do! Now check to see if the filters are met:
+            new_context = self.contexts[order][history][:]
+            for f in filters:
+               if f["type"] == "text_match":
+                  new_context = [met_filter for met_filter in new_context if met_filter[f["index"]] == f["filter"]]
+               elif f["type"] == "threshold":
+                  new_context = [met_filter for met_filter in new_context if met_filter[f["index"]] >= f["filter"]]
+               else:
+                  print "Bad filter type, skipping"
+                  continue
+            
+            # Is there anything left?
+            if len(new_context) > 0:
+               # Yep! Randomly sample and return stuff
+               # We have the key already, let's grab the next element
+               self.lines_so_far.append(random.sample(new_context,1)[0])
+               # Update the cursor (pop off the first element and add the new line)
+               self.cursor.pop(0)
+               self.cursor.append(self.lines_so_far[-1])
+               
+               # Return the newest line:
+               return self.lines_so_far[-1]
+            else:
+               # Nope, let's back off the order
+               order = order-1
+         else:
+            order = order-1
       
-      # TODO apply filters
-      
-      # Try to get the next move
-      if history in self.contexts[order].keys():
-         # We have the key already, let's grab the next element
-         self.lines_so_far.append(random.sample(self.contexts[order][history],1)[0])
-         # Update the cursor (pop off the first element and add the new line)
-         self.cursor.pop(0)
-         self.cursor.append(self.lines_so_far[-1])
-         
-         # Return the newest line:
-         return self.lines_so_far[-1]
+      # Uh-oh, this should never happen
+      print "Oh no, we didn't get anything"
+      return None
