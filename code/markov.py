@@ -28,7 +28,7 @@ class Markov:
          self.contexts.append({})
    
    # The initialize method initializes the markov chain
-   def initialize():
+   def initialize(self):
       # Go through each of the lines in the input
       # data
       current_lines = []
@@ -62,7 +62,7 @@ class Markov:
    #  filtering on and the filter itself (ie what we're matching). ex:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
-   def generateNext(order, filters):
+   def generateNext(self, order, filters):
       # Generate the string key from the cursor
       history = " ".join([history_line[self.primary_key] for history_line in self.cursor])
 
