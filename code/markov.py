@@ -1,4 +1,5 @@
 import copy
+import pprint
 
 # This class will house the inner workings of the Markov chains. 
 # It should provide the functionality for both the POS Markov chain 
@@ -33,25 +34,32 @@ class Markov:
       # data
       current_lines = []
       for line in self.lines:
+         print "next line"
          #collate all of the lines up to this line
          current_lines.append(line)
          
          # We're generating a Markov chain
          # for each order up to the max_order
-         for order in range(max_order + 1):
+         for order in range(self.max_order + 1):
             # Make sure that we've got enough
             # data for this order
             if len(current_lines) > order:
                # Get the history as a string of the last "order" words
                history = " ".join([history_line[self.primary_key] for history_line in current_lines[(-1-order):-1]])
-               
+               print"new history", history
                # If the history isn't already in the context, add it
                if not history in self.contexts[order]: self.contexts[order][history] = []
                # Add the most recent line to the context keyed on the preceding history
-               self.contexts[i][history].append(current_lines[-1])
+               self.contexts[order][history].append(current_lines[-1])
                
+      
+      print "\n\nContext\n\n", self.contexts
+      #pprint.pprint(self.contexts)
+      
       # Set cursor to the first max_order lines
-      self.cursor = self_lines[:max_order]
+      print "setting cursor",self.lines[:self.max_order]
+      self.cursor = self.lines[:self.max_order]
+      print "set?",self.cursor
       
       
    # This method generates the single next element in the markov chain. This element is added to the lines_so_far and
@@ -63,9 +71,12 @@ class Markov:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
    def generateNext(self, order, filters):
+      print "in generateNext",self.cursor
       # Generate the string key from the cursor
       history = " ".join([history_line[self.primary_key] for history_line in self.cursor])
 
+      print "genNext history:", history
+      
       while order > -1:
          # Check to see if we have this history/stem in our context
          if history in self.contexts[order].keys():

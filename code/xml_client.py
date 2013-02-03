@@ -2,6 +2,8 @@ import re
 import getopt
 from bs4 import BeautifulSoup
 
+from generator import Generator
+
 import sys
 sys.path.append("code/")
 
@@ -122,6 +124,21 @@ def get_lines(data, xml_constraints):
       trial_data.append(data[m])
    return trial_data
 
+# Helper function
+def expand(things):
+
+   out = []
+
+   for t in things:
+
+      if not "-" in t: out.append(t)
+      else:
+         start = int(re.sub("([0-9]+)\-.*","\\1",t))   
+         end = int(re.sub(".*\-([0-9]+)","\\1",t))   
+         out += [str(r) for r in range(start,end+1)]
+
+   return out
+
 
 # Grab the config files
 if len(sys.argv)>2:
@@ -143,8 +160,10 @@ out = ""
 
 # Get going with the scene config file
 bs = BeautifulSoup(open(sceneconfigfile).read())
+bs = bs.find("trial", recursive=False)
 # Grab all the immediate children
 for trial in bs.findAll(recursive=False):
+   print "Trial type:", trial.name
    # Match the strategy name to a set of parameters to pass on to
    # the generator
    # We're going to fill in these variables:
@@ -160,40 +179,50 @@ for trial in bs.findAll(recursive=False):
    datafile = trial.find("file")
    if datafile:
       datafile = datafile.string
-   else: continue
+      print datafile
+   else: 
+      print "No data file"
+      continue
    
    # Grab the data from the data file
    data = open(datafile).readlines()
    data = [d.strip() for d in data]
    data = [d.split(" ") for d in data]
+   # Make sure the numbers are numbers
+   data = [d[:5]+[float(dd) for dd in d[5:10]]+d[10:] for d in data]
    
    if trial.name == "sm_filter":
       print "sm_filter not yet implemented"
       continue
       #lines = get_lines(data, trial.find('train'))
-   elif: trial.name == "filter":
+   elif trial.name == "filter":
       print "filter not yet implemented"
       continue
-   elif: trial.name == "skip":
+   elif trial.name == "skip":
       print "skip not yet implemented"
       continue
-   elif: trial.name == "mirror":
+   elif trial.name == "mirror":
+      print "Mirror"
       POS_training_text = get_lines(data, trial.find('train'))
       POS_order_ramp.append({"order":10, "word_number": 1})
       POS_emotion_ramp = []
       word_training_text = get_lines(data, trial.find('generate'))
       word_order_ramp.append({"order":0, "word_number": 1})
       word_emotion_ramp = []
-   elif: trial.name == "markov":
+      # Trial length should just be length of POS training text
+      trial_length = len(POS_training_text)
+   elif trial.name == "markov":
+      print "Markov"
       POS_training_text = get_lines(data, trial.find('train'))
       POS_order_ramp.append({"order":0, "word_number": 1})
       POS_emotion_ramp = []
       word_training_text = get_lines(data, trial.find('train'))
-      word_order_ramp.append({"order":trial.find("generate").find("k"), "word_number": 1})
+      word_order_ramp.append({"order":int(trial.find("generate").find("k").string), "word_number": 1})
       word_emotion_ramp = []
-      
+      trial_length = int(trial.find("generate").find("length").string)
    else:
-      print "Bad trial type ", trial.name
+      print "Bad trial type:",trial.name
+      continue
       
    # We've got the params, format the data and send it to the
    # generator
@@ -204,6 +233,7 @@ for trial in bs.findAll(recursive=False):
    chunk['word_training_text'] = word_training_text
    chunk['word_order_ramp'] = word_order_ramp
    chunk['word_emotion_ramp'] = word_emotion_ramp
+   chunk['trial_length'] = trial_length
    chunks = []
    chunks.append(chunk)
    gen = Generator(chunks)
