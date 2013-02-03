@@ -160,9 +160,9 @@ out = ""
 
 # Get going with the scene config file
 bs = BeautifulSoup(open(sceneconfigfile).read())
-bs = bs.find("trial", recursive=False)
+#bs = bs.find("trial", recursive=False)
 # Grab all the immediate children
-for trial in bs.findAll(recursive=False):
+for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    print "Trial type:", trial.name
    # Match the strategy name to a set of parameters to pass on to
    # the generator
