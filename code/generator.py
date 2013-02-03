@@ -87,6 +87,7 @@ class Generator:
    
    @staticmethod
    def getCurrOrder(trial, word_index, pos_word_key):
+      current_order = -1
       if pos_word_key == "pos":
          order_ramp = trial["POS_order_ramp"]
       else:
@@ -94,7 +95,8 @@ class Generator:
       for i in range(len(order_ramp)):
          if order_ramp[i]["word_number"]>word_index:
             break
-         current_pos_order = order_ramp[i]["order"]
+         current_order = order_ramp[i]["order"]
+      return current_order
            
    # This method uses the markov chains and trial config list to generate the actual text of the scene
    # It then polishes the scene and returns the text
@@ -134,19 +136,17 @@ class Generator:
             current_pos_order = Generator.getCurrOrder(trial, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(trial, i, "pos")
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
-            
+
             current_word_order = Generator.getCurrOrder(trial, i, "word")
             current_word_filters = Generator.getCurrEmoFilter(trial, i, "word")
-            current_word_filters.append({"index": 10, "filter": current_pos, "type": "text_match"})
-            current_word = pos_markov.generateNext(current_word_order, current_word_filters)
+            
+            # Add in the POS filter if we got a POS
+            if (current_pos != None):
+               current_word_filters.append({"index": 10, "filter": current_pos, "type": "text_match"})
+               
+            current_word = word_markov.generateNext(current_word_order, current_word_filters)
             
             if current_word:
                output.append(current_word)
+               
       return " ".join([o[-1] for o in output])
-         
-         
- 
-
-      
-      
-      

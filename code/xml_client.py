@@ -214,7 +214,7 @@ for trial in bs.findAll(recursive=False):
    elif trial.name == "markov":
       print "Markov"
       POS_training_text = get_lines(data, trial.find('train'))
-      POS_order_ramp.append({"order":0, "word_number": 1})
+      POS_order_ramp.append({"order":-1, "word_number": 1})
       POS_emotion_ramp = []
       word_training_text = get_lines(data, trial.find('train'))
       word_order_ramp.append({"order":int(trial.find("generate").find("k").string), "word_number": 1})
