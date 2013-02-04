@@ -1,4 +1,5 @@
 from markov import Markov
+import re
 # This class will take care of generating a scene. Essentially, 
 # given a list where each element in the list is a set of parameters, 
 # this class will take care of instantiating the Markov objects and 
@@ -8,6 +9,7 @@ class Generator:
    # The constructor takes a list where each element represents a chunk and each chunk takes
    # the following form:
    #  {"chunk_length" : 100,
+   #   "finish_sentence" : True/False // Defaults to False
    #   "POS_training_text": [lines],
    #   "POS_order_ramp":    [{"order": 3, "word_number": 1},
    #                         {"order": 1, "word_number": 100}],
@@ -118,7 +120,7 @@ class Generator:
       for chunk in self.chunks: 
          chunk_title = [None]*12
          chunkcount = chunkcount + 1
-         chunkname = chunk["trialname"]
+         chunkname = chunk["chunk_name"]
          if not output:
             if chunkname:
                chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
@@ -150,7 +152,14 @@ class Generator:
          #initialize the word and pos filters.
          current_pos_filter = Generator.getCurrEmoFilter(chunk, 1, "pos")
          current_word_filter = Generator.getCurrEmoFilter(chunk, 1, "word")
-         for i in range(chunk["trial_length"]):
+         i = 0
+         # TODO put paren stuff in this check, a la chatter line 1106
+         # This while loop will loop through the trial length
+         # but, it will keep going until it finds punctuation if 
+         # the chunk is marked to finish_sentence
+         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and output and not re.match(".*[.?!]\s*$", output[-1][-1])):
+            # Don't go too far trying to find punctuation
+            if i - chunk["trial_length"] > 25: break
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(chunk, i, "pos")
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
@@ -163,7 +172,15 @@ class Generator:
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
             if current_word:
                output.append(current_word)
+            i += 1
                
       string_version = " ".join([o[-1] for o in output])
+      # Formatting stuff left over from Mark
+      string_version = re.sub(" NEWLINE \)"," )",string_version)
+      string_version = re.sub("(oh oh )+"," oh oh ",string_version)
+      string_version = re.sub("(ho ho )+"," ho ho ",string_version)
+      string_version = re.sub("(nonny nonny )+"," nonny nonny ",string_version)
+      string_version = re.sub("(a-down a-down )+"," nonny nonny ",string_version)
+      string_version = re.sub("( NEWLINE)+"," NEWLINE",string_version)
       # Break into separate lines and return
       return string_version.split("NEWLINE")

@@ -233,7 +233,12 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    # We've got the params, format the data and send it to the
    # generator
    chunk = {}
-   chunk['trialname'] = trialname
+   # Check to see if we have the finish_sent config flag
+   finish_sentence = trial.find("generate").find("finish_sent")
+   if finish_sentence: finish_sentence = finish_sentence.string == "True"
+   else: finish_sentence = False
+   chunk['finish_sentence'] = finish_sentence
+   chunk['chunk_name'] = trialname
    chunk['POS_training_text'] = POS_training_text
    chunk['POS_order_ramp'] = POS_order_ramp
    chunk['POS_emotion_ramp'] = POS_emotion_ramp
