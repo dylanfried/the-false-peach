@@ -119,20 +119,12 @@ class Generator:
          chunk_title = [None]*12
          chunkcount = chunkcount + 1
          chunkname = chunk["trialname"]
-         if not output:
-            if chunkname:
-               chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
-               output.append(chunk_title)
-            else:
-               chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" ================ NEWLINE "
-               output.append(chunk_title)
+         if chunkname:
+            chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
+            output.append(chunk_title)
          else:
-            if chunkname:
-               chunk_title[-1] = " NEWLINE ================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
-               output.append(chunk_title)
-            else:
-               chunk_title[-1] = " NEWLINE ================ CHUNK "+str(chunkcount)+" ================ NEWLINE "
-               output.append(chunk_title)
+            chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" ================ NEWLINE "
+            output.append(chunk_title)
    
          #initialize pos and word markovs
          #print chunk

@@ -244,7 +244,10 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunks = []
    chunks.append(chunk)
    gen = Generator(chunks)
-   out += gen.generate()
+   if out:
+      out += " NEWLINE " + gen.generate()
+   else:
+      out = gen.generate()
 
 print "Script generated:"
 print out
