@@ -1,0 +1,320 @@
+import OSC
+from simpleOSC import *
+from headless_trigger import headless_trigger
+
+# Helper function for moving average
+def update(e,c,lam=0.8):
+   if c > 0: return e*lam+c*(1-lam)
+   return e
+
+# This class takes care of sending the generated script
+# via OSC. There are two important things here:
+#  - We need to send stuff to Loosey
+#  - We need to subscribe to Loosey (at this point to
+#    monitor Loosey's rate and only send things when
+#    appropriate for timing)
+class LooseyClient:
+   # Static variable used by subscriber callback to remember the
+   # last thing that we received from Loosey
+   next_line = [""]
+   
+   # Constructor
+   # Takes care of setting up the sender and subscriber
+   def __init__(self, sender_name, sender_ip, sender_port, actions, subscriber_ip, subscriber_port, triggers_file):
+      self.sender_name = sender_name
+      self.sender_ip = sender_ip
+      self.sender_port = sender_port
+      self.actions = actions
+      self.subscriber_ip = subscriber_ip
+      self.subscriber_port = subscriber_port
+      self.trigs = []
+      
+      # Pull the triggers out of the config file if provided
+      if triggers_file:
+         trigsall = BeautifulSoup(open(triggers_file).read())
+         for triggers in trigsall.findAll("triggers"):
+            trigwhat = triggers['stagedir'].strip()
+            trigwait = ""
+            if triggers.has_key("wait"): 
+               trigwait = triggers['wait'].strip()
+            for w in triggers.findAll("word"):
+               trigwhen = float(w['pause'].strip())
+               trigprio = float(w['priority'].strip())
+               trigword = w.string.strip().split(" ")
+               self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigwait))
+      
+      # OSC client for sending messages to Loosey
+      self.sender = OSC.OSCClient()
+      
+      # OSC server for subscribing to messages from Loosey
+      self.subscriber = OSC.OSCServer((self.subscriber_ip, self.subscriber_port))
+      self.subscriber.socket.settimeout(100000)
+      # Set handlers for incoming messages
+      def word(addr, tags, stuff, source):
+         LooseyClient.next_line[0] = " ".join(stuff)
+
+      self.subscriber.addMsgHandler("/synth.word", word)
+      self.subscriber.addDefaultHandlers()
+      
+      # Set up frequency and emotion vars
+      freq = open("data/freq.txt").readlines()
+      self.freqs = {}
+      tot = 0
+      for i in range(len(freq)):
+         ff = freq[i].strip()
+         flds = ff.split(" ")
+         self.freqs[flds[1]] = float(flds[0])
+         tot += self.freqs[flds[1]]
+      for f in self.freqs: self.freqs[f] = round(1000.0*self.freqs[f]/(tot+0.0),2)
+      # Emotions
+      emo = open("data/emo.txt").readlines()
+      self.emotions = {}
+      for i in range(len(emo)):
+         flds = emo[i].split(",")
+         self.emotions[flds[0]] = [round(float(f),1) for f in flds[1:]]
+      
+   # Method for sending a message to Loosey
+   # Return a 1 on success or 0 on failure
+   def send_value(self,what,value,excess=""):
+      # Make sure that this is one of our defined actions
+      if not what in self.actions: return 0
+      # Create and send the actual message
+      msg = OSC.OSCMessage()
+      msg.setAddress(self.actions[what])
+      msg.append(value)
+      if excess: msg.append(excess)
+      try: self.client.sendto(msg, (self.sender_ip,self.sender_port))
+      except: return 0
+      # Success!
+      return 1
+      
+   # Method for retrieving what the subscriber has received
+   def get_input(self):
+      #TODO put something in here that indicates whether we're in Loosey mode or not
+      #and manages whether we actually wait for a request
+      # Tell the subscriber to handle a message from Loosey
+      # TODO: should this be running in parallel?
+      self.subscriber.handle_request()
+      # Return the handled request
+      return LooseyClient.next_line[0]
+   
+   # These two methods are for pulling out the word frequency and scores
+   # Mainly used for sending out metadata across Loosey
+   def word_freq(self, w):
+      if w in self.freqs: return self.freqs[w]
+      else: return 0
+   def word_scores(self, w):
+      if w in self.emotions: return self.emotions[w]
+      else: return [-1,-1,-1,-1]
+   
+   # Method to send a script
+   # The script comes in the form of a list of strings
+   # where each element is a line from our script.
+   # This method takes care of managing/sending triggers
+   # as well.
+   def send_script(lines):
+      # Keep track of which chunk we're on
+      chunk = -1
+      # Keep track of characters used to send as metadata to Loosey
+      characters = {}
+      # Keep track of the order of the characters as well
+      character_order = 0
+      
+      # Loop through all of the lines in the script
+      for l in lines:
+         # trigger_label is used to remember whether we're in a stagedir and
+         # need to go through our triggers
+         trigger_label = ""
+      
+         # Check to see if we're in a new chunk
+         if re.match(".*====.*",l):
+            # new chunk
+            # Increment the chunk counter
+            chunk += 1
+            print "===== Next chunk ====== "
+            
+            # Try to get style info from title
+            style_string = l.split(" ")[3]
+            if re.match(".*_.*",style_string):
+               # Grab style profiles from title
+               styles = style_string.split("_")
+               # Send this style info
+               
+               # First, clear out the current styles
+               time.sleep(2)
+               self.sender.send_value("style.sound",0)
+               time.sleep(0.001)
+               self.sender.send_value("style.video",0)
+               time.sleep(2)
+               # Announce the new styles
+               self.sender.send_value("character","STYLE")
+               time.sleep(0.001)
+               self.sender.send_value("line","Apply style value "+",".join(styles)+"\n")
+               # Wait for Loosey to acknowledge with EOL
+               while 1:
+                  word = self.subscriber.get_input()
+                  if word == "EOL": break
+               # Now, actually send the new styles
+               time.sleep(2)
+               self.sender.send_value("style.sound",styles[1])
+               time.sleep(0.001)
+               self.sender.send_value("style.video",styles[0])
+               time.sleep(0.001)
+               self.sender.send_value("style.actor",styles[2])
+               time.sleep(2)
+            # Move on to the next line
+            continue
+            
+         # Check to see if this is a character name
+         elif re.match("^[A-Z_]+$",l.strip()): 
+            # This is a character
+            
+            who = re.sub("_AND_"," ",who)
+            who = re.sub("_and_"," ",who)
+            who = l.strip().upper()
+      
+            # Make sure that we're keeping track of the characters for Loosey metadata
+            if not who in characters: 
+               character_order += 1
+               characters[who]=character_order
+      
+            # Not sure what this does yet
+            display = 1
+            
+            # Send the character
+            self.sender.send_value("character",who)
+            print "SENDING WHO",who
+      
+            # Check whether any of triggers need triggering
+            for t in trigs:
+               if t.active():
+                  print "SENDING TRIGGER", t.stage, t.words[0]
+                  self.sender.send_value("stagedir."+t.stage,t.words[0])
+                  time.sleep(t.pause/1000.0)
+                  t.reset()
+                  
+            # Move on to the next line
+            continue
+            
+         # Check to see if this is an ACT/SCENE title line
+         elif re.match("^\s*ACT.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+            # Display keeps track of whether to send the word out (probably for video display)
+            display = 0
+            # This is the TITLE voice
+            self.sender.send_value("character","TITLE")
+            time.sleep(0.001)
+            self.sender.send_value("intro",3000)
+            time.sleep(0.001)
+            # Send the stage directions
+            self.sender.send_value("stagedir.title",l)
+            self.sender.send_value("stagedir.bool",0)
+            self.sender.send_value("stagedir",l)
+            # Also send the stage direction for reading
+            self.sender.send_value("line",l)
+            print "TITLE",l
+         
+         # Check to see if this is a stage direction
+         elif re.match("^\s*\(.*\)\s*$",l): 
+            # Pull out the first word in the parentheses
+            wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)\s+.*","\\1",l)
+            # Make the line into the line except for the first word in the parentheses
+            l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
+            display = 0
+            # Send the stagedir
+            self.sender.send_value("character","STAGEDIR")
+            self.sender.send_value("stagedir.bool",2)
+            self.sender.send_value("stagedir",l)
+            # Pull off the parentheses for reading
+            l = re.sub("^\s*\((.*)\)\s*$","\\1",l)
+            self.sender.send_value("line",l)
+            trigger_label = wwhhaatt
+            print "STAGE",l
+      
+         # otherwise, this is a normal dialogue line
+         else:
+            # Don't use the line if it doesn't exist or if it is just parentheses
+            # TODO: What happens if there's a paren in the middle of a line?
+            if not l or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
+            # Send the line
+            self.sender.send_value("stagedir.bool",1)
+            self.sender.send_value("line",l)
+            print "SENDING LINE",l
+      
+         while 1:
+            # For each word said, we're going to check whether we need
+            # to trigger anything. Additionally, we will send out metadata
+            word = self.subscriber.get_input()
+            if word == "EOL": break
+            word = word[2:]
+      
+            w = word.lower()
+            w = re.sub("^(.*),$","\\1",w)
+            w = re.sub("^(.*)\.$","\\1",w)
+            w = re.sub("^(.*)\?$","\\1",w)
+            w = re.sub("^(.*)\!$","\\1",w)
+            w = re.sub("^(.*):$","\\1",w)
+            w = re.sub("^(.*);$","\\1",w)
+            ws = word_scores(w)
+            wf = word_freq(w)
+      
+            # Check to see if we've had a stagedir trigger in this line
+            if trigger_label:
+               tmptrigs = []
+               # Loop through all the triggers and update them with
+               # the current word. If they're active now, put them in
+               # the list for further processing
+               for t in trigs:
+                  t.update(w)
+                  if t.active(): tmptrigs.append(t)
+               # If there are any triggers that are ready:
+               if tmptrigs:
+                  # Find the maximum priority
+                  tmppriority = [t.priority for t in tmptrigs]
+                  maxpriority = max(tmppriority)
+                  # Grab everything with that priority
+                  allt = [t for t in tmptrigs if t.priority==maxpriority]
+                  print "SENDING", allt[0].stage, allt[0].words[0]
+                  # Send one of them
+                  self.sender.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                  time.sleep(allt[0].pause/1000.0)
+                  # Reset all of the activated triggers
+                  for t in tmptrigs:
+                     if not t.wait: t.reset()
+            # If we don't have a trigger_label, then we're not in a stagedir
+            # Just go through and reset any triggers that aren't waiting for
+            # a number of occurences
+            else:
+               for t in trigs: 
+                  if not t.wait: t.reset()
+      
+            # If display, then we want to put the word out there (for video display I assume)
+            if display: self.sender.send_value("word",word)
+
+            # Now, start putting metadata together
+            
+            # Grab the indices of the emotions that have the max affect value
+            mws = [i for i in range(4) if ws[i]==max(ws)][0]+1
+            # iF the max is less than 0, then we don't have a max affect value
+            if ws[mws-1]<0: affmax = ""
+            # Otherwise, we have a max affect 
+            else: affmax = emos[mws-1]
+            # Send out the max affect
+            self.sender.send_value("affmax",affmax)
+            # Do the same for the value of the max affect
+            if ws[mws-1]<0: affmaxval = 0
+            else: affmaxval = ws[mws-1]
+            self.sender.send_value("affmaxval",affmaxval)
+            # If these are the default values, go no further
+            # TODO: probably want to send this anyway, ask Greg what he thinks if there is no affect value what we should do
+            if ws[0] < 0:
+               # Don't update the average if this word doesn't have a real affect value
+               # Keep a weighted moving average to send out
+               ewma = [update(ewma[i],ws[i]) for i in range(4)]
+            else:
+               # Send out default with 0's
+               ws = [0 for zero_out in ws]
+            self.sender.send_value("affvals",ws)
+            self.sender.send_value("affsmos",ewma)
+            self.sender.send_value("wordfreq",wf)
+            self.sender.send_value("smallpacket",[word,emos[mws-1],ws[mws-1]])
+            if who: self.sender.send_value("bigpacket",ws+ewma+[mws]+[ws[mws-1]]+[wf]+[characters[who]])
