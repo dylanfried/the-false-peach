@@ -17,6 +17,8 @@ class LooseyClient:
    # Static variable used by subscriber callback to remember the
    # last thing that we received from Loosey
    next_line = [""]
+   # Static variable to hold names of emotions
+   emos = ["anger","fear","joy","sadness"]
    
    # Constructor
    # Takes care of setting up the sender and subscriber
@@ -295,9 +297,9 @@ class LooseyClient:
             # Grab the indices of the emotions that have the max affect value
             mws = [i for i in range(4) if ws[i]==max(ws)][0]+1
             # iF the max is less than 0, then we don't have a max affect value
-            if ws[mws-1]<0: affmax = ""
+            if ws[mws-1]<0: affmax = "neutral"
             # Otherwise, we have a max affect 
-            else: affmax = emos[mws-1]
+            else: affmax = LooseyClient.emos[mws-1]
             # Send out the max affect
             self.sender.send_value("affmax",affmax)
             # Do the same for the value of the max affect
@@ -316,5 +318,3 @@ class LooseyClient:
             self.sender.send_value("affvals",ws)
             self.sender.send_value("affsmos",ewma)
             self.sender.send_value("wordfreq",wf)
-            self.sender.send_value("smallpacket",[word,emos[mws-1],ws[mws-1]])
-            if who: self.sender.send_value("bigpacket",ws+ewma+[mws]+[ws[mws-1]]+[wf]+[characters[who]])

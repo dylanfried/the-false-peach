@@ -135,7 +135,6 @@ class Generator:
                output.append(chunk_title)
    
          #initialize pos and word markovs
-         #print chunk
          max_pos_order = max([a["order"] for a in chunk["POS_order_ramp"]])
          pos_markov = Markov(chunk["POS_training_text"], max_pos_order, 10)
          pos_markov.initialize()
@@ -152,22 +151,19 @@ class Generator:
          current_pos_filter = Generator.getCurrEmoFilter(chunk, 1, "pos")
          current_word_filter = Generator.getCurrEmoFilter(chunk, 1, "word")
          for i in range(chunk["trial_length"]):
-            print "i::::::::", i
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(chunk, i, "pos")
-            print "generate Next params", current_pos_order,current_pos_filters
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
             current_word_order = Generator.getCurrOrder(chunk, i, "word")
             current_word_filters = Generator.getCurrEmoFilter(chunk, i, "word")
             
             # Add in the POS filter if we got a POS
-            print "current pos before if", current_pos
             if (current_pos != None):
                current_word_filters.append({"index": 10, "filter": str(current_pos[10]), "type": "text_match"})
-               print "current POS Generator", str(current_pos[10])
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
-            print "current word", current_word
             if current_word:
                output.append(current_word)
                
-      return " ".join([o[-1] for o in output])
+      string_version = " ".join([o[-1] for o in output])
+      # Break into separate lines and return
+      return string_version.split("NEWLINE")

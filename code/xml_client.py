@@ -156,7 +156,7 @@ programname = sys.argv[1]
 programname = re.sub("^.*\/(.*)\.xml$","\\1",programname)
 
 # hold all of the script generated to then send to loosey
-out = ""
+out = []
 
 # Get going with the scene config file
 bs = BeautifulSoup(open(sceneconfigfile).read())
@@ -245,11 +245,10 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunks.append(chunk)
    gen = Generator(chunks)
    if out:
-      out += " NEWLINE " + gen.generate()
+      out += gen.generate()
    else:
       out = gen.generate()
 
-print "Script generated:"
-print out
+print "Script generated:","\n".join(out)
 
 # Now that we have our output, let's use the Sender to send it
