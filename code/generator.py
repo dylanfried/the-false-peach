@@ -116,7 +116,7 @@ class Generator:
       output = []
       for trial in self.trials: 
          #initialize pos and word markovs
-         print trial
+         #print trial
          max_pos_order = max([a["order"] for a in trial["POS_order_ramp"]])
          pos_markov = Markov(trial["POS_training_text"], max_pos_order, 10)
          pos_markov.initialize()
@@ -136,16 +136,15 @@ class Generator:
             current_pos_order = Generator.getCurrOrder(trial, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(trial, i, "pos")
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
-
             current_word_order = Generator.getCurrOrder(trial, i, "word")
             current_word_filters = Generator.getCurrEmoFilter(trial, i, "word")
             
             # Add in the POS filter if we got a POS
             if (current_pos != None):
-               current_word_filters.append({"index": 10, "filter": current_pos, "type": "text_match"})
-               
+               current_word_filters.append({"index": 10, "filter": str(current_pos[10]), "type": "text_match"})
+               print "current POS Generator", str(current_pos[10])
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
-            
+            print "current word", current_word
             if current_word:
                output.append(current_word)
                

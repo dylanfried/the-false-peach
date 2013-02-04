@@ -203,10 +203,11 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       continue
    elif trial.name == "mirror":
       print "Mirror"
-      POS_training_text = get_lines(data, trial.find('train'))
+      POS_training_text = get_lines(data, trial.find('generate'))
+      print "POS_training Text", POS_training_text
       POS_order_ramp.append({"order":10, "word_number": 1})
       POS_emotion_ramp = []
-      word_training_text = get_lines(data, trial.find('generate'))
+      word_training_text = get_lines(data, trial.find('train'))
       word_order_ramp.append({"order":0, "word_number": 1})
       word_emotion_ramp = []
       # Trial length should just be length of POS training text
