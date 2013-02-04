@@ -18,6 +18,10 @@ class Markov:
       self.lines_so_far = []
       self.cursor = []
       
+      #Have we used the markov process yet or have we just returned
+      #from the first "order" lines.
+      self.markoved = False
+      
       # contexts holds the markov chain
       # It is a list where each element is a markov
       # context for a given order (where the 0th element is for
@@ -50,10 +54,6 @@ class Markov:
                if not history in self.contexts[order]: self.contexts[order][history] = []
                # Add the most recent line to the context keyed on the preceding history
                self.contexts[order][history].append(current_lines[-1])
-               
-      
-      # Set cursor to the first max_order lines
-      self.cursor = self.lines[:self.max_order]
       
       
    # This method generates the single next element in the markov chain. This element is added to the lines_so_far and
@@ -65,11 +65,21 @@ class Markov:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
    def generateNext(self, order, filters):
-      # Generate the string key from the cursor
-      history = " ".join([history_line[self.primary_key] for history_line in self.cursor[:-(order)]])      
+      # Set cursor to the first max_order lines
+      #self.cursor = self.lines[:self.max_order]
+      if len(self.cursor)<order and not self.markoved:
+         self.cursor.append(self.lines[len(self.cursor)])
+         print "cursor", self.cursor
+         self.lines_so_far.append(self.lines[len(self.cursor)])
+         return self.cursor[-1]
+      
       while order > -1:
+         # Generate the string key from the cursor
+         history = " ".join([history_line[self.primary_key] for history_line in self.cursor[-(order):]])      
+         print "history in generateNext",history
          # Check to see if we have this history/stem in our context
          if history in self.contexts[order].keys():
+            print "got into the keys check"
             # We do! Now check to see if the filters are met:
             new_context = self.contexts[order][history][:]
             for f in filters:
@@ -88,10 +98,11 @@ class Markov:
                self.lines_so_far.append(random.sample(new_context,1)[0])
                # Update the cursor (pop off the first element and add the new line)
                if len(self.cursor) > 0:
-                  self.cursor.pop(0)
                   self.cursor.append(self.lines_so_far[-1])
+                  if len(self.cursor) > self.max_order: self.cursor.pop(0)
                
                # Return the newest line:
+               self.markoved = True
                return self.lines_so_far[-1]
             else:
                # Nope, let's back off the order

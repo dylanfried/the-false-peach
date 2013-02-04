@@ -115,7 +115,7 @@ def get_lines(data, xml_constraints):
             continue
 
          if 'pos' in c and c['pos']:
-            if data[m][nmax-2]=="SPEAKER" or data[m][nmax-2].upper() in c['pos'] or data[m][nmax-1]=="NEWLINE" and not data[m][nmax-1] in [")","("]: keep.append(1)
+            if data[m][-2]=="SPEAKER" or data[m][-2].upper() in c['pos'] or data[m][-1]=="NEWLINE" and not data[m][-1] in [")","("]: keep.append(1)
             else: keep.append(0)
          else: keep.append(1)
 
@@ -191,6 +191,11 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    # Make sure the numbers are numbers
    data = [d[:5]+[float(dd) for dd in d[5:10]]+d[10:] for d in data]
    
+   #Grab the style from the xml
+   style = ""
+   if trial.has_key("style"): style = trial["style"]
+   trialname = style
+   
    if trial.name == "sm_filter":
       print "sm_filter not yet implemented"
       continue
@@ -228,6 +233,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    # We've got the params, format the data and send it to the
    # generator
    chunk = {}
+   chunk['trialname'] = trialname
    chunk['POS_training_text'] = POS_training_text
    chunk['POS_order_ramp'] = POS_order_ramp
    chunk['POS_emotion_ramp'] = POS_emotion_ramp
