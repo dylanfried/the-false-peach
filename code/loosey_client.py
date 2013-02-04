@@ -142,25 +142,25 @@ class LooseyClient:
                
                # First, clear out the current styles
                time.sleep(2)
-               receiver.send_value("style.sound",0)
+               self.sender.send_value("style.sound",0)
                time.sleep(0.001)
-               receiver.send_value("style.video",0)
+               self.sender.send_value("style.video",0)
                time.sleep(2)
                # Announce the new styles
-               receiver.send_value("character","STYLE")
+               self.sender.send_value("character","STYLE")
                time.sleep(0.001)
-               receiver.send_value("line","Apply style value "+",".join(styles)+"\n")
+               self.sender.send_value("line","Apply style value "+",".join(styles)+"\n")
                # Wait for Loosey to acknowledge with EOL
                while 1:
                   word = self.subscriber.get_input()
                   if word == "EOL": break
                # Now, actually send the new styles
                time.sleep(2)
-               receiver.send_value("style.sound",styles[1])
+               self.sender.send_value("style.sound",styles[1])
                time.sleep(0.001)
-               receiver.send_value("style.video",styles[0])
+               self.sender.send_value("style.video",styles[0])
                time.sleep(0.001)
-               receiver.send_value("style.actor",styles[2])
+               self.sender.send_value("style.actor",styles[2])
                time.sleep(2)
             # Move on to the next line
             continue
@@ -182,7 +182,7 @@ class LooseyClient:
             display = 1
             
             # Send the character
-            if play: self.sender.send_value("character",who)
+            self.sender.send_value("character",who)
             print "SENDING WHO",who
       
             # Check whether any of triggers need triggering
@@ -206,11 +206,11 @@ class LooseyClient:
             self.sender.send_value("intro",3000)
             time.sleep(0.001)
             # Send the stage directions
-            receiver.send_value("stagedir.title",l)
-            receiver.send_value("stagedir.bool",0)
-            receiver.send_value("stagedir",l)
+            self.sender.send_value("stagedir.title",l)
+            self.sender.send_value("stagedir.bool",0)
+            self.sender.send_value("stagedir",l)
             # Also send the stage direction for reading
-            receiver.send_value("line",l)
+            self.sender.send_value("line",l)
             print "TITLE",l
          
          # Check to see if this is a stage direction
@@ -221,12 +221,12 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Send the stagedir
-            receiver.send_value("character","STAGEDIR")
-            receiver.send_value("stagedir.bool",2)
-            receiver.send_value("stagedir",l)
+            self.sender.send_value("character","STAGEDIR")
+            self.sender.send_value("stagedir.bool",2)
+            self.sender.send_value("stagedir",l)
             # Pull off the parentheses for reading
             l = re.sub("^\s*\((.*)\)\s*$","\\1",l)
-            if play: receiver.send_value("line",l)
+            self.sender.send_value("line",l)
             trigger_label = wwhhaatt
             print "STAGE",l
       
@@ -236,14 +236,14 @@ class LooseyClient:
             # TODO: What happens if there's a paren in the middle of a line?
             if not l or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
             # Send the line
-            receiver.send_value("stagedir.bool",1)
-            receiver.send_value("line",l)
+            self.sender.send_value("stagedir.bool",1)
+            self.sender.send_value("line",l)
             print "SENDING LINE",l
       
          while 1:
             # For each word said, we're going to check whether we need
             # to trigger anything. Additionally, we will send out metadata
-            word = voice.get_input()
+            word = self.subscriber.get_input()
             if word == "EOL": break
             word = word[2:]
       
@@ -275,7 +275,7 @@ class LooseyClient:
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
                   print "SENDING", allt[0].stage, allt[0].words[0]
                   # Send one of them
-                  receiver.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                  self.sender.send_value("stagedir."+allt[0].stage,allt[0].words[0])
                   time.sleep(allt[0].pause/1000.0)
                   # Reset all of the activated triggers
                   for t in tmptrigs:
@@ -288,7 +288,7 @@ class LooseyClient:
                   if not t.wait: t.reset()
       
             # If display, then we want to put the word out there (for video display I assume)
-            if display: receiver.send_value("word",word)
+            if display: self.sender.send_value("word",word)
 
             # Now, start putting metadata together
             
@@ -299,11 +299,11 @@ class LooseyClient:
             # Otherwise, we have a max affect 
             else: affmax = emos[mws-1]
             # Send out the max affect
-            receiver.send_value("affmax",affmax)
+            self.sender.send_value("affmax",affmax)
             # Do the same for the value of the max affect
             if ws[mws-1]<0: affmaxval = 0
             else: affmaxval = ws[mws-1]
-            receiver.send_value("affmaxval",affmaxval)
+            self.sender.send_value("affmaxval",affmaxval)
             # If these are the default values, go no further
             # TODO: probably want to send this anyway, ask Greg what he thinks if there is no affect value what we should do
             if ws[0] < 0:
@@ -313,8 +313,8 @@ class LooseyClient:
             else:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
-            receiver.send_value("affvals",ws)
-            receiver.send_value("affsmos",ewma)
-            receiver.send_value("wordfreq",wf)
-            receiver.send_value("smallpacket",[word,emos[mws-1],ws[mws-1]])
-            if who: receiver.send_value("bigpacket",ws+ewma+[mws]+[ws[mws-1]]+[wf]+[characters[who]])
+            self.sender.send_value("affvals",ws)
+            self.sender.send_value("affsmos",ewma)
+            self.sender.send_value("wordfreq",wf)
+            self.sender.send_value("smallpacket",[word,emos[mws-1],ws[mws-1]])
+            if who: self.sender.send_value("bigpacket",ws+ewma+[mws]+[ws[mws-1]]+[wf]+[characters[who]])
