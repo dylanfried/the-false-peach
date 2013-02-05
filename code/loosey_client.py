@@ -72,7 +72,7 @@ class LooseyClient:
          flds = ff.split(" ")
          self.freqs[flds[1]] = float(flds[0])
          tot += self.freqs[flds[1]]
-      for f in self.freqs: self.freqs[f] = round(1000.0*self.freqs[f]/(tot+0.0),2)
+      for f in self.freqs: self.freqs[f] = round(self.freqs[f]/(tot+0.0),4)
       # Emotions
       emo = open("data/emo.txt").readlines()
       self.emotions = {}
@@ -322,16 +322,14 @@ class LooseyClient:
             # Do the same for the value of the max affect
             if ws[mws-1]<0: affmaxval = 0
             else: affmaxval = ws[mws-1]
-            self.send_value("affmaxval",affmaxval)
-            # If these are the default values, go no further
-            # TODO: probably want to send this anyway, ask Greg what he thinks if there is no affect value what we should do
-            if ws[0] < 0:
+            self.send_value("affmaxval",affmaxval/5)
+            if ws[0] >= 0:
                # Don't update the average if this word doesn't have a real affect value
                # Keep a weighted moving average to send out
                ewma = [update(ewma[i],ws[i]) for i in range(4)]
             else:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
-            self.send_value("affvals",ws)
-            self.send_value("affsmos",ewma)
+            self.send_value("affvals",[normalize/5 for normalize in ws])
+            self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
