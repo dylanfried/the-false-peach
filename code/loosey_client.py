@@ -1,6 +1,10 @@
 import OSC
 from simpleOSC import *
 from headless_trigger import headless_trigger
+from bs4 import BeautifulSoup
+import re
+import sys
+import time
 
 # Helper function for moving average
 def update(e,c,lam=0.8):
@@ -49,6 +53,7 @@ class LooseyClient:
       self.sender = OSC.OSCClient()
       
       # OSC server for subscribing to messages from Loosey
+      print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
       self.subscriber = OSC.OSCServer((self.subscriber_ip, self.subscriber_port))
       self.subscriber.socket.settimeout(100000)
       # Set handlers for incoming messages
@@ -78,6 +83,8 @@ class LooseyClient:
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
+      print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
+      print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
       # Create and send the actual message
@@ -85,8 +92,14 @@ class LooseyClient:
       msg.setAddress(self.actions[what])
       msg.append(value)
       if excess: msg.append(excess)
-      try: self.client.sendto(msg, (self.sender_ip,self.sender_port))
-      except: return 0
+      print "Sending message to Loosey",self.sender_ip, self.sender_port
+      try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
+      except AttributeError as e:
+         print "Attribute Error", e
+         #print "Attribute Error",e.errno,e.strerror
+      except: 
+         print "Exception when trying to send",sys.exc_info()[0]
+         return 0
       # Success!
       return 1
       
@@ -114,16 +127,17 @@ class LooseyClient:
    # where each element is a line from our script.
    # This method takes care of managing/sending triggers
    # as well.
-   def send_script(lines):
+   def send_script(self, lines):
       # Keep track of which chunk we're on
       chunk = -1
       # Keep track of characters used to send as metadata to Loosey
       characters = {}
       # Keep track of the order of the characters as well
       character_order = 0
-      
+      # print "lines", lines
       # Loop through all of the lines in the script
       for l in lines:
+         # print "lines loop", l
          # trigger_label is used to remember whether we're in a stagedir and
          # need to go through our triggers
          trigger_label = ""
@@ -136,7 +150,8 @@ class LooseyClient:
             print "===== Next chunk ====== "
             
             # Try to get style info from title
-            style_string = l.split(" ")[3]
+            style_string = l.split(" ")[4]
+            print style_string
             if re.match(".*_.*",style_string):
                # Grab style profiles from title
                styles = style_string.split("_")
@@ -144,25 +159,26 @@ class LooseyClient:
                
                # First, clear out the current styles
                time.sleep(2)
-               self.sender.send_value("style.sound",0)
+               self.send_value("style.sound",0)
                time.sleep(0.001)
-               self.sender.send_value("style.video",0)
+               self.send_value("style.video",0)
                time.sleep(2)
                # Announce the new styles
-               self.sender.send_value("character","STYLE")
+               self.send_value("character","STYLE")
                time.sleep(0.001)
-               self.sender.send_value("line","Apply style value "+",".join(styles)+"\n")
+               self.send_value("line","Apply style value "+",".join(styles)+"\n")
                # Wait for Loosey to acknowledge with EOL
                while 1:
-                  word = self.subscriber.get_input()
+                  break;
+                  word = self.get_input()
                   if word == "EOL": break
                # Now, actually send the new styles
                time.sleep(2)
-               self.sender.send_value("style.sound",styles[1])
+               self.send_value("style.sound",styles[1])
                time.sleep(0.001)
-               self.sender.send_value("style.video",styles[0])
+               self.send_value("style.video",styles[0])
                time.sleep(0.001)
-               self.sender.send_value("style.actor",styles[2])
+               self.send_value("style.actor",styles[2])
                time.sleep(2)
             # Move on to the next line
             continue
@@ -170,7 +186,7 @@ class LooseyClient:
          # Check to see if this is a character name
          elif re.match("^[A-Z_]+$",l.strip()): 
             # This is a character
-            
+            who = l.strip().upper()
             who = re.sub("_AND_"," ",who)
             who = re.sub("_and_"," ",who)
             who = l.strip().upper()
@@ -184,14 +200,14 @@ class LooseyClient:
             display = 1
             
             # Send the character
-            self.sender.send_value("character",who)
+            self.send_value("character",who)
             print "SENDING WHO",who
       
             # Check whether any of triggers need triggering
-            for t in trigs:
+            for t in self.trigs:
                if t.active():
                   print "SENDING TRIGGER", t.stage, t.words[0]
-                  self.sender.send_value("stagedir."+t.stage,t.words[0])
+                  self.send_value("stagedir."+t.stage,t.words[0])
                   time.sleep(t.pause/1000.0)
                   t.reset()
                   
@@ -203,16 +219,16 @@ class LooseyClient:
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             # This is the TITLE voice
-            self.sender.send_value("character","TITLE")
+            self.send_value("character","TITLE")
             time.sleep(0.001)
-            self.sender.send_value("intro",3000)
+            self.send_value("intro",3000)
             time.sleep(0.001)
             # Send the stage directions
-            self.sender.send_value("stagedir.title",l)
-            self.sender.send_value("stagedir.bool",0)
-            self.sender.send_value("stagedir",l)
+            self.send_value("stagedir.title",l)
+            self.send_value("stagedir.bool",0)
+            self.send_value("stagedir",l)
             # Also send the stage direction for reading
-            self.sender.send_value("line",l)
+            self.send_value("line",l)
             print "TITLE",l
          
          # Check to see if this is a stage direction
@@ -223,12 +239,12 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Send the stagedir
-            self.sender.send_value("character","STAGEDIR")
-            self.sender.send_value("stagedir.bool",2)
-            self.sender.send_value("stagedir",l)
+            self.send_value("character","STAGEDIR")
+            self.send_value("stagedir.bool",2)
+            self.send_value("stagedir",l)
             # Pull off the parentheses for reading
             l = re.sub("^\s*\((.*)\)\s*$","\\1",l)
-            self.sender.send_value("line",l)
+            self.send_value("line",l)
             trigger_label = wwhhaatt
             print "STAGE",l
       
@@ -238,14 +254,15 @@ class LooseyClient:
             # TODO: What happens if there's a paren in the middle of a line?
             if not l or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
             # Send the line
-            self.sender.send_value("stagedir.bool",1)
-            self.sender.send_value("line",l)
+            self.send_value("stagedir.bool",1)
+            self.send_value("line",l)
             print "SENDING LINE",l
       
          while 1:
+            break;
             # For each word said, we're going to check whether we need
             # to trigger anything. Additionally, we will send out metadata
-            word = self.subscriber.get_input()
+            word = self.get_input()
             if word == "EOL": break
             word = word[2:]
       
@@ -265,7 +282,7 @@ class LooseyClient:
                # Loop through all the triggers and update them with
                # the current word. If they're active now, put them in
                # the list for further processing
-               for t in trigs:
+               for t in self.trigs:
                   t.update(w)
                   if t.active(): tmptrigs.append(t)
                # If there are any triggers that are ready:
@@ -277,7 +294,7 @@ class LooseyClient:
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
                   print "SENDING", allt[0].stage, allt[0].words[0]
                   # Send one of them
-                  self.sender.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                  self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
                   time.sleep(allt[0].pause/1000.0)
                   # Reset all of the activated triggers
                   for t in tmptrigs:
@@ -286,11 +303,11 @@ class LooseyClient:
             # Just go through and reset any triggers that aren't waiting for
             # a number of occurences
             else:
-               for t in trigs: 
+               for t in self.trigs: 
                   if not t.wait: t.reset()
       
             # If display, then we want to put the word out there (for video display I assume)
-            if display: self.sender.send_value("word",word)
+            if display: self.send_value("word",word)
 
             # Now, start putting metadata together
             
@@ -301,11 +318,11 @@ class LooseyClient:
             # Otherwise, we have a max affect 
             else: affmax = LooseyClient.emos[mws-1]
             # Send out the max affect
-            self.sender.send_value("affmax",affmax)
+            self.send_value("affmax",affmax)
             # Do the same for the value of the max affect
             if ws[mws-1]<0: affmaxval = 0
             else: affmaxval = ws[mws-1]
-            self.sender.send_value("affmaxval",affmaxval)
+            self.send_value("affmaxval",affmaxval)
             # If these are the default values, go no further
             # TODO: probably want to send this anyway, ask Greg what he thinks if there is no affect value what we should do
             if ws[0] < 0:
@@ -315,6 +332,6 @@ class LooseyClient:
             else:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
-            self.sender.send_value("affvals",ws)
-            self.sender.send_value("affsmos",ewma)
-            self.sender.send_value("wordfreq",wf)
+            self.send_value("affvals",ws)
+            self.send_value("affsmos",ewma)
+            self.send_value("wordfreq",wf)
