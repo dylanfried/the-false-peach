@@ -29,6 +29,16 @@ class Generator:
    #                                                            {"emotion_level":2.0,"word_number":10}]}]
    def __init__(self, chunks):
       self.chunks = chunks
+      # Variable to keep track of whether we're inside parentheses in text
+      # generation
+      self.in_paren = False
+      # We always want the type of stage direction at the beginning
+      # of each stage direction
+      # grab_stagedir will be set if the last word was an open
+      # paren and we need to grab the stagedir from the next word
+      self.grab_stagedir = False
+      # Variable to keep track of words as we generate them
+      self.output = []
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -99,7 +109,67 @@ class Generator:
             break
          current_order = order_ramp[i]["order"]
       return current_order
-           
+   
+   # This is a helper method that takes care of polishing text before
+   # adding it to the generated text. Mostly, it keeps track of
+   # parentheses for stage directions formatting
+   def update(self, next_word):
+      # We always want the type of stage direction at the beginning
+      # of each stage direction
+      # grab_stagedir will be set if the last word was an open
+      # paren and we need to grab the stagedir from the next word
+      if self.grab_stagedir and next_word[-1] != ")": 
+         insert_stagedir = [None]*12
+         insert_stagedir[-1] = next_word[-2]
+         self.output.append(insert_stagedir)
+         # No longer need to grab stage direction to insert
+         self.grab_stagedir = False
+      # Check to see if we're entering a stage direction
+      if next_word[-1]=="(":
+         if not self.in_paren:
+            insert_newline = [None]*12
+            insert_newline[-2] = " NEWLINE "
+            insert_newline[-1] = " NEWLINE "
+            self.output.append(insert_newline)
+            self.output.append(next_word)
+            # We're now entering a stage direction, so we're in parens
+            # and need to grab the type of stage direction with the next
+            # word
+            self.in_paren = True
+            self.grab_stagedir = True
+      # Check to see if we're at the end of a stage direction
+      elif next_word[-1]==")":
+         # Check to see if we're already in a stage direction
+         if self.in_paren:
+            # If we are, then we just want to end it
+            # TODO: do we need a NEWLINE after the stagedir?
+            self.output.append(next_word)
+            self.in_paren = False
+      # Check to see if we've got a speaker now and 
+      # we're in a stage direction
+      elif next_word[-2] == "SPEAKER" and self.in_paren:
+         # If we are, then we want to end the stage direction, 
+         # then put a NEWLINE and the speaker
+         insert_paren = [None]*12
+         insert_paren[-2] = " ) "
+         insert_paren[-1] = " ) "
+         self.output.append(insert_paren)
+         insert_newline = [None]*12
+         insert_newline[-2] = " NEWLINE "
+         insert_newline[-1] = " NEWLINE "
+         self.output.append(insert_newline)
+         self.output.append(next_word)
+         # Set in_paren because we're out of the parentheses now
+         self.in_paren = False
+      # Check to see if we're in a stagedir and getting a newline
+      elif self.in_paren and next_word[-1] == "NEWLINE":
+         # If we are, then we don't want to put the newline in
+         # Don't do anything
+         return None
+      else:
+         # Otherwise, we just have a normal word and we want to add it
+         self.output.append(next_word)
+
    # This method uses the markov chains and chunk config list to generate the actual text of the scene
    # It then polishes the scene and returns the text
    def generate(self):
@@ -115,26 +185,31 @@ class Generator:
    #     compute the filters for the word markov
    #     pass the part of speech to the word and generate
    #      the next word.
-      output = []
+      # Make sure to reset output
+      self.output = []
       chunkcount = 0
-      for chunk in self.chunks: 
+      for chunk in self.chunks:
+         # Reset in_paren and grab_stagedir because we're starting a new chunk
+         self.in_paren = False
+         self.grab_stagedir = False
+         # Set chunk title stuff
          chunk_title = [None]*12
          chunkcount = chunkcount + 1
          chunkname = chunk["chunk_name"]
-         if not output:
+         if not self.output:
             if chunkname:
                chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
-               output.append(chunk_title)
+               self.output.append(chunk_title)
             else:
                chunk_title[-1] = "================ CHUNK "+str(chunkcount)+" ================ NEWLINE "
-               output.append(chunk_title)
+               self.output.append(chunk_title)
          else:
             if chunkname:
                chunk_title[-1] = " NEWLINE ================ CHUNK "+str(chunkcount)+" "+chunkname+" ================ NEWLINE "
-               output.append(chunk_title)
+               self.output.append(chunk_title)
             else:
                chunk_title[-1] = " NEWLINE ================ CHUNK "+str(chunkcount)+" ================ NEWLINE "
-               output.append(chunk_title)
+               self.output.append(chunk_title)
    
          #initialize pos and word markovs
          max_pos_order = max([a["order"] for a in chunk["POS_order_ramp"]])
@@ -157,7 +232,7 @@ class Generator:
          # This while loop will loop through the trial length
          # but, it will keep going until it finds punctuation if 
          # the chunk is marked to finish_sentence
-         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and output and not re.match(".*[.?!]\s*$", output[-1][-1])):
+         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and self.output and not re.match(".*[.?!]\s*$", self.output[-1][-1])):
             # Don't go too far trying to find punctuation
             if i - chunk["trial_length"] > 25: break
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
@@ -171,10 +246,16 @@ class Generator:
                current_word_filters.append({"index": 10, "filter": str(current_pos[10]), "type": "text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
             if current_word:
-               output.append(current_word)
+               self.update(current_word)
             i += 1
+         # Make sure that we've ended all stage directions
+         if self.in_paren:
+            insert_paren = [None]*12
+            insert_paren[-2] = " ) "
+            insert_paren[-1] = " ) "
+            self.output.append(insert_paren)
                
-      string_version = " ".join([o[-1] for o in output])
+      string_version = " ".join([o[-1] for o in self.output])
       # Formatting stuff left over from Mark
       string_version = re.sub(" NEWLINE \)"," )",string_version)
       string_version = re.sub("(oh oh )+"," oh oh ",string_version)
