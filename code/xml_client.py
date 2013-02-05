@@ -194,8 +194,11 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    
    #Grab the style from the xml
    style = ""
+   trialname = ""
    if trial.has_key("style"): style = trial["style"]
-   trialname = style
+   name_tag = trial.find("name")
+   if name_tag: trialname += name_tag.string
+   trialname += " " + style
    
    if trial.name == "sm_filter":
       print "sm_filter not yet implemented"
