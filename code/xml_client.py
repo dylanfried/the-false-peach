@@ -1,5 +1,6 @@
 import re
 import getopt
+import random
 from bs4 import BeautifulSoup
 
 from generator import Generator
@@ -163,7 +164,7 @@ bs = BeautifulSoup(open(sceneconfigfile).read())
 #bs = bs.find("trial", recursive=False)
 # Grab all the immediate children
 for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
-   print "Trial type:", trial.name
+   #print "Trial type:", trial.name
    # Match the strategy name to a set of parameters to pass on to
    # the generator
    # We're going to fill in these variables:
@@ -201,7 +202,40 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       continue
       #lines = get_lines(data, trial.find('train'))
    elif trial.name == "filter":
-      print "filter not yet implemented"
+      print "Filter"
+      
+      trial_data = get_lines(data, trial.find("train").find("selections").find("selection").find("acts"))
+      #get the pattern
+      pattern = trial.find("generate").find("pattern")
+      if pattern: pattern = pattern.string
+      else: pattern = ""
+      
+      #get the length (number of lines to be output) from the xml.
+      length = trial.find("generate").find("length")
+      if length: length = int(length.string)
+      else: length = 0
+      
+      # list lines in the training text
+      universe = " ".join([d[-1] for d in trial_data])
+      universe = re.sub("NEWLINE","\n",universe)
+      universe = [u.strip() for u in universe.split("\n")]
+      trial_lines = []
+      
+      for u in universe:
+         if re.match("^"+pattern+".*",u,re.IGNORECASE): trial_lines.append(u)
+
+      if length: trial_lines = random.sample(trial_lines,length)
+      
+      for u in trial_lines:
+         # Formatting stuff left over from Mark
+         u = re.sub(" NEWLINE \)"," )",u)
+         u = re.sub("(oh oh )+"," oh oh ",u)
+         u = re.sub("(ho ho )+"," ho ho ",u)
+         u = re.sub("(nonny nonny )+"," nonny nonny ",u)
+         u = re.sub("(a-down a-down )+"," nonny nonny ",u)
+         u = re.sub("( NEWLINE)+"," NEWLINE",u)
+         if not out: out.append(u)
+         else: out.append(u)
       continue
    elif trial.name == "skip":
       print "skip not yet implemented"
@@ -209,7 +243,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    elif trial.name == "mirror":
       print "Mirror"
       POS_training_text = get_lines(data, trial.find('generate'))
-      print "POS_training Text", POS_training_text
+      #print "POS_training Text", POS_training_text
       POS_order_ramp.append({"order":10, "word_number": 1})
       POS_emotion_ramp = []
       word_training_text = get_lines(data, trial.find('train'))
@@ -248,12 +282,13 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunk['trial_length'] = trial_length
    chunks = []
    chunks.append(chunk)
+   
    gen = Generator(chunks)
    if out:
       out += gen.generate()
    else:
       out = gen.generate()
-
+  
 print "Script generated:","\n".join(out)
 
 # Now that we have our output, let's use the Sender to send it
