@@ -7,6 +7,7 @@ from generator import Generator
 
 import sys
 sys.path.append("code/")
+import util
 
 # This is a client that takes burrito.xml files and interacts
 # with the generator to generate a script and the sender to
@@ -263,6 +264,30 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       word_order_ramp.append({"order":int(trial.find("generate").find("k").string), "word_number": 1})
       word_emotion_ramp = []
       trial_length = int(trial.find("generate").find("length").string)
+      # Check to see if we have an emotion threshold constraint to add
+      type_tag = trial.find("generate").find("type")
+      if type_tag and type_tag.string == "threshold":
+         # Need to create the emotion ramp filter
+         ramp_tag = trial.find("generate").find("ramp")
+         emotion_list = ["anger","fear","joy","sadness","freq"]
+         if ramp_tag and ramp_tag.has_key("emotion") and ramp_tag["emotion"] in emotion_list:
+            # Grab the points and interpolate between them to create
+            # the emotional ramp to pass in to the generator
+            # Keep two arrays to keep track of the value and line
+            values = []
+            line_numbers = []
+            for point in ramp_tag.findAll("point"):
+               values.append(float(point['value']))
+               line_numbers.append(float(point['line']))
+            thresholds = util.interpolate(line_numbers, values, trial_length)
+            # Now, let's put this in the correct format for the generator
+            emotion_ramp = {}
+            emotion_ramp['emotion'] = ramp_tag['emotion']
+            emotion_ramp['ramp_list'] = []
+            # Loop through the points and add them to the ramp list
+            for i in range(len(thresholds)):
+               emotion_ramp['ramp_list'].append({'emotion_level':thresholds[i],'word_number':i})
+            word_emotion_ramp.append(emotion_ramp)
    else:
       print "Bad trial type:",trial.name
       continue

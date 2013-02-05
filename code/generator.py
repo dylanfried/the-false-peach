@@ -66,25 +66,25 @@ class Generator:
       # with the larges word_number not exceeding word_index.
       for i in range(len(emotion_ramp)):
          if emotion_ramp[i]["emotion"]=="fear":
-            for j in len(emotion_ramp[i]["ramp_list"]):
+            for j in range(len(emotion_ramp[i]["ramp_list"])):
                if emotion_ramp[i]["ramp_list"][j]["word_number"]>word_index:
                   break
-               current_fear = emotion_ramp[i]
+               current_fear = emotion_ramp[i]["ramp_list"][j]['emotion_level']
          elif emotion_ramp[i]["emotion"]=="anger":
-            for j in len(emotion_ramp[i]["ramp_list"]):
+            for j in range(len(emotion_ramp[i]["ramp_list"])):
                if emotion_ramp[i]["ramp_list"][j]["word_number"]>word_index:
                   break
-               current_anger = emotion_ramp[i]
+               current_anger = emotion_ramp[i]["ramp_list"][j]['emotion_level']
          elif emotion_ramp[i]["emotion"]=="joy":
-            for j in len(emotion_ramp[i]["ramp_list"]):
+            for j in range(len(emotion_ramp[i]["ramp_list"])):
                if emotion_ramp[i]["ramp_list"][j]["word_number"]>word_index:
                   break
-               current_joy = emotion_ramp[i]
+               current_joy = emotion_ramp[i]["ramp_list"][j]['emotion_level']
          elif emotion_ramp[i]["emotion"]=="sadness":
-            for j in len(emotion_ramp[i]["ramp_list"]):
+            for j in range(len(emotion_ramp[i]["ramp_list"])):
                if emotion_ramp[i]["ramp_list"][j]["word_number"]>word_index:
                   break
-               current_sadness = emotion_ramp[i]
+               current_sadness = emotion_ramp[i]["ramp_list"][j]['emotion_level']
         
          #append the filter dictionaries.
          if current_anger != -1:
@@ -240,7 +240,6 @@ class Generator:
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
             current_word_order = Generator.getCurrOrder(chunk, i, "word")
             current_word_filters = Generator.getCurrEmoFilter(chunk, i, "word")
-            
             # Add in the POS filter if we got a POS
             if (current_pos != None):
                current_word_filters.append({"index": 10, "filter": str(current_pos[10]), "type": "text_match"})

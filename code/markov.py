@@ -69,17 +69,17 @@ class Markov:
       # Start by returning the first order words from the testing text
       if len(self.cursor) < order and not self.markoved:
          self.cursor.append(self.lines[len(self.cursor)])
-         #print "cursor", self.cursor
          self.lines_so_far.append(self.cursor[-1])
          return self.cursor[-1]
       
       while order > -1:
          # Generate the string key from the cursor
-         history = " ".join([history_line[self.primary_key] for history_line in self.cursor[-(order):]])      
-         #print "history in generateNext",history
+         if order > 0:
+            history = " ".join([history_line[self.primary_key] for history_line in self.cursor[-(order):]])   
+         else:
+            history = ""
          # Check to see if we have this history/stem in our context
          if history in self.contexts[order].keys():
-            #print "got into the keys check"
             # We do! Now check to see if the filters are met:
             new_context = self.contexts[order][history][:]
             for f in filters:
