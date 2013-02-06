@@ -1,0 +1,21 @@
+    <markov>
+      <name>RampSad</name>
+      <file>data/brute.txt</file>
+      <train>
+         <characters>Hamlet</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+               <ramp emotion="sadness">
+                  <point line=-1 value=-0.5 />
+                  <point line=100 value=-0.8 />
+                  <point line=150 value=1.5 />
+                  <point line=200 value=1.8 />
+                  <point line=201 value=2.0 />
+               </ramp>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>200</length>
+         <k>2</k>
+      </generate>
+   </markov>

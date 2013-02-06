@@ -1,0 +1,70 @@
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brutefix.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>39</length>
+         <k>7</k>
+      </generate>
+   </markov>
+<filter>
+    <name>Oclaudius</name>
+    <forced_character>KING</forced_character>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>3</acts>
+         		<scenes>3</scenes>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>2</length>
+      </generate>
+   </filter>
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brutefix.txt</file>
+       <first_character>KING</first_character>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <lines>36-72</lines>
+         <characters>CLAUDIUS, KING</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>75</length>
+         <k>1</k>
+      </generate>
+   </markov>
+      <markov>
+      <name>Claudius</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>3</scenes>
+      	<lines>36-72</lines>
+         <characters>CLAUDIUS, KING</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=51 value=3 />
+         </ramp>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>50</length>
+         <k>2</k>
+      </generate>
+   </markov>
+

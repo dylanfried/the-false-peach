@@ -4,16 +4,17 @@
       <train>
       	<selections>
       		<selection>
-         		<acts>2</acts>
-         		<scenes>2</scenes>
-         		<lines>554-610</lines>
+         		<acts>1</acts>
+         		<scenes>5</scenes>
+         		<lines>92-112</lines>
 				<characters>Hamlet</characters>
 			</selection>
 		</selections>
       </train>
       <generate>
          <reset>True</reset>
-         <length>1000</length>
-         <k>7</k>
+         <finish_sent>True</finish_sent>
+         <length>500</length>
+         <k>2</k>
       </generate>
    </markov>

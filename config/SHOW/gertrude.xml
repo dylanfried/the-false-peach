@@ -96,6 +96,7 @@
       </train>
       <generate>
          <reset>True</reset>
+         <finish_sent>True</finish_sent>
          <length>14</length>
          <k>2</k>
       </generate>
@@ -112,6 +113,7 @@
       </train>
       <generate>
          <reset>True</reset>
+         <finish_sent>True</finish_sent>
          <length>180</length>
          <k>1</k>
       </generate>

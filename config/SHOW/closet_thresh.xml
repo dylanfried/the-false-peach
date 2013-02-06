@@ -1,0 +1,84 @@
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<characters>Stage</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>8</length>
+   	 	<k>5</k>
+   	 </generate>
+   	</markov>
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<lines>7</lines>
+   		<characters>Hamlet</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>8</length>
+   	 	<k>5</k>
+   	 </generate>
+   	</markov>
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<characters>Hamlet,Gertrude,Stage</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>50</length>
+   	 	<k>2</k>
+   	 </generate>
+   	</markov>
+   <markov>
+      <name>Closet</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>4</scenes>
+         <characters>GERTRUDE</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=50 value=-1 />
+            <point line=101 value=2.5 />
+         </ramp>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>100</length>
+         <k>2</k>
+      </generate>
+   </markov>
+ 	 <filter>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>3</acts>
+         		<scenes>4</scenes>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>5</length>
+      </generate>
+   </filter>
+

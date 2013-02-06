@@ -1,0 +1,15 @@
+ 	 <filter>
+    <name>itis_filter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>it is</pattern>
+         <length>15</length>
+      </generate>
+   </filter>
