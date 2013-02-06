@@ -87,7 +87,7 @@ class LooseyClient:
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
       print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
-      print self.actions
+      #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
       # Create and send the actual message
@@ -100,6 +100,8 @@ class LooseyClient:
       except AttributeError as e:
          print "Attribute Error", e
          #print "Attribute Error",e.errno,e.strerror
+      except OSC.OSCClientError as e:
+         print "OSC Client Error", e
       except: 
          print "Exception when trying to send",sys.exc_info()[0]
          return 0
@@ -198,10 +200,14 @@ class LooseyClient:
             who = re.sub("_and_"," ",who)
             who = l.strip().upper()
       
+            # If we have multiple characters, split them up
+            who = who.split(" ")
+      
             # Make sure that we're keeping track of the characters for Loosey metadata
-            if not who in characters: 
-               character_order += 1
-               characters[who]=character_order
+            for w in who:
+               if not w in characters: 
+                  character_order += 1
+                  characters[w]=character_order
       
             # Not sure what this does yet
             display = 1

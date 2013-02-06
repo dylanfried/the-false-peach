@@ -171,8 +171,9 @@ class Generator:
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
          # Check to see if we're at the end of a sentence
-         if re.match(".*[.?!]\s*$", next_word[-1]):
-            # We are. Make sure that we never have more than a single sentence on a line
+         if re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren:
+            # We are. Make sure that we never have more than a single sentence on a line (as long
+            # as we're not in a stage direction)
             insert_newline = [None]*12
             insert_newline[-2] = " NEWLINE "
             insert_newline[-1] = " NEWLINE "
