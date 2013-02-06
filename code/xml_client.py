@@ -8,6 +8,7 @@ from generator import Generator
 import sys
 sys.path.append("code/")
 import util
+from loosey_client import LooseyClient
 
 # This is a client that takes burrito.xml files and interacts
 # with the generator to generate a script and the sender to
@@ -176,6 +177,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    word_training_text = []
    word_order_ramp = []
    word_emotion_ramp = []
+   word_pause = None
    
    # Grab the data file
    datafile = trial.find("file")
@@ -200,6 +202,9 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    name_tag = trial.find("name")
    if name_tag: trialname += name_tag.string
    trialname += " " + style
+   # Check to see if there's a word pause set
+   word_pause = trial.find("word_pause")
+   if word_pause: trialname += " word_pause:" + word_pause.string
    
    if trial.name == "sm_filter":
       print "sm_filter not yet implemented"
@@ -308,6 +313,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunk['word_order_ramp'] = word_order_ramp
    chunk['word_emotion_ramp'] = word_emotion_ramp
    chunk['trial_length'] = trial_length
+   chunk['word_pause'] = word_pause
    chunks = []
    chunks.append(chunk)
    
@@ -320,3 +326,45 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
 print "Script generated:","\n".join(out)
 
 # Now that we have our output, let's use the Sender to send it
+bs = BeautifulSoup(open(trialconfigfile).read())
+rec = bs.find("receiver")
+# Grab sender info
+who = rec.find("name")
+if who:
+   who = who.string.encode('utf-8','ignore')
+else: 
+   for o in out: print o
+sender_ip = rec.find("ip")
+if sender_ip:
+   sender_ip = sender_ip.string.encode('utf-8','ignore')
+else: 
+   for o in out: print o
+sender_port = rec.find("port")
+if sender_port:
+   sender_port = int(sender_port.string)
+else: 
+   for o in out: print o
+# Put actions together
+actions = {}
+for action in rec.findAll("action"):
+   source = action.find("source")
+   if source:
+      source = source.string.encode('utf-8','ignore')
+   else: source=""
+   target = action.find("target")
+   if target:
+      target = target.string.encode('utf-8','ignore')
+   else: target=""
+   if source and target: actions[source] = target
+# Grab subscriber info
+sender = bs.find("sender")
+my_port = sender.find("port")
+if my_port: my_port = int(my_port.string)
+else: sys.exit()
+my_ip = sender.find("ip")
+if my_ip: my_ip = my_ip.string 
+else: sys.exit()
+# Create Loosey Client
+loosey = LooseyClient(who, sender_ip, sender_port, actions, my_ip, my_port, triggerconfigfile, trialconfigfile)
+# Send script!
+loosey.send_script(out)

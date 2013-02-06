@@ -26,7 +26,8 @@ class Generator:
    #                          {"emotion" : "anger, "ramp_list" : [{"emotion_level": 3.0, "word_number":1}
    #                                                              {"emotion_level":2.0,"word_number":10}]},
    #                          {"emotion" : "joy, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
-   #                                                            {"emotion_level":2.0,"word_number":10}]}]
+   #                                                            {"emotion_level":2.0,"word_number":10}]}],
+   #   "word_pause": None/3}
    def __init__(self, chunks):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
@@ -169,6 +170,14 @@ class Generator:
       else:
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         # Check to see if we're at the end of a sentence
+         if re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren:
+            # We are. Make sure that we never have more than a single sentence on a line (as long
+            # as we're not in a stage direction)
+            insert_newline = [None]*12
+            insert_newline[-2] = " NEWLINE "
+            insert_newline[-1] = " NEWLINE "
+            self.output.append(insert_newline)
 
    # This method uses the markov chains and chunk config list to generate the actual text of the scene
    # It then polishes the scene and returns the text
