@@ -213,7 +213,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    elif trial.name == "filter":
       print "Filter"
       out.append("=================== Filter chunk ================")
-      trial_data = get_lines(data, trial.find("train").find("selections").find("selection").find("acts"))
+      trial_data = get_lines(data, trial.find("train"))
       #get the pattern
       pattern = trial.find("generate").find("pattern")
       if pattern: pattern = pattern.string
