@@ -241,9 +241,9 @@ class Generator:
          # This while loop will loop through the trial length
          # but, it will keep going until it finds punctuation if 
          # the chunk is marked to finish_sentence
-         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and self.output and not re.match(".*[.?!]\s*$", self.output[-1][-1])):
+         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and self.output and not re.match(".*[.?!]\s*$", self.output[-2][-1])):
             # Don't go too far trying to find punctuation
-            if i - chunk["trial_length"] > 25: break
+            if i - chunk["trial_length"] > 150: break
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(chunk, i, "pos")
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
