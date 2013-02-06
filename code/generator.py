@@ -26,7 +26,8 @@ class Generator:
    #                          {"emotion" : "anger, "ramp_list" : [{"emotion_level": 3.0, "word_number":1}
    #                                                              {"emotion_level":2.0,"word_number":10}]},
    #                          {"emotion" : "joy, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
-   #                                                            {"emotion_level":2.0,"word_number":10}]}]
+   #                                                            {"emotion_level":2.0,"word_number":10}]}],
+   #   "word_pause": None/3}
    def __init__(self, chunks):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text

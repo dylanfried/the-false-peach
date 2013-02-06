@@ -35,6 +35,9 @@ class LooseyClient:
       self.subscriber_port = subscriber_port
       self.trigs = []
       
+      # Keep track of whether there's a word pause for this chunk
+      self.word_pause = None
+      
       # Pull the triggers out of the config file if provided
       if triggers_file:
          trigsall = BeautifulSoup(open(triggers_file).read())
@@ -151,7 +154,6 @@ class LooseyClient:
             
             # Try to get style info from title
             style_string = l.split(" ")[4]
-            print style_string
             if re.match(".*_.*",style_string):
                # Grab style profiles from title
                styles = style_string.split("_")
@@ -180,6 +182,11 @@ class LooseyClient:
                time.sleep(0.001)
                self.send_value("style.actor",styles[2])
                time.sleep(2)
+            # Check whether we have a word_pause for this chunk
+            if re.match(".*word_pause:(\d+).*$",l):
+               self.word_pause = int(re.sub(".*word_pause:(\d+).*$","\\1",l))
+            else:
+               self.word_pause = None
             # Move on to the next line
             continue
             

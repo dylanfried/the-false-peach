@@ -177,6 +177,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    word_training_text = []
    word_order_ramp = []
    word_emotion_ramp = []
+   word_pause = None
    
    # Grab the data file
    datafile = trial.find("file")
@@ -201,6 +202,9 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    name_tag = trial.find("name")
    if name_tag: trialname += name_tag.string
    trialname += " " + style
+   # Check to see if there's a word pause set
+   word_pause = trial.find("word_pause")
+   if word_pause: trialname += " word_pause:" + word_pause.string
    
    if trial.name == "sm_filter":
       print "sm_filter not yet implemented"
@@ -309,6 +313,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunk['word_order_ramp'] = word_order_ramp
    chunk['word_emotion_ramp'] = word_emotion_ramp
    chunk['trial_length'] = trial_length
+   chunk['word_pause'] = word_pause
    chunks = []
    chunks.append(chunk)
    
