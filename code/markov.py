@@ -11,13 +11,15 @@ class Markov:
    #  - max_order: The max order generated
    #  - primary_key:  This is what the Markov transitions from and to (ie parts of speech or words),
    #    given as the index within the line (10 for part of speech, 11 for word)
-   def __init__(self, lines, max_order, primary_key):
+   #  - reset: Whether to reset cursor to beginning when out of material or backoff all the way to 0
+   #    and randomly sample
+   def __init__(self, lines, max_order, primary_key, reset):
       self.lines = lines
       self.max_order = max_order
       self.primary_key = primary_key
       self.lines_so_far = []
       self.cursor = []
-      
+      self.reset = reset
       #Have we used the markov process yet or have we just returned
       #from the first "order" lines.
       self.markoved = False
@@ -107,10 +109,29 @@ class Markov:
                self.markoved = True
                return self.lines_so_far[-1]
             else:
-               # Nope, let's back off the order
-               order = order-1
+               # No, no choices. Either reset or backoff the order
+               # If we should reset, don't back off the order, start at the beginning
+               if self.reset:
+                  self.markoved = False
+                  self.cursor = []
+                  self.cursor.append(self.lines[len(self.cursor)])
+                  self.lines_so_far.append(self.cursor[-1])
+                  return self.cursor[-1]
+               else:
+                  # Nope, let's back off the order
+                  order = order-1
          else:
-            order = order-1
+            # This history is not in our context
+            # If we should reset, don't back off the order, start at the beginning
+            if self.reset:
+               self.markoved = False
+               self.cursor = []
+               self.cursor.append(self.lines[len(self.cursor)])
+               self.lines_so_far.append(self.cursor[-1])
+               return self.cursor[-1]
+            else:
+               # Otherwise, let's back off the order
+               order = order-1
       
       # Uh-oh, this should never happen
       #print "Oh no, we didn't get anything"

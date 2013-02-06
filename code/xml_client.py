@@ -304,6 +304,13 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    finish_sentence = trial.find("generate").find("finish_sent")
    if finish_sentence: finish_sentence = finish_sentence.string == "True"
    else: finish_sentence = False
+   # Check to see if we have the reset config flag
+   # It dictates what to do when you run out of possible words:
+   #  - If True: Reset cursor at beginning
+   #  - If False or not provided: backoff order all the way to 0 and randomly sample
+   reset = trial.find("generate").find("reset")
+   if reset: reset = reset.string == "True"
+   else: reset = False
    chunk['finish_sentence'] = finish_sentence
    chunk['chunk_name'] = trialname
    chunk['POS_training_text'] = POS_training_text
@@ -314,6 +321,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunk['word_emotion_ramp'] = word_emotion_ramp
    chunk['trial_length'] = trial_length
    chunk['word_pause'] = word_pause
+   chunk['reset'] = reset
    chunks = []
    chunks.append(chunk)
    

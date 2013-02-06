@@ -27,7 +27,8 @@ class Generator:
    #                                                              {"emotion_level":2.0,"word_number":10}]},
    #                          {"emotion" : "joy, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
    #                                                            {"emotion_level":2.0,"word_number":10}]}],
-   #   "word_pause": None/3}
+   #   "word_pause": None/3,
+   #   "reset" : True/False}
    def __init__(self, chunks):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
@@ -222,11 +223,11 @@ class Generator:
    
          #initialize pos and word markovs
          max_pos_order = max([a["order"] for a in chunk["POS_order_ramp"]])
-         pos_markov = Markov(chunk["POS_training_text"], max_pos_order, 10)
+         pos_markov = Markov(chunk["POS_training_text"], max_pos_order, 10, chunk["reset"])
          pos_markov.initialize()
          
          max_word_order = max([a["order"] for a in chunk["word_order_ramp"]])
-         word_markov = Markov(chunk["word_training_text"], max_word_order, 11)
+         word_markov = Markov(chunk["word_training_text"], max_word_order, 11, chunk["reset"])
          word_markov.initialize()
          
          #initialize the current order to the first order.
