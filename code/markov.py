@@ -88,7 +88,7 @@ class Markov:
                elif f["type"] == "threshold":
                   # Grab anything with a threshold greater than that indicated
                   # we also want any NEWLINE's
-                  new_context = [met_filter for met_filter in new_context if met_filter[f["index"]] >= f["filter"] or met_filter[-1] == "NEWLINE"]
+                  new_context = [met_filter for met_filter in new_context if met_filter[f["index"]] >= f["filter"] or met_filter[-1] == "NEWLINE" or met_filter[f["index"]]<0]
                else:
                   print "Bad filter type, skipping"
                   continue
