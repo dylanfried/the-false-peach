@@ -170,6 +170,13 @@ class Generator:
       else:
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         # Check to see if we're at the end of a sentence
+         if re.match(".*[.?!]\s*$", next_word[-1]):
+            # We are. Make sure that we never have more than a single sentence on a line
+            insert_newline = [None]*12
+            insert_newline[-2] = " NEWLINE "
+            insert_newline[-1] = " NEWLINE "
+            self.output.append(insert_newline)
 
    # This method uses the markov chains and chunk config list to generate the actual text of the scene
    # It then polishes the scene and returns the text
