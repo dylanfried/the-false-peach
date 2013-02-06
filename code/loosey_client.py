@@ -26,7 +26,7 @@ class LooseyClient:
    
    # Constructor
    # Takes care of setting up the sender and subscriber
-   def __init__(self, sender_name, sender_ip, sender_port, actions, subscriber_ip, subscriber_port, triggers_file):
+   def __init__(self, sender_name, sender_ip, sender_port, actions, subscriber_ip, subscriber_port, triggers_file, trial_config_file):
       self.sender_name = sender_name
       self.sender_ip = sender_ip
       self.sender_port = sender_port
@@ -34,6 +34,12 @@ class LooseyClient:
       self.subscriber_ip = subscriber_ip
       self.subscriber_port = subscriber_port
       self.trigs = []
+      
+      # self.play used for keeping track of whether we actually send to loosey or not
+      bs = BeautifulSoup(open(trial_config_file).read())
+      play = bs.find("sender").find("play")
+      if play: self.play = play.string in ["True","true","T","t","yes","Yes"]
+      else: self.play = False 
       
       # Keep track of whether there's a word pause for this chunk
       self.word_pause = None
@@ -53,18 +59,20 @@ class LooseyClient:
                self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigwait))
       
       # OSC client for sending messages to Loosey
-      self.sender = OSC.OSCClient()
+      if self.play:
+         self.sender = OSC.OSCClient()
       
       # OSC server for subscribing to messages from Loosey
-      print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
-      self.subscriber = OSC.OSCServer((self.subscriber_ip, self.subscriber_port))
-      self.subscriber.socket.settimeout(100000)
-      # Set handlers for incoming messages
+      # word function used for handling OSC messages
       def word(addr, tags, stuff, source):
          LooseyClient.next_line[0] = " ".join(stuff)
-
-      self.subscriber.addMsgHandler("/synth.word", word)
-      self.subscriber.addDefaultHandlers()
+      if self.play:
+         print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
+         self.subscriber = OSC.OSCServer((self.subscriber_ip, self.subscriber_port))
+         self.subscriber.socket.settimeout(100000)
+         # Set handlers for incoming messages
+         self.subscriber.addMsgHandler("/synth.word", word)
+         self.subscriber.addDefaultHandlers()
       
       # Set up frequency and emotion vars
       freq = open("data/freq.txt").readlines()
@@ -86,7 +94,9 @@ class LooseyClient:
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
-      print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
+      #print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
+      if not self.play:
+         return 1
       #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
@@ -110,6 +120,9 @@ class LooseyClient:
       
    # Method for retrieving what the subscriber has received
    def get_input(self):
+      if not self.play:
+         time.sleep(1)
+         return "EOL"
       #TODO put something in here that indicates whether we're in Loosey mode or not
       #and manages whether we actually wait for a request
       # Tell the subscriber to handle a message from Loosey
@@ -173,7 +186,6 @@ class LooseyClient:
                self.send_value("line","Apply style value "+",".join(styles)+"\n")
                # Wait for Loosey to acknowledge with EOL
                while 1:
-                  break;
                   word = self.get_input()
                   if word == "EOL": break
                # Now, actually send the new styles
@@ -272,7 +284,6 @@ class LooseyClient:
             print "SENDING LINE",l
       
          while 1:
-            break;
             # For each word said, we're going to check whether we need
             # to trigger anything. Additionally, we will send out metadata
             word = self.get_input()

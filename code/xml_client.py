@@ -365,6 +365,6 @@ my_ip = sender.find("ip")
 if my_ip: my_ip = my_ip.string 
 else: sys.exit()
 # Create Loosey Client
-loosey = LooseyClient(who, sender_ip, sender_port, actions, my_ip, my_port, triggerconfigfile)
+loosey = LooseyClient(who, sender_ip, sender_port, actions, my_ip, my_port, triggerconfigfile, trialconfigfile)
 # Send script!
 loosey.send_script(out)
