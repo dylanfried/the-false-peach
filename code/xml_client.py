@@ -225,26 +225,79 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       else: length = 0
       
       # list lines in the training text
-      universe = " ".join([d[-1] for d in trial_data])
-      universe = re.sub("NEWLINE","\n",universe)
-      universe = [u.strip() for u in universe.split("\n")]
+      # Go through the trial data and break it up into a list of dictionaries
+      # where each dictionary has the speaker info and the line spoken
+      # This is useful so that we can put speaker information in our filter
+      # chunks
+      universe = []
+      line = {"speaker": "", "line":""}
+      for d in trial_data:
+         if d[4] != line["speaker"] or d[-1] == "NEWLINE":
+            universe.append(line)
+            line = {"speaker": d[4], "line":""}
+         if d[-1] != "NEWLINE":
+            line["line"] += d[-1] + " "
+      universe.append(line)
+            
       trial_lines = []
       
-      for u in universe:
-         if re.match("^"+pattern+".*",u,re.IGNORECASE): trial_lines.append(u)
+      # SUPER HACK
+      # Loop through all of the lines and check to see if they match the pattern given
+      # If they do, keep them
+      # Also, this makes sure that we end each line with end of line punctuation
+      # We do this by:
+      #  - If the line that matches the pattern has any end of line punctuation (?,!,.,;),
+      #    then we take the line up to the last of these punctuation marks
+      #  - Otherwise, we keep looking onto subsequent lines for punctuation marks
+      no_punctuation = False
+      for i in range(len(universe)):
+         u = universe[i]
+         if no_punctuation:
+            # Make sure that we haven't switched speakers
+            if u['speaker'] != universe[i-1]['speaker']:
+               # stop looking for punctuation
+               no_punctuation = False
+               continue
+            # The last line matched the pattern, but didn't have punctuation
+            # continue to look for punctuation here
+            if re.match("^.*[.!;?].*$", u['line']):
+               # We have a punctuation mark in this line, cut
+               # off everything after the first punctuation mark
+               u['line'] = re.sub("(^.*[.?;!]).*$","\\1",u['line'])
+               no_punctuation = False
+            trial_lines[-1]['line'] += " " + u['line']
+            #trial_lines.append(u)
+         # We don't have a previously matching line without punctuation.
+         # Check to see if this line matches the pattern
+         elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE):
+            # Make sure that we end each line with punctuation
+            if re.match("^.*[.!;?].*$", u['line']):
+               # We have a punctuation mark in this line, cut
+               # off everything after the last punctuation mark
+               u['line'] = re.sub("(^.*[.?;!])[^.?;!]*$","\\1",u['line'])
+            else:
+               # We don't have a punctuation mark in this line,
+               # continue on to the next line
+               no_punctuation = True
+            trial_lines.append(u)
+
+      # It's possiblet that there are still some lines without endline punctuation here
+      # This could happen because some lines end and change speaker without endline
+      # punctuation. Also, make sure that no line is too long.
+      trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 30]
 
       if length: trial_lines = random.sample(trial_lines,length)
       
       for u in trial_lines:
          # Formatting stuff left over from Mark
-         u = re.sub(" NEWLINE \)"," )",u)
-         u = re.sub("(oh oh )+"," oh oh ",u)
-         u = re.sub("(ho ho )+"," ho ho ",u)
-         u = re.sub("(nonny nonny )+"," nonny nonny ",u)
-         u = re.sub("(a-down a-down )+"," nonny nonny ",u)
-         u = re.sub("( NEWLINE)+"," NEWLINE",u)
-         if not out: out.append(u)
-         else: out.append(u)
+         u['line'] = re.sub(" NEWLINE \)"," )",u['line'])
+         u['line'] = re.sub("(oh oh )+"," oh oh ",u['line'])
+         u['line'] = re.sub("(ho ho )+"," ho ho ",u['line'])
+         u['line'] = re.sub("(nonny nonny )+"," nonny nonny ",u['line'])
+         u['line'] = re.sub("(a-down a-down )+"," nonny nonny ",u['line'])
+         u['line'] = re.sub("( NEWLINE)+"," NEWLINE",u['line'])
+         out.append(u['speaker'].upper())
+         out.append(u['line'])
       continue
    elif trial.name == "skip":
       print "skip not yet implemented"

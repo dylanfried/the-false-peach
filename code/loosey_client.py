@@ -168,12 +168,12 @@ class LooseyClient:
             print "===== Next chunk ====== "
             
             # Try to get style info from title
-            style_string = l.split(" ")[4]
-            if re.match(".*_.*",style_string):
-               # Grab style profiles from title
-               styles = style_string.split("_")
+            # Check to see if we have style info in the title
+            if re.match(".*_.*",l):
+               # we have style info, let's grab it
+               styles = re.sub(".*(\d+)_(\d+)_(\d+).*","\\1_\\2_\\3",l)
+               styles = styles.split("_")
                # Send this style info
-               
                # First, clear out the current styles
                time.sleep(2)
                self.send_value("style.sound",0)
