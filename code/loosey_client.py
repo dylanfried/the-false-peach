@@ -65,6 +65,7 @@ class LooseyClient:
       # OSC server for subscribing to messages from Loosey
       # word function used for handling OSC messages
       def word(addr, tags, stuff, source):
+         print "Word Handler", stuff
          LooseyClient.next_line[0] = " ".join(stuff)
       if self.play:
          print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
@@ -72,6 +73,7 @@ class LooseyClient:
          self.subscriber.socket.settimeout(100000)
          # Set handlers for incoming messages
          self.subscriber.addMsgHandler("/synth.word", word)
+         self.subscriber.addMsgHandler("/synth.EOL", word)
          self.subscriber.addDefaultHandlers()
       
       # Set up frequency and emotion vars
@@ -95,17 +97,21 @@ class LooseyClient:
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
       #print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
-      if not self.play:
-         return 1
+      #if not self.play:
+         #return 1
       #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
+      
+      if not self.play:
+         return 1
       # Create and send the actual message
       msg = OSC.OSCMessage()
       msg.setAddress(self.actions[what])
       msg.append(value)
       if excess: msg.append(excess)
-      print "Sending message to Loosey",self.sender_ip, self.sender_port
+      #print "Sending message to Loosey",self.sender_ip, self.sender_port
+      print "SENDING", self.actions[what], value
       try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
       except AttributeError as e:
          print "Attribute Error", e
@@ -146,8 +152,9 @@ class LooseyClient:
    # This method takes care of managing/sending triggers
    # as well.
    def send_script(self, lines):
-      if not self.play:
-         return
+      ewma = [0,0,0,0]
+      #if not self.play:
+      #   return
       # Keep track of which chunk we're on
       chunk = -1
       # Keep track of characters used to send as metadata to Loosey
@@ -155,12 +162,21 @@ class LooseyClient:
       # Keep track of the order of the characters as well
       character_order = 0
       # print "lines", lines
+      need_outro = False
+      last_style = ""
       # Loop through all of the lines in the script
       for l in lines:
+         if not l:
+            continue
          # print "lines loop", l
          # trigger_label is used to remember whether we're in a stagedir and
          # need to go through our triggers
          trigger_label = ""
+      
+         if need_outro:
+            receiver.send_value("outro",3000,trialname)
+            time.sleep(3)
+            need_outro = False
       
          # Check to see if we're in a new chunk
          if re.match(".*====.*",l):
@@ -174,6 +190,9 @@ class LooseyClient:
             if re.match(".*_.*",l):
                # we have style info, let's grab it
                styles = re.sub(".*(\d+)_(\d+)_(\d+).*","\\1_\\2_\\3",l)
+               if styles == last_style:
+                  continue
+               last_style = styles
                styles = styles.split("_")
                # Send this style info
                # First, clear out the current styles
@@ -183,12 +202,13 @@ class LooseyClient:
                self.send_value("style.video",0)
                time.sleep(2)
                # Announce the new styles
-               self.send_value("character","STYLE")
+               self.send_value("character",["STYLE"])
                time.sleep(0.001)
                self.send_value("line","Apply style value "+",".join(styles)+"\n")
                # Wait for Loosey to acknowledge with EOL
                while 1:
                   word = self.get_input()
+                  print "Getting word",word
                   if word == "EOL": break
                # Now, actually send the new styles
                time.sleep(2)
@@ -246,7 +266,7 @@ class LooseyClient:
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             # This is the TITLE voice
-            self.send_value("character","TITLE")
+            self.send_value("character",["TITLE"])
             time.sleep(0.001)
             self.send_value("intro",3000)
             time.sleep(0.001)
@@ -257,6 +277,7 @@ class LooseyClient:
             # Also send the stage direction for reading
             self.send_value("line",l)
             print "TITLE",l
+            need_outro = False
          
          # Check to see if this is a stage direction
          elif re.match("^\s*\(.*\)\s*$",l): 
@@ -266,7 +287,7 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Send the stagedir
-            self.send_value("character","STAGEDIR")
+            self.send_value("character",["STAGEDIR"])
             self.send_value("stagedir.bool",2)
             self.send_value("stagedir",l)
             # Pull off the parentheses for reading
@@ -279,7 +300,7 @@ class LooseyClient:
          else:
             # Don't use the line if it doesn't exist or if it is just parentheses
             # TODO: What happens if there's a paren in the middle of a line?
-            if not l or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
+            if not l or re.match("^\s*$", l) or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
             # Send the line
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
@@ -299,8 +320,8 @@ class LooseyClient:
             w = re.sub("^(.*)\!$","\\1",w)
             w = re.sub("^(.*):$","\\1",w)
             w = re.sub("^(.*);$","\\1",w)
-            ws = word_scores(w)
-            wf = word_freq(w)
+            ws = self.word_scores(w)
+            wf = self.word_freq(w)
       
             # Check to see if we've had a stagedir trigger in this line
             if trigger_label:
@@ -333,7 +354,7 @@ class LooseyClient:
                   if not t.wait: t.reset()
       
             # If display, then we want to put the word out there (for video display I assume)
-            if display: self.send_value("word",word)
+            #if display: self.send_value("word",word)
 
             # Now, start putting metadata together
             
