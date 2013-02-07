@@ -43,7 +43,7 @@
             <target>/line</target>
          </action>
       </actions>
-   </reciever>
+   </receiver>
    <markov>
       <name>Gertrude</name>
       <file>data/nonewline.txt</file>

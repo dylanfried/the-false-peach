@@ -1,6 +1,6 @@
 <trial>
    <sender>
-      <ip>127.0.0.1</ip>
+      <ip>192.168.1.113</ip>
       <port>1234</port>
       <play>False</play>
    </sender>
@@ -43,6 +43,10 @@
             <target>/affmaxval</target>
          </action>
          <action>
+            <source>stagedir.bool</source>
+            <target>/stagedir.bool</target>
+         </action>
+         <action>
             <source>stagedir.place</source>
             <target>/stagedir.place</target>
          </action>
@@ -77,6 +81,34 @@
          <action>
             <source>stagedir</source>
             <target>/stagedir</target>
+         </action>
+         <action>
+            <source>style.video</source>
+            <target>/style.video</target>
+         </action>
+         <action>
+            <source>style.actor</source>
+            <target>/style.actor</target>
+         </action>
+         <action>
+            <source>style.sound</source>
+            <target>/style.sound</target>
+         </action>
+         <action>
+            <source>style.lights</source>
+            <target>/style.lights</target>
+         </action>
+         <action>
+            <source>style.set</source>
+            <target>/style.set</target>
+         </action>
+         <action>
+            <source>style.text</source>
+            <target>/style.text</target>
+         </action>
+         <action>
+            <source>style.timing</source>
+            <target>/style.timing</target>
          </action>
          <action>
             <source>character</source>
