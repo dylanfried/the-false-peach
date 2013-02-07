@@ -146,6 +146,8 @@ class LooseyClient:
    # This method takes care of managing/sending triggers
    # as well.
    def send_script(self, lines):
+      if not self.play:
+         return
       # Keep track of which chunk we're on
       chunk = -1
       # Keep track of characters used to send as metadata to Loosey
