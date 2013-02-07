@@ -41,6 +41,9 @@ class Generator:
       self.grab_stagedir = False
       # Variable to keep track of words as we generate them
       self.output = []
+      # Variable to keep track of whether we have a first character for 
+      # dialogue in a given chunk
+      self.first_character = False
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -130,8 +133,8 @@ class Generator:
       if next_word[-1]=="(":
          if not self.in_paren:
             insert_newline = [None]*12
-            insert_newline[-2] = " NEWLINE "
-            insert_newline[-1] = " NEWLINE "
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
             self.output.append(next_word)
             # We're now entering a stage direction, so we're in parens
@@ -157,8 +160,8 @@ class Generator:
          insert_paren[-1] = " ) "
          self.output.append(insert_paren)
          insert_newline = [None]*12
-         insert_newline[-2] = " NEWLINE "
-         insert_newline[-1] = " NEWLINE "
+         insert_newline[-2] = "NEWLINE"
+         insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
          self.output.append(next_word)
          # Set in_paren because we're out of the parentheses now
@@ -169,6 +172,21 @@ class Generator:
          # Don't do anything
          return None
       else:
+         if not self.first_character and next_word[4] != "Stage":
+            insert_newline = [None]*12
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            insert_speaker = [None]*12
+            insert_speaker[-2] = "SPEAKER"
+            insert_speaker[-1] = next_word[4].upper()
+            self.output.append(insert_speaker)
+            insert_newline = [None]*12
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            # we now have a first character
+            self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
          # Check to see if we're at the end of a sentence
@@ -176,8 +194,8 @@ class Generator:
             # We are. Make sure that we never have more than a single sentence on a line (as long
             # as we're not in a stage direction)
             insert_newline = [None]*12
-            insert_newline[-2] = " NEWLINE "
-            insert_newline[-1] = " NEWLINE "
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
 
    # This method uses the markov chains and chunk config list to generate the actual text of the scene
