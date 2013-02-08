@@ -15,12 +15,12 @@ class headless_trigger():
 
       if not self.wait:
 
-         if self.words[self.cnt]==word: self.cnt += 1
+         if self.words[self.cnt].lower()==word: self.cnt += 1
          else: self.cnt = 0
    
       else:
 
-         if len(self.words) > self.cnt and self.words[self.cnt]==word: self.cnt += 1
+         if len(self.words) > self.cnt and self.words[self.cnt].lower()==word: self.cnt += 1
 
    def active(self):
  

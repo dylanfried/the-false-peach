@@ -79,6 +79,10 @@
             <target>/stagedir.title</target>
          </action>
          <action>
+            <source>stagedir.bool</source>
+            <target>/stagedir.bool</target>
+         </action>
+         <action>
             <source>stagedir</source>
             <target>/stagedir</target>
          </action>

@@ -65,7 +65,7 @@ class LooseyClient:
       # OSC server for subscribing to messages from Loosey
       # word function used for handling OSC messages
       def word(addr, tags, stuff, source):
-         print "Word Handler", stuff
+         #print "Word Handler", stuff
          LooseyClient.next_line[0] = " ".join(stuff)
       if self.play:
          print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
@@ -95,8 +95,40 @@ class LooseyClient:
       
       # Subscribe to channels
       if self.play:
-         self.send_value("subscribe","GREG./synth.EOL ANNIE 1")
-      
+         self.subscribe("subscribe",["GREG./synth.EOL", "ANNIE", 0])
+         self.subscribe("subscribe",["ANNIE./stagedir.bool", "ANNIE", -127])
+   
+   # Method for subscribing to channels from Loosey
+   # Return a 1 on success or 0 on failure
+   def subscribe(self,what,value,excess=""):
+      #if not self.play:
+         #return 1
+      #print self.actions
+      # Make sure that this is one of our defined actions
+      if not what in self.actions: return 0
+      #print "SENDING", self.actions[what], value, excess
+      if not self.play:
+         return 1
+      # Create and send the actual message
+      msg = OSC.OSCMessage()
+      msg.setAddress(self.actions[what])
+      msg.append(value)
+      if excess: msg.append(excess)
+      #print "Sending message to Loosey",self.sender_ip, self.sender_port
+      try: self.sender.sendto(msg, (self.sender_ip,8110))
+      except AttributeError as e:
+         print "Attribute Error", e
+         #print "Attribute Error",e.errno,e.strerror
+      except OSC.OSCClientError as e:
+         print "OSC Client Error", e
+      except TypeError as e:
+         print "Type Error", e
+      except: 
+         print "Exception when trying to send",sys.exc_info()[0]
+         return 0
+      # Success!
+      return 1
+
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
@@ -106,7 +138,7 @@ class LooseyClient:
       #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
-      print "SENDING", self.actions[what], value, excess
+      #print "SENDING", self.actions[what], value, excess
       if not self.play:
          return 1
       # Create and send the actual message
@@ -137,6 +169,7 @@ class LooseyClient:
       # Tell the subscriber to handle a message from Loosey
       # TODO: should this be running in parallel?
       self.subscriber.handle_request()
+      print "Get input", LooseyClient.next_line[0]
       # Return the handled request
       return LooseyClient.next_line[0]
    
@@ -196,6 +229,7 @@ class LooseyClient:
          # We need an outro because we're moving into a section
          # after something that had "ACT" or "SCENE"
          if need_outro:
+            print "SENDING OUTRO"
             self.send_value("outro",3000,name_for_outro)
             time.sleep(3)
             need_outro = False
@@ -211,7 +245,7 @@ class LooseyClient:
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
                # we have style info, let's grab it
-               styles = re.sub(".*(\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
+               styles = re.sub(".* (\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
                # Check to see if we're at a new scene
                if styles == last_style:
                   # We are in the same scene, so we don't
@@ -228,7 +262,7 @@ class LooseyClient:
                self.send_value("style.sound",0)
                time.sleep(0.001)
                self.send_value("style.video",0)
-               time.sleep(0.001)
+               time.sleep(0.5)
                self.send_value("style.lights",0)
                time.sleep(2)
                # Announce the new styles
@@ -238,8 +272,9 @@ class LooseyClient:
                # Wait for Loosey to acknowledge with EOL
                while 1:
                   word = self.get_input()
-                  print "Getting word",word
+                  #print "Getting word",word
                   if word == "EOL": break
+               print "SENDING STYLES", last_style
                # Now, actually send the new styles
                time.sleep(2)
                self.send_value("style.sound",styles[1])
@@ -247,7 +282,7 @@ class LooseyClient:
                self.send_value("style.video",styles[0])
                time.sleep(0.001)
                self.send_value("style.actor",styles[2])
-               time.sleep(0.001)
+               time.sleep(0.5)
                self.send_value("style.lights",styles[3])
                time.sleep(2)
             # Check whether we have a word_pause for this chunk
@@ -358,6 +393,7 @@ class LooseyClient:
       
             # Check to see if we've had a stagedir trigger in this line
             if trigger_label:
+               print "YES"
                tmptrigs = []
                # Loop through all the triggers and update them with
                # the current word. If they're active now, put them in
