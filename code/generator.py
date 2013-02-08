@@ -44,6 +44,10 @@ class Generator:
       # Variable to keep track of whether we have a first character for 
       # dialogue in a given chunk
       self.first_character = False
+      # Variable to keep track of how many words in a row we have
+      # without a NEWLINE. This is used as we generate text to make
+      # sure that no line gets too long.
+      self.line_length = 0
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -124,6 +128,9 @@ class Generator:
       # grab_stagedir will be set if the last word was an open
       # paren and we need to grab the stagedir from the next word
       if self.grab_stagedir and next_word[-1] != ")": 
+         # Reset self.line_length because we're in a stagedir
+         # and don't care about line length
+         self.line_length = 0
          insert_stagedir = [None]*12
          insert_stagedir[-1] = next_word[-2]
          self.output.append(insert_stagedir)
@@ -131,6 +138,9 @@ class Generator:
          self.grab_stagedir = False
       # Check to see if we're entering a stage direction
       if next_word[-1]=="(":
+         # Reset self.line_length because we're in a stagedir
+         # and don't care about line length
+         self.line_length = 0
          if not self.in_paren:
             insert_newline = [None]*12
             insert_newline[-2] = "NEWLINE"
@@ -144,6 +154,9 @@ class Generator:
             self.grab_stagedir = True
       # Check to see if we're at the end of a stage direction
       elif next_word[-1]==")":
+         # Reset self.line_length because we're in a stagedir
+         # and don't care about line length
+         self.line_length = 0
          # Check to see if we're already in a stage direction
          if self.in_paren:
             # If we are, then we just want to end it
@@ -153,6 +166,9 @@ class Generator:
       # Check to see if we've got a speaker now and 
       # we're in a stage direction
       elif next_word[-2] == "SPEAKER" and self.in_paren:
+         # Reset self.line_length because we're in a stagedir
+         # and don't care about line length
+         self.line_length = 0
          # If we are, then we want to end the stage direction, 
          # then put a NEWLINE and the speaker
          insert_paren = [None]*12
@@ -170,9 +186,15 @@ class Generator:
       elif self.in_paren and next_word[-1] == "NEWLINE":
          # If we are, then we don't want to put the newline in
          # Don't do anything
+         # Reset self.line_length because we're in a stagedir
+         # and don't care about line length
+         self.line_length = 0
          return None
       else:
+         # Check to see if we're getting text but don't yet
+         # have a speaker.
          if not self.first_character and next_word[4] != "Stage":
+            # We need to put in a speaker
             insert_newline = [None]*12
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -185,10 +207,21 @@ class Generator:
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
+            # starting new line, reset line length
+            self.line_length = 0
             # we now have a first character
             self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         self.line_length += 1
+         # Check to see if our line is too long
+         if self.line_length > 20:
+            # it is, let's put a NEWLINE in and reset the counter
+            insert_newline = [None]*12
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            self.line_length = 0
          # Check to see if we're at the end of a sentence
          if re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren:
             # We are. Make sure that we never have more than a single sentence on a line (as long
