@@ -26,6 +26,7 @@ tdlist = os.listdir(dir)
 tvid = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"]
 tsnd = ["1","2","3","4","5"]
 tact = ["0","1","1","0","1","0","0"]
+tlight = ["skot","theatre","emotions"]
 
 tdlist = [l for l in tdlist if re.match(".*\.xml",l) and not re.match(".*trigger.*",l)]
 
@@ -33,6 +34,7 @@ dlist = random.sample(tdlist,cnt)
 vid = []
 act = []
 snd = []
+light = []
 
 for d in dlist:
 
@@ -47,17 +49,21 @@ for d in dlist:
       if "actor" in pins[d]: 
          act.append(pins[d]["actor"])
       else: act.append(random.sample(tact,1)[0])
+      if "light" in pins[d]: 
+         light.append(pins[d]["light"])
+      else: light.append(random.sample(tlight,1)[0])
 
    else:
 
       snd.append(random.sample(tsnd,1)[0])
       vid.append(random.sample(tvid,1)[0])
       act.append(random.sample(tact,1)[0])
+      light.append(random.sample(tlight,1)[0])
 
 for i in range(len(dlist)):
 
    l = dlist[i]
-   a = str(vid[i])+"_"+str(snd[i])+"_"+str(act[i])
+   a = str(vid[i])+"_"+str(snd[i])+"_"+str(act[i])+"_"+str(light[i])
 
    bs = BeautifulSoup(open(dir+l).read())
 

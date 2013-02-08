@@ -207,7 +207,7 @@ class LooseyClient:
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
                # we have style info, let's grab it
-               styles = re.sub(".*(\d+)_(\d+)_(\d+).*","\\1_\\2_\\3",l)
+               styles = re.sub(".*(\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
                # Check to see if we're at a new scene
                if styles == last_style:
                   # We are in the same scene, so we don't
@@ -224,6 +224,8 @@ class LooseyClient:
                self.send_value("style.sound",0)
                time.sleep(0.001)
                self.send_value("style.video",0)
+               time.sleep(0.001)
+               self.send_value("style.lights",0)
                time.sleep(2)
                # Announce the new styles
                self.send_value("character",["STYLE"])
@@ -241,6 +243,8 @@ class LooseyClient:
                self.send_value("style.video",styles[0])
                time.sleep(0.001)
                self.send_value("style.actor",styles[2])
+               time.sleep(0.001)
+               self.send_value("style.lights",styles[3])
                time.sleep(2)
             # Check whether we have a word_pause for this chunk
             if re.match(".*word_pause:(\d+).*$",l):
