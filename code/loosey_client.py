@@ -152,6 +152,8 @@ class LooseyClient:
    # This method takes care of managing/sending triggers
    # as well.
    def send_script(self, lines):
+      # This is a variable to keep track of a weighted moving
+      # average of affect values that we send to Loosey
       ewma = [0,0,0,0]
       #if not self.play:
       #   return
@@ -162,7 +164,14 @@ class LooseyClient:
       # Keep track of the order of the characters as well
       character_order = 0
       # print "lines", lines
+      # Variable to keep track of whether we need an outro from 
+      # a scene. This should only be set to True if we have 
+      # something with "ACT" or "SCENE" in it
       need_outro = False
+      # Variable to keep track of what the last style was because
+      # a change in style indicates a new scene.
+      # TODO: put in a better system for managing when we're transitioning
+      # scenes
       last_style = ""
       # Loop through all of the lines in the script
       for l in lines:
@@ -173,6 +182,8 @@ class LooseyClient:
          # need to go through our triggers
          trigger_label = ""
       
+         # We need an outro because we're moving into a section
+         # after something that had "ACT" or "SCENE"
          if need_outro:
             receiver.send_value("outro",3000,trialname)
             time.sleep(3)
@@ -190,8 +201,14 @@ class LooseyClient:
             if re.match(".*_.*",l):
                # we have style info, let's grab it
                styles = re.sub(".*(\d+)_(\d+)_(\d+).*","\\1_\\2_\\3",l)
+               # Check to see if we're at a new scene
                if styles == last_style:
+                  # We are in the same scene, so we don't
+                  # want to send the style info again
                   continue
+               # otherwise, we are entering a new scene
+               # so send the style info again and remember
+               # what this scene is
                last_style = styles
                styles = styles.split("_")
                # Send this style info
@@ -277,7 +294,8 @@ class LooseyClient:
             # Also send the stage direction for reading
             self.send_value("line",l)
             print "TITLE",l
-            need_outro = False
+            # Need an outro before the next line
+            need_outro = True
          
          # Check to see if this is a stage direction
          elif re.match("^\s*\(.*\)\s*$",l): 
@@ -298,7 +316,7 @@ class LooseyClient:
       
          # otherwise, this is a normal dialogue line
          else:
-            # Don't use the line if it doesn't exist or if it is just parentheses
+            # Don't use the line if it doesn't exist or if it is just parentheses or just whitespace
             # TODO: What happens if there's a paren in the middle of a line?
             if not l or re.match("^\s*$", l) or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
             # Send the line
@@ -354,6 +372,7 @@ class LooseyClient:
                   if not t.wait: t.reset()
       
             # If display, then we want to put the word out there (for video display I assume)
+            # No one is using this, so taking it out
             #if display: self.send_value("word",word)
 
             # Now, start putting metadata together
