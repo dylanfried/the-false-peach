@@ -79,6 +79,34 @@
             <target>/stagedir</target>
          </action>
          <action>
+            <source>style.video</source>
+            <target>/style.video</target>
+         </action>
+         <action>
+            <source>style.actor</source>
+            <target>/style.actor</target>
+         </action>
+         <action>
+            <source>style.sound</source>
+            <target>/style.sound</target>
+         </action>
+         <action>
+            <source>style.lights</source>
+            <target>/style.lights</target>
+         </action>
+         <action>
+            <source>style.set</source>
+            <target>/style.set</target>
+         </action>
+         <action>
+            <source>style.text</source>
+            <target>/style.text</target>
+         </action>
+         <action>
+            <source>style.timing</source>
+            <target>/style.timing</target>
+         </action>
+         <action>
             <source>character</source>
             <target>/character</target>
          </action>
