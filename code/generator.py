@@ -190,6 +190,15 @@ class Generator:
          # and don't care about line length
          self.line_length = 0
          return None
+      elif next_word[-2] == "SPEAKER":
+         # Make sure that we have a NEWLINE before and after every speaker
+         insert_newline = [None]*12
+         insert_newline[-2] = "NEWLINE"
+         insert_newline[-1] = "NEWLINE"
+         self.output.append(insert_newline)
+         self.output.append(next_word)
+         self.output.append(insert_newline)
+         self.line_length = 0
       else:
          # Check to see if we're getting text but don't yet
          # have a speaker.
