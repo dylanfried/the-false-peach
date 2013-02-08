@@ -93,6 +93,10 @@ class LooseyClient:
          flds = emo[i].split(",")
          self.emotions[flds[0]] = [round(float(f),1) for f in flds[1:]]
       
+      # Subscribe to channels
+      if self.play:
+         self.send_value("subscribe","GREG./synth.EOL ANNIE 1")
+      
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):

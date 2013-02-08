@@ -114,6 +114,10 @@
             <source>line</source>
             <target>/line</target>
          </action>
+         <action>
+            <source>subscribe</source>
+            <target>/subscribe</target>
+         </action>
       </actions>
    </reciever>
 </trial>
