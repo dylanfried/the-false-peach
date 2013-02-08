@@ -372,7 +372,7 @@ class LooseyClient:
                   maxpriority = max(tmppriority)
                   # Grab everything with that priority
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
-                  print "SENDING", allt[0].stage, allt[0].words[0]
+                  print "SENDING TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Send one of them
                   self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
                   time.sleep(allt[0].pause/1000.0)
