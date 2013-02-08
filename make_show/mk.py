@@ -67,7 +67,7 @@ for i in range(len(dlist)):
 
    bs = BeautifulSoup(open(dir+l).read())
 
-   for s in bs.findAll(["markov","mirror"]):
+   for s in bs.findAll(["markov","mirror","filter"]):
 
       s["style"] = a
       print s

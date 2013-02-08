@@ -286,7 +286,8 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       # punctuation. Also, make sure that no line is too long.
       trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 30]
 
-      if length: trial_lines = random.sample(trial_lines,length)
+      if length and length <= len(trial_lines): 
+            trial_lines = random.sample(trial_lines,length)
       
       for u in trial_lines:
          # Formatting stuff left over from Mark
