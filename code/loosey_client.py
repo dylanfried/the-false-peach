@@ -102,7 +102,7 @@ class LooseyClient:
       #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
-      
+      print "SENDING", self.actions[what], value, excess
       if not self.play:
          return 1
       # Create and send the actual message
@@ -111,7 +111,6 @@ class LooseyClient:
       msg.append(value)
       if excess: msg.append(excess)
       #print "Sending message to Loosey",self.sender_ip, self.sender_port
-      print "SENDING", self.actions[what], value
       try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
       except AttributeError as e:
          print "Attribute Error", e
@@ -173,10 +172,18 @@ class LooseyClient:
       # TODO: put in a better system for managing when we're transitioning
       # scenes
       last_style = ""
+      # Variable to keep track of current chunk name in case we have an outro
+      # and need to send the name along
+      name_for_outro = ""
       # Loop through all of the lines in the script
       for l in lines:
          if not l:
             continue
+            
+         # grab the name of the chunk to pass on to the outro if necessary
+         if re.match(".*=== CHUNK \d [A-Za-z0-9]+.*",l):
+            name_for_outro = re.sub(".*=== CHUNK \d ([A-Za-z0-9]+).*","\\1",l)
+            
          # print "lines loop", l
          # trigger_label is used to remember whether we're in a stagedir and
          # need to go through our triggers
@@ -185,7 +192,7 @@ class LooseyClient:
          # We need an outro because we're moving into a section
          # after something that had "ACT" or "SCENE"
          if need_outro:
-            receiver.send_value("outro",3000,trialname)
+            self.send_value("outro",3000,name_for_outro)
             time.sleep(3)
             need_outro = False
       
