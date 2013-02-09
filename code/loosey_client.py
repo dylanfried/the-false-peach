@@ -268,6 +268,7 @@ class LooseyClient:
                # Announce the new styles
                self.send_value("character",["STYLE"])
                time.sleep(0.001)
+               print "SENDING LINE", "Apply style value "+",".join(styles)
                self.send_value("line","Apply style value "+",".join(styles)+"\n")
                # Wait for Loosey to acknowledge with EOL
                while 1:
