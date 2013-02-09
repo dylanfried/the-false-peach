@@ -212,7 +212,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
       #lines = get_lines(data, trial.find('train'))
    elif trial.name == "filter":
       print "Filter"
-      out.append("=================== Filter chunk ================")
+      out.append("=================== CHUNK 1 " + trialname + " ================")
       trial_data = get_lines(data, trial.find("train"))
       #get the pattern
       pattern = trial.find("generate").find("pattern")
@@ -269,7 +269,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
             #trial_lines.append(u)
          # We don't have a previously matching line without punctuation.
          # Check to see if this line matches the pattern
-         elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE):
+         elif re.match("^"+pattern+".*",u['line']):
             # Make sure that we end each line with punctuation
             if re.match("^.*[.!;?].*$", u['line']):
                # We have a punctuation mark in this line, cut
