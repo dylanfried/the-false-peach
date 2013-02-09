@@ -46,6 +46,12 @@ def get_lines(data, xml_constraints):
             lines = lines.string
             lines = expand(lines.split(","))
          else: lines=[]
+         
+         words = selection.find("words")
+         if words: 
+            words = words.string
+            words = expand(words.split(","))
+         else: words=[]
       
          characters = selection.find("characters")
          if characters: 
@@ -63,7 +69,7 @@ def get_lines(data, xml_constraints):
             pos = [c.upper() for c in pos]
          else: pos=[]
 
-         constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"characters":characters,"pos":pos})
+         constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"words":words,"characters":characters,"pos":pos})
 
    else:
       # Only a single constraint
@@ -84,6 +90,12 @@ def get_lines(data, xml_constraints):
          lines = lines.string
          lines = expand(lines.split(","))
       else: lines=[]
+      
+      words = xml_constraints.find("words")
+      if words: 
+         words = words.string
+         words = expand(words.split(","))
+      else: words=[]
 
       characters = xml_constraints.find("characters")
       if characters:
@@ -93,7 +105,7 @@ def get_lines(data, xml_constraints):
          characters = [re.sub(" ","_",c.upper()) for c in characters]
       else: characters=[]
 
-      constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"characters":characters})
+      constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"words":words,"characters":characters})
 
    for m in range(len(data)):
 
@@ -110,6 +122,10 @@ def get_lines(data, xml_constraints):
             continue
 
          if c["lines"] and (not data[m][2] in c["lines"]): 
+            keep.append(0)
+            continue
+            
+         if c["words"] and (not data[m][3] in c["words"]): 
             keep.append(0)
             continue
 
