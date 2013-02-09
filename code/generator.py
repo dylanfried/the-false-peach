@@ -28,7 +28,8 @@ class Generator:
    #                          {"emotion" : "joy, "ramp_list" : [{"emotion_level": 3.0, "word_number":1},
    #                                                            {"emotion_level":2.0,"word_number":10}]}],
    #   "word_pause": None/3,
-   #   "reset" : True/False}
+   #   "reset" : True/False,
+   #   "forced_character": "HAMLET"/None}
    def __init__(self, chunks):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
@@ -48,6 +49,8 @@ class Generator:
       # without a NEWLINE. This is used as we generate text to make
       # sure that no line gets too long.
       self.line_length = 0
+      # Variable to keep track of whether the current chunk has a forced character
+      self.forced_character = None
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -179,6 +182,10 @@ class Generator:
          insert_newline[-2] = "NEWLINE"
          insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
+         # If we have a forced character, change this speaker
+         # to that one
+         if self.forced_character:
+            next_word[-1] = self.forced_character
          self.output.append(next_word)
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
@@ -196,6 +203,10 @@ class Generator:
          insert_newline[-2] = "NEWLINE"
          insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
+         # If we have a forced character, change this speaker
+         # to that one
+         if self.forced_character:
+            next_word[-1] = self.forced_character
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
@@ -211,6 +222,10 @@ class Generator:
             insert_speaker = [None]*12
             insert_speaker[-2] = "SPEAKER"
             insert_speaker[-1] = next_word[4].upper()
+            # If we have a forced character, change this speaker
+            # to that one
+            if self.forced_character:
+               insert_speaker[-1] = self.forced_character
             self.output.append(insert_speaker)
             insert_newline = [None]*12
             insert_newline[-2] = "NEWLINE"
@@ -262,6 +277,8 @@ class Generator:
          # Reset in_paren and grab_stagedir because we're starting a new chunk
          self.in_paren = False
          self.grab_stagedir = False
+         self.forced_character = chunk["forced_character"]
+         print "forced?", self.forced_character
          # Set chunk title stuff
          chunk_title = [None]*12
          chunkcount = chunkcount + 1

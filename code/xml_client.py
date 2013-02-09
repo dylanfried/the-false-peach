@@ -251,6 +251,10 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
          if d[4] != line["speaker"] or d[-1] == "NEWLINE":
             universe.append(line)
             line = {"speaker": d[4], "line":""}
+            # Check to see if we're forcing a single character
+            forced_character = trial.find("forced_character")
+            if forced_character:
+               line['speaker'] = forced_character.string
          if d[-1] != "NEWLINE":
             line["line"] += d[-1] + " "
       universe.append(line)
@@ -381,6 +385,10 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    reset = trial.find("generate").find("reset")
    if reset: reset = reset.string == "True"
    else: reset = False
+   # Check to see if we're forcing a single character
+   forced_character = trial.find("forced_character")
+   if forced_character: forced_character = forced_character.string
+   else: forced_character = None
    chunk['finish_sentence'] = finish_sentence
    chunk['chunk_name'] = trialname
    chunk['POS_training_text'] = POS_training_text
@@ -392,6 +400,7 @@ for trial in bs.findAll(["markov","mirror","skip","filter","sm_filter"]):
    chunk['trial_length'] = trial_length
    chunk['word_pause'] = word_pause
    chunk['reset'] = reset
+   chunk['forced_character'] = forced_character
    chunks = []
    chunks.append(chunk)
    
