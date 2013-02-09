@@ -15,28 +15,29 @@
       <generate>
          <reset>True</reset>
          <length>4</length>
-         <k>1</k>
+         <k>7</k>
       </generate>
    </markov>
-   <mirror>
-     <name>Oph</name>
-   	 <scene_pause>3</scene_pause>
-   	 <forced_character>Ophelia</forced_character>
+    <markov>
+    <name>MadOph</name>
+    <first_character>Ophelia</first_character>
+   	<file>data/nonewline.txt</file>
       <train>
-         <file>data/brute.txt</file>
-      </train>
-      <generate>
       	<selections>
       		<selection>
          		<acts>4</acts>
-        		 <scenes>5</scenes>
-        		 <lines>21</lines>
-        		 <characters>Ophelia, Stage</characters>
-        	</selection>
-        </selections>
-       <reset>True</reset>
+         		<scenes>5</scenes>
+         		<lines>21</lines>
+			<characters>Ophelia</characters>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>8</length>
+         <k>7</k>
       </generate>
-   </mirror>
+   </markov>
    <markov>
     <name>MadOph</name>
    	<file>data/nonewline.txt</file>
@@ -71,6 +72,26 @@
          <reset>True</reset>
          <length>500</length>
          <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+    <name>MadOph</name>
+   	<file>data/nonewline.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>188-198</lines>
+				<characters>Ophelia,Stage</characters>
+			</selection>
+		</selections>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>50</length>
+         <k>1</k>
       </generate>
    </markov>
    <markov>

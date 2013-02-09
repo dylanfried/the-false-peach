@@ -31,7 +31,7 @@
    </filter>
    <markov>
    	   <name>claudius</name>
-       <file>data/brutefix.txt</file>
+       <file>data/brute.txt</file>
        <first_character>KING</first_character>
       <train>
          <acts>3</acts>
@@ -59,9 +59,8 @@
          <type>threshold</type>
          <ramp emotion="anger">
             <point line=-1 value=-0.5 />
-            <point line=51 value=3 />
+            <point line=51 value=2.0 />
          </ramp>
-         <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>50</length>
          <k>2</k>

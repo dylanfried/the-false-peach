@@ -4,7 +4,7 @@
       <train>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
          <characters>HAMLET, GUILDENSTERN</characters>
       </train>
       <generate>
@@ -20,7 +20,7 @@
       <train>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
          <characters>HAMLET</characters>
       </train>
       <generate>
@@ -34,14 +34,14 @@
      <name>kingthingmirror</name>
     <file>data/brute.txt</file>
      <train>
-       <acts>1,2,3,4,5</acts>
+        <acts>1,2,3,4,5</acts>
      </train>
      <generate>
      	<selections>
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -58,7 +58,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
          <characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -75,7 +75,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -92,7 +92,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -109,7 +109,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -126,7 +126,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>
@@ -143,7 +143,7 @@
      		<selection>
          <acts>4</acts>
          <scenes>2</scenes>
-         <lines>27-29</lines>
+         <lines>27-28</lines>
    	   	<characters>HAMLET,GUILDENSTERN</characters>
 		</selection>
 		</selections>

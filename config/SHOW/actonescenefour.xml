@@ -18,6 +18,22 @@
       <train>
          <acts>1</acts>
          <scenes>4</scenes>
+         <lines>1</lines>
+         <characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>10</length>
+         <k>5</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>4</scenes>
       </train>
       <generate>
          <reset>True</reset>

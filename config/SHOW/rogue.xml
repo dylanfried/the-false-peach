@@ -1,5 +1,5 @@
    <markov>
-    <name>Host</name>
+    <name>rogue</name>
    	<file>data/brute.txt</file>
       <train>
       	<selections>
@@ -13,7 +13,8 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>1000</length>
+         <finish_sent>True</finish_sent>
+         <length>500</length>
          <k>7</k>
       </generate>
    </markov>
