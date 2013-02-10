@@ -2,7 +2,7 @@
    <triggers stagedir='place'>
       <word priority=1 pause=0>platform</word>
       <word priority=1 pause=0>room</word>
-      <word priority=1 pause=0>another room</word>
+      <word priority=2 pause=0>another room</word>
       <word priority=1 pause=0>hall</word>
       <word priority=1 pause=0>plain</word>
       <word priority=1 pause=0>closet</word>
