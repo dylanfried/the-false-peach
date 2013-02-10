@@ -43,10 +43,6 @@
             <target>/affmaxval</target>
          </action>
          <action>
-            <source>stagedir.bool</source>
-            <target>/stagedir.bool</target>
-         </action>
-         <action>
             <source>stagedir.place</source>
             <target>/stagedir.place</target>
          </action>
@@ -103,16 +99,8 @@
             <target>/style.lights</target>
          </action>
          <action>
-            <source>style.set</source>
-            <target>/style.set</target>
-         </action>
-         <action>
-            <source>style.text</source>
-            <target>/style.text</target>
-         </action>
-         <action>
-            <source>style.timing</source>
-            <target>/style.timing</target>
+            <source>scene.progress</source>
+            <target>/scene.progress</target>
          </action>
          <action>
             <source>character</source>

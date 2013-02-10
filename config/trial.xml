@@ -30,7 +30,7 @@
             <source>affmax</source>
             <target>/affmax</target>
          </action>
-	 	<action>
+         <action>
             <source>affvals</source>
             <target>/affvals</target>
          </action>
@@ -99,16 +99,8 @@
             <target>/style.lights</target>
          </action>
          <action>
-            <source>style.set</source>
-            <target>/style.set</target>
-         </action>
-         <action>
-            <source>style.text</source>
-            <target>/style.text</target>
-         </action>
-         <action>
-            <source>style.timing</source>
-            <target>/style.timing</target>
+            <source>scene.progress</source>
+            <target>/scene.progress</target>
          </action>
          <action>
             <source>character</source>
