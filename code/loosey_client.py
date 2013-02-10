@@ -206,6 +206,9 @@ class LooseyClient:
       # Variable to keep track of current chunk name in case we have an outro
       # and need to send the name along
       name_for_outro = ""
+      # variables to keep track of word count
+      scene_word_count = -1
+      current_word_count = -1
       # Loop through all of the lines in the script
       for l in lines:
          if not l:
@@ -232,6 +235,12 @@ class LooseyClient:
          if re.match(".*####.*",l):
             # new Scene
             print l
+            # Try to get word count information from title
+            current_word_count = 0
+            if re.match(".*word_count.*", l):
+               scene_word_count = int(re.sub(".*word_count:(\d+).*", "\\1",l))
+            else:
+               scene_word_count = -1
             # Try to get style info from title
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
@@ -394,6 +403,7 @@ class LooseyClient:
             w = re.sub("^(.*);$","\\1",w)
             ws = self.word_scores(w)
             wf = self.word_freq(w)
+            current_word_count += 1
       
             # Check to see if we've had a stagedir trigger in this line
             if trigger_label:
@@ -454,3 +464,5 @@ class LooseyClient:
             self.send_value("affvals",[normalize/5 for normalize in ws])
             self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
+            if scene_word_count > 0:
+               self.send_value("scene.progress",(current_word_count+0.0)/(scene_word_count+0.0))

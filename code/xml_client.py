@@ -176,14 +176,16 @@ programname = re.sub("^.*\/(.*)\.xml$","\\1",programname)
 
 # hold all of the script generated to then send to loosey
 out = []
+scene_lines = []
 
 # Get going with the scene config file
 bs = BeautifulSoup(open(sceneconfigfile).read())
 #bs = bs.find("trial", recursive=False)
 # Grab all the immediate children
 for scene in bs.findAll("scene"):
-   # Put scene information in:
-   out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " #################")
+   # Reset the scene line container and word count
+   scene_lines = []
+   scene_word_count = 0
    for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter"]):
       #print "Trial type:", trial.name
       # Match the strategy name to a set of parameters to pass on to
@@ -231,7 +233,7 @@ for scene in bs.findAll("scene"):
          #lines = get_lines(data, trial.find('train'))
       elif trial.name == "filter":
          print "Filter"
-         out.append("=================== CHUNK 1 " + trialname + " ================")
+         scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
          trial_data = get_lines(data, trial.find("train"))
          #get the pattern
          pattern = trial.find("generate").find("pattern")
@@ -320,8 +322,12 @@ for scene in bs.findAll("scene"):
             u['line'] = re.sub("(nonny nonny )+"," nonny nonny ",u['line'])
             u['line'] = re.sub("(a-down a-down )+"," nonny nonny ",u['line'])
             u['line'] = re.sub("( NEWLINE)+"," NEWLINE",u['line'])
-            out.append(u['speaker'].upper())
-            out.append(u['line'])
+            scene_lines.append(u['speaker'].upper())
+            # increment scene_word_count
+            scene_word_count += 1
+            scene_lines.append(u['line'])
+            # increment word count
+            scene_word_count += len(scene_lines[-1])
          continue
       elif trial.name == "skip":
          print "skip not yet implemented"
@@ -408,10 +414,15 @@ for scene in bs.findAll("scene"):
       chunks.append(chunk)
       
       gen = Generator(chunks)
-      if out:
-         out += gen.generate()
+      if scene_lines:
+         scene_lines += gen.generate()
       else:
-         out = gen.generate()
+         scene_lines = gen.generate()
+      # increment word count
+      scene_word_count += len(scene_lines[-1])
+   # Put scene information in:
+   out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " word_count:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+   out += scene_lines
   
 print "Script generated:","\n".join(out)
 
