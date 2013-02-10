@@ -26,7 +26,7 @@ tdlist = os.listdir(dir)
 tvid = ["1","2","8","10a","11","12","13"]
 tsnd = ["0","1","2","3","4","5","6"]
 tact = ["0","1","1","0","1","0","0"]
-tlight = ["skot","theatre","emotions"]
+tlight = ["skot","theatre","emotions","play"]
 
 tdlist = [l for l in tdlist if re.match("sh.*\.xml$",l) and not re.match(".*trigger.*",l)]
 
