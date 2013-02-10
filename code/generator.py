@@ -278,7 +278,6 @@ class Generator:
          self.in_paren = False
          self.grab_stagedir = False
          self.forced_character = chunk["forced_character"]
-         print "forced?", self.forced_character
          # Set chunk title stuff
          chunk_title = [None]*12
          chunkcount = chunkcount + 1

@@ -257,13 +257,29 @@ class LooseyClient:
                last_style = styles
                styles = styles.split("_")
                # Send this style info
-               # First, clear out the current styles
+               # First, clear out the current styles, etc
                time.sleep(2)
-               self.send_value("style.sound",0)
+               self.send_value("stagedir.place","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.exit","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.entrance","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.sound","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.voice","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.action","zero")
+               time.sleep(0.001)
+               self.send_value("stagedir.title","zero")
+               time.sleep(0.001)
+               self.send_value("style.sound","zero")
                time.sleep(0.001)
                self.send_value("style.video",0)
+               time.sleep(0.001)
+               self.send_value("style.actor","zero")
                time.sleep(0.5)
-               self.send_value("style.lights",0)
+               self.send_value("style.lights","zero")
                time.sleep(2)
                # Announce the new styles
                self.send_value("character",["STYLE"])
