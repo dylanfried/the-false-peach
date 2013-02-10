@@ -188,13 +188,12 @@ class LooseyClient:
    # This method takes care of managing/sending triggers
    # as well.
    def send_script(self, lines):
+      print "\n\n SENDING SCRIPT \n\n"
       # This is a variable to keep track of a weighted moving
       # average of affect values that we send to Loosey
       ewma = [0,0,0,0]
       #if not self.play:
       #   return
-      # Keep track of which chunk we're on
-      chunk = -1
       # Keep track of characters used to send as metadata to Loosey
       characters = {}
       # Keep track of the order of the characters as well
@@ -204,11 +203,6 @@ class LooseyClient:
       # a scene. This should only be set to True if we have 
       # something with "ACT" or "SCENE" in it
       need_outro = False
-      # Variable to keep track of what the last style was because
-      # a change in style indicates a new scene.
-      # TODO: put in a better system for managing when we're transitioning
-      # scenes
-      last_style = ""
       # Variable to keep track of current chunk name in case we have an outro
       # and need to send the name along
       name_for_outro = ""
@@ -234,28 +228,18 @@ class LooseyClient:
             time.sleep(3)
             need_outro = False
       
-         # Check to see if we're in a new chunk
-         if re.match(".*====.*",l):
-            # new chunk
-            # Increment the chunk counter
-            chunk += 1
-            print "===== Next chunk ====== "
-            
+         # Check to see if we're in a new scene
+         if re.match(".*####.*",l):
+            # new Scene
+            print l
             # Try to get style info from title
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
                # we have style info, let's grab it
-               styles = re.sub(".* (\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
-               # Check to see if we're at a new scene
-               if styles == last_style:
-                  # We are in the same scene, so we don't
-                  # want to send the style info again
-                  continue
-               # otherwise, we are entering a new scene
-               # so send the style info again and remember
+               styles_string = re.sub(".* (\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
+               # send the style info again and remember
                # what this scene is
-               last_style = styles
-               styles = styles.split("_")
+               styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
                time.sleep(2)
@@ -291,7 +275,7 @@ class LooseyClient:
                   word = self.get_input()
                   #print "Getting word",word
                   if word == "EOL": break
-               print "SENDING STYLES", last_style
+               print "SENDING STYLES", styles_string
                # Now, actually send the new styles
                time.sleep(2)
                self.send_value("style.sound",styles[1])
@@ -302,14 +286,17 @@ class LooseyClient:
                time.sleep(0.5)
                self.send_value("style.lights",styles[3])
                time.sleep(2)
+            # Move on to the next line
+            continue
+            
+         # check to see if we're at a new chunk
+         elif re.match(".*=====.*",l):
+            print l
             # Check whether we have a word_pause for this chunk
             if re.match(".*word_pause:(\d+).*$",l):
                self.word_pause = int(re.sub(".*word_pause:(\d+).*$","\\1",l))
             else:
                self.word_pause = None
-            # Move on to the next line
-            continue
-            
          # Check to see if this is a character name
          elif re.match("^[A-Z_]+$",l.strip()): 
             # This is a character
@@ -346,7 +333,7 @@ class LooseyClient:
             continue
             
          # Check to see if this is an ACT/SCENE title line
-         elif re.match("^\s*ACT.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             # This is the TITLE voice

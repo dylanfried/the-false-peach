@@ -63,14 +63,17 @@ for d in dlist:
 for i in range(len(dlist)):
 
    l = dlist[i]
+   name = re.sub("^(.*)\.xml$", "\\1", l)
    a = str(vid[i])+"_"+str(snd[i])+"_"+str(act[i])+"_"+str(light[i])
 
    bs = BeautifulSoup(open(dir+l).read())
-
+   print "<scene name='" + name + "' style='" + a + "'>"
    for s in bs.findAll(["markov","mirror","filter"]):
 
       s["style"] = a
       print s
+   print "</scene>"
+
    
 #extra = open("make_show/footer.txt").readlines()
 #extra = [e.strip() for e in extra]
