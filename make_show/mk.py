@@ -9,11 +9,13 @@ import random
 
 dir = "config/SHOW/"
 
-pins = {"2bMirror.xml":{"sound":2},
-        "solid.xml":{"sound":6},
-        "rogue.xml":{"sound":7},
-        "MadOph.xml":{"sound":8,"video":11},
-        "3pcntORIG.xml":{"sound":8,"video":1}}
+#pins = {"2bMirror.xml":{"sound":2},
+#        "solid.xml":{"sound":6},
+#        "rogue.xml":{"sound":7},
+#        "MadOph.xml":{"sound":8,"video":11},
+#        "3pcntORIG.xml":{"sound":8,"video":1}}
+
+pins = {}
 
 #extra = open("make_show/header.txt").readlines()
 #extra = [e.rstrip() for e in extra]
@@ -24,7 +26,7 @@ else: cnt = 7
 
 tdlist = os.listdir(dir)
 tvid = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"]
-tsnd = ["TTS.aloud","TTS.space.word","TTS.space.character","TTS.mute","TTS.inear","TTS.music.emotion","TTS.music.phoneme","TTS.rogui","VOICE.music","VOICE.rogui"]
+tsnd = ["TTS.aloud","TTS.space.word","TTS.space.character","TTS.mute","TTS.inear","TTS.music.emotion","TTS.music.phoneme","TTS.rogui","VOICE.rogui"]
 tact = ["0","1","1","0","1","0","0"]
 tlight = ["skot","theatre","emotions","play"]
 

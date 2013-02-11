@@ -9,12 +9,12 @@ import random
 
 dir = "config/TESTS/"
 
-pins = {"2bMirror.xml":{"sound":2},
-        "solid.xml":{"sound":6},
-        "rogue.xml":{"sound":7},
-        "MadOph.xml":{"sound":8,"video":11},
-        "3pcntORIG.xml":{"sound":8,"video":1}}
-
+#pins = {"2bMirror.xml":{"sound":2},
+#        "solid.xml":{"sound":6},
+#        "rogue.xml":{"sound":7},
+#        "MadOph.xml":{"sound":8,"video":11},
+#        "3pcntORIG.xml":{"sound":8,"video":1}}
+pins = {}
 #extra = open("make_show/header.txt").readlines()
 #extra = [e.rstrip() for e in extra]
 #for e in extra: print e
