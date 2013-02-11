@@ -245,7 +245,7 @@ class LooseyClient:
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
                # we have style info, let's grab it
-               styles_string = re.sub(".* (\d+)_(\d+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
+               styles_string = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
                # send the style info again and remember
                # what this scene is
                styles = styles_string.split("_")
@@ -306,6 +306,7 @@ class LooseyClient:
                self.word_pause = int(re.sub(".*word_pause:(\d+).*$","\\1",l))
             else:
                self.word_pause = None
+            continue
          # Check to see if this is a character name
          elif re.match("^[A-Z_]+$",l.strip()): 
             # This is a character
