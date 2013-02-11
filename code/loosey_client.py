@@ -237,8 +237,8 @@ class LooseyClient:
             print l
             # Try to get word count information from title
             current_word_count = 0
-            if re.match(".*word_count.*", l):
-               scene_word_count = int(re.sub(".*word_count:(\d+).*", "\\1",l))
+            if re.match(".*wordcount.*", l):
+               scene_word_count = int(re.sub(".*wordcount:(\d+).*", "\\1",l))
             else:
                scene_word_count = -1
             # Try to get style info from title

@@ -181,6 +181,9 @@ scene_lines = []
 # Get going with the scene config file
 bs = BeautifulSoup(open(sceneconfigfile).read())
 #bs = bs.find("trial", recursive=False)
+if not bs.find("scene"):
+   # put in the scene tag
+   bs = BeautifulSoup("<scene>" + bs.__str__() + "</scene>")
 # Grab all the immediate children
 for scene in bs.findAll("scene"):
    # Reset the scene line container and word count
@@ -421,7 +424,10 @@ for scene in bs.findAll("scene"):
       # increment word count
       scene_word_count += len(scene_lines[-1])
    # Put scene information in:
-   out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " word_count:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+   if "name" in scene.attrs and "style" in scene.attrs:
+      out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+   else:
+      out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
    out += scene_lines
   
 print "Script generated:","\n".join(out)
