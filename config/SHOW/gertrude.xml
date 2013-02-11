@@ -1,12 +1,12 @@
    <markov>
       <name>Gertrude</name>
-   	  <first_character>Gertrude</first_character>
+   	  <first_character>GERTRUDE</first_character>
       <file>data/nonewline.txt</file>
       <train>
          <acts>4</acts>
          <scenes>7</scenes>
          <lines>161-163</lines>
-         <characters>Gertrude</characters>
+         <characters>GERTRUDE</characters>
       </train>
       <generate>
          <reset>True</reset>
@@ -17,13 +17,13 @@
    </markov> 
    <markov>
       <name>Gertrude</name>
-   	  <first_character>Gertrude</first_character>
+   	  <first_character>GERTRUDE</first_character>
       <file>data/brute.txt</file>
       <train>
          <acts>4</acts>
          <scenes>7</scenes>
          <lines>164-187</lines>
-         <characters>Gertrude</characters>
+         <characters>GERTRUDE</characters>
       </train>
       <generate>
          <reset>True</reset>
@@ -35,11 +35,11 @@
    <markov>
       <name>Gertrude</name>
       <file>data/brute.txt</file>
-      <first_character>Gertrude</first_character>
+      <first_character>GERTRUDE</first_character>
       <train>
       	<acts>4</acts>
       	<scenes>7</scenes>
-        <characters>Gertrude</characters>
+        <characters>GERTRUDE</characters>
       </train>
       <generate>
          <type>threshold</type>
@@ -47,7 +47,6 @@
                   <point line=-1 value=0.5 />
                   <point line=31 value=3.2 />
                </ramp>
-         <reset>True</reset>
          <length>30</length>
          <k>1</k>
       </generate>

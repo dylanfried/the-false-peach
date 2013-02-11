@@ -4,7 +4,7 @@
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>1</lines>
-   		<characters>Stage</characters>
+   		<characters>STAGE</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
@@ -18,7 +18,7 @@
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>2-211</lines>
-   		<characters>Stage</characters>
+   		<characters>STAGE</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
@@ -32,7 +32,7 @@
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>124</lines>
-   		<characters>Stage</characters>
+   		<characters>STAGE</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
@@ -46,7 +46,7 @@
          <acts>5</acts>
          <scenes>1</scenes>
          <lines>63-66, 70-74, 92-95</lines>
-         <characters>First_Clown, Stage</characters>
+         <characters>FIRST_CLOWN, STAGE</characters>
       </train>
       <generate>
          <reset>True</reset>
@@ -60,7 +60,7 @@
          <acts>5</acts>
          <scenes>1</scenes>
          <lines>63-66, 70-74, 92-95</lines>
-         <characters>First_Clown, Stage</characters>
+         <characters>FIRST_CLOWN, STAGE</characters>
       </train>
       <generate>
       	<finish_sent>True</finish_sent>
@@ -74,7 +74,7 @@
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>225</lines>
-   		<characters>Stage</characters>
+   		<characters>STAGE</characters>
    	</train>
    	<generate>
    		<reset>True</reset>

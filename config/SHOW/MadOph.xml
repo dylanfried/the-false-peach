@@ -1,6 +1,6 @@
     <markov>
     <name>MadOph</name>
-    <first_character>Ophelia</first_character>
+    <first_character>OPHELIA</first_character>
    	<file>data/nonewline.txt</file>
       <train>
       	<selections>
@@ -8,7 +8,7 @@
          		<acts>4</acts>
          		<scenes>5</scenes>
          		<lines>164</lines>
-			<characters>Stage</characters>
+			<characters>STAGE</characters>
 		</selection>
 	</selections>
       </train>
@@ -20,7 +20,7 @@
    </markov>
     <markov>
     <name>MadOph</name>
-    <first_character>Ophelia</first_character>
+    <first_character>OPHELIA</first_character>
    	<file>data/nonewline.txt</file>
       <train>
       	<selections>
@@ -28,7 +28,7 @@
          		<acts>4</acts>
          		<scenes>5</scenes>
          		<lines>21</lines>
-			<characters>Ophelia</characters>
+			<characters>OPHELIA</characters>
 		</selection>
 	</selections>
       </train>
@@ -44,7 +44,7 @@
       <train>
       	<selections>
       		<selection>
-      			<characters>Ophelia</characters>
+      			<characters>OPHELIA</characters>
         	</selection>
         </selections>
       </train>
@@ -63,7 +63,7 @@
       		<selection>
          		<acts>4</acts>
          		<scenes>5</scenes>
-				<characters>Ophelia,Stage</characters>
+				<characters>OPHELIA,STAGE</characters>
 			</selection>
 		</selections>
       </train>
@@ -83,7 +83,7 @@
          		<acts>4</acts>
          		<scenes>5</scenes>
          		<lines>188-198</lines>
-				<characters>Ophelia,Stage</characters>
+				<characters>OPHELIA,STAGE</characters>
 			</selection>
 		</selections>
       </train>
@@ -99,7 +99,7 @@
       <name>Ramp</name>
       <file>data/combinepunct.txt</file>
       <train>
-         <characters>Ophelia</characters>
+         <characters>OPHELIA</characters>
       </train>
       <generate>
          <type>threshold</type>
@@ -127,7 +127,7 @@
          		<acts>4</acts>
          		<scenes>5</scenes>
          		<lines>45-73</lines>
-				<characters>Ophelia</characters>
+				<characters>OPHELIA</characters>
 			</selection>
 		</selections>
       </train>

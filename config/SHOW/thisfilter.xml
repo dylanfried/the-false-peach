@@ -9,7 +9,7 @@
 	</selections>
       </train>
       <generate>
-         <pattern>this </pattern>
+         <pattern>This </pattern>
          <length>20</length>
       </generate>
    </filter>

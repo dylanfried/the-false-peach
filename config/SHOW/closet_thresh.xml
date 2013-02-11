@@ -4,7 +4,7 @@
    		<file>data/brute.txt</file>
    		<acts>3</acts>
    		<scenes>4</scenes>
-   		<characters>Stage</characters>
+   		<characters>STAGE</characters>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>
@@ -20,7 +20,7 @@
    		<acts>3</acts>
    		<scenes>4</scenes>
    		<lines>7</lines>
-   		<characters>Hamlet</characters>
+   		<characters>HAMLET</characters>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>
@@ -35,12 +35,13 @@
    		<file>data/brute.txt</file>
    		<acts>3</acts>
    		<scenes>4</scenes>
-   		<characters>Hamlet,Gertrude,Stage</characters>
+   		<lines>8-215</lines>
+   		<characters>HAMLET,GERTRUDE,STAGE,GHOST</characters>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
-   	 	<length>50</length>
+   	 	<length>150</length>
    	 	<k>2</k>
    	 </generate>
    	</markov>
@@ -57,9 +58,10 @@
          <ramp emotion="anger">
             <point line=-1 value=-0.5 />
             <point line=50 value=-1 />
-            <point line=101 value=2.5 />
+            <point line=97 value=2.5 />
+            <point line=98 value=-1 />
+            <point line=101 value=-1 />
          </ramp>
-         <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>100</length>
          <k>2</k>

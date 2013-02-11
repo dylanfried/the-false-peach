@@ -1,6 +1,6 @@
    <mirror>
    	   <name>2b</name>
-   	   <first_character>Hamlet</first_character>
+      	   <forced_character>HAMLET</forced_character>
    	   <scene_pause>3</scene_pause>
    	   <line_pause>4</line_pause>
    	   <train>
@@ -17,12 +17,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    	 <mirror>
+      	   <forced_character>HAMLET</forced_character>
    	   <scene_pause>3</scene_pause>
    	      	  <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -40,12 +41,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    	 <mirror>
+      	   <forced_character>HAMLET</forced_character>
    	    <scene_pause>3</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -63,12 +65,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    <mirror>
+      	   <forced_character>HAMLET</forced_character>
       	   <scene_pause>3</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -86,12 +89,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    <mirror>
+       	   <forced_character>HAMLET</forced_character>
       	   <scene_pause>2</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -109,12 +113,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	 
    	 <mirror>
+   	       	   <forced_character>HAMLET</forced_character>
    	    	   <scene_pause>3</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -134,16 +139,17 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55-56</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>  
    	 	 <mirror>
+   	 	       <forced_character>HAMLET</forced_character>
    	    	   <scene_pause>3</scene_pause>
-   	   <line_pause>4</line_pause>
-   	   <name>2b</name>
-   	   <train>
+   	           <line_pause>4</line_pause>
+   	           <name>2b</name>
+   	        <train>
    	   		<file>data/brute.txt</file>
    	   		<selections>
    	   			<selection>
@@ -157,12 +163,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55-58</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>  
-   	    	 	 <mirror>
+   	 <mirror>
+   	      	   <forced_character>HAMLET</forced_character>
    	    	   <scene_pause>2</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -180,12 +187,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55-64</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    	   <mirror>
+   	       	   <forced_character>HAMLET</forced_character>
    	   <scene_pause>2</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
@@ -203,12 +211,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55-89</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>
    	 <mirror>
+         	   <forced_character>HAMLET</forced_character>
    	   <name>2b</name>
    	   <scene_pause>5</scene_pause>
    	   <train>
@@ -225,12 +234,13 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    	    	 <mirror>
+   	      	   <forced_character>HAMLET</forced_character>
    	   <name>2b</name>
    	   <scene_pause>3</scene_pause>
    	   <train>
@@ -247,19 +257,20 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
    <markov>
    		<name>2bN</name>
+         	  <forced_character>HAMLET</forced_character>
    		<scene_pause>3</scene_pause>
 		<file>data/nonewline.txt</file>
    		<train>
    			<selections>
    				<selection>
-   					<characters>Hamlet</characters>
+   					<characters>HAMLET</characters>
    					<pos>cc,xx,zz,vvzx,vvd2x,vvbx,vv2x,vmbx,vm2x,vm2x,vbb,vhzx,vhdp,vhbx,vh2x,vdzx,vddx,vdd2x,vbz,vbzx,vbdx,vbg,vbm,vbi,vbd2,vb2-imp,vbbx,uh-dx,dx,ccx,av-x,av-dx</pos>
    				</selection>
    			</selections>

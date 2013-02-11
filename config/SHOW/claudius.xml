@@ -8,7 +8,7 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>39</length>
+         <length>45</length>
          <k>7</k>
       </generate>
    </markov>
@@ -37,7 +37,7 @@
          <acts>3</acts>
          <scenes>3</scenes>
          <lines>36-72</lines>
-         <characters>CLAUDIUS, KING</characters>
+         <characters>CLAUDIUS,KING</characters>
       </train>
       <generate>
          <reset>True</reset>
@@ -59,7 +59,9 @@
          <type>threshold</type>
          <ramp emotion="anger">
             <point line=-1 value=-0.5 />
-            <point line=51 value=2.0 />
+            <point line=31 value=2.0 />
+            <point line=48 value=-1.0 />
+            <point line=51 value=-1.0 />
          </ramp>
          <finish_sent>True</finish_sent>
          <length>50</length>
