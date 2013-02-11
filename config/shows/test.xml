@@ -1,0 +1,33 @@
+<show>
+   <sequence>
+      <scene>actonescenetwo.xml</scene>
+      <scene>2bMirror.xml</scene>
+   <sequence>
+   <sequence random="true">
+      <random>
+         <length>200</length>
+         <scene_choices>
+            <scene_choice>ActOneSceneOne.xml</scene_choice>
+            <scene_choice>HamNeg.xml</scene_choice>
+            <scene_choice>MadOph.xml</scene_choice>
+            <scene_choice>O_filter.xml</scene_choice>
+         </scene_choices>
+      </random>
+   </sequence>
+   <sequence>
+      <scene>gravedigger.xml</scene>
+   </sequence>
+   <sequence>
+      <random>
+         <length>100</length>
+         <scene_choices>
+            <scene_choice>HamNeg.xml</scene_choice>
+            <scene_choice>MadOph.xml</scene_choice>
+         </scene_choices>
+      </random>
+   </sequence>
+   <sequence>
+      <scene>yorick.xml</scene>
+      <scene>OphMon.xml</scene>
+   </sequence>
+</show>
