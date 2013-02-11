@@ -189,6 +189,8 @@ class Generator:
          self.output.append(next_word)
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
+         #set the has first character to true.
+         self.first_character = True
       # Check to see if we're in a stagedir and getting a newline
       elif self.in_paren and next_word[-1] == "NEWLINE":
          # If we are, then we don't want to put the newline in
@@ -210,6 +212,7 @@ class Generator:
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
+         self.first_character = True
       else:
          # Check to see if we're getting text but don't yet
          # have a speaker.
