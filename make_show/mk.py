@@ -24,7 +24,7 @@ else: cnt = 7
 
 tdlist = os.listdir(dir)
 tvid = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"]
-tsnd = ["1","2","3","4","5"]
+tsnd = ["TTS.aloud","TTS.space.word","TTS.space.character","TTS.mute","TTS.inear","TTS.music.emotion","TTS.music.phoneme","TTS.rogui","VOICE.music","VOICE.rogui"]
 tact = ["0","1","1","0","1","0","0"]
 tlight = ["skot","theatre","emotions","play"]
 
