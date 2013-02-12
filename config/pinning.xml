@@ -1,13 +1,15 @@
-<excluded>
-   <light>emotions</light>
-   <video>3</video>
-</excluded>
-<excluded>
-   <scene>MadOph</scene>
-   <sound>TTS.phoneme</sound>
-</excluded>
-<pinned>
-   <scene>2bMirror</scene>
-   <sound>such and such</sound>
-   <video>such and such</video>
-</pinned>
+<table>
+   <excluded>
+      <light>emotions</light>
+      <video>3</video>
+   </excluded>
+   <excluded>
+      <scene>MadOph</scene>
+      <sound>TTS.phoneme</sound>
+   </excluded>
+   <pinned>
+      <scene>2bMirror</scene>
+      <sound>such and such</sound>
+      <video>such and such</video>
+   </pinned>
+</table>
