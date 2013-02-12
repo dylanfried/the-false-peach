@@ -20,6 +20,9 @@ class Burrito:
       # Transition logic object
       self.transition_logic = transition_logic
       
+      # Pinnings object initialization
+      self.pinning_table = PinningTable(pinnings_file)
+      
       # Keep track of the generated scenes
       self.scenes = []
       
@@ -120,7 +123,7 @@ class Burrito:
          
       scene = bs.find("scene")
       scene["name"] = scene_name
-      scene["style"] = "placeholder"
+      scene["style"] = self.pinning_table.generate_style(scene_name)
       # Reset the scene line container and word count
       scene_lines = []
       for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter"]):
@@ -364,7 +367,6 @@ def main(argv):
    if len(argv) != 5:
       print "4 args required (show file, pinnings file, trial file, triggers file)"
       return
-      
    burrito = Burrito(argv[1],argv[2],argv[3],argv[4], RandomTransition())
    burrito.create_script()
    burrito.send_script()
