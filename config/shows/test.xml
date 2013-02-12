@@ -2,10 +2,11 @@
    <sequence>
       <scene>actonescenetwo.xml</scene>
       <scene>2bMirror.xml</scene>
-   <sequence>
+   </sequence>
+   
    <sequence random="true">
       <random>
-         <length>200</length>
+         <length>1200</length>
          <scene_choices>
             <scene_choice>HamNeg.xml</scene_choice>
             <scene_choice>MadOph.xml</scene_choice>
@@ -13,18 +14,21 @@
          </scene_choices>
       </random>
    </sequence>
+   
    <sequence>
       <scene>gravedigger.xml</scene>
    </sequence>
-   <sequence>
+   
+   <sequence random="true">
       <random>
-         <length>100</length>
+         <length>3000</length>
          <scene_choices>
-            <scene_choice>HamNeg.xml</scene_choice>
-            <scene_choice>MadOph.xml</scene_choice>
+            <scene_choice>kingthing.xml</scene_choice>
+            <scene_choice>rogue.xml</scene_choice>
          </scene_choices>
       </random>
    </sequence>
+   
    <sequence>
       <scene>OphMon.xml</scene>
    </sequence>

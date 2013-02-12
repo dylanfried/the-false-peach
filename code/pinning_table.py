@@ -2,6 +2,7 @@ import os
 from bs4 import BeautifulSoup
 import sys
 import re
+import random
 
 # Class for defining the Pinning Table that specifies constriants on which
 # styles can occur for a scene. Also can pin which styles can occur together.
@@ -35,7 +36,7 @@ class PinningTable:
       # Keep list of possible styles
       video_styles = ["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"]
       sound_styles = ["TTS.aloud","TTS.space.word","TTS.space.character","TTS.mute","TTS.inear","TTS.mute.music.emotion","TTS.music.emotion","TTS.music.phoneme","TTS.rogui","VOICE.music","VOICE.rogui"]
-      lights_styles = ["skot","theatre","emotions","play","word","ghost","monemo","lightout","lightshow","closet"]
+      lights_styles = ["skot","theatre","emotions","play","word","ghost","monemo","lightout","lightshow","closet","lighton"]
       # Initialize and populate dictionary
       for scene in scenes:
          self.table[scene] = {}

@@ -7,6 +7,7 @@ from random_transition import RandomTransition
 from scene import Scene
 from loosey_client import LooseyClient
 from generator import Generator
+from pinning_table import PinningTable
 import re
 import random
 
