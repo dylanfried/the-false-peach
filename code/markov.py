@@ -70,7 +70,7 @@ class Markov:
       # Dynamically populate cursor until it's as big as the max order
       # Start by returning the first order words from the testing text
       if len(self.cursor) < order and not self.markoved:
-         self.cursor.append(self.lines[len(self.cursor)])
+         self.cursor.append(self.lines[len(self.cursor) % len(self.lines)])
          self.lines_so_far.append(self.cursor[-1])
          return self.cursor[-1]
       
