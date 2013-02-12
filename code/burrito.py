@@ -3,7 +3,12 @@ import sys
 sys.path.append("code/")
 import util
 from transition_logic import TransitionLogic
+from random_transition import RandomTransition
 from scene import Scene
+from loosey_client import LooseyClient
+from generator import Generator
+import re
+import random
 
 # This class will take care of making a show!
 class Burrito:
@@ -86,12 +91,15 @@ class Burrito:
                # vectors and available scene choices
                next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
                self.scenes.append(self.create_scene(next_scene))
-               words_generated += self.scenes[-1].scene_length
+               words_generated += self.scenes[-1].length
                iterations += 1
          else:
             # This is a prescribed sequence
             for scene in sequence.findAll("scene"):
                self.scenes.append(self.create_scene(scene.string))
+      # Print out script
+      for s in self.scenes:
+         print "\n".join(s.script)
             
    def send_script(self):
       # Loop through the scenes and create the script in its entirety
@@ -101,14 +109,18 @@ class Burrito:
       self.loosey.send_script(out)
       
    # Method for generating a single scene
-   # Returns a tuple of (scene, scene length)
+   # Returns a scene object
    def create_scene(self, scene_name):
       # Get going with the scene config file
       bs = BeautifulSoup(open("config/SHOW/" + scene_name).read())
+      scene_name = re.sub("^(.*)\.xml$", "\\1", scene_name)
       if not bs.find("scene"):
          # put in the scene tag
          bs = BeautifulSoup("<scene>" + bs.__str__() + "</scene>")
+         
       scene = bs.find("scene")
+      scene["name"] = scene_name
+      scene["style"] = "placeholder"
       # Reset the scene line container and word count
       scene_lines = []
       for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter"]):
@@ -339,6 +351,7 @@ class Burrito:
          else:
             scene_lines = gen.generate()
       # Put scene information in:
+      out = []
       if "name" in scene.attrs and "style" in scene.attrs:
          out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
       else:
@@ -352,7 +365,7 @@ def main(argv):
       print "4 args required (show file, pinnings file, trial file, triggers file)"
       return
       
-   burrito = Burrito(argv[1],argv[2],argv[3],argv[4], TransitionLogic())
+   burrito = Burrito(argv[1],argv[2],argv[3],argv[4], RandomTransition())
    burrito.create_script()
    burrito.send_script()
    
