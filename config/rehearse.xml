@@ -103,6 +103,10 @@
             <target>/scene.progress</target>
          </action>
          <action>
+            <source>scene.name</source>
+            <target>/scene.name</target>
+         </action>
+         <action>
             <source>character</source>
             <target>/character</target>
          </action>

@@ -287,6 +287,8 @@ class LooseyClient:
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
                time.sleep(2)
+               self.send_value("scene.name",l.split(" ")[2])
+               time.sleep(0.001)
                self.send_value("style.sound",styles[1])
                time.sleep(0.001)
                self.send_value("style.video",styles[0])
