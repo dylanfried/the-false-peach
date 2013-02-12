@@ -11,7 +11,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>100</length>
+         <length>80</length>
          <k>1</k>
       </generate>
    </markov>

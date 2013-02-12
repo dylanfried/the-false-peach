@@ -455,7 +455,7 @@ class LooseyClient:
             # Do the same for the value of the max affect
             if ws[mws-1]<0: affmaxval = 0
             else: affmaxval = ws[mws-1]
-            self.send_value("affmaxval",affmaxval/5)
+            self.send_value("affmaxval",float(affmaxval/5.0))
             if ws[0] >= 0:
                # Don't update the average if this word doesn't have a real affect value
                # Keep a weighted moving average to send out

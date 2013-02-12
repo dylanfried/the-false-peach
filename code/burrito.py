@@ -10,6 +10,7 @@ from generator import Generator
 from pinning_table import PinningTable
 import re
 import random
+import os
 
 # This class will take care of making a show!
 class Burrito:

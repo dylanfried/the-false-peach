@@ -63,6 +63,7 @@
       		<selection>
          		<acts>4</acts>
          		<scenes>5</scenes>
+         		<lines>2-218</lines>
 				<characters>OPHELIA,STAGE</characters>
 			</selection>
 		</selections>
@@ -70,7 +71,95 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>500</length>
+         <length>400</length>
+         <k>2</k>
+      </generate>
+   </markov>
+ <markov>
+    <name>MadOph</name>
+    <forced_character>OPHELIA</forced_character>
+   	<file>data/nonewline.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>66</lines>
+			<characters>STAGE</characters>
+		</selection>
+	 </trial>
+      <generate>
+         <reset>True</reset>
+         <length>2</length>
+         <k>2</k>
+      </generate>
+   </markov> 
+    <markov>
+    <name>MadOph</name>
+    <forced_character>OPHELIA</forced_character>
+   	<file>data/nonewline.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>23-26</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>29-32</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>36</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>38-40</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>48-55</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>58-63</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>65-66</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>186</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>189-198</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>100</length>
          <k>2</k>
       </generate>
    </markov>
@@ -110,9 +199,10 @@
                   <point line=200 value=2.8 />
                   <point line=250 value=2.0 />
                   <point line=276 value=3.0 />
-                  <point line=301 value=3.5 />
+                  <point line=298 value=3.5 />
+                  <point line=299 value=-1.0 />
+                  <point line=301 value=-1.0 />
                </ramp>
-         <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>300</length>
          <k>2</k>

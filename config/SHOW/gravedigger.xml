@@ -8,7 +8,7 @@
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>20</length>
+   		<length>22</length>
    		<k>3</k>
    	</generate>
    </markov>
@@ -22,7 +22,8 @@
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>49</length>
+   		<finish_sent>True</finish_sent>
+   		<length>40</length>
    		<k>2</k>
    	</generate>
    </markov>
@@ -36,7 +37,7 @@
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>10</length>
+   		<length>4</length>
    		<k>2</k>
    	</generate>
    </markov>
@@ -50,6 +51,7 @@
       </train>
       <generate>
          <reset>True</reset>
+      	<finish_sent>True</finish_sent>
          <length>500</length>
          <k>7</k>
       </generate>

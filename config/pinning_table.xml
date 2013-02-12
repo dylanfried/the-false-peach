@@ -7,10 +7,7 @@
       <scene>3pcntORIG</scene>
       <sound>TTS.aloud</sound>
       <video>1</video>
-   </pinned>
-   <pinned>
-      <scene>ActOneSceneOne</scene>
-      <sound>TTS.aloud</sound>
+      <lights>theatre</lights>
    </pinned>
    <pinned>
       <scene>dumb</scene>

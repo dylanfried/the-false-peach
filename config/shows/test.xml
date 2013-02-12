@@ -1,35 +1,15 @@
 <show>
    <sequence>
-      <scene>actonescenetwo.xml</scene>
-      <scene>2bMirror.xml</scene>
+      <scene>3pcntORIG.xml</scene>
    </sequence>
    
    <sequence random="true">
       <random>
          <length>1200</length>
-         <scene_choices>
-            <scene_choice>HamNeg.xml</scene_choice>
-            <scene_choice>MadOph.xml</scene_choice>
-            <scene_choice>O_filter.xml</scene_choice>
-         </scene_choices>
       </random>
    </sequence>
    
    <sequence>
-      <scene>gravedigger.xml</scene>
-   </sequence>
-   
-   <sequence random="true">
-      <random>
-         <length>3000</length>
-         <scene_choices>
-            <scene_choice>kingthing.xml</scene_choice>
-            <scene_choice>rogue.xml</scene_choice>
-         </scene_choices>
-      </random>
-   </sequence>
-   
-   <sequence>
-      <scene>OphMon.xml</scene>
+      <scene>52directions.xml</scene>
    </sequence>
 </show>
