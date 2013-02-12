@@ -67,6 +67,8 @@ class Markov:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
    def generateNext(self, order, filters):
+      if not self.lines:
+         return None
       # Dynamically populate cursor until it's as big as the max order
       # Start by returning the first order words from the testing text
       if len(self.cursor) < order and not self.markoved:

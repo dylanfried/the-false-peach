@@ -351,6 +351,6 @@ class Generator:
       string_version = re.sub("(nonny nonny )+"," nonny nonny ",string_version)
       string_version = re.sub("(a-down a-down )+"," nonny nonny ",string_version)
       string_version = re.sub("( NEWLINE)+"," NEWLINE",string_version)
-      string_version = re.sub("\s([,.?!:;])","\\1",string_version)
+      string_version = re.sub("\s*([,.?!:;)])","\\1",string_version)
       # Break into separate lines and return
       return string_version.split("NEWLINE")
