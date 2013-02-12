@@ -1,0 +1,40 @@
+<table>
+   <pinned>
+      <scene></scene>
+      <video></video>
+      <lights></lights>
+      <sound></sound>
+   </pinned>
+   <excluded>
+      <scene></scene>
+      <video></video>
+      <lights></lights>
+      <sound></sound>
+   </excluded>
+   
+   <pinned>
+      <scene>2bMirror</scene>
+      <sound>TTS.inear</sound>
+   </pinned>
+   <pinned>
+      <scene>3pcntORIG</scene>
+      <sound>TTS.aloud</sound>
+   </pinned>
+   <pinned>
+      <scene>ActOneSceneOne</scene>
+      <sound>TTS.aloud</sound>
+   </pinned>
+   <pinned>
+      <scene>dumb</scene>
+      <sound>TTS.mute</sound>
+   </pinned>
+   <pinned>
+      <scene>rogue</scene>
+      <sound>TTS.rogui</sound>
+   </pinned>
+   <pinned>
+      <scene>MadOph</scene>
+      <sound>TTS.music.emotion</sound>
+   </pinned>
+   
+</table>

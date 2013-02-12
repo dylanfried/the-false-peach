@@ -1,15 +1,19 @@
 <table>
    <excluded>
-      <light>emotions</light>
+      <lights>emotions</lights>
       <video>3</video>
    </excluded>
+   <pinned>
+      <sound>TTS.inear</sound>
+      <lights>emotions</lights>
+   </pinned>
    <excluded>
       <scene>MadOph</scene>
-      <sound>TTS.phoneme</sound>
+      <sound>TTS.space.word</sound>
    </excluded>
    <pinned>
       <scene>2bMirror</scene>
-      <sound>such and such</sound>
-      <video>such and such</video>
+      <sound>TTS.space.character</sound>
+      <video>5</video>
    </pinned>
 </table>
