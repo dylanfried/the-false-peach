@@ -227,8 +227,8 @@ class LooseyClient:
          # after something that had "ACT" or "SCENE"
          if need_outro:
             print "SENDING OUTRO"
-            self.send_value("outro",3000,name_for_outro)
-            time.sleep(3)
+            self.send_value("outro",2000,name_for_outro)
+            time.sleep(2)
             need_outro = False
       
          # Check to see if we're in a new scene
@@ -347,10 +347,10 @@ class LooseyClient:
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             # This is the TITLE voice
-            self.send_value("character",["TITLE"])
-            time.sleep(0.001)
             self.send_value("intro",3000)
             time.sleep(0.001)
+            self.send_value("character",["TITLE"])
+            time.sleep(3)
             # Send the stage directions
             self.send_value("stagedir.title",l)
             self.send_value("stagedir.bool",0)
@@ -360,7 +360,6 @@ class LooseyClient:
             print "TITLE",l
             # Need an outro before the next line
             need_outro = True
-         
          # Check to see if this is a stage direction
          elif re.match("^\s*\(.*\)\s*$",l): 
             # Pull out the first word in the parentheses
