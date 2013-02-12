@@ -27,10 +27,14 @@ class pinningTable:
    #   }
    def __init__(self, pinning_file):
       self.table = BeautifulSoup(open(pinning_file).read()).find("table")
+      # Grab scene files from directory
+      # Keep list of possible styles
+      # Initialize and populate dictionary
 
    # Given scene, return a style
    def generate_style(self, scene):
-      for include in includes:
-         bs_scene = include.find("scene")
-         if bs_scene == scene:
-            pass
+      video = random.sample(self.table[scene].keys(), 1)[0]
+      sound = random.sample(self.table[scene][video].keys(), 1)[0]
+      lights = random.sample(self.table[scene][video][sound].keys(), 1)[0]
+      
+      return video + "_" + sound + "_0_" + lights
