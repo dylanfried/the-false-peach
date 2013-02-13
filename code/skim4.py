@@ -1,3 +1,5 @@
+##### Line 
+
 import re
 import os
 import copy
@@ -24,7 +26,7 @@ for t in tfreq:
    t[1] = t[1].lower()
    freq[t[1]] = float(t[0])
 
-ofile = open("data/brute.txt","w")
+ofile = open("data/out_test.txt","w")
 bs = BeautifulSoup(open("data/ham.xml").read())
 
 bs = bs.find("body")
@@ -32,24 +34,24 @@ act = "0"
 scene = "0"
 lineno = "0"
 
+
 same_line = False
 last_line = "-1"
 last_speaker = ""
 for acts in bs.findAll("div", recursive = False):
-   print "act"
    for scenes in acts.findAll("div", recursive = False):
-      print "scene"
       for s in scenes.findAll(["head","stage","sp"], recursive = False):
-         print "speech/stage/heard"
          if s.name == "sp":
-      
+            scene_length = len(s.findAll("ab"))
+            scene_index = 0
+            
             g = s.find("speaker")
             sp = g.string
             sp = sp.encode('utf-8')
             sp = re.sub(" ","_",sp)
                
             for l in s.findAll(["l","ab","stage"]):
-      
+               scene_index += 1
                if l.name == "stage":
                   t = l.string.encode("utf-8","ignore")
                   wwhhaatt = l['type']
@@ -91,7 +93,6 @@ for acts in bs.findAll("div", recursive = False):
                else:
                   if last_speaker == sp:
                      ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
-                     print "same speaker"
                   else:
                      ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 SPEAKER "+sp.upper()+"\n")
                      ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
@@ -130,8 +131,9 @@ for acts in bs.findAll("div", recursive = False):
                      ofile.write(act+" "+scene+" "+lineno+" "+wordno+" "+sp+" "+\
                               affs+" "+fffs+" "+w["pos"].encode("utf-8")+" "+ww+"\n")
                last_line = lineno
-               ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
-      
+               if l.name != "ab" or scene_index == scene_length:
+                  ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+
                #last_line = lineno
                last_speaker = sp
       
