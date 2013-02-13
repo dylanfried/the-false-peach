@@ -242,21 +242,27 @@ class Generator:
          self.output.append(next_word)
          self.line_length += 1
          # Check to see if our line is too long
-         if self.line_length > 20:
-            # it is, let's put a NEWLINE in and reset the counter
-            insert_newline = [None]*12
-            insert_newline[-2] = "NEWLINE"
-            insert_newline[-1] = "NEWLINE"
-            #self.output.append(insert_newline)
-            self.line_length = 0
-         # Check to see if we're at the end of a sentence
-         if re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren:
-            # We are. Make sure that we never have more than a single sentence on a line (as long
-            # as we're not in a stage direction)
+         if self.line_length > 25 or (self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1]) and not self.in_paren) or (self.line_length > 15 and re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren):
             insert_newline = [None]*12
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
+            self.line_length = 0
+         #if self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1]) and not self.in_paren:
+         #   # it is, let's put a NEWLINE in and reset the counter
+         #   insert_newline = [None]*12
+         #   insert_newline[-2] = "NEWLINE"
+         #   insert_newline[-1] = "NEWLINE"
+         #   self.output.append(insert_newline)
+         #   self.line_length = 0
+         ## Check to see if we're at the end of a sentence
+         #elif self.line_length > 15 and re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren:
+         #   # We are. Make sure that we never have more than a single sentence on a line (as long
+         #   # as we're not in a stage direction)
+         #   insert_newline = [None]*12
+         #   insert_newline[-2] = "NEWLINE"
+         #   insert_newline[-1] = "NEWLINE"
+         #   self.output.append(insert_newline)
 
    # This method uses the markov chains and chunk config list to generate the actual text of the scene
    # It then polishes the scene and returns the text
