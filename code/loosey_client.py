@@ -484,7 +484,7 @@ class LooseyClient:
             self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
             if scene_word_count > 0:
-               self.send_value("scene.progress",(current_word_count+0.0)/(scene_word_count+0.0))
+               self.send_value("scene.progress",round((current_word_count+0.0)/(scene_word_count+0.0), 3))
       time.sleep(2)
       self.send_value("stagedir.place","zero")
       time.sleep(0.001)
@@ -512,3 +512,7 @@ class LooseyClient:
       total_line_count += current_line_count
       total_word_count += current_word_count
       print "Timing info. Seconds: {0}, words: {1}, lines: {2}".format(str(time.time() - total_time), str(total_word_count), str(total_line_count))
+      if self.play:
+         f = open("timing.txt","a")
+         f.write("{0}, {1}, {2}, {3}, {4}".format(str(int(time.time() - total_time)), str(total_word_count), str(total_line_count), str((time.time() - total_time)/(total_word_count + 0.01)), str((time.time() - total_time)/(total_line_count + 0.01))))
+         f.close()
