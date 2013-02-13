@@ -1,6 +1,7 @@
 <show>
    <sequence>
       <scene>3pcntORIG.xml</scene>
+      <scene>ActOneSceneOne.xml</scene>
    </sequence>
    
    <sequence random="true">

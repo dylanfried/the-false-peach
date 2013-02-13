@@ -348,6 +348,7 @@ class LooseyClient:
          elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
+            print "SENDING INTRO"
             # This is the TITLE voice
             self.send_value("intro",3000)
             time.sleep(0.001)
@@ -409,7 +410,6 @@ class LooseyClient:
       
             # Check to see if we've had a stagedir trigger in this line
             if trigger_label:
-               print "YES"
                tmptrigs = []
                # Loop through all the triggers and update them with
                # the current word. If they're active now, put them in

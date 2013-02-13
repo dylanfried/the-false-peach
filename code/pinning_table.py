@@ -93,9 +93,10 @@ class PinningTable:
                            lights_matched = sound_matched
                         #print scene, video_style, sound_style, lights_style, lights_matched
                         if lights_matched > 0 and lights_matched != len(styles):
-                           self.table[scene][video_style][sound_style][lights_style] = False
+                           if len(to_delete["scene"]) > 1 or (len(to_delete["scene"]) == 1 and scene == to_delete["scene"][0]):
+                              self.table[scene][video_style][sound_style][lights_style] = False
                         
-         #print self.table["2bMirror"]["11"]
+      #print self.table["2bMirror"]["11"]
       # Now that we've done all of our setting to false, let's delete everything
       # that is False and all empty branches
       for scene in self.table.keys():
@@ -128,8 +129,8 @@ class PinningTable:
       
 def main(argv):
    # Grab the pinning files
-   p = PinningTable("config/pinning.xml")
-   print p.table["2bMirror"]["5"]
+   p = PinningTable("config/pinning_table.xml")
+   print p.table["2bMirror"]["1"]
    
 if __name__ == "__main__":
    main(sys.argv)
