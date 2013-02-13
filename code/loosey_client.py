@@ -511,8 +511,8 @@ class LooseyClient:
       # Total time info
       total_line_count += current_line_count
       total_word_count += current_word_count
-      print "Timing info. Seconds: {0}, words: {1}, lines: {2}".format(str(time.time() - total_time), str(total_word_count), str(total_line_count))
+      print "Timing info. Seconds: {0}, words: {1}, lines: {2}\n".format(str(time.time() - total_time), str(total_word_count), str(total_line_count))
       if self.play:
          f = open("timing.txt","a")
-         f.write("{0}, {1}, {2}, {3}, {4}".format(str(int(time.time() - total_time)), str(total_word_count), str(total_line_count), str(round((time.time() - total_time)/(total_word_count + 0.01), 3)), str(round((time.time() - total_time)/(total_line_count + 0.01), 3))))
+         f.write("{0}, {1}, {2}, {3}, {4}\n".format(str(int(time.time() - total_time)), str(total_word_count), str(total_line_count), str(round((time.time() - total_time)/(total_word_count + 0.01), 3)), str(round((time.time() - total_time)/(total_line_count + 0.01), 3))))
          f.close()
