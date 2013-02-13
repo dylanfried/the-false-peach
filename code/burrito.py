@@ -16,6 +16,13 @@ import os
 class Burrito:
    def __init__(self,show_file,pinnings_file,trial_file,triggers_file, transition_logic):
       self.sequences = BeautifulSoup(open(show_file).read()).findAll("sequence")
+      # Let's go through and find all the prescribed scenes so that we make sure
+      # not to sample them in the random sequences
+      self.prescribed_scenes = []
+      for sequence in self.sequences:
+         if "random" not in sequence.attrs or sequence["random"] not in ["True","true","t","T","yes","Yes"]:
+            for scene in sequence.findAll("scene"):
+               self.prescribed_scenes.append(scene.string)
       self.triggers_file = triggers_file
       self.trial_file = trial_file
       
@@ -75,7 +82,7 @@ class Burrito:
       for sequence in self.sequences:
          # This can either be a prescribed sequence of scenes
          # or a set of random scenes
-         if "random" in sequence.attrs and sequence["random"]:
+         if "random" in sequence.attrs and sequence["random"] in ["True","true","t","T","yes","Yes"]:
             # This is a random sequence of scenes
             length = int(sequence.find("length").string)
             words_generated = 0
@@ -87,7 +94,7 @@ class Burrito:
                   scene_choices.append(scene_choice.string)
             else:
                # Grab all the scenes from the SHOW dir
-               scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l)]
+               scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l) and l not in self.prescribed_scenes]
             # keep going until we get enough stuff
             while words_generated < length:
                # Don't go too long
@@ -145,7 +152,7 @@ class Burrito:
          datafile = trial.find("file")
          if datafile:
             datafile = datafile.string
-            print datafile
+            #print datafile
          else: 
             print "No data file"
             continue
@@ -173,7 +180,7 @@ class Burrito:
             continue
             #lines = get_lines(data, trial.find('train'))
          elif trial.name == "filter":
-            print "Filter"
+            #print "Filter"
             scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
             trial_data = util.get_lines(data, trial.find("train"))
             #get the pattern
@@ -270,7 +277,7 @@ class Burrito:
             print "skip not yet implemented"
             continue
          elif trial.name == "mirror":
-            print "Mirror"
+            #print "Mirror"
             POS_training_text = util.get_lines(data, trial.find('generate'))
             #print "POS_training Text", POS_training_text
             POS_order_ramp.append({"order":10, "word_number": 1})
@@ -281,7 +288,7 @@ class Burrito:
             # Trial length should just be length of POS training text
             trial_length = len(POS_training_text)
          elif trial.name == "markov":
-            print "Markov"
+            #print "Markov"
             POS_training_text = util.get_lines(data, trial.find('train'))
             POS_order_ramp.append({"order":-1, "word_number": 1})
             POS_emotion_ramp = []
