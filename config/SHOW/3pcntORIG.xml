@@ -25,7 +25,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>75</length>
-         <k>7</k>
+         <k>8</k>
       </generate>
    </markov>
    <markov>
