@@ -111,7 +111,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>120</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
     <markov>
@@ -125,7 +125,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>80</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
     <markov>
@@ -141,7 +141,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>120</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
    	   <markov>
@@ -155,7 +155,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>120</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
     <markov>
@@ -169,8 +169,8 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>40</length>
-         <k>5</k>
+         <length>31</length>
+         <k>7</k>
       </generate>
    </markov>
     <markov>
@@ -185,7 +185,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>75</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
    <markov>
@@ -199,7 +199,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>100</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
    <markov>
@@ -214,7 +214,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>100</length>
-         <k>5</k>
+         <k>7</k>
       </generate>
    </markov>
    <markov>
@@ -230,7 +230,7 @@
       	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
    	 	<length>25</length>
-   	 	<k>5</k>
+   	 	<k>7</k>
    	 </generate>
    	</markov>
 
