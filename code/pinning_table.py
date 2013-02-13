@@ -113,6 +113,8 @@ class PinningTable:
             if not self.table[scene][video_style]:
                del self.table[scene][video_style]
          print "Scene",scene,"has",str(possible_styles),"potential styles"
+         if possible_styles <= 0:
+            print "\nNO STYLES FOR SCENE",scene,"\n"
          if not self.table[scene]:
             del self.table[scene]
 
@@ -130,7 +132,7 @@ class PinningTable:
 def main(argv):
    # Grab the pinning files
    p = PinningTable("config/pinning_table.xml")
-   print p.table["2bMirror"]["1"]
+   #print p.table["2bMirror"]["1"]
    
 if __name__ == "__main__":
    main(sys.argv)
