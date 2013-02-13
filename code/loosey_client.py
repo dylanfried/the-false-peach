@@ -209,6 +209,12 @@ class LooseyClient:
       # variables to keep track of word count
       scene_word_count = -1
       current_word_count = -1
+      total_word_count = 0
+      # Variable used to keep track of how long a scene takes
+      total_time = time.time()
+      start_time = -1
+      current_line_count = 0
+      total_line_count = 0
       # Loop through all of the lines in the script
       for l in lines:
          if not l:
@@ -235,7 +241,14 @@ class LooseyClient:
          if re.match(".*####.*",l):
             # new Scene
             print l
+            # Print out timing information:
+            if start_time != -1:
+               print "Timing info. Seconds: {0}, words: {1}, lines: {2}".format(str(time.time() - start_time), str(current_word_count), str(current_line_count))
+            start_time = time.time()
+            total_line_count += current_line_count
+            current_line_count = 0
             # Try to get word count information from title
+            total_word_count += current_word_count
             current_word_count = 0
             if re.match(".*wordcount.*", l):
                scene_word_count = int(re.sub(".*wordcount:(\d+).*", "\\1",l))
@@ -283,7 +296,9 @@ class LooseyClient:
                while 1:
                   word = self.get_input()
                   #print "Getting word",word
-                  if word == "EOL": break
+                  if word == "EOL": 
+                     current_line_count += 1
+                     break
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
                time.sleep(2)
@@ -394,7 +409,9 @@ class LooseyClient:
             # For each word said, we're going to check whether we need
             # to trigger anything. Additionally, we will send out metadata
             word = self.get_input()
-            if word == "EOL": break
+            if word == "EOL": 
+               current_line_count += 1
+               break
             word = word[2:]
       
             w = word.lower()
@@ -490,3 +507,8 @@ class LooseyClient:
       self.send_value("style.actor","zero")
       time.sleep(0.5)
       self.send_value("style.lights","zero")
+      
+      # Total time info
+      total_line_count += current_line_count
+      total_word_count += current_word_count
+      print "Timing info. Seconds: {0}, words: {1}, lines: {2}".format(str(time.time() - total_time), str(total_word_count), str(total_line_count))
