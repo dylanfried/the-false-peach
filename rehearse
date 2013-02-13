@@ -1,8 +1,6 @@
 #!/bin/sh
 if [ $# -gt 0 ] ; then
-   python make_show/mk.py $1 > config/burrito.xml 
-   python code/xml_client.py config/burrito.xml config/rehearse.xml config/triggers.xml 
+   python code/burrito.py config/shows/$1 config/pinning_table.xml config/rehearse.xml config/triggers.xml
    exit 0
 fi
-python make_show/mk.py  > config/burrito.xml 
-python code/xml_client.py config/burrito.xml config/rehearse.xml config/triggers.xml 
+python code/burrito.py config/shows/rehearse.xml config/pinning_table.xml config/rehearse.xml config/triggers.xml
