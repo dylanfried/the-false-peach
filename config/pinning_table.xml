@@ -10,6 +10,10 @@
       <lights>theatre</lights>
    </pinned>
    <pinned>
+      <scene>ActOneSceneOne</scene>
+      <sound>TTS.aloud</sound>
+   </pinned>
+   <pinned>
       <scene>dumb</scene>
       <sound>TTS.mute</sound>
    </pinned>
