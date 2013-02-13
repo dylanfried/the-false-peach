@@ -1,5 +1,1 @@
-<show>
-   <sequence>
-      <scene>MadOph.xml</scene>
-   </sequence>
-</show>
+<show><sequence><scene>gravedigger.xml</scene></sequence></show>

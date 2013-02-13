@@ -1,6 +1,5 @@
 #!/bin/sh
 if [ $# -gt 0 ] ; then
-   python code/burrito.py config/shows/$1 config/pinning_table.xml config/rehearse.xml config/triggers.xml
-   exit 0
+   python make_show/mk.py $1 > config/shows/rehearse.xml
 fi
 python code/burrito.py config/shows/rehearse.xml config/pinning_table.xml config/rehearse.xml config/triggers.xml
