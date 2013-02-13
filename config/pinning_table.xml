@@ -1024,6 +1024,10 @@
       <scene>MadOph</scene>
       <lights>lighton</lights>
    </excluded>
+   <excluded>
+      <scene>MadOph</scene>
+      <lights>lightout</lights>
+   </excluded>
    
    <excluded>
       <scene>mansmemory</scene>
