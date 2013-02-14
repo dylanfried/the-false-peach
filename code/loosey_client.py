@@ -35,6 +35,10 @@ class LooseyClient:
       self.subscriber_port = subscriber_port
       self.trigs = []
       
+      # Remember last speaking character and whether we've left it
+      self.last_character = None
+      self.changed_speaker = False
+      
       # self.play used for keeping track of whether we actually send to loosey or not
       bs = BeautifulSoup(open(trial_config_file).read())
       play = bs.find("sender").find("play")
@@ -324,6 +328,7 @@ class LooseyClient:
                time.sleep(2)
                # Announce the new styles
                self.send_value("character",["STYLE"])
+               self.changed_speaker = True
                time.sleep(0.001)
                print "SENDING LINE", "Apply style value "+",".join(styles)
                self.send_value("line","Apply style value "+",".join(styles)+"\n")
@@ -384,6 +389,8 @@ class LooseyClient:
             # Send the character
             self.send_value("character",who)
             print "SENDING WHO",who
+            self.last_character = who
+            self.changed_speaker = False
       
             # Check whether any of triggers need triggering
             for t in self.trigs:
@@ -405,6 +412,7 @@ class LooseyClient:
             self.send_value("intro",3000)
             time.sleep(0.001)
             self.send_value("character",["TITLE"])
+            self.changed_speaker = True
             time.sleep(3)
             # Send the stage directions
             self.send_value("stagedir.title",l)
@@ -424,6 +432,7 @@ class LooseyClient:
             display = 0
             # Send the stagedir
             self.send_value("character",["STAGEDIR"])
+            self.changed_speaker = True
             self.send_value("stagedir.bool",2)
             self.send_value("stagedir",l)
             # Pull off the parentheses for reading
@@ -439,6 +448,11 @@ class LooseyClient:
             if not l or re.match("^\s*$", l) or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): 
                #current_word_count += len(l.split(" "))
                continue
+            # If we're entering dialogue again and don't have a speaker, put one in
+            if self.last_character and self.changed_speaker:
+               print "Entering dialogue, SENDING WHO", self.last_character
+               self.send_value("character",self.last_character)
+               self.changed_speaker = False
             # Send the line
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
