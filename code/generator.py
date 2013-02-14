@@ -240,6 +240,9 @@ class Generator:
             self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         if next_word[-1] == "NEWLINE":
+            # adding a newline, so reset line length
+            self.line_length = 0
          self.line_length += 1
          # Check to see if our line is too long
          if not self.in_paren and (self.line_length > 25 or (self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1])) or (self.line_length > 15 and re.match(".*[.?!]\s*$", next_word[-1]))):
