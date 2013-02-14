@@ -329,7 +329,7 @@ class Generator:
          # the chunk is marked to finish_sentence
          while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"]):
             # finish sentence?
-            if  i >= chunk["trial_length"] and chunk["finish_sentence"] and self.output and (re.match(".*[.?!]\s*$", self.output[-1][-1]) or (re.match(".*[.?!]\s*$", self.output[-2][-1]) and self.output[-1][-1] == "NEWLINE")):
+            if  i >= chunk["trial_length"] and chunk["finish_sentence"] and self.output and (re.match(".*[.?!)]\s*$", self.output[-1][-1]) or (re.match(".*[.?!)]\s*$", self.output[-2][-1]) and self.output[-1][-1] == "NEWLINE")):
                break
             # Don't go too far trying to find punctuation
             if i - chunk["trial_length"] > 150: break
