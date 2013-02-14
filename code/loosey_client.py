@@ -132,6 +132,37 @@ class LooseyClient:
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
+      #if self.word_pause and what == "line":
+      #   words = what.split(" ")
+      #   msgs = []
+      #   for word in words:
+      #      if word and not re.match("^\s*$",word):
+      #         msg = OSC.OSCMessage()
+      #         msg.setAddress(self.actions[what])
+      #         msg.append(word)
+      #         if excess: msg.append(excess)
+      #         msgs.append(msg)
+      #else:
+      #   msg = OSC.OSCMessage()
+      #   msg.setAddress(self.actions[what])
+      #   msg.append(value)
+      #   if excess: msg.append(excess)
+      #   msgs = [msg]
+      #
+      #for msg in msgs:
+      #   #print "Sending message to Loosey",self.sender_ip, self.sender_port
+      #   try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
+      #   except AttributeError as e:
+      #      print "Attribute Error", e
+      #      #print "Attribute Error",e.errno,e.strerror
+      #   except OSC.OSCClientError as e:
+      #      print "OSC Client Error", e
+      #   except: 
+      #      print "Exception when trying to send",sys.exc_info()[0]
+      #      #return 0
+      #   # Success!
+      #   #return 1
+      #return 1
       #print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
       #if not self.play:
          #return 1
