@@ -257,7 +257,7 @@ class Burrito:
             # It's possiblet that there are still some lines without endline punctuation here
             # This could happen because some lines end and change speaker without endline
             # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 30]
+            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 20]
       
             if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
