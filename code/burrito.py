@@ -270,6 +270,10 @@ class Burrito:
                u['line'] = re.sub("(nonny nonny )+"," nonny nonny ",u['line'])
                u['line'] = re.sub("(a-down a-down )+"," nonny nonny ",u['line'])
                u['line'] = re.sub("( NEWLINE)+"," NEWLINE",u['line'])
+               # Get rid of quotation marks
+               u['line'] = re.sub("\"\s*","",u['line'])
+               # Get rid of spaces before punctuation
+               u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
                scene_lines.append(u['speaker'].upper())
                scene_lines.append(u['line'])
             continue
