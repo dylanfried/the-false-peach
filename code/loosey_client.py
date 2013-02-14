@@ -208,7 +208,7 @@ class LooseyClient:
       name_for_outro = ""
       # variables to keep track of word count
       scene_word_count = -1
-      current_word_count = -1
+      current_word_count = 0
       total_word_count = 0
       # Variable used to keep track of how long a scene takes
       total_time = time.time()
@@ -217,7 +217,10 @@ class LooseyClient:
       total_line_count = 0
       # Loop through all of the lines in the script
       for l in lines:
+         current_word_count += len(l.split(" "))
+         #print "percent", str(round((current_word_count+0.0)/(scene_word_count+0.0), 3))
          if not l:
+            #current_word_count += 1
             continue
             
          # grab the name of the chunk to pass on to the outro if necessary
@@ -239,6 +242,7 @@ class LooseyClient:
       
          # Check to see if we're in a new scene
          if re.match(".*####.*",l):
+            #current_word_count += 2
             # new Scene
             print l
             # Print out timing information:
@@ -317,6 +321,7 @@ class LooseyClient:
             
          # check to see if we're at a new chunk
          elif re.match(".*=====.*",l):
+            #current_word_count += len(l.split(" "))
             print l
             # Check whether we have a word_pause for this chunk
             if re.match(".*word_pause:(\d+).*$",l):
@@ -326,6 +331,7 @@ class LooseyClient:
             continue
          # Check to see if this is a character name
          elif re.match("^[A-Z_]+$",l.strip()): 
+            #current_word_count += len(l.split(" "))
             # This is a character
             who = l.strip().upper()
             who = re.sub("_AND_"," ",who)
@@ -399,7 +405,9 @@ class LooseyClient:
          else:
             # Don't use the line if it doesn't exist or if it is just parentheses or just whitespace
             # TODO: What happens if there's a paren in the middle of a line?
-            if not l or re.match("^\s*$", l) or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): continue
+            if not l or re.match("^\s*$", l) or re.match("^\s*\(\s*$",l) or re.match("^\s*\)\s*$",l): 
+               #current_word_count += len(l.split(" "))
+               continue
             # Send the line
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
@@ -423,7 +431,7 @@ class LooseyClient:
             w = re.sub("^(.*);$","\\1",w)
             ws = self.word_scores(w)
             wf = self.word_freq(w)
-            current_word_count += 1
+            #current_word_count += 1
       
             # Check to see if we've had a stagedir trigger in this line
             if trigger_label:
