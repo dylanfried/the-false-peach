@@ -242,7 +242,7 @@ class Generator:
          self.output.append(next_word)
          self.line_length += 1
          # Check to see if our line is too long
-         if self.line_length > 25 or (self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1]) and not self.in_paren) or (self.line_length > 15 and re.match(".*[.?!]\s*$", next_word[-1]) and not self.in_paren):
+         if not self.in_paren and (self.line_length > 25 or (self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1])) or (self.line_length > 15 and re.match(".*[.?!]\s*$", next_word[-1]))):
             insert_newline = [None]*12
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -327,7 +327,10 @@ class Generator:
          # This while loop will loop through the trial length
          # but, it will keep going until it finds punctuation if 
          # the chunk is marked to finish_sentence
-         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"] and self.output and not re.match(".*[.?!]\s*$", self.output[-2][-1])):
+         while i < chunk["trial_length"] or ("finish_sentence" in chunk and chunk["finish_sentence"]):
+            # finish sentence?
+            if  i >= chunk["trial_length"] and chunk["finish_sentence"] and self.output and (re.match(".*[.?!]\s*$", self.output[-1][-1]) or (re.match(".*[.?!]\s*$", self.output[-2][-1]) and self.output[-1][-1] == "NEWLINE")):
+               break
             # Don't go too far trying to find punctuation
             if i - chunk["trial_length"] > 150: break
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
