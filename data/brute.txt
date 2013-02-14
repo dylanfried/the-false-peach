@@ -30885,9 +30885,7 @@
 4 5 20 25355 Gertrude -1 -1 -1 -1 -1 . .
 4 5 20 -1 Gertrude -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 5 20 -1 Stage -1 -1 -1 -1 -1 ( (
-4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance Re-enter
-4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance HORATIO
-4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance with
+4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance Enter
 4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance OPHELIA
 4 5 20 -1 Stage -1 -1 -1 -1 -1 entrance .
 4 5 20 -1 Stage -1 -1 -1 -1 -1 ) )
