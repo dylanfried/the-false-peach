@@ -772,6 +772,10 @@
       <lights>lighton</lights>
    </excluded>
    
+   <pinned>
+      <scene>kingrises</scene>
+      <sound>TTS.aloud</sound>
+   </pinned>
    <excluded>
       <scene>kingrises</scene>
       <lights>theatre</lights>
@@ -1268,6 +1272,7 @@
    <pinned>
       <scene>solid</scene>
       <video>3</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
    </pinned>
    <excluded>
       <scene>solid</scene>
