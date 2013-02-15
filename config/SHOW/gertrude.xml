@@ -1,7 +1,23 @@
    <markov>
       <name>Gertrude</name>
+      <file>data/brute.txt</file>
+      <train>
+         <acts>4</acts>
+         <scenes>7</scenes>
+         <lines>161-163</lines>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>5</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+      <name>Gertrude</name>
    	  <first_character>GERTRUDE</first_character>
-      <file>data/nonewline.txt</file>
+      <file>data/brute.txt</file>
       <train>
          <acts>4</acts>
          <scenes>7</scenes>

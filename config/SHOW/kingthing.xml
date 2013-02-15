@@ -4,6 +4,21 @@
       <train>
          <acts>4</acts>
          <scenes>2</scenes>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+   		 <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>12</length>
+         <k>5</k>
+      </generate>
+   </markov>
+    <markov>
+   	  <name>kingthing</name>
+      <file>data/brute.txt</file>
+      <train>
+         <acts>4</acts>
+         <scenes>2</scenes>
          <lines>27-28</lines>
          <characters>HAMLET, GUILDENSTERN</characters>
       </train>
@@ -132,6 +147,96 @@
 		</selections>
 	</generate>
    </mirror>
+         <mirror>
+     <name>kingthingmirror</name>
+    <file>data/brute.txt</file>
+    <train>
+       <acts>1,2,3,4,5</acts>
+     </train>
+     <generate>
+     	<selections>
+     		<selection>
+         <acts>4</acts>
+         <scenes>2</scenes>
+         <words>23878-23893</words>
+   	   	<characters>HAMLET</characters>
+		</selection>
+		</selections>
+	</generate>
+   </mirror>
+      </mirror>
+         <mirror>
+     <name>kingthingmirror</name>
+    <file>data/brute.txt</file>
+    <train>
+       <acts>1,2,3,4,5</acts>
+     </train>
+     <generate>
+     	<selections>
+     		<selection>
+         <acts>4</acts>
+         <scenes>2</scenes>
+         <words>23878-23893</words>
+   	   	<characters>HAMLET</characters>
+		</selection>
+		</selections>
+	</generate>
+   </mirror>
+      </mirror>
+         <mirror>
+     <name>kingthingmirror</name>
+    <file>data/brute.txt</file>
+    <train>
+       <acts>1,2,3,4,5</acts>
+     </train>
+     <generate>
+     	<selections>
+     		<selection>
+         <acts>4</acts>
+         <scenes>2</scenes>
+         <words>23878-23893</words>
+   	   	<characters>HAMLET</characters>
+		</selection>
+		</selections>
+	</generate>
+   </mirror>
+      </mirror>
+         <mirror>
+     <name>kingthingmirror</name>
+    <file>data/brute.txt</file>
+    <train>
+       <acts>1,2,3,4,5</acts>
+     </train>
+     <generate>
+     	<selections>
+     		<selection>
+         <acts>4</acts>
+         <scenes>2</scenes>
+         <words>23878-23893</words>
+   	   	<characters>HAMLET</characters>
+		</selection>
+		</selections>
+	</generate>
+   </mirror>
+      </mirror>
+         <mirror>
+     <name>kingthingmirror</name>
+    <file>data/brute.txt</file>
+    <train>
+       <acts>1,2,3,4,5</acts>
+     </train>
+     <generate>
+     	<selections>
+     		<selection>
+         <acts>4</acts>
+         <scenes>2</scenes>
+         <words>23878-23893</words>
+   	   	<characters>HAMLET</characters>
+		</selection>
+		</selections>
+	</generate>
+   </mirror>
+      </mirror>
          <mirror>
      <name>kingthingmirror</name>
     <file>data/brute.txt</file>

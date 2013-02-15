@@ -9,7 +9,7 @@
       <generate>
          <reset>True</reset>
          <length>149</length>
-         <k>1</k>
+         <k>10</k>
       </generate>
    </markov>
 

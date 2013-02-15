@@ -25,7 +25,7 @@
          <finish_sent>True</finish_sent>
          <reset>True</reset>
          <length>75</length>
-         <k>8</k>
+         <k>15</k>
       </generate>
    </markov>
    <markov>
@@ -33,13 +33,13 @@
          <file>data/brute.txt</file>
          <acts>1</acts>
          <scenes>2</scenes>
-         <lines>128-129</lines>
+         <lines>128</lines>
          <characters>STAGE</characters>
       </train>
       <generate>
          <reset>True</reset>
-         <length>8</length>
-         <k>3</k>
+         <length>12</length>
+         <k>9</k>
       </generate>
    </markov>
     <markov>
@@ -52,8 +52,8 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>75</length>
-         <k>5</k>
+         <length>68</length>
+         <k>7</k>
       </generate>
    </markov>
    <markov>
@@ -108,9 +108,8 @@
          <scenes>2</scenes>
       </train>
       <generate>
-         <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>120</length>
+         <length>90</length>
          <k>7</k>
       </generate>
    </markov>
@@ -198,7 +197,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>100</length>
+         <length>90</length>
          <k>7</k>
       </generate>
    </markov>
@@ -208,15 +207,31 @@
          <file>data/brute.txt</file>
          <acts>5</acts>
          <scenes>2</scenes>
-         <characters>Stage,Title,Claudius,Gertrude,Hamlet,Laertes,Horatio</characters>
+         <characters>Stage</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>100</length>
-         <k>7</k>
+         <length>15</length>
+         <k>5</k>
       </generate>
    </markov>
+   <markov>
+   	<name>ActFiveSceneTwo</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>350-401</lines>
+   			<characters>HAMLET,KING,HORATIO,STAGE,GERTRUDE,LAERTES,FORTINBRAS</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>100</length>
+   	 	<k>7</k>
+   	 </generate>
+   	</markov>
    <markov>
    	<name>LastLine</name>
    	 <train>

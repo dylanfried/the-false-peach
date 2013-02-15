@@ -1,3 +1,18 @@
+<markov>
+   	<name>HamOph</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>1</scenes>
+   		<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>68</length>
+   	 	<k>8</k>
+   	 </generate>
+   	</markov>
    <mirror>
    	   <name>HamOph</name>
    	   <forced_character>HAMLET</forced_character>
@@ -19,7 +34,7 @@
    	   				<acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>88-89</lines>
-   	   				<characters>Hamlet</characters>
+   	   				<characters>HAMLET</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>
@@ -27,25 +42,31 @@
    <markov>
    	<name>HamOph</name>
       <train>
-        <file>data/nonewline.txt</file>
+        <file>data/brute.txt</file>
       	<selections>
       		<selection>
          		<acts>3</acts>
          		<scenes>1</scenes>
          		<lines>55-163</lines>
-         		<characters>Hamlet, Ophelia</characters>
+         		<characters>HAMLET, OPHELIA</characters>
          	</selection>
          	<selection>
          		<acts>3</acts>
          		<scenes>2</scenes>
          		<lines>60-79</lines>
-         		<characters>Ophelia, Hamlet</characters>
+         		<characters>HAMLET, OPHELIA</characters>
          	</selection>
             <selection>
          		<acts>3</acts>
          		<scenes>2</scenes>
          		<lines>114-261</lines>
-         		<characters>Ophelia, Hamlet</characters>
+         		<characters>HAMLET, OPHELIA</characters>
+         	</selection>
+         	<selection>
+         		<acts>3</acts>
+         		<scenes>2</scenes>
+         		<lines>114</lines>
+         		<characters>STAGE</characters>
          	</selection>
          </selections>
       </train>

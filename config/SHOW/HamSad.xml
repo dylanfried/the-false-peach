@@ -1,3 +1,18 @@
+   <markov>
+   	   <name>HamSad</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>4</acts>
+         <scenes>4</scenes>
+         <lines>30</lines>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>6</length>
+         <k>7</k>
+      </generate>
+   </markov>
     <markov>
       <name>RampSad</name>
       <file>data/brute.txt</file>

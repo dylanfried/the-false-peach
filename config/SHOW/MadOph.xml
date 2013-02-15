@@ -1,13 +1,13 @@
     <markov>
     <name>MadOph</name>
     <first_character>OPHELIA</first_character>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
          		<acts>4</acts>
          		<scenes>5</scenes>
-         		<lines>164</lines>
+         		<lines>20</lines>
 			<characters>STAGE</characters>
 		</selection>
 	</selections>
@@ -15,13 +15,13 @@
       <generate>
          <reset>True</reset>
          <length>4</length>
-         <k>7</k>
+         <k>9</k>
       </generate>
    </markov>
     <markov>
     <name>MadOph</name>
     <first_character>OPHELIA</first_character>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
@@ -34,13 +34,13 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>8</length>
+         <length>10</length>
          <k>7</k>
       </generate>
    </markov>
    <markov>
     <name>MadOph</name>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
@@ -57,7 +57,7 @@
    </markov>
    <markov>
     <name>MadOph</name>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
@@ -74,30 +74,11 @@
          <length>400</length>
          <k>2</k>
       </generate>
-   </markov>
- <markov>
-    <name>MadOph</name>
-    <forced_character>OPHELIA</forced_character>
-   	<file>data/nonewline.txt</file>
-      <train>
-      	<selections>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>66</lines>
-			<characters>STAGE</characters>
-		</selection>
-	 </trial>
-      <generate>
-         <reset>True</reset>
-         <length>2</length>
-         <k>2</k>
-      </generate>
    </markov> 
     <markov>
     <name>MadOph</name>
     <forced_character>OPHELIA</forced_character>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
@@ -165,7 +146,7 @@
    </markov>
    <markov>
     <name>MadOph</name>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>
@@ -186,7 +167,7 @@
    <markov>
     <name>RampOph</name>
       <name>Ramp</name>
-      <file>data/combinepunct.txt</file>
+      <file>data/brute.txt</file>
       <train>
          <characters>OPHELIA</characters>
       </train>
@@ -196,21 +177,21 @@
                   <point line=-1 value=-0.5 />
                   <point line=100 value=-0.5 />
                   <point line=150 value=2.0 />
-                  <point line=200 value=2.8 />
+                  <point line=200 value=1.9 />
                   <point line=250 value=2.0 />
-                  <point line=276 value=3.0 />
-                  <point line=298 value=3.5 />
-                  <point line=299 value=-1.0 />
-                  <point line=301 value=-1.0 />
+                  <point line=260 value=2.2 />
+                  <point line=265 value=2.3 />
+                  <point line=274 value=-1.0 />
+                  <point line=276 value=-1.0 />
                </ramp>
          <finish_sent>True</finish_sent>
-         <length>300</length>
+         <length>275</length>
          <k>2</k>
       </generate>
    </markov>
     <markov>
     <name>MadOph</name>
-   	<file>data/nonewline.txt</file>
+   	<file>data/brute.txt</file>
       <train>
       	<selections>
       		<selection>

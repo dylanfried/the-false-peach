@@ -13,7 +13,7 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>6</length>
+         <length>13</length>
          <k>7</k>
       </generate>
    </markov>
@@ -33,7 +33,7 @@
       <generate>
       	 <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>400</length>
+         <length>345</length>
          <k>7</k>
       </generate>
    </markov>

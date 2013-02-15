@@ -1,5 +1,11 @@
 <table>
    <pinned>
+      <scene>playwithin</scene>
+      <sound>TTS.mute</sound>
+      <video>10</video>
+      <lights>lightout</lights>
+   </pinned>
+   <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <lights>skot</lights>
