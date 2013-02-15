@@ -290,6 +290,7 @@ class Burrito:
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
                # if there's a stage direction, put it in
                if "stage_direction" in u and u["stage_direction"]:
+                  u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
                   scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())
                scene_lines.append(u['line'])
