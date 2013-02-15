@@ -392,7 +392,7 @@ class LooseyClient:
             self.last_character = who
             self.changed_speaker = False
       
-            # Check whether any of triggers need triggering
+            # Check whether any of triggers need triggering/reseting
             for t in self.trigs:
                if t.active():
                   print "SENDING TRIGGER", t.stage, t.words[0]
@@ -441,6 +441,14 @@ class LooseyClient:
             trigger_label = wwhhaatt
             print "STAGE",l
       
+            # Check whether any of triggers need triggering/reseting
+            for t in self.trigs:
+               if t.active():
+                  print "SENDING TRIGGER", t.stage, t.words[0]
+                  self.send_value("stagedir."+t.stage,t.words[0])
+                  time.sleep(t.pause/1000.0)
+                  t.reset()
+            
          # otherwise, this is a normal dialogue line
          else:
             # Don't use the line if it doesn't exist or if it is just parentheses or just whitespace
