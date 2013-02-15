@@ -1,8 +1,8 @@
 <triggerset>
    <triggers stagedir='place'>
       <word priority=1 pause=0>platform</word>
+      <word priority=2 pause=0>part of the platform</word>
       <word priority=1 pause=0>room</word>
-      <word priority=2 pause=0>another room</word>
       <word priority=1 pause=0>hall</word>
       <word priority=1 pause=0>plain</word>
       <word priority=1 pause=0>closet</word>
@@ -12,12 +12,14 @@
       <word priority=1 pause=5000>flourish</word>
       <word priority=1 pause=5000>trumpets</word>
       <word priority=1 pause=2000>shot</word>
+      <word priority=2 pause=8000>cannon shot</word>
       <word priority=1 pause=4000>cock</word>
       <word priority=2 pause=8000>ordnance</word>
       <word priority=1 pause=8000>hautboys</word>
       <word priority=1 pause=4000>noise</word>
       <word priority=2 pause=9000>dead march</word>
       <word priority=1 pause=6000>march</word>
+      <word priority=1 pause=6000>drums</word>
    </triggers>
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
@@ -25,7 +27,6 @@
       <word priority=1 pause=3000>Attendants</word>
    </triggers>
    <triggers stagedir='exit'>
-      <word priority=1 pause=3000>Ghost</word>
       <word priority=1 pause=3000>exeunt</word>
    </triggers>
    <triggers stagedir='action'>
@@ -33,7 +34,7 @@
       <word priority=1 pause=5000>grave</word>
       <word priority=1 pause=5000>arras</word>
    </triggers>
-   <triggers stagedir='voice' wait='character'>
+   <triggers stagedir='voice' zero_out='intro,outro,stagedir.place,stagedir.exit,stagedir.entrance,stagedir.sound,stagedir.voice,stagedir.dumb,stagedir.action,stagedir.title,stagedir.bool,stagedir,style.video,style.actor,style.sound,style.lights,character'>
       <word priority=1 pause=0>beneath</word>
       <word priority=1 pause=0>within</word>
       <word priority=1 pause=0>sings</word>

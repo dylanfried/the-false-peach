@@ -53,14 +53,14 @@ class LooseyClient:
          trigsall = BeautifulSoup(open(triggers_file).read())
          for triggers in trigsall.findAll("triggers"):
             trigwhat = triggers['stagedir'].strip()
-            trigwait = ""
-            if triggers.has_key("wait"): 
-               trigwait = triggers['wait'].strip()
+            trigzero = []
+            if triggers.has_key("zero_out"): 
+               trigzero = triggers['zero_out'].strip().split(",")
             for w in triggers.findAll("word"):
                trigwhen = float(w['pause'].strip())
                trigprio = float(w['priority'].strip())
                trigword = w.string.strip().split(" ")
-               self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigwait))
+               self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigzero))
       
       # OSC client for sending messages to Loosey
       if self.play:
@@ -176,6 +176,25 @@ class LooseyClient:
       #print "SENDING", self.actions[what], value, excess
       if not self.play:
          return 1
+      
+      # If necessary, zero out any triggers
+      for trigger in self.trigs:
+         if trigger.zero_out and trigger.triggered and what in trigger.zero_out:
+            # This is a trigger that requires zeroing and has
+            # been triggered. Let's zero it out now.
+            trigger.triggered = False
+            msg = OSC.OSCMessage()
+            msg.setAddress(self.actions["stagedir." + trigger.stage])
+            msg.append("zero")
+            try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
+            except AttributeError as e:
+               print "Attribute Error", e
+               #print "Attribute Error",e.errno,e.strerror
+            except OSC.OSCClientError as e:
+               print "OSC Client Error", e
+            except: 
+               print "Exception when trying to send",sys.exc_info()[0]
+      
       # Create and send the actual message
       msg = OSC.OSCMessage()
       msg.setAddress(self.actions[what])
@@ -391,14 +410,6 @@ class LooseyClient:
             print "SENDING WHO",who
             self.last_character = who
             self.changed_speaker = False
-      
-            # Check whether any of triggers need triggering/reseting
-            for t in self.trigs:
-               if t.active():
-                  print "SENDING TRIGGER", t.stage, t.words[0]
-                  self.send_value("stagedir."+t.stage,t.words[0])
-                  time.sleep(t.pause/1000.0)
-                  t.reset()
                   
             # Move on to the next line
             continue
@@ -411,7 +422,7 @@ class LooseyClient:
             # This is the TITLE voice
             self.send_value("intro",3000)
             time.sleep(0.001)
-            self.send_value("character",["TITLE"])
+            self.send_value("character",["STAGEDIR"])
             self.changed_speaker = True
             time.sleep(3)
             # Send the stage directions
@@ -440,14 +451,6 @@ class LooseyClient:
             self.send_value("line",l)
             trigger_label = wwhhaatt
             print "STAGE",l
-      
-            # Check whether any of triggers need triggering/reseting
-            for t in self.trigs:
-               if t.active():
-                  print "SENDING TRIGGER", t.stage, t.words[0]
-                  self.send_value("stagedir."+t.stage,t.words[0])
-                  time.sleep(t.pause/1000.0)
-                  t.reset()
             
          # otherwise, this is a normal dialogue line
          else:
@@ -505,16 +508,19 @@ class LooseyClient:
                   print "SENDING TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Send one of them
                   self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                  # Remember that we're triggering this in case we have to
+                  # zero it out later (like for the voice triggers)
+                  allt[0].triggered = True
                   time.sleep(allt[0].pause/1000.0)
                   # Reset all of the activated triggers
                   for t in tmptrigs:
-                     if not t.wait: t.reset()
+                     t.reset()
             # If we don't have a trigger_label, then we're not in a stagedir
             # Just go through and reset any triggers that aren't waiting for
             # a number of occurences
             else:
                for t in self.trigs: 
-                  if not t.wait: t.reset()
+                  t.reset()
       
             # If display, then we want to put the word out there (for video display I assume)
             # No one is using this, so taking it out
