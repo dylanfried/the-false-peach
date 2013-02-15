@@ -5,7 +5,8 @@ class RandomTransition(TransitionLogic):
    def __init__(self):
       TransitionLogic.__init__(self)
       # Rules for things that cannot follow other things
-      self.no_follow = [{"from":['itis_filter','O_filter','thisfilter'], "to":['itis_filter','O_filter','thisfilter']},
+      self.no_follow = [{"from":['itis_filter','O_filter','thisfilter'], 
+                         "to":  ['itis_filter','O_filter','thisfilter']},
                         {"from":["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"], 
                          "to":  ["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"]},
                         {"from":["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","HamNeg"],
@@ -22,8 +23,14 @@ class RandomTransition(TransitionLogic):
       for s in scene_choices:
          if re.sub("^(.*)\.xml$","\\1",s) not in [f["name"] for f in feature_vectors] and re.sub("^(.*)\.xml$","\\1",s) not in no_follow:
             no_repeat.append(s)
-      print feature_vectors, no_repeat
+      if not no_repeat:
+         # we didn't get anything, try relaxing the follow constraints
+         for s in scene_choices:
+            if re.sub("^(.*)\.xml$","\\1",s) not in [f["name"] for f in feature_vectors]:
+               no_repeat.append(s)
+      # Now, if we have anything in our no repeat list, use it
       if no_repeat:
          return random.sample(no_repeat,1)[0]
       else:
+         # Otherwise, randomly sample over everything
          return random.sample(scene_choices,1)[0]
