@@ -180,6 +180,11 @@ class LooseyClient:
       # If necessary, zero out any triggers
       for trigger in self.trigs:
          if trigger.zero_out and trigger.triggered and what in trigger.zero_out:
+            # Check to see if we need to skip any cancels:
+            if what in trigger.skip:
+               # remove this skip from the list
+               trigger.skip.pop(trigger.skip.index(what))
+               continue
             # This is a trigger that requires zeroing and has
             # been triggered. Let's zero it out now.
             trigger.triggered = False
@@ -270,7 +275,8 @@ class LooseyClient:
       current_line_count = 0
       total_line_count = 0
       # Loop through all of the lines in the script
-      for l in lines:
+      for line_index in range(len(lines)):
+         l = lines[line_index]
          current_word_count += len(l.split(" "))
          #print "percent", str(round((current_word_count+0.0)/(scene_word_count+0.0), 3))
          if not l:
@@ -507,6 +513,12 @@ class LooseyClient:
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
                   print "SENDING TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Send one of them
+                  # For voice triggers, we have a system for zeroing them out
+                  # after the next character change, stage dir, etc. Sometimes,
+                  # we want to skip a character for zeroing purposes becuase the
+                  # stage direction comes right before a character name
+                  if allt[0].zero_out and (line_index+1) < len(lines) and re.match("^[A-Z_]+$",lines[line_index+1].strip()):
+                     allt[0].skip = ["character"]
                   self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
                   # Remember that we're triggering this in case we have to
                   # zero it out later (like for the voice triggers)
