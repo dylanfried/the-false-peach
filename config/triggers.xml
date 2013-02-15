@@ -19,13 +19,6 @@
       <word priority=2 pause=9000>dead march</word>
       <word priority=1 pause=6000>march</word>
    </triggers>
-   <triggers stagedir='voice' wait='character'>
-      <word priority=1 pause=0>beneath</word>
-      <word priority=1 pause=0>within</word>
-      <word priority=1 pause=0>sings</word>
-      <word priority=1 pause=0>behind</word>
-      <word priority=1 pause=0>aside</word>
-   </triggers>
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
       <word priority=1 pause=3000>King</word>
@@ -39,6 +32,13 @@
       <word priority=1 pause=3000>dies</word>
       <word priority=1 pause=5000>grave</word>
       <word priority=1 pause=5000>arras</word>
+   </triggers>
+   <triggers stagedir='voice' wait='character'>
+      <word priority=1 pause=0>beneath</word>
+      <word priority=1 pause=0>within</word>
+      <word priority=1 pause=0>sings</word>
+      <word priority=1 pause=0>behind</word>
+      <word priority=1 pause=0>aside</word>
    </triggers>
 </triggerset>
 
