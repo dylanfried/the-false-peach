@@ -1,9 +1,9 @@
 <table>
    <pinned>
       <scene>2bMirror</scene>
-      <sound>TTS.inear</sound>
+      <sound>TTS.inear.VOICE.aloud</sound>
       <lights>skot</lights>
-      <video>7</video>
+      <video>10</video>
    </pinned>
    <pinned>
       <scene>3pcntORIG</scene>
@@ -23,11 +23,11 @@
    </pinned>
    <pinned>
       <scene>rogue</scene>
-      <sound>TTS.rogui</sound>
+      <sound>TTS.aloud.ROGUI</sound>
    </pinned>
    <pinned>
       <scene>MadOph</scene>
-      <sound>TTS.music.emotion</sound>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
       <video>11</video>
    </pinned>
    
@@ -226,22 +226,12 @@
       <scene>claudius</scene>
       <video>1</video>
    </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>claudius</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>claudius</scene>
       <video>8</video>
@@ -329,22 +319,13 @@
       <scene>dumb</scene>
       <video>3</video>
    </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>5</video>
-   </excluded>
+
+
    <excluded>
       <scene>dumb</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>dumb</scene>
       <video>8</video>
@@ -385,7 +366,6 @@
       <scene>dumb</scene>
       <video>17</video>
    </excluded>
-   
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
@@ -431,22 +411,12 @@
       <scene>ghostscene</scene>
       <video>3</video>
    </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>ghostscene</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>ghostscene</scene>
       <video>8</video>
@@ -520,21 +490,11 @@
       <scene>gravedigger</scene>
       <lights>closet</lights>
    </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>5</video>
-   </excluded>
+
+
    <excluded>
       <scene>gravedigger</scene>
       <video>6</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>7</video>
    </excluded>
    <excluded>
       <scene>gravedigger</scene>
@@ -850,22 +810,12 @@
       <scene>kingrises</scene>
       <video>2</video>
    </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>kingrises</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>kingrises</scene>
       <video>8</video>
@@ -951,22 +901,12 @@
       <scene>kingthing</scene>
       <video>3</video>
    </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>kingthing</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>kingthing</scene>
       <video>8</video>
@@ -1126,22 +1066,13 @@
       <scene>O_filter</scene>
       <lights>lighton</lights>
    </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>5</video>
-   </excluded>
+  
+  
    <excluded>
       <scene>O_filter</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>7</video>
-   </excluded>
+  
    <excluded>
       <scene>O_filter</scene>
       <video>8</video>
@@ -1208,22 +1139,12 @@
       <scene>rogue</scene>
       <video>2</video>
    </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>rogue</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>rogue</scene>
       <video>8</video>
@@ -1411,22 +1332,12 @@
       <scene>sweetprince</scene>
       <lights>closet</lights>
    </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>sweetprince</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>sweetprince</scene>
       <video>8</video>
@@ -1472,22 +1383,12 @@
       <scene>thedrink</scene>
       <lights>word</lights>
    </pinned>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>5</video>
-   </excluded>
+
    <excluded>
       <scene>thedrink</scene>
       <video>6</video>
    </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>7</video>
-   </excluded>
+
    <excluded>
       <scene>thedrink</scene>
       <video>8</video>
@@ -1658,7 +1559,7 @@
       <scene>tocome</scene>
       <video>15</video>
    </excluded>
-   
+
    <pinned>
       <scene>52directions</scene>
       <lights>theatre</lights>
@@ -1670,5 +1571,243 @@
       <lights>lightout</scene>
       <video>10</video>
    </pinned>
+   
+    <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>1</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>2</video>
+   </excluded>
+
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>6</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>8</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>9</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>11</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>12</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>13</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>14</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>16</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <video>17</video>
+   </excluded>
+   
+   
+   
+   <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>1</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>2</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>6</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>8</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>9</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>11</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>12</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>13</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>14</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>16</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.space</sound>
+      <video>17</video>
+   </excluded>
+   
+   
+   
+      <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>1</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>2</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>6</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>8</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>9</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>11</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>12</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>13</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>14</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>16</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>17</video>
+   </excluded>
+   
+     <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>1</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>2</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>6</video>
+   </excluded>
+
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>8</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>9</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>11</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>12</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>13</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>14</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>16</video>
+   </excluded>
+        <excluded>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <video>17</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>1</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>2</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>6</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>8</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>9</video>
+   </excluded>
+       <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>11</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>12</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>13</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>14</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>16</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
+      <video>17</video>
+   </excluded>
+   
    
 </table>
