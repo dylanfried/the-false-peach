@@ -5,7 +5,12 @@ class RandomTransition(TransitionLogic):
    def __init__(self):
       TransitionLogic.__init__(self)
       # Rules for things that cannot follow other things
-      self.no_follow = [{"from":['itis_filter','O_filter','thisfilter'], "to":['itis_filter','O_filter','thisfilter']}]
+      self.no_follow = [{"from":['itis_filter','O_filter','thisfilter'], "to":['itis_filter','O_filter','thisfilter']},
+                        {"from":["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"], 
+                         "to":  ["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"]},
+                        {"from":["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","HamNeg"],
+                         "to":  ["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","HamNeg"]}]
+                         
    def next_scene(self,feature_vectors,scene_choices):
       no_repeat = []
       # Loop through the no follow data and compile a list
