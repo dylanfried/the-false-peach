@@ -83,28 +83,49 @@ class Burrito:
          # This can either be a prescribed sequence of scenes
          # or a set of random scenes
          if "random" in sequence.attrs and sequence["random"] in ["True","true","t","T","yes","Yes"]:
-            # This is a random sequence of scenes
-            length = int(sequence.find("length").string)
-            words_generated = 0
-            iterations = 0
-            scene_choices = []
-            if sequence.find("scene_choices"):
-               # Specific scene choices given
-               for scene_choice in sequence.findAll("scene_choice"):
-                  scene_choices.append(scene_choice.string)
+            # if no length tag is specified we want to do output a script with 
+            # every chunk in that is specified but in a random order.
+            # else we we check the length...
+            if not sequence.find("length"):
+               # This is a random sequence of scenes
+               length = len(sequence.findAll("scene_choice"))
+               iterations = 0
+               scene_choices = []
+               if sequence.find("scene_choices"):
+                  # Specific scene choices given
+                  for scene_choice in sequence.findAll("scene_choice"):
+                     scene_choices.append(scene_choice.string)
+               else:
+                   print "Error: Need length parameter or a scene choice."
+               while length > iterations:
+                  # Get next scene as a function of past feature
+                  # vectors and available scene choices
+                  next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
+                  self.scenes.append(self.create_scene(next_scene))
+                  iterations += 1
             else:
-               # Grab all the scenes from the SHOW dir
-               scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l) and l not in self.prescribed_scenes]
-            # keep going until we get enough stuff
-            while words_generated < length:
-               # Don't go too long
-               if iterations > 50: break
-               # Get next scene as a function of past feature
-               # vectors and available scene choices
-               next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
-               self.scenes.append(self.create_scene(next_scene))
-               words_generated += self.scenes[-1].length
-               iterations += 1
+               # This is a random sequence of scenes
+               length = int(sequence.find("length").string)
+               words_generated = 0
+               iterations = 0
+               scene_choices = []
+               if sequence.find("scene_choices"):
+                  # Specific scene choices given
+                  for scene_choice in sequence.findAll("scene_choice"):
+                     scene_choices.append(scene_choice.string)
+               else:
+                  # Grab all the scenes from the SHOW dir
+                  scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l) and l not in self.prescribed_scenes]
+               # keep going until we get enough stuff
+               while words_generated < length:
+                  # Don't go too long
+                  if iterations > 50: break
+                  # Get next scene as a function of past feature
+                  # vectors and available scene choices
+                  next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
+                  self.scenes.append(self.create_scene(next_scene))
+                  words_generated += self.scenes[-1].length
+                  iterations += 1
          else:
             # This is a prescribed sequence
             for scene in sequence.findAll("scene"):
