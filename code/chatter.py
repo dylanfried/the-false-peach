@@ -11,6 +11,8 @@ import sys
 sys.path.append("code/")
 from hyphenate import hyphenate_word
 
+import time
+
 if len(sys.argv)>2:
    trialconfigfile = sys.argv[2]
 else:
