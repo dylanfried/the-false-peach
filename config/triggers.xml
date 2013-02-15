@@ -14,7 +14,7 @@
       <word priority=1 pause=2000>shot</word>
       <word priority=2 pause=2000>cannon shot</word>
       <word priority=1 pause=4000>cock</word>
-      <word priority=2 pause=8000>ordnance</word>
+      <word priority=2 pause=2000>ordnance shot</word>
       <word priority=1 pause=8000>hautboys</word>
       <word priority=1 pause=4000>noise</word>
       <word priority=2 pause=9000>dead march</word>
