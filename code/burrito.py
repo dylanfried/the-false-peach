@@ -200,18 +200,26 @@ class Burrito:
             # chunks
             universe = []
             line = {"speaker": "", "line":""}
-            for d in trial_data:
+            for i in range(len(trial_data)):
+               d = trial_data[i]
                if d[4] != line["speaker"] or d[-1] == "NEWLINE":
-                  universe.append(line)
+                  # If the last line was a stage dir, we want to remember what type
+                  if i > 1 and trial_data[i-2][4] == "Stage":
+                     line['pos'] = trial_data[i-2][-2]
+                  if line['line']:
+                     universe.append(line)
                   line = {"speaker": d[4], "line":""}
-                  # Check to see if we're forcing a single character
+                  # Check to see if we're forcing a single character (but don't overwrite stage directions)
                   forced_character = trial.find("forced_character")
-                  if forced_character:
+                  if forced_character and line['speaker'] != "Stage":
                      line['speaker'] = forced_character.string
                if d[-1] != "NEWLINE":
                   line["line"] += d[-1] + " "
-            universe.append(line)
-                  
+            if line['line']:
+               universe.append(line)
+            
+            #print universe
+            
             trial_lines = []
             
             # SUPER HACK
@@ -243,6 +251,11 @@ class Burrito:
                # We don't have a previously matching line without punctuation.
                # Check to see if this line matches the pattern
                elif re.match("^"+pattern+".*",u['line']):
+                  # Check to see whether the last line was a stage dir
+                  # and include it if it was (Don't want titles, just stagedirs)
+                  if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
+                     # This re.sub expression is used to insert the type of stage dir at the beginning of the stage dir
+                     u['stage_direction'] = re.sub("\s*\((.*)\)\s*", "( " + universe[i-2]['pos'] + " \\1)", universe[i-2]["line"])
                   # Make sure that we end each line with punctuation
                   if re.match("^.*[.!;?].*$", u['line']):
                      # We have a punctuation mark in this line, cut
@@ -254,10 +267,11 @@ class Burrito:
                      no_punctuation = True
                   trial_lines.append(u)
       
+            
             # It's possiblet that there are still some lines without endline punctuation here
             # This could happen because some lines end and change speaker without endline
             # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 20]
+            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 25]
       
             if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
@@ -274,6 +288,9 @@ class Burrito:
                u['line'] = re.sub("\"\s*","",u['line'])
                # Get rid of spaces before punctuation
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
+               # if there's a stage direction, put it in
+               if "stage_direction" in u and u["stage_direction"]:
+                  scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())
                scene_lines.append(u['line'])
             continue
