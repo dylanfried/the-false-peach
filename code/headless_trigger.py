@@ -9,6 +9,7 @@ class headless_trigger():
       self.priority = priority
       self.pause = pause
       self.zero_out = zero_out
+      self.skip = []
       self.cnt = 0
       self.triggered = False
 
