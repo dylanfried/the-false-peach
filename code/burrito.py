@@ -292,7 +292,7 @@ class Burrito:
             # It's possiblet that there are still some lines without endline punctuation here
             # This could happen because some lines end and change speaker without endline
             # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 25]
+            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
       
             if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
@@ -311,6 +311,7 @@ class Burrito:
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
                # if there's a stage direction, put it in
                if "stage_direction" in u and u["stage_direction"]:
+                  u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
                   scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())
                scene_lines.append(u['line'])
