@@ -11,8 +11,8 @@
    <triggers stagedir='sound'>
       <word priority=1 pause=5000>flourish</word>
       <word priority=1 pause=3000>trumpets</word>
-      <word priority=1 pause=2000>shot</word>
-      <word priority=2 pause=2000>cannon shot</word>
+      <word priority=1 pause=1000>shot</word>
+      <word priority=2 pause=1000>cannon shot</word>
       <word priority=1 pause=4000>cock</word>
       <word priority=2 pause=2000>ordnance shot</word>
       <word priority=1 pause=8000>hautboys</word>
