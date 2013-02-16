@@ -456,7 +456,11 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Send the stagedir
-            self.send_value("character",["STAGEDIR"])
+            if wwhhaatt == "dumb":
+               # Special dumb character that is mute for dumb show
+               self.send_value("character",["DUMB"])
+            else:
+               self.send_value("character",["STAGEDIR"])
             self.changed_speaker = True
             self.send_value("stagedir.bool",2)
             self.send_value("stagedir",l)
