@@ -1,0 +1,16 @@
+   <letter_markov>
+   	 <name>Line</name>
+   	 <file>data/brute.txt</file>
+   	 <first_character>Ophelia</first_character>
+   	   <train>
+   	   		<acts>2</acts>
+   	   		<scenes>1</scenes>
+   	   		<characters>Ophelia,Hamlet,Stage</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>1</k>
+   	   	</generate>
+   	 </letter_markov>
