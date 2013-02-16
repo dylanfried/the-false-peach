@@ -18151,7 +18151,7 @@
 3 1 28 -1 Rosencrantz -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 28 -1 Stage -1 -1 -1 -1 -1 ( (
 3 1 28 -1 Stage -1 -1 -1 -1 -1 exit Exeunt
-3 1 28 -1 Stage -1 -1 -1 -1 -1 exit Rosencranlz
+3 1 28 -1 Stage -1 -1 -1 -1 -1 exit Rosencrantz
 3 1 28 -1 Stage -1 -1 -1 -1 -1 exit and
 3 1 28 -1 Stage -1 -1 -1 -1 -1 exit Guildenstern
 3 1 28 -1 Stage -1 -1 -1 -1 -1 exit .
@@ -36380,8 +36380,7 @@
 5 1 62 -1 First_Clown -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 62 -1 Stage -1 -1 -1 -1 -1 ( (
 5 1 62 -1 Stage -1 -1 -1 -1 -1 exit Exit
-5 1 62 -1 Stage -1 -1 -1 -1 -1 exit Sec
-5 1 62 -1 Stage -1 -1 -1 -1 -1 exit .
+5 1 62 -1 Stage -1 -1 -1 -1 -1 exit Second
 5 1 62 -1 Stage -1 -1 -1 -1 -1 exit Clown
 5 1 62 -1 Stage -1 -1 -1 -1 -1 exit .
 5 1 62 -1 Stage -1 -1 -1 -1 -1 ) )

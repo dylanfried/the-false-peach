@@ -1,4 +1,9 @@
 <table>
+
+   <excluded>
+      <lights>lightshow</lights>
+   </excluded>
+ 
    <pinned>
       <scene>playwithin</scene>
       <sound>TTS.mute</sound>
@@ -496,8 +501,15 @@
       <scene>gravedigger</scene>
       <lights>closet</lights>
    </excluded>
+   <excluded>
+      <scene>gravedigger</scene>
+      <lights>lighton</lights>
+   </excluded>
 
-
+    <excluded>
+      <scene>gravedigger</scene>
+      <video>3</video>
+   </excluded>
    <excluded>
       <scene>gravedigger</scene>
       <video>6</video>
@@ -525,6 +537,10 @@
    <excluded>
       <scene>gravedigger</scene>
       <video>14</video>
+   </excluded>
+   <excluded>
+      <scene>gravedigger</scene>
+      <video>15</video>
    </excluded>
    <excluded>
       <scene>gravedigger</scene>
@@ -978,6 +994,7 @@
       <scene>MadOph</scene>
       <lights>lightout</lights>
    </excluded>
+   
    
    <excluded>
       <scene>mansmemory</scene>
