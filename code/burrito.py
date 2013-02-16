@@ -196,6 +196,9 @@ class Burrito:
          # Check to see if there's a word pause set
          word_pause = trial.find("word_pause")
          if word_pause: trialname += " word_pause:" + word_pause.string
+         # Check to see if there's a scene pause set
+         scene_pause = trial.find("scene_pause")
+         if scene_pause: trialname += " scene_pause:" + scene_pause.string
          
          if trial.name == "sm_filter":
             print "sm_filter not yet implemented"

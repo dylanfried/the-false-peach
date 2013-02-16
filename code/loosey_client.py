@@ -45,8 +45,9 @@ class LooseyClient:
       if play: self.play = play.string in ["True","true","T","t","yes","Yes"]
       else: self.play = False 
       
-      # Keep track of whether there's a word pause for this chunk
+      # Keep track of whether there's a word pause or scene pause for this chunk
       self.word_pause = None
+      self.scene_pause = None
       
       # Pull the triggers out of the config file if provided
       if triggers_file:
@@ -221,7 +222,7 @@ class LooseyClient:
    # Method for retrieving what the subscriber has received
    def get_input(self):
       if not self.play:
-         time.sleep(1)
+         time.sleep(0.1)
          return "EOL"
       #TODO put something in here that indicates whether we're in Loosey mode or not
       #and manages whether we actually wait for a request
@@ -389,6 +390,15 @@ class LooseyClient:
                self.word_pause = int(re.sub(".*word_pause:(\d+).*$","\\1",l))
             else:
                self.word_pause = None
+               
+            # Check whether we have a scene_pause for this chunk
+            if self.scene_pause:
+               time.sleep(self.scene_pause)
+            if re.match(".*scene_pause:(\d+).*$",l):
+               self.scene_pause = int(re.sub(".*scene_pause:(\d+).*$","\\1",l))
+            else:
+               self.scene_pause = None
+               
             continue
          # Check to see if this is a character name
          elif re.match("^[A-Z_]+$",l.strip()): 
