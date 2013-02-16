@@ -23,7 +23,7 @@
    </triggers>
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
-      <word priority=1 pause=3000>King</word>
+      <word priority=1 pause=3000>King queen</word>
       <word priority=1 pause=3000>Attendants</word>
    </triggers>
    <triggers stagedir='exit'>
