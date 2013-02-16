@@ -1,12 +1,12 @@
    <markov>
    	 <name>Line</name>
    	 <file>data/brute.txt</file>
-   	 <first_character>Ophelia</first_character>
+   	 <first_character>OPHELIA</first_character>
    	   <train>
    	   		<acts>2</acts>
    	   		<scenes>1</scenes>
    	   		<lines>74</lines>
-   	   		<characters>Ophelia</characters>
+   	   		<characters>OPHELIA</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>

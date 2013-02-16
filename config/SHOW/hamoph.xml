@@ -79,7 +79,7 @@
    </markov>
    <mirror>
    	   <name>HamOph</name>
-   	   <forced_character>Ophelia</forced_character>
+   	   <forced_character>OPHELIA</forced_character>
    	   <scene_pause>3</scene_pause>
    	   <train>
    	   		<file>data/nonewline.txt</file>
@@ -97,7 +97,7 @@
    	   				<acts>3</acts>
    	   				<scenes>2</scenes>
    	   				<lines>147</lines>
-   	   				<characters>Ophelia</characters>
+   	   				<characters>OPHELIA</characters>
    	   			</selection>
    	   		</selections>
    	 	</generate>

@@ -91,13 +91,29 @@
          <file>data/brute.txt</file>
          <acts>2</acts>
          <scenes>1</scenes>
-         <characters>POLONIUS,OPHELIA,STAGE</characters>
+         <characters>STAGE</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>50</length>
+         <length>15</length>
          <k>5</k>
+      </generate>
+   </markov>
+    <markov>
+      <name>ActTwoSceneOne</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>2</acts>
+         <scenes>1</scenes>
+         <lines>74-119</lines>
+         <characters>STAGE,POLONIUS,OPHELIA</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>138</length>
+         <k>10</k>
       </generate>
    </markov>
     <markov>
@@ -106,10 +122,43 @@
          <file>data/brute.txt</file>
          <acts>2</acts>
          <scenes>2</scenes>
+         <characters>STAGE</characters>
       </train>
       <generate>
          <reset>True</reset>
-         <length>90</length>
+         <finish_sent>True</finish_sent>
+         <length>15</length>
+         <k>10</k>
+      </generate>
+   </markov>
+    <markov>
+     <name>ActTwoSceneTwo</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>2</acts>
+         <scenes>2</scenes>
+         <lines>223-400</lines>
+         <characters>STAGE,HAMLET,ROSENCRANTZ,GUILDENSTERN</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>130</length>
+         <k>10</k>
+      </generate>
+   </markov>
+    <markov>
+     <name>ActThreeSceneOne</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>3</acts>
+         <scenes>1</scenes>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>10</length>
          <k>7</k>
       </generate>
    </markov>
@@ -119,6 +168,7 @@
          <file>data/brute.txt</file>
          <acts>3</acts>
          <scenes>1</scenes>
+         <characters>HAMLET</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
@@ -133,8 +183,6 @@
          <file>data/brute.txt</file>
          <acts>3</acts>
          <scenes>2</scenes>
-         <lines>1-132</lines>
-         <characters>Stage,Title,Hamlet,Ophelia,King,Gertrude,Horatio</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
@@ -163,7 +211,7 @@
          <file>data/brute.txt</file>
          <acts>4</acts>
          <scenes>4</scenes>
-         <characters>Hamlet,Stage,Title,Rosencrantz,Guildenstern</characters>
+         <characters>HAMLET,STAGE,ROSENCRANTZ,GUILDENSTERN</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
@@ -178,7 +226,6 @@
          <file>data/brute.txt</file>
          <acts>4</acts>
          <scenes>5</scenes>
-         <characters>Stage,Title,Gertrude,Ophelia</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
@@ -207,7 +254,7 @@
          <file>data/brute.txt</file>
          <acts>5</acts>
          <scenes>2</scenes>
-         <characters>Stage</characters>
+         <characters>STAGE</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
@@ -239,7 +286,7 @@
    			<acts>5</acts>
    			<scenes>2</scenes>
    			<lines>398-401</lines>
-   			<characters>Stage</characters>
+   			<characters>STAGE</characters>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>
