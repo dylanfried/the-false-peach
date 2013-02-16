@@ -216,7 +216,9 @@ class Burrito:
                if word[-1] == "NEWLINE" or word[-2] == "SPEAKER":
                   # If we've been tracking a stagedir, it's over now
                   if stagedir:
-                     markov_data.append(stagedir)
+                     # Don't let stage dirs be too long
+                     if len(stagedir[-1]) < 22:
+                        markov_data.append(stagedir)
                      stagedir = None
                   # want to keep words and speakers intact
                   #word[-1] = " " + word[-1] + " "
@@ -369,8 +371,8 @@ class Burrito:
                u['line'] = re.sub("\"\s*","",u['line'])
                # Get rid of spaces before punctuation
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
-               # if there's a stage direction, put it in
-               if "stage_direction" in u and u["stage_direction"]:
+               # if there's a stage direction and it's short enough, put it in
+               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
                   u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
                   scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())
