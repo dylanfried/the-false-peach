@@ -407,8 +407,6 @@ class LooseyClient:
             who = l.strip().upper()
             who = re.sub("_AND_"," ",who)
             who = re.sub("_and_"," ",who)
-            who = l.strip().upper()
-      
             # If we have multiple characters, split them up
             who = who.split(" ")
       
