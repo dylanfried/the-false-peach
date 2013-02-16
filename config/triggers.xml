@@ -30,7 +30,7 @@
       <word priority=1 pause=3000>exeunt</word>
    </triggers>
    <triggers stagedir='action'>
-      <word priority=1 pause=3000>dies</word>
+      <word priority=1 pause=0>dies</word>
       <word priority=1 pause=5000>grave</word>
       <word priority=1 pause=5000>arras</word>
    </triggers>
