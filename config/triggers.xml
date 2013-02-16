@@ -10,16 +10,16 @@
    </triggers>
    <triggers stagedir='sound'>
       <word priority=1 pause=5000>flourish</word>
-      <word priority=1 pause=5000>trumpets</word>
-      <word priority=1 pause=2000>shot</word>
-      <word priority=2 pause=2000>cannon shot</word>
+      <word priority=1 pause=3000>trumpets</word>
+      <word priority=1 pause=1000>shot</word>
+      <word priority=2 pause=1000>cannon shot</word>
       <word priority=1 pause=4000>cock</word>
       <word priority=2 pause=2000>ordnance shot</word>
       <word priority=1 pause=8000>hautboys</word>
       <word priority=1 pause=4000>noise</word>
       <word priority=2 pause=9000>dead march</word>
-      <word priority=1 pause=6000>march</word>
-      <word priority=1 pause=6000>drums</word>
+      <word priority=1 pause=5000>march</word>
+      <word priority=1 pause=3000>drums</word>
    </triggers>
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
@@ -30,7 +30,7 @@
       <word priority=1 pause=3000>exeunt</word>
    </triggers>
    <triggers stagedir='action'>
-      <word priority=1 pause=3000>dies</word>
+      <word priority=1 pause=0>dies</word>
       <word priority=1 pause=5000>grave</word>
       <word priority=1 pause=5000>arras</word>
    </triggers>
