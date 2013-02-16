@@ -1,5 +1,5 @@
    <markov>
-   	  <first_character>Hamlet</first_character>
+   	  <first_character>HAMLET</first_character>
       <train>
          <file>data/brute.txt</file>
          <acts>3</acts>

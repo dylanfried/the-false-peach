@@ -1,40 +1,5 @@
 <show>
    <sequence>
-      <scene>3pcntORIG.xml</scene>
-      <scene>ActOneSceneOne.xml</scene>
-   </sequence>
-   <sequence random="true">
-      <random>
-         <length>500</length>
-       </random>
-   </sequence>
-    <sequence>
-      <scene>2bMirror.xml</scene>
-   </sequence>
-   <sequence random="true">
-      <random>
-         <length>500</length>
-       </random>
-   </sequence>
-   <sequence>
-      <scene>hamoph.xml</scene>
-      <scene>playwithin.xml</scene>
-      <scene>kingrises.xml</scene>
-   </sequence>
-   <sequence random="true">
-      <random>
-         <length>500</length>
-       </random>
-   </sequence>
-   <sequence>
-      <scene>MadOph.xml</scene>
-   </sequence>
-   <sequence random="true">
-      <random>
-         <length>500</length>
-       </random>
-   </sequence>
-     <sequence>
       <scene>52directions.xml</scene>
    </sequence>
 </show>

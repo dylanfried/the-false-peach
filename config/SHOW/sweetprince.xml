@@ -6,7 +6,7 @@
          <acts>5</acts>
          <scenes>2</scenes>
          <lines>356-358</lines>
-         <characters>Horatio</characters>
+         <characters>HORATIO</characters>
       </train>
       <generate>
          <reset>True</reset>

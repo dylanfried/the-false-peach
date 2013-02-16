@@ -1,7 +1,7 @@
    <markov>
    	   <name>tocome</name>
        <file>data/brutefix.txt</file>
-       <first_character>Hamlet</first_character>
+       <first_character>HAMLET</first_character>
       <train>
          <acts>5</acts>
          <scenes>2</scenes>
