@@ -429,7 +429,7 @@ class LooseyClient:
             continue
             
          # Check to see if this is an ACT/SCENE title line
-         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*ACT$",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             print "SENDING INTRO"
