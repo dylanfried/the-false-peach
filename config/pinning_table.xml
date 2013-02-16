@@ -1595,8 +1595,8 @@
    </pinned>
    
    <pinned>
-      <scene>pwp</scene>
-      <lights>lightout</scene>
+      <scene>playwithin</scene>
+      <lights>lightout</lights>
       <video>10</video>
    </pinned>
    

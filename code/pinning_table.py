@@ -49,20 +49,22 @@ class PinningTable:
       # Go through our pinnings and excludes
       table = BeautifulSoup(open(pinning_file).read()).find("table")
       for constraint in table.findAll(["pinned","excluded"]):
+         break_out = False
          styles = constraint.findAll(["scene","sound","video","lights"])
          # Construct/populate a dictionary to represent the 
          # constraint that we're on
          to_delete = {"scene":scenes[:],"sound":sound_styles[:],"video":video_styles[:],"lights":lights_styles[:]}
          for s in styles:
             if s.name in to_delete:
-               #if constraint.name == "pinned":
-               #   to_delete[s.name] = [style for style in to_delete[s.name] if style != s.string]
-               #elif constraint.name == "excluded":
+               # Make sure that this is an acceptable style/scene
+               if s.string not in to_delete[s.name]:
+                  break_out = True
+                  break
                to_delete[s.name] = [s.string]
-               #else:
-               #   print "Unacceptable type:",constraint.name
             else:
                print "Unacceptable type:", s.name
+         if break_out:
+            continue
          # Now loop through the deletion keys and get rid of that part of the table
          if constraint.name == "excluded":
             for scene in to_delete["scene"]:
