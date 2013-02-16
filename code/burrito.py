@@ -8,6 +8,7 @@ from scene import Scene
 from loosey_client import LooseyClient
 from generator import Generator
 from pinning_table import PinningTable
+from markov import Markov
 import re
 import random
 import os
@@ -156,7 +157,7 @@ class Burrito:
       scene["style"] = self.pinning_table.generate_style(scene_name)
       # Reset the scene line container and word count
       scene_lines = []
-      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter"]):
+      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov"]):
          # Match the strategy name to a set of parameters to pass on to
          # the generator
          # We're going to fill in these variables:
@@ -200,6 +201,62 @@ class Burrito:
             print "sm_filter not yet implemented"
             continue
             #lines = get_lines(data, trial.find('train'))
+         elif trial.name == "letter_markov":
+            print "letter markov"
+            scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
+            trial_data = util.get_lines(data, trial.find("train"))
+            
+            # Let's break up this text into letters for markoving
+            markov_data = []
+            stagedir = None
+            for word in trial_data:
+               if word[-1] == "NEWLINE" or word[-2] == "SPEAKER":
+                  # If we've been tracking a stagedir, it's over now
+                  if stagedir:
+                     markov_data.append(stagedir)
+                     stagedir = None
+                  # want to keep words and speakers intact
+                  #word[-1] = " " + word[-1] + " "
+                  markov_data.append(word)
+               elif word[4] == "Stage":
+                  # Keep stage dirs intact
+                  if not stagedir:
+                     stagedir = word
+                  else:
+                     stagedir[-1] += " " + word[-1]
+               else:
+                  # break everything else up character by character
+                  for letter in list(word[-1]):
+                     new_letter = word[:]
+                     new_letter[-1] = letter
+                     markov_data.append(new_letter)
+                  new_space = word[:]
+                  # Maybe we don't want spaces after the last word?
+                  new_space[-1] = " "
+                  markov_data.append(new_space)
+            
+            letter_markov = Markov(markov_data, 2, 11, False)
+            letter_markov.initialize()
+            
+            text = ""
+            for i in range(500):
+               text += letter_markov.generateNext(2,[])[-1]
+            
+            for l in text.split("NEWLINE"):
+               # Formatting stuff left over from Mark
+               l = re.sub(" NEWLINE \)"," )",l)
+               l = re.sub("(oh oh )+"," oh oh ",l)
+               l = re.sub("(ho ho )+"," ho ho ",l)
+               l = re.sub("(nonny nonny )+"," nonny nonny ",l)
+               l = re.sub("(a-down a-down )+"," nonny nonny ",l)
+               l = re.sub("( NEWLINE)+"," NEWLINE",l)
+               # Get rid of quotation marks
+               l = re.sub("\"\s*","",l)
+               # Get rid of spaces before punctuation
+               l = re.sub("\s*([,.?!:;)])","\\1",l)
+               scene_lines.append(l)
+            
+            continue
          elif trial.name == "filter":
             #print "Filter"
             scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
