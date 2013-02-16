@@ -19,7 +19,7 @@
       <word priority=1 pause=4000>noise</word>
       <word priority=2 pause=9000>dead march</word>
       <word priority=1 pause=6000>march</word>
-      <word priority=1 pause=6000>drums</word>
+      <word priority=1 pause=3000>drums</word>
    </triggers>
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
