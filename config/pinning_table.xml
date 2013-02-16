@@ -5,32 +5,38 @@
       <video>10</video>
       <lights>lightout</lights>
    </pinned>
+   
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <lights>skot</lights>
       <video>10</video>
    </pinned>
+   
    <pinned>
       <scene>3pcntORIG</scene>
       <sound>TTS.aloud</sound>
       <video>1</video>
       <lights>theatre</lights>
    </pinned>
+   
    <pinned>
       <scene>ActOneSceneOne</scene>
       <sound>TTS.aloud</sound>
       <lights>theatre</lights>
       <video>2</video>
    </pinned>
+   
    <pinned>
       <scene>dumb</scene>
       <sound>TTS.mute</sound>
    </pinned>
+   
    <pinned>
       <scene>rogue</scene>
       <sound>TTS.aloud.ROGUI</sound>
    </pinned>
+   
    <pinned>
       <scene>MadOph</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
@@ -40,244 +46,26 @@
    <pinned>
       <scene>actonescenetwo</scene>
       <video>2</video>
+      <lights>theatre,lightshow</lights>
    </pinned>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenetwo</scene>
-      <lights>lighton</lights>
-   </excluded>
    
    <pinned>
       <scene>actonescenefour</scene>
       <video>2</video>
+      <lights>theatre,lightshow</lights>
    </pinned>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>actonescenefour</scene>
-      <lights>lighton</lights>
-   </excluded>
    
-   <excluded>
+   <pinned>
       <scene>affrighted</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>affrighted</scene>
-      <video>17</video>
-   </excluded>
+      <lights>emotions,monemo,lightout,lightshow</lights>
+      <video>3,6</video>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>claudius</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>1</video>
-   </excluded>
-
-   <excluded>
-      <scene>claudius</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>claudius</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <video>17</video>
-   </excluded>
+      <lights>theatre,emotions,monemo</lights>
+      <video>2,3</video>
+   </pinned>
    
    <pinned>
       <scene>closet</scene>
@@ -285,1291 +73,136 @@
       <video>3</video>
    </pinned>
    
-   <excluded>
+   <pinned>
       <scene>dumb</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>3</video>
-   </excluded>
-
-
-   <excluded>
-      <scene>dumb</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>dumb</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>dumb</scene>
-      <video>17</video>
-   </excluded>
+      <lights>theatre,lightshow</lights>
+      <video>1,2</video>
+   </pinned>
+   
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
+      <lights>emotions,monemo,lightout</lights>
    </pinned>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>gertrude</scene>
-      <lights>lighton</lights>
-   </excluded>
    
    <pinned>
       <scene>ghostscene</scene>
       <lights>ghost</lights>
+      <video>1,2</video>
    </pinned>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>3</video>
-   </excluded>
-
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>ghostscene</scene>
-      <video>17</video>
-   </excluded>
    
-   <excluded>
+   <pinned>
       <scene>gravedigger</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <lights>closet</lights>
-   </excluded>
+      <lights>theatre,lightshow,lighton</lights>
+      <video>1,2,3,10,15</video>
+   </pinned>
 
-
-   <excluded>
-      <scene>gravedigger</scene>
+   <pinned>
+      <scene>HamNeg</scene>
+      <lights>word,monemo,lightout</lights>
       <video>6</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <video>17</video>
-   </excluded>
-
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>3</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>HamNeg</scene>
-      <video>17</video>
-   </excluded>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>hamNOUN</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>hamNOUN</scene>
-      <video>17</video>
-   </excluded>
+      <lights>word,monemo,lightout</lights>
+      <video>1,3,6,10</video>
+   </pinned>
    
    <pinned>
       <scene>hamoph</scene>
       <video>8</video>
    </pinned>
    
-   <excluded>
+   <pinned>
       <scene>host</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>host</scene>
-      <lights>lighton</lights>
-   </excluded>
+      <lights>word,monemo</lights>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>itis_filter</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>itis_filter</scene>
-      <lights>lighton</lights>
-   </excluded>
+      <lights>word,lightshow</lights>
+   </pinned>
    
    <pinned>
       <scene>kingrises</scene>
       <sound>TTS.aloud</sound>
+      <lights>lightshow,lighton</lights>
+      <video>3,15</video>
    </pinned>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>2</video>
-   </excluded>
-
-   <excluded>
-      <scene>kingrises</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>kingrises</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>kingrises</scene>
-      <video>17</video>
-   </excluded>
    
-   <excluded>
+   <pinned>
       <scene>kingthing</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>3</video>
-   </excluded>
-
-   <excluded>
-      <scene>kingthing</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>kingthing</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>kingthing</scene>
-      <video>15</video>
-   </excluded>
+      <lights>emotions,word</lights>
+      <video>16,17</video>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>MadOph</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>MadOph</scene>
-      <lights>lightout</lights>
-   </excluded>
+      <lights>emotions,word,monemo,lightshow</lights>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>mansmemory</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>mansmemory</scene>
-      <video>14</video>
-   </excluded>
+      <lights>monemo,lighton</lights>
+      <video>1,2,3,6,10,15,16,17</video>
+   </pinned>
    
-   <excluded>
+   <pinned>
       <scene>O_filter</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <lights>lighton</lights>
-   </excluded>
+      <lights>word,lightshow</lights>
+      <video>1,2,3,15,16,17</video>
+   </pinned>
   
-  
-   <excluded>
-      <scene>O_filter</scene>
-      <video>6</video>
-   </excluded>
-  
-   <excluded>
-      <scene>O_filter</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>O_filter</scene>
-      <video>14</video>
-   </excluded>
    
    <pinned>
       <scene>OphMon</scene>
       <video>9</video>
+      <lights>emotions,monemo,lightout,lightshow,lighton</lights>
    </pinned>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>OphMon</scene>
-      <lights>closet</lights>
-   </excluded>
    
    <pinned>
       <scene>rogue</scene>
       <lights>skot</lights>
+      <video>3,10,15</video>
    </pinned>
-   <excluded>
-      <scene>rogue</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>2</video>
-   </excluded>
 
-   <excluded>
-      <scene>rogue</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>rogue</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>rogue</scene>
-      <video>17</video>
-   </excluded>
-   
-   <excluded>
+   <pinned>
       <scene>rot</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>rot</scene>
-      <video>17</video>
-   </excluded>
+      <lights>lightout,lighton</lights>
+      <video>3,6,9</video>
+   </pinned>
    
    <pinned>
       <scene>solid</scene>
       <video>3</video>
       <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>theatre,monemo</lights>
    </pinned>
-   <excluded>
-      <scene>solid</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>solid</scene>
-      <lights>lighton</lights>
-   </excluded>
-   
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <lights>closet</lights>
-   </excluded>
 
-   <excluded>
+   <pinned>
       <scene>sweetprince</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>sweetprince</scene>
-      <video>17</video>
-   </excluded>
+      <lights>monemo,lightout,lighton</lights>
+      <video>1,2,3</video>
+   </pinned>
    
    <pinned>
       <scene>thedrink</scene>
       <lights>word</lights>
+      <video>1,2,3,12,16,17</video>
    </pinned>
 
-   <excluded>
-      <scene>thedrink</scene>
-      <video>6</video>
-   </excluded>
-
-   <excluded>
-      <scene>thedrink</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>thedrink</scene>
-      <video>15</video>
-   </excluded>
+   <pinned>
+      <scene>thisfilter</scene>
+      <lights>word,lightshow</lights>
+      <video>1,2,3,6</video>
+   </pinned>
    
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>emotions</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>monemo</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>lightout</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>15</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <scene>thisfilter</scene>
-      <video>17</video>
-   </excluded>
-   
-   <excluded>
+   <pinned>
       <scene>tocome</scene>
-      <lights>theatre</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>play</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>skot</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>word</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>ghost</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>lightshow</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>closet</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <lights>lighton</lights>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>10</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <scene>tocome</scene>
-      <video>15</video>
-   </excluded>
+      <lights>emotions,monemo,lightout</lights>
+      <video>1,2,3,6,16,17</video>
+   </pinned>
 
    <pinned>
       <scene>52directions</scene>
@@ -1587,191 +220,175 @@
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>1</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>2</video>
    </excluded>
-
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>6</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>8</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>9</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>11</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>12</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>13</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>14</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>16</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>17</video>
    </excluded>
-   
-   
-   
    <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>1</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>2</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>6</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>8</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>9</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>11</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>12</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>13</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>14</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>16</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.space</sound>
       <video>17</video>
    </excluded>
-   
-   
-   
-      <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>1</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>2</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>6</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>8</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>9</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>11</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>12</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>13</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>14</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>16</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>17</video>
    </excluded>
-   
-     <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>1</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>2</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>6</video>
    </excluded>
-
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>8</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>9</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>11</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>12</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>13</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>14</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>16</video>
    </excluded>
-        <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>17</video>
    </excluded>
@@ -1779,7 +396,7 @@
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>1</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>2</video>
    </excluded>
@@ -1791,11 +408,11 @@
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>8</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>9</video>
    </excluded>
-       <excluded>
+   <excluded>
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>11</video>
    </excluded>
@@ -1819,6 +436,4 @@
       <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>17</video>
    </excluded>
-   
-   
 </table>

@@ -56,8 +56,8 @@ class PinningTable:
          to_delete = {"scene":scenes[:],"sound":sound_styles[:],"video":video_styles[:],"lights":lights_styles[:]}
          for s in styles:
             if s.name in to_delete:
-               # Make sure that this is an acceptable style/scene
-               if s.string not in to_delete[s.name]:
+               # Make sure that this is an acceptable scene
+               if s.name == "scene" and s.string not in to_delete[s.name]:
                   break_out = True
                   break
                to_delete[s.name] = [s.string]
@@ -79,17 +79,17 @@ class PinningTable:
                else:
                   matched = 0
                for video_style in self.table[scene].keys():
-                  if len(to_delete["video"]) == 1 and to_delete["video"][0] == video_style:
+                  if len(to_delete["video"]) == 1 and video_style in to_delete["video"][0].split(","):
                      video_matched = matched + 1
                   else:
                      video_matched = matched
                   for sound_style in self.table[scene][video_style].keys():
-                     if len(to_delete["sound"]) == 1 and to_delete["sound"][0] == sound_style:
+                     if len(to_delete["sound"]) == 1 and sound_style in to_delete["sound"][0].split(","):
                         sound_matched = video_matched + 1
                      else:
                         sound_matched = video_matched
                      for lights_style in self.table[scene][video_style][sound_style].keys():
-                        if len(to_delete["lights"]) == 1 and to_delete["lights"][0] == lights_style:
+                        if len(to_delete["lights"]) == 1 and lights_style in to_delete["lights"][0].split(","):
                            lights_matched = sound_matched + 1
                         else:
                            lights_matched = sound_matched
@@ -134,7 +134,8 @@ class PinningTable:
 def main(argv):
    # Grab the pinning files
    p = PinningTable("config/pinning_table.xml")
-   #print p.table["2bMirror"]["1"]
+   print p.table["claudius"]["3"]
+   print p.table["claudius"]["2"]
    
 if __name__ == "__main__":
    main(sys.argv)
