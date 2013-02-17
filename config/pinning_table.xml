@@ -1,15 +1,8 @@
 <table>
    <pinned>
-      <scene>playwithin</scene>
-      <sound>TTS.mute</sound>
-      <video>10</video>
-      <lights>lightout</lights>
-   </pinned>
-   
-   <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>skot</lights>
+      <lights>actor1</lights>
       <video>10</video>
    </pinned>
    
@@ -18,6 +11,12 @@
       <sound>TTS.aloud</sound>
       <video>1</video>
       <lights>theatre</lights>
+   </pinned>
+   
+   <pinned>
+      <scene>52directions</scene>
+      <lights>theatre</lights>
+      <video>13</video>
    </pinned>
    
    <pinned>
@@ -35,12 +34,6 @@
    <pinned>
       <scene>rogue</scene>
       <sound>TTS.aloud.ROGUI</sound>
-   </pinned>
-   
-   <pinned>
-      <scene>MadOph</scene>
-      <sound>TTS.aloud.MUSIC.emotion</sound>
-      <video>11</video>
    </pinned>
    
    <pinned>
@@ -116,7 +109,7 @@
    
    <pinned>
       <scene>host</scene>
-      <lights>word,monemo</lights>
+      <lights>actor2</lights>
    </pinned>
    
    <pinned>
@@ -139,7 +132,9 @@
    
    <pinned>
       <scene>MadOph</scene>
-      <lights>emotions,word,monemo,lightshow</lights>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+      <video>11</video>
+      <lights>emotions,monemo</lights>
    </pinned>
    
    <pinned>
@@ -162,8 +157,15 @@
    </pinned>
    
    <pinned>
+      <scene>playwithin</scene>
+      <sound>TTS.mute</sound>
+      <video>10</video>
+      <lights>lightout</lights>
+   </pinned>
+   
+   <pinned>
       <scene>rogue</scene>
-      <lights>skot</lights>
+      <lights>actor2</lights>
       <video>3,10,15</video>
    </pinned>
 
@@ -177,7 +179,7 @@
       <scene>solid</scene>
       <video>3</video>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>theatre,monemo</lights>
+      <lights>actor1,actor2</lights>
    </pinned>
 
    <pinned>
@@ -204,18 +206,6 @@
       <video>1,2,3,6,16,17</video>
    </pinned>
 
-   <pinned>
-      <scene>52directions</scene>
-      <lights>theatre</lights>
-      <video>13</video>
-   </pinned>
-   
-   <pinned>
-      <scene>playwithin</scene>
-      <lights>lightout</lights>
-      <video>10</video>
-   </pinned>
-   
     <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>1</video>

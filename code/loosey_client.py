@@ -429,7 +429,7 @@ class LooseyClient:
             continue
             
          # Check to see if this is an ACT/SCENE title line
-         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*ACT$",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             print "SENDING INTRO"
@@ -456,7 +456,11 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Send the stagedir
-            self.send_value("character",["STAGEDIR"])
+            if wwhhaatt == "dumb":
+               # Special dumb character that is mute for dumb show
+               self.send_value("character",["DUMB"])
+            else:
+               self.send_value("character",["STAGEDIR"])
             self.changed_speaker = True
             self.send_value("stagedir.bool",2)
             self.send_value("stagedir",l)
