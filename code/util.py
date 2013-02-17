@@ -122,7 +122,15 @@ def get_lines(data, xml_constraints):
          characters = [re.sub(" ","_",c.upper()) for c in characters]
       else: characters=[]
 
-      constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"words":words,"characters":characters})
+      pos = xml_constraints.find("pos")
+      if pos:
+         pos = pos.string
+         pos = pos.split(",")
+         pos = [c.strip() for c in pos]
+         pos = [c.upper() for c in pos]
+      else: pos=[]
+
+      constraints.append({"acts":acts,"scenes":scenes,"lines":lines,"words":words,"characters":characters,"pos":pos})
 
    for m in range(len(data)):
 
