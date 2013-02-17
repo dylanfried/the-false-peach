@@ -155,9 +155,10 @@ class Burrito:
       scene = bs.find("scene")
       scene["name"] = scene_name
       scene["style"] = self.pinning_table.generate_style(scene_name)
+
       # Reset the scene line container and word count
       scene_lines = []
-      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov"]):
+      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop"]):
          # Match the strategy name to a set of parameters to pass on to
          # the generator
          # We're going to fill in these variables:
@@ -261,6 +262,164 @@ class Burrito:
                l = re.sub("\s*([,.?!:;)])","\\1",l)
                scene_lines.append(l)
             
+            continue
+         elif trial.name == "ddop":
+            acts = []
+            scenes = []
+            lines = []
+            
+            arg_name=["-a"]
+            arg_val=["1"]
+            opts = []
+            for i in range(len(arg_name)):
+               tup = arg_name[i], arg_val[i]
+               opts.append(tup)
+            print "OPTS: ", opts
+            for o, a in opts:
+               print o,a
+               if o == "-a":
+                  if "-" in a:
+                     a = a.split("-")
+                     acts = range(int(a[0]),int(a[1])+1)
+                  else: acts = [int(a)]
+                  if len(acts)>1: break
+               elif o == "-s":
+                  if "-" in a:
+                     a = a.split("-")
+                     scenes = range(int(a[0]),int(a[1])+1)
+                  else: scenes = [int(a)]
+                  if len(scenes)>1: break
+               elif o == "-l":
+                  if "-" in a:
+                     a = a.split("-")
+                     lines = range(int(a[0]),int(a[1])+1)
+                  else: lines = [int(a)]
+               else:
+                   assert False, "unhandled option"
+            def clean(x):
+            
+               while re.match("(.*)\ ([-.,?!:;)]+.*)",x):
+                  x = re.sub("(.*)\ ([-.,?!:;)]+.*)","\\1\\2",x)
+            
+               while re.match("(.*)\( (.*)",x):
+                  x = re.sub("(.*)\( (.*)","\\1 (\\2",x)
+            
+               return x.strip()
+            
+            x = open("code/ndata2.txt").readlines()
+            
+            ACT = [int(a.split(" ")[0]) for a in x]
+            #print "ACT", ACT
+            SCENE = [int(a.split(" ")[1]) for a in x]
+            #print "SCENE", SCENE
+            LINE = [int(a.split(" ")[2]) for a in x]
+            #print "LINE", LINE
+            c = [a.split(" ")[3] for a in x]
+            p = [a.split(" ")[4] for a in x]
+            w = [a.split(" ")[5].strip() for a in x]
+            
+            counts = {}
+            history = []
+            speaker = ""
+            
+            for i in range(len(c)):
+            
+               if c[i] == speaker:
+            
+                  history.append(p[i])
+               
+                  if len(history) == 4: history = history[1:]
+            
+                  if len(history)==3:    
+               
+                     if not c[i] in counts: counts[c[i]] = {}
+            
+                     k = " ".join(history)  
+                     if not k in counts[c[i]]: counts[c[i]][k] = 0
+                     counts[c[i]][k] += 1
+            
+               else: history = [p[i]]
+               speaker = c[i]
+            
+            for speaker in counts:
+            
+               ss = sum(counts[speaker].values())
+            
+            #   print ss, max(counts[speaker].values()), len(counts[speaker])
+            #   print counts[speaker].keys()
+            
+               bbf = counts[speaker].values()
+            
+               for kk in counts[speaker]: 
+                  
+                  counts[speaker][kk] = sum([xxx for xxx in bbf if xxx < counts[speaker][kk]])/(ss+0.0)
+            
+               #print min(counts[speaker].values()),max(counts[speaker].values())
+            
+            history = []
+            whistory = []
+            speaker = ""
+            spoke = ""
+            pspoke = ""
+            
+            for i in range(len(c)):
+
+               if acts and not ACT[i] in acts: continue
+               if scenes and not SCENE[i] in scenes: continue
+               if lines and not LINE[i] in lines: continue
+            
+               if c[i] == speaker:
+            
+                  history.append(p[i])
+                  whistory.append(w[i])
+            
+                  if len(history) == 4: 
+            
+                     history = history[1:]
+                     whistory = whistory[1:]
+            
+                  if len(history)==3:
+            
+                     k = " ".join(history)
+                     bbbb = 1
+                     if re.match("^\W (.*)$",k): bbbb=0
+                     kk = " ".join(whistory)
+                     kk = re.sub("^\W (.*)$","\\1",kk)
+                     kk = re.sub("^(.*) \W$","\\1",kk)
+            
+                     if counts[c[i]][k] > 0.92: 
+            
+                        if not spoke and not pspoke == c[i]: 
+            
+                           print "\n"+c[i].upper()
+                           scene_lines.append(c[i].upper())
+                           spoke = 1
+                           pspoke = c[i]
+            
+                        tmpaa = clean(kk)
+                        print tmpaa[0].capitalize()+tmpaa[1:]
+                        line = tmpaa[0].capitalize()+tmpaa[1:]
+                        # Formatting stuff left over from Mark
+                        line = re.sub(" NEWLINE \)"," )",line)
+                        line = re.sub("(oh oh )+"," oh oh ",line)
+                        line = re.sub("(ho ho )+"," ho ho ",line)
+                        line = re.sub("(nonny nonny )+"," nonny nonny ",line)
+                        line = re.sub("(a-down a-down )+"," nonny nonny ",line)
+                        line = re.sub("( NEWLINE)+"," NEWLINE",line)
+                        # Get rid of quotation marks
+                        line = re.sub("\"\s*","",line)
+                        # Get rid of spaces before punctuation
+                        line = re.sub("\s*([,.?!:;)])","\\1",line)
+                        # if there's a stage direction, put it in
+                        scene_lines.append(line)
+            
+               else: 
+            
+                  history = [p[i]]
+                  whistory = [w[i]]
+                  spoke = ""
+            
+               speaker = c[i]
             continue
          elif trial.name == "filter":
             #print "Filter"

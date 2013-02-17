@@ -1,0 +1,16 @@
+<ddop>
+   <name>ddop</name>
+   <train>
+      <file>data/brute.txt</file>
+	   <selections>
+	   	<selection>
+	   		<acts>1</acts>
+	   		<scenes>2</scenes>
+	   		<line>1-12</line>
+	   	</selection>
+	   </selections>
+	 </train>
+	 <generate>
+	 </generatea>
+</ddop>   	
+
