@@ -450,6 +450,9 @@ class LooseyClient:
             need_outro = True
          # Check to see if this is a stage direction
          elif re.match("^\s*\(.*\)\s*$",l): 
+            # Make sure not to send empty stage directions
+            if re.match("^\s*\(\s*\)\s*$",l):
+               continue
             # Pull out the first word in the parentheses
             wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)\s+.*","\\1",l)
             # Make the line into the line except for the first word in the parentheses
