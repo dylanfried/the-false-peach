@@ -2,7 +2,7 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>skot</lights>
+      <lights>actor1</lights>
       <video>10</video>
    </pinned>
    
@@ -109,7 +109,7 @@
    
    <pinned>
       <scene>host</scene>
-      <lights>word,monemo</lights>
+      <lights>actor2</lights>
    </pinned>
    
    <pinned>
@@ -134,7 +134,7 @@
       <scene>MadOph</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
       <video>11</video>
-      <lights>emotions,word,monemo,lightshow</lights>
+      <lights>emotions,monemo</lights>
    </pinned>
    
    <pinned>
@@ -165,7 +165,7 @@
    
    <pinned>
       <scene>rogue</scene>
-      <lights>skot</lights>
+      <lights>actor2</lights>
       <video>3,10,15</video>
    </pinned>
 
@@ -179,7 +179,7 @@
       <scene>solid</scene>
       <video>3</video>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>theatre,monemo</lights>
+      <lights>actor1,actor2</lights>
    </pinned>
 
    <pinned>
