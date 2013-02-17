@@ -218,7 +218,7 @@ class Burrito:
                   # If we've been tracking a stagedir, it's over now
                   if stagedir:
                      # Don't let stage dirs be too long
-                     if len(stagedir[-1]) < 22:
+                     if len(stagedir[-1]) < 17:
                         markov_data.append(stagedir)
                      stagedir = None
                   # want to keep words and speakers intact
@@ -513,7 +513,7 @@ class Burrito:
             # It's possiblet that there are still some lines without endline punctuation here
             # This could happen because some lines end and change speaker without endline
             # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
+            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 17]
       
             if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
@@ -531,7 +531,7 @@ class Burrito:
                # Get rid of spaces before punctuation
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
                # if there's a stage direction and it's short enough, put it in
-               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
+               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 17:
                   u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
                   scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())

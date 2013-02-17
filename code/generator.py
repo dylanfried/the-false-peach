@@ -245,7 +245,7 @@ class Generator:
             self.line_length = 0
          self.line_length += 1
          # Check to see if our line is too long
-         if (self.line_length > 22 or (self.line_length > 15 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 12 and re.match(".*[.?!:;]\s*$", next_word[-1]))):
+         if (self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))):
             if self.in_paren:
                insert_paren = [None]*12
                insert_paren[-2] = " ) "
