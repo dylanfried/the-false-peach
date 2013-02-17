@@ -1,0 +1,14 @@
+<straightdo>
+   <name>straightdo</name>
+   <train>
+      <file>data/brute.txt</file>
+	   <selections>
+	   	<selection>
+	   		<acts>1</acts>
+	   		<scenes>2</scenes>
+	   	</selection>
+	   </selections>
+	 </train>
+	 <generate>
+	 </generatea>
+</straightdo>  

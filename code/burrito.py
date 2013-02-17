@@ -158,7 +158,7 @@ class Burrito:
 
       # Reset the scene line container and word count
       scene_lines = []
-      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop"]):
+      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo"]):
          # Match the strategy name to a set of parameters to pass on to
          # the generator
          # We're going to fill in these variables:
@@ -268,12 +268,16 @@ class Burrito:
             scenes = []
             lines = []
             
-            arg_name=["-a"]
-            arg_val=["1"]
+            arg_name=["-a","-s","-l"]
+            arg_val=[]
+            arg_val.append(trial.find("acts").string)
+            arg_val.append(trial.find("scenes").string)
+            arg_val.append(trial.find("lines").string)
             opts = []
             for i in range(len(arg_name)):
-               tup = arg_name[i], arg_val[i]
-               opts.append(tup)
+               if arg_val[i]:
+                  tup = arg_name[i], arg_val[i]
+                  opts.append(tup)
             print "OPTS: ", opts
             for o, a in opts:
                print o,a
@@ -420,6 +424,165 @@ class Burrito:
                   spoke = ""
             
                speaker = c[i]
+            continue
+         elif trial.name == "straightdo":
+            x = open("code/ndata4.txt").readlines()
+            
+            ACT = [int(a.split(" ")[0]) for a in x]
+            SCENE = [int(a.split(" ")[1]) for a in x]
+            LINE = [int(a.split(" ")[2]) for a in x]
+            c = [a.split(" ")[3] for a in x]
+            p = [a.split(" ")[4] for a in x]
+            w = [re.sub("\\\\n","\n",a.split(" ")[5].strip()) for a in x]
+            
+            start = random.sample(range(len(p)),1)[0]
+            while SCENE[start-1]==SCENE[start]: start -= 1
+            while LINE[start-1]==LINE[start]: start -= 1
+            
+            N = 1000
+            
+            act = 0
+            mark_scene = 0
+         
+            opts = []
+            arg_name=["-a","-s"]
+            arg_val=[]
+            arg_val.append(trial.find("acts").string)
+            arg_val.append(trial.find("scenes").string)
+            for i in range(len(arg_names)):
+               if arg_val[i]:
+                  tup = arg_names[i], arg_val[i]
+                  opts.append(tup)
+            print "OPTS", opts
+            for o, a in opts:
+         
+               if o == "-a":
+                  act = int(a)
+               elif o == "-s":
+                  mark_scene = int(a)
+               elif o == "-n":
+                  N = int(n)
+               else:
+                   assert False, "unhandled option"
+         
+            if act and not mark_scene: mark_scene = 1
+         
+            if act and mark_scene:
+         
+               start = min([i for i in range(len(p)) if act==ACT[i] and mark_scene==SCENE[i]])
+         
+            def clean(x):
+            
+               x = re.sub("^\W+ (.*)$","\\1",x,re.S,re.MULTILINE)
+               x = re.sub("^\W+(.*)$","\\1",x,re.S,re.MULTILINE)
+            
+               while re.match("(.*)\n (.*)",x,re.S):
+                  x = re.sub("(.*)\n (.*)","\\1\n\\2",x,re.S)
+            
+               while re.match("(.*) ([-.,?!:;)]+.*)",x,re.S):
+                  x = re.sub("(.*) ([-.,?!:;)]+.*)","\\1\\2",x,re.S)
+            
+               while re.match("(.*)\( (.*)",x,re.S):
+                  x = re.sub("(.*)\( (.*)","\\1 (\\2",x,re.S)
+            
+               x = re.sub('"','',x)
+               x = re.sub("(.*)\n$","\\1",x)
+               return x
+            
+            COUNTER = start
+            pstart = p[COUNTER]
+            wstart = w[COUNTER]
+            cstart = c[COUNTER]
+            tailspeaker = cstart
+            
+            COUNTER += 1
+            pcurrent = [pstart,p[COUNTER]]
+            wcurrent = [wstart,w[COUNTER]]
+            ccurrent = [cstart,c[COUNTER]]
+            
+            out = " ".join(wcurrent)
+            cout = " ".join(ccurrent)
+            
+            for ii in range(N):
+            
+               COUNTER += 1
+               ppatt = [pcurrent[0],pcurrent[1],p[COUNTER]]
+               wpatt = [wcurrent[0],wcurrent[1],w[COUNTER]]
+               pcurrent = [pcurrent[1],p[COUNTER]]
+               wcurrent = [wcurrent[1],w[COUNTER]]
+               ccurrent = [ccurrent[1],c[COUNTER]]
+            
+               out += " "+wcurrent[1]
+               cout += " "+ccurrent[1]
+            
+               pcnt = [[w[i-2],w[i-1],w[i]] for i in range(3,len(w)) if p[i] == ppatt[2] and 
+                           p[i-1]==ppatt[1] and p[i-2]==ppatt[0]]
+               ccnt = [[c[i-2],c[i-1],c[i]] for i in range(3,len(w)) if p[i] == ppatt[2] and 
+                           p[i-1]==ppatt[1] and p[i-2]==ppatt[0]]
+               icnt = [[i-2,i-1,i] for i in range(3,len(w)) if p[i] == ppatt[2] and 
+                           p[i-1]==ppatt[1] and p[i-2]==ppatt[0]]
+            
+               iii = int(len(pcnt)**0.5-7.0)
+            
+               if range(iii) and len(out.split(" "))>5: 
+            
+                  WORDS = out.split(" ")
+                  CHARS = cout.split(" ")
+            
+                  RWORDS = WORDS[0]
+                  RCHARS = CHARS[0]
+            
+                  for i in range(1,len(WORDS)):
+            
+                     if RCHARS == CHARS[i]: RWORDS += " "+WORDS[i]
+                     else:
+            
+                        #char = RCHARS.upper()+"\n"
+                        #line = clean(RWORDS)+"\n\n"
+
+                        RCHARS = CHARS[i]
+                        RWORDS = WORDS[i]
+                  #char = RCHARS.upper()+"\n"
+                  #line = clean(RWORDS)+"\n\n"
+                  
+            
+                  cccc = random.sample(range(len(pcnt)),iii)
+            
+                  ppcnt =[" ".join(aaa) for aaa in [pcnt[aaaa] for aaaa in cccc]]
+                  cpcnt =[" ".join(aaa) for aaa in [ccnt[aaaa] for aaaa in cccc]]
+                  COUNTER =[icnt[aaaa] for aaaa in cccc][-1][-1]
+                  last_character = ""
+                  for kk in range(len(ppcnt[:-1])): 
+            
+                     char = cpcnt[:-1][kk].split(" ")[0].upper()
+                     atmp = re.sub("^\W+ (.*)$","\\1",ppcnt[:-1][kk])
+                     atmp = re.sub("^(.*) \W+$","\\1",atmp)
+                     atmp = clean(atmp)
+                     line = atmp[0].capitalize()+atmp[1:]
+                     
+                     # Formatting stuff left over from Mark
+                     line = re.sub(" NEWLINE \)"," )",line)
+                     line = re.sub("(oh oh )+"," oh oh ",line)
+                     line = re.sub("(ho ho )+"," ho ho ",line)
+                     line = re.sub("(nonny nonny )+"," nonny nonny ",line)
+                     line = re.sub("(a-down a-down )+"," nonny nonny ",line)
+                     line = re.sub("( NEWLINE)+"," NEWLINE",line)
+                     # Get rid of quotation marks
+                     line = re.sub("\"\s*","",line)
+                     # Get rid of spaces before punctuation
+                     line = re.sub("\s*([,.?!:;)])","\\1",line)
+                     # if there's a stage direction, put it in
+                     if last_character != char:
+                        scene_lines.append(char)
+                     scene_lines.append(line)
+                     last_character = char
+            
+                  out = ppcnt[-1]
+                  cout = cpcnt[-1]
+                  tailspeaker = cout
+                  wcurrent = ppcnt[-1].split(" ")[1:]
+                  ccurrent = cpcnt[-1].split(" ")[1:]
+
             continue
          elif trial.name == "filter":
             #print "Filter"
