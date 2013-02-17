@@ -52,7 +52,7 @@
       <generate>
          <reset>True</reset>
       	<finish_sent>True</finish_sent>
-         <length>500</length>
+         <length>200</length>
          <k>7</k>
       </generate>
    </markov>
@@ -61,7 +61,7 @@
         <file>data/brute.txt</file>
          <acts>5</acts>
          <scenes>1</scenes>
-         <lines>63-66, 70-74, 92-95</lines>
+         <lines>2-219</lines>
          <characters>FIRST_CLOWN, STAGE</characters>
       </train>
       <generate>
@@ -71,18 +71,19 @@
          <k>2</k>
    </markov>
    <markov>
-   	<train>
-   		<file>data/brute.txt</file>
-   		<acts>5</acts>
-   		<scenes>1</scenes>
-   		<lines>225</lines>
-   		<characters>STAGE</characters>
-   	</train>
-   	<generate>
-   		<reset>True</reset>
-   		<length>25</length>
-   		<k>5</k>
-   	</generate>
+      <train>
+        <file>data/brute.txt</file>
+         <acts>5</acts>
+         <scenes>1</scenes>
+         <lines>67-219</lines>
+         <characters>FIRST_CLOWN, STAGE, HAMLET, HORATIO</characters>
+      </train>
+      <generate>
+      	<finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>200</length>
+         <k>2</k>
    </markov>
+
 
    

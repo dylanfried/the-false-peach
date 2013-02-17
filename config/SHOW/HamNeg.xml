@@ -2,7 +2,7 @@
    		<name>2bN</name>
    		<scene_pause>3</scene_pause>
 		<file>data/brute.txt</file>
-		<first_character>HAMLET</first_character>
+		<forced_character>HAMLET</forced_character>
    		<train>
    			<selections>
    				<selection>

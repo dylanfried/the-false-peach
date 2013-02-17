@@ -18,6 +18,21 @@
       <train>
          <acts>1</acts>
          <scenes>5</scenes>
+		<lines>2-91</lines>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>300</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
 		<lines>2-190</lines>
       </train>
       <generate>

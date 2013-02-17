@@ -187,7 +187,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>120</length>
+         <length>130</length>
          <k>7</k>
       </generate>
    </markov>

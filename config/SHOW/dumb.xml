@@ -15,10 +15,15 @@
    <markov>
    	     <file>data/brute.txt</file>
       <train>
-         <acts>3</acts>
-         <scenes>2</scenes>
-         <lines>137</lines>
-         <characters>STAGE</characters>
+      	<selections>
+      		<selection>
+         		<acts>3</acts>
+         		<scenes>2</scenes>
+         		<lines>137</lines>
+         		<characters>STAGE</characters>
+         		<pos>(,dumb,)</pos>
+         	</selection>
+         	</selections>
       </train>
       <generate>
       	 <finish_sent>True</finish_sent>
