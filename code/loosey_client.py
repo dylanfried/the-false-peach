@@ -102,6 +102,12 @@ class LooseyClient:
       if self.play:
          self.subscribe("subscribe",["GREG./synth.EOL", "ANNIE", 0])
          self.subscribe("subscribe",["ANNIE./stagedir.bool", "ANNIE", -127])
+         self.subscribe("subscribe",["GREG./threshold", "ANNIE", -127])
+         self.subscribe("subscribe",["JIM./threshold", "ANNIE", -127])
+         self.subscribe("subscribe",["LIGHT./threshold", "ANNIE", -127])
+         self.subscribe("subscribe",["GREG./affect", "ANNIE", -127])
+         self.subscribe("subscribe",["JIM./affect", "ANNIE", -127])
+         self.subscribe("subscribe",["LIGHT./affect", "ANNIE", -127])
    
    # Method for subscribing to channels from Loosey
    # Return a 1 on success or 0 on failure
