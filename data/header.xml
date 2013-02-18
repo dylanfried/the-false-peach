@@ -1,0 +1,197 @@
+<TEI xml:id="sha-ham" xmlns="http://www.tei-c.org/ns/1.0"> 
+	<monkHeader xmlns="http://monk.at.northwestern.edu/ns/1.0">
+		<tag>sha-ham</tag>
+		<corpus>sha</corpus>
+		<fileName>ham</fileName>
+		<title>Hamlet</title>
+		<author>
+			<name>Shakespeare, William</name>
+			<birthYear>1564</birthYear>
+			<deathYear>1616</deathYear>
+			<flourished>n/a</flourished>
+			<origin>British Isles</origin>
+			<gender>M</gender>
+		</author>
+		<circulationYear>1600</circulationYear>
+		<genre>play</genre>
+		<subgenre>tragedy</subgenre>
+		<availability>unrestricted</availability>
+	</monkHeader>
+	<teiHeader> 
+		<fileDesc> 
+			<titleStmt> 
+				<title>Hamlet, Prince of Denmark</title> 
+				<author>William Shakespeare</author> 
+				<respStmt> 
+					<name>Craig A. Berry, Martin Mueller, and Clifford Wulfman</name> 
+					<resp>editors</resp> 
+				</respStmt> 
+				<respStmt> 
+					<name>Jeffrey Cousens and Bill Parod</name> 
+					<resp>technical editors</resp> 
+				</respStmt> 
+				<respStmt> 
+					<name>Lawrence Berland, Hilary Bina, Katherine Gould, Kreg Segal, Nicholas Terrell</name> 
+					<resp>editorial assistants</resp> 
+				</respStmt> 
+			</titleStmt> 
+			<publicationStmt> 
+				<p> 
+					<title>The WordHoard Shakespeare</title> is a joint project of the Perseus Project at Tufts University, The Northwestern University Library, and Northwestern University Academic Technologies. It is derived from 
+					<title>The Globe Shakespeare</title> , the one-volume version of the 
+					<title>Cambridge Shakespeare</title> , edited by W. G. Clark, J. Glover, and W. A. Wright (1891-3). The 
+					<title>Internet Shakespeare</title> editions of the quartos and folios have been consulted to create a modern text that observes as closely as possible the morphological and prosodic practices of the earliest editions. Spellings, especially of contracted and hyphenated forms, have been standardized across the corpus. The text has been fully lemmatized and morphosyntactically tagged. 
+				</p> 
+				<p> Copyright 2003. The copyright to 
+					<title>The WordHoard Shakespeare</title> is owned jointly by Northwestern University and Tufts University. 
+					<title>The WordHoard Shakespeare</title> is provided for free solely for non-commercial use by students, scholars, and the public. Any commercial use or publication of it, in whole or in part, without prior written authorization of the copyright holders is strictly prohibited. 
+				</p> 
+			</publicationStmt> 
+			<sourceDesc default="false"> 
+				<p> The Wordhoard Shakespeare is derived from, but not identical with, 
+					<title>The Globe Shakespeare</title> , the one-volume version of the 
+					<title>Cambridge Shakespeare</title> (1891-3) edited by W. G. Clark, J. Glover, and W. A. Wright. 
+				</p> 
+			</sourceDesc> 
+		</fileDesc> 
+	</teiHeader> 
+	<text> 
+		<front> 
+			<div xml:id="sha-hamcast" type="castList"> 
+				<head>Dramatis Personae</head> 
+				<castList> 
+					<castItem type="role"> 
+						<role xml:id="Claudius">Claudius</role> 
+						<roleDesc>king of Denmark</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Hamlet">Hamlet</role> 
+						<roleDesc>son to the late and nephew to the present king</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Polonius">Polonius</role> 
+						<roleDesc>lord chamberlain</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Horatio">Horatio</role> 
+						<roleDesc>friend to Hamlet</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Laertes">Laertes</role> 
+						<roleDesc>son to Polonius</roleDesc> 
+					</castItem> 
+					<castGroup> 
+						<head>Courtiers</head> 
+						<castItem type="role"> 
+							<role xml:id="Voltimand">Voltimand</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="Cornelius">Cornelius</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="Rosencrantz">Rosencrantz</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="Guildenstern">Guildenstern</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="Osric">Osric</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="ham-gent.">A Gentleman</role> 
+						</castItem> 
+					</castGroup> 
+					<castItem type="role"> 
+						<role xml:id="ham-first-priest.">A Priest</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Marcellus">Marcellus</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Barnardo">Bernardo</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Francisco">Francisco</role> 
+						<roleDesc>a soldier</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Reynaldo">Reynaldo</role> 
+						<roleDesc>servant to Polonius</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="sha-ham-role17">Players</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-first-play.">First Player</role> 
+					</castItem> 
+					<castGroup> 
+						<head>Grave-diggers</head> 
+						<castItem type="role"> 
+							<role xml:id="ham-first-clo.">First Clown</role> 
+						</castItem> 
+						<castItem type="role"> 
+							<role xml:id="ham-sec.-clo.">Second Clown</role> 
+						</castItem> 
+					</castGroup> 
+					<castItem type="role"> 
+						<role xml:id="Fortinbras">Fortinbras</role> 
+						<roleDesc>prince of Norway</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-cap.">A Captain</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="sha-ham-role23">English Ambassadors</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-first-amb.">First Ambassador</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Gertrude">Gertrude</role> 
+						<roleDesc>queen of Denmark and mother to Hamlet</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Ophelia">Ophelia</role> 
+						<roleDesc>daughter to Polonius</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-all">All</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-danes.">Danes</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-pro.">Prologue</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-p.-king.">Player King</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-p.-queen.">Player Queen</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="Lucianus">Lucianus</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-serv.">Servant</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-sail.">Sailor</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-mess.">Messenger</role> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-lord.">Lord</role> 
+					</castItem> 
+					<castItem type="list"> 
+						<roleDesc>Lords, Ladies, Officers, Soldiers, Sailors, Messengers and other Attendants</roleDesc> 
+					</castItem> 
+					<castItem type="role"> 
+						<role xml:id="ham-ghost.">Ghost</role> 
+					</castItem> 
+				</castList> 
+			</div> 
+		</front> 
+	</text>
+</TEI>

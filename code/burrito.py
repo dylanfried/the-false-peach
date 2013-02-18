@@ -141,7 +141,7 @@ class Burrito:
       for scene in self.scenes:
          out += scene.script
       self.loosey.send_script(out)
-      
+   
    # Method for generating a single scene
    # Returns a scene object
    def create_scene(self, scene_name):
@@ -158,7 +158,7 @@ class Burrito:
 
       # Reset the scene line container and word count
       scene_lines = []
-      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo"]):
+      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml"]):
          # Match the strategy name to a set of parameters to pass on to
          # the generator
          # We're going to fill in these variables:
@@ -205,8 +205,21 @@ class Burrito:
             print "sm_filter not yet implemented"
             continue
             #lines = get_lines(data, trial.find('train'))
+         elif trial.name == "read_xml":
+            scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
+            file_to_read = trial.find("xml_file")
+            if file_to_read:
+               file_to_read = file_to_read.string
+            else:
+               print "No XML file specified"
+               continue
+            
+            #file_to_read = BeautifulSoup(open(file_to_read).read())
+            file_to_read = open(file_to_read).readlines()
+            for line in file_to_read:
+               scene_lines.append(line.rstrip())
+            continue
          elif trial.name == "letter_markov":
-            print "letter markov"
             scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
             trial_data = util.get_lines(data, trial.find("train"))
             
