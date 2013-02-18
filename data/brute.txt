@@ -27552,7 +27552,7 @@
 3 4 166 -1 Hamlet -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 4 167 22718 Hamlet 0.7 0.8 0.4 0.3 967.0 cc And
 3 4 167 22719 Hamlet 1.7 1.4 2.0 1.3 6.0 av-d either
-3 4 167 22720 Hamlet 0 0 0 0 0 … …
+3 4 167 22720 Hamlet 0 0 0 0 0 … ...
 3 4 167 22721 Hamlet 0.4 0.5 0.3 0.3 1143.0 dt the
 3 4 167 22722 Hamlet 3.1 3.4 0.4 3.0 9.0 n1 devil
 3 4 167 22723 Hamlet -1 -1 -1 -1 -1 , ,
@@ -28613,7 +28613,7 @@
 4 1 40 23591 King 0.4 0.9 1.0 0.5 11.0 q-crq|vbz what's
 4 1 40 23592 King 2.3 2.2 0.4 2.6 1.0 j untimely
 4 1 40 23593 King 1.1 1.5 2.5 2.0 22.0 vdn done
-4 1 40 23594 King 0 0 0 0 0 … …
+4 1 40 23594 King 0 0 0 0 0 … ...
 4 1 40 -1 King -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 1 41 23595 King 0.5 0.9 1.1 1.0 31.0 r-crq Whose
 4 1 41 23596 King 0.6 1.4 1.5 1.6 1.0 n1 whisper

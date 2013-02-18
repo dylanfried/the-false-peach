@@ -258,7 +258,10 @@ class Burrito:
             letter_markov.initialize()
             
             text = ""
-            for i in range(500):
+            length = trial.find("generate").find("length")
+            if length: length = int(length.string)
+            else: length = 0
+            for i in range(length):
                text += letter_markov.generateNext(2,[])[-1]
             
             for l in text.split("NEWLINE"):
