@@ -288,9 +288,7 @@ class Burrito:
                if arg_val[i]:
                   tup = arg_name[i], arg_val[i]
                   opts.append(tup)
-            print "OPTS: ", opts
             for o, a in opts:
-               print o,a
                if o == "-a":
                   if "-" in a:
                      a = a.split("-")
@@ -392,7 +390,6 @@ class Burrito:
             
                         if not spoke and not pspoke == c[i]: 
             
-                           print "\n"+c[i].upper()
                            scene_lines.append(c[i].upper())
                            spoke = 1
                            pspoke = c[i]
@@ -459,7 +456,6 @@ class Burrito:
                if arg_val[i]:
                   tup = arg_names[i], arg_val[i]
                   opts.append(tup)
-            print "OPTS", opts
             for o, a in opts:
          
                if o == "-a":
