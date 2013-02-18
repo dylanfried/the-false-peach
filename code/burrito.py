@@ -445,7 +445,7 @@ class Burrito:
             mark_scene = 0
          
             opts = []
-            arg_name=["-a","-s"]
+            arg_names=["-a","-s"]
             arg_val=[]
             arg_val.append(trial.find("acts").string)
             arg_val.append(trial.find("scenes").string)
