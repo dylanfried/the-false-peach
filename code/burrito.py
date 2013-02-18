@@ -218,7 +218,7 @@ class Burrito:
                   # If we've been tracking a stagedir, it's over now
                   if stagedir:
                      # Don't let stage dirs be too long
-                     if len(stagedir[-1]) < 17:
+                     if len(stagedir[-1]) < 22:
                         markov_data.append(stagedir)
                      stagedir = None
                   # want to keep words and speakers intact
@@ -264,15 +264,25 @@ class Burrito:
             
             continue
          elif trial.name == "ddop":
+            scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
             acts = []
             scenes = []
             lines = []
             
             arg_name=["-a","-s","-l"]
             arg_val=[]
-            arg_val.append(trial.find("acts").string)
-            arg_val.append(trial.find("scenes").string)
-            arg_val.append(trial.find("lines").string)
+            if trial.find("acts"): 
+               arg_val.append(trial.find("acts").string)
+            else:
+               arg_val.append("")
+            if trial.find("scenes"): 
+               arg_val.append(trial.find("scenes").string)
+            else:
+               arg_val.append("")
+            if trial.find("lines"): 
+               arg_val.append(trial.find("lines").string)
+            else:
+               arg_val.append("")
             opts = []
             for i in range(len(arg_name)):
                if arg_val[i]:
@@ -313,11 +323,8 @@ class Burrito:
             x = open("code/ndata2.txt").readlines()
             
             ACT = [int(a.split(" ")[0]) for a in x]
-            #print "ACT", ACT
             SCENE = [int(a.split(" ")[1]) for a in x]
-            #print "SCENE", SCENE
             LINE = [int(a.split(" ")[2]) for a in x]
-            #print "LINE", LINE
             c = [a.split(" ")[3] for a in x]
             p = [a.split(" ")[4] for a in x]
             w = [a.split(" ")[5].strip() for a in x]
@@ -346,20 +353,10 @@ class Burrito:
                speaker = c[i]
             
             for speaker in counts:
-            
                ss = sum(counts[speaker].values())
-            
-            #   print ss, max(counts[speaker].values()), len(counts[speaker])
-            #   print counts[speaker].keys()
-            
                bbf = counts[speaker].values()
-            
                for kk in counts[speaker]: 
-                  
                   counts[speaker][kk] = sum([xxx for xxx in bbf if xxx < counts[speaker][kk]])/(ss+0.0)
-            
-               #print min(counts[speaker].values()),max(counts[speaker].values())
-            
             history = []
             whistory = []
             speaker = ""
@@ -426,6 +423,7 @@ class Burrito:
                speaker = c[i]
             continue
          elif trial.name == "straightdo":
+            scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
             x = open("code/ndata4.txt").readlines()
             
             ACT = [int(a.split(" ")[0]) for a in x]
@@ -447,8 +445,16 @@ class Burrito:
             opts = []
             arg_names=["-a","-s"]
             arg_val=[]
-            arg_val.append(trial.find("acts").string)
-            arg_val.append(trial.find("scenes").string)
+            if trial.find("acts"):
+               arg_val.append(trial.find("acts").string)
+            else:
+               arg_val.append("")
+               
+            if trial.find("scenes"):
+               arg_val.append(trial.find("scenes").string)
+            else:
+               arg_val.append("")
+               
             for i in range(len(arg_names)):
                if arg_val[i]:
                   tup = arg_names[i], arg_val[i]
@@ -676,7 +682,7 @@ class Burrito:
             # It's possiblet that there are still some lines without endline punctuation here
             # This could happen because some lines end and change speaker without endline
             # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 17]
+            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
       
             if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
@@ -694,7 +700,7 @@ class Burrito:
                # Get rid of spaces before punctuation
                u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
                # if there's a stage direction and it's short enough, put it in
-               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 17:
+               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
                   u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
                   scene_lines.append(u['stage_direction'])
                scene_lines.append(u['speaker'].upper())
