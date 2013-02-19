@@ -1,15 +1,17 @@
-   <markov>
-   	<name>onefour</name>
-      <file>data/brute.txt</file>
+ <markov>
+    <name>playwithin</name>
+   	<file>data/brute.txt</file>
       <train>
-         <acts>1</acts>
-         <scenes>4</scenes>
-         <characters>HAMLET</characters>
+      	<selections>
+   	   		<selection>
+                    <acts>3</acts>
+   	   				<scenes>2</scenes>
+					<characters>PROLOGUE,PLAYER_KING,PLAYER_QUEEN,LUCIANUS</characters>
+			 </selection>
+		</selections>
       </train>
       <generate>
-         <reset>True</reset>
-         <finish_sent>True</finish_sent>
-         <length>500</length>
-         <k>2</k>
+      	<length>600</length>
+      	<k>10</k>
       </generate>
    </markov>

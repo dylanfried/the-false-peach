@@ -253,8 +253,13 @@ class Burrito:
                   # Maybe we don't want spaces after the last word?
                   new_space[-1] = " "
                   markov_data.append(new_space)
+
+            if trial.find("generate").find("k"):
+               letter_markov_order = int(trial.find("generate").find("k").string)
+            else:
+               letter_markov_order = 2
             
-            letter_markov = Markov(markov_data, 2, 12, False)
+            letter_markov = Markov(markov_data, letter_markov_order, 12, False)
             letter_markov.initialize()
             
             text = ""
@@ -262,7 +267,7 @@ class Burrito:
             if length: length = int(length.string)
             else: length = 0
             for i in range(length):
-               text += letter_markov.generateNext(2,[])[-1]
+               text += letter_markov.generateNext(letter_markov_order,[])[-1]
             
             for l in text.split("NEWLINE"):
                # Formatting stuff left over from Mark
