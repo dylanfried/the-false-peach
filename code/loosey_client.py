@@ -35,6 +35,10 @@ class LooseyClient:
       self.subscriber_port = subscriber_port
       self.trigs = []
       
+      # Remember what style we're currently in
+      self.styles = ""
+      # Remember what scene we're currently in
+      self.scene = ""
       # Remember last speaking character and whether we've left it
       self.last_character = None
       self.changed_speaker = False
@@ -312,6 +316,8 @@ class LooseyClient:
             #current_word_count += 2
             # new Scene
             print l
+            # Remember the scene
+            self.scene = l.split(" ")[2]
             # Print out timing information:
             if start_time != -1:
                print "Timing info. Seconds: {0}, words: {1}, lines: {2}".format(str(time.time() - start_time), str(current_word_count), str(current_line_count))
@@ -330,12 +336,19 @@ class LooseyClient:
             if re.match(".*_.*",l):
                # we have style info, let's grab it
                styles_string = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
+               if self.styles and re.match(".*TTS\.inear.*",self.styles):
+                  # If we're doing a scott scene, sleep a little longer
+                  time.sleep(2)
+               self.styles = styles_string
                # send the style info again and remember
                # what this scene is
                styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
-               time.sleep(2)
+               if self.scene != "kingrises":
+                  time.sleep(2)
+               else:
+                  print "NOT SLEEPING", self.scene
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
                self.send_value("stagedir.exit","zero")
@@ -357,23 +370,32 @@ class LooseyClient:
                self.send_value("style.actor","zero")
                time.sleep(0.5)
                self.send_value("style.lights","zero")
-               time.sleep(2)
+               if self.scene != "kingrises":
+                  time.sleep(2)
+               else:
+                  print "NOT SLEEPING", self.scene
                # Announce the new styles
                self.send_value("character",["STYLE"])
                self.changed_speaker = True
                time.sleep(0.001)
-               print "SENDING LINE", "Apply style value "+",".join(styles)
-               self.send_value("line","Apply style value "+",".join(styles)+"\n")
-               # Wait for Loosey to acknowledge with EOL
-               while 1:
-                  word = self.get_input()
-                  #print "Getting word",word
-                  if word == "EOL": 
-                     current_line_count += 1
-                     break
+               if self.scene == "playwithin" or self.scene == "kingrises":
+                  print "SKIPPING STYLES LINE for", self.scene
+               else:
+                  print "SENDING LINE", "Apply style value "+",".join(styles)
+                  self.send_value("line","Apply style value "+",".join(styles)+"\n")
+                  # Wait for Loosey to acknowledge with EOL
+                  while 1:
+                     word = self.get_input()
+                     #print "Getting word",word
+                     if word == "EOL": 
+                        current_line_count += 1
+                        break
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
-               time.sleep(2)
+               if self.scene != "kingrises":
+                  time.sleep(2)
+               else:
+                  print "NOT SLEEPING", self.scene
                self.send_value("scene.name",l.split(" ")[2])
                time.sleep(0.001)
                self.send_value("style.sound",styles[1])
@@ -383,7 +405,10 @@ class LooseyClient:
                self.send_value("style.actor",styles[2])
                time.sleep(0.5)
                self.send_value("style.lights",styles[3])
-               time.sleep(2)
+               if self.scene != "kingrises":
+                  time.sleep(2)
+               else:
+                  print "NOT SLEEPING", self.scene
             # Move on to the next line
             continue
             
@@ -494,7 +519,7 @@ class LooseyClient:
             # Send the line
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
-            print "SENDING LINE",l
+            print "SENDING LINE","%r"%l
       
          while 1:
             # For each word said, we're going to check whether we need
@@ -567,12 +592,10 @@ class LooseyClient:
             if ws[mws-1]<0: affmax = "neutral"
             # Otherwise, we have a max affect 
             else: affmax = LooseyClient.emos[mws-1]
-            # Send out the max affect
-            self.send_value("affmax",affmax)
             # Do the same for the value of the max affect
             if ws[mws-1]<0: affmaxval = 0
             else: affmaxval = ws[mws-1]
-            self.send_value("affmaxval",float(affmaxval/5.0))
+            
             if ws[0] >= 0:
                # Don't update the average if this word doesn't have a real affect value
                # Keep a weighted moving average to send out
@@ -580,11 +603,19 @@ class LooseyClient:
             else:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
-            self.send_value("affvals",[normalize/5 for normalize in ws])
-            self.send_value("affsmos",[normalize/5 for normalize in ewma])
+            # Send out the max affect and value if above a threshold
+            if affmaxval > 1.5:
+               self.send_value("affmax",affmax)
+               self.send_value("affmaxval",float(affmaxval/5.0))
+               self.send_value("affvals",[normalize/5 for normalize in ws])
+               self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
             if scene_word_count > 0:
                self.send_value("scene.progress",round((current_word_count+0.0)/(scene_word_count+0.0), 3))
+               
+      if self.styles and re.match(".*TTS\.inear.*",self.styles):
+         # If we're doing a scott scene, sleep a little longer
+         time.sleep(2)
       time.sleep(2)
       self.send_value("stagedir.place","zero")
       time.sleep(0.001)
