@@ -2,8 +2,8 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>actor1</lights>
-      <video>10</video>
+      <lights>actor2</lights>
+      <video>15</video>
    </pinned>
    
    <pinned>
@@ -105,6 +105,7 @@
    <pinned>
       <scene>hamoph</scene>
       <video>8</video>
+      <sound>TTS.aloud,TTS.aloud.SPACE.word,TTS.aloud.SPACE.character,TTS.aloud.ROGUI,TTS.aloud.MUSIC.iana,TTS.aloud.MUSIC.emotion</sound>
    </pinned>
    
    <pinned>
@@ -120,8 +121,8 @@
    <pinned>
       <scene>kingrises</scene>
       <sound>TTS.aloud</sound>
-      <lights>lightshow,lighton</lights>
-      <video>3,15</video>
+      <lights>lightshow</lights>
+      <video>10</video>
    </pinned>
    
    <pinned>
@@ -158,8 +159,8 @@
    
    <pinned>
       <scene>playwithin</scene>
-      <sound>TTS.mute</sound>
-      <video>10</video>
+      <sound>TTS.mute.VOICE.rogui</sound>
+      <video>4</video>
       <lights>lightout</lights>
    </pinned>
    
@@ -178,8 +179,8 @@
    <pinned>
       <scene>solid</scene>
       <video>3</video>
-      <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>actor1,actor2</lights>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <lights>actor1</lights>
    </pinned>
 
    <pinned>
@@ -204,6 +205,13 @@
       <scene>tocome</scene>
       <lights>emotions,monemo,lightout</lights>
       <video>1,2,3,6,16,17</video>
+   </pinned>
+   
+   <pinned>
+      <scene>witching</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+      <lights>actor2</lights>
+      <video>15</video>
    </pinned>
 
     <excluded>
@@ -380,50 +388,6 @@
    </excluded>
    <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
-      <video>17</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>1</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>2</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>6</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>8</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>9</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>11</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>12</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>13</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>14</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
-      <video>16</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.mute.MUSIC.emotion</sound>
       <video>17</video>
    </excluded>
 </table>

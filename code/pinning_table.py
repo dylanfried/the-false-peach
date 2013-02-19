@@ -68,8 +68,8 @@ class PinningTable:
       scenes = os.listdir("config/SHOW/")
       scenes = [re.sub("^(.*)\.xml$","\\1",s) for s in scenes if re.match("^.*\.xml$",s)]
       # Keep list of possible styles
-      video_styles = ["1","2","3","6","8","9","10","11","12","13","14","15","16","17"]
-      sound_styles = ["zero","TTS.mute","TTS.aloud","TTS.aloud.SPACE.word","TTS.aloud.SPACE.character","TTS.aloud.ROGUI","TTS.mute.MUSIC.emotion","TTS.aloud.MUSIC.iana","TTS.aloud.MUSIC.emotion","TTS.mute.MUSIC.iana","TTS.inear.VOICE.aloud","TTS.inear.VOICE.space","TTS.inear.VOICE.aloud.MUSIC.iana","TTS.inear.VOICE.aloud.MUSIC.emotion","TTS.inear.VOICE.mute.MUSIC.emotion"]
+      video_styles = ["1","2","3","4","6","8","9","10","11","12","13","14","15","16","17"]
+      sound_styles = ["zero","TTS.mute","TTS.aloud","TTS.aloud.SPACE.word","TTS.aloud.SPACE.character","TTS.aloud.ROGUI","TTS.mute.MUSIC.emotion","TTS.aloud.MUSIC.iana","TTS.aloud.MUSIC.emotion","TTS.mute.MUSIC.iana","TTS.inear.VOICE.aloud","TTS.inear.VOICE.space","TTS.inear.VOICE.aloud.MUSIC.iana","TTS.inear.VOICE.aloud.MUSIC.emotion","TTS.mute.VOICE.rogui"]
       lights_styles = ["actor2","theatre","emotions","play","word","ghost","monemo","lightout","lightshow","closet","lighton","actor1"]
       # Initialize and populate dictionary
       for scene in scenes:
