@@ -604,11 +604,11 @@ class LooseyClient:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
             # Send out the max affect and value if above a threshold
-            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2.5:
+            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2:
                self.send_value("affmax",affmax)
                self.send_value("affmaxval",float(affmaxval/5.0))
                self.send_value("affvals",[normalize/5 for normalize in ws])
-               self.send_value("affsmos",[normalize/5 for normalize in ewma])
+            self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
             if scene_word_count > 0:
                self.send_value("scene.progress",round((current_word_count+0.0)/(scene_word_count+0.0), 3))
