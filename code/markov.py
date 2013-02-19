@@ -10,7 +10,7 @@ class Markov:
    #  - lines: A list of the lines from brute.txt
    #  - max_order: The max order generated
    #  - primary_key:  This is what the Markov transitions from and to (ie parts of speech or words),
-   #    given as the index within the line (10 for part of speech, 11 for word)
+   #    given as the index within the line (11 for part of speech, 12 for word)
    #  - reset: Whether to reset cursor to beginning when out of material or backoff all the way to 0
    #    and randomly sample
    def __init__(self, lines, max_order, primary_key, reset):

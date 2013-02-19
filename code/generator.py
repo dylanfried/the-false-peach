@@ -134,7 +134,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
-         insert_stagedir = [None]*12
+         insert_stagedir = [None]*13
          insert_stagedir[-1] = next_word[-2]
          self.output.append(insert_stagedir)
          # No longer need to grab stage direction to insert
@@ -145,7 +145,7 @@ class Generator:
          # and don't care about line length
          self.line_length = 0
          if not self.in_paren:
-            insert_newline = [None]*12
+            insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
@@ -174,11 +174,11 @@ class Generator:
          self.line_length = 0
          # If we are, then we want to end the stage direction, 
          # then put a NEWLINE and the speaker
-         insert_paren = [None]*12
+         insert_paren = [None]*13
          insert_paren[-2] = " ) "
          insert_paren[-1] = " ) "
          self.output.append(insert_paren)
-         insert_newline = [None]*12
+         insert_newline = [None]*13
          insert_newline[-2] = "NEWLINE"
          insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
@@ -201,7 +201,7 @@ class Generator:
          return None
       elif next_word[-2] == "SPEAKER":
          # Make sure that we have a NEWLINE before and after every speaker
-         insert_newline = [None]*12
+         insert_newline = [None]*13
          insert_newline[-2] = "NEWLINE"
          insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
@@ -218,11 +218,11 @@ class Generator:
          # have a speaker.
          if not self.first_character and next_word[4] != "Stage":
             # We need to put in a speaker
-            insert_newline = [None]*12
+            insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
-            insert_speaker = [None]*12
+            insert_speaker = [None]*13
             insert_speaker[-2] = "SPEAKER"
             insert_speaker[-1] = next_word[4].upper()
             # If we have a forced character, change this speaker
@@ -230,7 +230,7 @@ class Generator:
             if self.forced_character:
                insert_speaker[-1] = self.forced_character
             self.output.append(insert_speaker)
-            insert_newline = [None]*12
+            insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
@@ -247,16 +247,16 @@ class Generator:
          # Check to see if our line is too long
          if (self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))):
             if self.in_paren:
-               insert_paren = [None]*12
+               insert_paren = [None]*13
                insert_paren[-2] = " ) "
                insert_paren[-1] = " ) "
                self.output.append(insert_paren)
-            insert_newline = [None]*12
+            insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
             if self.in_paren:
-               insert_paren = [None]*12
+               insert_paren = [None]*13
                insert_paren[-2] = " ("
                insert_paren[-1] = " ("
                self.output.append(insert_paren)
@@ -302,7 +302,7 @@ class Generator:
          self.grab_stagedir = False
          self.forced_character = chunk["forced_character"]
          # Set chunk title stuff
-         chunk_title = [None]*12
+         chunk_title = [None]*13
          chunkcount = chunkcount + 1
          chunkname = chunk["chunk_name"]
          if not self.output:
@@ -350,18 +350,20 @@ class Generator:
             current_pos_order = Generator.getCurrOrder(chunk, i, "pos")
             current_pos_filters = Generator.getCurrEmoFilter(chunk, i, "pos")
             current_pos = pos_markov.generateNext(current_pos_order, current_pos_filters)
+            #print "current pos", current_pos
             current_word_order = Generator.getCurrOrder(chunk, i, "word")
             current_word_filters = Generator.getCurrEmoFilter(chunk, i, "word")
             # Add in the POS filter if we got a POS
             if (current_pos != None):
-               current_word_filters.append({"index": 10, "filter": str(current_pos[10]), "type": "text_match"})
+               current_word_filters.append({"index": 11, "filter": str(current_pos[11]), "type": "text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
+            #print "current word", current_word, current_word_filters
             if current_word:
                self.update(current_word)
             i += 1
          # Make sure that we've ended all stage directions
          if self.in_paren:
-            insert_paren = [None]*12
+            insert_paren = [None]*13
             insert_paren[-2] = " ) "
             insert_paren[-1] = " ) "
             self.output.append(insert_paren)
