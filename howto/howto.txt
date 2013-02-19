@@ -1,39 +1,22 @@
-
-# MAKING SCENES
+#    MAKING SCENES
 #
 #    create config files in config/TRIAL
 #    promote them to config/PRODUCTION when they are sexy
 #    copy them into config/SHOW to run them in a show
 
-# TO RUN THE SHOW
+#    TO RUN THE SHOW
 #
-# generate short test script from config/TESTS
-./test
-
-# or
-./test 5
-
-# run the show, making script config/burrito.xml from xml in config/SAMPLE
+#
+# run the show using LOOSEY, making script config/shows/show.xml
 ./show
-# or
-./show 3
 
-# rehearse the show WITHOUT Loosey
+# or run the show using LOOSEY using a config from another folder. 
+./show config/SHOW/2bMirror.xml
+
+# run a show without LOOSEY from config/shows/rehearse.xml the show WITHOUT Loosey
 ./rehearse
 
-# or
-./rehearse 5
+# if config is specified make config/shows/rehearse.xml 
+# a burrito containing only that config
+./rehearse config/SHOW/2bMirror.xml
 
-# repeat the last set of script selections, i.e. same burrito.xml
-./repeat
-
-# save the script selections if you come across a bug
-./save
-
-# to run 3pctOrig WITHOUT Loosey, you do (as before) 
-
-python code/chatter.py config/PRODUCTION/3pcntORIG.xml config/rehearse.xml config/triggers.xml
-
-# to run 3pctOrig WITH Loosey, you do (as before) 
-
-python code/chatter.py config/PRODUCTION/3pcntORIG.xml config/trial.xml config/triggers.xml
