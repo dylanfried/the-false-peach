@@ -604,7 +604,7 @@ class LooseyClient:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
             # Send out the max affect and value if above a threshold
-            if affmaxval > 1.5:
+            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2.5:
                self.send_value("affmax",affmax)
                self.send_value("affmaxval",float(affmaxval/5.0))
                self.send_value("affvals",[normalize/5 for normalize in ws])
