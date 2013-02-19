@@ -106,6 +106,7 @@
       <scene>hamoph</scene>
       <video>8</video>
       <sound>TTS.aloud,TTS.aloud.SPACE.word,TTS.aloud.SPACE.character,TTS.aloud.ROGUI,TTS.aloud.MUSIC.iana,TTS.aloud.MUSIC.emotion</sound>
+      <lights>lightshow,lighton</lights>
    </pinned>
    
    <pinned>
