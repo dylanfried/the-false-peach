@@ -32,7 +32,7 @@
    <triggers stagedir='action'>
       <word priority=1 pause=0>dies</word>
       <word priority=1 pause=5000>grave</word>
-      <word priority=1 pause=5000>arras</word>
+      <word priority=1 pause=8000>arras</word>
    </triggers>
    <triggers stagedir='voice' zero_out='intro,outro,stagedir.place,stagedir.exit,stagedir.entrance,stagedir.sound,stagedir.voice,stagedir.dumb,stagedir.action,stagedir.title,stagedir,style.video,style.actor,style.sound,style.lights,character'>
       <word priority=1 pause=0>beneath</word>
