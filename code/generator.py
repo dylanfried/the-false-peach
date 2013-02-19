@@ -322,11 +322,11 @@ class Generator:
    
          #initialize pos and word markovs
          max_pos_order = max([a["order"] for a in chunk["POS_order_ramp"]])
-         pos_markov = Markov(chunk["POS_training_text"], max_pos_order, 10, chunk["reset"])
+         pos_markov = Markov(chunk["POS_training_text"], max_pos_order, 11, chunk["reset"])
          pos_markov.initialize()
          
          max_word_order = max([a["order"] for a in chunk["word_order_ramp"]])
-         word_markov = Markov(chunk["word_training_text"], max_word_order, 11, chunk["reset"])
+         word_markov = Markov(chunk["word_training_text"], max_word_order, 12, chunk["reset"])
          word_markov.initialize()
          
          #initialize the current order to the first order.

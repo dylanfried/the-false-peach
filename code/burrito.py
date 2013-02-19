@@ -254,7 +254,7 @@ class Burrito:
                   new_space[-1] = " "
                   markov_data.append(new_space)
             
-            letter_markov = Markov(markov_data, 2, 11, False)
+            letter_markov = Markov(markov_data, 2, 12, False)
             letter_markov.initialize()
             
             text = ""
