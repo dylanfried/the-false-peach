@@ -49,6 +49,10 @@ class Generator:
       # without a NEWLINE. This is used as we generate text to make
       # sure that no line gets too long.
       self.line_length = 0
+      # Keep track of the number of words in this line that are prose
+      # so that we know whether to count the current line as prose or 
+      # poetry
+      self.current_line_prose = 0
       # Variable to keep track of whether the current chunk has a forced character
       self.forced_character = None
    
@@ -134,6 +138,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
+         self.current_line_prose = 0
          insert_stagedir = [None]*13
          insert_stagedir[-1] = next_word[-2]
          self.output.append(insert_stagedir)
@@ -144,6 +149,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
+         self.current_line_prose = 0
          if not self.in_paren:
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
@@ -160,6 +166,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
+         self.current_line_prose = 0
          # Check to see if we're already in a stage direction
          if self.in_paren:
             # If we are, then we just want to end it
@@ -172,6 +179,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
+         self.current_line_prose = 0
          # If we are, then we want to end the stage direction, 
          # then put a NEWLINE and the speaker
          insert_paren = [None]*13
@@ -198,6 +206,7 @@ class Generator:
          # Reset self.line_length because we're in a stagedir
          # and don't care about line length
          self.line_length = 0
+         self.current_line_prose = 0
          return None
       elif next_word[-2] == "SPEAKER":
          # Make sure that we have a NEWLINE before and after every speaker
@@ -212,6 +221,7 @@ class Generator:
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
+         self.current_line_prose = 0
          self.first_character = True
       else:
          # Check to see if we're getting text but don't yet
@@ -236,6 +246,7 @@ class Generator:
             self.output.append(insert_newline)
             # starting new line, reset line length
             self.line_length = 0
+            self.current_line_prose = 0
             # we now have a first character
             self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
@@ -243,9 +254,18 @@ class Generator:
          if next_word[-1] == "NEWLINE":
             # adding a newline, so reset line length
             self.line_length = 0
+            self.current_line_prose = 0
          self.line_length += 1
+         if next_word[-3] == "ab":
+            self.current_line_prose += 1
          # Check to see if our line is too long
-         if (self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))):
+         # We have two sets of criteria, depending on whether this is prose
+         # or poetry. We consider a line to prose if it contains at least 
+         # 10% words from prose lines and otherwise we consider it poetry.
+         # For prose, we want to break on the first punctuation that we see.
+         # For poetry, we want to give the line a chance to end itself.
+         print "current word", next_word, "line length", self.line_length, "current line prose", self.current_line_prose
+         if self.line_length > 0 and ((self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
             if self.in_paren:
                insert_paren = [None]*13
                insert_paren[-2] = " ) "
@@ -262,6 +282,7 @@ class Generator:
                self.output.append(insert_paren)
                self.grab_stagedir = True
             self.line_length = 0
+            self.current_line_prose = 0
          #if self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1]) and not self.in_paren:
          #   # it is, let's put a NEWLINE in and reset the counter
          #   insert_newline = [None]*12
