@@ -1,6 +1,6 @@
    <markov>
    	   <name>sweetprince</name>
-       <file>data/nonewline.txt</file>
+       <file>data/brute.txt</file>
        <first_character>Horatio</first_character>
       <train>
          <acts>5</acts>

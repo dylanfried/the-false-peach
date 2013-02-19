@@ -1,0 +1,14 @@
+   <letter_markov>
+   	 <name>ActThreeSceneTwo</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>1000</length>
+   	   		<k>1</k>
+   	   	</generate>
+   	 </letter_markov>

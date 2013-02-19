@@ -1,6 +1,6 @@
    <markov>
    	   <name>claudius</name>
-       <file>data/brutefix.txt</file>
+       <file>data/brute.txt</file>
       <train>
          <acts>3</acts>
          <scenes>3</scenes>
