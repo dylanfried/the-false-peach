@@ -1,6 +1,6 @@
    <markov>
    	   <name>tocome</name>
-       <file>data/brutefix.txt</file>
+       <file>data/brute.txt</file>
        <first_character>HAMLET</first_character>
       <train>
          <acts>5</acts>

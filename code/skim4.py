@@ -71,14 +71,14 @@ for acts in bs.findAll("div", recursive = False):
                   t = re.sub("\?"," ?",t)
                   t = re.sub("\!"," !",t)
                   # Open parens
-                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 ( (\n")
+                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 ( (\n")
                   # Text of the stage direction
                   for w in t.split(" "):
               
-                     ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 "+wwhhaatt+" "+w+"\n")
+                     ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 "+wwhhaatt+" "+w+"\n")
                   # Close parens and NEWLINE.
-                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 ) )\n")
-                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 ) )\n")
+                  ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
                   continue
                # If l is not a "stage then we want treat it as a line of text.
                # Set the line number lineno from the "n" attribute in the line
@@ -98,14 +98,14 @@ for acts in bs.findAll("div", recursive = False):
                   tmp = str(tmp)
                   tmp = tmp.encode('utf-8','ignore')
                   if last_speaker != sp:
-                     ofile.write(act+" "+scene+" "+tmp+" -1 "+sp+" -1 -1 -1 -1 -1 SPEAKER "+sp.upper()+"\n")
-                     ofile.write(act+" "+scene+" "+tmp+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+                     ofile.write(act+" "+scene+" "+tmp+" -1 "+sp+" -1 -1 -1 -1 -1 -1 SPEAKER "+sp.upper()+"\n")
+                     ofile.write(act+" "+scene+" "+tmp+" -1 "+sp+" -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
                else:
                   if last_speaker == sp:
-                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
                   else:
-                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 SPEAKER "+sp.upper()+"\n")
-                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 -1 SPEAKER "+sp.upper()+"\n")
+                     ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
                # Processing for each word in a line of text.
                for w in l.findAll("w"):
                   # Word number. 
@@ -134,11 +134,12 @@ for acts in bs.findAll("div", recursive = False):
                      fffs = "0"
                   # Write the new word to the out file. 
                   if ww: 
+                     print act, scene, lineno
                      ofile.write(act+" "+scene+" "+lineno+" "+wordno+" "+sp+" "+\
-                              affs+" "+fffs+" "+w["pos"].encode("utf-8")+" "+ww+"\n")
+                              affs+" "+fffs+" "+l.name+" "+w["pos"].encode("utf-8")+" "+ww+"\n")
                # We don't want to add newline on "ab" lines. 
                if l.name != "ab" or scene_index == scene_length:
-                  ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+                  ofile.write(act+" "+scene+" "+lineno+" -1 "+sp+" -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
 
                # Reset variables.
                last_speaker = sp
@@ -159,14 +160,14 @@ for acts in bs.findAll("div", recursive = False):
             l = re.sub("\?"," ?",l)
             l = re.sub("\!"," !",l)
          
-            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 ( (\n")
+            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 ( (\n")
          
             for w in l.split(" "):
          
-               ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 "+wwhhaatt+" "+w+"\n")
+               ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 "+wwhhaatt+" "+w+"\n")
          
-            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 ) )\n")
-            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 ) )\n")
+            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
       
       
          elif s.name == "head":
@@ -192,9 +193,9 @@ for acts in bs.findAll("div", recursive = False):
       
             for w in l.split(" "):
       
-               ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 Title "+w+"\n")
+               ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 Title "+w+"\n")
       
-            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
+            ofile.write(act+" "+scene+" "+lineno+" -1 "+"Stage -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE\n")
            
 
 ofile.close() 

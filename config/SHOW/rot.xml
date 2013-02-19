@@ -8,7 +8,7 @@
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>13</length>
+   		<length>15</length>
    		<k>1</k>
    	</generate>
    </markov>

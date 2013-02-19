@@ -1,6 +1,6 @@
    <markov>
    	   <name>thedrink</name>
-       <file>data/nonewline.txt</file>
+       <file>data/brute.txt</file>
        <first_character>GERTRUDE</first_character>
       <train>
          <acts>5</acts>
