@@ -338,7 +338,7 @@ class LooseyClient:
                styles_string = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",l)
                if self.styles and re.match(".*TTS\.inear.*",self.styles):
                   # If we're doing a scott scene, sleep a little longer
-                  time.sleep(2)
+                  time.sleep(1)
                self.styles = styles_string
                # send the style info again and remember
                # what this scene is
@@ -615,7 +615,7 @@ class LooseyClient:
                
       if self.styles and re.match(".*TTS\.inear.*",self.styles):
          # If we're doing a scott scene, sleep a little longer
-         time.sleep(2)
+         time.sleep(1)
       time.sleep(2)
       self.send_value("stagedir.place","zero")
       time.sleep(0.001)
