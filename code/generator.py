@@ -264,7 +264,6 @@ class Generator:
          # 10% words from prose lines and otherwise we consider it poetry.
          # For prose, we want to break on the first punctuation that we see.
          # For poetry, we want to give the line a chance to end itself.
-         print "current word", next_word, "line length", self.line_length, "current line prose", self.current_line_prose
          if self.line_length > 0 and ((self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
             if self.in_paren:
                insert_paren = [None]*13
