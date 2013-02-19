@@ -266,8 +266,17 @@ class Burrito:
             length = trial.find("generate").find("length")
             if length: length = int(length.string)
             else: length = 0
+            markov_letter_line_length = 0
             for i in range(length):
-               text += letter_markov.generateNext(letter_markov_order,[])[-1]
+               temp = letter_markov.generateNext(letter_markov_order,[])[-1]
+               if temp == "NEWLINE":
+                  markov_letter_line_length = 0
+               elif markov_letter_line_length > 22:
+                  text += "NEWLINE"
+                  markov_letter_line_length = 0
+               elif temp == " ":
+                  markov_letter_line_length += 1
+               text += temp
             
             for l in text.split("NEWLINE"):
                # Formatting stuff left over from Mark
