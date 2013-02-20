@@ -20,6 +20,11 @@
       <sound>TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana,TTS.aloud</sound>
    </pinned>
    
+   <excluded>
+      <scene>ActFourSceneOne</scene>
+      <video>4</video>
+   </excluded>
+   
    <pinned>
       <scene>ActOneSceneOne</scene>
       <sound>TTS.aloud</sound>
@@ -33,8 +38,8 @@
    </pinned>
    
    <pinned>
-      <scene>actonescenetwo</scene>
-      <video>2</video>
+      <scene>ActOneSceneTwo</scene>
+      <video>8</video>
       <lights>theatre,lightshow</lights>
       <sound>TTS.aloud,TTS.aloud.SPACE.word</sound>
    </pinned>
@@ -56,7 +61,7 @@
    <pinned>
       <scene>affrighted</scene>
       <lights>emotions,monemo,lightout,lightshow</lights>
-      <video>3,6</video>
+      <video>3,6,14</video>
    </pinned>
    <excluded>
       <scene>affrighted</scene>
@@ -66,7 +71,7 @@
    <pinned>
       <scene>claudius</scene>
       <lights>theatre,emotions,monemo</lights>
-      <video>2,3</video>
+      <video>1,2,8,12</video>
    </pinned>
    <excluded>
       <scene>claudius</scene>
@@ -88,7 +93,7 @@
    <pinned>
       <scene>closet</scene>
       <lights>closet</lights>
-      <video>3</video>
+      <video>1,8,9,12</video>
    </pinned>
    <excluded>
       <scene>closet</scene>
@@ -112,8 +117,36 @@
    </excluded>
    
    <pinned>
+      <scene>closetletters</scene>
+      <lights>closet</lights>
+      <video>1,8,9,12</video>
+   </pinned>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.aloud.SPACE.word</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.mute</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   
+   <pinned>
       <scene>deathspeech</scene>
       <sound>TTS.inear.VOICE.aloud,TTS.inear.VOICE.aloud.MUSIC.emotion,TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <video>10,15</video>
+      <lights>actor3</lights>
    </pinned>
    
    <pinned>
@@ -170,7 +203,7 @@
    <pinned>
       <scene>HamNeg</scene>
       <lights>word,monemo,lightout</lights>
-      <video>6</video>
+      <video>6,14</video>
    </pinned>
    <excluded>
       <scene>HamNeg</scene>
@@ -225,6 +258,22 @@
    </pinned>
    <excluded>
       <scene>host</scene>
+      <video>3</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>4</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>15</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
       <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    <excluded>
@@ -234,8 +283,12 @@
    
    <pinned>
       <scene>itis_filter</scene>
-      <lights>word,lightshow</lights>
+      <lights>word</lights>
    </pinned>
+   <excluded>
+      <scene>itis_filter</scene>
+      <video>4</video>
+   </excluded>
    <excluded>
       <scene>itis_filter</scene>
       <sound>TTS.aloud.ROGUI</sound>
@@ -294,7 +347,7 @@
       <scene>MadOph</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
       <video>11</video>
-      <lights>emotions,monemo</lights>
+      <lights>emotions</lights>
    </pinned>
    
    <pinned>
@@ -309,8 +362,8 @@
    
    <pinned>
       <scene>O_filter</scene>
-      <lights>word,lightshow</lights>
-      <video>1,2,3,15,16,17</video>
+      <lights>word</lights>
+      <video>1,2,15,16,17</video>
    </pinned>
   <excluded>
       <scene>O_filter</scene>
@@ -365,6 +418,7 @@
       <video>4</video>
       <lights>lightout</lights>
    </pinned>
+  
    
    <pinned>
       <scene>rogue</scene>
@@ -376,7 +430,7 @@
    <pinned>
       <scene>rot</scene>
       <lights>lightout,lighton</lights>
-      <video>3,6,9</video>
+      <video>6,9</video>
    </pinned>
    <excluded>
       <scene>rot</scene>
@@ -389,11 +443,28 @@
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <lights>actor1</lights>
    </pinned>
-
+   
+   <excluded>
+      <scene>straightdo</scene>
+      <video>3</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>4</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>15</video>
+   </excluded>
+   
    <pinned>
       <scene>sweetprince</scene>
       <lights>monemo,lightout,lighton</lights>
-      <video>1,2,3</video>
+      <video>1,2,6,8</video>
    </pinned>
    <excluded>
       <scene>sweetprince</scene>
@@ -403,7 +474,7 @@
    <pinned>
       <scene>thedrink</scene>
       <lights>word</lights>
-      <video>1,2,3,12,16,17</video>
+      <video>1,2,3,6,12,14,16,17</video>
    </pinned>
    <excluded>
       <scene>thedrink</scene>
@@ -413,7 +484,7 @@
    <pinned>
       <scene>thisfilter</scene>
       <lights>word,lightshow</lights>
-      <video>1,2,3,6</video>
+      <video>1,2,6</video>
    </pinned>
    <excluded>
       <scene>thisfilter</scene>
@@ -439,14 +510,14 @@
    <pinned>
       <scene>tocome</scene>
       <lights>emotions,monemo,lightout</lights>
-      <video>1,2,3,6,16,17</video>
+      <video>1,2,6,16,17</video>
       <sound>TTS.aloud,TTS.inear.VOICE.aloud,TTS.inear.VOICE.space,TTS.inear.VOICE.aloud.MUSIC.emotion,TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </pinned>
    
    <pinned>
       <scene>witching</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
-      <lights>actor2</lights>
+      <lights>actor3</lights>
       <video>15</video>
    </pinned>
 
