@@ -35,6 +35,9 @@ class LooseyClient:
       self.subscriber_port = subscriber_port
       self.trigs = []
       
+      # Remember whether we've left scott's section
+      self.left_actor = False
+      
       # Remember what style we're currently in
       self.styles = ""
       # Remember what scene we're currently in
@@ -374,6 +377,11 @@ class LooseyClient:
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
+               # Special case, extra sleeping after we leave scott for the
+               # first time
+               if not self.left_actor and not re.match(".*TTS\.inear.*",self.styles):
+                  time.sleep(10)
+                  self.left_actor = True
                # Announce the new styles
                self.send_value("character","STYLE")
                self.changed_speaker = True
