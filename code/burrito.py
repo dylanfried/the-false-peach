@@ -134,6 +134,12 @@ class Burrito:
       # Print out script
       for s in self.scenes:
          print "\n".join(s.script)
+      # Print out summary of burrito:
+      print "\n----------------------"
+      print "Burrito summary"
+      print "Total word count:", sum([s.length for s in self.scenes])
+      print "\n".join([s.script[0] for s in self.scenes])
+      print "----------------------"
             
    def send_script(self):
       # Loop through the scenes and create the script in its entirety
