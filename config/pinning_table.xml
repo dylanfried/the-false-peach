@@ -6,6 +6,10 @@
       <video>15</video>
    </pinned>
    
+   <excluded>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   
    <pinned>
       <scene>3pcntORIG</scene>
       <sound>TTS.aloud</sound>
@@ -115,6 +119,10 @@
       <scene>closet</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>   
    
    <pinned>
       <scene>closetletters</scene>
@@ -320,7 +328,7 @@
    <pinned>
       <scene>kingthing</scene>
       <lights>emotions,word</lights>
-      <video>16,17</video>
+      <video>1,8,16,17</video>
    </pinned>
    <excluded>
       <scene>kingthing</scene>
@@ -414,7 +422,7 @@
    
    <pinned>
       <scene>playwithin</scene>
-      <sound>TTS.mute.VOICE.rogui</sound>
+      <sound>TTS.inear.VOICE.aloud</sound>
       <video>4</video>
       <lights>lightout</lights>
    </pinned>
@@ -459,7 +467,23 @@
    <excluded>
       <scene>straightdo</scene>
       <video>15</video>
-   </excluded>
+   </excluded
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.mute</sound>
+   </excluded
    
    <pinned>
       <scene>sweetprince</scene>
@@ -696,5 +720,11 @@
    <excluded>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
       <video>17</video>
+   </excluded>
+   <excluded>
+      <sound>TTS.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <sound>TTS.mute.MUSIC.iana</sound>
    </excluded>
 </table>

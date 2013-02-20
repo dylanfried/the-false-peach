@@ -396,8 +396,6 @@ class LooseyClient:
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
-               self.send_value("scene.name",l.split(" ")[2])
-               time.sleep(0.001)
                self.send_value("style.sound",styles[1])
                time.sleep(0.001)
                self.send_value("style.video",styles[0])
@@ -405,6 +403,8 @@ class LooseyClient:
                self.send_value("style.actor",styles[2])
                time.sleep(0.5)
                self.send_value("style.lights",styles[3])
+               time.sleep(0.01)
+               self.send_value("scene.name",l.split(" ")[2])
                if self.scene != "kingrises":
                   time.sleep(2)
                else:
