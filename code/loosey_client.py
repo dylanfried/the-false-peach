@@ -375,7 +375,7 @@ class LooseyClient:
                else:
                   print "NOT SLEEPING", self.scene
                # Announce the new styles
-               self.send_value("character",["STYLE"])
+               self.send_value("character","STYLE")
                self.changed_speaker = True
                time.sleep(0.001)
                if self.scene == "playwithin" or self.scene == "kingrises":
@@ -436,16 +436,16 @@ class LooseyClient:
             #current_word_count += len(l.split(" "))
             # This is a character
             who = l.strip().upper()
-            who = re.sub("_AND_"," ",who)
-            who = re.sub("_and_"," ",who)
+            #who = re.sub("_AND_"," ",who)
+            #who = re.sub("_and_"," ",who)
             # If we have multiple characters, split them up
-            who = who.split(" ")
+            #who = who.split(" ")
       
             # Make sure that we're keeping track of the characters for Loosey metadata
-            for w in who:
-               if not w in characters: 
-                  character_order += 1
-                  characters[w]=character_order
+            #for w in who:
+            if not who in characters: 
+               character_order += 1
+               characters[who]=character_order
       
             # Not sure what this does yet
             display = 1
@@ -467,7 +467,7 @@ class LooseyClient:
             # This is the TITLE voice
             self.send_value("intro",3000)
             time.sleep(0.001)
-            self.send_value("character",["STAGEDIR"])
+            self.send_value("character","STAGEDIR")
             self.changed_speaker = True
             time.sleep(3)
             # Send the stage directions
@@ -492,9 +492,9 @@ class LooseyClient:
             # Send the stagedir
             if wwhhaatt == "dumb":
                # Special dumb character that is mute for dumb show
-               self.send_value("character",["DUMB"])
+               self.send_value("character","DUMB")
             else:
-               self.send_value("character",["STAGEDIR"])
+               self.send_value("character","STAGEDIR")
             self.changed_speaker = True
             self.send_value("stagedir.bool",2)
             self.send_value("stagedir",l)
