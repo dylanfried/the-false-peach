@@ -258,7 +258,19 @@
    </pinned>
    <excluded>
       <scene>host</scene>
-      <video>3,4,10,15</video>
+      <video>3</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>4</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>host</scene>
+      <video>15</video>
    </excluded>
    <excluded>
       <scene>host</scene>
@@ -434,9 +446,21 @@
    
    <excluded>
       <scene>straightdo</scene>
-      <video>3,4,10,15</video>
+      <video>3</video>
    </excluded>
-
+   <excluded>
+      <scene>straightdo</scene>
+      <video>4</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>15</video>
+   </excluded>
+   
    <pinned>
       <scene>sweetprince</scene>
       <lights>monemo,lightout,lighton</lights>
