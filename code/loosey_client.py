@@ -611,7 +611,7 @@ class LooseyClient:
             self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
             if scene_word_count > 0:
-               print "SCENE PROGRESS", round((current_word_count+0.0)/(scene_word_count+0.0), 3)
+               if current_word_count%100 == 0: print "SCENE PROGRESS", round((current_word_count+0.0)/(scene_word_count+0.0), 3)
                self.send_value("scene.progress",round((current_word_count+0.0)/(scene_word_count+0.0), 3))
                
       if self.styles and re.match(".*TTS\.inear.*",self.styles):

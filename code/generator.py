@@ -9,6 +9,7 @@ class Generator:
    # The constructor takes a list where each element represents a chunk and each chunk takes
    # the following form:
    #  {"chunk_length" : 100,
+   #   "chunk_type": "markov"/"mirror"/etc
    #   "finish_sentence" : True/False // Defaults to False
    #   "POS_training_text": [lines],
    #   "POS_order_ramp":    [{"order": 3, "word_number": 1},
@@ -129,7 +130,7 @@ class Generator:
    # This is a helper method that takes care of polishing text before
    # adding it to the generated text. Mostly, it keeps track of
    # parentheses for stage directions formatting
-   def update(self, next_word):
+   def update(self, next_word, current_chunk):
       # We always want the type of stage direction at the beginning
       # of each stage direction
       # grab_stagedir will be set if the last word was an open
@@ -264,7 +265,7 @@ class Generator:
          # 10% words from prose lines and otherwise we consider it poetry.
          # For prose, we want to break on the first punctuation that we see.
          # For poetry, we want to give the line a chance to end itself.
-         if self.line_length > 0 and ((self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+         if self.line_length > 0 and ((current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
             if self.in_paren:
                insert_paren = [None]*13
                insert_paren[-2] = " ) "
@@ -379,7 +380,7 @@ class Generator:
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
             #print "current word", current_word, current_word_filters
             if current_word:
-               self.update(current_word)
+               self.update(current_word, chunk)
             i += 1
          # Make sure that we've ended all stage directions
          if self.in_paren:
