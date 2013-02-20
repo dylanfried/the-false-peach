@@ -151,6 +151,13 @@ class Burrito:
    # Method for generating a single scene
    # Returns a scene object
    def create_scene(self, scene_name):
+      # Special handling for play within a play:
+      # We want to replace the text with the text from another scene
+      playwithin = False
+      if scene_name == "playwithin.xml":
+         playwithin = True
+         scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l) and l not in self.prescribed_scenes]
+         scene_name = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
       # Get going with the scene config file
       bs = BeautifulSoup(open("config/SHOW/" + scene_name).read())
       scene_name = re.sub("^(.*)\.xml$", "\\1", scene_name)
@@ -830,12 +837,18 @@ class Burrito:
             scene_lines = gen.generate()
       # Put scene information in:
       out = []
-      if "name" in scene.attrs and "style" in scene.attrs:
+      if playwithin:
+         out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+      elif "name" in scene.attrs and "style" in scene.attrs:
          out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
       else:
          out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
       out += scene_lines
-      return Scene(out)
+      to_return = Scene(out)
+      if playwithin:
+         to_return.name = scene["name"]
+         to_return.feature_vector["name"] = scene["name"]
+      return to_return
    
 def main(argv):
    # Grab the config files
