@@ -431,7 +431,7 @@ class Burrito:
                            pspoke = c[i]
             
                         tmpaa = clean(kk)
-                        print tmpaa[0].capitalize()+tmpaa[1:]
+                        #print tmpaa[0].capitalize()+tmpaa[1:]
                         line = tmpaa[0].capitalize()+tmpaa[1:]
                         # Formatting stuff left over from Mark
                         line = re.sub(" NEWLINE \)"," )",line)
