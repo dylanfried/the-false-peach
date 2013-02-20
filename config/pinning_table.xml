@@ -2,12 +2,16 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>actor2</lights>
-      <video>15</video>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
+   
    
    <excluded>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    
    <pinned>
@@ -29,7 +33,7 @@
       <video>4</video>
    </excluded>
    
-   <pinned>
+   <pinned>                                                                                   
       <scene>ActOneSceneOne</scene>
       <sound>TTS.aloud</sound>
       <lights>theatre</lights>
@@ -44,7 +48,7 @@
    <pinned>
       <scene>ActOneSceneTwo</scene>
       <video>8</video>
-      <lights>theatre,lightshow</lights>
+      <lights>theatre,lightshow,word</lights>
       <sound>TTS.aloud,TTS.aloud.SPACE.word</sound>
    </pinned>
    
@@ -70,6 +74,22 @@
    <excluded>
       <scene>affrighted</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    
    <pinned>
@@ -123,6 +143,18 @@
       <scene>closet</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>   
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
    
    <pinned>
       <scene>closetletters</scene>
@@ -152,9 +184,9 @@
    
    <pinned>
       <scene>deathspeech</scene>
-      <sound>TTS.inear.VOICE.aloud,TTS.inear.VOICE.aloud.MUSIC.emotion,TTS.inear.VOICE.aloud.MUSIC.iana</sound>
-      <video>10,15</video>
-      <lights>actor3</lights>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
    
    <pinned>
@@ -180,8 +212,9 @@
    
    <pinned>
       <scene>gravedigger</scene>
-      <lights>theatre,lightshow</lights>
-      <video>1,2,10</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
    <excluded>
       <scene>gravedigger</scene>
@@ -191,10 +224,7 @@
       <scene>gravedigger</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.inear.VOICE.aloud</sound>
-   </excluded>
+
    <excluded>
       <scene>gravedigger</scene>
       <sound>TTS.inear.VOICE.space</sound>
@@ -208,6 +238,12 @@
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
    
+   <pinned>
+      <scene>HamNeg_scott</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
+   </pinned>
    <pinned>
       <scene>HamNeg</scene>
       <lights>word,monemo,lightout</lights>
@@ -241,6 +277,14 @@
       <scene>HamNeg</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   <excluded>
+      <scene>HamNeg</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>HamNeg</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
    
    
    <pinned>
@@ -258,6 +302,12 @@
       <video>8</video>
       <sound>TTS.aloud,TTS.aloud.SPACE.character,TTS.aloud.MUSIC.emotion</sound>
       <lights>lightshow,lighton</lights>
+   </pinned>
+   <pinned>
+      <scene>hamoph_scott</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
    
    <pinned>
@@ -350,6 +400,27 @@
       <scene>kingthing</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   <excluded>
+      <scene>kingthing</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>kingthing</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>kingthing</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>kingthing</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>kingthing</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
+   
    
    <pinned>
       <scene>MadOph</scene>
@@ -392,6 +463,26 @@
    <excluded>
       <scene>O_filter</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>O_filter</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>O_filter</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>O_filter</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>O_filter</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>O_filter</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
    </excluded>
    
    <pinned>
@@ -452,6 +543,10 @@
       <lights>actor1</lights>
    </pinned>
    
+   <pinned>
+      <scene>straightdo</scene>
+      <lights>lightout,theatre</lights>
+   </pinned>
    <excluded>
       <scene>straightdo</scene>
       <video>3</video>
@@ -484,6 +579,22 @@
       <scene>straightdo</scene>
       <sound>TTS.mute</sound>
    </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
    
    <pinned>
       <scene>sweetprince</scene>
@@ -503,6 +614,22 @@
    <excluded>
       <scene>thedrink</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>thedrink</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>thedrink</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>thedrink</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>thedrink</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
 
    <pinned>
@@ -533,16 +660,16 @@
    
    <pinned>
       <scene>tocome</scene>
-      <lights>emotions,monemo,lightout</lights>
-      <video>1,2,6,16,17</video>
-      <sound>TTS.aloud,TTS.inear.VOICE.aloud,TTS.inear.VOICE.space,TTS.inear.VOICE.aloud.MUSIC.emotion,TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
    
    <pinned>
       <scene>witching</scene>
-      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
-      <lights>actor3</lights>
-      <video>15</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>lightout</lights>
+      <video>10</video>
    </pinned>
 
     <excluded>
@@ -726,5 +853,8 @@
    </excluded>
    <excluded>
       <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+      <excluded>
+      <sound>zero</sound>
    </excluded>
 </table>

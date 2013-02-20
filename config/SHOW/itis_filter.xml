@@ -10,6 +10,6 @@
       </train>
       <generate>
          <pattern>It is</pattern>
-         <length>25</length>
+         <length>30</length>
       </generate>
    </filter>

@@ -11,7 +11,7 @@
 		</selections>
       </train>
       <generate>
-      	<length>600</length>
+      	<length>500</length>
       	<k>10</k>
       </generate>
    </markov>
