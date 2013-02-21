@@ -34,4 +34,7 @@ class RandomTransition(TransitionLogic):
          return random.sample(no_repeat,1)[0]
       else:
          # Otherwise, randomly sample over everything
+         # DON'T EVER REPEAT SCENES
+         print "\n\nNEVER REPEAT A SCENE!!!!!!!!\n\n"
+         sys.exit()
          return random.sample(scene_choices,1)[0]

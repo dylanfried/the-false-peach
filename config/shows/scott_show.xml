@@ -40,7 +40,7 @@
    </sequence>
    <sequence random="true">
       <random>
-         <length>2000</length>
+         <length>1700</length>
          <scene_choices>
             <scene_choice>straightdo.xml</scene_choice>
             <scene_choice>OneOne.xml</scene_choice>
