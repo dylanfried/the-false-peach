@@ -63,6 +63,8 @@ class PinningTable:
    #    the style generation process (we can randomly sample over the keyspace at each
    #    level of the table)
    def __init__(self, pinning_file):
+      # Remember the last style that we returned
+      self.last_style = {}
       self.table = {}
       # Grab scene files from directory
       scenes = os.listdir("config/SHOW/")
@@ -185,13 +187,35 @@ class PinningTable:
             del self.table[scene]
 
    # Given scene, return a style
+   # We want to do our best to follow these rules when it isn't scott speaking:
+   #  - No two same light styles in a row
+   #  - No two music styles in a row
+   #  - No two same video styles in a row
    def generate_style(self, scene):
       if scene not in self.table:
          print "NO STYLES FOR SCENE",scene
          return ""
-      video = random.sample(self.table[scene].keys(), 1)[0]
-      sound = random.sample(self.table[scene][video].keys(), 1)[0]
-      lights = random.sample(self.table[scene][video][sound].keys(), 1)[0]
+      attempts = 0
+      while 1:
+         video = random.sample(self.table[scene].keys(), 1)[0]
+         sound = random.sample(self.table[scene][video].keys(), 1)[0]
+         lights = random.sample(self.table[scene][video][sound].keys(), 1)[0]
+         # If we haven't had any styles yet or they were inear, don't worry about the rules
+         if not self.last_style or re.match(".*TTS\.inear.*",self.last_style['sound']): break
+         # Try to follow the rules:
+         if video != self.last_style['video'] and lights != self.last_style['lights'] and (not re.match(".*MUSIC.*",self.last_style['sound']) or not re.match(".*MUSIC.*",sound)): break
+         # Don't try too many times to follow the rules
+         if attempts > 25:
+            print "COULDN'T FOLLOW STYLE RULES"
+            print "scene:",scene
+            print "table:",self.table[scene]
+            print "last style":self.last_style
+            break
+         attempts += 1
+      
+      self.last_style['video'] = video
+      self.last_style['sound'] = sound
+      self.last_style['lights'] = lights
       
       return video + "_" + sound + "_0_" + lights
       
