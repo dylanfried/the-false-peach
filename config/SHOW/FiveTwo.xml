@@ -8,7 +8,7 @@
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>1000</length>
+         <length>800</length>
          <k>5</k>
       </generate>
    </markov>

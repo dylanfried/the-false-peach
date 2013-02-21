@@ -2,7 +2,7 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    
@@ -22,7 +22,7 @@
    </pinned>
    
    <pinned>
-      <scene>52directions</scene>
+      <scene>FiveTwo</scene>
       <lights>theatre</lights>
       <video>13</video>
       <sound>TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana,TTS.aloud</sound>
@@ -34,16 +34,12 @@
    </excluded>
    
    <pinned>                                                                                   
-      <scene>ActOneSceneOne</scene>
+      <scene>OneOne</scene>
       <sound>TTS.aloud</sound>
       <lights>theatre</lights>
       <video>2</video>
    </pinned>
-   
-   <pinned>
-      <scene>dumb</scene>
-      <sound>TTS.mute</sound>
-   </pinned>
+
    
    <pinned>
       <scene>ActOneSceneTwo</scene>
@@ -184,8 +180,15 @@
    
    <pinned>
       <scene>deathspeech</scene>
+      <sound>TTS.aloud,TTS.aloud.MUSIC.iana,TTS.aloud.MUSIC.emotion</sound>
+      <lights>lightout,monemo</lights>
+      <video>1</video>
+   </pinned>
+   
+   <pinned>
+      <scene>deathspeech_scott</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    
@@ -213,7 +216,7 @@
    <pinned>
       <scene>gravedigger</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    <excluded>
@@ -239,50 +242,50 @@
    </excluded>
    
    <pinned>
-      <scene>HamNeg_scott</scene>
+      <scene>is_not_scott</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    <pinned>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <lights>word,monemo,lightout</lights>
       <video>6,14</video>
    </pinned>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.aloud.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.mute.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.inear.VOICE.space</sound>
    </excluded>
    <excluded>
-      <scene>HamNeg</scene>
+      <scene>is_not</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
    </excluded>
    
@@ -306,7 +309,7 @@
    <pinned>
       <scene>hamoph_scott</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    
@@ -340,33 +343,50 @@
    </excluded>
    
    <pinned>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <lights>word</lights>
    </pinned>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <video>4</video>
    </excluded>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <sound>TTS.mute</sound>
    </excluded>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <sound>TTS.mute.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>itis_filter</scene>
+      <scene>it_is</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   <excluded>
+      <scene>it_is</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>it_is</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>it_is</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>it_is</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   
    
    <pinned>
       <scene>kingrises</scene>
@@ -440,48 +460,48 @@
    </excluded>
    
    <pinned>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <lights>word</lights>
       <video>1,2,15,16,17</video>
    </pinned>
   <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.mute</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.mute.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.inear.VOICE.space</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    <excluded>
-      <scene>O_filter</scene>
+      <scene>O</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
    </excluded>
    
@@ -661,14 +681,14 @@
    <pinned>
       <scene>tocome</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
    
    <pinned>
       <scene>witching</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>lightout</lights>
+      <lights>open</lights>
       <video>10</video>
    </pinned>
 
@@ -854,7 +874,10 @@
    <excluded>
       <sound>TTS.mute.MUSIC.iana</sound>
    </excluded>
-      <excluded>
+   <excluded>
       <sound>zero</sound>
    </excluded>
+   <excluded>
+      <lights>actor2</lights>
+   </excluded>  
 </table>

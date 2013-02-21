@@ -389,8 +389,8 @@ class LooseyClient:
                if self.scene == "playwithin" or self.scene == "kingrises":
                   print "SKIPPING STYLES LINE for", self.scene
                else:
-                  print "SENDING LINE", "Apply style value "+self.scene+","+",".join(styles)
-                  self.send_value("line","Apply style value "+self.scene+","+",".join(styles)+"\n")
+                  print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
+                  self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
                   # Wait for Loosey to acknowledge with EOL
                   while 1:
                      word = self.get_input()
