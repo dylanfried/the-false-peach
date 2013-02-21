@@ -389,8 +389,8 @@ class LooseyClient:
                if self.scene == "playwithin" or self.scene == "kingrises":
                   print "SKIPPING STYLES LINE for", self.scene
                else:
-                  print "SENDING LINE", "Apply style value "+",".join(styles)
-                  self.send_value("line","Apply style value "+",".join(styles)+"\n")
+                  print "SENDING LINE", "Apply style value "+self.scene+","+",".join(styles)
+                  self.send_value("line","Apply style value "+self.scene+","+",".join(styles)+"\n")
                   # Wait for Loosey to acknowledge with EOL
                   while 1:
                      word = self.get_input()
@@ -497,6 +497,9 @@ class LooseyClient:
             # Make the line into the line except for the first word in the parentheses
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
+            # Dont want stage directions to run over scott. 
+            if self.styles and re.match(".*TTS\.inear.*",self.styles):
+               time.sleep(1)
             # Send the stagedir
             if wwhhaatt == "dumb":
                # Special dumb character that is mute for dumb show
@@ -550,7 +553,7 @@ class LooseyClient:
             #current_word_count += 1
       
             # Check to see if we've had a stagedir trigger in this line
-            if trigger_label:
+            if trigger_label and self.styles and not re.match(".*TTS\.inear.*",self.styles):
                tmptrigs = []
                # Loop through all the triggers and update them with
                # the current word. If they're active now, put them in
@@ -612,7 +615,7 @@ class LooseyClient:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
             # Send out the max affect and value if above a threshold
-            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2:
+            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2.5:
                self.send_value("affmax",affmax)
                self.send_value("affmaxval",float(affmaxval/5.0))
                self.send_value("affvals",[normalize/5 for normalize in ws])
