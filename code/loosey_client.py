@@ -380,7 +380,7 @@ class LooseyClient:
                # Special case, extra sleeping after we leave scott for the
                # first time
                if not self.left_actor and not re.match(".*TTS\.inear.*",self.styles):
-                  time.sleep(10)
+                  time.sleep(15)
                   self.left_actor = True
                # Announce the new styles
                self.send_value("character","STYLE")

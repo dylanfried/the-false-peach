@@ -1,15 +1,42 @@
 <show>
    <sequence>
       <scene>2bMirror.xml</scene>
-      <scene>is_not_scott.xml</scene>
-      <scene>it_is_scott.xml</scene>
-      <scene>hamoph_scott.xml</scene>
-      <scene>witching.xml</scene>
-      <scene>tocome.xml</scene>
-      <scene>HamSad_scott.xml</scene>
-      <scene>mansmemory_scott.xml</scene>
-      <scene>rogueddop.xml</scene>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <scene_choices>
+            <scene_choice>is_not_scott.xml</scene_choice>
+            <scene_choice>it_is_scott.xml</scene_choice>
+            <scene_choice>hamoph_scott.xml</scene_choice>
+            <scene_choice>witching.xml</scene_choice>
+            <scene_choice>tocome.xml</scene_choice>
+            <scene_choice>HamSad_scott.xml</scene_choice>
+            <scene_choice>mansmemory_scott.xml</scene_choice>
+            <scene_choice>rogueddop.xml</scene_choice>
+         </scene_choices>
+      </random>
+   </sequence>
+   <sequence>
       <scene>deathspeech_scott.xml</scene>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <length>2</length>
+         <scene_choices>
+            <scene_choice>straightdo.xml</scene_choice>
+            <scene_choice>OneOne.xml</scene_choice>
+            <scene_choice>deathspeech.xml</scene_choice>
+         </scene_choices>
+      </random>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <length>2</length>
+         <scene_choices>
+            <scene_choice>straightdo.xml</scene_choice>
+            <scene_choice>OneOne.xml</scene_choice>
+         </scene_choices>
+      </random>
    </sequence>
    <sequence random="true">
       <random>
@@ -25,10 +52,11 @@
             <scene_choice>thedrink.xml</scene_choice>
             <scene_choice>closet.xml</scene_choice>
             <scene_choice>kingthing.xml</scene_choice>
-            <scene_choice>FiveTwo.xml</scene_choice>
             <scene_choice>is_not.xml</scene_choice>
             <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
+            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>
    </sequence>
@@ -49,14 +77,15 @@
             <scene_choice>thedrink.xml</scene_choice>
             <scene_choice>closet.xml</scene_choice>
             <scene_choice>kingthing.xml</scene_choice>
-            <scene_choice>FiveTwo.xml</scene_choice>
             <scene_choice>is_not.xml</scene_choice>
             <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
+            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>
    </sequence>
    <sequence>
-      <scene>deathspeech.xml</scene>
+      <scene>FiveTwo.xml</scene>
    </sequence>
 </show>
