@@ -25,7 +25,7 @@
       <scene>FiveTwo</scene>
       <lights>theatre</lights>
       <video>13</video>
-      <sound>TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana,TTS.aloud</sound>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
    </pinned>
    
    <excluded>
