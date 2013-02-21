@@ -1,0 +1,9 @@
+<read_xml>
+   <name>header</name>
+   <train>
+      <file>data/brute.txt</file>
+      <xml_file>data/header.xml</xml_file>
+	 </train>
+	 <generate>
+	 </generatea>
+</read_xml>  
