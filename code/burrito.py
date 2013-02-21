@@ -113,7 +113,8 @@ class Burrito:
                if sequence.find("scene_choices"):
                   # Specific scene choices given
                   for scene_choice in sequence.findAll("scene_choice"):
-                     scene_choices.append(scene_choice.string)
+                     if scene_choice not in self.prescribed_scenes:
+                        scene_choices.append(scene_choice.string)
                else:
                   # Grab all the scenes from the SHOW dir
                   scene_choices = [l for l in os.listdir("config/SHOW/") if re.match(".*\.xml$",l) and not re.match(".*trigger.*",l) and l not in self.prescribed_scenes]
