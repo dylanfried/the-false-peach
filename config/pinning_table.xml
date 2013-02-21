@@ -228,6 +228,52 @@
    </excluded>
    
    <pinned>
+      <scene>groups</scene>
+      <lights>word</lights>
+      <video>1,8,16,17</video>
+   </pinned>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.aloud.ROGUI</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.mute</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>groups</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
+   
+   <pinned>
       <scene>is_not_scott</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <lights>open</lights>
@@ -570,6 +616,30 @@
       <scene>rot</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>rot</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
    
    <pinned>
       <scene>solid</scene>
@@ -631,6 +701,10 @@
       <scene>straightdo</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
    
    <pinned>
       <scene>sweetprince</scene>
@@ -684,6 +758,10 @@
    <excluded>
       <scene>thisfilter</scene>
       <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>thisfilter</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
    </excluded>
    <excluded>
       <scene>thisfilter</scene>
@@ -896,4 +974,16 @@
    <excluded>
       <lights>actor2</lights>
    </excluded>  
+   <excluded>
+      <video>14</video>
+      <sound>TTS.mute</sound>
+   </excluded>
+   <excluded>
+      <video>14</video>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <video>14</video>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
 </table>

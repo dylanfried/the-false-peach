@@ -205,11 +205,11 @@ class PinningTable:
          # Try to follow the rules:
          if video != self.last_style['video'] and lights != self.last_style['lights'] and (not re.match(".*MUSIC.*",self.last_style['sound']) or not re.match(".*MUSIC.*",sound)): break
          # Don't try too many times to follow the rules
-         if attempts > 25:
+         if attempts > 100:
             print "COULDN'T FOLLOW STYLE RULES"
             print "scene:",scene
             print "table:",self.table[scene]
-            print "last style":self.last_style
+            print "last style",self.last_style
             break
          attempts += 1
       

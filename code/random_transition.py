@@ -5,12 +5,12 @@ class RandomTransition(TransitionLogic):
    def __init__(self):
       TransitionLogic.__init__(self)
       # Rules for things that cannot follow other things
-      self.no_follow = [{"from":['itis_filter','O_filter','thisfilter'], 
-                         "to":  ['itis_filter','O_filter','thisfilter']},
-                        {"from":["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"], 
-                         "to":  ["hamNOUN","HamSad","host","OphMon","rogue","solid","gertrude","2bMirror","claudius"]},
-                        {"from":["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","HamNeg"],
-                         "to":  ["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","HamNeg"]}]
+      self.no_follow = [{"from":['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo'], 
+                         "to":  ['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo']},
+                        {"from":['gertrude','deathspeech','MadOph'], 
+                         "to":  ['gertrude','deathspeech','MadOph']},
+                        {"from":["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups'],
+                         "to":  ["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups']}]
                          
    def next_scene(self,feature_vectors,scene_choices):
       no_repeat = []
@@ -24,6 +24,7 @@ class RandomTransition(TransitionLogic):
          if re.sub("^(.*)\.xml$","\\1",s) not in [f["name"] for f in feature_vectors] and re.sub("^(.*)\.xml$","\\1",s) not in no_follow:
             no_repeat.append(s)
       if not no_repeat:
+         print "SCENE CHOICE: eleminated all possibilities", scene_choices
          # we didn't get anything, try relaxing the follow constraints
          for s in scene_choices:
             if re.sub("^(.*)\.xml$","\\1",s) not in [f["name"] for f in feature_vectors]:
