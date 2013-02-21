@@ -499,6 +499,7 @@ class LooseyClient:
             display = 0
             # Dont want stage directions to run over scott. 
             if self.styles and re.match(".*TTS\.inear.*",self.styles):
+               print "Sleeping"
                time.sleep(1)
             # Send the stagedir
             if wwhhaatt == "dumb":
@@ -615,7 +616,7 @@ class LooseyClient:
                # Send out default with 0's
                ws = [0 for zero_out in ws]
             # Send out the max affect and value if above a threshold
-            if (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2.5:
+            if True or (affmax != "joy" and affmaxval > 1.5) or affmaxval > 2.5:
                self.send_value("affmax",affmax)
                self.send_value("affmaxval",float(affmaxval/5.0))
                self.send_value("affvals",[normalize/5 for normalize in ws])
