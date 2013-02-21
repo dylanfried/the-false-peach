@@ -222,8 +222,8 @@ class PinningTable:
 def main(argv):
    # Grab the pinning files
    p = PinningTable("config/pinning_table.xml")
-   print p.table["claudius"]["3"]
-   print p.table["claudius"]["2"]
+   #print p.table["claudius"]["3"]
+   #print p.table["claudius"]["2"]
    
 if __name__ == "__main__":
    main(sys.argv)

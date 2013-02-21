@@ -6,14 +6,6 @@
       <video>10</video>
    </pinned>
    
-   
-   <excluded>
-      <sound>TTS.mute.VOICE.rogui</sound>
-   </excluded>
-   <excluded>
-      <sound>TTS.aloud.ROGUI</sound>
-   </excluded>
-   
    <pinned>
       <scene>3pcntORIG</scene>
       <sound>TTS.aloud</sound>
@@ -985,5 +977,14 @@
    <excluded>
       <video>14</video>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <sound>TTS.aloud.ROGUI</sound>
+   </excluded>
+   <excluded>
+      <video>15</video>
    </excluded>
 </table>
