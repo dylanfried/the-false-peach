@@ -65,7 +65,7 @@
    <pinned>
       <scene>affrighted</scene>
       <lights>emotions,monemo,lightout,lightshow</lights>
-      <video>3,6,14</video>
+      <video>14</video>
    </pinned>
    <excluded>
       <scene>affrighted</scene>
@@ -88,27 +88,13 @@
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    
+      
    <pinned>
       <scene>claudius</scene>
-      <lights>theatre,emotions,monemo</lights>
-      <video>1,2,8,12</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
    </pinned>
-   <excluded>
-      <scene>claudius</scene>
-      <sound>TTS.aloud.SPACE.word</sound>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <sound>TTS.inear.VOICE.space</sound>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <sound>TTS.mute</sound>
-   </excluded>
-   <excluded>
-      <scene>claudius</scene>
-      <sound>TTS.mute.VOICE.rogui</sound>
-   </excluded>
    
    <pinned>
       <scene>closet</scene>
@@ -289,6 +275,12 @@
       <sound>TTS.inear.VOICE.aloud</sound>
    </excluded>
    
+   <pinned>
+      <scene>HamSad_scott</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
+   </pinned>
    
    <pinned>
       <scene>hamNOUN</scene>
@@ -342,9 +334,18 @@
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
    
+      
+   <pinned>
+      <scene>it_is_scott</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
+   </pinned>
+
    <pinned>
       <scene>it_is</scene>
       <lights>word</lights>
+      <sound>TTS.aloud,TTS.aloud.SPACE.character</sound>
    </pinned>
    <excluded>
       <scene>it_is</scene>
@@ -397,7 +398,7 @@
    
    <pinned>
       <scene>kingthing</scene>
-      <lights>emotions,word</lights>
+      <lights>word</lights>
       <video>1,8,16,17</video>
    </pinned>
    <excluded>
@@ -447,6 +448,13 @@
       <sound>TTS.aloud.MUSIC.emotion</sound>
       <video>11</video>
       <lights>emotions</lights>
+   </pinned>
+   
+   <pinned>
+      <scene>mansmemory_scott</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
    </pinned>
    
    <pinned>
@@ -545,6 +553,13 @@
       <video>3,10,15</video>
       <sound>TTS.aloud.ROGUI</sound>
    </pinned>
+   
+   <pinned>
+      <scene>rogueddop</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
+   </pinned>
 
    <pinned>
       <scene>rot</scene>
@@ -566,6 +581,7 @@
    <pinned>
       <scene>straightdo</scene>
       <lights>lightout,theatre</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
    </pinned>
    <excluded>
       <scene>straightdo</scene>
