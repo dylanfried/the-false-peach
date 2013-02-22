@@ -150,41 +150,6 @@ class LooseyClient:
    # Method for sending a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
-      #if self.word_pause and what == "line":
-      #   words = what.split(" ")
-      #   msgs = []
-      #   for word in words:
-      #      if word and not re.match("^\s*$",word):
-      #         msg = OSC.OSCMessage()
-      #         msg.setAddress(self.actions[what])
-      #         msg.append(word)
-      #         if excess: msg.append(excess)
-      #         msgs.append(msg)
-      #else:
-      #   msg = OSC.OSCMessage()
-      #   msg.setAddress(self.actions[what])
-      #   msg.append(value)
-      #   if excess: msg.append(excess)
-      #   msgs = [msg]
-      #
-      #for msg in msgs:
-      #   #print "Sending message to Loosey",self.sender_ip, self.sender_port
-      #   try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
-      #   except AttributeError as e:
-      #      print "Attribute Error", e
-      #      #print "Attribute Error",e.errno,e.strerror
-      #   except OSC.OSCClientError as e:
-      #      print "OSC Client Error", e
-      #   except: 
-      #      print "Exception when trying to send",sys.exc_info()[0]
-      #      #return 0
-      #   # Success!
-      #   #return 1
-      #return 1
-      #print "In send value what: {0}, value: {1}, excess: {2}".format(what, value, excess)
-      #if not self.play:
-         #return 1
-      #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
       #print "SENDING", self.actions[what], value, excess
@@ -193,15 +158,13 @@ class LooseyClient:
       
       # If necessary, zero out any triggers
       for trigger in self.trigs:
-         if trigger.zero_out and trigger.triggered and what in trigger.zero_out:
-            # Check to see if we need to skip any cancels:
-            if what in trigger.skip:
-               # remove this skip from the list
-               trigger.skip.pop(trigger.skip.index(what))
-               continue
+         print "trigger stuff", trigger.zero_out,trigger.triggered,what,trigger.ready_to_zero
+         if trigger.zero_out and trigger.triggered and what in trigger.zero_out and trigger.ready_to_zero:
+            print "ZEROING OUT", trigger.stage
             # This is a trigger that requires zeroing and has
             # been triggered. Let's zero it out now.
             trigger.triggered = False
+            trigger.ready_to_zero = False
             msg = OSC.OSCMessage()
             msg.setAddress(self.actions["stagedir." + trigger.stage])
             msg.append("zero")
@@ -334,6 +297,9 @@ class LooseyClient:
                scene_word_count = int(re.sub(".*wordcount:(\d+).*", "\\1",l))
             else:
                scene_word_count = -1
+            # We're switching scenes, so any zero out trigger should be ready to zero out
+            for t in self.trigs:
+               if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
             # Try to get style info from title
             # Check to see if we have style info in the title
             if re.match(".*_.*",l):
@@ -469,6 +435,9 @@ class LooseyClient:
             
          # Check to see if this is an ACT/SCENE title line
          elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*ACT$",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+            # Don't carry singing/voice stuff over after title
+            for t in self.trigs:
+               if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
             print "SENDING INTRO"
@@ -531,6 +500,10 @@ class LooseyClient:
             # Send the line
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
+            # Now that we've actually had some dialogue, we're ready to zero out
+            # the voice triggers when the time comes
+            for t in self.trigs:
+               if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
             print "SENDING LINE","%r"%l
       
          while 1:
@@ -575,12 +548,13 @@ class LooseyClient:
                   # after the next character change, stage dir, etc. Sometimes,
                   # we want to skip a character for zeroing purposes becuase the
                   # stage direction comes right before a character name
-                  if allt[0].zero_out and (line_index+1) < len(lines) and re.match("^[A-Z_]+$",lines[line_index+1].strip()):
-                     allt[0].skip = ["character"]
+                  #if allt[0].zero_out and (line_index+1) < len(lines) and re.match("^[A-Z_]+$",lines[line_index+1].strip()):
+                  #   allt[0].skip = ["character"]
                   self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
                   # Remember that we're triggering this in case we have to
                   # zero it out later (like for the voice triggers)
                   allt[0].triggered = True
+                  allt[0].ready_to_zero = False
                   time.sleep(allt[0].pause/1000.0)
                   # Reset all of the activated triggers
                   for t in tmptrigs:

@@ -11,7 +11,10 @@ class headless_trigger():
       self.zero_out = zero_out
       self.skip = []
       self.cnt = 0
+      # Vars for remembering whether we need to
+      # zero out this trigger
       self.triggered = False
+      self.ready_to_zero = False
 
    def update(self,word):
       if not self.zero_out:
