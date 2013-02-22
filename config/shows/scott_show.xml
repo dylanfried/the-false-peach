@@ -40,7 +40,7 @@
    </sequence>
    <sequence random="true">
       <random>
-         <length>1700</length>
+         <length>1500</length>
          <scene_choices>
             <scene_choice>straightdo.xml</scene_choice>
             <scene_choice>OneOne.xml</scene_choice>
@@ -53,9 +53,8 @@
             <scene_choice>closet.xml</scene_choice>
             <scene_choice>kingthing.xml</scene_choice>
             <scene_choice>is_not.xml</scene_choice>
-            <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
-            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>kingrises.xml</scene_choice>
             <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>
@@ -65,7 +64,7 @@
    </sequence>
     <sequence random="true">
       <random>
-         <length>1700</length>
+         <length>1400</length>
          <scene_choices>
             <scene_choice>straightdo.xml</scene_choice>
             <scene_choice>OneOne.xml</scene_choice>
@@ -78,9 +77,8 @@
             <scene_choice>closet.xml</scene_choice>
             <scene_choice>kingthing.xml</scene_choice>
             <scene_choice>is_not.xml</scene_choice>
-            <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
-            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>kingrises.xml</scene_choice>
             <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>

@@ -222,7 +222,7 @@
    <pinned>
       <scene>groups</scene>
       <lights>word</lights>
-      <video>1,8,16,17</video>
+      <video>1,8,17</video>
    </pinned>
    <excluded>
       <scene>groups</scene>
@@ -274,7 +274,7 @@
    <pinned>
       <scene>is_not</scene>
       <lights>word,monemo,lightout</lights>
-      <video>6,14</video>
+      <video>6</video>
    </pinned>
    <excluded>
       <scene>is_not</scene>
@@ -391,6 +391,10 @@
    </excluded>
    <excluded>
       <scene>it_is</scene>
+      <video>11</video>
+   </excluded>
+   <excluded>
+      <scene>it_is</scene>
       <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    <excluded>
@@ -431,7 +435,7 @@
       <scene>kingrises</scene>
       <sound>TTS.aloud</sound>
       <lights>lightshow</lights>
-      <video>10</video>
+      <video>8</video>
    </pinned>
    
    <pinned>
@@ -656,6 +660,10 @@
    <excluded>
       <scene>straightdo</scene>
       <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>11</video>
    </excluded>
    <excluded>
       <scene>straightdo</scene>
