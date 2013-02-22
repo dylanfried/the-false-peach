@@ -9,8 +9,8 @@ class RandomTransition(TransitionLogic):
                          "to":  ['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo']},
                         {"from":['gertrude','deathspeech','MadOph'], 
                          "to":  ['gertrude','deathspeech','MadOph']},
-                        {"from":["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups'],
-                         "to":  ["affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups']}]
+                        {"from":["kingrises","affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups'],
+                         "to":  ["kingrises","affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups']}]
                          
    def next_scene(self,feature_vectors,scene_choices):
       no_repeat = []
