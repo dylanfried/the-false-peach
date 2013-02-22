@@ -53,7 +53,6 @@
             <scene_choice>closet.xml</scene_choice>
             <scene_choice>kingthing.xml</scene_choice>
             <scene_choice>is_not.xml</scene_choice>
-            <scene_choice>gertrude.xml</scene_choice>
             <scene_choice>kingrises.xml</scene_choice>
             <scene_choice>rot.xml</scene_choice>
          </scene_choices>
