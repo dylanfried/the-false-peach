@@ -274,7 +274,7 @@
    <pinned>
       <scene>is_not</scene>
       <lights>word,monemo,lightout</lights>
-      <video>6,14</video>
+      <video>6</video>
    </pinned>
    <excluded>
       <scene>is_not</scene>
@@ -388,6 +388,10 @@
    <excluded>
       <scene>it_is</scene>
       <video>4</video>
+   </excluded>
+   <excluded>
+      <scene>it_is</scene>
+      <video>11</video>
    </excluded>
    <excluded>
       <scene>it_is</scene>
@@ -656,6 +660,10 @@
    <excluded>
       <scene>straightdo</scene>
       <video>10</video>
+   </excluded>
+   <excluded>
+      <scene>straightdo</scene>
+      <video>11</video>
    </excluded>
    <excluded>
       <scene>straightdo</scene>
