@@ -55,7 +55,7 @@
             <scene_choice>is_not.xml</scene_choice>
             <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
-            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>kingrises.xml</scene_choice>
             <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>
@@ -80,7 +80,7 @@
             <scene_choice>is_not.xml</scene_choice>
             <scene_choice>hamoph.xml</scene_choice>
             <scene_choice>gertrude.xml</scene_choice>
-            <scene_choice>groups.xml</scene_choice>
+            <scene_choice>kingrises.xml</scene_choice>
             <scene_choice>rot.xml</scene_choice>
          </scene_choices>
       </random>

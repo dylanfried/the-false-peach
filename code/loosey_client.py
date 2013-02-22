@@ -348,7 +348,7 @@ class LooseyClient:
                styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
-               if self.scene != "kingrises":
+               if True or self.scene != "kingrises":
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
@@ -373,7 +373,7 @@ class LooseyClient:
                self.send_value("style.actor","zero")
                time.sleep(0.5)
                self.send_value("style.lights","zero")
-               if self.scene != "kingrises":
+               if True or self.scene != "kingrises":
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
@@ -386,7 +386,7 @@ class LooseyClient:
                self.send_value("character","STYLE")
                self.changed_speaker = True
                time.sleep(0.001)
-               if self.scene == "playwithin" or self.scene == "kingrises":
+               if False and (self.scene == "playwithin" or self.scene == "kingrises"):
                   print "SKIPPING STYLES LINE for", self.scene
                else:
                   print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
@@ -400,7 +400,7 @@ class LooseyClient:
                         break
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
-               if self.scene != "kingrises":
+               if True or self.scene != "kingrises":
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
@@ -413,7 +413,7 @@ class LooseyClient:
                self.send_value("style.lights",styles[3])
                time.sleep(0.01)
                self.send_value("scene.name",l.split(" ")[2])
-               if self.scene != "kingrises":
+               if True or self.scene != "kingrises":
                   time.sleep(2)
                else:
                   print "NOT SLEEPING", self.scene
@@ -651,6 +651,13 @@ class LooseyClient:
       self.send_value("style.actor","zero")
       time.sleep(0.5)
       self.send_value("style.lights","zero")
+      
+      # send ending line
+      time.sleep(5)
+      self.send_value("character","STYLE")
+      self.send_value("line","sys.exit(0)\n")
+      time.sleep(5)
+      self.send_value("style.video",7)
       
       # Total time info
       total_line_count += current_line_count
