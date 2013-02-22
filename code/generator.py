@@ -173,6 +173,10 @@ class Generator:
             # If we are, then we just want to end it
             # TODO: do we need a NEWLINE after the stagedir?
             self.output.append(next_word)
+            insert_newline = [None]*13
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
             self.in_paren = False
       # Check to see if we've got a speaker now and 
       # we're in a stage direction
