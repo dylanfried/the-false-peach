@@ -180,7 +180,7 @@
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
-      <lights>emotions,monemo,lightout</lights>
+      <lights>emotions,theatre</lights>
       <sound>TTS.aloud,TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana</sound>
    </pinned>
    
@@ -273,7 +273,7 @@
    </pinned>
    <pinned>
       <scene>is_not</scene>
-      <lights>word,monemo,lightout</lights>
+      <lights>word,lightout</lights>
       <video>6</video>
    </pinned>
    <excluded>
@@ -511,7 +511,7 @@
    
    <pinned>
       <scene>O</scene>
-      <lights>word</lights>
+      <lights>emotions,lightshow</lights>
       <video>1,2,15,16,17</video>
    </pinned>
   <excluded>
@@ -646,7 +646,7 @@
    
    <pinned>
       <scene>straightdo</scene>
-      <lights>lightout,theatre</lights>
+      <lights>lightout,theatre,monemo,lightshow</lights>
       <sound>TTS.aloud.SPACE.character</sound>
    </pinned>
    <excluded>
