@@ -91,7 +91,7 @@
    <pinned>
       <scene>closet</scene>
       <lights>closet</lights>
-      <video>1,8,9,12</video>
+      <video>8,9,12</video>
    </pinned>
    <excluded>
       <scene>closet</scene>
@@ -771,6 +771,13 @@
       <scene>thisfilter</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
    </excluded>
+   
+   <pinned>
+      <scene>speak</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>open</lights>
+      <video>10</video>
+   </pinned>
    
    <pinned>
       <scene>tocome</scene>
