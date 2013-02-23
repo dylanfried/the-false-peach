@@ -425,6 +425,11 @@ class LooseyClient:
             display = 1
             
             # Send the character
+            # If we're in a special Scott/computer mixed scene, and we're at the end of
+            # one of Scott's sections, pause
+            if self.styles and re.match(".*TTS\.mix.*",self.styles) and self.last_character and self.last_character == "HAMLET" and self.last_character != who:
+               print "PAUSING FOR SCOTT"
+               time.sleep(1)
             self.send_value("character",who)
             print "SENDING WHO",who
             self.last_character = who
@@ -467,7 +472,7 @@ class LooseyClient:
             l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
             display = 0
             # Dont want stage directions to run over scott. 
-            if self.styles and re.match(".*TTS\.inear.*",self.styles):
+            if self.styles and (re.match(".*TTS\.inear.*",self.styles) or re.match(".*TTS\.mix.*",self.styles)):
                print "Sleeping"
                time.sleep(1)
             # Send the stagedir
