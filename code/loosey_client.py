@@ -158,7 +158,7 @@ class LooseyClient:
       
       # If necessary, zero out any triggers
       for trigger in self.trigs:
-         print "trigger stuff", trigger.zero_out,trigger.triggered,what,trigger.ready_to_zero
+         #print "trigger stuff", trigger.zero_out,trigger.triggered,what,trigger.ready_to_zero
          if trigger.zero_out and trigger.triggered and what in trigger.zero_out and trigger.ready_to_zero:
             print "ZEROING OUT", trigger.stage
             # This is a trigger that requires zeroing and has
