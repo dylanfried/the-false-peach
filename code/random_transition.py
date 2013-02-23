@@ -5,8 +5,8 @@ class RandomTransition(TransitionLogic):
    def __init__(self):
       TransitionLogic.__init__(self)
       # Rules for things that cannot follow other things
-      self.no_follow = [{"from":['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo'], 
-                         "to":  ['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo']},
+      self.no_follow = [{"from":['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo','thisfilter'], 
+                         "to":  ['OneOne','ghostscene','FiveTwo','hamoph','dumb','it_is','O','closet','straightdo','thisfilter']},
                         {"from":['gertrude','deathspeech','MadOph'], 
                          "to":  ['gertrude','deathspeech','MadOph']},
                         {"from":["kingrises","affrighted","thedrink","rot","tocome","sweetprince","mansmemory","is_not",'kingthing','groups'],

@@ -83,10 +83,33 @@
       
    <pinned>
       <scene>claudius</scene>
-      <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>open</lights>
-      <video>10</video>
+      <lights>theatre,emotions,monemo</lights>
+      <video>1,2,8,12</video>
    </pinned>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.aloud.SPACE.word</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.mute</sound>
+   </excluded>
    
    <pinned>
       <scene>closet</scene>
@@ -512,7 +535,7 @@
    <pinned>
       <scene>O</scene>
       <lights>emotions,lightshow</lights>
-      <video>1,2,15,16,17</video>
+      <video>1,15,16,17</video>
    </pinned>
   <excluded>
       <scene>O</scene>
@@ -579,6 +602,23 @@
    <excluded>
       <scene>OphMon</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   
+   <excluded>
+      <scene>piece</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>piece</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>piece</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>piece</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    
    <pinned>
@@ -770,6 +810,22 @@
    <excluded>
       <scene>thisfilter</scene>
       <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>thisfilter</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>thisfilter</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>thisfilter</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>thisfilter</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    
    <pinned>
