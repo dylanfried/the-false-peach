@@ -3,36 +3,38 @@
       <scene>2bMirror.xml</scene>
    </sequence>
    <sequence random="true">
-      <length>2000</length>
-      <scene_choices>
-         <scene_choice>HamNeg_scott.xml</scene_choice>
-         <scene_choice>hamoph_scott.xml</scene_choice>
-         <scene_choice>witching.xml</scene_choice>
-         <scene_choice>gravedigger.xml</scene_choice>
-         <scene_choice>tocome.xml</scene_choice>
-      </scene_choices>
-   </sequence>
-   <sequence>
-      <scene>deathspeech.xml</scene>
-   </sequence>
-   <sequence random="true">
       <random>
-         <length>3000</length>
          <scene_choices>
-            <scene_choice>3pcntORIG.xml</scene_choice>
-            <scene_choice>ActOneSceneOne.xml</scene_choice>
-            <scene_choice>O_filter.xml</scene_choice>
-            <scene_choice>ghostscene.xml</scene_choice>
-            <scene_choice>affrighted.xml</scene_choice>
-            <scene_choice>thedrink.xml</scene_choice>
-            <scene_choice>closet.xml</scene_choice>
-            <scene_choice>MadOph.xml</scene_choice>
-            <scene_choice>kingthing.xml</scene_choice>
-            <scene_choice>52directions.xml</scene_choice>
-            <scene_choice>straightdo.xml</scene_choice>
-            <scene_choice>HamNeg.xml</scene_choice>
-            <scene_choice>hamoph.xml</scene_choice>
+            <scene_choice>is_not_scott.xml</scene_choice>
+            <scene_choice>it_is_scott.xml</scene_choice>
+            <scene_choice>speak.xml</scene_choice>
+            <scene_choice>witching.xml</scene_choice>
+            <scene_choice>tocome.xml</scene_choice>
+            <scene_choice>HamSad_scott.xml</scene_choice>
+            <scene_choice>mansmemory_scott.xml</scene_choice>
+            <scene_choice>rogueddop.xml</scene_choice>
+            <scene_choice>hamoph_scott.xml</scene_choice>
          </scene_choices>
       </random>
+   </sequence>
+   <sequence>
+      <scene>deathspeech_scott.xml</scene>
+   </sequence>
+   <sequence>
+      <scene>OneOne.xml</scene>
+      <scene>OneTwo.xml</scene>
+      <scene>ghostscene.xml</scene>
+      <scene>affrighted.xml</scene>
+      <scene>is_not.xml</scene>
+      <scene>dumb.xml</scene>
+      <scene>kingrises.xml</scene>
+      <scene>claudius.xml</scene>
+      <scene>closetletters.xml</scene>
+      <scene>MadOph.xml</scene>
+      <scene>rot.xml</scene>
+      <scene>FiveTwo.xml</scene>
+   </sequence>
+   <sequence>
+      <scene>hamoph.xml</scene>
    </sequence>
 </show>

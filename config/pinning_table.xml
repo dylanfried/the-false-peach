@@ -54,13 +54,13 @@
 
    
    <pinned>
-      <scene>ActOneSceneTwo</scene>
+      <scene>OneTwo</scene>
       <video>8</video>
       <lights>theatre,lightshow,word</lights>
       <sound>TTS.aloud,TTS.aloud.SPACE.word</sound>
    </pinned>
    <excluded>
-      <scene>ActOneSceneTwo</scene>
+      <scene>OneTwo</scene>
       <sound>TTS.mix</sound>
    </excluded>
    
@@ -204,10 +204,6 @@
    </excluded>
    <excluded>
       <scene>closetletters</scene>
-      <sound>TTS.inear.VOICE.space</sound>
-   </excluded>
-   <excluded>
-      <scene>closetletters</scene>
       <sound>TTS.mute</sound>
    </excluded>
    <excluded>
@@ -221,6 +217,22 @@
    <excluded>
       <scene>closetletters</scene>
       <sound>TTS.mix</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
    </excluded>
    
    <pinned>
