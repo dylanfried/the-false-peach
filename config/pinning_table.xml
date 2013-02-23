@@ -180,7 +180,7 @@
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
-      <lights>emotions,theatre</lights>
+      <lights>emotions,word</lights>
       <sound>TTS.aloud,TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana</sound>
    </pinned>
    
