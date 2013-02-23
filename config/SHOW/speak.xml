@@ -57,7 +57,24 @@
    </generate>
 </markov>
 
-
+<markov>
+ <name>threetwo</name>
+   <file>data/brute.txt</file>
+   <train>
+      <selections>
+            <selection>
+                 <acts>3</acts>
+                  <scenes>2</scenes>
+                  <lines>1-17</lines>
+                  <characters>HAMLET</characters>
+            </selection>
+   </selections>
+   </train>
+   <generate>
+      <length>50</length>
+      <k>0</k>
+   </generate>
+</markov>
 
 <letter_markov>
  <name>threetwo</name>
@@ -70,7 +87,7 @@
    </selections>
    </train>
    <generate>
-      <length>150</length>
+      <length>200</length>
       <k>3</k>
    </generate>
 </letter_markov>
@@ -86,7 +103,7 @@
    </selections>
    </train>
    <generate>
-      <length>150</length>
+      <length>200</length>
       <k>2</k>
    </generate>
 </letter_markov>
