@@ -331,7 +331,7 @@ class LooseyClient:
                self.send_value("stagedir.action","zero")
                time.sleep(0.001)
                self.send_value("stagedir.title","zero")
-               time.sleep(0.001)
+               time.sleep(0.001)                                                        
                self.send_value("style.sound","zero")
                time.sleep(0.001)
                self.send_value("style.video",0)
@@ -345,9 +345,13 @@ class LooseyClient:
                   print "NOT SLEEPING", self.scene
                # Special case, extra sleeping after we leave scott for the
                # first time
-               if not self.left_actor and not re.match(".*TTS\.inear.*",self.styles):
+               if self.scene == "piece" or (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
+                  print "\n\nBETWEEN CHUNKS SLEEP\n\n"
                   time.sleep(15)
                   self.left_actor = True
+               # Special case, pause before Scott and the comp mix
+               #if re.match(".*TTS\.mix.*", self.styles):
+                  #time.sleep(10)
                # Announce the new styles
                self.send_value("character","STYLE")
                self.changed_speaker = True
@@ -429,7 +433,7 @@ class LooseyClient:
             # one of Scott's sections, pause
             if self.styles and re.match(".*TTS\.mix.*",self.styles) and self.last_character and self.last_character == "HAMLET" and self.last_character != who:
                print "PAUSING FOR SCOTT"
-               time.sleep(1)
+               time.sleep(0.5)
             self.send_value("character",who)
             print "SENDING WHO",who
             self.last_character = who
