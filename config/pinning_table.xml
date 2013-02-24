@@ -116,7 +116,7 @@
    <pinned>
       <scene>claudius</scene>
       <lights>theatre,emotions,monemo</lights>
-      <video>1,2,8,12</video>
+      <video>12</video>
    </pinned>
    <excluded>
       <scene>claudius</scene>
@@ -150,7 +150,7 @@
    <pinned>
       <scene>closet</scene>
       <lights>closet</lights>
-      <video>8,9,12</video>
+      <video>1</video>
    </pinned>
    <excluded>
       <scene>closet</scene>
@@ -192,11 +192,15 @@
       <scene>closet</scene>
       <sound>TTS.mix</sound>
    </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
    
    <pinned>
       <scene>closetletters</scene>
       <lights>closet</lights>
-      <video>1,8,9,12</video>
+      <video>1</video>
    </pinned>
    <excluded>
       <scene>closetletters</scene>
@@ -209,6 +213,10 @@
    <excluded>
       <scene>closetletters</scene>
       <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>closetletters</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
    <excluded>
       <scene>closetletters</scene>
@@ -455,9 +463,9 @@
    
    <pinned>
       <scene>hamoph</scene>
-      <video>8</video>
+      <video>10</video>
       <sound>TTS.mix</sound>
-      <lights>lightshow,lighton</lights>
+      <lights>open</lights>
    </pinned>
    <pinned>
       <scene>hamoph_scott</scene>
@@ -667,6 +675,20 @@
       <scene>mansmemory</scene>
       <sound>TTS.mix</sound>
    </excluded>
+                      
+   <pinned>
+      <scene>Omix</scene>
+      <video>15</video>
+      <sound>TTS.mix</sound>
+      <lights>actor2</lights>
+   </pinned>
+   
+   <pinned>
+      <scene>O_scott</scene>
+      <lights>open</lights>
+      <video>10</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </pinned>
    
    <pinned>
       <scene>O</scene>
@@ -748,6 +770,18 @@
       <sound>TTS.mix</sound>
    </excluded>
    
+   <pinned>
+      <scene>piecescott</scene>
+      <video>15</video>
+      <sound>TTS.mix</sound>
+      <lights>actor2</lights>
+   </pinned>
+   <pinned>
+      <scene>piece</scene>
+      <video>14</video>
+      <sound>TTS.mix</sound>
+      <lights>actor2</lights>
+   </pinned>
    <excluded>
       <scene>piece</scene>
       <sound>TTS.inear.VOICE.space</sound>
@@ -763,10 +797,6 @@
    <excluded>
       <scene>piece</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
-   </excluded>
-   <excluded>
-      <scene>piece</scene>
-      <sound>TTS.mix</sound>
    </excluded>
    
    <pinned>
@@ -1013,6 +1043,13 @@
    </excluded>
    
    <pinned>
+      <scene>ThreeTwo</scene>
+      <video>15</video>
+      <sound>TTS.mix</sound>
+      <lights>actor2</lights>
+   </pinned>
+   
+   <pinned>
       <scene>speak</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <lights>open</lights>
@@ -1230,9 +1267,6 @@
    <excluded>
       <sound>zero</sound>
    </excluded>
-   <excluded>
-      <lights>actor2</lights>
-   </excluded>  
    <excluded>
       <video>14</video>
       <sound>TTS.mute</sound>
