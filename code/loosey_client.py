@@ -223,7 +223,7 @@ class LooseyClient:
    # where each element is a line from our script.
    # This method takes care of managing/sending triggers
    # as well.
-   def send_script(self, lines):
+   def send_script(self, lines,burrito_word_count=None):
       print "\n\n SENDING SCRIPT \n\n"
       # This is a variable to keep track of a weighted moving
       # average of affect values that we send to Loosey
@@ -359,8 +359,21 @@ class LooseyClient:
                if False and (self.scene == "playwithin" or self.scene == "kingrises"):
                   print "SKIPPING STYLES LINE for", self.scene
                else:
-                  print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
-                  self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
+                  #if burrito_word_count:
+                  #   print "SENDING WORDS REMAINING", str(burrito_word_count - total_word_count)
+                  #   self.send_value("wordsremaining",">>> Words remaining: " + str(burrito_word_count - total_word_count))
+                  #   time.sleep(0.5)
+                  #print "SENDING LINE", re.sub("^(.*)_scott$","\\1",self.scene)
+                  #self.send_value("line",">>> " + re.sub("^(.*)_scott$","\\1",self.scene) + "\n")
+                  #time.sleep(0.5)
+                  #if re.match(".*strategy.*",l):
+                  #   print "SENDING LINE", re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)
+                  #   self.send_value("line",">>> " + re.sub(".*strategy:([\w_]+)\s+.*","\\1",l) + "\n")
+                  #   time.sleep(0.5)
+                  #print "SENDING LINE", "Apply style value "+",".join(styles)
+                  #self.send_value("line",">>> Apply style value "+",".join(styles)+"\n")
+                  print "SENDING LINE", "Apply style value "+re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)+","+",".join(styles)
+                  self.send_value("line","Apply style value "+re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)+","+",".join(styles)+"\n")
                   # Wait for Loosey to acknowledge with EOL
                   while 1:
                      word = self.get_input()
@@ -606,7 +619,7 @@ class LooseyClient:
             self.send_value("affsmos",[normalize/5 for normalize in ewma])
             self.send_value("wordfreq",wf)
             if scene_word_count > 0:
-               if current_word_count%100 == 0: print "SCENE PROGRESS", round((current_word_count+0.0)/(scene_word_count+0.0), 3)
+               if current_word_count%20 == 0: print "SCENE PROGRESS", round((current_word_count+0.0)/(scene_word_count+0.0), 3)
                self.send_value("scene.progress",round((current_word_count+0.0)/(scene_word_count+0.0), 3))
                
       if self.styles and re.match(".*TTS\.inear.*",self.styles):

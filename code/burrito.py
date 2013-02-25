@@ -147,7 +147,7 @@ class Burrito:
       out = []
       for scene in self.scenes:
          out += scene.script
-      self.loosey.send_script(out)
+      self.loosey.send_script(out,burrito_word_count=sum([s.length for s in self.scenes]))
    
    # Method for generating a single scene
    # Returns a scene object
@@ -169,10 +169,12 @@ class Burrito:
       scene = bs.find("scene")
       scene["name"] = scene_name
       scene["style"] = self.pinning_table.generate_style(scene_name)
-
+      scene['strategy'] = ""
       # Reset the scene line container and word count
       scene_lines = []
       for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml"]):
+         if not scene['strategy']:
+            scene['strategy'] = trial.name
          # Match the strategy name to a set of parameters to pass on to
          # the generator
          # We're going to fill in these variables:
@@ -839,11 +841,11 @@ class Burrito:
       # Put scene information in:
       out = []
       if playwithin:
-         out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+         out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
       elif "name" in scene.attrs and "style" in scene.attrs:
-         out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+         out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
       else:
-         out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " #################")
+         out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
       out += scene_lines
       to_return = Scene(out)
       if playwithin:

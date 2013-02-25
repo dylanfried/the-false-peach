@@ -35,6 +35,13 @@ out = text.split("\n")
   
 print "Script generated:","\n".join(out)
 
+# Get total count:
+burrito_word_count = 0
+for l in re.findall(".*wordcount.*",text):
+   burrito_word_count += int(re.sub(".*wordcount:(\d+).*","\\1",l))
+
+print burrito_word_count
+
 # Now that we have our output, let's use the Sender to send it
 bs = BeautifulSoup(open(trialconfigfile).read())
 rec = bs.find("receiver")
@@ -77,4 +84,4 @@ else: sys.exit()
 # Create Loosey Client
 loosey = LooseyClient(who, sender_ip, sender_port, actions, my_ip, my_port, triggerconfigfile, trialconfigfile)
 # Send script!
-loosey.send_script(out)
+loosey.send_script(out,burrito_word_count=burrito_word_count)
