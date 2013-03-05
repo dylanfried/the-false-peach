@@ -345,9 +345,12 @@ class LooseyClient:
                   print "NOT SLEEPING", self.scene
                # Special case, extra sleeping after we leave scott for the
                # first time
-               if self.scene == "piece" or (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
+               if (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
                   print "\n\nBETWEEN CHUNKS SLEEP\n\n"
-                  time.sleep(15)
+                  if self.scene == "justpiece":
+                     time.sleep(8)
+                  else:
+                     time.sleep(15)
                   self.left_actor = True
                # Special case, pause before Scott and the comp mix
                #if re.match(".*TTS\.mix.*", self.styles):
@@ -372,8 +375,8 @@ class LooseyClient:
                   #   time.sleep(0.5)
                   #print "SENDING LINE", "Apply style value "+",".join(styles)
                   #self.send_value("line",">>> Apply style value "+",".join(styles)+"\n")
-                  print "SENDING LINE", "Apply style value "+re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)+","+",".join(styles)
-                  self.send_value("line","Apply style value "+re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)+","+",".join(styles)+"\n")
+                  print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
+                  self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
                   # Wait for Loosey to acknowledge with EOL
                   while 1:
                      word = self.get_input()
