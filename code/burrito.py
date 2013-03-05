@@ -673,80 +673,105 @@ class Burrito:
             
             #print universe
             
-            trial_lines = []
-            
-            # SUPER HACK
-            # Loop through all of the lines and check to see if they match the pattern given
-            # If they do, keep them
-            # Also, this makes sure that we end each line with end of line punctuation
-            # We do this by:
-            #  - If the line that matches the pattern has any end of line punctuation (?,!,.,;),
-            #    then we take the line up to the last of these punctuation marks
-            #  - Otherwise, we keep looking onto subsequent lines for punctuation marks
-            no_punctuation = False
-            for i in range(len(universe)):
-               u = universe[i]
-               if no_punctuation:
-                  # Make sure that we haven't switched speakers
-                  if u['speaker'] != universe[i-1]['speaker']:
-                     # stop looking for punctuation
-                     no_punctuation = False
-                     continue
-                  # The last line matched the pattern, but didn't have punctuation
-                  # continue to look for punctuation here
-                  if re.match("^.*[.!;?].*$", u['line']):
-                     # We have a punctuation mark in this line, cut
-                     # off everything after the first punctuation mark
-                     u['line'] = re.sub("(^.*[.?;!]).*$","\\1",u['line'])
-                     no_punctuation = False
-                  trial_lines[-1]['line'] += " " + u['line']
-                  #trial_lines.append(u)
-               # We don't have a previously matching line without punctuation.
-               # Check to see if this line matches the pattern
-               elif re.match("^"+pattern+".*",u['line']):
-                  # Check to see whether the last line was a stage dir
-                  # and include it if it was (Don't want titles, just stagedirs)
-                  if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
-                     # This re.sub expression is used to insert the type of stage dir at the beginning of the stage dir
-                     u['stage_direction'] = re.sub("\s*\((.*)\)\s*", "( " + universe[i-2]['pos'] + " \\1)", universe[i-2]["line"])
-                  # Make sure that we end each line with punctuation
-                  if re.match("^.*[.!;?].*$", u['line']):
-                     # We have a punctuation mark in this line, cut
-                     # off everything after the last punctuation mark
-                     u['line'] = re.sub("(^.*[.?;!])[^.?;!]*$","\\1",u['line'])
-                  else:
-                     # We don't have a punctuation mark in this line,
-                     # continue on to the next line
-                     no_punctuation = True
-                  trial_lines.append(u)
-      
-            
-            # It's possiblet that there are still some lines without endline punctuation here
-            # This could happen because some lines end and change speaker without endline
-            # punctuation. Also, make sure that no line is too long.
-            trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
-      
-            if length and length <= len(trial_lines): 
+            # We want to chain together filters
+            # Keep going until we get a filter that has no results
+            while 1:
+               print "Looking with filter:",pattern
+               trial_lines = []
+               # Loop through all of the lines and check to see if they match the pattern given
+               # If they do, keep them
+               # Also, this makes sure that we end each line with end of line punctuation
+               # We do this by:
+               #  - If the line that matches the pattern has any end of line punctuation (?,!,.,;),
+               #    then we take the line up to the last of these punctuation marks
+               #  - Otherwise, we keep looking onto subsequent lines for punctuation marks
+               no_punctuation = False
+               for i in range(len(universe)):
+                  u = universe[i]
+                  if no_punctuation:
+                     # Make sure that we haven't switched speakers
+                     if u['speaker'] != universe[i-1]['speaker']:
+                        # stop looking for punctuation
+                        no_punctuation = False
+                        continue
+                     # The last line matched the pattern, but didn't have punctuation
+                     # continue to look for punctuation here
+                     if re.match("^.*[.!;?].*$", u['line']):
+                        # We have a punctuation mark in this line, cut
+                        # off everything after the first punctuation mark
+                        u['line'] = re.sub("(^.*[.?;!]).*$","\\1",u['line'])
+                        no_punctuation = False
+                     trial_lines[-1]['line'] += " " + u['line']
+                     #trial_lines.append(u)
+                  # We don't have a previously matching line without punctuation.
+                  # Check to see if this line matches the pattern
+                  elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE):
+                     # Check to see whether the last line was a stage dir
+                     # and include it if it was (Don't want titles, just stagedirs)
+                     if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
+                        # This re.sub expression is used to insert the type of stage dir at the beginning of the stage dir
+                        u['stage_direction'] = re.sub("\s*\((.*)\)\s*", "( " + universe[i-2]['pos'] + " \\1)", universe[i-2]["line"])
+                     # Make sure that we end each line with punctuation
+                     if re.match("^.*[.!;?].*$", u['line']):
+                        # We have a punctuation mark in this line, cut
+                        # off everything after the last punctuation mark
+                        u['line'] = re.sub("(^.*[.?;!])[^.?;!]*$","\\1",u['line'])
+                     else:
+                        # We don't have a punctuation mark in this line,
+                        # continue on to the next line
+                        no_punctuation = True
+                     print u
+                     trial_lines.append(u)
+         
+               
+               # It's possiblet that there are still some lines without endline punctuation here
+               # This could happen because some lines end and change speaker without endline
+               # punctuation. Also, make sure that no line is too long.
+               trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
+         
+               # Check if we've hit a pattern without any results
+               if not trial_lines:
+                  break
+         
+               if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
-            
-            for u in trial_lines:
-               # Formatting stuff left over from Mark
-               u['line'] = re.sub(" NEWLINE \)"," )",u['line'])
-               u['line'] = re.sub("(oh oh )+"," oh oh ",u['line'])
-               u['line'] = re.sub("(ho ho )+"," ho ho ",u['line'])
-               u['line'] = re.sub("(nonny nonny )+"," nonny nonny ",u['line'])
-               u['line'] = re.sub("(a-down a-down )+"," nonny nonny ",u['line'])
-               u['line'] = re.sub("( NEWLINE)+"," NEWLINE",u['line'])
-               # Get rid of quotation marks
-               u['line'] = re.sub("\"\s*","",u['line'])
-               # Get rid of spaces before punctuation
-               u['line'] = re.sub("\s*([,.?!:;)])","\\1",u['line'])
-               # if there's a stage direction and it's short enough, put it in
-               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
-                  u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
-                  scene_lines.append(u['stage_direction'])
-               scene_lines.append(u['speaker'].upper())
-               scene_lines.append(u['line'])
+               else:
+                  random.shuffle(trial_lines)
+               
+               # Set up the next pattern:
+               potential_patterns = trial_lines[-1]['line'].split(" ")
+               # Remember whether we've found a new pattern:
+               found_new_pattern = False
+               for potential_pattern in potential_patterns:
+                  if potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
+                     pattern = potential_pattern + " "
+                     found_new_pattern = True
+                     break
+               
+               for u in trial_lines:
+                  # Formatting stuff left over from Mark
+                  temp_line = u['line']
+                  temp_line = re.sub(" NEWLINE \)"," )",temp_line)
+                  temp_line = re.sub("(oh oh )+"," oh oh ",temp_line)
+                  temp_line = re.sub("(ho ho )+"," ho ho ",temp_line)
+                  temp_line = re.sub("(nonny nonny )+"," nonny nonny ",temp_line)
+                  temp_line = re.sub("(a-down a-down )+"," nonny nonny ",temp_line)
+                  temp_line = re.sub("( NEWLINE)+"," NEWLINE",temp_line)
+                  # Get rid of quotation marks
+                  temp_line = re.sub("\"\s*","",temp_line)
+                  # Get rid of spaces before punctuation
+                  temp_line = re.sub("\s*([,.?!:;)])","\\1",temp_line)
+                  # if there's a stage direction and it's short enough, put it in
+                  if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
+                     u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
+                     scene_lines.append(u['stage_direction'])
+                  scene_lines.append(u['speaker'].upper())
+                  scene_lines.append(temp_line)
+               
+               if not found_new_pattern:
+                  break
+               else:
+                  print "NEW PATTERN", pattern
             continue
          elif trial.name == "skip":
             print "skip not yet implemented"
