@@ -72,9 +72,9 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>900</length>
+         <length>600</length>
          <finish_sent>True</finish_sent>
-         <k>2</k>
+         <k>3</k>
       </generate>
    </markov>
    <mirror>

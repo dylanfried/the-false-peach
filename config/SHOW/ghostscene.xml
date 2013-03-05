@@ -18,12 +18,13 @@
       <train>
          <acts>1</acts>
          <scenes>5</scenes>
-		<lines>2-91</lines>
+		<lines>2</lines>
+		<characters>GHOST</characters>
       </train>
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>300</length>
+         <length>3</length>
          <k>2</k>
       </generate>
    </markov>
@@ -33,12 +34,76 @@
       <train>
          <acts>1</acts>
          <scenes>5</scenes>
-		<lines>2-190</lines>
+		<lines>2-91</lines>
+		<characters>GHOST</characters>
       </train>
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>300</length>
+         <length>100</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>2-91</lines>
+		<characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>20</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>91</lines>
+		<characters>GHOST,STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>14</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>92-112</lines>
+		<characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>50</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>113-190</lines>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>150</length>
          <k>2</k>
       </generate>
    </markov>

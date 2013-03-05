@@ -51,7 +51,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>400</length>
+         <length>300</length>
          <k>2</k>
       </generate>
    </markov>
@@ -71,79 +71,10 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>350</length>
+         <length>300</length>
          <k>2</k>
       </generate>
    </markov> 
-    <markov>
-    <name>MadOph</name>
-    <forced_character>OPHELIA</forced_character>
-   	<file>data/brute.txt</file>
-      <train>
-      	<selections>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>23-26</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>29-32</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>36</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>38-40</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>48-55</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>58-63</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>65-66</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>186</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>189-198</lines>
-			<characters>OPHELIA</characters>
-		</selection>
-	</selections>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <finish_sent>True</finish_sent>
-         <length>100</length>
-         <k>2</k>
-      </generate>
-   </markov>
    <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -175,17 +106,17 @@
          <type>threshold</type>
                <ramp emotion="fear">
                   <point line=-1 value=-0.5 />
-                  <point line=100 value=-0.5 />
-                  <point line=150 value=1.0 />
-                  <point line=200 value=1.9 />
-                  <point line=250 value=2.0 />
-                  <point line=260 value=2.1 />
-                  <point line=265 value=2.2 />
-                  <point line=274 value=-1.0 />
-                  <point line=276 value=-1.0 />
+                  <point line=50 value=-0.5 />
+                  <point line=100 value=1.0 />
+                  <point line=150 value=1.9 />
+                  <point line=170 value=2.0 />
+                  <point line=180 value=2.1 />
+                  <point line=190 value=2.2 />
+                  <point line=199 value=-1.0 />
+                  <point line=201 value=-1.0 />
                </ramp>
          <finish_sent>True</finish_sent>
-         <length>275</length>
+         <length>200</length>
          <k>2</k>
       </generate>
    </markov>
@@ -205,7 +136,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>100</length>
+         <length>55</length>
          <k>2</k>
       </generate>
    </markov>

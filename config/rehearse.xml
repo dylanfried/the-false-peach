@@ -118,6 +118,10 @@
             <source>subscribe</source>
             <target>/subscribe</target>
          </action>
+         <action>
+            <source>wordsremaining</source>
+            <target>/wordsremaining</target>
+         </action>
       </actions>
    </reciever>
 </trial>

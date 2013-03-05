@@ -1,0 +1,16 @@
+<ddop>
+   <name>solidddop</name>
+   <train>
+      <file>data/brute.txt</file>
+<selections>
+			<selection>
+         		<acts>1</acts>
+         		<scenes>2</scenes>
+         		<lines>129-159</lines>
+			</selection>
+		</selections>
+	 </train>
+	 <generate>
+	 </generate>
+</ddop>   	
+

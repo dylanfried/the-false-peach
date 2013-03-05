@@ -1,7 +1,7 @@
    <mirror>
    	   <name>2b</name>
       	   <forced_character>HAMLET</forced_character>
-   	   <scene_pause>3</scene_pause>
+   	   <scene_pause>5</scene_pause>
    	   <line_pause>4</line_pause>
    	   <train>
    	   		<file>data/brute.txt</file>
@@ -24,7 +24,7 @@
    	 </mirror>   	
    	 <mirror>
       	   <forced_character>HAMLET</forced_character>
-   	   <scene_pause>3</scene_pause>
+   	   <scene_pause>4</scene_pause>
    	      	  <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -48,7 +48,7 @@
    	 </mirror>   	
    	 <mirror>
       	   <forced_character>HAMLET</forced_character>
-   	    <scene_pause>3</scene_pause>
+   	    <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -72,7 +72,7 @@
    	 </mirror>   	
    <mirror>
       	   <forced_character>HAMLET</forced_character>
-      	   <scene_pause>3</scene_pause>
+      	   <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -96,7 +96,7 @@
    	 </mirror>   	
    <mirror>
        	   <forced_character>HAMLET</forced_character>
-      	   <scene_pause>2</scene_pause>
+      	   <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -120,7 +120,7 @@
    	 </mirror>   	 
    	 <mirror>
    	       	   <forced_character>HAMLET</forced_character>
-   	    	   <scene_pause>3</scene_pause>
+   	    	   <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -146,7 +146,7 @@
    	 </mirror>  
    	 	 <mirror>
    	 	       <forced_character>HAMLET</forced_character>
-   	    	   <scene_pause>3</scene_pause>
+   	    	   <scene_pause>4</scene_pause>
    	           <line_pause>4</line_pause>
    	           <name>2b</name>
    	        <train>
@@ -170,7 +170,7 @@
    	 </mirror>  
    	 <mirror>
    	      	   <forced_character>HAMLET</forced_character>
-   	    	   <scene_pause>2</scene_pause>
+   	    	   <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -194,7 +194,7 @@
    	 </mirror>   	
    	   <mirror>
    	       	   <forced_character>HAMLET</forced_character>
-   	   <scene_pause>2</scene_pause>
+   	   <scene_pause>4</scene_pause>
    	   <line_pause>4</line_pause>
    	   <name>2b</name>
    	   <train>
@@ -219,7 +219,7 @@
    	 <mirror>
          	   <forced_character>HAMLET</forced_character>
    	   <name>2b</name>
-   	   <scene_pause>5</scene_pause>
+   	   <scene_pause>4</scene_pause>
    	   <train>
    	   		<file>data/brute.txt</file>
    	   		<selections>
@@ -242,7 +242,7 @@
    	    	 <mirror>
    	      	   <forced_character>HAMLET</forced_character>
    	   <name>2b</name>
-   	   <scene_pause>3</scene_pause>
+   	   <scene_pause>4</scene_pause>
    	   <train>
    	   		<file>data/brute.txt</file>
    	   		<selections>

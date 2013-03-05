@@ -1,5 +1,31 @@
 <show>
    <sequence>
+      <scene>3pcntORIG.xml</scene>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <length>1000</length>
+      </random>
+   </sequence>
+   <sequence>
+      <scene>hamoph.xml</scene>
+      <scene>playwithin.xml</scene>
+      <scene>kingrises.xml</scene>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <length>1000</length>
+      </random>
+   </sequence>
+   <sequence>
+      <scene>MadOph.xml</scene>
+   </sequence>
+   <sequence random="true">
+      <random>
+         <length>1000</length>
+      </random>
+   </sequence>
+   <sequence>
       <scene>52directions.xml</scene>
    </sequence>
 </show>

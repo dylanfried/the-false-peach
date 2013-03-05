@@ -13,22 +13,22 @@
    	 	<k>10</k>
    	 </generate>
    	</markov>
-   <letter_markov>
+   <markov>
    	 <name>closetletters</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
    	   		<scenes>4</scenes>
-   	   		<lines>7-215</lines>
+   	   		<lines>1-6</lines>
    	   		<characters>GERTRUDE,POLONIUS</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>100</length>
+   	   		<length>20</length>
    	   		<k>2</k>
    	   	</generate>
-   	 </letter_markov>
+   	 </markov>
 <markov>
    	<name>closet</name>
    	 <train>
@@ -44,7 +44,7 @@
    	 	<k>10</k>
    	 </generate>
    	</markov>
-    <letter_markov>
+    <markov>
    	 <name>closetletters</name>
    	 <forced_character>GERTRUDE</forced_character>
    	 <file>data/brute.txt</file>
@@ -60,7 +60,7 @@
    	   		<length>20</length>
    	   		<k>2</k>
    	   	</generate>
-   	 </letter_markov>
+   	 </markov>
 <markov>
    	<name>closet</name>
    	 <train>
@@ -77,7 +77,7 @@
    	 </generate>
    	</markov>
    <letter_markov>
-   	 <name>closetletters</name>
+   	 <name>closet</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
@@ -129,22 +129,22 @@
    	 </generate>
    	</markov>   	
    	
-   <letter_markov>
+   <markov>
    	 <name>closetletters</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
    	   		<scenes>4</scenes>
-   	   		<lines>30-140</lines>
+   	   		<lines>30-100</lines>
    	   		<characters>HAMLET,STAGE,GERTRUDE,GHOST</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>600</length>
+   	   		<length>100</length>
    	   		<k>2</k>
    	   	</generate>
-   	 </letter_markov>
+   	 </markov>
 <markov>
    	<name>closet</name>
    	 <train>
@@ -180,19 +180,73 @@
    	 	<k>10</k>
    	 </generate>
    	</markov>  
-   <letter_markov>
+   <markov>
    	 <name>closetletters</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
    	   		<scenes>4</scenes>
-   	   		<lines>140-215</lines>
+   	   		<lines>102-140</lines>
    	   		<characters>HAMLET,STAGE,GERTRUDE,GHOST</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>300</length>
+   	   		<length>150</length>
    	   		<k>2</k>
    	   	</generate>
-   	 </letter_markov>
+   	 </markov>
+   <markov>
+      <name>Closet</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>4</scenes>
+         <characters>GERTRUDE</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=25 value=-1 />
+            <point line=50 value=2.5 />
+            <point line=74 value=-1 />
+            <point line=76 value=-1 />
+         </ramp>
+         <finish_sent>True</finish_sent>
+         <length>75</length>
+         <k>2</k>
+      </generate>
+   </markov>
+ 	 <filter>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>3</acts>
+         		<scenes>4</scenes>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>5</length>
+      </generate>
+   </filter>
+ 	 <filter>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+    <alternate_character>OPHELIA, HAMLET, GERTRUDE, CLAUDIUS</alternate_character>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>5</length>
+      </generate>
+   </filter>
