@@ -732,6 +732,9 @@ class Burrito:
                # Check if we've hit a pattern without any results
                if not trial_lines:
                   break
+               else:
+                  # Put in what word it is to be read by the stagedir voice
+                  scene_lines.append("( pattern " + re.sub("\s*([,.?!:;)])","\\1",pattern) + ")")
          
                if length and length <= len(trial_lines): 
                   trial_lines = random.sample(trial_lines,length)
@@ -740,6 +743,8 @@ class Burrito:
                
                # Set up the next pattern:
                potential_patterns = trial_lines[-1]['line'].split(" ")
+               # Uncomment this line to try with the last word chaining instead of second word chaining
+               # potential_patterns.reverse()
                # Remember whether we've found a new pattern:
                found_new_pattern = False
                for potential_pattern in potential_patterns:
