@@ -196,6 +196,60 @@
       <scene>closet</scene>
       <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
+   
+   <pinned>
+      <scene>newcloset</scene>
+      <lights>closet</lights>
+      <video>1</video>
+   </pinned>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.aloud.SPACE.word</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.inear.VOICE.space</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mute</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>   
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.inear.VOICE.aloud</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mix</sound>
+   </excluded>
+   <excluded>
+      <scene>newcloset</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
    
    <pinned>
       <scene>closetletters</scene>
@@ -268,7 +322,7 @@
    <pinned>
       <scene>dumb</scene>
       <lights>theatre,lightshow</lights>
-      <video>1,2</video>
+      <video>2</video>
       <sound>TTS.mute</sound>
    </pinned>
    <excluded>
@@ -771,9 +825,9 @@
    </excluded>
    
    <pinned>
-      <scene>piecescott</scene>
-      <video>15</video>
-      <sound>TTS.mix</sound>
+      <scene>piece_scott</scene>
+      <video>14</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
       <lights>actor2</lights>
    </pinned>
    <pinned>
@@ -781,6 +835,12 @@
       <video>14</video>
       <sound>TTS.mix</sound>
       <lights>actor2</lights>
+   </pinned>
+   <pinned>
+      <scene>justpiece</scene>
+      <video>14</video>
+      <sound>TTS.inear.VOICE.aloud</sound>
+      <lights>actor3</lights>
    </pinned>
    <excluded>
       <scene>piece</scene>
@@ -886,6 +946,7 @@
       <scene>straightdo</scene>
       <lights>lightout,theatre,monemo,lightshow</lights>
       <sound>TTS.aloud.SPACE.character</sound>
+      <video>10</video>
    </pinned>
    <excluded>
       <scene>straightdo</scene>
@@ -894,10 +955,6 @@
    <excluded>
       <scene>straightdo</scene>
       <video>4</video>
-   </excluded>
-   <excluded>
-      <scene>straightdo</scene>
-      <video>10</video>
    </excluded>
    <excluded>
       <scene>straightdo</scene>
@@ -1113,10 +1170,6 @@
    <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>13</video>
-   </excluded>
-   <excluded>
-      <sound>TTS.inear.VOICE.aloud</sound>
-      <video>14</video>
    </excluded>
    <excluded>
       <sound>TTS.inear.VOICE.aloud</sound>

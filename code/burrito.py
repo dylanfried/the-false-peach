@@ -863,6 +863,47 @@ class Burrito:
             scene_lines += gen.generate()
          else:
             scene_lines = gen.generate()
+      
+      # Put in some transition/chaining stuff between chunks
+      if scene['strategy'] == "markov" and self.scenes and self.scenes[-1].strategy == "markov":
+         # we have two markov scenes in a row, let's transition nicely between them
+         # Grab the first word of this scene and the last word of the last scene and transition between them:
+         first_word = ""
+         first_word_counter = 0
+         while not first_word or not re.match("[A-Za-z]+",first_word):
+            print scene_lines[1]
+            first_word = scene_lines[1].split(" ")[first_word_counter]
+            first_word_counter += 1
+         first_word = re.sub("^([A-Za-z]+).*$","\\1",first_word)
+         last_word = ""
+         last_word_counter = -1
+         while not last_word or not re.match("^[A-Za-z]+[.,?!;]*",last_word):
+            print self.scenes[-1].script[-1]
+            last_word = self.scenes[-1].script[-1].split(" ")[last_word_counter]
+            last_word_counter -= 1
+         last_word = re.sub("^([A-Za-z]+).*$","\\1",last_word)
+         print last_word,first_word
+         
+         # Now, let's look for places where these two words coexist
+         first_word_occurences = [i for i, x in enumerate(data) if x[-1] == first_word]
+         last_word_occurences = [i for i, x in enumerate(data) if x[-1] == last_word]
+         print first_word_occurences, last_word_occurences
+         
+         # Find the closest occurences:
+         first_word_occurence = -1
+         last_word_occurence = -1
+         for l in last_word_occurences:
+            for f in first_word_occurences:
+               if f > l and (first_word_occurence == -1 or first_word_occurence - last_word_occurence > f - l):
+                  first_word_occurence = f
+                  last_word_occurence = l
+         # If we found good occurences, make a transition:
+         print "f and l", first_word_occurence, last_word_occurence
+         if first_word_occurence and last_word_occurence and first_word_occurence != -1 and last_word_occurence != -1:
+            new_text = ""
+            for i in range(last_word_occurence,first_word_occurence):
+               new_text += " " + data[i][-1]
+            print new_text
       # Put scene information in:
       out = []
       if playwithin:
