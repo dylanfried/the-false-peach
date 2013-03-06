@@ -876,23 +876,27 @@ class Burrito:
          first_word = ""
          first_word_counter = 0
          while not first_word or not re.match("[A-Za-z]+",first_word):
-            print scene_lines[1]
+            #print scene_lines[1]
             first_word = scene_lines[1].split(" ")[first_word_counter]
             first_word_counter += 1
          first_word = re.sub("^([A-Za-z]+).*$","\\1",first_word)
          last_word = ""
          last_word_counter = -1
+         last_line_counter = -1
          while not last_word or not re.match("^[A-Za-z]+[.,?!;]*",last_word):
-            print self.scenes[-1].script[-1]
-            last_word = self.scenes[-1].script[-1].split(" ")[last_word_counter]
+            if len(self.scenes[-1].script[last_line_counter].split(" ")) < last_word_counter*-1:
+               last_word_counter = -1
+               last_line_counter -= 1
+               continue
+            last_word = self.scenes[-1].script[last_line_counter].split(" ")[last_word_counter]
             last_word_counter -= 1
          last_word = re.sub("^([A-Za-z]+).*$","\\1",last_word)
-         print last_word,first_word
+         #print last_word,first_word
          
          # Now, let's look for places where these two words coexist
          first_word_occurences = [i for i, x in enumerate(data) if x[-1] == first_word]
          last_word_occurences = [i for i, x in enumerate(data) if x[-1] == last_word]
-         print first_word_occurences, last_word_occurences
+         #print first_word_occurences, last_word_occurences
          
          # Find the closest occurences:
          first_word_occurence = -1
@@ -903,12 +907,15 @@ class Burrito:
                   first_word_occurence = f
                   last_word_occurence = l
          # If we found good occurences, make a transition:
-         print "f and l", first_word_occurence, last_word_occurence
+         # print "f and l", first_word_occurence, last_word_occurence
          if first_word_occurence and last_word_occurence and first_word_occurence != -1 and last_word_occurence != -1:
             new_text = ""
             for i in range(last_word_occurence,first_word_occurence):
-               new_text += " " + data[i][-1]
+               #if data[i][-2] in ["NEWLINE","vvb","vbz","pn31|vbz","vmb","vvi","vvg","vvn","vmb"]:
+               if data[i][4] in ["Stage"]:
+                  new_text += " " + data[i][-1]
             print new_text
+            scene_lines = new_text.split("NEWLINE") + scene_lines
       # Put scene information in:
       out = []
       if playwithin:
