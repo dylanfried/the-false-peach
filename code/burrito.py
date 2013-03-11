@@ -911,8 +911,9 @@ class Burrito:
          if first_word_occurence and last_word_occurence and first_word_occurence != -1 and last_word_occurence != -1:
             new_text = ""
             for i in range(last_word_occurence,first_word_occurence):
+               if data[i][-2] in ["NEWLINE","n1"]:
                #if data[i][-2] in ["NEWLINE","vvb","vbz","pn31|vbz","vmb","vvi","vvg","vvn","vmb"]:
-               if data[i][4] in ["Stage"]:
+               #if data[i][4] in ["Stage"]:
                   new_text += " " + data[i][-1]
             print new_text
             scene_lines = new_text.split("NEWLINE") + scene_lines
