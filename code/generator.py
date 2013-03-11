@@ -256,6 +256,14 @@ class Generator:
             self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         if current_chunk['one_word_line'] and next_word[-1] != "NEWLINE":
+            insert_newline = [None]*13
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            # adding a newline, so reset line length
+            self.line_length = 0
+            self.current_line_prose = 0
          if next_word[-1] == "NEWLINE":
             # adding a newline, so reset line length
             self.line_length = 0

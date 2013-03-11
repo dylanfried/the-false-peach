@@ -847,6 +847,11 @@ class Burrito:
          forced_character = trial.find("forced_character")
          if forced_character: forced_character = forced_character.string
          else: forced_character = None
+         # Check to see if we want one_word_lines
+         one_word_line = trial.find("one_word_line")
+         if one_word_line: one_word_line = one_word_line.string == "True"
+         else: one_word_line = None
+         chunk['one_word_line'] = one_word_line
          chunk['chunk_type'] = trial.name
          chunk['finish_sentence'] = finish_sentence
          chunk['chunk_name'] = trialname
