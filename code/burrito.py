@@ -314,39 +314,44 @@ class Burrito:
             acts = []
             scenes = []
             lines = []
-            
-            arg_name=["-a","-s","-l"]
-            arg_val=[]
-            if trial.find("acts"): 
-               arg_val.append(trial.find("acts").string)
-            else:
-               arg_val.append("")
-            if trial.find("scenes"): 
-               arg_val.append(trial.find("scenes").string)
-            else:
-               arg_val.append("")
-            if trial.find("lines"): 
-               arg_val.append(trial.find("lines").string)
-            else:
-               arg_val.append("")
+            arg_name = []
+            if trial.find("selections"):
+               for selection in trial.findAll("selection"):
+                  arg_name += ["-a","-s","-l"]
+                  arg_val=[]
+                  if selection.find("acts"): 
+                     arg_val.append(selection.find("acts").string)
+                  else:
+                     arg_val.append("")
+                  if selection.find("scenes"): 
+                     arg_val.append(selection.find("scenes").string)
+                  else:
+                     arg_val.append("")
+                  if selection.find("lines"): 
+                     arg_val.append(selection.find("lines").string)
+                  else:
+                     arg_val.append("")
             opts = []
             for i in range(len(arg_name)):
                if arg_val[i]:
                   tup = arg_name[i], arg_val[i]
                   opts.append(tup)
+            acts = []
+            scenes = []
+            lines = []
             for o, a in opts:
                if o == "-a":
                   if "-" in a:
                      a = a.split("-")
-                     acts = range(int(a[0]),int(a[1])+1)
-                  else: acts = [int(a)]
-                  if len(acts)>1: break
+                     acts += range(int(a[0]),int(a[1])+1)
+                  else: acts += [int(a)]
+                  #if len(acts)>1: break
                elif o == "-s":
                   if "-" in a:
                      a = a.split("-")
                      scenes = range(int(a[0]),int(a[1])+1)
                   else: scenes = [int(a)]
-                  if len(scenes)>1: break
+                  #if len(scenes)>1: break
                elif o == "-l":
                   if "-" in a:
                      a = a.split("-")
@@ -365,6 +370,11 @@ class Burrito:
                return x.strip()
             
             x = open("code/ndata2.txt").readlines()
+            #x = [d.strip() for d in x]
+            #x = [d.split(" ") for d in x]
+            #x = util.get_lines(x, trial.find("train"))
+            
+            #print x
             
             ACT = [int(a.split(" ")[0]) for a in x]
             SCENE = [int(a.split(" ")[1]) for a in x]
@@ -372,6 +382,13 @@ class Burrito:
             c = [a.split(" ")[3] for a in x]
             p = [a.split(" ")[4] for a in x]
             w = [a.split(" ")[5].strip() for a in x]
+            
+            #ACT = [int(a[0]) for a in x]
+            #SCENE = [int(a[1]) for a in x]
+            #LINE = [int(a[2]) for a in x]
+            #c = [a[3] for a in x]
+            #p = [a[4] for a in x]
+            #w = [a[5].strip() for a in x]
             
             counts = {}
             history = []
