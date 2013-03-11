@@ -54,7 +54,6 @@ class LooseyClient:
       
       # Keep track of whether there's a word pause or scene pause for this chunk
       self.word_pause = None
-      self.scene_pause = None
       
       # Pull the triggers out of the config file if provided
       if triggers_file:
@@ -417,12 +416,8 @@ class LooseyClient:
                self.word_pause = None
                
             # Check whether we have a scene_pause for this chunk
-            if self.scene_pause:
-               time.sleep(self.scene_pause)
             if re.match(".*scene_pause:(\d+).*$",l):
-               self.scene_pause = int(re.sub(".*scene_pause:(\d+).*$","\\1",l))
-            else:
-               self.scene_pause = None
+               time.sleep(int(re.sub(".*scene_pause:(\d+).*$","\\1",l)))
                
             continue
          # Check to see if this is a character name
