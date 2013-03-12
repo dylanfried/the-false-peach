@@ -361,6 +361,7 @@ class Burrito:
             acts = []
             scenes = []
             lines = []
+            characters = []
             for o, a in opts:
                if o == "-a":
                   if "-" in a:
@@ -380,7 +381,9 @@ class Burrito:
                      lines = range(int(a[0]),int(a[1])+1)
                   else: lines = [int(a)]
                else:
-                   assert False, "unhandled option"
+                  assert False, "unhandled option"
+            if trial.find("characters"):
+               characters = trial.find("characters").string.split(",")
             def clean(x):
             
                while re.match("(.*)\ ([-.,?!:;)]+.*)",x):
@@ -451,6 +454,8 @@ class Burrito:
                if acts and not ACT[i] in acts: continue
                if scenes and not SCENE[i] in scenes: continue
                if lines and not LINE[i] in lines: continue
+               #print "character check", characters, c[i].upper()
+               if characters and not c[i].upper() in characters: continue
             
                if c[i] == speaker:
             
@@ -471,7 +476,7 @@ class Burrito:
                      kk = re.sub("^\W (.*)$","\\1",kk)
                      kk = re.sub("^(.*) \W$","\\1",kk)
             
-                     if counts[c[i]][k] > 0.92: 
+                     if k in counts[c[i]].keys() and counts[c[i]][k] > 0.92: 
             
                         if not spoke and not pspoke == c[i]: 
             
