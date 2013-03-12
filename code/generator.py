@@ -390,6 +390,9 @@ class Generator:
             if (current_pos != None):
                current_word_filters.append({"index": 11, "filter": str(current_pos[11]), "type": "text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters)
+            # We never want the actor to refer to him/herself
+            while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
+               current_word = word_markov.generateNext(current_word_order, current_word_filters)
             #print "current word", current_word, current_word_filters
             if current_word:
                self.update(current_word, chunk)
