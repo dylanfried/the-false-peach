@@ -81,6 +81,13 @@ class Burrito:
       
    def create_script(self):
       for sequence in self.sequences:
+         # First, let's put in a "scene" that is the sequence title
+         if "name" in sequence.attrs and sequence["name"]:
+            act_name = sequence["name"]
+         else:
+            act_name = "default"
+         act_title = "@@@@@@@@@@@@@@@ Act name:" + act_name + " @@@@@@@@@@@@@@@@"
+         added_title = False
          # This can either be a prescribed sequence of scenes
          # or a set of random scenes
          if "random" in sequence.attrs and sequence["random"] in ["True","true","t","T","yes","Yes"]:
@@ -102,7 +109,12 @@ class Burrito:
                   # Get next scene as a function of past feature
                   # vectors and available scene choices
                   next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
-                  self.scenes.append(self.create_scene(next_scene))
+                  if added_title:
+                     self.scenes.append(self.create_scene(next_scene))
+                  else:
+                     self.scenes.append(self.create_scene(next_scene))
+                     self.scenes[-1].script = [act_title] + self.scenes[-1].script
+                     added_title = True
                   iterations += 1
             else:
                # This is a random sequence of scenes
@@ -125,13 +137,23 @@ class Burrito:
                   # Get next scene as a function of past feature
                   # vectors and available scene choices
                   next_scene = self.transition_logic.next_scene([s.feature_vector for s in self.scenes], scene_choices)
-                  self.scenes.append(self.create_scene(next_scene))
+                  if added_title:
+                     self.scenes.append(self.create_scene(next_scene))
+                  else:
+                     self.scenes.append(self.create_scene(next_scene))
+                     self.scenes[-1].script = [act_title] + self.scenes[-1].script
+                     added_title = True
                   words_generated += self.scenes[-1].length
                   iterations += 1
          else:
             # This is a prescribed sequence
             for scene in sequence.findAll("scene"):
-               self.scenes.append(self.create_scene(scene.string))
+               if added_title:
+                  self.scenes.append(self.create_scene(scene.string))
+               else:
+                  self.scenes.append(self.create_scene(scene.string))
+                  self.scenes[-1].script = [act_title] + self.scenes[-1].script
+                  added_title = True
       # Print out script
       for s in self.scenes:
          print "\n".join(s.script)
@@ -692,6 +714,8 @@ class Burrito:
             
             # We want to chain together filters
             # Keep going until we get a filter that has no results
+            potential_patterns = []
+            current_length = 0
             while 1:
                print "Looking with filter:",pattern
                trial_lines = []
@@ -746,25 +770,42 @@ class Burrito:
                # punctuation. Also, make sure that no line is too long.
                trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
          
+               current_length += len(trial_lines)
+         
                # Check if we've hit a pattern without any results
+               found_new_pattern = False
                if not trial_lines:
-                  break
+                  while len(potential_patterns) > 0:
+                     potential_pattern = potential_patterns.pop(0)
+                     if potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
+                        pattern = potential_pattern + " "
+                        found_new_pattern = True
+                        break
+                  if found_new_pattern:
+                     continue
+                  else:
+                     break
                else:
                   # Put in what word it is to be read by the stagedir voice
                   scene_lines.append("( pattern " + re.sub("\s*([,.?!:;)])","\\1",pattern) + ")")
          
-               if length and length <= len(trial_lines): 
-                  trial_lines = random.sample(trial_lines,length)
+               print "length", length, "current_length", current_length,"trial length",len(trial_lines)
+               if length and length <= current_length:
+                  trial_lines = random.sample(trial_lines,current_length - length)
                else:
+                  # Make sure that the lines are still in a random order
                   random.shuffle(trial_lines)
                
                # Set up the next pattern:
+               print "potential:", potential_patterns
                potential_patterns = trial_lines[-1]['line'].split(" ")
                # Uncomment this line to try with the last word chaining instead of second word chaining
                # potential_patterns.reverse()
                # Remember whether we've found a new pattern:
                found_new_pattern = False
-               for potential_pattern in potential_patterns:
+               #for potential_pattern in potential_patterns:
+               while len(potential_patterns) > 0:
+                  potential_pattern = potential_patterns.pop(0)
                   if potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
                      pattern = potential_pattern + " "
                      found_new_pattern = True
@@ -790,7 +831,7 @@ class Burrito:
                   scene_lines.append(u['speaker'].upper())
                   scene_lines.append(temp_line)
                
-               if not found_new_pattern:
+               if not found_new_pattern or (length and current_length >= length):
                   break
                else:
                   print "NEW PATTERN", pattern
@@ -892,53 +933,53 @@ class Burrito:
             scene_lines = gen.generate()
       
       # Put in some transition/chaining stuff between chunks
-      if scene['strategy'] == "markov" and self.scenes and self.scenes[-1].strategy == "markov":
-         # we have two markov scenes in a row, let's transition nicely between them
-         # Grab the first word of this scene and the last word of the last scene and transition between them:
-         first_word = ""
-         first_word_counter = 0
-         while not first_word or not re.match("[A-Za-z]+",first_word):
-            #print scene_lines[1]
-            first_word = scene_lines[1].split(" ")[first_word_counter]
-            first_word_counter += 1
-         first_word = re.sub("^([A-Za-z]+).*$","\\1",first_word)
-         last_word = ""
-         last_word_counter = -1
-         last_line_counter = -1
-         while not last_word or not re.match("^[A-Za-z]+[.,?!;]*",last_word):
-            if len(self.scenes[-1].script[last_line_counter].split(" ")) < last_word_counter*-1:
-               last_word_counter = -1
-               last_line_counter -= 1
-               continue
-            last_word = self.scenes[-1].script[last_line_counter].split(" ")[last_word_counter]
-            last_word_counter -= 1
-         last_word = re.sub("^([A-Za-z]+).*$","\\1",last_word)
-         #print last_word,first_word
-         
-         # Now, let's look for places where these two words coexist
-         first_word_occurences = [i for i, x in enumerate(data) if x[-1] == first_word]
-         last_word_occurences = [i for i, x in enumerate(data) if x[-1] == last_word]
-         #print first_word_occurences, last_word_occurences
-         
-         # Find the closest occurences:
-         first_word_occurence = -1
-         last_word_occurence = -1
-         for l in last_word_occurences:
-            for f in first_word_occurences:
-               if f > l and (first_word_occurence == -1 or first_word_occurence - last_word_occurence > f - l):
-                  first_word_occurence = f
-                  last_word_occurence = l
-         # If we found good occurences, make a transition:
-         # print "f and l", first_word_occurence, last_word_occurence
-         if first_word_occurence and last_word_occurence and first_word_occurence != -1 and last_word_occurence != -1:
-            new_text = ""
-            for i in range(last_word_occurence,first_word_occurence):
-               if data[i][-2] in ["NEWLINE","n1"]:
-               #if data[i][-2] in ["NEWLINE","vvb","vbz","pn31|vbz","vmb","vvi","vvg","vvn","vmb"]:
-               #if data[i][4] in ["Stage"]:
-                  new_text += " " + data[i][-1]
-            print new_text
-            scene_lines = new_text.split("NEWLINE") + scene_lines
+      #if scene['strategy'] == "markov" and self.scenes and self.scenes[-1].strategy == "markov":
+      #   # we have two markov scenes in a row, let's transition nicely between them
+      #   # Grab the first word of this scene and the last word of the last scene and transition between them:
+      #   first_word = ""
+      #   first_word_counter = 0
+      #   while not first_word or not re.match("[A-Za-z]+",first_word):
+      #      #print scene_lines[1]
+      #      first_word = scene_lines[1].split(" ")[first_word_counter]
+      #      first_word_counter += 1
+      #   first_word = re.sub("^([A-Za-z]+).*$","\\1",first_word)
+      #   last_word = ""
+      #   last_word_counter = -1
+      #   last_line_counter = -1
+      #   while not last_word or not re.match("^[A-Za-z]+[.,?!;]*",last_word):
+      #      if len(self.scenes[-1].script[last_line_counter].split(" ")) < last_word_counter*-1:
+      #         last_word_counter = -1
+      #         last_line_counter -= 1
+      #         continue
+      #      last_word = self.scenes[-1].script[last_line_counter].split(" ")[last_word_counter]
+      #      last_word_counter -= 1
+      #   last_word = re.sub("^([A-Za-z]+).*$","\\1",last_word)
+      #   #print last_word,first_word
+      #   
+      #   # Now, let's look for places where these two words coexist
+      #   first_word_occurences = [i for i, x in enumerate(data) if x[-1] == first_word]
+      #   last_word_occurences = [i for i, x in enumerate(data) if x[-1] == last_word]
+      #   #print first_word_occurences, last_word_occurences
+      #   
+      #   # Find the closest occurences:
+      #   first_word_occurence = -1
+      #   last_word_occurence = -1
+      #   for l in last_word_occurences:
+      #      for f in first_word_occurences:
+      #         if f > l and (first_word_occurence == -1 or first_word_occurence - last_word_occurence > f - l):
+      #            first_word_occurence = f
+      #            last_word_occurence = l
+      #   # If we found good occurences, make a transition:
+      #   # print "f and l", first_word_occurence, last_word_occurence
+      #   if first_word_occurence and last_word_occurence and first_word_occurence != -1 and last_word_occurence != -1:
+      #      new_text = ""
+      #      for i in range(last_word_occurence,first_word_occurence):
+      #         if data[i][-2] in ["NEWLINE","n1"]:
+      #         #if data[i][-2] in ["NEWLINE","vvb","vbz","pn31|vbz","vmb","vvi","vvg","vvn","vmb"]:
+      #         #if data[i][4] in ["Stage"]:
+      #            new_text += " " + data[i][-1]
+      #      print new_text
+      #      scene_lines = new_text.split("NEWLINE") + scene_lines
       # Put scene information in:
       out = []
       if playwithin:

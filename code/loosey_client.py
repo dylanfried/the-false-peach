@@ -276,6 +276,51 @@ class LooseyClient:
             time.sleep(2)
             need_outro = False
       
+         # Check to see if we're in a new act
+         if re.match(".*@@@@@@.*",l):
+            print l
+            # We're switching acts, so any zero out trigger should be ready to zero out
+            for t in self.trigs:
+               if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
+            time.sleep(2)
+            self.send_value("stagedir.place","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.exit","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.entrance","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.sound","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.voice","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.action","zero")
+            time.sleep(0.001)
+            self.send_value("stagedir.title","zero")
+            time.sleep(0.001)                                                        
+            self.send_value("style.sound","zero")
+            time.sleep(0.001)
+            self.send_value("style.video",0)
+            time.sleep(0.001)
+            self.send_value("style.actor","zero")
+            time.sleep(0.5)
+            self.send_value("style.lights","zero")
+            time.sleep(5)
+            self.send_value("character","STYLE")
+            self.changed_speaker = True
+            time.sleep(0.001)
+
+            
+            grab_next_style = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",lines[line_index+1])
+            print "SENDING LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
+            self.send_value("line","Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))+"\n")
+            # Wait for Loosey to acknowledge with EOL
+            while 1:
+               word = self.get_input()
+               #print "Getting word",word
+               if word == "EOL": 
+                  current_line_count += 1
+                  break
+            continue
          # Check to see if we're in a new scene
          if re.match(".*####.*",l):
             #current_word_count += 2
@@ -313,10 +358,7 @@ class LooseyClient:
                styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
-               if True or self.scene != "kingrises":
-                  time.sleep(2)
-               else:
-                  print "NOT SLEEPING", self.scene
+               #time.sleep(2)
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
                self.send_value("stagedir.exit","zero")
@@ -330,65 +372,62 @@ class LooseyClient:
                self.send_value("stagedir.action","zero")
                time.sleep(0.001)
                self.send_value("stagedir.title","zero")
-               time.sleep(0.001)                                                        
-               self.send_value("style.sound","zero")
-               time.sleep(0.001)
-               self.send_value("style.video",0)
-               time.sleep(0.001)
-               self.send_value("style.actor","zero")
-               time.sleep(0.5)
-               self.send_value("style.lights","zero")
-               if True or self.scene != "kingrises":
-                  time.sleep(2)
-               else:
-                  print "NOT SLEEPING", self.scene
+               #time.sleep(0.001)                                                        
+               #self.send_value("style.sound","zero")
+               #time.sleep(0.001)
+               #self.send_value("style.video",0)
+               #time.sleep(0.001)
+               #self.send_value("style.actor","zero")
+               #time.sleep(0.5)
+               #self.send_value("style.lights","zero")
+               #time.sleep(2)
                # Special case, extra sleeping after we leave scott for the
                # first time
-               if (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
-                  print "\n\nBETWEEN CHUNKS SLEEP\n\n"
-                  if self.scene == "justpiece":
-                     time.sleep(8)
-                  else:
-                     time.sleep(15)
-                  self.left_actor = True
+               #if (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
+               #   print "\n\nBETWEEN CHUNKS SLEEP\n\n"
+               #   if self.scene == "justpiece":
+               #      time.sleep(8)
+               #   else:
+               #      time.sleep(15)
+               #   self.left_actor = True
                # Special case, pause before Scott and the comp mix
                #if re.match(".*TTS\.mix.*", self.styles):
                   #time.sleep(10)
                # Announce the new styles
-               self.send_value("character","STYLE")
-               self.changed_speaker = True
-               time.sleep(0.001)
-               if False and (self.scene == "playwithin" or self.scene == "kingrises"):
-                  print "SKIPPING STYLES LINE for", self.scene
-               else:
-                  #if burrito_word_count:
-                  #   print "SENDING WORDS REMAINING", str(burrito_word_count - total_word_count)
-                  #   self.send_value("wordsremaining",">>> Words remaining: " + str(burrito_word_count - total_word_count))
-                  #   time.sleep(0.5)
-                  #print "SENDING LINE", re.sub("^(.*)_scott$","\\1",self.scene)
-                  #self.send_value("line",">>> " + re.sub("^(.*)_scott$","\\1",self.scene) + "\n")
-                  #time.sleep(0.5)
-                  #if re.match(".*strategy.*",l):
-                  #   print "SENDING LINE", re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)
-                  #   self.send_value("line",">>> " + re.sub(".*strategy:([\w_]+)\s+.*","\\1",l) + "\n")
-                  #   time.sleep(0.5)
-                  #print "SENDING LINE", "Apply style value "+",".join(styles)
-                  #self.send_value("line",">>> Apply style value "+",".join(styles)+"\n")
-                  print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
-                  self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
-                  # Wait for Loosey to acknowledge with EOL
-                  while 1:
-                     word = self.get_input()
-                     #print "Getting word",word
-                     if word == "EOL": 
-                        current_line_count += 1
-                        break
+               #self.send_value("character","STYLE")
+               #self.changed_speaker = True
+               #time.sleep(0.001)
+               #if False and (self.scene == "playwithin" or self.scene == "kingrises"):
+               #   print "SKIPPING STYLES LINE for", self.scene
+               #else:
+               #   #if burrito_word_count:
+               #   #   print "SENDING WORDS REMAINING", str(burrito_word_count - total_word_count)
+               #   #   self.send_value("wordsremaining",">>> Words remaining: " + str(burrito_word_count - total_word_count))
+               #   #   time.sleep(0.5)
+               #   #print "SENDING LINE", re.sub("^(.*)_scott$","\\1",self.scene)
+               #   #self.send_value("line",">>> " + re.sub("^(.*)_scott$","\\1",self.scene) + "\n")
+               #   #time.sleep(0.5)
+               #   #if re.match(".*strategy.*",l):
+               #   #   print "SENDING LINE", re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)
+               #   #   self.send_value("line",">>> " + re.sub(".*strategy:([\w_]+)\s+.*","\\1",l) + "\n")
+               #   #   time.sleep(0.5)
+               #   #print "SENDING LINE", "Apply style value "+",".join(styles)
+               #   #self.send_value("line",">>> Apply style value "+",".join(styles)+"\n")
+               #   print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
+               #   self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
+               #   # Wait for Loosey to acknowledge with EOL
+               #   while 1:
+               #      word = self.get_input()
+               #      #print "Getting word",word
+               #      if word == "EOL": 
+               #         current_line_count += 1
+               #         break
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
-               if True or self.scene != "kingrises":
-                  time.sleep(2)
-               else:
-                  print "NOT SLEEPING", self.scene
+               #if True or self.scene != "kingrises":
+               #   time.sleep(2)
+               #else:
+               #   print "NOT SLEEPING", self.scene
                self.send_value("style.sound",styles[1])
                time.sleep(0.001)
                self.send_value("style.video",styles[0])
@@ -398,10 +437,10 @@ class LooseyClient:
                self.send_value("style.lights",styles[3])
                time.sleep(0.01)
                self.send_value("scene.name",l.split(" ")[2])
-               if True or self.scene != "kingrises":
-                  time.sleep(2)
-               else:
-                  print "NOT SLEEPING", self.scene
+               #if True or self.scene != "kingrises":
+               #   time.sleep(2)
+               #else:
+               #   print "NOT SLEEPING", self.scene
             # Move on to the next line
             continue
             
