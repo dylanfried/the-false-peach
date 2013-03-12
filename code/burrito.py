@@ -782,8 +782,6 @@ class Burrito:
                # punctuation. Also, make sure that no line is too long.
                trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22]
          
-               current_length += len(trial_lines)
-         
                # Check if we've hit a pattern without any results
                found_new_pattern = False
                if not trial_lines:
@@ -801,9 +799,15 @@ class Burrito:
                   # Put in what word it is to be read by the stagedir voice
                   scene_lines.append("( pattern " + re.sub("\s*([,.?!:;)])","\\1",pattern) + ")")
          
-               print "length", length, "current_length", current_length,"trial length",len(trial_lines)
+               # Make sure that no one section is too long:
+               if len(trial_lines) > 15:
+                  trial_lines = random.sample(trial_lines, random.randint(8,15))
+               
+               current_length += len(trial_lines)
+               
+               #print "length", length, "current_length", current_length,"trial length",len(trial_lines)
                if length and length <= current_length:
-                  trial_lines = random.sample(trial_lines,current_length - length)
+                  trial_lines = random.sample(trial_lines,len(trial_lines) - (current_length - length))
                else:
                   # Make sure that the lines are still in a random order
                   random.shuffle(trial_lines)
