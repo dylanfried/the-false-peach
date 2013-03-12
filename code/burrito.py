@@ -521,6 +521,9 @@ class Burrito:
             
             N = 1000
             
+            if trial.find("length") and trial.find("length").string:
+               N = int(trial.find("length").string)
+            
             act = 0
             mark_scene = 0
          
@@ -551,9 +554,9 @@ class Burrito:
                   N = int(n)
                else:
                    assert False, "unhandled option"
-         
+            
             if act and not mark_scene: mark_scene = 1
-         
+            print "act and scene", act, mark_scene
             if act and mark_scene:
          
                start = min([i for i in range(len(p)) if act==ACT[i] and mark_scene==SCENE[i]])
@@ -625,12 +628,16 @@ class Burrito:
                      else:
             
                         #char = RCHARS.upper()+"\n"
-                        #line = clean(RWORDS)+"\n\n"
+                        #line = clean(RWORDS)+"\n\n
+                        scene_lines.append(RCHARS.upper())
+                        scene_lines.append(clean(RWORDS))
 
                         RCHARS = CHARS[i]
                         RWORDS = WORDS[i]
                   #char = RCHARS.upper()+"\n"
                   #line = clean(RWORDS)+"\n\n"
+                  scene_lines.append(RCHARS.upper())
+                  scene_lines.append(clean(RWORDS))
                   
             
                   cccc = random.sample(range(len(pcnt)),iii)
