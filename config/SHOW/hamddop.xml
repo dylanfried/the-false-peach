@@ -1,0 +1,14 @@
+
+<ddop>
+   <name>hamddop</name>
+   	<scene_pause>3</scene_pause>
+   <train>
+    	<file>data/brute.txt</file>
+    	<acts>3</acts>
+    	<characters>HAMLET</characters>
+	</train>
+	 <generate>
+	 <length>200</length>
+	 </generate>
+</ddop>
+   	

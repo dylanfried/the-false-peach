@@ -1,43 +1,32 @@
-
-   <mirror>
-    <name>deathspeech</name>
-   	<file>data/brute.txt</file>
-   	<scene_pause>3</scene_pause>
+    <markov>
+   	  <name>kingthing</name>
+      <file>data/brute.txt</file>
       <train>
-         	<characters>HAMLET</characters>
+         <acts>2</acts>
+         <scenes>2</scenes>
+         <words>14792-14804</words>
+         <characters>HAMLET</characters>
       </train>
       <generate>
-            	<selections>
-   	   		<selection>
-                    <acts>5</acts>
-   	   				<scenes>2</scenes>
-   	   				<lines>330-338</lines>
-   	   				<characters>HAMLET</characters>
-   	   		</selection>
-      		<selection>
-         		<acts>5</acts>
-         		<scenes>2</scenes>
-         		<lines>350-356</lines>
-         		<characters>HAMLET</characters>
-			</selection>
-		</selections>
+   		 <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>8</length>
+         <k>5</k>
       </generate>
-   </mirror>
-
+   </markov>
    <mirror>
      <name>kingthingmirror</name>
     <file>data/brute.txt</file>
      <train>
         <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -47,14 +36,13 @@
     <file>data/brute.txt</file>
      <train>
        <acts>1,2,3,4,5</acts>
-               <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>14792-14804</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -65,15 +53,14 @@
     <file>data/brute.txt</file>
      <train>
        <acts>1,2,3,4,5</acts>
-               <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -83,15 +70,14 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -101,15 +87,14 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -119,15 +104,14 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -137,15 +121,14 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -156,15 +139,14 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -175,34 +157,32 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
    </mirror>
       </mirror>
          <mirror>
-     <name>kingthingmirror</name>
+     <name>conscienceking</name>
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
@@ -212,32 +192,15 @@
     <file>data/brute.txt</file>
     <train>
        <acts>1,2,3,4,5</acts>
-        <characters>HAMLET</characters>
      </train>
      <generate>
      	<selections>
      		<selection>
-         <acts>5</acts>
+         <acts>2</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
+         <words>14792-14804</words>
+   	   	<characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
    </mirror>
-
-   <markov>
-   	  <name>silence</name>
-      <file>data/brute.txt</file>
-      <train>
-         <acts>5</acts>
-         <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <length>5</length>
-         <k>1</k>
-      </generate>
-   </markov>

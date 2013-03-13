@@ -13,32 +13,22 @@
    	 	<k>8</k>
    	 </generate>
    	</markov>
-   <mirror>
-   	   <name>HamOph</name>
-   	   <forced_character>HAMLET</forced_character>
-   	   <speaker_pause>5,9</speaker_pause>
-   	   <scene_pause>3</scene_pause>
-   	   <train>
-   	   		<file>data/brute.txt</file>
-   	   		<selections>
-   	   			<selection>
-   	   				<acts>3</acts>
-   	   				<scenes>1</scenes>
-   	   				<lines>55-89</lines>
-   	   			</selection>
-   	   		</selections>
-   	   	</train>
-   	   	<generate>
-   	   		<selections>
-   	   			<selection>
-   	   				<acts>3</acts>
-   	   				<scenes>1</scenes>
-   	   				<lines>88-89</lines>
-   	   				<characters>HAMLET</characters>
-   	   			</selection>
-   	   		</selections>
-   	 	</generate>
-   	 </mirror>   
+<markov>
+   	<name>HamOph</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>1</scenes>
+   		<lines>88-89</lines>
+   		<characters>HAMLET</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>15</length>
+   	 	<k>8</k>
+   	 </generate>
+   	</markov>  
    <markov>
    	<name>HamOph</name>
       <train>
@@ -72,7 +62,7 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>600</length>
+         <length>500</length>
          <finish_sent>True</finish_sent>
          <k>3</k>
       </generate>

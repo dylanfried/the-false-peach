@@ -1,4 +1,4 @@
-   <markov>
+  <markov>
    		<name>2bN</name>
    		<scene_pause>3</scene_pause>
 		<file>data/brute.txt</file>

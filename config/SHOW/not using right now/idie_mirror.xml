@@ -1,29 +1,19 @@
 
-   <mirror>
-    <name>deathspeech</name>
-   	<file>data/brute.txt</file>
-   	<scene_pause>3</scene_pause>
+   <markov>
+   	  <name>silence</name>
+      <file>data/brute.txt</file>
       <train>
-         	<characters>HAMLET</characters>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <words>35429-35432</words>
+         <characters>HAMLET</characters>
       </train>
       <generate>
-            	<selections>
-   	   		<selection>
-                    <acts>5</acts>
-   	   				<scenes>2</scenes>
-   	   				<lines>330-338</lines>
-   	   				<characters>HAMLET</characters>
-   	   		</selection>
-      		<selection>
-         		<acts>5</acts>
-         		<scenes>2</scenes>
-         		<lines>350-356</lines>
-         		<characters>HAMLET</characters>
-			</selection>
-		</selections>
+         <reset>True</reset>
+         <length>5</length>
+         <k>1</k>
       </generate>
-   </mirror>
-
+   </markov>
    <mirror>
      <name>kingthingmirror</name>
     <file>data/brute.txt</file>
@@ -36,7 +26,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -54,7 +44,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -72,7 +62,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -90,7 +80,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -108,7 +98,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -126,7 +116,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -144,7 +134,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -163,7 +153,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -182,7 +172,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -201,7 +191,7 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
@@ -219,25 +209,9 @@
      		<selection>
          <acts>5</acts>
          <scenes>2</scenes>
-         <words>35484-35488</words>
+         <words>35429-35432</words>
          <characters>HAMLET</characters>
 		</selection>
 		</selections>
 	</generate>
    </mirror>
-
-   <markov>
-   	  <name>silence</name>
-      <file>data/brute.txt</file>
-      <train>
-         <acts>5</acts>
-         <scenes>2</scenes>
-         <words>35484-35488</words>
-         <characters>HAMLET</characters>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <length>5</length>
-         <k>1</k>
-      </generate>
-   </markov>

@@ -1,6 +1,7 @@
  	 <filter>
-    <name>itis_filter</name>
+    <name>Ofilter</name>
 	<file>data/brute.txt</file>
+    <alternate_character>OPHELIA, HAMLET, GERTRUDE, CLAUDIUS</alternate_character>
       <train>
       	<selections>
       		<selection>
@@ -9,7 +10,7 @@
 	</selections>
       </train>
       <generate>
-         <pattern>It is</pattern>
-         <length>30</length>
+         <pattern>O </pattern>
+         <length>35</length>
       </generate>
    </filter>

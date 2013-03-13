@@ -1,5 +1,5 @@
 <markov>
-   	<name>closetletters</name>
+   	<name>closet</name>
    	 <train>
    		<file>data/brute.txt</file>
    		<acts>3</acts>
@@ -9,13 +9,13 @@
    	 <generate>
       	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
-   	 	<length>8</length>
-   	 	<k>10</k>
+   	 	<length>16</length>
+   	 	<k>5</k>
    	 </generate>
    	</markov>
    	
    <markov>
-   	 <name>closetletters</name>
+   	 <name>closet</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
@@ -47,23 +47,23 @@
    	 </generate>
    	</markov>
    	
-   <markov>
-   	 <name>closetletters</name>
-   	 <file>data/brute.txt</file>
-   	   <train>
-   	   		<acts>3</acts>
-   	   		<scenes>4</scenes>
-   	   		<lines>7-215</lines>
-   	   		<characters>GERTRUDE,POLONIUS</characters>
-   	   	</train>
-   	   	<generate>
-   	   		<reset>True</reset>
-   	   		<finish_sent>True</finish_sent>
-   	   		<length>50</length>
-   	   		<k>2</k>
-   	   	</generate>
-   	 </markov>
-   	 
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<lines>7</lines>
+   		<characters>HAMLET</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>8</length>
+   	 	<k>5</k>
+   	 </generate>
+   	</markov>
+   	
 <markov>
    	<name>closet</name>
    	 <train>
@@ -97,22 +97,20 @@
    	   	</generate>
    	 </markov>
    	 
-
-   	
-   <markov>
+    <markov>
    	 <name>closetletters</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
    	   		<scenes>4</scenes>
    	   		<lines>24</lines>
-   	   		<characters>POLONIUS</characters>
+   	   		<characters>POLONIUS,STAGE</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>10</length>
-   	   		<k>2</k>
+   	   		<length>15</length>
+   	   		<k>10</k>
    	   	</generate>
    	 </markov>
    	 
@@ -122,33 +120,17 @@
    		<file>data/brute.txt</file>
    		<acts>3</acts>
    		<scenes>4</scenes>
-   		<lines>24</lines>
-   		<characters>STAGE</characters>
+   		<lines>25-100</lines>
+   		<characters>HAMLET,GERTRUDE,STAGE</characters>
    	 </train>
    	 <generate>
+      	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
-   	 	<length>5</length>
-   	 	<k>10</k>
+   	 	<length>150</length>
+   	 	<k>2</k>
    	 </generate>
    	</markov>
-  	   	
-   <markov>
-   	 <name>closet</name>
-   	 <file>data/brute.txt</file>
-   	   <train>
-   	   		<acts>3</acts>
-   	   		<scenes>4</scenes>
-   	   		<lines>30-140</lines>
-   	   		<characters>HAMLET,STAGE,GERTRUDE,GHOST</characters>
-   	   	</train>
-   	   	<generate>
-   	   		<reset>True</reset>
-   	   		<finish_sent>True</finish_sent>
-   	   		<length>500</length>
-   	   		<k>2</k>
-   	   	</generate>
-   	 </markov>
-   	 
+   	
 <markov>
    	<name>closet</name>
    	 <train>
@@ -159,25 +141,67 @@
    		<characters>STAGE</characters>
    	 </train>
    	 <generate>
+      	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
-   	 	<length>3</length>
-   	 	<k>10</k>
+   	 	<length>5</length>
+   	 	<k>2</k>
    	 </generate>
    	</markov>
    	
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<lines>102-157</lines>
+   		<characters>HAMLET,GERTRUDE,STAGE,GHOST</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>150</length>
+   	 	<k>2</k>
+   	 </generate>
+   	</markov>
+   	
+   	
    <markov>
-   	 <name>closetletters</name>
-   	 <file>data/brute.txt</file>
-   	   <train>
-   	   		<acts>3</acts>
-   	   		<scenes>4</scenes>
-   	   		<lines>140-215</lines>
-   	   		<characters>HAMLET,STAGE,GERTRUDE,GHOST</characters>
-   	   	</train>
-   	   	<generate>
-   	   		<reset>True</reset>
-   	   		<finish_sent>True</finish_sent>
-   	   		<length>200</length>
-   	   		<k>2</k>
-   	   	</generate>
-   	 </markov>
+      <name>Closet</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>4</scenes>
+         <characters>GERTRUDE</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=50 value=-1 />
+            <point line=97 value=2.5 />
+            <point line=98 value=-1 />
+            <point line=101 value=-1 />
+         </ramp>
+         <finish_sent>True</finish_sent>
+         <length>100</length>
+         <k>2</k>
+      </generate>
+   </markov>
+ 	 <filter>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>3</acts>
+         		<scenes>4</scenes>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>5</length>
+      </generate>
+   </filter>
+

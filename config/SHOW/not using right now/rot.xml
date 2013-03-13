@@ -1,3 +1,16 @@
+    <markov>
+   	<train>
+   		<file>data/brute.txt</file>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<characters>STAGE</characters>
+   	</train>
+   	<generate>
+   		<reset>True</reset>
+   		<length>5</length>
+   		<k>10</k>
+   	</generate>
+   </markov>
    <markov>
    	<train>
    		<file>data/brute.txt</file>

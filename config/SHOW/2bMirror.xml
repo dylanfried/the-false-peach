@@ -1,6 +1,6 @@
    <mirror>
    	   <name>2b</name>
-      	   <forced_character>HAMLET</forced_character>
+       <forced_character>HAMLET</forced_character>
    	   <scene_pause>5</scene_pause>
    	   <line_pause>4</line_pause>
    	   <train>

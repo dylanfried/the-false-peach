@@ -1,4 +1,5 @@
     <markov>
+    	<name>thedumbshow</name>
    	     <file>data/brute.txt</file>
       <train>
          <acts>3</acts>

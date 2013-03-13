@@ -1,5 +1,21 @@
    <markov>
-   	 <name>Line</name>
+   	 <name>affrighted</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>2</acts>
+   	   		<scenes>1</scenes>
+   	   		<characters>STAGE</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>10</length>
+   	   		<k>10</k>
+   	   	</generate>
+   	 </markov>
+
+   <markov>
+   	 <name>affrighted</name>
    	 <file>data/brute.txt</file>
    	 <first_character>OPHELIA</first_character>
    	   <train>

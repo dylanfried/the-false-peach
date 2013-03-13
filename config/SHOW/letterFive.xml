@@ -1,0 +1,1004 @@
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<characters>Stage</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>21</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+   	
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>1</acts>
+   		<scenes>5</scenes>
+   		<lines>40</lines>
+   		<characters>Hamlet</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+   	</markov> 
+   	
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>1-80</lines>
+   	   		<characters>HAMLET,HORATIO</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>500</length>
+   	   		<k>4</k>
+   	   	</generate>
+</letter_markov>
+   	 
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>80</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>5</acts>
+   		<scenes>2</scenes>
+   		<lines>179</lines>
+   		<characters>OSRIC</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+   	</markov> 
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>81-103</lines>
+   	   		<characters>HAMLET,HORATIO,OSRIC</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>500</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>103</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>10</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>104-180</lines>
+   	   		<characters>HAMLET,HORATIO,OSRIC</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>500</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>180</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>180-191</lines>
+   	   		<characters>HAMLET,HORATIO</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>100</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>191</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>5</acts>
+   		<scenes>2</scenes>
+   		<lines>202</lines>
+   		<characters>LORD</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+   	</markov> 
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>191-204</lines>
+   	   		<characters>HAMLET,HORATIO,LORD</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>100</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>204</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>1</acts>
+   		<scenes>5</scenes>
+   		<lines>40</lines>
+   		<characters>Hamlet</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov> 
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>215-221</lines>
+   	   		<characters>HAMLET,HORATIO</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>100</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>221</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>25</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>5</acts>
+   		<scenes>2</scenes>
+   		<lines>222</lines>
+   		<characters>KING</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov> 
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>222</lines>
+   	   		<characters>KING</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>222</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>10</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>1</acts>
+   		<scenes>5</scenes>
+   		<lines>40</lines>
+   		<characters>Hamlet</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov> 
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>223-262</lines>
+   	   		<characters>HAMLET,LAERTES,KING</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>250</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>262</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>6</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>263-277</lines>
+   	   		<characters>HAMLET,LAERTES,KING,OSRIC</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>150</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>277</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>277-280</lines>
+   	   		<characters>HAMLET,LAERTES,KING,OSRIC</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>150</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>280</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>10</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>281</lines>
+   	   		<characters>HAMLET</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>282</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<selections>
+   		<selection>
+   		<acts>1</acts>
+   		<scenes>5</scenes>
+   		<lines>40</lines>
+   		<characters>HAMLET</characters>
+   		<pos>SPEAKER</pos>
+   		</selection>
+   		</selections>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>1</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>282-289</lines>
+   	   		<characters>HAMLET,KING,LAERTES,GERTRUDE</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>250</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>289</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>282-290</lines>
+   	   		<characters>KING</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>30</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>291-293</lines>
+   	   		<characters>KING,HAMLET,LAERTES,GERTRUDE</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>150</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>293</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>4</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>294</lines>
+   	   		<characters>LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>30</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>295-298</lines>
+   	   		<characters>LAERTES,HAMLET,KING,GERTRUDE</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>130</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>298</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>298-300</lines>
+   	   		<characters>LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>30</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>300</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>19</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>300-301</lines>
+   	   		<characters>KING,HAMLET</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>3</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>301</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>301-308</lines>
+   	   		<characters>KING,HAMLET,GERTRUDE,LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>100</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>301-308</lines>
+   	   		<characters>GERTRUDE</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>100</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>308</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>309-320</lines>
+   	   		<characters>KING,HAMLET,LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>150</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>320</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>321-325</lines>
+   	   		<characters>ALL,KING,HAMLET,LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>150</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>325</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>325-329</lines>
+   	   		<characters>LAERTES</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>329</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>5</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>330-347</lines>
+   	   		<characters>HAMLET,HORATIO</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>250</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>347</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>11</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>348-356</lines>
+   	   		<characters>HAMLET</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>250</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>356</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>3</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>357-359</lines>
+   	   		<characters>HORATIO</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>250</length>
+   	   		<k>2</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>Five</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>359</lines>
+   			<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+   	 	<reset>True</reset>
+   	 	<length>18</length>
+   	 	<k>3</k>
+   	 </generate>
+</markov>
+
+<letter_markov>
+   	 <name>fiveletters</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	   		<acts>5</acts>
+   	   		<scenes>2</scenes>
+   	   		<lines>360-401</lines>
+   	   		<characters>HORATIO,FORTINBRAS</characters>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>300</length>
+   	   		<k>1</k>
+   	   	</generate>
+</letter_markov>
+
+<markov>
+   	<name>LastLine</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>401</lines>
+   			<characters>Stage</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>22</length>
+   	 	<k>10</k>
+   	 </generate>
+</markov>
