@@ -728,8 +728,11 @@ class Burrito:
             # Keep going until we get a filter that has no results
             potential_patterns = []
             current_length = 0
+            # Make sure not to repeat patterns
+            past_patterns = []
             while 1:
                print "Looking with filter:",pattern
+               past_patterns.append(pattern.lower())
                trial_lines = []
                # Loop through all of the lines and check to see if they match the pattern given
                # If they do, keep them
@@ -758,7 +761,7 @@ class Burrito:
                      #trial_lines.append(u)
                   # We don't have a previously matching line without punctuation.
                   # Check to see if this line matches the pattern
-                  elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE):
+                  elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE) and not re.match("^"+pattern.upper()+".*",u['line']):
                      # Check to see whether the last line was a stage dir
                      # and include it if it was (Don't want titles, just stagedirs)
                      if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
@@ -787,7 +790,7 @@ class Burrito:
                if not trial_lines:
                   while len(potential_patterns) > 0:
                      potential_pattern = potential_patterns.pop(0)
-                     if potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
+                     if potential_pattern.lower() not in past_patterns and potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
                         pattern = potential_pattern + " "
                         found_new_pattern = True
                         break
@@ -807,7 +810,10 @@ class Burrito:
                
                #print "length", length, "current_length", current_length,"trial length",len(trial_lines)
                if length and length <= current_length:
-                  trial_lines = random.sample(trial_lines,len(trial_lines) - (current_length - length))
+                  if len(trial_lines) - (current_length - length) < 5:
+                     trial_lines = random.sample(trial_lines,min(5,len(trial_lines)))
+                  else:
+                     trial_lines = random.sample(trial_lines,len(trial_lines) - (current_length - length))
                else:
                   # Make sure that the lines are still in a random order
                   random.shuffle(trial_lines)
@@ -822,7 +828,7 @@ class Burrito:
                #for potential_pattern in potential_patterns:
                while len(potential_patterns) > 0:
                   potential_pattern = potential_patterns.pop(0)
-                  if potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
+                  if potential_pattern.lower() not in past_patterns and potential_pattern.lower() != pattern.lower() and pattern.split(" ")[0].lower() != potential_pattern.lower() and re.match("[A-Za-z]",potential_pattern):
                      pattern = potential_pattern + " "
                      found_new_pattern = True
                      break
