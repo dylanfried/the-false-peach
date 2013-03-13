@@ -12,23 +12,7 @@
          <k>7</k>
       </generate>
    </markov>
-<filter>
-    <name>Oclaudius</name>
-    <forced_character>KING</forced_character>
-	<file>data/brute.txt</file>
-      <train>
-      	<selections>
-      		<selection>
-         		<acts>3</acts>
-         		<scenes>3</scenes>
-		</selection>
-	</selections>
-      </train>
-      <generate>
-         <pattern>O </pattern>
-         <length>2</length>
-      </generate>
-   </filter>
+   
    <markov>
    	   <name>claudius</name>
        <file>data/brute.txt</file>
