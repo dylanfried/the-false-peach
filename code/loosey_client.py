@@ -372,15 +372,15 @@ class LooseyClient:
                self.send_value("stagedir.action","zero")
                time.sleep(0.001)
                self.send_value("stagedir.title","zero")
-               #time.sleep(0.001)                                                        
-               #self.send_value("style.sound","zero")
-               #time.sleep(0.001)
-               #self.send_value("style.video",0)
-               #time.sleep(0.001)
-               #self.send_value("style.actor","zero")
-               #time.sleep(0.5)
-               #self.send_value("style.lights","zero")
-               #time.sleep(2)
+               time.sleep(0.001)                                                        
+               self.send_value("style.sound","zero")
+               time.sleep(0.001)
+               self.send_value("style.video",0)
+               time.sleep(0.001)
+               self.send_value("style.actor","zero")
+               time.sleep(0.5)
+               self.send_value("style.lights","zero")
+               time.sleep(1)
                # Special case, extra sleeping after we leave scott for the
                # first time
                #if (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
@@ -437,6 +437,7 @@ class LooseyClient:
                self.send_value("style.lights",styles[3])
                time.sleep(0.01)
                self.send_value("scene.name",l.split(" ")[2])
+               time.sleep(1)
                #if True or self.scene != "kingrises":
                #   time.sleep(2)
                #else:
