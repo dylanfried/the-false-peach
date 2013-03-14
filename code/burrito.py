@@ -161,7 +161,7 @@ class Burrito:
       print "\n----------------------"
       print "Burrito summary"
       print "Total word count:", sum([s.length for s in self.scenes])
-      print "\n".join([s.script[0] for s in self.scenes])
+      print "\n".join([(s.script[0] if re.match(".*########.*",s.script[0]) else s.script[0] + "\n" + s.script[1]) for s in self.scenes])
       print "----------------------"
             
    def send_script(self):
@@ -731,7 +731,6 @@ class Burrito:
             # Make sure not to repeat patterns
             past_patterns = []
             while 1:
-               print "Looking with filter:",pattern
                past_patterns.append(pattern.lower())
                trial_lines = []
                # Loop through all of the lines and check to see if they match the pattern given
@@ -761,7 +760,7 @@ class Burrito:
                      #trial_lines.append(u)
                   # We don't have a previously matching line without punctuation.
                   # Check to see if this line matches the pattern
-                  elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE) and not re.match("^"+pattern.upper()+".*",u['line']):
+                  elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE):
                      # Check to see whether the last line was a stage dir
                      # and include it if it was (Don't want titles, just stagedirs)
                      if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
@@ -776,10 +775,7 @@ class Burrito:
                         # We don't have a punctuation mark in this line,
                         # continue on to the next line
                         no_punctuation = True
-                     print u
                      trial_lines.append(u)
-         
-               
                # It's possiblet that there are still some lines without endline punctuation here
                # This could happen because some lines end and change speaker without endline
                # punctuation. Also, make sure that no line is too long.
@@ -798,28 +794,30 @@ class Burrito:
                      continue
                   else:
                      break
-               else:
+               #else:
                   # Put in what word it is to be read by the stagedir voice
-                  scene_lines.append("( pattern " + re.sub("\s*([,.?!:;)])","\\1",pattern) + ")")
+                  #scene_lines.append("( pattern " + re.sub("\s*([,.?!:;)])","\\1",pattern) + ")")
          
                # Make sure that no one section is too long:
-               if len(trial_lines) > 15:
-                  trial_lines = random.sample(trial_lines, random.randint(8,15))
+               #if len(trial_lines) > 15:
+               #   trial_lines = random.sample(trial_lines, random.randint(8,15))
                
                current_length += len(trial_lines)
                
                #print "length", length, "current_length", current_length,"trial length",len(trial_lines)
-               if length and length <= current_length:
-                  if len(trial_lines) - (current_length - length) < 5:
-                     trial_lines = random.sample(trial_lines,min(5,len(trial_lines)))
-                  else:
-                     trial_lines = random.sample(trial_lines,len(trial_lines) - (current_length - length))
-               else:
+               #if length and length <= current_length:
+               #   if len(trial_lines) - (current_length - length) < 5:
+               #      trial_lines = random.sample(trial_lines,min(5,len(trial_lines)))
+               #   else:
+               #      trial_lines = random.sample(trial_lines,len(trial_lines) - (current_length - length))
+               #else:
                   # Make sure that the lines are still in a random order
+               if length and length < len(trial_lines):
+                  trial_lines = random.sample(trial_lines, length)
+               else:
                   random.shuffle(trial_lines)
                
                # Set up the next pattern:
-               print "potential:", potential_patterns
                potential_patterns = trial_lines[-1]['line'].split(" ")
                # Uncomment this line to try with the last word chaining instead of second word chaining
                # potential_patterns.reverse()
@@ -849,14 +847,12 @@ class Burrito:
                   # if there's a stage direction and it's short enough, put it in
                   if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
                      u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
-                     scene_lines.append(u['stage_direction'])
+                     #scene_lines.append(u['stage_direction'])
                   scene_lines.append(u['speaker'].upper())
                   scene_lines.append(temp_line)
                
-               if not found_new_pattern or (length and current_length >= length):
+               if True or not found_new_pattern or (length and current_length >= length):
                   break
-               else:
-                  print "NEW PATTERN", pattern
             continue
          elif trial.name == "skip":
             print "skip not yet implemented"
