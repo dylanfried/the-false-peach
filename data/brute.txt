@@ -29972,7 +29972,7 @@
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 exit Fortinbras
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 exit and
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 exit Soldiers
-4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 exit ,
+4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 exit .
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 ) )
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 4 8 -1 Stage -1 -1 -1 -1 -1 -1 ( (
