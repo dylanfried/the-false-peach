@@ -2,8 +2,8 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>actor1,actor2,actor3</lights>
-      <video>3,10,15</video>
+      <lights>actor1</lights>
+      <video>10</video>
    </pinned>
    <excluded>
       <scene>2bMirror</scene>
@@ -115,7 +115,7 @@
       
    <pinned>
       <scene>claudius</scene>
-      <lights>theatre,emotions,monemo</lights>
+      <lights>theatre,emotions,monemo,word</lights>
       <video>9,12</video>
    </pinned>
    <excluded>
@@ -137,6 +137,10 @@
    <excluded>
       <scene>claudius</scene>
       <sound>TTS.aloud.SPACE.word</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
    </excluded>
    <excluded>
       <scene>claudius</scene>
@@ -207,6 +211,10 @@
    <excluded>
       <scene>closet</scene>
       <sound>TTS.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>closet</scene>
+      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
    </excluded>
    
    <pinned>
@@ -308,8 +316,8 @@
    <pinned>
       <scene>deathspeech</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <video>3,10,15</video>
-      <lights>actor1,actor2,actor3</lights>
+      <video>15</video>
+      <lights>actor2</lights>
    </pinned>
    
    <pinned>
@@ -325,7 +333,7 @@
    
    <pinned>
       <scene>filter</scene>
-      <video>5,8,9,16,17</video>
+      <video>16</video>
       <lights>character</lights>
       <sound>TTS.aloud.SPACE.character</sound>
    </pinned>
@@ -333,7 +341,7 @@
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
-      <lights>emotions,word</lights>
+      <lights>emotions,monemo</lights>
       <sound>TTS.aloud,TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana</sound>
    </pinned>
    <excluded>
@@ -354,7 +362,7 @@
    
    <pinned>
       <scene>gravedigger</scene>
-      <lights>open</lights>
+      <lights>theatre</lights>
       <video>16,17</video>
    </pinned>
    <excluded>
@@ -384,6 +392,10 @@
    <excluded>
       <scene>gravedigger</scene>
       <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>gravedigger</scene>
+      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
    </excluded>
    <excluded>
       <scene>gravedigger</scene>
@@ -451,7 +463,7 @@
       <scene>ham_thing</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>6</video>
-      <lights>actor1,actor2,actor3</lights>
+      <lights>actor3</lights>
    </pinned>
    
    <pinned>
@@ -469,14 +481,14 @@
       <scene>hamNOUN</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
       <video>6</video>
-      <lights>actor1,actor2,actor3</lights>
+      <lights>actor3</lights>
    </pinned>
    
    <pinned>
       <scene>hamoph</scene>
       <video>8</video>
       <sound>TTS.aloud</sound>
-      <lights>open</lights>
+      <lights>monemo,emotions,lightshow</lights>
    </pinned>
    <pinned>
       <scene>hamoph_scott</scene>
@@ -492,8 +504,8 @@
    <pinned>
       <scene>hamsolilddop</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <video>3,10,15</video>
-      <lights>actor1,actor2,actor3</lights>
+      <video>3</video>
+      <lights>actor1</lights>
    </pinned>
    
    <pinned>
@@ -529,6 +541,12 @@
       <sound>TTS.mix</sound>
    </excluded>
    
+   <pinned>
+      <scene>I_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
       
    <pinned>
       <scene>it_is_scott</scene>
@@ -666,7 +684,7 @@
    
    <pinned>
       <scene>MadOph</scene>
-      <sound>TTS.aloud.MUSIC.emotion</sound>
+      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
       <video>11</video>
       <lights>emotions</lights>
    </pinned>
@@ -674,7 +692,7 @@
       <scene>MadOph</scene>
       <sound>TTS.mix</sound>
    </excluded>
-   
+                                        
    <pinned>
       <scene>mansmemory_scott</scene>
       <sound>TTS.inear.VOICE.aloud</sound>

@@ -304,7 +304,7 @@ class LooseyClient:
             self.send_value("style.actor","zero")
             time.sleep(0.5)
             self.send_value("style.lights","zero")
-            time.sleep(5)
+            time.sleep(7)
             self.send_value("character","STYLE")
             self.changed_speaker = True
             time.sleep(0.001)
@@ -358,7 +358,7 @@ class LooseyClient:
                styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
-               #time.sleep(2)
+               time.sleep(2)
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
                self.send_value("stagedir.exit","zero")
@@ -692,6 +692,7 @@ class LooseyClient:
       self.send_value("line","sys.exit(0)\n")
       time.sleep(5)
       self.send_value("style.video",7)
+      self.send_value("style.lights","end")
       
       # Total time info
       total_line_count += current_line_count
