@@ -37,9 +37,7 @@
    </triggers>
    <triggers stagedir='voice' zero_out='intro,outro,stagedir.place,stagedir.exit,stagedir.entrance,stagedir.sound,stagedir.voice,stagedir.dumb,stagedir.action,stagedir.title,stagedir,style.video,style.actor,style.sound,style.lights,character'>
       <word priority=1 pause=0>beneath</word>
-      <word priority=1 pause=0>within</word>
       <word priority=1 pause=0>sings</word>
-      <word priority=1 pause=0>behind</word>
       <word priority=1 pause=0>aside</word>
    </triggers>
 </triggerset>
