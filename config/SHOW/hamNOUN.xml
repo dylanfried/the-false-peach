@@ -2,7 +2,7 @@
    <markov>
       <name>hamnoun</name>
       <file>data/brute.txt</file>
-      <scene_pause>3</scene_pause>
+      <scene_pause>2</scene_pause>
       <first_character>Hamlet</first_character>
       <train>
        <selections>

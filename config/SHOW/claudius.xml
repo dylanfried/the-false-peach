@@ -15,6 +15,7 @@
    
    <markov>
    	   <name>claudius</name>
+   	   <scene_pause>1</scene_pause>
        <file>data/brute.txt</file>
        <first_character>KING</first_character>
       <train>

@@ -1,0 +1,290 @@
+ <filter>
+ 	<scene_pause>3</scene_pause>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+
+ 	<filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I am </pattern>
+         <length>25</length>
+      </generate>
+   </filter>
+
+	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I will </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+   
+  	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I do </pattern>
+         <length>30</length>
+      </generate>
+   </filter>
+   
+	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I never </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I was </pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>You are</pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>Thou </pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>Ifilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>It was</pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+
+ 	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>It is </pattern>
+         <length>30</length>
+      </generate>
+   </filter>
+
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>Then </pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>Iamfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I doubt</pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I think</pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>You do</pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>They are</pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>No </pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>Speak </pattern>
+         <length>10</length>
+      </generate>
+   </filter>

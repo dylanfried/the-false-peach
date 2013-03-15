@@ -1,7 +1,7 @@
    <mirror>
    	   <name>2b</name>
        <forced_character>HAMLET</forced_character>
-   	   <scene_pause>5</scene_pause>
+   	   <scene_pause>7</scene_pause>
    	   <line_pause>4</line_pause>
    	   <train>
    	   		<file>data/brute.txt</file>
@@ -262,4 +262,24 @@
    	   		</selections>
    	 	</generate>
    	 </mirror>   	
+   	 <markov>
+   		<name>2bN</name>
+   		<scene_pause>3</scene_pause>
+		<file>data/brute.txt</file>
+		<forced_character>HAMLET</forced_character>
+   		<train>
+   			<selections>
+   				<selection>
+   					<characters>HAMLET</characters>
+   					<pos>cc,xx,zz,vvzx,vvd2x,vvbx,vv2x,vmbx,vm2x,vm2x,vbb,vhzx,vhdp,vhbx,vh2x,vdzx,vddx,vdd2x,vbz,vbzx,vbdx,vbg,vbm,vbi,vbd2,vb2-imp,vbbx,uh-dx,dx,ccx,av-x,av-dx</pos>
+   				</selection>
+   			</selections>
+   		</train>
+   		<generate>
+   			<type>word</type>
+   			<reset>True</reset>
+   			<length>300</length>
+   			<k>1</k>
+   		</generate>
+   	</markov>
 

@@ -17,6 +17,7 @@
 
     <markov>
     <name>MadOph</name>
+    <scene_pause>1</scene_pause>
     <first_character>OPHELIA</first_character>
    	<file>data/brute.txt</file>
       <train>

@@ -11,42 +11,71 @@
          		<scenes>2</scenes>
          		<lines>129-159</lines>
          		<characters>HAMLET</characters>
-   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng2</pos>
+   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
 			</selection>
       	      <selection>
          		<acts>1</acts>
          		<scenes>5</scenes>
          		<lines>92-112</lines>
          		<characters>HAMLET</characters>
-   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng2</pos>
+   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
 			</selection>
-   	   		 <selection>
+         <selection>
          		<acts>2</acts>
          		<scenes>2</scenes>
-         		<lines>554-610</lines>
+         		<lines>554-594</lines>
          		<characters>HAMLET</characters>
-   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng2</pos>
+   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
+			</selection>
+			<selection>
+         		<acts>2</acts>
+         		<scenes>2</scenes>
+         		<lines>596-610</lines>
+         		<characters>HAMLET</characters>
+   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
 			</selection>
    	   		<selection>
                     <acts>3</acts>
    	   				<scenes>1</scenes>
    	   				<lines>55-89</lines>
    	   				<characters>HAMLET</characters>
-   					<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng2</pos>
+   					<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
    	   		</selection>
       		<selection>
          		<acts>4</acts>
          		<scenes>4</scenes>
          		<lines>31-65</lines>
          		<characters>HAMLET</characters>
-   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng2</pos>
+   				<pos>n1,n2,n1-j,n1-an,n2-an,n2-j,n2-dx,n2-av,n2-acp,n2-vdg,n2-vvg,n2-vvn,ng2</pos>
 			</selection>
 		</selections>
    		</train>
    		<generate>
    			<type>word</type>
    			<one_word_line>True</one_word_line>
-   			<length>300</length>
+   			<length>275</length>
    			<k>1</k>
    		</generate>
    	</markov>
+   	
+   	
+   <markov>
+      <name>hamnoun</name>
+      <file>data/brute.txt</file>
+      <scene_pause>2</scene_pause>
+      <first_character>Hamlet</first_character>
+      <train>
+       <selections>
+       <selection>
+         <characters>Hamlet</characters>
+         <pos>d,dc,dg,ds,dt,dx,n1,n1-an,n1-j,n2,n2-acp,n2-an,n2-av,n2-dx,n2-j,n2-jn,n2-vdg,n2-vhg,n2-vvg,n2-vvn,ng1,ng1-an,ng1-j,ng1-jn,ng1-vvn,ng2,ng2-jn,n-jn,njp,njp2,njpg1,njpg2,np1,np2,npg1,npg2,np-n1,np-n2,np-ng1,n-vdg,n-vhg,n-vvg,n-vvn,j,j-av,jc,jc-jn,jc-vvg,jc-vvn,j-jn,jp,js,js-jn,js-vvg,js-vvn,j-vvg,j-vvn</pos>
+       </selection>
+       </selections>
+      </train>
+      <generate>
+         <type>word</type>
+         <length>250</length>
+         <k>2</k>
+      </generate>
+   </markov>
+</trial>

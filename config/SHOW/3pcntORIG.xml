@@ -94,6 +94,22 @@
          <k>10</k>
       </generate>
    </markov>
+   
+       <markov>
+      <name>ActTwoSceneOne</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>2</acts>
+         <scenes>1</scenes>
+         <lines>73</lines>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <length>12</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
     <markov>
       <name>ActTwoSceneOne</name>
       <train>
@@ -231,11 +247,27 @@
          <file>data/brute.txt</file>
          <acts>4</acts>
          <scenes>4</scenes>
-         <characters>HAMLET,STAGE,ROSENCRANTZ,GUILDENSTERN</characters>
+         <characters>STAGE</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>31</length>
+         <length>39</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
+    <markov>
+     <name>ActFourSceneFour</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>4</acts>
+         <scenes>4</scenes>
+         <lines>30-32</lines>
+         <characters>STAGE, HAMLET</characters>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <length>29</length>
          <k>10</k>
       </generate>
    </markov>

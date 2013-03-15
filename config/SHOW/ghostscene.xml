@@ -1,4 +1,5 @@
    <markov>
+   		<scene_pause>2</scene_pause>
    	   <name>ghostscene</name>
        <file>data/brute.txt</file>
       <train>

@@ -31,6 +31,7 @@
    </markov>
    
    <markov>
+   <scene_pause>1</scene_pause>
       <train>
         <file>data/brute.txt</file>
          <acts>5</acts>
@@ -56,7 +57,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>200</length>
+         <length>100</length>
          <k>7</k>
       </generate>
    </markov>
