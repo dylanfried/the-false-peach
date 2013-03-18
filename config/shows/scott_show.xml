@@ -2,8 +2,30 @@
    <sequence name="scene">
       <scene>3pcntORIG.xml</scene>
    </sequence>
-   <sequence name="line">
-      <scene>I_filter.xml</scene>
+   <sequence random="true" name="line">
+      <random>
+         <length>1000</length>
+         <scene_choices>
+            <scene_choice>I_am_filter.xml</scene_choice>
+            <scene_choice>I_do_filter.xml</scene_choice>
+            <scene_choice>I_doubt_filter.xml</scene_choice>
+            <scene_choice>I_never_filter.xml</scene_choice>
+            <scene_choice>I_think_filter.xml</scene_choice>
+            <scene_choice>I_will_filter.xml</scene_choice>
+            <scene_choice>It_was_filter.xml</scene_choice>
+            <scene_choice>now_filter.xml</scene_choice>
+            <scene_choice>O_filter.xml</scene_choice>
+            <scene_choice>speakfilter.xml</scene_choice>
+            <scene_choice>tell_filter.xml</scene_choice>
+            <scene_choice>then_filter.xml</scene_choice>
+            <scene_choice>they_are_filter.xml</scene_choice>
+            <scene_choice>thou_filter.xml</scene_choice>
+            <scene_choice>what_filter.xml</scene_choice>
+            <scene_choice>who_filter.xml</scene_choice>
+            <scene_choice>You_are_filter.xml</scene_choice>
+            <scene_choice>You_do_filter.xml</scene_choice>
+         </scene_choices>
+      </random>
    </sequence>
    <sequence name="grammar">
       <scene>ham_thing.xml</scene>

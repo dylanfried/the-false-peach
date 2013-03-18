@@ -179,6 +179,34 @@
    	 	<k>10</k>
    	 </generate>
    	</markov>
+   	 
+   <markov>
+   	 <name>closet</name>
+   	 <file>data/brute.txt</file>
+   	   <train>
+   	    <selections>
+   	    <selection>
+   	   		<acts>3</acts>
+   	   		<scenes>4</scenes>
+   	   		<lines>114-122</lines>
+   	   		<characters>GERTRUDE</characters>
+   	   	</selection>
+   	   	<selection>
+   	   		<acts>3</acts>
+   	   		<scenes>4</scenes>
+   	   		<lines>135-137</lines>
+   	   		<characters>GERTRUDE</characters>
+   	   	</selection>
+   	   	</selections>
+   	   	</train>
+   	   	<generate>
+   	   		<reset>True</reset>
+   	   		<finish_sent>True</finish_sent>
+   	   		<length>50</length>
+   	   		<k>2</k>
+   	   	</generate>
+   	 </markov>
+
    	
    <markov>
    	 <name>closetletters</name>

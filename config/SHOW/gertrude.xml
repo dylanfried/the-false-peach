@@ -15,6 +15,7 @@
    </markov>
 
    <markov>
+   		<scene_pause>1</scene_pause>
       <name>Gertrude</name>
       <file>data/brute.txt</file>
       <train>

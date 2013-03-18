@@ -341,8 +341,8 @@
    <pinned>
       <scene>gertrude</scene>
       <video>12</video>
-      <lights>emotions,monemo</lights>
-      <sound>TTS.aloud,TTS.aloud.MUSIC.emotion,TTS.aloud.MUSIC.iana</sound>
+      <lights>theatre</lights>
+      <sound>TTS.aloud</sound>
    </pinned>
    <excluded>
       <scene>gertrude</scene>
@@ -543,6 +543,114 @@
    
    <pinned>
       <scene>I_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_am_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_do_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_doubt_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_never_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_think_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>I_will_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>It_was_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>now_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>O_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>speakfilter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>tell_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>then_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>they_are_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>thou_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>what_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>who_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>You_are_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>You_do_filter</scene>
       <video>16</video>
       <lights>character</lights>
       <sound>TTS.aloud.SPACE.character</sound>

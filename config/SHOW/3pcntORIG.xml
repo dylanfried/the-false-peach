@@ -364,6 +364,7 @@
    	</markov>
    <markov>
    	<name>LastLine</name>
+   	<scene_pause>1</scene_pause>
    	 <train>
    		<file>data/brute.txt</file>
    			<acts>5</acts>

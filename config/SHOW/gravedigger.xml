@@ -13,22 +13,7 @@
    		<k>3</k>
    	</generate>
    </markov>
-   
-   <markov>
-   	<train>
-   		<file>data/brute.txt</file>
-   		<acts>5</acts>
-   		<scenes>1</scenes>
-   		<lines>2-211</lines>
-   		<characters>STAGE</characters>
-   	</train>
-   	<generate>
-   		<reset>True</reset>
-   		<finish_sent>True</finish_sent>
-   		<length>30</length>
-   		<k>2</k>
-   	</generate>
-   </markov>
+
    
    <markov>
    <scene_pause>1</scene_pause>
@@ -46,6 +31,21 @@
          <k>2</k>
    </markov>
    
+   <markov>
+   	<train>
+   		<file>data/brute.txt</file>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<lines>2-211</lines>
+   		<characters>STAGE</characters>
+   	</train>
+   	<generate>
+   		<reset>True</reset>
+   		<finish_sent>True</finish_sent>
+   		<length>10</length>
+   		<k>2</k>
+   	</generate>
+   </markov>
    <markov>
       <train>
          <file>data/brute.txt</file>

@@ -36,6 +36,7 @@
          <k>9</k>
       </generate>
    </markov>
+   
     <markov>
     <name>MadOph</name>
     <first_character>OPHELIA</first_character>
@@ -56,6 +57,7 @@
          <k>7</k>
       </generate>
    </markov>
+   
    <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -73,6 +75,7 @@
          <k>2</k>
       </generate>
    </markov>
+   
    <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -93,6 +96,7 @@
          <k>2</k>
       </generate>
    </markov> 
+   
    <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -113,6 +117,7 @@
          <k>1</k>
       </generate>
    </markov>
+   
    <markov>
     <name>RampOph</name>
       <name>Ramp</name>
@@ -126,10 +131,10 @@
                   <point line=-1 value=-0.5 />
                   <point line=50 value=-0.5 />
                   <point line=100 value=1.0 />
-                  <point line=150 value=1.9 />
-                  <point line=170 value=2.0 />
-                  <point line=180 value=2.1 />
-                  <point line=190 value=2.2 />
+                  <point line=150 value=1.8 />
+                  <point line=170 value=1.9 />
+                  <point line=180 value=2.0 />
+                  <point line=190 value=2.0 />
                   <point line=199 value=-1.0 />
                   <point line=201 value=-1.0 />
                </ramp>

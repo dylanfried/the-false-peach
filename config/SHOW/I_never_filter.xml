@@ -1,0 +1,34 @@
+<scene blackout="false">
+<filter>
+    <name>itfilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I never </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I was </pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+</scene>
