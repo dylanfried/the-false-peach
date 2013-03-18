@@ -452,7 +452,7 @@ class LooseyClient:
             continue
             
          # Check to see if this is an ACT/SCENE title line
-         elif re.match("^\s*ACT\s.*",l.upper()) or re.match("^\s*ACT$",l.upper()) or re.match("^\s*SCENE.*",l.upper()): 
+         elif re.match("^\s*Act\s.*",l) or re.match("^\s*Act$",l) or re.match("^\s*Scene.*",l): 
             # Don't carry singing/voice stuff over after title
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
