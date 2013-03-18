@@ -1000,12 +1000,19 @@ class Burrito:
       #      scene_lines = new_text.split("NEWLINE") + scene_lines
       # Put scene information in:
       out = []
-      if playwithin:
-         out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
-      elif "name" in scene.attrs and "style" in scene.attrs:
-         out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
+      # Check to see if there's a blackout parameter
+      #blackout = scene.find("blackout")
+      if "blackout" in scene.attrs and scene["blackout"]: 
+         blackout = " blackout:" + scene["blackout"] + " "
       else:
-         out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + " #################")
+         blackout = ""
+      
+      if playwithin:
+         out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + blackout + " #################")
+      elif "name" in scene.attrs and "style" in scene.attrs:
+         out.append("################# SCENE " + scene["name"]  + " " + scene["style"] + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + blackout + " #################")
+      else:
+         out.append("################# SCENE wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + blackout + " #################")
       out += scene_lines
       to_return = Scene(out)
       if playwithin:

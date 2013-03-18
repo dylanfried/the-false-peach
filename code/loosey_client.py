@@ -358,7 +358,9 @@ class LooseyClient:
                styles = styles_string.split("_")
                # Send this style info
                # First, clear out the current styles, etc
-               time.sleep(2)
+               # Check whether we have a scene_pause for this chunk
+               if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
+                  time.sleep(2)
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
                self.send_value("stagedir.exit","zero")
@@ -372,62 +374,20 @@ class LooseyClient:
                self.send_value("stagedir.action","zero")
                time.sleep(0.001)
                self.send_value("stagedir.title","zero")
-               time.sleep(0.001)                                                        
-               self.send_value("style.sound","zero")
                time.sleep(0.001)
-               self.send_value("style.video",0)
-               time.sleep(0.001)
-               self.send_value("style.actor","zero")
-               time.sleep(0.5)
-               self.send_value("style.lights","zero")
-               time.sleep(1)
-               # Special case, extra sleeping after we leave scott for the
-               # first time
-               #if (not self.left_actor and not re.match(".*TTS\.inear.*",self.styles) and not re.match(".*TTS\.mix.*",self.styles)):
-               #   print "\n\nBETWEEN CHUNKS SLEEP\n\n"
-               #   if self.scene == "justpiece":
-               #      time.sleep(8)
-               #   else:
-               #      time.sleep(15)
-               #   self.left_actor = True
-               # Special case, pause before Scott and the comp mix
-               #if re.match(".*TTS\.mix.*", self.styles):
-                  #time.sleep(10)
-               # Announce the new styles
-               #self.send_value("character","STYLE")
-               #self.changed_speaker = True
-               #time.sleep(0.001)
-               #if False and (self.scene == "playwithin" or self.scene == "kingrises"):
-               #   print "SKIPPING STYLES LINE for", self.scene
-               #else:
-               #   #if burrito_word_count:
-               #   #   print "SENDING WORDS REMAINING", str(burrito_word_count - total_word_count)
-               #   #   self.send_value("wordsremaining",">>> Words remaining: " + str(burrito_word_count - total_word_count))
-               #   #   time.sleep(0.5)
-               #   #print "SENDING LINE", re.sub("^(.*)_scott$","\\1",self.scene)
-               #   #self.send_value("line",">>> " + re.sub("^(.*)_scott$","\\1",self.scene) + "\n")
-               #   #time.sleep(0.5)
-               #   #if re.match(".*strategy.*",l):
-               #   #   print "SENDING LINE", re.sub(".*strategy:([\w_]+)\s+.*","\\1",l)
-               #   #   self.send_value("line",">>> " + re.sub(".*strategy:([\w_]+)\s+.*","\\1",l) + "\n")
-               #   #   time.sleep(0.5)
-               #   #print "SENDING LINE", "Apply style value "+",".join(styles)
-               #   #self.send_value("line",">>> Apply style value "+",".join(styles)+"\n")
-               #   print "SENDING LINE", "Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)
-               #   self.send_value("line","Apply style value "+re.sub("^(.*)_scott$","\\1",self.scene)+","+",".join(styles)+"\n")
-               #   # Wait for Loosey to acknowledge with EOL
-               #   while 1:
-               #      word = self.get_input()
-               #      #print "Getting word",word
-               #      if word == "EOL": 
-               #         current_line_count += 1
-               #         break
+               # Check whether we have a scene_pause for this chunk
+               if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
+                  print "BLACKOUT"
+                  self.send_value("style.sound","zero")
+                  time.sleep(0.001)
+                  self.send_value("style.video",0)
+                  time.sleep(0.001)
+                  self.send_value("style.actor","zero")
+                  time.sleep(0.5)
+                  self.send_value("style.lights","zero")
+                  time.sleep(1)
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
-               #if True or self.scene != "kingrises":
-               #   time.sleep(2)
-               #else:
-               #   print "NOT SLEEPING", self.scene
                self.send_value("style.sound",styles[1])
                time.sleep(0.001)
                self.send_value("style.video",styles[0])
@@ -437,11 +397,9 @@ class LooseyClient:
                self.send_value("style.lights",styles[3])
                time.sleep(0.01)
                self.send_value("scene.name",l.split(" ")[2])
-               time.sleep(1)
-               #if True or self.scene != "kingrises":
-               #   time.sleep(2)
-               #else:
-               #   print "NOT SLEEPING", self.scene
+               # Check whether we have a scene_pause for this chunk
+               if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
+                  time.sleep(1)
             # Move on to the next line
             continue
             
