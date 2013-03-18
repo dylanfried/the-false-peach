@@ -152,6 +152,18 @@
    </excluded>
    <excluded>
       <scene>claudius</scene>
+      <sound>TTS.mute.MUSIC.emotion</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.mute.MUSIC.iana</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
+      <sound>TTS.mute.VOICE.rogui</sound>
+   </excluded>
+   <excluded>
+      <scene>claudius</scene>
       <sound>TTS.mix</sound>
    </excluded>
    
