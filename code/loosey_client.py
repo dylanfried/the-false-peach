@@ -480,9 +480,12 @@ class LooseyClient:
             if re.match("^\s*\(\s*\)\s*$",l):
                continue
             # Pull out the first word in the parentheses
-            wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)\s+.*","\\1",l)
+            wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)[.,?!;:]*\s+.*","\\1",l)
             # Make the line into the line except for the first word in the parentheses
-            l = re.sub("^\s*\(\s*[a-zA-Z]+\s+(.*)","(\\1",l)
+            l = re.sub("^\s*\(\s*[a-zA-Z]+[.,?!;:]*\s+(.*)","(\\1",l)
+            # Check again for empty stage directions in case we only had the label
+            if re.match("^\s*\(\s*\)\s*$",l):
+               continue
             display = 0
             # Dont want stage directions to run over scott. 
             if self.styles and (re.match(".*TTS\.inear.*",self.styles) or re.match(".*TTS\.mix.*",self.styles)):
@@ -490,6 +493,7 @@ class LooseyClient:
                time.sleep(1)
             # Send the stagedir
             if wwhhaatt == "dumb":
+               print "dumb character"
                # Special dumb character that is mute for dumb show
                self.send_value("character","DUMB")
             else:
