@@ -316,7 +316,7 @@
 1 1 24 195 Marcellus 0.7 0.8 0.4 0.3 967.0 l cc And
 1 1 24 196 Marcellus 1.2 0.5 1.8 0.7 169.0 l vmb will
 1 1 24 197 Marcellus 0.6 1.2 1.0 0.8 315.0 l xx not
-1 1 24 198 Marcellus 1.77777777778 1.9 2.8 1.1 96.0 l vvi let
+1 1 24 198 Marcellus 1.0 1.0 1.2 1.1 96.0 l vvi let
 1 1 24 199 Marcellus 0.3 1.5 3.8 0.7 1.0 l n1 belief
 1 1 24 200 Marcellus 1.2 1.5 1.5 1.4 36.0 l vvi take
 1 1 24 201 Marcellus 1.1 1.2 1.8 1.2 29.0 l n1 hold
@@ -390,7 +390,7 @@
 1 1 30 258 Bernardo -1 -1 -1 -1 -1 l ; ;
 1 1 30 -1 Bernardo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 1 31 259 Bernardo 0.7 0.8 0.4 0.3 967.0 l cc And
-1 1 31 260 Bernardo 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
+1 1 31 260 Bernardo 1.0 1.0 1.2 1.1 96.0 l vvb let
 1 1 31 261 Bernardo 0.2 0.3 2.1 0.2 69.0 l pno12 us
 1 1 31 262 Bernardo 0.4 0.5 0.2 0.1 19.0 l a-acp once
 1 1 31 263 Bernardo 0.4 0.7 1.0 0.6 32.0 l av again
@@ -425,7 +425,7 @@
 1 1 33 287 Horatio -1 -1 -1 -1 -1 l , ,
 1 1 33 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 1 34 288 Horatio 0.7 0.8 0.4 0.3 967.0 l cc And
-1 1 34 289 Horatio 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
+1 1 34 289 Horatio 1.0 1.0 1.2 1.1 96.0 l vvb let
 1 1 34 290 Horatio 0.2 0.3 2.1 0.2 69.0 l pno12 us
 1 1 34 291 Horatio 1.5 1.4 2.1 1.2 33.0 l vvi hear
 1 1 34 292 Horatio 0.571428571429 0.142857142857 1.0 0.571428571429 30.0 l np1 Bernardo
@@ -1892,7 +1892,7 @@
 1 1 168 1519 Horatio 0.6 1.1 2.2 0.3 3.0 l n1 advice
 1 1 168 1520 Horatio -1 -1 -1 -1 -1 l , ,
 1 1 168 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-1 1 169 1521 Horatio 1.77777777778 1.9 2.8 1.1 96.0 l vvb Let
+1 1 169 1521 Horatio 1.0 1.0 1.2 1.1 96.0 l vvb Let
 1 1 169 1522 Horatio 0.2 0.3 2.1 0.2 69.0 l pno12 us
 1 1 169 1523 Horatio 1.0 1.2 1.6 0.7 5.0 l vvi impart
 1 1 169 1524 Horatio 0.4 1.1 0.5 0.6 207.0 l r-crq what
@@ -2401,7 +2401,7 @@
 1 2 39 1927 King 2.0 2.1 1.3 4.1 17.0 l uh-n Farewell
 1 2 39 1928 King -1 -1 -1 -1 -1 l , ,
 1 2 39 1929 King 0.7 0.8 0.4 0.3 967.0 l cc and
-1 2 39 1930 King 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
+1 2 39 1930 King 1.0 1.0 1.2 1.1 96.0 l vvb let
 1 2 39 1931 King 2.1 1.6 2.1 1.3 242.0 l po22 your
 1 2 39 1932 King 1.0 1.88888888889 1.0 0.777777777778 12.0 l n1 haste
 1 2 39 1933 King 0.7 0.5 2.7 1.1 4.0 l vvi commend
@@ -2765,7 +2765,7 @@
 1 2 68 2229 Gertrude -1 -1 -1 -1 -1 l , ,
 1 2 68 -1 Gertrude -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 69 2230 Gertrude 0.7 0.8 0.4 0.3 967.0 l cc And
-1 2 69 2231 Gertrude 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
+1 2 69 2231 Gertrude 1.0 1.0 1.2 1.1 1.1 96.0 l vvb let
 1 2 69 2232 Gertrude 0.1 0.1 0.8 0.1 13.0 l po21 thine
 1 2 69 2233 Gertrude 0.7 1.1 0.8 1.1 15.0 l n1 eye
 1 2 69 2234 Gertrude 1.7 1.3 3.1 1.7 37.0 l vvi look
@@ -10638,7 +10638,7 @@
 2 1 72 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 2 1 72 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 72 8695 Polonius 0.7 0.8 0.4 0.3 967.0 l cc And
-2 1 72 8696 Polonius 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
+2 1 72 8696 Polonius 1.0 1.0 1.2 1.1 96.0 l vvb let
 2 1 72 8697 Polonius 1.1 0.7 1.5 0.4 197.0 l pno31 him
 2 1 72 8698 Polonius 1.4 1.6 0.9 1.0 1.0 l vvi ply
 2 1 72 8699 Polonius 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
@@ -21394,7 +21394,7 @@
 3 2 130 17776 Hamlet 1.5 0.9 0.6 0.6 26.0 ab uh Nay
 3 2 130 17777 Hamlet 0.3 0.3 0.6 0.5 64.0 ab av then
 3 2 130 17778 Hamlet -1 -1 -1 -1 -1 ab , ,
-3 2 130 17779 Hamlet 1.77777777778 1.9 2.8 1.1 96.0 ab vvb let
+3 2 130 17779 Hamlet 1.0 1.0 1.2 1.1 96.0 ab vvb let
 3 2 130 17780 Hamlet 0.4 0.5 0.3 0.3 1143.0 ab dt the
 3 2 130 17781 Hamlet 3.1 3.4 0.4 3.0 9.0 ab n1 devil
 3 2 130 17782 Hamlet 0.5 0.7 1.2 0.7 4.0 ab vvi wear
@@ -31212,7 +31212,7 @@
 4 5 53 25594 Ophelia 0.7 1.2 0.2 0.7 1.0 l n1 chamber-door
 4 5 53 25595 Ophelia -1 -1 -1 -1 -1 l ; ;
 4 5 53 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-4 5 54 25596 Ophelia 1.77777777778 1.9 2.8 1.1 96.0 l vvb Let
+4 5 54 25596 Ophelia 1.0 1.0 1.2 1.1 96.0 l vvb Let
 4 5 54 25597 Ophelia 0.3 0.1 0.4 0.4 439.0 l p-acp in
 4 5 54 25598 Ophelia 0.4 0.5 0.3 0.3 1143.0 l dt the
 4 5 54 25599 Ophelia 1.2 2.1 1.7 1.1 6.0 l n1 maid
