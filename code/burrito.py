@@ -830,7 +830,7 @@ class Burrito:
                # Set line length for next section
                line_length = trial_lines[-1]['length']
                
-               if length and current_length >= length:
+               if length and len(raw_scene_lines) >= length:
                   break
                
             for u in raw_scene_lines:
