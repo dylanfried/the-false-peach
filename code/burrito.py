@@ -735,6 +735,13 @@ class Burrito:
             line_length = 2
             number_of_length_lines = 10
             raw_scene_lines = []
+            
+            # Manually add the first line
+            for u in universe:
+               if re.match("^\s*Who\'s\s*there\s*\?\s*$",u['line']):
+                  raw_scene_lines.append(u)
+                  break
+            
             while 1:
                # First, grab all of the line_length-length lines that we haven't already had and that start
                # with an uppercase letter
