@@ -1,4 +1,5 @@
-    <markov>
+<scene blackout="false">
+<markov>
     	<name>thedumbshow</name>
    	     <file>data/brute.txt</file>
       <train>
@@ -46,4 +47,4 @@
          <k>5</k>
       </generate>
    </markov>
-
+</scene>

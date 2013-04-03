@@ -1,3 +1,4 @@
+<scene blackout="false">
    <markov>
    	   <name>claudius</name>
        <file>data/brute.txt</file>
@@ -5,6 +6,7 @@
          <acts>3</acts>
          <scenes>3</scenes>
          <characters>STAGE</characters>
+         <pos>(,entrance,exit,place,NEWLINE,)</pos>
       </train>
       <generate>
          <reset>True</reset>
@@ -53,4 +55,20 @@
          <k>2</k>
       </generate>
    </markov>
-
+   
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <lines>72</lines>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>6</length>
+         <k>7</k>
+      </generate>
+   </markov>
+</scene>

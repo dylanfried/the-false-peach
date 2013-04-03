@@ -1,4 +1,4 @@
-
+<scene blackout="false">
    <markov>
    	<train>
    		<file>data/brute.txt</file>
@@ -6,6 +6,7 @@
    		<scenes>1</scenes>
    		<lines>1</lines>
    		<characters>STAGE</characters>
+   		<pos>(,place,entrance,exit,NEWLINE,)</pos>
    	</train>
    	<generate>
    		<reset>True</reset>
@@ -38,12 +39,30 @@
    		<scenes>1</scenes>
    		<lines>2-211</lines>
    		<characters>STAGE</characters>
+   		<pos>(,NEWLINE,action,voice,)</pos>
+   	</train>
+   	<generate>
+   		<reset>True</reset>
+   		<finish_sent>True</finish_sent>
+   		<length>30</length>
+   		<k>2</k>
+   	</generate>
+   </markov>
+   
+   <markov>
+   	<train>
+   		<file>data/brute.txt</file>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<lines>56</lines>
+   		<characters>STAGE</characters>
+   		<pos>(,entrance,)</pos>
    	</train>
    	<generate>
    		<reset>True</reset>
    		<finish_sent>True</finish_sent>
    		<length>10</length>
-   		<k>2</k>
+   		<k>10</k>
    	</generate>
    </markov>
    <markov>
@@ -120,5 +139,23 @@
    		<k>3</k>
    	</generate>
    </markov>
+   
+   <markov>
+   	<train>
+   		<file>data/brute.txt</file>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<lines>220</lines>
+   		<characters>STAGE</characters>
+   		<pos>(,entrance,)</pos>
+   	</train>
+   	<generate>
+   		<reset>True</reset>
+   		<length>19</length>
+   		<k>10</k>
+   	</generate>
+   </markov>
+</scene>
+
 
    

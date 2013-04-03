@@ -1,3 +1,4 @@
+<scene blackout="false">
 <markov>
    	<name>closet</name>
    	 <train>
@@ -5,11 +6,12 @@
    		<acts>3</acts>
    		<scenes>4</scenes>
    		<characters>STAGE</characters>
+   		<pos>(,place,entrance,exit,NEWLINE,)</pos>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>
    	 	<reset>True</reset>
-   	 	<length>13</length>
+   	 	<length>10</length>
    	 	<k>10</k>
    	 </generate>
    	</markov>
@@ -241,3 +243,21 @@
    	   		<k>2</k>
    	   	</generate>
    	 </markov>
+   	 
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   		<lines>215</lines>
+   		<characters>STAGE</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>7</length>
+   	 	<k>10</k>
+   	 </generate>
+   	</markov>
+   	</scene>

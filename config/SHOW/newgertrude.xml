@@ -1,5 +1,4 @@
-<scene blackout="false">
-<markov>
+   <markov>
       <name>Gertrude</name>
       <file>data/brute.txt</file>
       <train>
@@ -143,4 +142,3 @@
          <k>10</k>
       </generate>
    </markov>
-   </scene>

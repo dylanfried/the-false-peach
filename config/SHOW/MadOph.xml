@@ -1,10 +1,12 @@
-    <markov>
+<scene blackout="false">
+<markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
       <train>
         	<acts>4</acts>
          	<scenes>5</scenes>
 			<characters>STAGE</characters>
+			<pos>(,place,entrance,NEWLINE,)</pos>
       </train>
       <generate>
          <reset>True</reset>
@@ -143,6 +145,7 @@
          <k>2</k>
       </generate>
    </markov>
+   
     <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -163,4 +166,22 @@
          <k>2</k>
       </generate>
    </markov>
-</trial>
+
+
+    <markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>4</acts>
+         	<scenes>5</scenes>
+         	<lines>73</lines>
+			<characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   </scene>
