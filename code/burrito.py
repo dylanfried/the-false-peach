@@ -12,6 +12,8 @@ from markov import Markov
 import re
 import random
 import os
+import copy
+import uuid
 
 # This class will take care of making a show!
 class Burrito:
@@ -194,7 +196,7 @@ class Burrito:
       scene['strategy'] = ""
       # Reset the scene line container and word count
       scene_lines = []
-      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml"]):
+      for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml","rhythm_filter"]):
          if not scene['strategy']:
             scene['strategy'] = trial.name
          # Match the strategy name to a set of parameters to pass on to
@@ -682,6 +684,175 @@ class Burrito:
                   wcurrent = ppcnt[-1].split(" ")[1:]
                   ccurrent = cpcnt[-1].split(" ")[1:]
 
+            continue
+         elif trial.name == "rhythm_filter":
+            #print "Filter"
+            scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
+            trial_data = util.get_lines(data, trial.find("train"))
+            
+            #get the length (number of lines to be output) from the xml.
+            length = trial.find("generate").find("length")
+            if length: length = int(length.string)
+            else: length = 0
+            
+            # list lines in the training text
+            # Go through the trial data and break it up into a list of dictionaries
+            # where each dictionary has the speaker info and the line spoken
+            # This is useful so that we can put speaker information in our filter
+            # chunks
+            universe = []
+            line = {"speaker": "", "line":"","length":0,"uuid":uuid.uuid4()}
+            for i in range(len(trial_data)):
+               d = trial_data[i]
+               if d[4] != line["speaker"] or d[-1] == "NEWLINE":
+                  # If the last line was a stage dir, we want to remember what type
+                  if i > 1 and trial_data[i-2][4] == "Stage":
+                     line['pos'] = trial_data[i-2][-2]
+                  if line['line']:
+                     universe.append(line)
+                  line = {"speaker": d[4], "line":"","length":0,"uuid":uuid.uuid4()}
+                  # Check to see if we're forcing a single character (but don't overwrite stage directions)
+                  forced_character = trial.find("forced_character")
+                  if forced_character and line['speaker'] != "Stage":
+                     line['speaker'] = forced_character.string
+               if d[-1] != "NEWLINE":
+                  line["line"] += d[-1] + " "
+                  if d[-1] not in [",",".","?",":",";","!"]:
+                     line['length'] += 1
+            if line['line']:
+               universe.append(line)
+            
+            #print universe
+            
+            # We want to chain together filters
+            # Use all of the two word lines, then transition to a filter and play the filter from longest to shortest
+            # at which point we pull out all of the n-length lines (where n is the length of the shortest line in the
+            # filter). Do this for a while.
+            potential_patterns = []
+            current_length = 0
+            # Make sure not to repeat patterns
+            past_patterns = []
+            line_length = 2
+            number_of_length_lines = 10
+            raw_scene_lines = []
+            while 1:
+               # First, grab all of the line_length-length lines that we haven't already had and that start
+               # with an uppercase letter
+               length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in raw_scene_lines] and l['length'] == line_length and l["line"].split(" ")[0].istitle()]
+               if len(length_lines) == 0:
+                  break
+               if len(length_lines) > number_of_length_lines:
+                  length_lines = random.sample(length_lines, number_of_length_lines)
+               else:
+                  random.shuffle(length_lines)
+               raw_scene_lines += length_lines
+               
+               # Grab the next pattern
+               trial_lines = []
+               for raw_scene_line in reversed(raw_scene_lines):
+                  # Keep trying until we get one that yields results
+                  pattern = raw_scene_line['line'].split(" ")[0] + " "
+                  # Don't repeat patterns
+                  if pattern.lower() in past_patterns:
+                     continue
+                  trial_lines = []
+                  # Loop through all of the lines and check to see if they match the pattern given
+                  # If they do, keep them
+                  # Also, this makes sure that we end each line with end of line punctuation
+                  # We do this by:
+                  #  - If the line that matches the pattern has any end of line punctuation (?,!,.,;),
+                  #    then we take the line up to the last of these punctuation marks
+                  #  - Otherwise, we keep looking onto subsequent lines for punctuation marks
+                  no_punctuation = False
+                  for i in range(len(universe)):
+                     u = copy.copy(universe[i])
+                     if no_punctuation:
+                        # Make sure that we haven't switched speakers
+                        if u['speaker'] != universe[i-1]['speaker']:
+                           # stop looking for punctuation
+                           no_punctuation = False
+                           continue
+                        # The last line matched the pattern, but didn't have punctuation
+                        # continue to look for punctuation here
+                        if re.match("^.*[.!;?].*$", u['line']):
+                           # We have a punctuation mark in this line, cut
+                           # off everything after the first punctuation mark
+                           u['line'] = re.sub("(^.*[.?;!]).*$","\\1",u['line'])
+                           no_punctuation = False
+                        trial_lines[-1]['line'] += " " + u['line']
+                        #trial_lines.append(u)
+                     # We don't have a previously matching line without punctuation.
+                     # Check to see if this line matches the pattern
+                     elif re.match("^"+pattern+".*",u['line'],re.IGNORECASE) and not u['line'].isupper():
+                        # Check to see whether the last line was a stage dir
+                        # and include it if it was (Don't want titles, just stagedirs)
+                        if i > 1 and universe[i-2]["speaker"] == "Stage" and re.match("^\s*\(.*\)\s*$",universe[i-2]['line']):
+                           # This re.sub expression is used to insert the type of stage dir at the beginning of the stage dir
+                           u['stage_direction'] = re.sub("\s*\((.*)\)\s*", "( " + universe[i-2]['pos'] + " \\1)", universe[i-2]["line"])
+                        # Make sure that we end each line with punctuation
+                        if re.match("^.*[.!;?].*$", u['line']):
+                           # We have a punctuation mark in this line, cut
+                           # off everything after the last punctuation mark
+                           u['line'] = re.sub("(^.*[.?;!])[^.?;!]*$","\\1",u['line'])
+                        else:
+                           # We don't have a punctuation mark in this line,
+                           # continue on to the next line
+                           no_punctuation = True
+                        trial_lines.append(u)
+                  # It's possible that there are still some lines without endline punctuation here
+                  # This could happen because some lines end and change speaker without endline
+                  # punctuation. Also, make sure that no line is too long.
+                  trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22 and t['uuid'] not in [r['uuid'] for r in raw_scene_lines]]
+                  
+                  if trial_lines:
+                     # Found a pattern that yields results
+                     break
+               
+               if not trial_lines:
+                  # ran out of viable patterns...
+                  break
+               
+               # Recount the line lengths because of the punctuation splitting that we do above
+               for t in trial_lines:
+                  t['length'] = 0
+                  for w in t['line'].split(" "):
+                     if w not in [",",".","?",":",";","!"]:
+                        t['length'] += 1
+               # Make sure that we don't have too many of any one filter
+               if len(trial_lines) > 17:
+                  trial_lines = random.sample(trial_lines, 17)
+               # Sort the lines based on length
+               trial_lines.sort(key=lambda line: line['length'])
+               trial_lines.reverse()
+               past_patterns.append(pattern.lower())
+               current_length += len(trial_lines)
+               raw_scene_lines += trial_lines
+               # Set line length for next section
+               line_length = trial_lines[-1]['length']
+               
+               if length and current_length >= length:
+                  break
+               
+            for u in raw_scene_lines:
+               # Formatting stuff left over from Mark
+               temp_line = u['line']
+               temp_line = re.sub(" NEWLINE \)"," )",temp_line)
+               temp_line = re.sub("(oh oh )+"," oh oh ",temp_line)
+               temp_line = re.sub("(ho ho )+"," ho ho ",temp_line)
+               temp_line = re.sub("(nonny nonny )+"," nonny nonny ",temp_line)
+               temp_line = re.sub("(a-down a-down )+"," nonny nonny ",temp_line)
+               temp_line = re.sub("( NEWLINE)+"," NEWLINE",temp_line)
+               # Get rid of quotation marks
+               temp_line = re.sub("\"\s*","",temp_line)
+               # Get rid of spaces before punctuation
+               temp_line = re.sub("\s*([,.?!:;)])","\\1",temp_line)
+               # if there's a stage direction and it's short enough, put it in
+               if "stage_direction" in u and u["stage_direction"] and len(u['stage_direction']) < 22:
+                  u['stage_direction'] = re.sub("\s*([,.?!:;)])","\\1",u['stage_direction'])
+                  #scene_lines.append(u['stage_direction'])
+               scene_lines.append(u['speaker'].upper())
+               scene_lines.append(temp_line)
+               
             continue
          elif trial.name == "filter":
             #print "Filter"
