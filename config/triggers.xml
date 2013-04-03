@@ -33,12 +33,14 @@
    <triggers stagedir='action'>
       <word priority=1 pause=0>dies</word>
       <word priority=1 pause=5000>grave</word>
-      <word priority=1 pause=4000>arras</word>
+      <word priority=1 pause=4000>hides</word>
+      <word priority=1 pause=4000>pass</word>
    </triggers>
    <triggers stagedir='voice' zero_out='intro,outro,stagedir.place,stagedir.exit,stagedir.entrance,stagedir.sound,stagedir.voice,stagedir.dumb,stagedir.action,stagedir.title,stagedir,style.video,style.actor,style.sound,style.lights,character'>
-      <word priority=1 pause=0>beneath</word>
       <word priority=1 pause=0>sings</word>
+      <word priority=1 pause=0>beneath</word>
       <word priority=1 pause=0>aside</word>
+      <word priority=1 pause=0>within</word>
    </triggers>
 </triggerset>
 
