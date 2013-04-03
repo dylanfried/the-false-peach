@@ -2,7 +2,7 @@
    <pinned>
       <scene>2bMirror</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <lights>actor1</lights>
+      <lights>actor4</lights>
       <video>10</video>
    </pinned>
    <excluded>
@@ -115,7 +115,7 @@
       
    <pinned>
       <scene>claudius</scene>
-      <lights>theatre,emotions,monemo,word</lights>
+      <lights>theatre,lighton</lights>
       <video>9,12</video>
    </pinned>
    <excluded>
@@ -392,6 +392,10 @@
    <excluded>
       <scene>gravedigger</scene>
       <sound>TTS.aloud.ROGUI</sound>
+   </excluded>
+   <excluded>
+      <scene>gravedigger</scene>
+      <sound>TTS.aloud.SPACE.character</sound>
    </excluded>
    <excluded>
       <scene>gravedigger</scene>
