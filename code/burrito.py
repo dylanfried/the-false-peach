@@ -738,7 +738,7 @@ class Burrito:
             while 1:
                # First, grab all of the line_length-length lines that we haven't already had and that start
                # with an uppercase letter
-               length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in raw_scene_lines] and l['length'] == line_length and l["line"].split(" ")[0].istitle()]
+               length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in raw_scene_lines] and l['length'] == line_length and l["line"].split(" ")[0].istitle() and re.match("^.*[.;?!]\s*$", l["line"])]
                if len(length_lines) == 0:
                   break
                if len(length_lines) > number_of_length_lines:
