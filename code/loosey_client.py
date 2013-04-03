@@ -486,6 +486,11 @@ class LooseyClient:
             # Check again for empty stage directions in case we only had the label
             if re.match("^\s*\(\s*\)\s*$",l):
                continue
+            
+            # Zero out any trigger besides sings
+            for t in self.trigs:
+               if t.triggered and not t.ready_to_zero and "sings" not in t.words: t.ready_to_zero = True
+            
             display = 0
             # Dont want stage directions to run over scott. 
             if self.styles and (re.match(".*TTS\.inear.*",self.styles) or re.match(".*TTS\.mix.*",self.styles)):
