@@ -480,9 +480,9 @@ class LooseyClient:
             if re.match("^\s*\(\s*\)\s*$",l):
                continue
             # Pull out the first word in the parentheses
-            wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)[.,?!;:]*\s+.*","\\1",l)
+            wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)[.,?!;:]*[\s)].*","\\1",l)
             # Make the line into the line except for the first word in the parentheses
-            l = re.sub("^\s*\(\s*[a-zA-Z]+[.,?!;:]*\s+(.*)","(\\1",l)
+            l = re.sub("^\s*\(\s*[a-zA-Z]+[.,?!;:]*\s*(.*)\)\s*","(\\1)",l)
             # Check again for empty stage directions in case we only had the label
             if re.match("^\s*\(\s*\)\s*$",l):
                continue

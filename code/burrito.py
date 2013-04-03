@@ -1007,6 +1007,8 @@ class Burrito:
       else:
          blackout = ""
       
+      #blackout = ""
+      
       if playwithin:
          out.append("################# SCENE playwithin " + self.pinning_table.generate_style("playwithin") + " wordcount:" + str(sum([len(script_line.split(" ")) for script_line in scene_lines])) + " strategy:" + scene['strategy'] + blackout + " #################")
       elif "name" in scene.attrs and "style" in scene.attrs:
