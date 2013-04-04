@@ -390,7 +390,7 @@ class LooseyClient:
                   # We want to send a partial zero to lights so that we 
                   # don't get super confused styles
                   self.send_value("style.lights","partial_zero")
-                  time.sleep(0.5)
+                  time.sleep(0.3)
                print "SENDING STYLES", styles_string
                # Now, actually send the new styles
                self.send_value("style.sound",styles[1])
