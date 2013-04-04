@@ -1,51 +1,29 @@
 <show>
-   <sequence>
+   <sequence name="scene">
+      <scene>3pcntORIG.xml</scene>
+   </sequence>
+   <sequence name="line">
+      <scene>rhythm_filter.xml</scene>
+   </sequence>
+   <sequence name="grammar">
+      <scene>ham_thing.xml</scene>
+      <scene>hamsolilddop.xml</scene>
       <scene>2bMirror.xml</scene>
-      <scene>speak.xml</scene>
-      <scene>rogueddop.xml</scene>
-      <scene>is_not_scott.xml</scene>
-      <scene>tocome.xml</scene>
-      <scene>witching.xml</scene>
-      <scene>HamSad_scott.xml</scene>
-      <scene>mansmemory_scott.xml</scene>
-      <scene>deathspeech_scott.xml</scene>
-      <scene>piece_scott.xml</scene>
+      <scene>deathspeech.xml</scene>
    </sequence>
-   
-   
-   
-   <sequence>
-      <scene>straightdo.xml</scene>
+   <sequence name="word">
       <scene>OneOne.xml</scene>
-   </sequence>
-   
-   
-   <sequence random="true">
-      <random>
-         <scene_choices>
-            <scene_choice>ghostscene.xml</scene_choice>
-            <scene_choice>affrighted.xml</scene_choice>
-            <scene_choice>dumb.xml</scene_choice>
-            <scene_choice>kingrises.xml</scene_choice>
-            <scene_choice>claudius.xml</scene_choice>
-            <scene_choice>closet.xml</scene_choice>
-            <scene_choice>gertrude.xml</scene_choice>
-         </scene_choices>
-      </random>
-   </sequence>
-   <sequence>
+      <scene>ghostscene.xml</scene>
+      <scene>hamoph.xml</scene>
+      <scene>dumb.xml</scene>
+      <scene>claudius.xml</scene>
+      <scene>closet.xml</scene>
       <scene>MadOph.xml</scene>
-   </sequence>
-   <sequence random="true">
-      <random>
-         <length>2</length>
-         <scene_choices>
-            <scene_choice>is_not.xml</scene_choice>
-            <scene_choice>rot.xml</scene_choice>
-         </scene_choices>
-      </random>
-   </sequence>
-   <sequence>
+      <scene>gertrude.xml</scene>
+      <scene>gravedigger.xml</scene>
       <scene>FiveTwo.xml</scene>
+   </sequence>
+   <sequence name="letter">
+      <scene>letterFive.xml</scene>
    </sequence>
 </show>
