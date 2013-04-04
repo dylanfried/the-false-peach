@@ -515,6 +515,13 @@ class Burrito:
             scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
             x = open("code/ndata4.txt").readlines()
             
+            # Check to see if we have a character spec
+            if trial.find("characters"):
+               character_constraints = trial.find("characters").string.split(",")
+               character_constraints = [character_constraint.upper() for character_constraint in character_constraints]
+               # Make sure that we only use data from x if it's from the correct character
+               x = [line for line in x if line.split(" ")[3].upper() in character_constraints]
+            
             ACT = [int(a.split(" ")[0]) for a in x]
             SCENE = [int(a.split(" ")[1]) for a in x]
             LINE = [int(a.split(" ")[2]) for a in x]
@@ -563,11 +570,11 @@ class Burrito:
                    assert False, "unhandled option"
             
             if act and not mark_scene: mark_scene = 1
-            print "act and scene", act, mark_scene
             if act and mark_scene:
          
                start = min([i for i in range(len(p)) if act==ACT[i] and mark_scene==SCENE[i]])
          
+            
             def clean(x):
             
                x = re.sub("^\W+ (.*)$","\\1",x,re.S,re.MULTILINE)
@@ -599,7 +606,6 @@ class Burrito:
             
             out = " ".join(wcurrent)
             cout = " ".join(ccurrent)
-            
             for ii in range(N):
             
                COUNTER += 1
@@ -620,9 +626,7 @@ class Burrito:
                            p[i-1]==ppatt[1] and p[i-2]==ppatt[0]]
             
                iii = int(len(pcnt)**0.5-7.0)
-            
                if range(iii) and len(out.split(" "))>5: 
-            
                   WORDS = out.split(" ")
                   CHARS = cout.split(" ")
             
