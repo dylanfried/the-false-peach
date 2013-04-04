@@ -1,0 +1,16 @@
+<scene>
+ <rhythm_filter>
+    <name>RhythmFilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <length>100</length>
+      </generate>
+   </filter>
+</scene>
