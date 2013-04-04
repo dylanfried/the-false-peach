@@ -71,7 +71,7 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>300</length>
+         <length>200</length>
          <finish_sent>True</finish_sent>
          <k>2</k>
       </generate>

@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
 <markov>
    	   <name>ghostscene</name>
        <file>data/brute.txt</file>
