@@ -528,7 +528,7 @@
    <pinned>
       <scene>hamsolilddop</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <video>3</video>
+      <video>10</video>
       <lights>actor1</lights>
    </pinned>
    
@@ -621,6 +621,12 @@
    </pinned>
    <pinned>
       <scene>O_filter</scene>
+      <video>16</video>
+      <lights>character</lights>
+      <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>rhythm_filter</scene>
       <video>16</video>
       <lights>character</lights>
       <sound>TTS.aloud.SPACE.character</sound>
