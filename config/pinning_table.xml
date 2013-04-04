@@ -85,7 +85,7 @@
    <pinned>
       <scene>affrighted</scene>
       <lights>emotions,monemo,lightout,lightshow</lights>
-      <video>14</video>
+      <video>8</video>
    </pinned>
    <excluded>
       <scene>affrighted</scene>
@@ -110,6 +110,14 @@
    <excluded>
       <scene>affrighted</scene>
       <sound>TTS.mix</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
+   </excluded>
+   <excluded>
+      <scene>affrighted</scene>
+      <sound>TTS.aloud.ROGUI</sound>
    </excluded>
    
       
