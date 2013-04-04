@@ -503,19 +503,31 @@ class LooseyClient:
                time.sleep(1)
             # Send the stagedir
             if wwhhaatt == "dumb":
-               print "dumb character"
+               #print "dumb character"
                # Special dumb character that is mute for dumb show
                self.send_value("character","DUMB")
             else:
                self.send_value("character","STAGEDIR")
             self.changed_speaker = True
             self.send_value("stagedir.bool",2)
-            self.send_value("stagedir",l)
+            # Special casing to not have too many parentheses in the dumb show
+            if wwhhaatt == "dumb":
+               stagedir_to_send = re.sub("^\s*\((.*)\)\s*$","\\1",l)
+               #print "original stagedir to send", stagedir_to_send
+               if line_index > 0 and not re.match("^\s*\(\s*dumb.*\)\s*$",lines[line_index-1]):
+                  stagedir_to_send = "(" + stagedir_to_send
+               if line_index+1 < len(lines) and not re.match("^\s*\(\s*dumb.*\)\s*$",lines[line_index+1]):
+                  stagedir_to_send = stagedir_to_send + ")"
+               print "Stagedir to send", stagedir_to_send
+               self.send_value("stagedir",stagedir_to_send)
+            else:
+               print "Stagedir",l
+               self.send_value("stagedir",l)
             # Pull off the parentheses for reading
             l = re.sub("^\s*\((.*)\)\s*$","\\1",l)
             self.send_value("line",l)
             trigger_label = wwhhaatt
-            print "STAGE",l
+            #print "STAGE",l
             
          # otherwise, this is a normal dialogue line
          else:
