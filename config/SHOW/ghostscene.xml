@@ -93,7 +93,7 @@
          <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>50</length>
-         <k>2</k>
+         <k>1</k>
       </generate>
    </markov>
    <markov>

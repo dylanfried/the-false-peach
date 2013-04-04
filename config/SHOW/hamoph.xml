@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
 <markov>
    	<name>HamOph</name>
    	 <train>
@@ -71,9 +71,9 @@
       </train>
       <generate>
          <reset>True</reset>
-         <length>450</length>
+         <length>300</length>
          <finish_sent>True</finish_sent>
-         <k>3</k>
+         <k>2</k>
       </generate>
    </markov>
    

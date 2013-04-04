@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
    <markov>
    	<train>
    		<file>data/brute.txt</file>
@@ -28,7 +28,7 @@
       <generate>
       	<finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>150</length>
+         <length>100</length>
          <k>2</k>
    </markov>
    
@@ -79,21 +79,6 @@
          <length>100</length>
          <k>7</k>
       </generate>
-   </markov>
-   
-   <markov>
-   	<train>
-   		<file>data/brute.txt</file>
-   		<acts>5</acts>
-   		<scenes>1</scenes>
-   		<lines>67-68</lines>
-   		<characters>Hamlet</characters>
-   	</train>
-   	<generate>
-   		<reset>True</reset>
-   		<length>16</length>
-   		<k>3</k>
-   	</generate>
    </markov>
    
    <markov>

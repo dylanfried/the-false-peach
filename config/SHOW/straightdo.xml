@@ -1,32 +1,12 @@
-<markov>
-	<name>entrance</name>
-   	 <train>
-   		<file>data/brute.txt</file>
-   		<acts>1</acts>
-   		<scenes>2</scenes>
-   		<lines>1</lines>
-   		<characters>STAGE</characters>
-   		<pos>(,sound,entrance,)</pos>
-   	 </train>
-   	 <generate>
-   	 	<length>31</length>
-   	 	<k>10</k>
-   	 </generate>
-   	</markov>
+
 <straightdo>
    <name>straightdo</name>
    <train>
       <file>data/brute.txt</file>
-	   <selections>
-	   	<selection>
-	   	   <characters>HAMLET,OPHELIA</characters>
-	   		<acts>3</acts>
-	   		<scenes>1</scenes>
-	   	</selection>
-	   </selections>
+      <characters>HAMLET</characters>
 	 </train>
 	 <generate>
-	 	<length>2000</length>
+	 	<length>500</length>
 	 </generatea>
 </straightdo>  
 

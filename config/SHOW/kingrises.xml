@@ -1,3 +1,4 @@
+<scene blackout="false">
    <markov>
    	     <file>data/brute.txt</file>
       <train>
@@ -28,4 +29,5 @@
          <k>1</k>
       </generate>
    </markov>
+</scene>
 

@@ -46,7 +46,7 @@
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>400</length>
+   	   		<length>350</length>
    	   		<k>4</k>
    	   	</generate>
 </letter_markov>
@@ -100,7 +100,7 @@
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>350</length>
+   	   		<length>300</length>
    	   		<k>3</k>
    	   	</generate>
 </letter_markov>
@@ -133,7 +133,7 @@
    	   	<generate>
    	   		<reset>True</reset>
    	   		<finish_sent>True</finish_sent>
-   	   		<length>400</length>
+   	   		<length>300</length>
    	   		<k>3</k>
    	   	</generate>
 </letter_markov>
@@ -1049,7 +1049,7 @@
    	   		<acts>5</acts>
    	   		<scenes>2</scenes>
    	   		<lines>360-401</lines>
-   	   		<characters>HORATIO,FORTINBRAS</characters>
+   	   		<characters>FORTINBRAS</characters>
    	   	</train>
    	   	<generate>
    	   		<reset>True</reset>
@@ -1066,7 +1066,7 @@
    			<acts>5</acts>
    			<scenes>2</scenes>
    			<lines>401</lines>
-   			<characters>Stage</characters>
+   			<characters>STAGE</characters>
    	 </train>
    	 <generate>
       	<finish_sent>True</finish_sent>

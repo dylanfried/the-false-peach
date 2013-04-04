@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
 <markov>
       <name>ActFiveSceneTwo</name>
       <train>
@@ -23,10 +23,11 @@
          <scenes>2</scenes>
          <lines>2-397</lines>
          <characters>STAGE</characters>
+         <pos>(,entrance,exit,NEWLINE,action,sound,)</pos>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>600</length>
+         <length>500</length>
          <k>5</k>
       </generate>
    </markov>

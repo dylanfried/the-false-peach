@@ -10,7 +10,7 @@
 	</selections>
       </train>
       <generate>
-         <pattern>Now </pattern>
+         <pattern>Who </pattern>
          <length>10</length>
       </generate>
    </filter>

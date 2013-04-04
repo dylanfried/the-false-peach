@@ -1,0 +1,17 @@
+<scene>
+<markov>
+   	<name>closet</name>
+   	 <train>
+   		<file>data/brute.txt</file>
+   		<acts>3</acts>
+   		<scenes>4</scenes>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>250</length>
+   	 	<k>2</k>
+   	 </generate>
+   	</markov>
+</scene>
+ 

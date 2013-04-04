@@ -1,0 +1,29 @@
+
+
+
+   
+   <markov>
+   		<name>Hamthing</name>
+   		<file>data/brute.txt</file>
+   		<train>
+   			<selections>
+   				<selection>
+   					<acts>1</acts>
+   					<scenes>2,3,4</scenes>
+	   				</selection>
+   			</selections>
+   		</train>
+   		<generate>
+   			<type>word</type>
+   			<length>150</length>
+   			<k>10</k>
+   		</generate>
+   	</markov>
+   	
+  
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
 <markov>
       <name>Gertrude</name>
       <file>data/brute.txt</file>
@@ -109,7 +109,7 @@
 
    <markov>
       <name>Gertrude</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>2</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>4</acts>
@@ -128,7 +128,7 @@
 
    <markov>
       <name>Gertrude</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>2</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>4</acts>
