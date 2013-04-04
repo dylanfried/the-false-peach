@@ -396,7 +396,7 @@ class Burrito:
             
                return x.strip()
             
-            x = open("code/ndata2.txt").readlines()
+            x = open("data/ndata2.txt").readlines()
             #x = [d.strip() for d in x]
             #x = [d.split(" ") for d in x]
             #x = util.get_lines(x, trial.find("train"))
@@ -513,7 +513,7 @@ class Burrito:
             continue
          elif trial.name == "straightdo":
             scene_lines.append("=================== CHUNK 1 " + trialname + " ================")
-            x = open("code/ndata4.txt").readlines()
+            x = open("data/ndata4.txt").readlines()
             
             # Check to see if we have a character spec
             if trial.find("characters"):
