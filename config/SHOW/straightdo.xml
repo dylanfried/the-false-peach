@@ -19,13 +19,14 @@
       <file>data/brute.txt</file>
 	   <selections>
 	   	<selection>
-	   		<acts>1</acts>
+	   	   <characters>HAMLET,OPHELIA</characters>
+	   		<acts>3</acts>
 	   		<scenes>1</scenes>
 	   	</selection>
 	   </selections>
 	 </train>
 	 <generate>
-	 	<length>100</length>
+	 	<length>2000</length>
 	 </generatea>
 </straightdo>  
 
