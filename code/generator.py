@@ -277,7 +277,9 @@ class Generator:
          # 10% words from prose lines and otherwise we consider it poetry.
          # For prose, we want to break on the first punctuation that we see.
          # For poetry, we want to give the line a chance to end itself.
-         if self.line_length > 0 and ((current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+         # For the dumb show, special case: break on any punctuation except commas
+         #  whenever. Break on commas after 9 words.
+         if self.line_length > 0 and ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
             if self.in_paren:
                insert_paren = [None]*13
                insert_paren[-2] = " ) "
