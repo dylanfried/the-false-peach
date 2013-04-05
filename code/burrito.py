@@ -748,8 +748,9 @@ class Burrito:
             
             while 1:
                # First, grab all of the line_length-length lines that we haven't already had and that start
-               # with an uppercase letter
-               length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in raw_scene_lines] and l['length'] == line_length and l["line"].split(" ")[0].istitle() and re.match("^.*[.;?!]\s*$", l["line"])]
+               # with an uppercase letter. Additionally, don't include any lines with dashes in them (because
+               # it's hard for the audience to get a sense of the number of words)
+               length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in raw_scene_lines] and l['length'] == line_length and l["line"].split(" ")[0].istitle() and re.match("^.*[.;?!]\s*$", l["line"]) and not re.match("^.*-.*$",l["line"])]
                if len(length_lines) == 0:
                   break
                if len(length_lines) > number_of_length_lines:
@@ -758,13 +759,24 @@ class Burrito:
                   random.shuffle(length_lines)
                raw_scene_lines += length_lines
                
+               if length and len(raw_scene_lines) >= length:
+                  break
+               
                # Grab the next pattern
                trial_lines = []
+               # Remember lines to remove after looping (mostly
+               # these will be lines that did not yield results
+               # as patterns and we want to ensure that the last
+               # short-word line is always the pattern for the 
+               # next section)
+               to_remove = []
                for raw_scene_line in reversed(raw_scene_lines):
                   # Keep trying until we get one that yields results
                   pattern = raw_scene_line['line'].split(" ")[0] + " "
                   # Don't repeat patterns
                   if pattern.lower() in past_patterns:
+                     # Cut this line out of the short-word lines
+                     to_remove.append(raw_scene_line['uuid'])
                      continue
                   trial_lines = []
                   # Loop through all of the lines and check to see if they match the pattern given
@@ -813,11 +825,19 @@ class Burrito:
                   # It's possible that there are still some lines without endline punctuation here
                   # This could happen because some lines end and change speaker without endline
                   # punctuation. Also, make sure that no line is too long.
-                  trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 22 and t['uuid'] not in [r['uuid'] for r in raw_scene_lines]]
+                  trial_lines = [t for t in trial_lines if re.match("^.*[.!;?].*$", t['line']) and len(t['line'].split(" ")) < 18 and t['uuid'] not in [r['uuid'] for r in raw_scene_lines]]
                   
                   if trial_lines:
                      # Found a pattern that yields results
                      break
+                  else:
+                     # Cut out the last line in the short-word lines
+                     # to make sure that the last short-word lines is 
+                     # always the next pattern
+                     to_remove.append(raw_scene_line['uuid'])
+               
+               # Go through and remove lines that should be removed
+               raw_scene_lines = [raw_scene_line for raw_scene_line in raw_scene_lines if raw_scene_line['uuid'] not in to_remove]
                
                if not trial_lines:
                   # ran out of viable patterns...
@@ -840,9 +860,6 @@ class Burrito:
                raw_scene_lines += trial_lines
                # Set line length for next section
                line_length = trial_lines[-1]['length']
-               
-               if length and len(raw_scene_lines) >= length:
-                  break
                
             for u in raw_scene_lines:
                # Formatting stuff left over from Mark
