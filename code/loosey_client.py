@@ -647,7 +647,7 @@ class LooseyClient:
       if self.styles and re.match(".*TTS\.inear.*",self.styles):
          # If we're doing a scott scene, sleep a little longer
          time.sleep(1)
-      time.sleep(2)
+      time.sleep(4)
       self.send_value("stagedir.place","zero")
       time.sleep(0.001)
       self.send_value("stagedir.exit","zero")
@@ -674,7 +674,7 @@ class LooseyClient:
       time.sleep(5)
       self.send_value("character","STYLE")
       self.send_value("line","sys.exit(0)\n")
-      time.sleep(5)
+      time.sleep(6)
       self.send_value("style.video",7)
       self.send_value("style.lights","end")
       
