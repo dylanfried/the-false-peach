@@ -28,7 +28,7 @@
       <word priority=1 pause=3000>Attendants</word>
    </triggers>
    <triggers stagedir='exit'>
-      <word priority=1 pause=3000>exeunt</word>
+      <word priority=1 pause=1500>exeunt</word>
    </triggers>
    <triggers stagedir='action'>
       <word priority=1 pause=0>dies</word>
