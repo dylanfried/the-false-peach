@@ -373,7 +373,7 @@
       <scene>ghostscene</scene>
       <lights>ghost</lights>
       <video>1,2</video>
-      <sound>TTS.aloud,TTS.aloud.SPACE.word,TTS.aloud.MUSIC.emotion</sound>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
    </pinned>
    <excluded>
       <scene>ghostscene</scene>
