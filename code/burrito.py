@@ -1077,7 +1077,6 @@ class Burrito:
             if trial.find("generate").find("order_ramp"):
                for point in trial.find("generate").find("order_ramp").find_all("point"):
                   word_order_ramp.append({"order":int(point['order']),"word_number":int(point['word'])})
-            print word_order_ramp
             word_emotion_ramp = []
             trial_length = int(trial.find("generate").find("length").string)
             # Check to see if we have an emotion threshold constraint to add
