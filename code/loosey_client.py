@@ -152,14 +152,6 @@ class LooseyClient:
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
       #print "SENDING", self.actions[what], value, excess
-      if what in ['line']:
-         to_print = [w + ": " + str(self.word_scores(w)) for w in value.split(" ") if w]
-         print ", ".join(to_print)
-      if what in ['stagedir']:
-         for w in value.split(" "):
-            for t in self.trigs:
-               if w.lower().strip(" .,;:()[]{}!?") in t.words:
-                  print "TRIGGER:",t.stage,t.words
       if not self.play:
          return 1
       
@@ -351,6 +343,21 @@ class LooseyClient:
             self.changed_speaker = True
             time.sleep(0.001)
 
+            
+            #temp_line_index = line_index+1
+            #while temp_line_index < len(lines) and not re.match(".*@@@@@@.*",lines[temp_line_index]):
+            #   #print lines[temp_line_index]
+            #   if re.match("^\s*\(.*\)\s*$",lines[temp_line_index]):
+            #      # Stage direction, do some trigger printing
+            #      for w in lines[temp_line_index].split(" "):
+            #         for t in self.trigs:
+            #            if w.lower().strip(" .,;:()[]{}!?") in t.words:
+            #               print "TRIGGER:",t.stage,t.words
+            #   if not re.match(".*####.*",lines[temp_line_index]) and not re.match(".*====.*",lines[temp_line_index]):
+            #      to_print = [w + ": " + str(self.word_scores(w)) for w in lines[temp_line_index].split(" ") if w]
+            #      print ", ".join(to_print)
+            #   temp_line_index += 1
+            #   time.sleep(0.02)
             
             grab_next_style = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",lines[line_index+1])
             print "SENDING LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
@@ -590,7 +597,7 @@ class LooseyClient:
             # the voice triggers when the time comes
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
-            #print "SENDING LINE","%r"%l
+            print "SENDING LINE","%r"%l
       
          while 1:
             # For each word said, we're going to check whether we need
