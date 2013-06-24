@@ -152,6 +152,14 @@ class LooseyClient:
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
       #print "SENDING", self.actions[what], value, excess
+      if what in ['line']:
+         to_print = [w + ": " + str(self.word_scores(w)) for w in value.split(" ") if w]
+         print ", ".join(to_print)
+      if what in ['stagedir']:
+         for w in value.split(" "):
+            for t in self.trigs:
+               if w.lower().strip(" .,;:()[]{}!?") in t.words:
+                  print "TRIGGER:",t.stage,t.words
       if not self.play:
          return 1
       
@@ -224,6 +232,40 @@ class LooseyClient:
    # as well.
    def send_script(self, lines,burrito_word_count=None):
       print "\n\n SENDING SCRIPT \n\n"
+      # First, send beginning text and zeroes:
+      self.send_value("stagedir.place","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.exit","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.entrance","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.sound","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.voice","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.action","zero")
+      time.sleep(0.001)
+      self.send_value("stagedir.title","zero")
+      time.sleep(0.001)
+      self.send_value("style.sound","zero")
+      time.sleep(0.001)
+      self.send_value("style.video",0)
+      time.sleep(0.001)
+      self.send_value("style.actor","zero")
+      time.sleep(0.5)
+      self.send_value("style.lights","zero")
+      time.sleep(5)
+      self.send_value("character","STYLE")
+      self.send_value("line","sys.begin(show.generate(" + time.strftime("%d.%m.%y %X" ) + "))\n")
+      time.sleep(6)
+      
+      # Wait for Loosey to acknowledge with EOL
+      while 1:
+         word = self.get_input()
+         #print "Getting word",word
+         if word == "EOL": 
+            break
+      
       # This is a variable to keep track of a weighted moving
       # average of affect values that we send to Loosey
       ewma = [0,0,0,0]
@@ -548,7 +590,7 @@ class LooseyClient:
             # the voice triggers when the time comes
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
-            print "SENDING LINE","%r"%l
+            #print "SENDING LINE","%r"%l
       
          while 1:
             # For each word said, we're going to check whether we need
