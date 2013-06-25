@@ -56,6 +56,8 @@ class Generator:
       self.current_line_prose = 0
       # Variable to keep track of whether the current chunk has a forced character
       self.forced_character = None
+      # Keep track of who the current speaker is
+      self.current_speaker = None
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -200,6 +202,7 @@ class Generator:
          if self.forced_character:
             next_word[-1] = self.forced_character
          self.output.append(next_word)
+         self.current_speaker = next_word[-1]
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
          #set the has first character to true.
@@ -223,6 +226,7 @@ class Generator:
          # to that one
          if self.forced_character:
             next_word[-1] = self.forced_character
+         self.current_speaker = next_word[-1]
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
@@ -245,6 +249,7 @@ class Generator:
             if self.forced_character:
                insert_speaker[-1] = self.forced_character
             self.output.append(insert_speaker)
+            self.current_speaker = insert_speaker[-1]
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -336,6 +341,7 @@ class Generator:
          self.in_paren = False
          self.grab_stagedir = False
          self.forced_character = chunk["forced_character"]
+         self.current_speaker = None
          # Set chunk title stuff
          chunk_title = [None]*13
          chunkcount = chunkcount + 1
@@ -391,7 +397,11 @@ class Generator:
             # Add in the POS filter if we got a POS
             if (current_pos != None):
                current_word_filters.append({"index": 11, "filter": str(current_pos[11]), "type": "text_match"})
-            current_word = word_markov.generateNext(current_word_order, current_word_filters)
+            word_exclusions = None
+            if self.current_speaker and not self.in_paren:
+               # Don't let anyone say their own name
+               word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
+            current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
                current_word = word_markov.generateNext(current_word_order, current_word_filters)

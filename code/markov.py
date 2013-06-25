@@ -66,7 +66,11 @@ class Markov:
    #  filtering on and the filter itself (ie what we're matching). ex:
    #   [{"index": 10, "filter": "noun", "type": "text_match"},
    #    {"index": 8, "filter": 3.0, "type": "threshold"}]
-   def generateNext(self, order, filters):
+   # -exclusions: This is an optional list of exclusions for the transition (ie words that cannot be chosen). It is given
+   #  as a list of dictionaries with the index into the line (following the brute.txt format) for what we're 
+   #  excluding and the value to exclude
+   #   [{"index": 12, "exclude": "Hamlet"}]
+   def generateNext(self, order, filters, exclusions=None):
       if not self.lines:
          return None
       # Dynamically populate cursor until it's as big as the max order
@@ -96,7 +100,19 @@ class Markov:
                else:
                   print "Bad filter type, skipping"
                   continue
-            
+            # Check to see if there are any exclusions
+            if exclusions:
+               #print "before", new_context
+               for e in exclusions:
+                  #for met_exclusion in new_context:
+                  #   print met_exclusion[e['index']],e['exclude']
+                  #testing = [met_exclusion for met_exclusion in new_context if met_exclusion[e['index']] != e['exclude']]
+                  #if testing != new_context:
+                  #   print "DIFF"
+                  #   print testing
+                  #   print new_context
+                  new_context = [met_exclusion for met_exclusion in new_context if met_exclusion[e['index']] != e['exclude']]
+               #print "after",new_context
             # Is there anything left?
             if len(new_context) > 0:
                # Yep! Randomly sample and return stuff
