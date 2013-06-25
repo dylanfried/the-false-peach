@@ -336,7 +336,7 @@
    <pinned>
       <scene>deathspeech</scene>
       <sound>TTS.inear.VOICE.aloud</sound>
-      <video>15</video>
+      <video>10</video>
       <lights>actor2</lights>
    </pinned>
    
@@ -627,7 +627,7 @@
    </pinned>
    <pinned>
       <scene>rhythm_filter</scene>
-      <video>16</video>
+      <video>15</video>
       <lights>character</lights>
       <sound>TTS.aloud.SPACE.character</sound>
    </pinned>
@@ -817,7 +817,7 @@
       <scene>letterFive</scene>
       <video>1,12</video>
       <sound>TTS.aloud.ROGUI</sound>
-      <lights>word</lights>
+      <lights>theatre</lights>
    </pinned>
    
    <pinned>
@@ -1459,9 +1459,6 @@
    </excluded>
    <excluded>
       <sound>TTS.mute.VOICE.rogui</sound>
-   </excluded>
-   <excluded>
-      <video>4</video>
    </excluded>
    <excluded>
       <video>14</video>

@@ -1,21 +1,5 @@
-<scene>
+<scene blackout="false">
 <markov>
-      <name>ActFiveSceneTwo</name>
-      <train>
-         <file>data/brute.txt</file>
-         <acts>5</acts>
-         <scenes>2</scenes>
-         <characters>STAGE</characters>
-         <pos>(,place,entrance,NEWLINE,)</pos>
-      </train>
-      <generate>
-         <finish_sent>True</finish_sent>
-         <length>10</length>
-         <k>10</k>
-      </generate>
-   </markov>
-
-   <markov>
       <name>ActFiveSceneTwo</name>
       <train>
          <file>data/brute.txt</file>
@@ -27,7 +11,7 @@
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>500</length>
+         <length>400</length>
          <k>5</k>
       </generate>
    </markov>

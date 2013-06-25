@@ -42,9 +42,17 @@
 		<characters>GHOST</characters>
       </train>
       <generate>
+               <type>threshold</type>
+               <ramp emotion="fear">
+                  <point line=-1 value=-0.5 />
+                  <point line=5 value=-0.1 />
+                  <point line=25 value=0.1 />
+                  <point line=41 value=-0.1 />
+                  <point line=45 value=-0.5 />
+               </ramp>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>100</length>
+         <length>44</length>
          <k>2</k>
       </generate>
    </markov>
@@ -96,30 +104,16 @@
          <k>1</k>
       </generate>
    </markov>
-   <markov>
-   	   <name>ghostscene</name>
-       <file>data/brute.txt</file>
-      <train>
-         <acts>1</acts>
-         <scenes>5</scenes>
-		<lines>113-190</lines>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <finish_sent>True</finish_sent>
-         <length>150</length>
-         <k>2</k>
-      </generate>
-   </markov>
 
    <markov>
    	   <name>ghostscene</name>
        <file>data/brute.txt</file>
       <train>
          <acts>1</acts>
-         <scenes>5</scenes>
-		<lines>190</lines>
+         <scenes>2</scenes>
+		<lines>258</lines>
 		<characters>STAGE</characters>
+		<pos>(,exit,)</pos>
       </train>
       <generate>
          <reset>True</reset>

@@ -14,16 +14,16 @@
    <sequence name="word">
       <scene>OneOne.xml</scene>
       <scene>ghostscene.xml</scene>
-      <scene>hamoph.xml</scene>
+      <scene>affrighted.xml</scene>
       <scene>dumb.xml</scene>
-      <scene>claudius.xml</scene>
+      <scene>kingrises.xml</scene>
       <scene>closet.xml</scene>
       <scene>MadOph.xml</scene>
       <scene>gertrude.xml</scene>
       <scene>gravedigger.xml</scene>
-      <scene>FiveTwo.xml</scene>
    </sequence>
    <sequence name="letter">
       <scene>letterFive.xml</scene>
+      <scene>FiveTwo.xml</scene>
    </sequence>
 </show>

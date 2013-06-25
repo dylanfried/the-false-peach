@@ -76,24 +76,34 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>100</length>
+         <length>50</length>
          <k>7</k>
       </generate>
    </markov>
    
-   <markov>
-      <train>
-        <file>data/brute.txt</file>
-         <acts>5</acts>
-         <scenes>1</scenes>
-		<words>30430-30435</words>
-         <characters>HAMLET</characters>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <length>6</length>
-         <k>2</k>
-   </markov>
+   <mirror>
+   	   <name>HamOph</name>
+   	   <forced_character>HAMLET</forced_character>
+   	   <train>
+   	   		<file>data/brute.txt</file>
+   	   		<selections>
+   	   			<selection>
+   	   				<acts>5</acts>
+   	   				<scenes>1</scenes>
+					<words>30430-30435</words>
+   	   			</selection>
+   	   		</selections>
+   	   	</train>
+   	   	<generate>
+   	   		<selections>
+   	   			<selection>
+   	   				<acts>5</acts>
+   	   				<scenes>1</scenes>
+					<words>30430-30435</words>
+   	   			</selection>
+   	   		</selections>
+   	 	</generate>
+   	 </mirror> 
 
    <markov>
       <train>
@@ -122,22 +132,6 @@
    		<reset>True</reset>
    		<length>15</length>
    		<k>3</k>
-   	</generate>
-   </markov>
-   
-   <markov>
-   	<train>
-   		<file>data/brute.txt</file>
-   		<acts>5</acts>
-   		<scenes>1</scenes>
-   		<lines>220</lines>
-   		<characters>STAGE</characters>
-   		<pos>(,entrance,)</pos>
-   	</train>
-   	<generate>
-   		<reset>True</reset>
-   		<length>19</length>
-   		<k>10</k>
    	</generate>
    </markov>
 </scene>

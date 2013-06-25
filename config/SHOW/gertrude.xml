@@ -82,7 +82,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>180</length>
+         <length>150</length>
          <k>1</k>
       </generate>
    </markov>
@@ -118,8 +118,14 @@
          <characters>LAERTES</characters>
       </train>
       <generate>
+               <type>threshold</type>
+         <ramp emotion="sadness">
+            <point line=-1 value=-0.5 />
+            <point line=5 value=0.1 />
+            <point line=20 value=1.3 />
+            <point line=21 value=-1.0 />
+         </ramp>
          <reset>True</reset>
-         <finish_sent>True</finish_sent>
          <length>20</length>
          <k>0</k>
       </generate>

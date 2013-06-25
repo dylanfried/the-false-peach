@@ -17,7 +17,7 @@
    	</markov>
    	
    <markov>
-   	 <name>closetletters</name>
+   	 <name>closet</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>
@@ -209,23 +209,7 @@
    	   	</generate>
    	 </markov>
 
-   	
-   <markov>
-   	 <name>closetletters</name>
-   	 <file>data/brute.txt</file>
-   	   <train>
-   	   		<acts>3</acts>
-   	   		<scenes>4</scenes>
-   	   		<lines>140-215</lines>
-   	   		<characters>HAMLET,GHOST</characters>
-   	   	</train>
-   	   	<generate>
-   	   		<reset>True</reset>
-   	   		<finish_sent>True</finish_sent>
-   	   		<length>50</length>
-   	   		<k>2</k>
-   	   	</generate>
-   	 </markov>
+
 
    <markov>
    	 <name>closetletters</name>

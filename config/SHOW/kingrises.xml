@@ -1,4 +1,4 @@
-<scene>
+<scene blackout="false">
    <markov>
    	     <file>data/brute.txt</file>
       <train>
@@ -29,5 +29,28 @@
          <k>1</k>
       </generate>
    </markov>
-</scene>
 
+      <markov>
+      <name>Claudius</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>3</scenes>
+      	<lines>36-72</lines>
+         <characters>CLAUDIUS, KING</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=11 value=1.0 />
+            <point line=21 value=-1.0 />
+            <point line=31 value=-1.0 />
+         </ramp>
+         <finish_sent>True</finish_sent>
+         <length>30</length>
+         <k>2</k>
+      </generate>
+   </markov>
+
+</scene>
