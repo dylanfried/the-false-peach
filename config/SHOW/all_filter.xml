@@ -11,7 +11,7 @@
       </train>
       <generate>
          <pattern>O </pattern>
-         <length>20</length>
+         <length>25</length>
       </generate>
    </filter>
 
@@ -130,7 +130,7 @@
       </train>
       <generate>
          <pattern>Thou </pattern>
-         <length>10</length>
+         <length>20</length>
       </generate>
    </filter>
    
@@ -147,7 +147,7 @@
       </train>
       <generate>
          <pattern>It was</pattern>
-         <length>20</length>
+         <length>30</length>
       </generate>
    </filter>
 
@@ -182,7 +182,7 @@
       </train>
       <generate>
          <pattern>Then </pattern>
-         <length>20</length>
+         <length>30</length>
       </generate>
    </filter>
    
@@ -199,7 +199,7 @@
       </train>
       <generate>
          <pattern>I doubt</pattern>
-         <length>20</length>
+         <length>30</length>
       </generate>
    </filter>
 
@@ -217,7 +217,7 @@
       </train>
       <generate>
          <pattern>I think</pattern>
-         <length>10</length>
+         <length>20</length>
       </generate>
    </filter>
    
@@ -234,7 +234,7 @@
       </train>
       <generate>
          <pattern>You do</pattern>
-         <length>10</length>
+         <length>30</length>
       </generate>
    </filter>
    
@@ -251,7 +251,7 @@
       </train>
       <generate>
          <pattern>They are</pattern>
-         <length>10</length>
+         <length>30</length>
       </generate>
    </filter>
    
@@ -268,7 +268,7 @@
       </train>
       <generate>
          <pattern>No </pattern>
-         <length>10</length>
+         <length>30</length>
       </generate>
    </filter>
    
@@ -285,6 +285,6 @@
       </train>
       <generate>
          <pattern>Speak </pattern>
-         <length>10</length>
+         <length>30</length>
       </generate>
    </filter>

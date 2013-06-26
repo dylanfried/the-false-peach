@@ -1,0 +1,110 @@
+
+ 	<filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I am </pattern>
+         <length>30</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>filter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I think</pattern>
+         <length>30</length>
+      </generate>
+   </filter>
+   
+
+	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I will </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+   
+   
+	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I never </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+   
+ 	 <filter>
+    <name>itfilter</name>
+ 	<scene_pause>1</scene_pause>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I was </pattern>
+         <length>20</length>
+      </generate>
+   </filter>
+
+   
+ <filter>
+ 	<scene_pause>3</scene_pause>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>35</length>
+      </generate>
+   </filter>
+
+   
+
+   
+ 

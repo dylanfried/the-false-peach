@@ -210,9 +210,8 @@
    	 </markov>
 
 
-
    <markov>
-   	 <name>closetletters</name>
+   	 <name>closet</name>
    	 <file>data/brute.txt</file>
    	   <train>
    	   		<acts>3</acts>

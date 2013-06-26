@@ -1,4 +1,22 @@
 <scene>
+<markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>4</acts>
+         	<scenes>5</scenes>
+			<characters>STAGE</characters>
+			<pos>(,place,entrance,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>10</length>
+         <k>10</k>
+      </generate>
+   </markov>
+
+
     <markov>
     <name>MadOph</name>
     <scene_pause>1</scene_pause>

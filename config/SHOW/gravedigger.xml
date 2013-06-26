@@ -1,7 +1,7 @@
 <scene>
    <markov>
+      		<file>data/brute.txt</file>
    	<train>
-   		<file>data/brute.txt</file>
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>1</lines>
@@ -82,7 +82,7 @@
    </markov>
    
    <mirror>
-   	   <name>HamOph</name>
+   	   <name>gravedigger</name>
    	   <forced_character>HAMLET</forced_character>
    	   <train>
    	   		<file>data/brute.txt</file>

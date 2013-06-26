@@ -1,5 +1,5 @@
 <scene blackout="false">
- <new_filter>
+ <filter>
     <name>Ofilter</name>
 	<file>data/brute.txt</file>
       <train>
@@ -13,5 +13,5 @@
          <pattern>O </pattern>
          <length>20</length>
       </generate>
-   </new_filter>
+   </filter>
 </scene>

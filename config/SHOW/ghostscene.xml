@@ -48,11 +48,12 @@
                   <point line=5 value=-0.1 />
                   <point line=25 value=0.1 />
                   <point line=41 value=-0.1 />
-                  <point line=45 value=-0.5 />
+                  <point line=61 value=-0.5 />
+                  <point line=65 value=0.1 />
                </ramp>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>44</length>
+         <length>64</length>
          <k>2</k>
       </generate>
    </markov>
