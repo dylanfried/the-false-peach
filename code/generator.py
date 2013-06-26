@@ -401,6 +401,8 @@ class Generator:
             if self.current_speaker and not self.in_paren:
                # Don't let anyone say their own name
                word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
+               if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
+                  word_exclusions.append({"index":12,"exclude":"lord"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
