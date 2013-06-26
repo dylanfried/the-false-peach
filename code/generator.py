@@ -58,6 +58,8 @@ class Generator:
       self.forced_character = None
       # Keep track of who the current speaker is
       self.current_speaker = None
+      # Keep track of how many times in a row this speaker has been chosen
+      self.current_speaker_count = 0
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -128,6 +130,14 @@ class Generator:
             break
          current_order = order_ramp[i]["order"]
       return current_order
+   
+   # Function to keep track of speaker metadata
+   def change_speaker(self,new_speaker):
+      if new_speaker == self.current_speaker:
+         self.current_speaker_count += 1
+      else:
+         self.current_speaker = new_speaker
+         self.current_speaker_count = 1
    
    # This is a helper method that takes care of polishing text before
    # adding it to the generated text. Mostly, it keeps track of
@@ -202,7 +212,7 @@ class Generator:
          if self.forced_character:
             next_word[-1] = self.forced_character
          self.output.append(next_word)
-         self.current_speaker = next_word[-1]
+         self.change_speaker(next_word[-1])
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
          #set the has first character to true.
@@ -226,7 +236,7 @@ class Generator:
          # to that one
          if self.forced_character:
             next_word[-1] = self.forced_character
-         self.current_speaker = next_word[-1]
+         self.change_speaker(next_word[-1])
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
@@ -249,7 +259,7 @@ class Generator:
             if self.forced_character:
                insert_speaker[-1] = self.forced_character
             self.output.append(insert_speaker)
-            self.current_speaker = insert_speaker[-1]
+            self.change_speaker(insert_speaker[-1])
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -342,6 +352,7 @@ class Generator:
          self.grab_stagedir = False
          self.forced_character = chunk["forced_character"]
          self.current_speaker = None
+         self.current_speaker_count = 0
          # Set chunk title stuff
          chunk_title = [None]*13
          chunkcount = chunkcount + 1
@@ -403,6 +414,9 @@ class Generator:
                word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
                if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
                   word_exclusions.append({"index":12,"exclude":"lord"})
+               # Don't let the same character be chosen too many times in a row
+               if self.current_speaker_count and self.current_speaker_count > 4:
+                  word_exclusions.append({"index":12,"exclude":self.current_speaker})
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
