@@ -41,6 +41,8 @@ class Generator:
       # grab_stagedir will be set if the last word was an open
       # paren and we need to grab the stagedir from the next word
       self.grab_stagedir = False
+      # Also, remember the last stagedir label in case we have to split up stage directions
+      self.last_stagedir_label = None
       # Variable to keep track of words as we generate them
       self.output = []
       # Variable to keep track of whether we have a first character for 
@@ -160,6 +162,7 @@ class Generator:
          insert_stagedir = [None]*13
          insert_stagedir[-1] = next_word[-2]
          self.output.append(insert_stagedir)
+         self.last_stagedir_label = next_word[-2]
          # No longer need to grab stage direction to insert
          self.grab_stagedir = False
       # Check to see if we're entering a stage direction
@@ -315,7 +318,10 @@ class Generator:
                insert_paren[-2] = " ("
                insert_paren[-1] = " ("
                self.output.append(insert_paren)
-               self.grab_stagedir = True
+               # Insert the last stagedir label here
+               insert_label = [None]*13
+               insert_label[-1] = self.last_stagedir_label
+               self.output.append(insert_label)
             self.line_length = 0
             self.current_line_prose = 0
             self.current_speaker_line_count += 1
