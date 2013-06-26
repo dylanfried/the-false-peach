@@ -1,6 +1,7 @@
 import copy
 import pprint
 import random
+import re
 
 # This class will house the inner workings of the Markov chains. 
 # It should provide the functionality for both the POS Markov chain 
@@ -111,7 +112,7 @@ class Markov:
                   #   print "DIFF"
                   #   print testing
                   #   print new_context
-                  new_context = [met_exclusion for met_exclusion in new_context if met_exclusion[e['index']] != e['exclude']]
+                  new_context = [met_exclusion for met_exclusion in new_context if not re.match(".*" + e['exclude'] + ".*",met_exclusion[e['index']], re.IGNORECASE)]
                #print "after",new_context
             # Is there anything left?
             if len(new_context) > 0:

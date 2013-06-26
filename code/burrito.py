@@ -1249,6 +1249,10 @@ class Burrito:
          one_word_line = trial.find("one_word_line")
          if one_word_line: one_word_line = one_word_line.string == "True"
          else: one_word_line = None
+         if "semantic_logic" in scene.attrs and scene['semantic_logic'] in ["True","true","Yes","yes","t","y","1"]:
+            chunk['semantic_logic'] = True
+         else:
+            chunk['semantic_logic'] = False
          chunk['one_word_line'] = one_word_line
          chunk['chunk_type'] = trial.name
          chunk['finish_sentence'] = finish_sentence

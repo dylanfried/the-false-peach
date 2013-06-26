@@ -30,7 +30,8 @@ class Generator:
    #                                                            {"emotion_level":2.0,"word_number":10}]}],
    #   "word_pause": None/3,
    #   "reset" : True/False,
-   #   "forced_character": "HAMLET"/None}
+   #   "forced_character": "HAMLET"/None,
+   #   "semantic_logic":True/False}
    def __init__(self, chunks):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
@@ -422,24 +423,25 @@ class Generator:
             if (current_pos != None):
                current_word_filters.append({"index": 11, "filter": str(current_pos[11]), "type": "text_match"})
             word_exclusions = None
-            if self.current_speaker and not self.in_paren:
-               # Don't let anyone say their own name
-               word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
-               # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies"
-               if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
-                  (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
-                  word_exclusions.append({"index":12,"exclude":"lord"})
-               if self.current_speaker == "HAMLET" and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
-                  word_exclusions.append({"index":12,"exclude":"ladies"})
-               # Don't let Laertes say "My brother"
-               if self.current_speaker == "LAERTES" and self.output[-1][-1].lower() == "my":
-                  word_exclusions.append({"index":12,"exclude":"brother"})
-               # Don't let the same character be chosen too many times in a row
-               if self.current_speaker_count and self.current_speaker_count >= 2:
-                  word_exclusions.append({"index":12,"exclude":self.current_speaker})
-               # Don't let minor characters have too many lines in a row
-               if self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters:
-                  current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
+            if 'semantic_logic' in chunk and chunk['semantic_logic']:
+               if self.current_speaker and not self.in_paren:
+                  # Don't let anyone say their own name
+                  word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
+                  # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies"
+                  if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
+                     (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
+                     word_exclusions.append({"index":12,"exclude":"lord"})
+                  if self.current_speaker == "HAMLET" and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
+                     word_exclusions.append({"index":12,"exclude":"ladies"})
+                  # Don't let Laertes say "My brother"
+                  if self.current_speaker == "LAERTES" and self.output[-1][-1].lower() == "my":
+                     word_exclusions.append({"index":12,"exclude":"brother"})
+                  # Don't let the same character be chosen too many times in a row
+                  if self.current_speaker_count and self.current_speaker_count >= 2:
+                     word_exclusions.append({"index":12,"exclude":self.current_speaker})
+                  # Don't let minor characters have too many lines in a row
+                  if self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters:
+                     current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
