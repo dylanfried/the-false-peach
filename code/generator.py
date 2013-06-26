@@ -64,8 +64,8 @@ class Generator:
       self.current_speaker_count = 0
       # Keep track of how many words the current character has said
       self.current_speaker_line_count = 0
-      # List of minor characters
-      self.minor_characters = []
+      # List of major characters
+      self.major_characters = ['HAMLET','GERTRUDE','GHOST','KING','HORATIO','OPHELIA']
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -427,14 +427,18 @@ class Generator:
                word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
                # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies"
                if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
-                  (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured") or \
-                  (self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of")):
+                  (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
+                  word_exclusions.append({"index":12,"exclude":"lord"})
+               if self.current_speaker == "HAMLET" and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
                   word_exclusions.append({"index":12,"exclude":"ladies"})
+               # Don't let Laertes say "My brother"
+               if self.current_speaker == "LAERTES" and self.output[-1][-1].lower() == "my":
+                  word_exclusions.append({"index":12,"exclude":"brother"})
                # Don't let the same character be chosen too many times in a row
-               if self.current_speaker_count and self.current_speaker_count > 4:
+               if self.current_speaker_count and self.current_speaker_count >= 2:
                   word_exclusions.append({"index":12,"exclude":self.current_speaker})
                # Don't let minor characters have too many lines in a row
-               if self.current_speaker_line_count > 4 and self.current_speaker in self.minor_characters:
+               if self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters:
                   current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
