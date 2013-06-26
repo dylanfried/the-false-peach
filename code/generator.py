@@ -60,6 +60,10 @@ class Generator:
       self.current_speaker = None
       # Keep track of how many times in a row this speaker has been chosen
       self.current_speaker_count = 0
+      # Keep track of how many words the current character has said
+      self.current_speaker_line_count = 0
+      # List of minor characters
+      self.minor_characters = []
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -138,6 +142,7 @@ class Generator:
       else:
          self.current_speaker = new_speaker
          self.current_speaker_count = 1
+         self.current_speaker_line_count = 0
    
    # This is a helper method that takes care of polishing text before
    # adding it to the generated text. Mostly, it keeps track of
@@ -283,6 +288,7 @@ class Generator:
             # adding a newline, so reset line length
             self.line_length = 0
             self.current_line_prose = 0
+            self.current_speaker_line_count += 1
          self.line_length += 1
          if next_word[-3] == "ab":
             self.current_line_prose += 1
@@ -312,6 +318,7 @@ class Generator:
                self.grab_stagedir = True
             self.line_length = 0
             self.current_line_prose = 0
+            self.current_speaker_line_count += 1
          #if self.line_length > 20 and re.match(".*[,:;]\s*$",next_word[-1]) and not self.in_paren:
          #   # it is, let's put a NEWLINE in and reset the counter
          #   insert_newline = [None]*12
@@ -417,6 +424,9 @@ class Generator:
                # Don't let the same character be chosen too many times in a row
                if self.current_speaker_count and self.current_speaker_count > 4:
                   word_exclusions.append({"index":12,"exclude":self.current_speaker})
+               # Don't let minor characters have too many lines in a row
+               if self.current_speaker_line_count > 4 and self.current_speaker in self.minor_characters:
+                  current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
