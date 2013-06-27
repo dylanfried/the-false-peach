@@ -32,7 +32,7 @@ class Generator:
    #   "reset" : True/False,
    #   "forced_character": "HAMLET"/None,
    #   "semantic_logic":True/False}
-   def __init__(self, chunks):
+   def __init__(self, chunks,start_characters=[]):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
       # generation
@@ -67,6 +67,51 @@ class Generator:
       self.current_speaker_line_count = 0
       # List of major characters
       self.major_characters = ['HAMLET','GERTRUDE','GHOST','KING','HORATIO','OPHELIA']
+      # Dictionary mapping all character names to the correct characters
+      self.characters = {"HAMLET"  : ["HAMLET"],
+                         "GERTRUDE": ["GERTRUDE"],
+                         "QUEEN":["GERTRUDE"],
+                         "GHOST": ["GHOST"],
+                         "KING": ["KING"],
+                         "HORATIO": ["HORATIO"],
+                         "MARCELLUS":["MARCELLUS"],
+                         "OPHELIA": ["OPHELIA"],
+                         "BERNARDO":["BERNARDO"],
+                         "FRANCISCO":["FRANCISCO"],
+                         "FIRST_CLOWN":["FIRST_CLOWN"],
+                         "SECOND_CLOWN":["SECOND_CLOWN"],
+                         "CLOWNS":["FIRST_CLOWN","SECOND_CLOWN"],
+                         #"MOURNERS":[],
+                         "CAPTAIN":["CAPTAIN"],
+                         "POLONIUS":["POLONIUS"],
+                         "LAERTES":["LAERTES"],
+                         "VOLTIMAND":["VOLTIMAND"],
+                         "CORNELIUS":["CORNELIUS"],
+                         #"LORDS":[], # don't need?
+                         #"ATTENDANTS":[], # don't need?
+                         "REYNALDO":["REYNALDO"],
+                         "ROSENCRANTZ":["ROSENCRANTZ"],
+                         "GUILDENSTERN":["GUILDENSTERN"],
+                         "PLAYERS":["FIRST_PLAYER","PLAYER_QUEEN","PLAYER_KING"],
+                         "PROLOGUE":["PROLOGUE"],
+                         "LUCIANUS":["LUCIANUS"],
+                         #"ATTENDED":[], # don't need?
+                         "FORTINBRAS":["FORTINBRAS"],
+                         #"SOLDIERS":[], # don't need?
+                         #"OTHERS":[],
+                         "GENTLEMAN":["GENTLEMAN"],
+                         "DANES":["DANES"],
+                         "SERVANT":["SERVANT"],
+                         "SAILORS":["SAILOR"],
+                         "MESSENGER":["MESSENGER"],
+                         "PRIESTS":["PRIEST"],
+                         #"TRAINS":[],
+                         "OSRIC":["OSRIC"],
+                         "LORD":["LORD"],
+                         "AMBASSADORS":["FIRST_AMBASSADOR"]
+                         }
+      # List of all current characters in scene
+      self.current_characters = start_characters
    
    #Get current filter takes a chunk.
    # -chunk: Is the data structure described in the comments for __init__
@@ -139,13 +184,56 @@ class Generator:
       return current_order
    
    # Function to keep track of speaker metadata
-   def change_speaker(self,new_speaker):
+   def change_speaker(self,new_speaker,current_chunk):
+      if current_chunk['semantic_logic'] and new_speaker not in self.current_characters:
+         self.add_entrance_exit(new_speaker, "entrance")
+         self.current_characters.append(new_speaker)
       if new_speaker == self.current_speaker:
          self.current_speaker_count += 1
       else:
          self.current_speaker = new_speaker
          self.current_speaker_count = 1
          self.current_speaker_line_count = 0
+         
+   # Function to add an entrance to the output
+   # entrance_exit indicates whether this is
+   #  an entrance or an exit
+   def add_entrance_exit(self,new_speaker,entrance_exit="entrance"):
+      insert_entrance = [None]*13
+      insert_entrance[-2] = " ( "
+      insert_entrance[-1] = " ( "
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      if entrance_exit == "entrance":
+         insert_entrance[-1] = "entrance"
+      else:
+         insert_entrance[-1] = "exit"
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      if entrance_exit == "entrance":
+         insert_entrance[-1] = "Enter"
+      else:
+         insert_entrance[-1] = "Exit"
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      insert_entrance[-1] = new_speaker
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      insert_entrance[-1] = " . "
+      insert_entrance[-2] = " . "
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      insert_entrance[-2] = " ) "
+      insert_entrance[-1] = " ) "
+      self.output.append(insert_entrance)
+      insert_entrance = [None]*13
+      insert_entrance[-2] = "NEWLINE"
+      insert_entrance[-1] = "NEWLINE"
+      self.output.append(insert_entrance)
+      #if entrance_exit == "entrance":
+      #   print "ADDING", new_speaker
+      #else:
+      #   print "REMOVING", new_speaker
    
    # This is a helper method that takes care of polishing text before
    # adding it to the generated text. Mostly, it keeps track of
@@ -199,6 +287,32 @@ class Generator:
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
             self.in_paren = False
+            # If we're leaving an exit, make sure that we have a character speaking
+            # this is to ensure that we don't have the speaker exit without
+            # reentering
+            if self.last_stagedir_label and self.last_stagedir_label in ['exit'] and self.current_speaker:
+               insert_newline = [None]*13
+               insert_newline[-2] = "NEWLINE"
+               insert_newline[-1] = "NEWLINE"
+               self.output.append(insert_newline)
+               insert_speaker = [None]*13
+               insert_speaker[-2] = "SPEAKER"
+               insert_speaker[-1] = self.current_speaker
+               # If we have a forced character, change this speaker
+               # to that one
+               if self.forced_character:
+                  insert_speaker[-1] = self.forced_character
+               self.change_speaker(insert_speaker[-1], current_chunk)
+               self.output.append(insert_speaker)
+               insert_newline = [None]*13
+               insert_newline[-2] = "NEWLINE"
+               insert_newline[-1] = "NEWLINE"
+               self.output.append(insert_newline)
+               # starting new line, reset line length
+               self.line_length = 0
+               self.current_line_prose = 0
+               # we now have a first character
+               self.first_character = True
       # Check to see if we've got a speaker now and 
       # we're in a stage direction
       elif next_word[-2] == "SPEAKER" and self.in_paren:
@@ -220,8 +334,8 @@ class Generator:
          # to that one
          if self.forced_character:
             next_word[-1] = self.forced_character
+         self.change_speaker(next_word[-1], current_chunk)
          self.output.append(next_word)
-         self.change_speaker(next_word[-1])
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
          #set the has first character to true.
@@ -245,7 +359,7 @@ class Generator:
          # to that one
          if self.forced_character:
             next_word[-1] = self.forced_character
-         self.change_speaker(next_word[-1])
+         self.change_speaker(next_word[-1], current_chunk)
          self.output.append(next_word)
          self.output.append(insert_newline)
          self.line_length = 0
@@ -267,8 +381,8 @@ class Generator:
             # to that one
             if self.forced_character:
                insert_speaker[-1] = self.forced_character
+            self.change_speaker(insert_speaker[-1], current_chunk)
             self.output.append(insert_speaker)
-            self.change_speaker(insert_speaker[-1])
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -280,6 +394,70 @@ class Generator:
             self.first_character = True
          # Otherwise, we just have a normal word and we want to add it
          self.output.append(next_word)
+         # Semantic logic: keep track of characters
+         if 'semantic_logic' in current_chunk and current_chunk['semantic_logic']:
+            if self.in_paren and self.last_stagedir_label and self.last_stagedir_label in ['entrance','place']:
+               # Keep track of who's entering
+               who = next_word[-1].strip().upper()
+               who = re.sub("_AND_"," ",who)
+               # If we have multiple characters, split them up
+               who = who.split(" ")
+               for w in who:
+                  if w in self.characters:
+                     if w in self.current_characters and self.last_stagedir_label == "entrance":
+                        # This is a name that doesn't map to multiple characters and this
+                        # character is already present. We don't want to let them enter again
+                        # Let's go back and make them exit first
+                        #print w, "ALREADY PRESENT, CAN'T ENTER"
+                        # Pop things off the output until we get to the beginning of this entrance
+                        # and insert an exit
+                        stack = []
+                        stack.append(self.output.pop())
+                        while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                           stack.append(self.output.pop())
+                        # Now we can add our exit
+                        self.add_entrance_exit(w, "exit")
+                        # Put back the stuff we popped off
+                        stack.reverse()
+                        self.output += stack
+                     else:
+                        # Either this name maps to multiple characters, or this character isn't already
+                        # present
+                        self.current_characters += [c for c in self.characters[w] if c not in self.current_characters]
+               #print "ENTRANCE", self.current_characters
+            if self.in_paren and self.last_stagedir_label and self.last_stagedir_label in ['exit']:
+               # Keep track of who's exiting
+               who = next_word[-1].strip().upper()
+               who = re.sub("_AND_"," ",who)
+               # If we have multiple characters, split them up
+               who = who.split(" ")
+               for w in who:
+                  if w in self.characters:
+                     for who_character in self.characters[w]:
+                        if who_character in self.current_characters:
+                           #print "REMOVING", who_character
+                           self.current_characters.remove(who_character)
+                        else:
+                           #print "CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                           # Let's force this character to enter so that they can exit
+                           # Pop things off the output until we get to the beginning of this entrance
+                           # and insert an exit
+                           stack = []
+                           stack.append(self.output.pop())
+                           while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                              stack.append(self.output.pop())
+                           # Now we can add our entrance
+                           self.add_entrance_exit(who_character, "entrance")
+                           # Put back the stuff we popped off
+                           stack.reverse()
+                           self.output += stack
+                  if w == "EXEUNT":
+                     # Get rid of all characters
+                     self.current_characters = []
+                  #if w == "EXIT" and self.current_speaker and self.current_speaker in self.current_characters:
+                  #   self.current_characters.remove(self.current_speaker)
+                     # Get rid of the last speaking character
+               #print "EXIT", self.current_characters
          if current_chunk['one_word_line'] and next_word[-1] != "NEWLINE":
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"

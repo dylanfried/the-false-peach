@@ -196,6 +196,8 @@ class Burrito:
       scene['strategy'] = ""
       # Reset the scene line container and word count
       scene_lines = []
+      # Remember characters across chunks within a scene
+      current_characters = []
       for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml","rhythm_filter","new_filter"]):
          if not scene['strategy']:
             scene['strategy'] = trial.name
@@ -1270,11 +1272,12 @@ class Burrito:
          chunks = []
          chunks.append(chunk)
          
-         gen = Generator(chunks)
+         gen = Generator(chunks,current_characters)
          if scene_lines:
             scene_lines += gen.generate()
          else:
             scene_lines = gen.generate()
+         current_characters = gen.current_characters
       
       # Put in some transition/chaining stuff between chunks
       #if scene['strategy'] == "markov" and self.scenes and self.scenes[-1].strategy == "markov":
