@@ -605,15 +605,26 @@ class Generator:
                if self.current_speaker and not self.in_paren:
                   # Don't let anyone say their own name
                   word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
-                  # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies"
+                  # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies" or "O gentle son"
                   if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
                      (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
                      word_exclusions.append({"index":12,"exclude":"lord"})
                   if self.current_speaker == "HAMLET" and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
                      word_exclusions.append({"index":12,"exclude":"ladies"})
+                  if self.current_speaker == "HAMLET" and self.output[-2][-1] == "O" and self.output[-1][-1].lower() == "gentle":
+                     word_exclusions.append({"index":12,"exclude":"son"})
                   # Don't let Laertes say "My brother"
                   if self.current_speaker == "LAERTES" and self.output[-1][-1].lower() == "my":
                      word_exclusions.append({"index":12,"exclude":"brother"})
+                  # Don't let anyone except for Hamlet say "my uncle"
+                  if self.current_speaker != "HAMLET" and self.output[-1][-1].lower() == "my":
+                     word_exclusions.append({"index":12,"exclude":"uncle"})
+                  # Don't let the ghost say uncle
+                  if self.current_speaker == "GHOST":
+                     word_exclusions.append({"index":12,"exclude":"uncle"})
+                  # Don't let Gertrude say "my mother"
+                  if self.current_speaker == "GERTRUDE" and self.output[-1][-1].lower() == "my":
+                     word_exclusions.append({"index":12,"exclude":"mother"})
                   # Don't let the same character be chosen too many times in a row
                   if self.current_speaker_count and self.current_speaker_count >= 2:
                      word_exclusions.append({"index":12,"exclude":self.current_speaker})
