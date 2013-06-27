@@ -185,7 +185,7 @@ class Generator:
    
    # Function to keep track of speaker metadata
    def change_speaker(self,new_speaker,current_chunk):
-      if current_chunk['semantic_logic'] and new_speaker not in self.current_characters:
+      if current_chunk['semantic_logic'] and new_speaker not in self.current_characters and new_speaker != "ALL":
          self.add_entrance_exit(new_speaker, "entrance")
          self.current_characters.append(new_speaker)
       if new_speaker == self.current_speaker:
@@ -377,6 +377,31 @@ class Generator:
             insert_speaker = [None]*13
             insert_speaker[-2] = "SPEAKER"
             insert_speaker[-1] = next_word[4].upper()
+            # If we have a forced character, change this speaker
+            # to that one
+            if self.forced_character:
+               insert_speaker[-1] = self.forced_character
+            self.change_speaker(insert_speaker[-1], current_chunk)
+            self.output.append(insert_speaker)
+            insert_newline = [None]*13
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            # starting new line, reset line length
+            self.line_length = 0
+            self.current_line_prose = 0
+            # we now have a first character
+            self.first_character = True
+         # If there's a current speaker who's not currently in the scene, make sure
+         # to put a speaker in so they get added to the scene
+         if self.current_speaker and self.current_speaker not in self.current_characters and not self.in_paren and next_word[4] != "Stage" and self.current_speaker != "ALL":
+            insert_newline = [None]*13
+            insert_newline[-2] = "NEWLINE"
+            insert_newline[-1] = "NEWLINE"
+            self.output.append(insert_newline)
+            insert_speaker = [None]*13
+            insert_speaker[-2] = "SPEAKER"
+            insert_speaker[-1] = self.current_speaker
             # If we have a forced character, change this speaker
             # to that one
             if self.forced_character:
