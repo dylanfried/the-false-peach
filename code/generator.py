@@ -653,6 +653,7 @@ class Generator:
       string_version = re.sub("(ho ho )+"," ho ho ",string_version)
       string_version = re.sub("(nonny nonny )+"," nonny nonny ",string_version)
       string_version = re.sub("(a-down a-down )+"," nonny nonny ",string_version)
+      string_version = re.sub("(\(\s*\))","",string_version)
       string_version = re.sub("( NEWLINE)+"," NEWLINE",string_version)
       # Get rid of quotation marks
       string_version = re.sub("\"\s*","",string_version)
