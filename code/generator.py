@@ -31,7 +31,8 @@ class Generator:
    #   "word_pause": None/3,
    #   "reset" : True/False,
    #   "forced_character": "HAMLET"/None,
-   #   "semantic_logic":True/False}
+   #   "semantic_logic":True/False,
+   #   "max_line_length":Integer/not provided}
    def __init__(self, chunks,start_characters=[]):
       self.chunks = chunks
       # Variable to keep track of whether we're inside parentheses in text
@@ -507,10 +508,14 @@ class Generator:
          # For poetry, we want to give the line a chance to end itself.
          # For the dumb show, special case: break on any punctuation except commas
          #  whenever. Break on commas after 9 words.
+         if "max_line_length" in current_chunk:
+            max_line_length = current_chunk['max_line_length']
+         else:
+            max_line_length = 17
          if self.line_length > 0 and \
             ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or \
             (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and ((self.line_length > 4 and re.match(".*[,]\s*$",next_word[-1])) or (re.match(".*[.?!:;]\s*$",next_word[-1])))) or \
-            ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+            ((self.line_length > max_line_length or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
 
             if self.in_paren:
                insert_paren = [None]*13

@@ -1261,6 +1261,9 @@ class Burrito:
             chunk['semantic_logic'] = True
          else:
             chunk['semantic_logic'] = False
+         max_line_length = trial.find("max_line_length")
+         if max_line_length: 
+            chunk['max_line_length'] = int(max_line_length.string)
          chunk['one_word_line'] = one_word_line
          chunk['chunk_type'] = trial.name
          chunk['finish_sentence'] = finish_sentence

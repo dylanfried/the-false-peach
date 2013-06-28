@@ -125,6 +125,7 @@
          	<characters>HAMLET</characters>
       </train>
       <generate>
+         <max_line_length>25</max_line_length>
             	<selections>
    	   		<selection>
                     <acts>5</acts>
@@ -145,6 +146,7 @@
          	<characters>HAMLET</characters>
       </train>
       <generate>
+         <max_line_length>25</max_line_length>
             	<selections>
    	   		<selection>
                     <acts>5</acts>
@@ -167,6 +169,7 @@
          <characters>HAMLET</characters>
       </train>
       <generate>
+         <max_line_length>25</max_line_length>
          <reset>True</reset>
          <length>20</length>
          <k>10</k>
