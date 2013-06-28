@@ -986,6 +986,8 @@ class Burrito:
             random.shuffle(length_lines)
             length_lines.sort(key=lambda line: len(line['line']))
             length_lines.reverse()
+            # Make sure that we end with "Ha!"
+            length_lines.sort(key=lambda line: line['line'] == "Ha ! " and line['speaker'] == "Hamlet")
             trial_lines += length_lines
             raw_scene_lines = trial_lines
                
