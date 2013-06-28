@@ -14,30 +14,6 @@
       </generate>
    </markov>
    
-   <markov>
-   	<name>ActOneSceneOne</name>
-      <train>
-         <file>data/brute.txt</file>
-         <selections>
-         	<selection>
-         		<acts>1</acts>
-         		<scenes>1</scenes>
-         		<lines>1-67</lines>
-         	</selection>
-         	<selection>
-         		<acts>1</acts>
-         		<scenes>1</scenes>
-         		<lines>128-180</lines>
-         	</selection>
-         </selections>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <length>120</length>
-         <k>4</k>
-         <finish_sent>True</finish_sent>
-      </generate>
-   </markov>
    
    <markov>
    	<name>ActOneSceneOne</name>
@@ -154,21 +130,7 @@
          <k>0</k>
       </generate>
    </markov>
-  <markov>
-   	<name>ActOneSceneOne</name>
-      <train>
-         <file>data/brute.txt</file>
-         		<acts>1</acts>
-         		<scenes>1</scenes>
-         		<lines>175</lines>
-         		<characters>STAGE</characters>
-      </train>
-      <generate>
-         <finish_sent>True</finish_sent>
-         <reset>True</reset>
-         <length>3</length>
-         <k>10</k>
-      </generate>
-   </markov>
+   
+   
 </scene>
 

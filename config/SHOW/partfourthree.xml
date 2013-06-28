@@ -1,4 +1,5 @@
-<!--Gertrude,MadOph,Clowns-->
+<!--Gertrude,Clowns-->
+<scene semantic_logic="True">
 
    <markov>
       	<file>data/brute.txt</file>
@@ -28,8 +29,8 @@
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>19</length>
-   		<k>8</k>
+   		<length>30</length>
+   		<k>10</k>
    	</generate>
    </markov> 
          		
@@ -40,19 +41,6 @@
        <file>data/brute.txt</file>
        <train>
        	<selections>
-       		<selection>
-       			<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>45-73</lines>
-				<characters>OPHELIA</characters>
-			</selection>
-			<selection>
-			    <acts>4</acts>
-         		<scenes>7</scenes>
-         		<lines>161</lines>
-         		<characters>STAGE</characters>
-         		<pos>(,place,entrance,NEWLINE,)</pos>
-         	</selection>
          	<selection>
          	   <acts>4</acts>
          		<scenes>7</scenes>
@@ -93,7 +81,13 @@
          	<selection>
          	   <acts>5</acts>
          		<scenes>1</scenes>
-				<lines>122-163</lines>
+				<lines>122-145</lines>
+         		<characters>FIRST_CLOWN,HAMLET,HORATIO,STAGE</characters>
+         	</selection>
+         	<selection>
+         	   <acts>5</acts>
+         		<scenes>1</scenes>
+				<lines>148-163</lines>
          		<characters>FIRST_CLOWN,HAMLET,HORATIO,STAGE</characters>
          	</selection>
          	<selection>
@@ -120,15 +114,40 @@
    				<lines>272-278</lines>
    				<characters>STAGE,HAMLET,KING,CLAUDIUS</characters>
    			</selection>
+   			<selection>
+   				<acts>5</acts>
+   				<scenes>1</scenes>
+   				<lines>287-291</lines>
+   				<characters>GERTRUDE</characters>
+   			</selection>
          </selections>
       </train>
       <generate>
-         <reset>True</reset>
+      	 <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>1000</length>
          <k>2</k>
       </generate>
    </markov>
    
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>1</scenes>
+		<lines>175</lines>
+		<characters>STAGE</characters>
+		<pos>(,exit,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
    
+   
+</scene>
   

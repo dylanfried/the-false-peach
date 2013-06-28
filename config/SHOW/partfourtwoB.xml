@@ -1,35 +1,31 @@
 <!--HamOph,Claudius,kingrises,Closet-->
 <scene semantic_logic="True">
+   <characters_on_stage>HAMLET,CLAUDIUS</characters_on_stage>
 
+   
    <markov>
-   	   <name>partfour</name>
+   	   <name>parttwo</name>
        <file>data/brute.txt</file>
        <train>
        <selections>
 			<selection>
-			<selection>
-		        <acts>3</acts>
-         		<scenes>1</scenes>
-         		<lines>88-90</lines>
-         		<characters>HAMLET, OPHELIA</characters>
-         	</selection>
-         	<selection>
-         	    <acts>3</acts>
-         		<scenes>1</scenes>
-         		<lines>91-163</lines>
-         		<characters>HAMLET, OPHELIA</characters>
-         	</selection>
          	<selection>
          		<acts>3</acts>
          		<scenes>2</scenes>
          		<lines>60-79</lines>
-         		<characters>HAMLET, OPHELIA</characters>
+         		<characters>HAMLET</characters>
          	</selection>
             <selection>
          		<acts>3</acts>
          		<scenes>2</scenes>
-         		<lines>114-261</lines>
-         		<characters>HAMLET, OPHELIA</characters>
+         		<lines>96</lines>
+         		<characters>KING</characters>
+         	</selection>
+            <selection>
+         		<acts>3</acts>
+         		<scenes>2</scenes>
+         		<lines>140-147</lines>
+         		<characters>HAMLET,OPHELIA</characters>
          	</selection>
          	<selection>
          		<acts>3</acts>
@@ -46,7 +42,7 @@
          	   <acts>3</acts>
          		<scenes>2</scenes>
          		<lines>264-267</lines>
-         		<characters>HAMLET,KING,GERTRUDE,ALL,OPHELIA</characters>
+         		<characters>KING,GERTRUDE,ALL,OPHELIA</characters>
          	</selection>
          	<selection>
          	   <acts>3</acts>
@@ -130,9 +126,31 @@
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>1000</length>
+         <length>400</length>
          <k>2</k>
       </generate>
    </markov>
+   
+   
+   
+   <markov>
+   	   <name>exeunt</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>1</scenes>
+		<lines>175</lines>
+		<characters>STAGE</characters>
+		<pos>(,exit,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
+   
    
 </scene>

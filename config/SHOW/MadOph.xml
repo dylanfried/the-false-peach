@@ -73,7 +73,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>300</length>
+         <length>200</length>
          <k>2</k>
       </generate>
    </markov>
@@ -87,14 +87,20 @@
          		<acts>4</acts>
          		<scenes>5</scenes>
          		<lines>2-218</lines>
-				<characters>OPHELIA,STAGE</characters>
+				<characters>OPHELIA</characters>
 			</selection>
+			<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>2-218</lines>
+         		<characters>STAGE</characters>
+         		<pos>(,voice,)</pos>
 		</selections>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>300</length>
+         <length>200</length>
          <k>2</k>
       </generate>
    </markov> 
@@ -141,7 +147,7 @@
                   <point line=201 value=-1.0 />
                </ramp>
          <finish_sent>True</finish_sent>
-         <length>200</length>
+         <length>150</length>
          <k>2</k>
       </generate>
    </markov>

@@ -1,12 +1,54 @@
 <!--HamOph,Claudius,kingrises,Closet-->
 <scene semantic_logic="True">
 
+
+
+<markov>
+    <name>parttwo</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>3</acts>
+         	<scenes>2</scenes>
+			<characters>STAGE</characters>
+			<pos>(,place,entrance,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>5</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
+<markov>
+    <name>parttwo</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>3</acts>
+         	<scenes>2</scenes>
+         	<lines>95</lines>
+			<characters>STAGE</characters>
+			<pos>(,sound,entrance,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>15</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
    <markov>
-   	   <name>partfour</name>
+   	   <name>parttwo</name>
        <file>data/brute.txt</file>
        <train>
        <selections>
 			<selection>
+		        <acts>1</acts>
+         		<scenes>2</scenes>
+         		<lines>1-16</lines>
+         		<characters>KING</characters>
+         	</selection>
 			<selection>
 		        <acts>3</acts>
          		<scenes>1</scenes>
@@ -28,8 +70,14 @@
             <selection>
          		<acts>3</acts>
          		<scenes>2</scenes>
+         		<lines>96</lines>
+         		<characters>KING</characters>
+         	</selection>
+            <selection>
+         		<acts>3</acts>
+         		<scenes>2</scenes>
          		<lines>114-261</lines>
-         		<characters>HAMLET, OPHELIA</characters>
+         		<characters>HAMLET,OPHELIA</characters>
          	</selection>
          	<selection>
          		<acts>3</acts>
@@ -134,5 +182,7 @@
          <k>2</k>
       </generate>
    </markov>
+   
+   
    
 </scene>
