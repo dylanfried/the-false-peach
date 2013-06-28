@@ -1,6 +1,6 @@
 <!--HamOph,Claudius,kingrises,Closet-->
 <scene semantic_logic="True">
-   <characters_on_stage>HAMLET,CLAUDIUS</characters_on_stage>
+
 
    
    <markov>
@@ -37,12 +37,7 @@
 			    <acts>3</acts>
          		<scenes>2</scenes>
          		<lines>262-267</lines>
-         	</selection>
-         	<selection>
-         	   <acts>3</acts>
-         		<scenes>2</scenes>
-         		<lines>264-267</lines>
-         		<characters>KING,GERTRUDE,ALL,OPHELIA</characters>
+         		<characters>KING,POLONIUS,ALL,OPHELIA,GERTRUDE</characters>
          	</selection>
          	<selection>
          	   <acts>3</acts>
@@ -50,7 +45,6 @@
          		<lines>36-72</lines>
          		<characters>CLAUDIUS,KING</characters>
          	</selection>
-         	<selection>
          	<selection>
          	   <acts>3</acts>
          		<scenes>3</scenes>
@@ -96,6 +90,12 @@
    			<selection>
    			   	<acts>3</acts>
    	   			<scenes>4</scenes>
+   	   			<lines>87-95</lines>
+   	   			<characters>HAMLET,GERTRUDE</characters>
+   	   		</selection>
+   			<selection>
+   			   	<acts>3</acts>
+   	   			<scenes>4</scenes>
    	   			<lines>104</lines>
    	   			<characters>GERTRUDE</characters>
    	   		</selection>
@@ -105,12 +105,6 @@
    				<lines>101</lines>
    				<characters>STAGE</characters>
    			</selection>
-   	    	<selection>
-   	   			<acts>3</acts>
-   	   			<scenes>4</scenes>
-   	   			<lines>114-122</lines>
-   	   			<characters>GERTRUDE</characters>
-   	   		</selection>
    	   		<selection>
    	   			<acts>3</acts>
    	   			<scenes>4</scenes>
