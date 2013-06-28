@@ -643,7 +643,8 @@ class Generator:
                   if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
                      (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
                      word_exclusions.append({"index":12,"exclude":"lord"})
-                  if self.current_speaker == "HAMLET" and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
+                  # Don't let King say this either
+                  if self.current_speaker in ["HAMLET","KING"] and self.output[-3][-1] == "I" and self.output[-2][-1].lower() == "," and self.output[-1][-1].lower() == "of":
                      word_exclusions.append({"index":12,"exclude":"ladies"})
                   if self.current_speaker == "HAMLET" and self.output[-2][-1] == "O" and self.output[-1][-1].lower() == "gentle":
                      word_exclusions.append({"index":12,"exclude":"son"})
