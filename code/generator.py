@@ -429,26 +429,26 @@ class Generator:
                who = who.split(" ")
                for w in who:
                   if w in self.characters:
-                     if w in self.current_characters and self.last_stagedir_label == "entrance":
-                        # This is a name that doesn't map to multiple characters and this
-                        # character is already present. We don't want to let them enter again
-                        # Let's go back and make them exit first
-                        #print w, "ALREADY PRESENT, CAN'T ENTER"
-                        # Pop things off the output until we get to the beginning of this entrance
-                        # and insert an exit
-                        stack = []
-                        stack.append(self.output.pop())
-                        while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                     for c in self.characters[w]:
+                        if c in self.current_characters and self.last_stagedir_label == "entrance":
+                           # character is already present. We don't want to let them enter again
+                           # Let's go back and make them exit first
+                           # We check if it's an entrance because we don't want to make them exit
+                           # if they're just mentioned in the place
+                           #print c, "ALREADY PRESENT, CAN'T ENTER"
+                           # Pop things off the output until we get to the beginning of this entrance
+                           # and insert an exit
+                           stack = []
                            stack.append(self.output.pop())
-                        # Now we can add our exit
-                        self.add_entrance_exit(w, "exit")
-                        # Put back the stuff we popped off
-                        stack.reverse()
-                        self.output += stack
-                     else:
-                        # Either this name maps to multiple characters, or this character isn't already
-                        # present
-                        self.current_characters += [c for c in self.characters[w] if c not in self.current_characters]
+                           while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                              stack.append(self.output.pop())
+                           # Now we can add our exit
+                           self.add_entrance_exit(c, "exit")
+                           # Put back the stuff we popped off
+                           stack.reverse()
+                           self.output += stack
+                        elif c not in self.current_characters:
+                           self.current_characters.append(c)
                #print "ENTRANCE", self.current_characters
             if self.in_paren and self.last_stagedir_label and self.last_stagedir_label in ['exit']:
                # Keep track of who's exiting
