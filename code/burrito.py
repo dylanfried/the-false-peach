@@ -198,6 +198,8 @@ class Burrito:
       scene_lines = []
       # Remember characters across chunks within a scene
       current_characters = []
+      if scene.find('characters_on_stage'):
+         current_characters = scene.find('characters_on_stage').string.split(",")
       for trial in scene.findAll(["markov","mirror","skip","filter","sm_filter","letter_markov","ddop","straightdo","read_xml","rhythm_filter","new_filter"]):
          if not scene['strategy']:
             scene['strategy'] = trial.name
