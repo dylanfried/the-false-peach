@@ -977,9 +977,13 @@ class Burrito:
             trial_lines.reverse()
             length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in trial_lines] and l['length'] == 2 and l["line"].split(" ")[0].istitle() and re.match("^.*[.;?!]\s*$", l["line"]) and not re.match("^.*-.*$",l["line"])]
             random.shuffle(length_lines)
+            length_lines.sort(key=lambda line: len(line['line']))
+            length_lines.reverse()
             trial_lines += length_lines
             length_lines = [l for l in universe if l['uuid'] not in [r['uuid'] for r in trial_lines] and l['length'] == 1 and l["line"].split(" ")[0].istitle() and re.match("^.*[.;?!]\s*$", l["line"]) and not re.match("^.*-.*$",l["line"])]
             random.shuffle(length_lines)
+            length_lines.sort(key=lambda line: len(line['line']))
+            length_lines.reverse()
             trial_lines += length_lines
             raw_scene_lines = trial_lines
                
