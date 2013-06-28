@@ -290,29 +290,29 @@ class Generator:
             # If we're leaving an exit, make sure that we have a character speaking
             # this is to ensure that we don't have the speaker exit without
             # reentering
-            if self.last_stagedir_label and self.last_stagedir_label in ['exit'] and self.current_speaker:
-               insert_newline = [None]*13
-               insert_newline[-2] = "NEWLINE"
-               insert_newline[-1] = "NEWLINE"
-               self.output.append(insert_newline)
-               insert_speaker = [None]*13
-               insert_speaker[-2] = "SPEAKER"
-               insert_speaker[-1] = self.current_speaker
-               # If we have a forced character, change this speaker
-               # to that one
-               if self.forced_character:
-                  insert_speaker[-1] = self.forced_character
-               self.change_speaker(insert_speaker[-1], current_chunk)
-               self.output.append(insert_speaker)
-               insert_newline = [None]*13
-               insert_newline[-2] = "NEWLINE"
-               insert_newline[-1] = "NEWLINE"
-               self.output.append(insert_newline)
-               # starting new line, reset line length
-               self.line_length = 0
-               self.current_line_prose = 0
-               # we now have a first character
-               self.first_character = True
+            #if self.last_stagedir_label and self.last_stagedir_label in ['exit'] and self.current_speaker:
+            #   insert_newline = [None]*13
+            #   insert_newline[-2] = "NEWLINE"
+            #   insert_newline[-1] = "NEWLINE"
+            #   self.output.append(insert_newline)
+            #   insert_speaker = [None]*13
+            #   insert_speaker[-2] = "SPEAKER"
+            #   insert_speaker[-1] = self.current_speaker + " *"
+            #   # If we have a forced character, change this speaker
+            #   # to that one
+            #   if self.forced_character:
+            #      insert_speaker[-1] = self.forced_character
+            #   self.change_speaker(insert_speaker[-1], current_chunk)
+            #   self.output.append(insert_speaker)
+            #   insert_newline = [None]*13
+            #   insert_newline[-2] = "NEWLINE"
+            #   insert_newline[-1] = "NEWLINE"
+            #   self.output.append(insert_newline)
+            #   # starting new line, reset line length
+            #   self.line_length = 0
+            #   self.current_line_prose = 0
+            #   # we now have a first character
+            #   self.first_character = True
       # Check to see if we've got a speaker now and 
       # we're in a stage direction
       elif next_word[-2] == "SPEAKER" and self.in_paren:
