@@ -394,7 +394,7 @@ class Generator:
             self.first_character = True
          # If there's a current speaker who's not currently in the scene, make sure
          # to put a speaker in so they get added to the scene
-         if self.current_speaker and self.current_speaker not in self.current_characters and not self.in_paren and next_word[4] != "Stage" and self.current_speaker != "ALL":
+         if 'semantic_logic' in current_chunk and current_chunk['semantic_logic'] and self.current_speaker and self.current_speaker not in self.current_characters and not self.in_paren and next_word[4] != "Stage" and self.current_speaker != "ALL":
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
             insert_newline[-1] = "NEWLINE"
@@ -507,7 +507,11 @@ class Generator:
          # For poetry, we want to give the line a chance to end itself.
          # For the dumb show, special case: break on any punctuation except commas
          #  whenever. Break on commas after 9 words.
-         if self.line_length > 0 and ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and re.match(".*[,.?!:;]\s*$",next_word[-1])) or ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+         if self.line_length > 0 and \
+            ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or \
+            (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and ((self.line_length > 4 and re.match(".*[,]\s*$",next_word[-1])) or (re.match(".*[.?!:;]\s*$",next_word[-1])))) or \
+            ((self.line_length > 17 or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+
             if self.in_paren:
                insert_paren = [None]*13
                insert_paren[-2] = " ) "
