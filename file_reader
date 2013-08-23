@@ -1,6 +1,11 @@
 #!/bin/bash
 FILE=$1
+speed=$2
 while read line; do
 	echo $line
-	sleep 0.03
+	if [[ "$speed" == "" ]]; then
+	    sleep 0.03
+    else
+        sleep "$speed"
+    fi
 done < $FILE
