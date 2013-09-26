@@ -1,5 +1,7 @@
 from markov import Markov
 import re
+import random
+
 # This class will take care of generating a scene. Essentially, 
 # given a list where each element in the list is a set of parameters, 
 # this class will take care of instantiating the Markov objects and 
@@ -651,6 +653,13 @@ class Generator:
                      #   self.current_characters.remove(self.current_speaker)
                         # Get rid of the last speaking character
                   #print "EXIT", self.current_characters
+            # if someone dies, make them exit
+            if self.in_paren and self.last_stagedir_label and self.last_stagedir_label in ['action']:
+               if next_word[-1].strip().lower() == "dies":
+                  if self.current_speaker and self.current_speaker in self.current_characters:
+                     self.current_characters.remove(self.current_speaker)
+                  else:
+                     print "No characters to remove..."
          if current_chunk['one_word_line'] and next_word[-1] != "NEWLINE":
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
@@ -833,11 +842,20 @@ class Generator:
                   if self.current_speaker_count and self.current_speaker_count >= 2:
                      word_exclusions.append({"index":12,"exclude":self.current_speaker})
                   # Don't let minor characters have too many lines in a row
-                  if self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters:
+                  # or major characters have waaaaay to many lines
+                  if (self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters) or \
+                     self.current_speaker_line_count > 10:
                      current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
                   #print " ".join([x[12] for x in self.output[-9:]])
                   if len(self.output) >= 9 and (" ".join([x[12] for x in self.output[-9:]]) == "Makes a pass through the arras . ) NEWLINE") or \
                      (" ".join([x[12] for x in self.output[-9:]]) == "( Makes a pass through the arras . )"):
+                        # Insert a new speaker for O, I am slain!
+                        if len(self.current_characters) > 1:
+                           insert_speaker = [None]*13
+                           insert_speaker[-2] = "SPEAKER"
+                           #print "INSERTING",self.current_characters
+                           insert_speaker[-1] = random.sample([c for c in self.current_characters if c != self.current_speaker],1)[0]
+                           self.update(insert_speaker,chunk)
                         for new_word in ["O", ",","I","am","slain","!"]:
                            insert_word = [None]*13
                            insert_word[-1] = new_word
