@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import sys
 import time
+import random
 
 # Helper function for moving average
 def update(e,c,lam=0.8):
@@ -591,6 +592,18 @@ class LooseyClient:
                self.send_value("character",self.last_character)
                self.changed_speaker = False
             # Send the line
+            # If we're in the ham_thing scene, introduce some random pauses between lines
+            if self.scene and self.scene == 'ham_thing':
+                random_sleep = random.random()
+                sleep_value = 0
+                if random_sleep < 0.4:
+                    sleep_value = 0
+                elif random_sleep < 0.8:
+                    sleep_value = 0.3
+                else:
+                    sleep_value = 0.7
+                #print "IN HAM_THING, PAUSE:",sleep_value
+                time.sleep(sleep_value)
             self.send_value("stagedir.bool",1)
             self.send_value("line",l)
             # Now that we've actually had some dialogue, we're ready to zero out
