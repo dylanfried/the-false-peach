@@ -691,7 +691,7 @@ class Generator:
          if self.line_length > 0 and \
             ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or \
             (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and ((self.line_length > 6 and re.match(".*[,]\s*$",next_word[-1])) or (re.match(".*[.?!:;]\s*$",next_word[-1])))) or \
-            ((self.line_length > max_line_length or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
+            (((self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
 
             if self.in_paren:
                insert_paren = [None]*13
@@ -853,7 +853,7 @@ class Generator:
                         if len(self.current_characters) > 1:
                            insert_speaker = [None]*13
                            insert_speaker[-2] = "SPEAKER"
-                           #print "INSERTING",self.current_characters
+                           #print "INSERTING",[c for c in self.current_characters if c != self.current_speaker]
                            insert_speaker[-1] = random.sample([c for c in self.current_characters if c != self.current_speaker],1)[0]
                            self.update(insert_speaker,chunk)
                         for new_word in ["O", ",","I","am","slain","!"]:
