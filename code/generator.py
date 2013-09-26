@@ -38,6 +38,9 @@ class Generator:
       # Variable to keep track of whether we're inside parentheses in text
       # generation
       self.in_paren = False
+      # Keep track of whether the current stage direction is an exeunt
+      self.in_exeunt = False
+      self.exeunt_words = []
       # We always want the type of stage direction at the beginning
       # of each stage direction
       # grab_stagedir will be set if the last word was an open
@@ -288,6 +291,84 @@ class Generator:
             insert_newline[-1] = "NEWLINE"
             self.output.append(insert_newline)
             self.in_paren = False
+            
+            if 'semantic_logic' in current_chunk and current_chunk['semantic_logic']:
+               if self.in_exeunt:
+                  # Take care of exeunt handling now that we're done with the stage dir
+                  #print [ew[-1] for ew in self.exeunt_words]
+                  if "but" in [ew[-1] for ew in self.exeunt_words]:
+                     #print "IN BUT 1"
+                     dont_remove = []
+                     # We have a but, make everyone exit except for the "but" people
+                     for exeunt_word in self.exeunt_words:
+                        # Keep track of who's exiting
+                        who = exeunt_word[-1].strip().upper()
+                        who = re.sub("_AND_"," ",who)
+                        # If we have multiple characters, split them up
+                        who = who.split(" ")
+                        for w in who:
+                           if w in self.characters:
+                              for who_character in self.characters[w]:
+                                 if who_character in self.current_characters:
+                                    #print "REMOVING", who_character
+                                    dont_remove.append(who_character)
+                                 else:
+                                    #print "CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                                    # Let's force this character to enter so that they can exit
+                                    # Pop things off the output until we get to the beginning of this entrance
+                                    # and insert an exit
+                                    stack = []
+                                    stack.append(self.output.pop())
+                                    while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                                       stack.append(self.output.pop())
+                                    # Now we can add our entrance
+                                    self.add_entrance_exit(who_character, "entrance")
+                                    self.current_characters.append(who_character)
+                                    dont_remove.append(who_character)
+                                    # Put back the stuff we popped off
+                                    stack.reverse()
+                                    self.output += stack
+                     self.current_characters = dont_remove
+                  else:
+                     # No "buts"
+                     # If we have character names, make those characters exit
+                     # otherwise make everyone exit
+                     remove_characters = []
+                     # We have a but, make everyone exit except for the "but" people
+                     for exeunt_word in self.exeunt_words:
+                        # Keep track of who's exiting
+                        who = exeunt_word[-1].strip().upper()
+                        who = re.sub("_AND_"," ",who)
+                        # If we have multiple characters, split them up
+                        who = who.split(" ")
+                        for w in who:
+                           if w in self.characters:
+                              for who_character in self.characters[w]:
+                                 if who_character in self.current_characters:
+                                    # Remember that we ran into this speaker
+                                    remove_characters.append(who_character)
+                                 else:
+                                    #print "BLAH CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                                    # Let's force this character to enter so that they can exit
+                                    # Pop things off the output until we get to the beginning of this entrance
+                                    # and insert an exit
+                                    stack = []
+                                    stack.append(self.output.pop())
+                                    while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                                       stack.append(self.output.pop())
+                                    # Now we can add our entrance
+                                    self.add_entrance_exit(who_character, "entrance")
+                                    # Put back the stuff we popped off
+                                    stack.reverse()
+                                    self.output += stack
+                     if len(remove_characters) > 0:
+                        for rc in remove_characters:
+                           self.current_characters.remove(rc)
+                     else:
+                        self.current_characters = []
+            
+            self.in_exeunt = False
+            self.exeunt_words = []
             # If we're leaving an exit, make sure that we have a character speaking
             # this is to ensure that we don't have the speaker exit without
             # reentering
@@ -339,6 +420,84 @@ class Generator:
          self.output.append(next_word)
          # Set in_paren because we're out of the parentheses now
          self.in_paren = False
+         
+         if 'semantic_logic' in current_chunk and current_chunk['semantic_logic']:
+            if self.in_exeunt:
+                  # Take care of exeunt handling now that we're done with the stage dir
+                  #print [ew[-1] for ew in self.exeunt_words]
+                  if "but" in [ew[-1] for ew in self.exeunt_words]:
+                     #print "IN BUT 2"
+                     dont_remove = []
+                     # We have a but, make everyone exit except for the "but" people
+                     for exeunt_word in self.exeunt_words:
+                        # Keep track of who's exiting
+                        who = exeunt_word[-1].strip().upper()
+                        who = re.sub("_AND_"," ",who)
+                        # If we have multiple characters, split them up
+                        who = who.split(" ")
+                        for w in who:
+                           if w in self.characters:
+                              for who_character in self.characters[w]:
+                                 if who_character in self.current_characters:
+                                    #print "REMOVING", who_character
+                                    dont_remove.append(who_character)
+                                 else:
+                                    #print "CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                                    # Let's force this character to enter so that they can exit
+                                    # Pop things off the output until we get to the beginning of this entrance
+                                    # and insert an exit
+                                    stack = []
+                                    stack.append(self.output.pop())
+                                    while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                                       stack.append(self.output.pop())
+                                    # Now we can add our entrance
+                                    self.add_entrance_exit(who_character, "entrance")
+                                    self.current_characters.append(who_character)
+                                    dont_remove.append(who_character)
+                                    # Put back the stuff we popped off
+                                    stack.reverse()
+                                    self.output += stack
+                     self.current_characters = dont_remove
+                  else:
+                     # No "buts"
+                     # If we have character names, make those characters exit
+                     # otherwise make everyone exit
+                     remove_characters = []
+                     # We have a but, make everyone exit except for the "but" people
+                     for exeunt_word in self.exeunt_words:
+                        # Keep track of who's exiting
+                        who = exeunt_word[-1].strip().upper()
+                        who = re.sub("_AND_"," ",who)
+                        # If we have multiple characters, split them up
+                        who = who.split(" ")
+                        for w in who:
+                           if w in self.characters:
+                              for who_character in self.characters[w]:
+                                 if who_character in self.current_characters:
+                                    # Remember that we ran into this speaker
+                                    remove_characters.append(who_character)
+                                 else:
+                                    #print " BLAH 2 CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                                    # Let's force this character to enter so that they can exit
+                                    # Pop things off the output until we get to the beginning of this entrance
+                                    # and insert an exit
+                                    stack = []
+                                    stack.append(self.output.pop())
+                                    while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                                       stack.append(self.output.pop())
+                                    # Now we can add our entrance
+                                    self.add_entrance_exit(who_character, "entrance")
+                                    # Put back the stuff we popped off
+                                    stack.reverse()
+                                    self.output += stack
+                     if len(remove_characters) > 0:
+                        for rc in remove_characters:
+                           self.current_characters.remove(rc)
+                     else:
+                        self.current_characters = []
+            
+         self.in_exeunt = False
+         self.exeunt_words = []
          #set the has first character to true.
          self.first_character = True
       # Check to see if we're in a stagedir and getting a newline
@@ -452,38 +611,46 @@ class Generator:
                            self.current_characters.append(c)
                #print "ENTRANCE", self.current_characters
             if self.in_paren and self.last_stagedir_label and self.last_stagedir_label in ['exit']:
-               # Keep track of who's exiting
-               who = next_word[-1].strip().upper()
-               who = re.sub("_AND_"," ",who)
-               # If we have multiple characters, split them up
-               who = who.split(" ")
-               for w in who:
-                  if w in self.characters:
-                     for who_character in self.characters[w]:
-                        if who_character in self.current_characters:
-                           #print "REMOVING", who_character
-                           self.current_characters.remove(who_character)
-                        else:
-                           #print "CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
-                           # Let's force this character to enter so that they can exit
-                           # Pop things off the output until we get to the beginning of this entrance
-                           # and insert an exit
-                           stack = []
-                           stack.append(self.output.pop())
-                           while not re.match("^\s*\(\s*$",stack[-1][-1]):
+               # If we're in an exeunt, keep track of the words that are passed to us
+               # this is because we don't want to make people exit where the stage direction is
+               # something like "all but hamlet"
+               if self.in_exeunt:
+                  self.exeunt_words.append(next_word)
+               # If we're in an exeunt don't go through this exiting process right
+               if not self.in_exeunt:
+                  # Keep track of who's exiting
+                  who = next_word[-1].strip().upper()
+                  who = re.sub("_AND_"," ",who)
+                  # If we have multiple characters, split them up
+                  who = who.split(" ")
+                  for w in who:
+                     if w in self.characters:
+                        for who_character in self.characters[w]:
+                           if who_character in self.current_characters:
+                              #print "REMOVING", who_character
+                              self.current_characters.remove(who_character)
+                           else:
+                              #print "CHARACTER",who_character,"NOT PRESENT, CAN'T EXIT"
+                              # Let's force this character to enter so that they can exit
+                              # Pop things off the output until we get to the beginning of this entrance
+                              # and insert an exit
+                              stack = []
                               stack.append(self.output.pop())
-                           # Now we can add our entrance
-                           self.add_entrance_exit(who_character, "entrance")
-                           # Put back the stuff we popped off
-                           stack.reverse()
-                           self.output += stack
-                  if w == "EXEUNT":
-                     # Get rid of all characters
-                     self.current_characters = []
-                  #if w == "EXIT" and self.current_speaker and self.current_speaker in self.current_characters:
-                  #   self.current_characters.remove(self.current_speaker)
-                     # Get rid of the last speaking character
-               #print "EXIT", self.current_characters
+                              while not re.match("^\s*\(\s*$",stack[-1][-1]):
+                                 stack.append(self.output.pop())
+                              # Now we can add our entrance
+                              self.add_entrance_exit(who_character, "entrance")
+                              # Put back the stuff we popped off
+                              stack.reverse()
+                              self.output += stack
+                     if w == "EXEUNT":
+                        # Get rid of all characters
+                        self.in_exeunt = True
+                        #self.current_characters = []
+                     #if w == "EXIT" and self.current_speaker and self.current_speaker in self.current_characters:
+                     #   self.current_characters.remove(self.current_speaker)
+                        # Get rid of the last speaking character
+                  #print "EXIT", self.current_characters
          if current_chunk['one_word_line'] and next_word[-1] != "NEWLINE":
             insert_newline = [None]*13
             insert_newline[-2] = "NEWLINE"
@@ -575,6 +742,8 @@ class Generator:
       for chunk in self.chunks:
          # Reset in_paren and grab_stagedir because we're starting a new chunk
          self.in_paren = False
+         self.in_exeunt = False
+         self.exeunt_words = []
          self.grab_stagedir = False
          self.forced_character = chunk["forced_character"]
          self.current_speaker = None
@@ -666,6 +835,31 @@ class Generator:
                   # Don't let minor characters have too many lines in a row
                   if self.current_speaker_line_count > 4 and self.current_speaker not in self.major_characters:
                      current_word_filters.append({"index":11,"filter":"SPEAKER","type":"text_match"})
+                  #print " ".join([x[12] for x in self.output[-9:]])
+                  if len(self.output) >= 9 and (" ".join([x[12] for x in self.output[-9:]]) == "Makes a pass through the arras . ) NEWLINE") or \
+                     (" ".join([x[12] for x in self.output[-9:]]) == "( Makes a pass through the arras . )"):
+                        for new_word in ["O", ",","I","am","slain","!"]:
+                           insert_word = [None]*13
+                           insert_word[-1] = new_word
+                           insert_word[4] = "Polonius"
+                           self.update(insert_word,chunk)
+                           i += 6
+                        insert_paren = [None]*13
+                        insert_paren[-1] = "("
+                        insert_paren[-2] = "("
+                        self.update(insert_paren,chunk)
+                        for new_word in ["Falls","and","dies","."]:
+                           insert_word = [None]*13
+                           insert_word[-1] = new_word
+                           insert_word[-2] = "action"
+                           insert_word[4] = "Stage"
+                           self.update(insert_word,chunk)
+                           i += 6
+                        insert_paren = [None]*13
+                        insert_paren[-1] = ")"
+                        insert_paren[-2] = ")"
+                        self.update(insert_paren,chunk)
+               #print self.output[-1][-1]
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
             while chunk['chunk_type'] == "mirror" and current_word[-1] == "Hamlet":
