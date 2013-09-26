@@ -38092,7 +38092,7 @@
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance and
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance Mourners
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance following
-5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance ;
+5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance ,
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance KING
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance ,
 5 1 220 -1 Stage -1 -1 -1 -1 -1 -1 entrance QUEEN
