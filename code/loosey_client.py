@@ -35,6 +35,8 @@ class LooseyClient:
       self.subscriber_ip = subscriber_ip
       self.subscriber_port = subscriber_port
       self.trigs = []
+      self.act_number = 0
+      self.scroll_end = False
       
       # Remember whether we've left scott's section
       self.left_actor = False
@@ -77,8 +79,11 @@ class LooseyClient:
       # OSC server for subscribing to messages from Loosey
       # word function used for handling OSC messages
       def word(addr, tags, stuff, source):
-         #print "Word Handler", stuff
-         LooseyClient.next_line[0] = " ".join(stuff)
+         #print "Word Handler", stuff,"addr",addr,"source",source
+         if addr == "/scrollEnd" and stuff == ['end']:
+            self.scroll_end = True
+         else:
+            LooseyClient.next_line[0] = " ".join(stuff)
       if self.play:
          print "Starting OSCServer",self.subscriber_ip, self.subscriber_port
          self.subscriber = OSC.OSCServer((self.subscriber_ip, self.subscriber_port))
@@ -86,6 +91,7 @@ class LooseyClient:
          # Set handlers for incoming messages
          self.subscriber.addMsgHandler("/synth.word", word)
          self.subscriber.addMsgHandler("/synth.EOL", word)
+         self.subscriber.addMsgHandler("/scrollEnd", word)
          self.subscriber.addDefaultHandlers()
       
       # Set up frequency and emotion vars
@@ -107,6 +113,7 @@ class LooseyClient:
       
       # Subscribe to channels
       if self.play:
+         self.subscribe("subscribe",["JIM./scrollEnd", "ANNIE", 0])
          self.subscribe("subscribe",["GREG./synth.EOL", "ANNIE", 0])
          self.subscribe("subscribe",["ANNIE./stagedir.bool", "ANNIE", -127])
          self.subscribe("subscribe",["GREG./threshold", "ANNIE", -127])
@@ -204,7 +211,9 @@ class LooseyClient:
       #and manages whether we actually wait for a request
       # Tell the subscriber to handle a message from Loosey
       # TODO: should this be running in parallel?
+      #print "handling"
       self.subscriber.handle_request()
+      #print "done handling"
       print "Get input", LooseyClient.next_line[0]
       # Return the handled request
       return LooseyClient.next_line[0]
@@ -289,6 +298,10 @@ class LooseyClient:
       for line_index in range(len(lines)):
          l = lines[line_index]
          current_word_count += len(l.split(" "))
+         # Printing out word scores for scrolly thing
+         if not self.play and not re.match(".*####.*",l) and not re.match(".*====.*",l) and not re.match(".*@@@@@.*",l):
+            to_print = [w + ": " + str(self.word_scores(w)) for w in l.split(" ") if w]
+            print ", ".join(to_print)
          #print "percent", str(round((current_word_count+0.0)/(scene_word_count+0.0), 3))
          if not l:
             #current_word_count += 1
@@ -313,6 +326,7 @@ class LooseyClient:
       
          # Check to see if we're in a new act
          if re.match(".*@@@@@@.*",l):
+            self.act_number += 1
             print l
             # We're switching acts, so any zero out trigger should be ready to zero out
             for t in self.trigs:
@@ -361,15 +375,20 @@ class LooseyClient:
             #   time.sleep(0.02)
             
             grab_next_style = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",lines[line_index+1])
-            print "SENDING LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
-            self.send_value("line","Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))+"\n")
+            print "SENDING SCROLL VALUE",self.act_number
+            self.send_value("scrollStart",self.act_number)
+            #print "SENDING LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
+            #self.send_value("line","Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))+"\n")
             # Wait for Loosey to acknowledge with EOL
-            while 1:
+            #while 1:
+            #   word = self.get_input()
+            #   #print "Getting word",word
+            #   if word == "EOL": 
+            #      current_line_count += 1
+            #      break
+            while not self.scroll_end and self.play:
                word = self.get_input()
-               #print "Getting word",word
-               if word == "EOL": 
-                  current_line_count += 1
-                  break
+            self.scroll_end = False
             continue
          # Check to see if we're in a new scene
          if re.match(".*####.*",l):
@@ -534,6 +553,12 @@ class LooseyClient:
             # Make sure not to send empty stage directions
             if re.match("^\s*\(\s*\)\s*$",l):
                continue
+            # TRIGGER printing for scrolly stuff:
+            if not self.play:
+               for w in l.split(" "):
+                  for t in self.trigs:
+                     if w.lower().strip(" .,;:()[]{}!?") in t.words:
+                        print "TRIGGER:",t.stage,t.words
             # Pull out the first word in the parentheses
             wwhhaatt = re.sub("^\s*\(\s*([a-zA-Z]+)[.,?!;:]*[\s)].*","\\1",l)
             # Make the line into the line except for the first word in the parentheses
