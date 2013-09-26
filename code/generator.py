@@ -851,33 +851,49 @@ class Generator:
                   if len(self.output) >= 9 and (" ".join([x[12] for x in self.output[-9:]]) == "Makes a pass through the arras . ) NEWLINE") or \
                      (" ".join([x[12] for x in self.output[-9:]]) == "( Makes a pass through the arras . )"):
                         # Insert a new speaker for O, I am slain!
-                        if len(self.current_characters) > 1:
-                           insert_speaker = [None]*13
-                           insert_speaker[-2] = "SPEAKER"
-                           #print "INSERTING",[c for c in self.current_characters if c != self.current_speaker]
-                           insert_speaker[-1] = random.sample([c for c in self.current_characters if c != self.current_speaker],1)[0]
-                           self.update(insert_speaker,chunk)
-                        for new_word in ["O", ",","I","am","slain","!"]:
-                           insert_word = [None]*13
-                           insert_word[-1] = new_word
-                           insert_word[4] = "Polonius"
-                           self.update(insert_word,chunk)
-                           i += 6
-                        insert_paren = [None]*13
-                        insert_paren[-1] = "("
-                        insert_paren[-2] = "("
-                        self.update(insert_paren,chunk)
-                        for new_word in ["Falls","and","dies","."]:
-                           insert_word = [None]*13
-                           insert_word[-1] = new_word
-                           insert_word[-2] = "action"
-                           insert_word[4] = "Stage"
-                           self.update(insert_word,chunk)
-                           i += 6
-                        insert_paren = [None]*13
-                        insert_paren[-1] = ")"
-                        insert_paren[-2] = ")"
-                        self.update(insert_paren,chunk)
+                     if len(self.current_characters) > 1:
+                        insert_speaker = [None]*13
+                        insert_speaker[-2] = "SPEAKER"
+                        #print "INSERTING",[c for c in self.current_characters if c != self.current_speaker]
+                        insert_speaker[-1] = random.sample([c for c in self.current_characters if c != self.current_speaker],1)[0]
+                        self.update(insert_speaker,chunk)
+                     for new_word in ["O", ",","I","am","slain","!"]:
+                        insert_word = [None]*13
+                        insert_word[-1] = new_word
+                        insert_word[4] = "Polonius"
+                        self.update(insert_word,chunk)
+                        i += 6
+                     insert_paren = [None]*13
+                     insert_paren[-1] = "("
+                     insert_paren[-2] = "("
+                     self.update(insert_paren,chunk)
+                     for new_word in ["Falls","and","dies","."]:
+                        insert_word = [None]*13
+                        insert_word[-1] = new_word
+                        insert_word[-2] = "action"
+                        insert_word[4] = "Stage"
+                        self.update(insert_word,chunk)
+                        i += 6
+                     insert_paren = [None]*13
+                     insert_paren[-1] = ")"
+                     insert_paren[-2] = ")"
+                     self.update(insert_paren,chunk)
+                  if len(self.output) >= 6 and (" ".join([x[12] for x in self.output[-6:]]) == "O , I am slain !"):
+                     insert_paren = [None]*13
+                     insert_paren[-1] = "("
+                     insert_paren[-2] = "("
+                     self.update(insert_paren,chunk)
+                     for new_word in ["Falls","and","dies","."]:
+                        insert_word = [None]*13
+                        insert_word[-1] = new_word
+                        insert_word[-2] = "action"
+                        insert_word[4] = "Stage"
+                        self.update(insert_word,chunk)
+                        i += 6
+                     insert_paren = [None]*13
+                     insert_paren[-1] = ")"
+                     insert_paren[-2] = ")"
+                     self.update(insert_paren,chunk)
                #print self.output[-1][-1]
             current_word = word_markov.generateNext(current_word_order, current_word_filters,word_exclusions)
             # We never want the actor to refer to him/herself
