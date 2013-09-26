@@ -298,7 +298,11 @@ class Generator:
                if self.in_exeunt:
                   # Take care of exeunt handling now that we're done with the stage dir
                   #print [ew[-1] for ew in self.exeunt_words]
-                  if "but" in [ew[-1] for ew in self.exeunt_words]:
+                  if all([check_term in [ew[-1] for ew in self.exeunt_words] for check_term in ["all","but","one"]]):
+                     # This is an exeunt all but one situation, pick one character at random to stay
+                     self.current_characters = random.sample(self.current_characters,1)
+                     print "ALL BUT ONE",self.current_characters
+                  elif "but" in [ew[-1] for ew in self.exeunt_words]:
                      #print "IN BUT 1"
                      dont_remove = []
                      # We have a but, make everyone exit except for the "but" people
@@ -414,20 +418,16 @@ class Generator:
          insert_newline[-2] = "NEWLINE"
          insert_newline[-1] = "NEWLINE"
          self.output.append(insert_newline)
-         # If we have a forced character, change this speaker
-         # to that one
-         if self.forced_character:
-            next_word[-1] = self.forced_character
-         self.change_speaker(next_word[-1], current_chunk)
-         self.output.append(next_word)
-         # Set in_paren because we're out of the parentheses now
-         self.in_paren = False
          
          if 'semantic_logic' in current_chunk and current_chunk['semantic_logic']:
             if self.in_exeunt:
                   # Take care of exeunt handling now that we're done with the stage dir
                   #print [ew[-1] for ew in self.exeunt_words]
-                  if "but" in [ew[-1] for ew in self.exeunt_words]:
+                  if all([check_term in [ew[-1] for ew in self.exeunt_words] for check_term in ["all","but","one"]]):
+                     # This is an exeunt all but one situation, pick one character at random to stay
+                     self.current_characters = random.sample(self.current_characters,1)
+                     print "ALL BUT ONE",self.current_characters
+                  elif "but" in [ew[-1] for ew in self.exeunt_words]:
                      #print "IN BUT 2"
                      dont_remove = []
                      # We have a but, make everyone exit except for the "but" people
@@ -500,6 +500,19 @@ class Generator:
             
          self.in_exeunt = False
          self.exeunt_words = []
+         
+         insert_newline = [None]*13
+         insert_newline[-2] = "NEWLINE"
+         insert_newline[-1] = "NEWLINE"
+         self.output.append(insert_newline)
+         # If we have a forced character, change this speaker
+         # to that one
+         if self.forced_character:
+            next_word[-1] = self.forced_character
+         self.change_speaker(next_word[-1], current_chunk)
+         self.output.append(next_word)
+         # Set in_paren because we're out of the parentheses now
+         self.in_paren = False
          #set the has first character to true.
          self.first_character = True
       # Check to see if we're in a stagedir and getting a newline
