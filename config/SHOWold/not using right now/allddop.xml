@@ -1,0 +1,12 @@
+
+<ddop>
+   <name>ddop</name>
+   	<scene_pause>5</scene_pause>
+   <train>
+    	<file>data/brute.txt</file>
+	</train>
+	 <generate>
+	 </generate>
+</ddop>
+
+ 

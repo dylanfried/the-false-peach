@@ -1,0 +1,91 @@
+<scene>
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <characters>STAGE</characters>
+         <pos>(,entrance,exit,place,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>19</length>
+         <k>7</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <lines>26</lines>
+         <characters>STAGE</characters>
+         <pos>(,exit,place,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>6</length>
+         <k>7</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	   <name>claudius</name>
+   	   <scene_pause>1</scene_pause>
+       <file>data/brute.txt</file>
+       <first_character>KING</first_character>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <lines>36-72</lines>
+         <characters>CLAUDIUS,KING</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>75</length>
+         <k>1</k>
+      </generate>
+   </markov>
+      <markov>
+      <name>Claudius</name>
+      <file>data/brute.txt</file>
+      <train>
+      	<acts>3</acts>
+      	<scenes>3</scenes>
+      	<lines>36-72</lines>
+         <characters>CLAUDIUS, KING</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+         <ramp emotion="anger">
+            <point line=-1 value=-0.5 />
+            <point line=31 value=2.0 />
+            <point line=48 value=-1.0 />
+            <point line=51 value=-1.0 />
+         </ramp>
+         <finish_sent>True</finish_sent>
+         <length>50</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	   <name>claudius</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>3</scenes>
+         <lines>72</lines>
+         <characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>6</length>
+         <k>7</k>
+      </generate>
+   </markov>
+</scene>

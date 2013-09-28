@@ -1,0 +1,18 @@
+   <markov>
+   	   <name>tocome</name>
+       <file>data/brute.txt</file>
+       <first_character>HAMLET</first_character>
+      <train>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <lines>216-221</lines>
+         <characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>80</length>
+         <k>1</k>
+      </generate>
+   </markov>
+</trial>

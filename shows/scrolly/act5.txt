@@ -1,0 +1,702 @@
+@@@@@@@@@@@@@@@ Act name:letter @@@@@@@@@@@@@@@@
+SEND SCROLL VALUE 5
+################# SCENE letterFive 1_TTS.aloud.ROGUI_0_theatre wordcount:1565 strategy:markov #################
+Timing info. Seconds: 20.9567599297, words: 267, lines: 22
+BLACKOUT
+SEND STYLES 1_TTS.aloud.ROGUI_0_theatre
+Act: [-1, -1, -1, -1], 5,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
+SEND INTRO
+TITLE   Act 5, Scene 2 
+(: [-1, -1, -1, -1], place: [0.9, 1.1, 2.0, 0.5], A: [-1, -1, -1, -1], hall: [0.5, 1.2, 1.3, 1.2], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], castle.): [-1, -1, -1, -1]
+SEND OUTRO
+TRIGGER: place [u'hall']
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (A hall in the castle.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HAMLET: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], HORATIO.): [-1, -1, -1, -1]
+Stagedir (Enter HAMLET and HORATIO.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+
+So: [-1, -1, -1, -1], much: [0.9, 1.2, 1.9, 0.2], for: [0.0, 0.0, 0.0, 0.1], it,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], Horation.: [-1, -1, -1, -1], Now,: [-1, -1, -1, -1]
+SEND LINE 'So much for it, good Horation. Now, '
+A: [-1, -1, -1, -1], baser: [2.0, 1.5, 0.4, 1.8], nature: [1.5, 2.7, 3.8, 2.2], commission: [1.2, 1.6, 2.4, 1.1], grow:: [-1, -1, -1, -1]
+SEND LINE 'A baser nature commission grow: '
+But,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], my: [0.4, 0.3, 1.9, 0.3], brains: [0.6, 0.5, 2.9, 0.3], in: [0.3, 0.1, 0.4, 0.4], between: [1.0, 0.7, 1.3, 0.8], the: [0.4, 0.5, 0.3, 0.3], view: [1.6, 0.9, 1.8, 1.0], and: [0.7, 0.8, 0.4, 0.3], my: [0.4, 0.3, 1.9, 0.3], brains,: [-1, -1, -1, -1]
+SEND LINE 'But, good my brains in between the view and my brains, '
+My: [-1, -1, -1, -1], sever: [-1, -1, -1, -1], known: [1.8, 1.6, 3.0, 1.6], scarfed: [-1, -1, -1, -1], aboured: [-1, -1, -1, -1], much: [0.9, 1.2, 1.9, 0.2]
+SEND LINE 'My sever known scarfed aboured much '
+How: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], his: [1.3, 0.2, 0.6, 0.8], faithful: [0.6, 1.7, 3.3, 1.4], tributary,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], Horation: [-1, -1, -1, -1], from: [0.6, 0.5, 0.7, 0.4], my: [0.4, 0.3, 1.9, 0.3], purse,: [-1, -1, -1, -1]
+SEND LINE 'How was his faithful tributary, good Horation from my purse, '
+Fingered: [-1, -1, -1, -1], much: [0.9, 1.2, 1.9, 0.2], for: [0.0, 0.0, 0.0, 0.1]
+SEND LINE 'Fingered much for'
+
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], OSRIC.): [-1, -1, -1, -1]
+Stagedir (Enter OSRIC.)
+
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+Your: [-1, -1, -1, -1], head.: [-1, -1, -1, -1], He: [-1, -1, -1, -1], head.: [-1, -1, -1, -1]
+SEND LINE 'Your head. He head. '
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+It: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], crib: [1.0, 1.1, 1.6, 0.9], shall: [1.1, 1.4, 1.8, 0.7], remember: [0.5, 0.2, 2.2, 1.4], on: [0.3, 0.4, 0.4, 0.7], you: [0.0, 0.1, 1.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], king's: [0.5, 0.8, 1.8, 0.3], majesty.: [-1, -1, -1, -1]
+SEND LINE "It is crib shall remember on you the king's majesty. "
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+Sweet: [-1, -1, -1, -1], methis: [-1, -1, -1, -1], rig: [-1, -1, -1, -1]
+SEND LINE 'Sweet methis rig'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Hamlet: [-1, -1, -1, -1], moves: [1.0, 0.8, 2.0, 1.2], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], put: [0.3, 1.0, 1.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], hat.): [-1, -1, -1, -1]
+Stagedir (Hamlet moves him to put on his hat.)
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+Nay: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], of: [1.2, 0.9, 0.3, 0.6], this: [0.3, 0.8, 0.8, 0.5], wer: [-1, -1, -1, -1], why: [1.2, 0.8, 0.7, 0.9], dozen.: [-1, -1, -1, -1]
+SEND LINE 'Nay will of this wer why dozen. '
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+Of: [-1, -1, -1, -1], hits: [3.7, 2.5, 0.4, 2.1], till: [1.1, 1.1, 1.4, 0.3], to: [0.1, 0.6, 0.6, 0.3], unfess: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], sufferench: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], man: [1.3, 1.0, 2.2, 1.0], would: [0.3, 0.3, 0.3, 0.1], see: [1.0, 1.4, 2.5, 1.4], of: [1.2, 0.9, 0.3, 0.6], day,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], tween.: [-1, -1, -1, -1]
+SEND LINE 'Of hits till to unfess that sufferench be man would see of day, in tween. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Sir: [-1, -1, -1, -1], as,: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], him: [1.1, 0.7, 1.5, 0.4], and: [0.7, 0.8, 0.4, 0.3], him,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], gent: [-1, -1, -1, -1]
+SEND LINE 'Sir as, on him and him, as gent'
+
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Osric.): [-1, -1, -1, -1]
+Stagedir (Exit Osric.)
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Yours.: [-1, -1, -1, -1]
+SEND LINE 'Yours. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+'A: [-1, -1, -1, -1], did: [1.1, 0.7, 1.4, 0.8], commend: [0.7, 0.5, 2.7, 1.1], do: [0.8, 0.7, 1.5, 1.2], but.: [-1, -1, -1, -1]
+SEND LINE "'A did commend do but. "
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+'A: [-1, -1, -1, -1], did: [1.1, 0.7, 1.4, 0.8], commend: [0.7, 0.5, 2.7, 1.1], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], dotes: [0.8, 0.5, 1.4, 0.6], are: [0.6, 0.6, 1.4, 0.6], no: [0.7, 0.7, 0.6, 0.9]
+SEND LINE "'A did commend of the dotes are no "
+tongues: [1.9, 2.0, 1.8, 0.8], are: [0.6, 0.6, 1.4, 0.6], 'a: [-1, -1, -1, -1], sucked: [2.8, 1.2, 0.8, 1.8], it: [0.5, 0.4, 0.1, 0.5]
+SEND LINE "tongues are 'a sucked it"
+
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], a: [-1, -1, -1, -1], Lord.): [-1, -1, -1, -1]
+Stagedir (Enter a Lord.)
+
+LORD: [-1, -1, -1, -1]
+SEND WHO LORD
+
+bubble: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], now: [0.6, 0.2, 0.9, 0.1], the: [0.4, 0.5, 0.3, 0.3], send: [1.2, 1.1, 2.3, 0.5], queen: [0.4, 0.8, 3.7, 0.4], and: [0.7, 0.8, 0.4, 0.3], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], purposes;: [-1, -1, -1, -1], now: [0.6, 0.2, 0.9, 0.1], that: [0.7, 0.7, 0.2, 0.4], you: [0.0, 0.1, 1.3, 0.0], to: [0.1, 0.6, 0.6, 0.3], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], play: [0.4, 0.5, 4.4, 0.5], will: [1.2, 0.5, 1.8, 0.7], take: [1.2, 1.5, 1.5, 1.4], lord,: [-1, -1, -1, -1]
+SEND LINE 'bubble as now the send queen and him to my purposes; now that you to him to play will take lord, '
+w: [-1, -1, -1, -1]
+SEND LINE 'w'
+
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Lord.): [-1, -1, -1, -1]
+Stagedir (Exit Lord.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+
+fit: [0.8, 0.9, 2.4, 0.9], be: [0.6, 1.1, 0.8, 0.8], not: [0.6, 1.2, 1.0, 0.8], now;: [-1, -1, -1, -1], if: [0.7, 0.5, 0.8, 0.7], it: [0.5, 0.4, 0.1, 0.5], will:: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], readiness: [0.8, 1.1, 3.0, 0.9], is't: [0.6, 1.0, 0.9, 1.1], to: [0.1, 0.6, 0.6, 0.3], leaves?: [-1, -1, -1, -1], Let: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], all:: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], readiness: [0.8, 1.1, 3.0, 0.9], is: [0.3, 0.6, 0.3, 0.0], not: [0.6, 1.2, 1.0, 0.8]
+SEND LINE "fit be not now; if it will: the readiness is't to leaves? Let is all: the readiness is not "
+to: [0.1, 0.6, 0.6, 0.3], come:: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], readiness: [0.8, 1.1, 3.0, 0.9], is't: [0.6, 1.0, 0.9, 1.1], to: [0.1, 0.6, 0.6, 0.3], come;: [-1, -1, -1, -1], if: [0.7, 0.5, 0.8, 0.7], it,: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], defy: [2.9, 2.2, 1.1, 1.9]
+SEND LINE "to come: the readiness is't to come; if it, we defy "
+
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], Trumpets: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], drums.): [-1, -1, -1, -1]
+TRIGGER: sound [u'trumpets']
+TRIGGER: sound [u'drums']
+Stagedir (Trumpets and drums.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], KING,: [-1, -1, -1, -1], QUEEN,: [-1, -1, -1, -1], LAERTES,: [-1, -1, -1, -1], Lords,: [-1, -1, -1, -1], OSRIC,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Attendants: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], foils.): [-1, -1, -1, -1]
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (Enter KING, QUEEN, LAERTES, Lords, OSRIC, and Attendants with foils.)
+
+
+
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Come,: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], come,: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], come.: [-1, -1, -1, -1]
+SEND LINE 'Come, Hamlet, come, Hamlet, come. '
+Come,: [-1, -1, -1, -1], c: [-1, -1, -1, -1]
+SEND LINE 'Come, c'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], King: [-1, -1, -1, -1], puts: [0.2, 0.3, 0.7, 0.8], Laertes': [-1, -1, -1, -1], hand: [0.6, 0.6, 1.1, 0.4], into: [0.2, 0.4, 0.7, 0.1], Hamlet's.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (The King puts Laertes' hand into Hamlet's.)
+
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Give,: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], faction,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], arrow: [2.1, 2.6, 1.9, 1.8], o'er.: [-1, -1, -1, -1], Thesence: [-1, -1, -1, -1], knows,: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], known: [1.8, 1.6, 3.0, 1.6], how: [1.0, 1.1, 0.7, 0.5], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], lord,: [-1, -1, -1, -1], sin: [3.2, 3.8, 1.0, 3.3], your: [2.1, 1.6, 2.1, 1.3], of;: [-1, -1, -1, -1]
+SEND LINE "Give, one faction, you arrow o'er. Thesence knows, of known how I have lord, sin your of; "
+I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], us: [0.2, 0.3, 2.1, 0.2], there: [0.6, 0.3, 0.6, 0.6], and: [0.7, 0.8, 0.4, 0.3], hurt: [3.9, 4.0, 0.3, 4.3], my: [0.4, 0.3, 1.9, 0.3], love,: [-1, -1, -1, -1], side.: [-1, -1, -1, -1]
+SEND LINE 'I have us there and hurt my love, side. '
+Stick: [-1, -1, -1, -1], me,: [-1, -1, -1, -1]
+SEND LINE 'Stick me, '
+To: [-1, -1, -1, -1], keep: [1.7, 1.8, 2.8, 1.1], my: [0.4, 0.3, 1.9, 0.3], love: [0.9, 1.0, 4.8, 0.8], like: [0.4, 0.6, 4.3, 0.7], likes: [1.2, 0.6, 3.6, 1.3], it: [0.5, 0.4, 0.1, 0.5], fear: [1.8, 4.6, 0.5, 2.6], in: [0.3, 0.1, 0.4, 0.4], them: [0.1, 0.4, 0.3, 0.5], them: [0.1, 0.4, 0.3, 0.5]
+SEND LINE 'To keep my love like likes it fear in them them'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], prepare: [0.7, 1.5, 2.4, 0.4], to: [0.1, 0.6, 0.6, 0.3], play.): [-1, -1, -1, -1]
+Stagedir (They prepare to play.)
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+Ay,: [-1, -1, -1, -1], their: [0.1, 0.1, 0.3, 0.1], of: [1.2, 0.9, 0.3, 0.6], wine.: [-1, -1, -1, -1]
+SEND LINE 'Ay, their of wine. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+One: [-1, -1, -1, -1], upon,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], good: [0.5, 0.9, 4.7, 0.5], lordnance: [-1, -1, -1, -1], first: [0.5, 0.4, 3.9, 0.3], ordnance: [1.2, 1.9, 0.6, 1.2], fire;: [-1, -1, -1, -1]
+SEND LINE 'One upon, my good lordnance first ordnance fire; '
+And: [-1, -1, -1, -1], hit,: [-1, -1, -1, -1]
+SEND LINE 'And hit, '
+The: [-1, -1, -1, -1], judgements: [-1, -1, -1, -1], third.: [-1, -1, -1, -1]
+SEND LINE 'The judgements third. '
+If: [-1, -1, -1, -1], Hamlet: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], heave: [-1, -1, -1, -1], worn.: [-1, -1, -1, -1], Come: [-1, -1, -1, -1], tru: [-1, -1, -1, -1]
+SEND LINE 'If Hamlet all heave worn. Come tru'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Come: [-1, -1, -1, -1], drink.: [-1, -1, -1, -1]
+SEND LINE 'Come drink. '
+OSRIC: [-1, -1, -1, -1]
+SEND WHO OSRIC
+A: [-1, -1, -1, -1], him: [1.1, 0.7, 1.5, 0.4], thy: [0.1, 0.0, 0.6, 0.2], health.: [-1, -1, -1, -1]
+SEND LINE 'A him thy health. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Stay;: [-1, -1, -1, -1]
+SEND LINE 'Stay; '
+Here's: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], this: [0.3, 0.8, 0.8, 0.5], to: [0.1, 0.6, 0.6, 0.3], thy: [0.1, 0.0, 0.6, 0.2], health.: [-1, -1, -1, -1]
+SEND LINE "Here's to this to thy health. "
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+No.: [-1, -1, -1, -1]
+SEND LINE 'No. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Come: [-1, -1, -1, -1], on,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], cup.: [-1, -1, -1, -1]
+SEND LINE 'Come on, the cup. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+No.: [-1, -1, -1, -1]
+SEND LINE 'No. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Well;: [-1, -1, -1, -1], again.: [-1, -1, -1, -1], Give: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], on,: [-1, -1, -1, -1], t: [-1, -1, -1, -1]
+SEND LINE 'Well; again. Give me on, t'
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Stay;: [-1, -1, -1, -1], give: [1.1, 1.6, 3.4, 1.5], me: [1.7, 0.7, 3.0, 1.2], drink.: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], this: [0.3, 0.8, 0.8, 0.5], to: [0.1, 0.6, 0.6, 0.3], this: [0.3, 0.8, 0.8, 0.5], pea: [-1, -1, -1, -1]
+SEND LINE 'Stay; give me drink. Hamlet, this to this pea'
+
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], Trumpets: [-1, -1, -1, -1], sound,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], cannon: [2.7, 2.1, 2.0, 1.3], shot: [2.1, 2.5, 0.6, 1.9], off: [1.3, 1.6, 0.9, 1.3], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'trumpets']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (Trumpets sound, and cannon shot off within.)
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+I'll: [-1, -1, -1, -1], play: [0.4, 0.5, 4.4, 0.5], this: [0.3, 0.8, 0.8, 0.5], bout: [2.0, 1.6, 0.6, 1.2], first;: [-1, -1, -1, -1], set: [0.9, 0.9, 2.1, 0.6], it: [0.5, 0.4, 0.1, 0.5], by: [0.2, 0.2, 0.5, 0.4], awhile.: [-1, -1, -1, -1]
+SEND LINE "I'll play this bout first; set it by awhile. "
+
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+
+Come.: [-1, -1, -1, -1]
+SEND LINE 'Come. '
+Anot: [-1, -1, -1, -1], drink.: [-1, -1, -1, -1]
+SEND LINE 'Anot drink. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+I: [-1, -1, -1, -1], will,: [-1, -1, -1, -1], pardon: [0.8, 1.3, 1.5, 0.6], me.: [-1, -1, -1, -1]
+SEND LINE 'I will, pardon me. '
+Anot: [-1, -1, -1, -1], drink.: [-1, -1, -1, -1]
+SEND LINE 'Anot drink. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+He's: [-1, -1, -1, -1], fat,: [-1, -1, -1, -1], a: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], thy: [0.1, 0.0, 0.6, 0.2], breath.: [-1, -1, -1, -1]
+SEND LINE "He's fat, a to thy breath. "
+Here,: [-1, -1, -1, -1], rub: [1.5, 1.1, 2.5, 0.6], thy: [0.1, 0.0, 0.6, 0.2], fortune,: [-1, -1, -1, -1], Hamlet.: [-1, -1, -1, -1]
+SEND LINE 'Here, rub thy fortune, Hamlet. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Our: [-1, -1, -1, -1], son: [1.0, 1.2, 3.6, 0.8], shall,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord;: [-1, -1, -1, -1], I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], confess't.: [-1, -1, -1, -1]
+SEND LINE "Our son shall, my lord; I do confess't. "
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Good: [-1, -1, -1, -1], madam!: [-1, -1, -1, -1]
+SEND LINE 'Good madam! '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Gertrude,: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], nother: [-1, -1, -1, -1], hit;: [-1, -1, -1, -1], what,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord;: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], say: [0.5, 0.7, 1.5, 0.5], you,: [-1, -1, -1, -1]
+SEND LINE 'Gertrude, do nother hit; what, my lord; what say you, '
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], She: [-1, -1, -1, -1], drinks.): [-1, -1, -1, -1]
+Stagedir (She drinks.)
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Our: [-1, -1, -1, -1], soned: [-1, -1, -1, -1], cup:: [-1, -1, -1, -1], it: [0.5, 0.4, 0.1, 0.5], is: [0.3, 0.6, 0.3, 0.0], too: [0.5, 0.6, 0.8, 0.5], la: [1.0, 0.2, 1.6, 0.6]
+SEND LINE 'Our soned cup: it is too la'
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], now.: [-1, -1, -1, -1]
+SEND LINE 'I do now. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], now.: [-1, -1, -1, -1]
+SEND LINE 'I do now. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+My: [-1, -1, -1, -1], lord,: [-1, -1, -1, -1], let,: [-1, -1, -1, -1], madam;: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], and: [0.7, 0.8, 0.4, 0.3], by.: [-1, -1, -1, -1]
+SEND LINE 'My lord, let, madam; by and by. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+Come: [-1, -1, -1, -1], wipe: [1.1, 0.5, 0.7, 0.8], think: [1.4, 1.3, 2.4, 1.2], yet: [0.7, 0.8, 0.8, 1.0], me,: [-1, -1, -1, -1], let,: [-1, -1, -1, -1], madam;: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], and: [0.7, 0.8, 0.4, 0.3], by.: [-1, -1, -1, -1]
+SEND LINE 'Come wipe think yet me, let, madam; by and by. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+Come: [-1, -1, -1, -1], wipe: [1.1, 0.5, 0.7, 0.8], thy: [0.1, 0.0, 0.6, 0.2], face.: [-1, -1, -1, -1]
+SEND LINE 'Come wipe thy face. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+I: [-1, -1, -1, -1], d: [-1, -1, -1, -1]
+SEND LINE 'I d'
+
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Aside): [-1, -1, -1, -1]
+TRIGGER: voice [u'aside']
+Stagedir (Aside)
+
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+And: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], is: [0.3, 0.6, 0.3, 0.0], almost: [1.2, 1.0, 1.9, 1.5], against: [2.5, 1.8, 1.1, 2.2], my: [0.4, 0.3, 1.9, 0.3]
+SEND LINE 'And yet is almost against my'
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Come,: [-1, -1, -1, -1], for: [0.0, 0.0, 0.0, 0.1], the: [0.4, 0.5, 0.3, 0.3], the: [0.4, 0.5, 0.3, 0.3], third,: [-1, -1, -1, -1], pass: [0.4, 0.8, 1.8, 0.7], with: [0.4, 0.4, 1.0, 0.3], you: [0.0, 0.1, 1.3, 0.0], so?: [-1, -1, -1, -1], come.: [-1, -1, -1, -1]
+SEND LINE 'Come, for the the third, pass with you so? come. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Say: [-1, -1, -1, -1], you,: [-1, -1, -1, -1], for: [0.0, 0.0, 0.0, 0.1], the: [0.4, 0.5, 0.3, 0.3], third,: [-1, -1, -1, -1], Laertes:: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], so?: [-1, -1, -1, -1], come,: [-1, -1, -1, -1], for: [0.0, 0.0, 0.0, 0.1], third,: [-1, -1, -1, -1], pass: [0.4, 0.8, 1.8, 0.7], wit: [0.8, 0.3, 2.7, 0.7]
+SEND LINE 'Say you, for the third, Laertes: you so? come, for third, pass wit'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Say: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], so?: [-1, -1, -1, -1], come: [0.8, 1.2, 2.2, 0.9], on.: [-1, -1, -1, -1]
+SEND LINE 'Say you so? come on. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Ha: [-1, -1, -1, -1]
+SEND LINE 'Ha'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Laertes: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Hamlet;: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], scuffling,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], change: [2.8, 3.0, 3.4, 2.5], rapiers,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Hamlet: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Laertes.): [-1, -1, -1, -1]
+Stagedir (Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)
+
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Part: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], are: [0.6, 0.6, 1.4, 0.6], incensed.: [-1, -1, -1, -1]
+SEND LINE 'Part they are incensed. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Nay,: [-1, -1, -1, -1], again.: [-1, -1, -1, -1]
+SEND LINE 'Nay, again. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Nay: [-1, -1, -1, -1]
+SEND LINE 'Nay'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], falls.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (The Queen falls.)
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Nay: [-1, -1, -1, -1], killet,: [-1, -1, -1, -1], th: [-1, -1, -1, -1], mine: [0.9, 0.7, 2.6, 1.0], sprink,: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], bled.: [-1, -1, -1, -1]
+SEND LINE 'Nay killet, th mine sprink, am bled. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Why,: [-1, -1, -1, -1], cock,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], drink,: [-1, -1, -1, -1], Osrin: [-1, -1, -1, -1], to,: [-1, -1, -1, -1], amleen.: [-1, -1, -1, -1]
+SEND LINE 'Why, cock, the drink, Osrin to, amleen. '
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+Why.: [-1, -1, -1, -1]
+SEND LINE 'Why.'
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+No,: [-1, -1, -1, -1], O: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], drink!: [-1, -1, -1, -1], I: [-1, -1, -1, -1], amlet,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], dear: [0.1, 0.4, 3.4, 0.5], Hamlet,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], drink!: [-1, -1, -1, -1], I: [-1, -1, -1, -1], amlet,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], O: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3]
+SEND LINE 'No, O my drink! I amlet, the dear Hamlet, the drink! I amlet, no, O my '
+dear: [0.1, 0.4, 3.4, 0.5], Ham: [-1, -1, -1, -1], poisoned.: [-1, -1, -1, -1]
+SEND LINE 'dear Ham poisoned. '
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+O: [-1, -1, -1, -1], villaint: [-1, -1, -1, -1], our's: [-1, -1, -1, -1], pois: [-1, -1, -1, -1], poiself: [-1, -1, -1, -1], oul: [-1, -1, -1, -1], poiself: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], hen: [-1, -1, -1, -1], turne: [-1, -1, -1, -1], lie;: [-1, -1, -1, -1]
+SEND LINE "O villaint our's pois poiself oul poiself on hen turne lie; "
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+O: [-1, -1, -1, -1], venver: [-1, -1, -1, -1], the:: [-1, -1, -1, -1], Hamlet: [-1, -1, -1, -1], thery: [-1, -1, -1, -1], mork: [-1, -1, -1, -1], it:: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], be: [0.6, 1.1, 0.8, 0.8], locked: [-1, -1, -1, -1], enver's: [-1, -1, -1, -1], lie: [3.6, 2.6, 0.6, 3.0], kinstreachere: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], the: [0.4, 0.5, 0.3, 0.3]
+SEND LINE "O venver the: Hamlet thery mork it: to be locked enver's lie kinstreachere do the "
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Stabs: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], King.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Stabs the King.)
+ALL: [-1, -1, -1, -1]
+SEND WHO ALL
+Tre,: [-1, -1, -1, -1]
+SEND LINE 'Tre, '
+Driend: [-1, -1, -1, -1], Daned: [-1, -1, -1, -1], Daned: [-1, -1, -1, -1], Daned: [-1, -1, -1, -1], murt: [-1, -1, -1, -1], damne,: [-1, -1, -1, -1], frink: [-1, -1, -1, -1], off: [1.3, 1.6, 0.9, 1.3], treason!: [-1, -1, -1, -1]
+SEND LINE 'Driend Daned Daned Daned murt damne, frink off treason! '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Here,: [-1, -1, -1, -1], friends,: [-1, -1, -1, -1], defend: [1.9, 2.2, 2.2, 1.1], Dane,: [-1, -1, -1, -1], frink: [-1, -1, -1, -1], off: [1.3, 1.6, 0.9, 1.3], tre,: [-1, -1, -1, -1]
+SEND LINE 'Here, friends, defend Dane, frink off tre, '
+Driends,: [-1, -1, -1, -1], frincestuous,: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], dam: [-1, -1, -1, -1]
+SEND LINE 'Driends, frincestuous, yet dam'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Forcing: [-1, -1, -1, -1], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], drink: [1.2, 1.7, 4.3, 1.5], the: [0.4, 0.5, 0.3, 0.3], poison): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Forcing him to drink the poison)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+
+Follow: [-1, -1, -1, -1], mother.: [-1, -1, -1, -1]
+SEND LINE 'Follow mother. '
+
+w: [-1, -1, -1, -1]
+SEND LINE 'w'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], King: [-1, -1, -1, -1], dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (King dies.)
+
+LAERTES: [-1, -1, -1, -1]
+SEND WHO LAERTES
+He,: [-1, -1, -1, -1], noblet: [-1, -1, -1, -1], upon: [1.0, 0.5, 1.1, 0.7], temper's: [-1, -1, -1, -1], justly: [0.8, 0.2, 2.1, 0.2], fath: [-1, -1, -1, -1], come: [0.8, 1.2, 2.2, 0.9], Hamle: [-1, -1, -1, -1]
+SEND LINE "He, noblet upon temper's justly fath come Hamle"
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Had: [-1, -1, -1, -1], tiquee: [-1, -1, -1, -1], chat:: [-1, -1, -1, -1]
+SEND LINE 'Had tiquee chat: '
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+Neve's: [-1, -1, -1, -1], you!: [-1, -1, -1, -1], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], me: [1.7, 0.7, 3.0, 1.2], in,: [-1, -1, -1, -1], some: [1.1, 0.8, 1.4, 1.3], Rome: [-1, -1, -1, -1], arre's?: [-1, -1, -1, -1]
+SEND LINE "Neve's you! I am me in, some Rome arre's? "
+Had: [-1, -1, -1, -1], nois: [-1, -1, -1, -1], orathe: [-1, -1, -1, -1], it: [0.5, 0.4, 0.1, 0.5], is: [0.3, 0.6, 0.3, 0.0], yet: [0.7, 0.8, 0.8, 1.0], waricity: [-1, -1, -1, -1], st: [1.0, 0.7, 1.0, 0.9], -: [-1, -1, -1, -1], O: [-1, -1, -1, -1], gook: [-1, -1, -1, -1], paing: [-1, -1, -1, -1], tio: [-1, -1, -1, -1], thee: [0.3, 0.8, 1.2, 0.3], nois: [-1, -1, -1, -1], st: [1.0, 0.7, 1.0, 0.9], butes: [-1, -1, -1, -1], cou: [-1, -1, -1, -1]
+SEND LINE 'Had nois orathe it is yet waricity st - O gook paing tio thee nois st butes cou '
+To: [-1, -1, -1, -1], thalet: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], -: [-1, -1, -1, -1], O: [-1, -1, -1, -1], gook: [-1, -1, -1, -1], pain: [2.3, 3.2, 0.9, 2.6], my: [0.4, 0.3, 1.9, 0.3], heen: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], tricity: [-1, -1, -1, -1], hile: [-1, -1, -1, -1]
+SEND LINE 'To thalet be - O gook pain my heen to tricity hile'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], afar: [0.8, 2.2, 1.9, 1.9], off,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], shot: [2.1, 2.5, 0.6, 1.9], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (March afar off, and shot within.)
+
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+On: [-1, -1, -1, -1], quite: [1.6, 1.9, 1.5, 1.8], news: [2.5, 2.6, 2.2, 3.3], morents: [-1, -1, -1, -1], mortio: [-1, -1, -1, -1], hear: [1.5, 1.4, 2.1, 1.2], the,: [-1, -1, -1, -1], wit: [0.8, 0.3, 2.7, 0.7], I: [-1, -1, -1, -1], die.: [-1, -1, -1, -1], Thest: [-1, -1, -1, -1], I: [-1, -1, -1, -1], cand;: [-1, -1, -1, -1]
+SEND LINE 'On quite news morents mortio hear the, wit I die. Thest I cand; '
+On: [-1, -1, -1, -1], lights: [0.5, 0.6, 3.7, 0.9], siless,: [-1, -1, -1, -1], Horas: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], die: [3.1, 3.4, 0.7, 4.4], elest:: [-1, -1, -1, -1]
+SEND LINE 'On lights siless, Horas my die elest: '
+On: [-1, -1, -1, -1], quited;: [-1, -1, -1, -1]
+SEND LINE 'On quited; '
+So: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], son: [1.0, 1.2, 3.6, 0.8], quit: [2.7, 1.8, 0.7, 2.3], prophe;: [-1, -1, -1, -1]
+SEND LINE 'So the son quit prophe; '
+I: [-1, -1, -1, -1], dying: [3.3, 3.8, 1.4, 3.7], voison: [-1, -1, -1, -1], lesy: [-1, -1, -1, -1], do;: [1.0, 1.2, 1.7, 0.8]
+SEND LINE 'I dying voison lesy do; '
+But: [-1, -1, -1, -1], ison: [-1, -1, -1, -1], less: [1.7, 1.7, 0.8, 2.3]
+SEND LINE 'But ison less '
+The: [-1, -1, -1, -1], o'erc: [-1, -1, -1, -1]
+SEND LINE "The o'erc"
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+Now: [-1, -1, -1, -1], cracks: [1.1, 1.5, 0.7, 1.8], angels: [1.1, 0.9, 4.4, 1.4], of: [1.2, 0.9, 0.3, 0.6], angels: [1.1, 0.9, 4.4, 1.4], sing: [1.3, 0.9, 4.2, 1.5], the: [0.4, 0.5, 0.3, 0.3], he: [0.2, 0.5, 0.9, 0.5], thy: [0.1, 0.0, 0.6, 0.2], res: [-1, -1, -1, -1], ang: [-1, -1, -1, -1], ther?: [-1, -1, -1, -1]
+SEND LINE 'Now cracks angels of angels sing the he thy res ang ther? '
+Why: [-1, -1, -1, -1], res: [-1, -1, -1, -1], singels: [-1, -1, -1, -1], swee: [-1, -1, -1, -1], does: [0.3, 0.2, 0.3, 0.3], of: [1.2, 0.9, 0.3, 0.6], angels: [1.1, 0.9, 4.4, 1.4], thy: [0.1, 0.0, 0.6, 0.2], res: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], angels: [1.1, 0.9, 4.4, 1.4], singels: [-1, -1, -1, -1], since: [0.3, 0.2, 0.2, 0.5], her?: [-1, -1, -1, -1]
+SEND LINE 'Why res singels swee does of angels thy res of angels singels since her? '
+Why: [-1, -1, -1, -1], drum: [1.4, 1.5, 2.3, 1.7], come: [0.8, 1.2, 2.2, 0.9], drum: [1.4, 1.5, 2.3, 1.7], cracks: [1.1, 1.5, 0.7, 1.8], to: [0.1, 0.6, 0.6, 0.3], ther?: [-1, -1, -1, -1]
+SEND LINE 'Why drum come drum cracks to ther? '
+And: [-1, -1, -1, -1], nights: [1.1, 1.6, 1.5, 1.5], angels: [1.1, 0.9, 4.4, 1.4], theart,: [-1, -1, -1, -1], sweet,: [-1, -1, -1, -1], swee: [-1, -1, -1, -1], her?: [-1, -1, -1, -1]
+SEND LINE 'And nights angels theart, sweet, swee her? '
+And: [-1, -1, -1, -1], nights: [1.1, 1.6, 1.5, 1.5], of: [1.2, 0.9, 0.3, 0.6], ang: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], t: [-1, -1, -1, -1]
+SEND LINE 'And nights of ang to to the t'
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+Stagedir (March within.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], FORTINBRAS,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], English: [-1, -1, -1, -1], Ambassadors,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], others.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Enter FORTINBRAS, the English Ambassadors, and others.)
+
+FORTINBRAS: [-1, -1, -1, -1]
+SEND WHO FORTINBRAS
+FORTINBRAS: [-1, -1, -1, -1]
+SEND WHO FORTINBRAS
+Whe: [-1, -1, -1, -1], elote: [-1, -1, -1, -1], edice: [-1, -1, -1, -1], avikend: [-1, -1, -1, -1], bllindis': [-1, -1, -1, -1], e: [-1, -1, -1, -1], lecke: [-1, -1, -1, -1], thathithie: [-1, -1, -1, -1]
+SEND LINE "Whe elote edice avikend bllindis' e lecke thathithie "
+An: [-1, -1, -1, -1], alinvin: [-1, -1, -1, -1], brie,: [-1, -1, -1, -1], shacren: [-1, -1, -1, -1]
+SEND LINE 'An alinvin brie, shacren '
+Fonout,: [-1, -1, -1, -1]
+SEND LINE 'Fonout, '
+Fofotofot: [-1, -1, -1, -1]
+SEND LINE 'Fofotofot '
+I?.: [-1, -1, -1, -1], hen: [-1, -1, -1, -1], try,: [-1, -1, -1, -1], s,:: [-1, -1, -1, -1]
+SEND LINE 'I?. hen try, s,: '
+FORTINBRAS: [-1, -1, -1, -1]
+SEND WHO FORTINBRAS
+FORTINBRAS: [-1, -1, -1, -1]
+SEND WHO FORTINBRAS
+Be: [-1, -1, -1, -1], dikigelick: [-1, -1, -1, -1], e: [-1, -1, -1, -1], qus: [-1, -1, -1, -1], d: [-1, -1, -1, -1], ausolor: [-1, -1, -1, -1], tht: [-1, -1, -1, -1]
+SEND LINE 'Be dikigelick e qus d ausolor tht '
+Wh: [-1, -1, -1, -1], broramorige: [-1, -1, -1, -1], h: [-1, -1, -1, -1], pus: [-1, -1, -1, -1], mus: [-1, -1, -1, -1], t: [-1, -1, -1, -1], t,:: [-1, -1, -1, -1]
+SEND LINE 'Wh broramorige h pus mus t t,:'
+################# SCENE FiveTwo 13_TTS.aloud.MUSIC.emotion_0_theatre wordcount:582 strategy:markov #################
+Timing info. Seconds: 23.3712921143, words: 1572, lines: 131
+BLACKOUT
+SEND STYLES 13_TTS.aloud.MUSIC.emotion_0_theatre
+
+(: [-1, -1, -1, -1], place: [0.9, 1.1, 2.0, 0.5], A: [-1, -1, -1, -1], hall: [0.5, 1.2, 1.3, 1.2], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], castle.): [-1, -1, -1, -1]
+TRIGGER: place [u'hall']
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (A hall in the castle.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HAMLET: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], HORATIO.): [-1, -1, -1, -1]
+Stagedir (Enter HAMLET and HORATIO.)
+
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], OSRIC.): [-1, -1, -1, -1]
+Stagedir (Enter OSRIC.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Hamlet: [-1, -1, -1, -1], moves: [1.0, 0.8, 2.0, 1.2], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], put: [0.3, 1.0, 1.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], hat.): [-1, -1, -1, -1]
+Stagedir (Hamlet moves him to put on his hat.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Osric.): [-1, -1, -1, -1]
+Stagedir (Exit Osric.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], a: [-1, -1, -1, -1], Lord.): [-1, -1, -1, -1]
+Stagedir (Enter a Lord.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Lord.): [-1, -1, -1, -1]
+Stagedir (Exit Lord.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Osric.): [-1, -1, -1, -1]
+Stagedir (Exit Osric.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], FORTINBRAS,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], English: [-1, -1, -1, -1], Ambassadors,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], others.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Enter FORTINBRAS, the English Ambassadors, and others.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Lord.): [-1, -1, -1, -1]
+Stagedir (Exit Lord.)
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], Trumpets: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], drums.): [-1, -1, -1, -1]
+TRIGGER: sound [u'trumpets']
+TRIGGER: sound [u'drums']
+Stagedir (Trumpets and drums.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], KING,: [-1, -1, -1, -1], QUEEN,: [-1, -1, -1, -1], LAERTES,: [-1, -1, -1, -1], Lords,: [-1, -1, -1, -1], OSRIC,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Attendants: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], foils.): [-1, -1, -1, -1]
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (Enter KING, QUEEN, LAERTES, Lords, OSRIC, and Attendants with foils.)
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], falls.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (The Queen falls.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], afar: [0.8, 2.2, 1.9, 1.9], off,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], shot: [2.1, 2.5, 0.6, 1.9], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (March afar off, and shot within.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], afar: [0.8, 2.2, 1.9, 1.9], off,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], shot: [2.1, 2.5, 0.6, 1.9], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (March afar off, and shot within.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], prepare: [0.7, 1.5, 2.4, 0.4], to: [0.1, 0.6, 0.6, 0.3], play.): [-1, -1, -1, -1]
+Stagedir (They prepare to play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Laertes: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Hamlet;: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], scuffling,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], change: [2.8, 3.0, 3.4, 2.5], rapiers,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Hamlet: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Laertes.): [-1, -1, -1, -1]
+Stagedir (Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], falls.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (The Queen falls.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], afar: [0.8, 2.2, 1.9, 1.9], off,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], shot: [2.1, 2.5, 0.6, 1.9], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (March afar off, and shot within.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Stabs: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], King.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Stabs the King.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Forcing: [-1, -1, -1, -1], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], drink: [1.2, 1.7, 4.3, 1.5], the: [0.4, 0.5, 0.3, 0.3], poison.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Forcing him to drink the poison.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], King: [-1, -1, -1, -1], dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (King dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+Stagedir (March within.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], prepare: [0.7, 1.5, 2.4, 0.4], to: [0.1, 0.6, 0.6, 0.3], play.): [-1, -1, -1, -1]
+Stagedir (They prepare to play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], She: [-1, -1, -1, -1], drinks.): [-1, -1, -1, -1]
+Stagedir (She drinks.)
+
+
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Laertes: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Hamlet;: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], scuffling,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], change: [2.8, 3.0, 3.4, 2.5], rapiers,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Hamlet: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Laertes.): [-1, -1, -1, -1]
+Stagedir (Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], King: [-1, -1, -1, -1], puts: [0.2, 0.3, 0.7, 0.8], Laertes': [-1, -1, -1, -1], hand: [0.6, 0.6, 1.1, 0.4], into: [0.2, 0.4, 0.7, 0.1], Hamlet's.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (The King puts Laertes' hand into Hamlet's.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], prepare: [0.7, 1.5, 2.4, 0.4], to: [0.1, 0.6, 0.6, 0.3], play.): [-1, -1, -1, -1]
+Stagedir (They prepare to play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], She: [-1, -1, -1, -1], lifts: [1.1, 1.5, 2.0, 1.2], the: [0.4, 0.5, 0.3, 0.3], cup.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (She lifts the cup.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], She: [-1, -1, -1, -1], drinks.): [-1, -1, -1, -1]
+Stagedir (She drinks.)
+
+
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Laertes: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Hamlet;: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], scuffling,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], change: [2.8, 3.0, 3.4, 2.5], rapiers,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Hamlet: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Laertes.): [-1, -1, -1, -1]
+Stagedir (Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], falls.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir (The Queen falls.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Stabs: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], King.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Stabs the King.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Forcing: [-1, -1, -1, -1], him: [1.1, 0.7, 1.5, 0.4], to: [0.1, 0.6, 0.6, 0.3], drink: [1.2, 1.7, 4.3, 1.5], the: [0.4, 0.5, 0.3, 0.3], poison.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Forcing him to drink the poison.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], King: [-1, -1, -1, -1], dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (King dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Dies.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], afar: [0.8, 2.2, 1.9, 1.9], off,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], shot: [2.1, 2.5, 0.6, 1.9], within.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (March afar off, and shot within.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], She: [-1, -1, -1, -1], drinks.): [-1, -1, -1, -1]
+Stagedir (She drinks.)
+
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], Trumpets: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], drums.): [-1, -1, -1, -1]
+TRIGGER: sound [u'trumpets']
+TRIGGER: sound [u'drums']
+Stagedir (Trumpets and drums.)
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], FORTINBRAS,: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], English: [-1, -1, -1, -1], Ambassadors,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], others.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Enter FORTINBRAS, the English Ambassadors, and others.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Laertes: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Hamlet;: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], scuffling,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], change: [2.8, 3.0, 3.4, 2.5], rapiers,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Hamlet: [-1, -1, -1, -1], wounds: [1.7, 2.4, 0.0, 3.7], Laertes.): [-1, -1, -1, -1]
+Stagedir (Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)
+
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], The: [-1, -1, -1, -1], King: [-1, -1, -1, -1], puts: [0.2, 0.3, 0.7, 0.8], Laertes': [-1, -1, -1, -1], hand: [0.6, 0.6, 1.1, 0.4], into: [0.2, 0.4, 0.7, 0.1], Hamlet's.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (The King puts Laertes' hand into Hamlet's.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], They: [-1, -1, -1, -1], play.): [-1, -1, -1, -1]
+Stagedir (They play.)
+
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], A: [-1, -1, -1, -1], dead: [2.1, 2.6, 1.0, 4.0], march.): [-1, -1, -1, -1]
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: sound [u'march']
+Stagedir (A dead march.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt,: [-1, -1, -1, -1], bearing: [0.8, 0.7, 0.5, 1.0], off: [1.3, 1.6, 0.9, 1.3], the: [0.4, 0.5, 0.3, 0.3], dead: [2.1, 2.6, 1.0, 4.0], bodies;: [-1, -1, -1, -1], after: [0.3, 0.3, 0.7, 0.5], which: [0.2, 0.1, 0.6, 0.3], a: [-1, -1, -1, -1], peal: [1.2, 0.3, 1.9, 0.4], of: [1.2, 0.9, 0.3, 0.6], ordnance: [1.2, 1.9, 0.6, 1.2], is: [0.3, 0.6, 0.3, 0.0], shot: [2.1, 2.5, 0.6, 1.9], off.): [-1, -1, -1, -1]
+TRIGGER: exit [u'exeunt']
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: sound [u'dead', u'march']
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+TRIGGER: sound [u'shot']
+TRIGGER: sound [u'cannon', u'shot']
+TRIGGER: sound [u'ordnance', u'shot']
+TRIGGER: sound [u'ordnance', u'is', u'shot']
+Stagedir (Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off.)

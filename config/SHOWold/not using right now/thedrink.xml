@@ -1,0 +1,18 @@
+   <markov>
+   	   <name>thedrink</name>
+       <file>data/brute.txt</file>
+       <first_character>GERTRUDE</first_character>
+      <train>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <lines>306-308</lines>
+         <characters>GERTRUDE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>55</length>
+         <k>1</k>
+      </generate>
+   </markov>
+</trial>

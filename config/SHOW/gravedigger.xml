@@ -1,12 +1,11 @@
-<scene>
+
    <markov>
-      		<file>data/brute.txt</file>
    	<train>
+   		<file>data/brute.txt</file>
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>1</lines>
-   		<characters>STAGE</characters>
-   		<pos>(,place,entrance,exit,NEWLINE,)</pos>
+   		<characters>Stage</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
@@ -14,37 +13,17 @@
    		<k>3</k>
    	</generate>
    </markov>
-
-   
-   <markov>
-   <scene_pause>1</scene_pause>
-      <train>
-        <file>data/brute.txt</file>
-         <acts>5</acts>
-         <scenes>1</scenes>
-		<lines>1-62</lines>
-         <characters>FIRST_CLOWN,SECOND_CLOWN</characters>
-      </train>
-      <generate>
-      	<finish_sent>True</finish_sent>
-         <reset>True</reset>
-         <length>100</length>
-         <k>2</k>
-   </markov>
-   
    <markov>
    	<train>
    		<file>data/brute.txt</file>
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>2-211</lines>
-   		<characters>STAGE</characters>
-   		<pos>(,NEWLINE,action,voice,)</pos>
+   		<characters>Stage</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<finish_sent>True</finish_sent>
-   		<length>30</length>
+   		<length>50</length>
    		<k>2</k>
    	</generate>
    </markov>
@@ -54,15 +33,13 @@
    		<file>data/brute.txt</file>
    		<acts>5</acts>
    		<scenes>1</scenes>
-   		<lines>56</lines>
-   		<characters>STAGE</characters>
-   		<pos>(,entrance,)</pos>
+   		<lines>124</lines>
+   		<characters>Stage</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<finish_sent>True</finish_sent>
    		<length>10</length>
-   		<k>10</k>
+   		<k>2</k>
    	</generate>
    </markov>
    <markov>
@@ -71,70 +48,29 @@
          <acts>5</acts>
          <scenes>1</scenes>
          <lines>63-66, 70-74, 92-95</lines>
-         <characters>FIRST_CLOWN,STAGE</characters>
+         <characters>First_Clown, Stage</characters>
       </train>
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>50</length>
+         <length>100</length>
          <k>7</k>
       </generate>
    </markov>
-   
-   <mirror>
-   	   <name>gravedigger</name>
-   	   <forced_character>HAMLET</forced_character>
-   	   <train>
-   	   		<file>data/brute.txt</file>
-   	   		<selections>
-   	   			<selection>
-   	   				<acts>5</acts>
-   	   				<scenes>1</scenes>
-					<words>30430-30435</words>
-   	   			</selection>
-   	   		</selections>
-   	   	</train>
-   	   	<generate>
-   	   		<selections>
-   	   			<selection>
-   	   				<acts>5</acts>
-   	   				<scenes>1</scenes>
-					<words>30430-30435</words>
-   	   			</selection>
-   	   		</selections>
-   	 	</generate>
-   	 </mirror> 
 
-   <markov>
-      <train>
-        <file>data/brute.txt</file>
-         <acts>5</acts>
-         <scenes>1</scenes>
-		<lines>122-186</lines>
-         <characters>FIRST_CLOWN,HAMLET,HORATIO</characters>
-      </train>
-      <generate>
-      	<finish_sent>True</finish_sent>
-         <reset>True</reset>
-         <length>150</length>
-         <k>2</k>
-   </markov>
-   
    <markov>
    	<train>
    		<file>data/brute.txt</file>
    		<acts>5</acts>
    		<scenes>1</scenes>
    		<lines>166</lines>
-   		<characters>HAMLET</characters>
+   		<characters>Hamlet</characters>
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>15</length>
+   		<length>20</length>
    		<k>3</k>
    	</generate>
    </markov>
-</scene>
-
 
    

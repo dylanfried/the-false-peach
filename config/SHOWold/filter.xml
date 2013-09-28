@@ -1,0 +1,35 @@
+ 	 <markov>
+    <name>filter</name>
+	<file>data/brute.txt</file>
+      <train>
+         		<acts>1</acts>
+         		<scenes>1</scenes>
+         		<lines>1-2</lines>
+         		<characters>BERNARDO,FRANCISCO</characters>
+      </train>
+      <generate>
+         <length>20</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
+ 	 <filter>
+    <name>filter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>Nay </pattern>
+         <length>400</length>
+      </generate>
+   </filter>
+   
+
+
+
+

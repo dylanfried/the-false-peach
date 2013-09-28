@@ -1,9 +1,8 @@
-
    	
    <markov>
    		<name>Hamthing</name>
    		<file>data/brute.txt</file>
-   	    <scene_pause>3</scene_pause>
+   	    <scene_pause>5</scene_pause>
    		<train>
       	<selections>
 			<selection>
@@ -53,7 +52,7 @@
    		<generate>
    			<type>word</type>
    			<one_word_line>True</one_word_line>
-   			<length>275</length>
+   			<length>175</length>
    			<k>1</k>
    		</generate>
    	</markov>
@@ -78,4 +77,5 @@
          <k>2</k>
       </generate>
    </markov>
+   
 </trial>

@@ -1,0 +1,17 @@
+   <markov>
+   	   <name>sweetprince</name>
+       <file>data/brute.txt</file>
+       <first_character>Horatio</first_character>
+      <train>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <lines>356-358</lines>
+         <characters>HORATIO</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>25</length>
+         <k>7</k>
+      </generate>
+   </markov>
+

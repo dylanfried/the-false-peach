@@ -1,6 +1,5 @@
    
    <mirror>
-         <scene_pause>5</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -21,7 +20,6 @@
    	   		
    
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -60,7 +58,7 @@
    
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>3</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -77,10 +75,9 @@
    </markov>
    
    <mirror>
-         <scene_pause>1</scene_pause>
+         <scene_pause>3</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
-   	<scene_pause>1</scene_pause>
       <train>
          	<characters>HAMLET</characters>
       </train>
@@ -97,7 +94,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -117,7 +113,6 @@
    	   		</mirror>
    
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -138,7 +133,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -160,7 +154,7 @@
    	   		
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>3</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -178,7 +172,7 @@
    
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>3</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -194,7 +188,6 @@
    </markov>
    
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -214,7 +207,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -234,7 +226,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -254,7 +245,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -275,7 +265,7 @@
    	   		
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>3</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -292,7 +282,7 @@
    	   		
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>2</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -308,7 +298,6 @@
    </markov>
    
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -328,7 +317,6 @@
    	   		</mirror>
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -349,7 +337,6 @@
    	   		
    	   		
    <mirror>
-         <scene_pause>1</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -369,7 +356,7 @@
    	   		</mirror> 
 
    <mirror>
-         <scene_pause>1</scene_pause>
+         <scene_pause>2</scene_pause>
     <name>deathspeech</name>
    	<file>data/brute.txt</file>
    	<scene_pause>3</scene_pause>
@@ -390,7 +377,7 @@
    	   	
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>2</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -407,7 +394,7 @@
   		
       <markov>
       <name>deathspeech</name>
-      <scene_pause>1</scene_pause>
+      <scene_pause>2</scene_pause>
       <file>data/brute.txt</file>
       <train>
          <acts>5</acts>
@@ -444,7 +431,7 @@
 
    <mirror>
      <name>kingthingmirror</name>
-         <scene_pause>1</scene_pause>
+         <scene_pause>3</scene_pause>
     <file>data/brute.txt</file>
      <train>
         <characters>HAMLET</characters>
@@ -613,7 +600,7 @@
    </mirror>
 
          <mirror>
-                  <scene_pause>1</scene_pause>
+        <scene_pause>1</scene_pause>
      <name>kingthingmirror</name>
     <file>data/brute.txt</file>
     <train>
@@ -630,6 +617,7 @@
 		</selections>
 	</generate>
    </mirror>
+   
          <mirror>
          <scene_pause>1</scene_pause>
      <name>kingthingmirror</name>

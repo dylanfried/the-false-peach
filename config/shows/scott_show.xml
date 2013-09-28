@@ -2,30 +2,8 @@
    <sequence name="scene">
       <scene>3pcntORIG.xml</scene>
    </sequence>
-   <sequence random="true" name="line">
-      <random>
-         <length>1000</length>
-         <scene_choices>
-            <scene_choice>I_am_filter.xml</scene_choice>
-            <scene_choice>I_do_filter.xml</scene_choice>
-            <scene_choice>I_doubt_filter.xml</scene_choice>
-            <scene_choice>I_never_filter.xml</scene_choice>
-            <scene_choice>I_think_filter.xml</scene_choice>
-            <scene_choice>I_will_filter.xml</scene_choice>
-            <scene_choice>It_was_filter.xml</scene_choice>
-            <scene_choice>now_filter.xml</scene_choice>
-            <scene_choice>O_filter.xml</scene_choice>
-            <scene_choice>speakfilter.xml</scene_choice>
-            <scene_choice>tell_filter.xml</scene_choice>
-            <scene_choice>then_filter.xml</scene_choice>
-            <scene_choice>they_are_filter.xml</scene_choice>
-            <scene_choice>thou_filter.xml</scene_choice>
-            <scene_choice>what_filter.xml</scene_choice>
-            <scene_choice>who_filter.xml</scene_choice>
-            <scene_choice>You_are_filter.xml</scene_choice>
-            <scene_choice>You_do_filter.xml</scene_choice>
-         </scene_choices>
-      </random>
+   <sequence name="line">
+      <scene>new_filter.xml</scene>
    </sequence>
    <sequence name="grammar">
       <scene>ham_thing.xml</scene>
@@ -34,18 +12,16 @@
       <scene>deathspeech.xml</scene>
    </sequence>
    <sequence name="word">
-      <scene>OneOne.xml</scene>
-      <scene>ghostscene.xml</scene>
-      <scene>hamoph.xml</scene>
+      <scene>partfourone.xml</scene>
+      <scene>partfourtwoA.xml</scene>
       <scene>dumb.xml</scene>
-      <scene>claudius.xml</scene>
-      <scene>closet.xml</scene>
+      <scene>partfourtwoB.xml</scene>
       <scene>MadOph.xml</scene>
-      <scene>gertrude.xml</scene>
+      <scene>newgertrude.xml</scene>
       <scene>gravedigger.xml</scene>
-      <scene>FiveTwo.xml</scene>
    </sequence>
    <sequence name="letter">
       <scene>letterFive.xml</scene>
+      <scene>FiveTwo.xml</scene>
    </sequence>
 </show>

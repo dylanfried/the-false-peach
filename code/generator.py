@@ -702,7 +702,7 @@ class Generator:
          else:
             max_line_length = 50
          if self.line_length > 0 and \
-            ((next_word[-2] == "dumb" and (re.match(".*[.?!:;]\s*$",next_word[-1]) or self.line_length > 9 and re.match(".*[,]\s*$",next_word[-1]))) or \
+            ((next_word[-2] == "dumb" and (re.match(".*[.?!:;,]\s*$",next_word[-1]) or self.line_length > 6 and re.match(".*[,]\s*$",next_word[-1]))) or \
             (current_chunk["chunk_type"] != "mirror" and self.current_line_prose/(self.line_length+0.0)>=0.1 and ((self.line_length > 8 and re.match(".*[,]\s*$",next_word[-1])) or (re.match(".*[.?!:;]\s*$",next_word[-1])))) or \
             (self.in_paren and (self.line_length > max_line_length or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1])))) or \
             (not self.in_paren and (self.line_length > max_line_length or (self.line_length > 13 and re.match(".*[,]\s*$",next_word[-1])) or (self.line_length > 10 and re.match(".*[.?!:;]\s*$", next_word[-1]))))):
@@ -832,7 +832,7 @@ class Generator:
                   # Don't let anyone say their own name
                   word_exclusions = [{"index":12,"exclude":self.current_speaker.title()}]
                   # Don't let Hamlet say My lord, my honoured lord, or "I, of ladies" or "O gentle son"
-                  if self.current_speaker == "HAMLET" and (self.output[-1][-1].lower() == "my" or \
+                  if self.current_speaker in ["HAMLET","KING"] and (self.output[-1][-1].lower() == "my" or \
                      (self.output[-2][-1].lower() == "my" and self.output[-1][-1].lower() == "honoured")):
                      word_exclusions.append({"index":12,"exclude":"lord"})
                   # Don't let King say this either
@@ -852,6 +852,9 @@ class Generator:
                   # Don't let Gertrude say "my mother"
                   if self.current_speaker == "GERTRUDE" and self.output[-1][-1].lower() == "my":
                      word_exclusions.append({"index":12,"exclude":"mother"})
+                  # Don't let gertrude say queen
+                  if self.current_speaker == "GERTRUDE":
+                     word_exclusions.append({"index":12,"exclude":"queen"})
                   # Don't let the same character be chosen too many times in a row
                   if self.current_speaker_count and self.current_speaker_count >= 2:
                      word_exclusions.append({"index":12,"exclude":self.current_speaker})
@@ -891,7 +894,9 @@ class Generator:
                      insert_paren[-1] = ")"
                      insert_paren[-2] = ")"
                      self.update(insert_paren,chunk)
-                  if len(self.output) >= 6 and (" ".join([x[12] for x in self.output[-6:]]) == "O , I am slain !"):
+                  #print "SLAIN?"," ".join([x[12] for x in self.output[-6:]])
+                  if (len(self.output) >= 4 and (" ".join([x[12] for x in self.output[-4:]]) == "I am slain !")) or \
+                     (len(self.output) >= 5 and (" ".join([x[12] for x in self.output[-5:]]) == "I am slain ! NEWLINE")):
                      insert_paren = [None]*13
                      insert_paren[-1] = "("
                      insert_paren[-2] = "("

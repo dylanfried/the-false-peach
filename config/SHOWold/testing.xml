@@ -1,0 +1,67 @@
+<!--HamOph,Claudius,kingrises,Closet-->
+<scene semantic_logic="True">
+
+
+         	
+         	
+         	
+   <markov>
+   	   <name>parttwoA</name>
+       <file>data/brute.txt</file>
+       <train>
+       <selections>
+			
+         	<selection>
+         	   <acts>3</acts>
+         		<scenes>3</scenes>
+         		<lines>36-72</lines>
+         		<characters>CLAUDIUS,KING</characters>
+         	</selection>
+         	<selection>
+         	<selection>
+         	   <acts>3</acts>
+         		<scenes>3</scenes>
+         		<lines>72</lines>
+         		<characters>STAGE</characters>
+         	</selection>
+         	<selection>
+   				<acts>3</acts>
+   				<scenes>4</scenes>
+   				<lines>7</lines>
+   				<characters>HAMLET</characters>
+   			</selection>
+   			<selection>
+   	   		   <acts>1</acts>
+   				<scenes>2</scenes>
+   				<lines>254</lines>
+   				<characters>STAGE</characters>
+   			</selection>
+   			<selection>
+   	   		   <acts>1</acts>
+   				<scenes>4</scenes>
+   				<lines>86</lines>
+   				<characters>STAGE</characters>
+   			</selection>
+   			<selection>
+   			   	<acts>3</acts>
+   	   			<scenes>4</scenes>
+   	   			<lines>24</lines>
+   	   			<characters>POLONIUS</characters>
+   	   		</selection>
+   	   		<selection>
+   	   		   <acts>3</acts>
+   				<scenes>4</scenes>
+   				<lines>24</lines>
+   				<characters>STAGE</characters>
+   			</selection>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <length>1000</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   
+   
+   
+</scene>

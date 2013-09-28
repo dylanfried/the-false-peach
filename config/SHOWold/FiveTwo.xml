@@ -1,0 +1,53 @@
+
+
+<markov>
+      <name>ActFiveSceneTwo</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <characters>STAGE</characters>
+         <pos>(,place,entrance,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <length>10</length>
+         <k>10</k>
+      </generate>
+   </markov>
+
+   <markov>
+      <name>ActFiveSceneTwo</name>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>5</acts>
+         <scenes>2</scenes>
+         <lines>2-397</lines>
+         <characters>STAGE</characters>
+         <pos>(,entrance,exit,NEWLINE,action,sound,)</pos>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <length>500</length>
+         <k>5</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	<name>LastLine</name>
+   	<scene_pause>1</scene_pause>
+   	 <train>
+   		<file>data/brute.txt</file>
+   			<acts>5</acts>
+   			<scenes>2</scenes>
+   			<lines>398-401</lines>
+   			<characters>Stage</characters>
+   	 </train>
+   	 <generate>
+      	<finish_sent>True</finish_sent>
+   	 	<reset>True</reset>
+   	 	<length>25</length>
+   	 	<k>5</k>
+   	 </generate>
+   	</markov>
+

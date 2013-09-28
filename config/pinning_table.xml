@@ -13,7 +13,7 @@
    <pinned>
       <scene>3pcntORIG</scene>
       <sound>TTS.aloud</sound>
-      <video>1</video>
+      <video>4</video>
       <lights>theatre</lights>
    </pinned>
    <excluded>
@@ -342,8 +342,8 @@
    
    <pinned>
       <scene>dumb</scene>
-      <lights>theatre,lightshow</lights>
-      <video>2</video>
+      <lights>lightshow</lights>
+      <video>14</video>
       <sound>TTS.mute</sound>
    </pinned>
    <excluded>
@@ -368,6 +368,12 @@
       <scene>gertrude</scene>
       <sound>TTS.mix</sound>
    </excluded>
+   <pinned>
+      <scene>newgertrude</scene>
+      <video>12</video>
+      <lights>lightshow</lights>
+      <sound>TTS.aloud</sound>
+   </pinned>
    
    <pinned>
       <scene>ghostscene</scene>
@@ -383,48 +389,9 @@
    <pinned>
       <scene>gravedigger</scene>
       <lights>theatre</lights>
-      <video>16,17</video>
+      <video>2</video>
+      <sound>TTS.aloud</sound>
    </pinned>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.mute</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.inear.VOICE.aloud</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.aloud.ROGUI</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.aloud.SPACE.character</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.mix</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.inear.VOICE.space</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.inear.VOICE.aloud.MUSIC.emotion</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.aloud.MUSIC.emotion.MADOPH</sound>
-   </excluded>
-   <excluded>
-      <scene>gravedigger</scene>
-      <sound>TTS.mute.VOICE.rogui</sound>
-   </excluded>
    
    <pinned>
       <scene>groups</scene>
@@ -527,7 +494,7 @@
    
    <pinned>
       <scene>hamsolilddop</scene>
-      <sound>TTS.inear.VOICE.aloud</sound>
+      <sound>TTS.inear.VOICE.aloud.MUSIC.iana</sound>
       <video>10</video>
       <lights>actor1</lights>
    </pinned>
@@ -630,6 +597,12 @@
       <video>15</video>
       <lights>character</lights>
       <sound>TTS.aloud.SPACE.character</sound>
+   </pinned>
+   <pinned>
+      <scene>new_filter</scene>
+      <video>5</video>
+      <lights>lightshow</lights>
+      <sound>TTS.filter</sound>
    </pinned>
    <pinned>
       <scene>speakfilter</scene>
@@ -949,6 +922,34 @@
       <scene>OphMon</scene>
       <sound>TTS.mix</sound>
    </excluded>
+   
+   <pinned>
+      <scene>partfourone</scene>
+      <lights>ghost</lights>
+      <video>2</video>
+      <sound>TTS.aloud.MUSIC.emotion</sound>
+   </pinned>
+   
+   <pinned>
+      <scene>partfourtwoA</scene>
+      <video>1</video>
+      <sound>TTS.aloud</sound>
+      <lights>closet</lights>
+   </pinned>
+   
+   <pinned>
+      <scene>partfourtwoB</scene>
+      <video>1</video>
+      <sound>TTS.aloud</sound>
+      <lights>lightshow</lights>
+   </pinned>
+   
+   <pinned>
+      <scene>partfourthree</scene>
+      <lights>theatre</lights>
+      <video>16,17</video>
+      <sound>TTS.aloud</sound>
+   </pinned>
    
    <pinned>
       <scene>piece_scott</scene>
@@ -1447,10 +1448,6 @@
    </excluded>
    <excluded>
       <video>14</video>
-      <sound>TTS.mute</sound>
-   </excluded>
-   <excluded>
-      <video>14</video>
       <sound>TTS.mute.MUSIC.emotion</sound>
    </excluded>
    <excluded>
@@ -1459,8 +1456,5 @@
    </excluded>
    <excluded>
       <sound>TTS.mute.VOICE.rogui</sound>
-   </excluded>
-   <excluded>
-      <video>14</video>
    </excluded>
 </table>

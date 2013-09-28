@@ -12,7 +12,7 @@ def update(e,c,lam=0.8):
    if c > 0: return e*lam+c*(1-lam)
    return e
 
-# This class takes care of sending the generated script
+# This class takes care of SEND the generated script
 # via OSC. There are two important things here:
 #  - We need to send stuff to Loosey
 #  - We need to subscribe to Loosey (at this point to
@@ -72,7 +72,7 @@ class LooseyClient:
                trigword = w.string.strip().split(" ")
                self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigzero))
       
-      # OSC client for sending messages to Loosey
+      # OSC client for SEND messages to Loosey
       if self.play:
          self.sender = OSC.OSCClient()
       
@@ -131,7 +131,7 @@ class LooseyClient:
       #print self.actions
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
-      #print "SENDING", self.actions[what], value, excess
+      #print "SEND", self.actions[what], value, excess
       if not self.play:
          return 1
       # Create and send the actual message
@@ -139,7 +139,7 @@ class LooseyClient:
       msg.setAddress(self.actions[what])
       msg.append(value)
       if excess: msg.append(excess)
-      #print "Sending message to Loosey",self.sender_ip, self.sender_port
+      #print "SEND message to Loosey",self.sender_ip, self.sender_port
       try: self.sender.sendto(msg, (self.sender_ip,8110))
       except AttributeError as e:
          print "Attribute Error", e
@@ -154,12 +154,12 @@ class LooseyClient:
       # Success!
       return 1
 
-   # Method for sending a message to Loosey
+   # Method for SEND a message to Loosey
    # Return a 1 on success or 0 on failure
    def send_value(self,what,value,excess=""):
       # Make sure that this is one of our defined actions
       if not what in self.actions: return 0
-      #print "SENDING", self.actions[what], value, excess
+      #print "SEND", self.actions[what], value, excess
       if not self.play:
          return 1
       
@@ -189,7 +189,7 @@ class LooseyClient:
       msg.setAddress(self.actions[what])
       msg.append(value)
       if excess: msg.append(excess)
-      #print "Sending message to Loosey",self.sender_ip, self.sender_port
+      #print "SEND message to Loosey",self.sender_ip, self.sender_port
       try: self.sender.sendto(msg, (self.sender_ip,self.sender_port))
       except AttributeError as e:
          print "Attribute Error", e
@@ -219,7 +219,7 @@ class LooseyClient:
       return LooseyClient.next_line[0]
    
    # These two methods are for pulling out the word frequency and scores
-   # Mainly used for sending out metadata across Loosey
+   # Mainly used for SEND out metadata across Loosey
    def word_freq(self, w):
       if w in self.freqs: return self.freqs[w]
       else: return 0
@@ -230,10 +230,10 @@ class LooseyClient:
    # Method to send a script
    # The script comes in the form of a list of strings
    # where each element is a line from our script.
-   # This method takes care of managing/sending triggers
+   # This method takes care of managing/SEND triggers
    # as well.
    def send_script(self, lines,burrito_word_count=None):
-      print "\n\n SENDING SCRIPT \n\n"
+      print "\n\n SEND SCRIPT \n\n"
       # First, send beginning text and zeroes:
       self.send_value("stagedir.place","zero")
       time.sleep(0.001)
@@ -267,6 +267,9 @@ class LooseyClient:
          #print "Getting word",word
          if word == "EOL": 
             break
+      
+      # Black out video now
+      self.send_value("style.video",10)
       
       # This is a variable to keep track of a weighted moving
       # average of affect values that we send to Loosey
@@ -319,7 +322,7 @@ class LooseyClient:
          # We need an outro because we're moving into a section
          # after something that had "ACT" or "SCENE"
          if need_outro:
-            print "SENDING OUTRO"
+            print "SEND OUTRO"
             self.send_value("outro",2000,name_for_outro)
             time.sleep(2)
             need_outro = False
@@ -353,12 +356,12 @@ class LooseyClient:
             self.send_value("style.actor","zero")
             time.sleep(0.5)
             self.send_value("style.lights","zero")
-            time.sleep(7)
+            time.sleep(3.5)
             self.send_value("character","STYLE")
             self.changed_speaker = True
             time.sleep(0.001)
 
-            
+            # SCROLLY STUFF PRINTING
             #temp_line_index = line_index+1
             #while temp_line_index < len(lines) and not re.match(".*@@@@@@.*",lines[temp_line_index]):
             #   #print lines[temp_line_index]
@@ -375,9 +378,9 @@ class LooseyClient:
             #   time.sleep(0.02)
             
             grab_next_style = re.sub(".* (\d+)_([\w\.]+)_(\d+)_(\w+).*","\\1_\\2_\\3_\\4",lines[line_index+1])
-            print "SENDING SCROLL VALUE",self.act_number
+            print "SEND SCROLL VALUE",self.act_number
             self.send_value("scrollStart",self.act_number)
-            #print "SENDING LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
+            #print "SEND LINE", "Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))
             #self.send_value("line","Apply style value "+re.sub(".*name:(\w+) .*", "\\1",l)+","+",".join(grab_next_style.split("_"))+"\n")
             # Wait for Loosey to acknowledge with EOL
             #while 1:
@@ -389,6 +392,7 @@ class LooseyClient:
             while not self.scroll_end and self.play:
                word = self.get_input()
             self.scroll_end = False
+            time.sleep(1)
             continue
          # Check to see if we're in a new scene
          if re.match(".*####.*",l):
@@ -429,7 +433,9 @@ class LooseyClient:
                # First, clear out the current styles, etc
                # Check whether we have a scene_pause for this chunk
                if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
-                  time.sleep(2)
+                  # Don't do this sleep after dumb show
+                  if self.scene != "partfourtwoB" and self.scene != "FiveTwo":
+                     time.sleep(2)
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
                self.send_value("stagedir.exit","zero")
@@ -454,13 +460,17 @@ class LooseyClient:
                   self.send_value("style.actor","zero")
                   time.sleep(0.5)
                   self.send_value("style.lights","zero")
-                  time.sleep(1)
+                  # Don't do this sleep after dumb show
+                  if self.scene == "partfourtwoB" or self.scene == "FiveTwo":
+                     time.sleep(0.3)
+                  else:
+                     time.sleep(1)
                #else:
                #   # We want to send a partial zero to lights so that we 
                #   # don't get super confused styles
                #   self.send_value("style.lights","partial_zero")
                #   time.sleep(0.3)
-               print "SENDING STYLES", styles_string
+               print "SEND STYLES", styles_string
                # Now, actually send the new styles
                self.send_value("style.sound",styles[1])
                time.sleep(0.001)
@@ -473,14 +483,16 @@ class LooseyClient:
                self.send_value("scene.name",l.split(" ")[2])
                # Check whether we have a scene_pause for this chunk
                if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
-                  time.sleep(1)
+                  # Don't do this sleep after dumb show
+                  if self.scene != "partfourtwoB" and self.scene != "FiveTwo":
+                     time.sleep(1)
             # Move on to the next line
             continue
             
          # check to see if we're at a new chunk
          elif re.match(".*=====.*",l):
             #current_word_count += len(l.split(" "))
-            print l
+            #print l
             # Check whether we have a word_pause for this chunk
             if re.match(".*word_pause:(\d+).*$",l):
                self.word_pause = int(re.sub(".*word_pause:(\d+).*$","\\1",l))
@@ -518,7 +530,7 @@ class LooseyClient:
                print "PAUSING FOR SCOTT"
                time.sleep(0.5)
             self.send_value("character",who)
-            print "SENDING WHO",who
+            print "SEND WHO",who
             self.last_character = who
             self.changed_speaker = False
                   
@@ -532,7 +544,7 @@ class LooseyClient:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
             # Display keeps track of whether to send the word out (probably for video display)
             display = 0
-            print "SENDING INTRO"
+            print "SEND INTRO"
             # This is the TITLE voice
             self.send_value("intro",3000)
             time.sleep(0.001)
@@ -577,11 +589,12 @@ class LooseyClient:
                print "Sleeping"
                time.sleep(1)
             # Send the stagedir
-            if wwhhaatt == "dumb":
+            if wwhhaatt == "dumb" or (self.scene == "dumb" and wwhhaatt == "exit"):
                #print "dumb character"
                # Special dumb character that is mute for dumb show
                self.send_value("character","DUMB")
             else:
+               #print "stagedir character"
                self.send_value("character","STAGEDIR")
             self.changed_speaker = True
             self.send_value("stagedir.bool",2)
@@ -589,9 +602,10 @@ class LooseyClient:
             if wwhhaatt == "dumb":
                stagedir_to_send = re.sub("^\s*\((.*)\)\s*$","\\1",l)
                #print "original stagedir to send", stagedir_to_send
-               if line_index > 0 and not re.match("^\s*\(\s*dumb.*\)\s*$",lines[line_index-1]):
+               #print lines[line_index-1],lines[line_index+1]
+               if line_index > 0 and not re.match("^\s*\(\s*dumb\s*[^\s]+.*\)\s*$",lines[line_index-1]):
                   stagedir_to_send = "(" + stagedir_to_send
-               if line_index+1 < len(lines) and not re.match("^\s*\(\s*dumb.*\)\s*$",lines[line_index+1]):
+               if line_index+1 < len(lines) and not re.match("^\s*\(\s*dumb\s*[^\s]+.*\)\s*$",lines[line_index+1]):
                   stagedir_to_send = stagedir_to_send + ")"
                print "Stagedir to send", stagedir_to_send
                self.send_value("stagedir",stagedir_to_send)
@@ -613,7 +627,7 @@ class LooseyClient:
                continue
             # If we're entering dialogue again and don't have a speaker, put one in
             if self.last_character and self.changed_speaker:
-               print "Entering dialogue, SENDING WHO", self.last_character
+               print "Entering dialogue, SEND WHO", self.last_character
                self.send_value("character",self.last_character)
                self.changed_speaker = False
             # Send the line
@@ -635,7 +649,7 @@ class LooseyClient:
             # the voice triggers when the time comes
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
-            print "SENDING LINE","%r"%l
+            print "SEND LINE","%r"%l
       
          while 1:
             # For each word said, we're going to check whether we need
@@ -673,7 +687,7 @@ class LooseyClient:
                   maxpriority = max(tmppriority)
                   # Grab everything with that priority
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
-                  print "SENDING TRIGGER 2", allt[0].stage, allt[0].words[0]
+                  print "SEND TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Send one of them
                   # For voice triggers, we have a system for zeroing them out
                   # after the next character change, stage dir, etc. Sometimes,

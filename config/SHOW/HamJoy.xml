@@ -1,0 +1,19 @@
+   <markov>
+    <name>RampOph</name>
+      <name>Ramp</name>
+      <file>data/brute.txt</file>
+      <train>
+         <characters>HAMLET</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+               <ramp emotion="joy">
+                  <point line=-1 value=-1.5 />
+                  <point line=190 value=2.0 />
+                  <point line=199 value=2.8 />
+                  <point line=201 value=-1.0 />
+               </ramp>
+         <length>150</length>
+         <k>2</k>
+      </generate>
+   </markov>

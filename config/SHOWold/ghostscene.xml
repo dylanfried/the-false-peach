@@ -1,0 +1,126 @@
+<scene>
+<markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+         <characters>STAGE</characters>
+         <pos>(,NEWLINE,place,entrance,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>22</length>
+         <k>7</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>2</lines>
+		<characters>GHOST</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>2-91</lines>
+		<characters>GHOST</characters>
+      </train>
+      <generate>
+               <type>threshold</type>
+               <ramp emotion="fear">
+                  <point line=-1 value=-0.5 />
+                  <point line=5 value=-0.1 />
+                  <point line=25 value=0.1 />
+                  <point line=41 value=-0.1 />
+                  <point line=61 value=-0.5 />
+                  <point line=65 value=0.1 />
+               </ramp>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>64</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>2-91</lines>
+		<characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>20</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>91</lines>
+		<characters>GHOST,STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>14</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>5</scenes>
+		<lines>92-112</lines>
+		<characters>HAMLET</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>50</length>
+         <k>1</k>
+      </generate>
+   </markov>
+
+   <markov>
+   	   <name>ghostscene</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>1</acts>
+         <scenes>2</scenes>
+		<lines>258</lines>
+		<characters>STAGE</characters>
+		<pos>(,exit,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   </scene>

@@ -1,0 +1,15 @@
+   <markov>
+   	  <first_character>HAMLET</first_character>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>3</acts>
+         <scenes>2</scenes>
+         <lines>133</lines>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>149</length>
+         <k>10</k>
+      </generate>
+   </markov>
+

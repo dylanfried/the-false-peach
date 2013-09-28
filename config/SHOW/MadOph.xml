@@ -1,4 +1,20 @@
 <scene>
+
+<markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>4</acts>
+         	<scenes>5</scenes>
+			<characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>5</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
 <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>
@@ -62,6 +78,7 @@
    
    <markov>
     <name>MadOph</name>
+    <scene_pause>5</scene_pause>
    	<file>data/brute.txt</file>
       <train>
       	<selections>
@@ -73,7 +90,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>200</length>
+         <length>250</length>
          <k>2</k>
       </generate>
    </markov>
@@ -100,7 +117,7 @@
       <generate>
          <finish_sent>True</finish_sent>
          <reset>True</reset>
-         <length>200</length>
+         <length>250</length>
          <k>2</k>
       </generate>
    </markov> 
@@ -138,16 +155,15 @@
                <ramp emotion="fear">
                   <point line=-1 value=-0.5 />
                   <point line=50 value=-0.5 />
-                  <point line=100 value=1.0 />
-                  <point line=150 value=1.8 />
-                  <point line=170 value=1.9 />
-                  <point line=180 value=2.0 />
+                  <point line=100 value=1.1 />
+                  <point line=150 value=1.4 />
+                  <point line=170 value=1.6 />
+                  <point line=180 value=1.9 />
                   <point line=190 value=2.0 />
-                  <point line=199 value=-1.0 />
-                  <point line=201 value=-1.0 />
+                  <point line=249 value=-1.0 />
+                  <point line=251 value=-1.0 />
                </ramp>
-         <finish_sent>True</finish_sent>
-         <length>150</length>
+         <length>250</length>
          <k>2</k>
       </generate>
    </markov>

@@ -1,0 +1,12 @@
+
+<straightdo>
+   <name>straightdo</name>
+   <train>
+      <file>data/brute.txt</file>
+      <characters>HAMLET</characters>
+	 </train>
+	 <generate>
+	 	<length>1000</length>
+	 </generatea>
+</straightdo>  
+

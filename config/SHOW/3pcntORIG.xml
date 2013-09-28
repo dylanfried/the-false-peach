@@ -18,12 +18,12 @@
          <file>data/brute.txt</file>
          <acts>1</acts>
          <scenes>2</scenes>
-         <lines>1-128</lines>
-         <characters>STAGE,KING,GERTRUDE,HAMLET</characters>
+         <lines>1</lines>
+         <characters>STAGE,TITLE</characters>
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>75</length>
+         <length>10</length>
          <k>15</k>
       </generate>
    </markov>
@@ -49,7 +49,7 @@
       </train>
       <generate>
          <finish_sent>True</finish_sent>
-         <length>68</length>
+         <length>90</length>
          <k>10</k>
       </generate>
    </markov>
@@ -298,49 +298,26 @@
          <file>data/brute.txt</file>
          <acts>4</acts>
          <scenes>5</scenes>
-         <characters>STAGE</characters>
+         <lines>1-7</lines>
       </train>
       <generate>
-         <finish_sent>True</finish_sent>
-         <length>10</length>
+         <length>113</length>
          <k>10</k>
       </generate>
    </markov>
     <markov>
-    <name>MadOph</name>
-    <first_character>OPHELIA</first_character>
-   	<file>data/brute.txt</file>
+     <name>ActFourSceneFive</name>
       <train>
-      	<selections>
-      		<selection>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>20</lines>
-			<characters>STAGE</characters>
-		</selection>
-	</selections>
+         <file>data/brute.txt</file>
+         <acts>4</acts>
+         <scenes>5</scenes>
+         <lines>7</lines>
       </train>
       <generate>
-         <reset>True</reset>
-         <length>4</length>
-         <k>10</k>
+         <length>20</length>
+         <k>1</k>
       </generate>
    </markov>
-   <markov>
-        <name>ActFourSceneFive</name>
-      		<train>
-         		<file>data/brute.txt</file>
-         		<acts>4</acts>
-         		<scenes>5</scenes>
-         		<lines>21-30</lines>
-			<characters>OPHELIA,GERTRUDE, STAGE</characters>
-		</train>
-      <generate>
-         <finish_sent>True</finish_sent>
-         <length>75</length>
-         <k>10</k>
-      </generate>
-    </markov>
     
    <markov>
    	  <name>ActFiveSceneOne</name>

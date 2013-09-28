@@ -1,0 +1,16 @@
+<ddop>
+   <name>occasionsddop</name>
+   <train>
+      <file>data/brute.txt</file>
+<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>4</scenes>
+         		<lines>31-65</lines>
+			</selection>
+		</selections>
+	 </train>
+	 <generate>
+	 </generate>
+</ddop>   	
+

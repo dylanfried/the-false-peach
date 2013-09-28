@@ -1,0 +1,16 @@
+ 	 <filter>
+    <name>Ofilter</name>
+	<file>data/brute.txt</file>
+    <alternate_character>OPHELIA, HAMLET, GERTRUDE, CLAUDIUS</alternate_character>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>O </pattern>
+         <length>35</length>
+      </generate>
+   </filter>

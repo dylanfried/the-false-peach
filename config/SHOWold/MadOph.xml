@@ -1,0 +1,193 @@
+<scene>
+<markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>4</acts>
+         	<scenes>5</scenes>
+			<characters>STAGE</characters>
+			<pos>(,place,entrance,NEWLINE,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>10</length>
+         <k>10</k>
+      </generate>
+   </markov>
+
+
+    <markov>
+    <name>MadOph</name>
+    <scene_pause>1</scene_pause>
+    <first_character>OPHELIA</first_character>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>20</lines>
+			<characters>STAGE</characters>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>4</length>
+         <k>9</k>
+      </generate>
+   </markov>
+   
+    <markov>
+    <name>MadOph</name>
+    <first_character>OPHELIA</first_character>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>21</lines>
+			<characters>OPHELIA</characters>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>10</length>
+         <k>7</k>
+      </generate>
+   </markov>
+   
+   <markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+      			<characters>OPHELIA</characters>
+        	</selection>
+        </selections>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>200</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   
+   <markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>2-218</lines>
+				<characters>OPHELIA</characters>
+			</selection>
+			<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>2-218</lines>
+         		<characters>STAGE</characters>
+         		<pos>(,voice,)</pos>
+		</selections>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>200</length>
+         <k>2</k>
+      </generate>
+   </markov> 
+   
+   <markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>188-198</lines>
+				<characters>OPHELIA,STAGE</characters>
+			</selection>
+		</selections>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>50</length>
+         <k>1</k>
+      </generate>
+   </markov>
+   
+   <markov>
+    <name>RampOph</name>
+      <name>Ramp</name>
+      <file>data/brute.txt</file>
+      <train>
+         <characters>OPHELIA</characters>
+      </train>
+      <generate>
+         <type>threshold</type>
+               <ramp emotion="fear">
+                  <point line=-1 value=-0.5 />
+                  <point line=50 value=-0.5 />
+                  <point line=100 value=1.1 />
+                  <point line=150 value=1.4 />
+                  <point line=170 value=1.6 />
+                  <point line=180 value=1.9 />
+                  <point line=190 value=2.0 />
+                  <point line=199 value=-1.0 />
+                  <point line=201 value=-1.0 />
+               </ramp>
+         <length>150</length>
+         <k>2</k>
+      </generate>
+   </markov>
+   
+    <markov>
+    <name>MadOph</name>
+   	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>4</acts>
+         		<scenes>5</scenes>
+         		<lines>45-73</lines>
+				<characters>OPHELIA</characters>
+			</selection>
+		</selections>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>55</length>
+         <k>2</k>
+      </generate>
+   </markov>
+
+
+    <markov>
+    <name>MadOph</name>
+    <scene_pause>1</scene_pause>
+   	<file>data/brute.txt</file>
+      <train>
+        	<acts>4</acts>
+         	<scenes>5</scenes>
+         	<lines>73</lines>
+			<characters>STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   </scene>

@@ -20,6 +20,38 @@
    
    <markov>
       	<file>data/brute.txt</file>
+      	<name>sings</name>
+   	<train>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<lines>71</lines>
+   		<characters>STAGE</characters>
+   	</train>
+   	<generate>
+   		<reset>True</reset>
+   		<length>3</length>
+   		<k>10</k>
+   	</generate>
+   </markov> 
+   
+   <markov>
+      <train>
+         <file>data/brute.txt</file>
+         <acts>5</acts>
+         <scenes>1</scenes>
+         <lines>63-66, 70-74, 92-95</lines>
+         <characters>FIRST_CLOWN,STAGE</characters>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>100</length>
+         <k>7</k>
+      </generate>
+   </markov>
+   
+         		
+   <markov>
+      	<file>data/brute.txt</file>
       	<name>mourners</name>
    	<train>
    		<acts>5</acts>
@@ -85,12 +117,6 @@
          		<characters>FIRST_CLOWN,HAMLET,HORATIO,STAGE</characters>
          	</selection>
          	<selection>
-         	   <acts>5</acts>
-         		<scenes>1</scenes>
-				<lines>148-163</lines>
-         		<characters>FIRST_CLOWN,HAMLET,HORATIO,STAGE</characters>
-         	</selection>
-         	<selection>
          	   	<acts>5</acts>
    				<scenes>1</scenes>
    				<lines>166</lines>
@@ -123,15 +149,14 @@
          </selections>
       </train>
       <generate>
-      	 <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>1000</length>
+         <length>800</length>
          <k>2</k>
       </generate>
    </markov>
    
    <markov>
-   	   <name>ghostscene</name>
+   	   <name>exeunt</name>
        <file>data/brute.txt</file>
       <train>
          <acts>1</acts>
