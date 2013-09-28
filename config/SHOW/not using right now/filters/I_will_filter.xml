@@ -1,0 +1,17 @@
+<scene blackout="false">
+<filter>
+    <name>willfilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I will </pattern>
+         <length>15</length>
+      </generate>
+   </filter>
+</scene>

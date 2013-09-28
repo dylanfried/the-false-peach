@@ -1,0 +1,17 @@
+<scene blackout="false">
+<filter>
+    <name>iamfilter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>I am </pattern>
+         <length>25</length>
+      </generate>
+   </filter>
+</scene>

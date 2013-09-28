@@ -1,0 +1,17 @@
+<scene blackout="false">
+<filter>
+    <name>filter</name>
+	<file>data/brute.txt</file>
+      <train>
+      	<selections>
+      		<selection>
+         		<acts>1,2,3,4,5</acts>
+		</selection>
+	</selections>
+      </train>
+      <generate>
+         <pattern>Thou </pattern>
+         <length>10</length>
+      </generate>
+   </filter>
+</scene>
