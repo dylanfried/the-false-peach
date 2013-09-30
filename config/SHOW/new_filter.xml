@@ -1,4 +1,4 @@
-<scene blackout="false">
+<scene>
  <new_filter>
     <name>Ofilter</name>
 	<file>data/brute.txt</file>

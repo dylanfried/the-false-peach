@@ -256,10 +256,10 @@ class LooseyClient:
       self.send_value("style.actor","zero")
       time.sleep(0.5)
       self.send_value("style.lights","zero")
-      time.sleep(5)
+      time.sleep(4.5)
       self.send_value("character","STYLE")
       self.send_value("line","sys.begin(show.generate(" + time.strftime("%d.%m.%y %X" ) + "))\n")
-      time.sleep(6)
+      time.sleep(2.5)
       
       # Wait for Loosey to acknowledge with EOL
       while 1:
@@ -334,7 +334,10 @@ class LooseyClient:
             # We're switching acts, so any zero out trigger should be ready to zero out
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero: t.ready_to_zero = True
-            time.sleep(2)
+            if self.act_number in [3,5]:
+               time.sleep(1)
+            else:
+               time.sleep(2)
             self.send_value("stagedir.place","zero")
             time.sleep(0.001)
             self.send_value("stagedir.exit","zero")
@@ -356,7 +359,7 @@ class LooseyClient:
             self.send_value("style.actor","zero")
             time.sleep(0.5)
             self.send_value("style.lights","zero")
-            time.sleep(3.5)
+            time.sleep(4)
             self.send_value("character","STYLE")
             self.changed_speaker = True
             time.sleep(0.001)
@@ -392,7 +395,8 @@ class LooseyClient:
             while not self.scroll_end and self.play:
                word = self.get_input()
             self.scroll_end = False
-            time.sleep(1)
+            if self.act_number in [3]:
+               time.sleep(1)
             continue
          # Check to see if we're in a new scene
          if re.match(".*####.*",l):
@@ -434,7 +438,7 @@ class LooseyClient:
                # Check whether we have a scene_pause for this chunk
                if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
                   # Don't do this sleep after dumb show
-                  if self.scene != "partfourtwoB" and self.scene != "FiveTwo":
+                  if self.scene != "partfourtwoB" and self.scene != "FiveTwo" and self.scene != "3pcntORIG":
                      time.sleep(2)
                self.send_value("stagedir.place","zero")
                time.sleep(0.001)
@@ -461,10 +465,12 @@ class LooseyClient:
                   time.sleep(0.5)
                   self.send_value("style.lights","zero")
                   # Don't do this sleep after dumb show
-                  if self.scene == "partfourtwoB" or self.scene == "FiveTwo":
+                  if self.scene == "partfourtwoB":
+                     time.sleep(0.15)
+                  elif self.scene == "FiveTwo" or self.scene == "3pcntORIG":
                      time.sleep(0.3)
                   else:
-                     time.sleep(1)
+                     time.sleep(0.5)
                #else:
                #   # We want to send a partial zero to lights so that we 
                #   # don't get super confused styles
@@ -484,7 +490,9 @@ class LooseyClient:
                # Check whether we have a scene_pause for this chunk
                if not re.match(".*blackout:(\w+).*$",l) or (re.match(".*blackout:(\w+).*$",l) and re.sub(".*blackout:(\w+).*$","\\1",l) not in ["False","false","F","f","No","no"]):
                   # Don't do this sleep after dumb show
-                  if self.scene != "partfourtwoB" and self.scene != "FiveTwo":
+                  if self.scene == "3pcntORIG":
+                     time.sleep(0.5)
+                  elif self.scene != "partfourtwoB" and self.scene != "FiveTwo" and self.scene != "new_filter":
                      time.sleep(1)
             # Move on to the next line
             continue
@@ -550,7 +558,7 @@ class LooseyClient:
             time.sleep(0.001)
             self.send_value("character","STAGEDIR")
             self.changed_speaker = True
-            time.sleep(3)
+            time.sleep(1.8)
             # Send the stage directions
             self.send_value("stagedir.title",l)
             self.send_value("stagedir.bool",0)

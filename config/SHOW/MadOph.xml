@@ -76,9 +76,37 @@
       </generate>
    </markov>
    
+	<markov>
+		<name>MadOph</name>
+		<file>data/brute.txt</file>
+		<train>
+      	<selections>
+      	        	<selection>
+      			<characters>STAGE</characters>
+      			<acts>4</acts>
+      		    <scenes>5</scenes>
+         		<lines>36</lines>
+         		<pos>,(,entrance,)</pos>
+        	</selection>
+        	<selection>
+      			<characters>STAGE</characters>
+      			<acts>4</acts>
+      		    <scenes>5</scenes>
+         		<lines>96</lines>
+        	</selection>
+        </selections>
+      </train>
+      <generate>
+         <finish_sent>True</finish_sent>
+         <reset>True</reset>
+         <length>10</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
    <markov>
     <name>MadOph</name>
-    <scene_pause>5</scene_pause>
+    <scene_pause>3</scene_pause>
    	<file>data/brute.txt</file>
       <train>
       	<selections>
@@ -121,7 +149,7 @@
          <k>2</k>
       </generate>
    </markov> 
-   
+     
    <markov>
     <name>MadOph</name>
    	<file>data/brute.txt</file>

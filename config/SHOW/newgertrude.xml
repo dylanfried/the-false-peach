@@ -81,7 +81,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>180</length>
+         <length>140</length>
          <k>1</k>
       </generate>
    </markov>
@@ -118,7 +118,6 @@
       </train>
       <generate>
          <reset>True</reset>
-         <finish_sent>True</finish_sent>
          <length>20</length>
          <k>0</k>
       </generate>
