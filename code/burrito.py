@@ -931,7 +931,10 @@ class Burrito:
                
                # First, grab all of the lines matching the pattern:
                trial_lines = []
-               pattern = trial.find("generate").find("pattern").string
+               patterns = []
+               for pattern in trial.find("generate").findAll("pattern"):
+                  patterns.append(pattern.string)
+               pattern = random.sample(patterns,1)[0]
                no_punctuation = False
                for i in range(len(universe)):
                   u = copy.copy(universe[i])
@@ -978,6 +981,9 @@ class Burrito:
                   for w in t['line'].split(" "):
                      if w not in [",",".","?",":",";","!"]:
                         t['length'] += 1
+               # limit the number of lines to sample
+               if length:
+                  trial_lines = random.sample(trial_lines,length)
                # Sort the lines based on length
                trial_lines.sort(key=lambda line: len(line['line']))
                trial_lines.reverse()

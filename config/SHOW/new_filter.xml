@@ -11,7 +11,8 @@
       </train>
       <generate>
          <pattern>O </pattern>
-         <length>20</length>
+         <pattern>I </pattern>
+         <length>54</length>
       </generate>
    </new_filter>
 </scene>
