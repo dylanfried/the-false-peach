@@ -982,7 +982,7 @@ class Burrito:
                      if w not in [",",".","?",":",";","!"]:
                         t['length'] += 1
                # limit the number of lines to sample
-               if length:
+               if length and len(trial_lines) > length:
                   trial_lines = random.sample(trial_lines,length)
                # Sort the lines based on length
                trial_lines.sort(key=lambda line: len(line['line']))
