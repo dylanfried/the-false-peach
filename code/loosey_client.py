@@ -70,7 +70,10 @@ class LooseyClient:
                trigwhen = float(w['pause'].strip())
                trigprio = float(w['priority'].strip())
                trigword = w.string.strip().split(" ")
-               self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigzero))
+               trigfan = False
+               if w.has_key("fan") and int(w['fan'].strip()) == 1:
+                  trigfan = True
+               self.trigs.append(headless_trigger(trigwhat,trigword,trigprio,trigwhen,trigzero,trigfan))
       
       # OSC client for SEND messages to Loosey
       if self.play:
@@ -625,6 +628,14 @@ class LooseyClient:
             self.send_value("line",l)
             trigger_label = wwhhaatt
             #print "STAGE",l
+            if trigger_label and self.styles and not re.match(".*TTS\.inear.*",self.styles):
+               # Check to see if any "fan" triggers need to be sent now
+               for t in self.trigs:
+                  #print "TRIGGER THING",t.fan,t.words
+                  if t.fan and re.search("[\s,;]+".join(t.words),l,re.IGNORECASE):
+                     self.send_value("stagedir."+t.stage,"fan")
+                     print "SENDING FAN"
+                     break
             
          # otherwise, this is a normal dialogue line
          else:
@@ -640,7 +651,7 @@ class LooseyClient:
                self.changed_speaker = False
             # Send the line
             # If we're in the ham_thing scene, introduce some random pauses between lines
-            if self.scene and self.scene == 'ham_thing':
+            if self.scene and self.scene in ['ham_thing','newgertrude']:
                 random_sleep = random.random()
                 sleep_value = 0
                 if random_sleep < 0.4:

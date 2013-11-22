@@ -2,13 +2,14 @@
 # has been activated
 class headless_trigger():
 
-   def __init__(self,stage,words,priority,pause,zero_out):
+   def __init__(self,stage,words,priority,pause,zero_out,fan):
 
       self.stage = stage
       self.words = words
       self.priority = priority
       self.pause = pause
       self.zero_out = zero_out
+      self.fan = fan
       self.skip = []
       self.cnt = 0
       # Vars for remembering whether we need to
