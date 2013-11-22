@@ -594,6 +594,16 @@ class LooseyClient:
             for t in self.trigs:
                if t.triggered and not t.ready_to_zero and "sings" not in t.words: t.ready_to_zero = True
             
+            # Take care of fan trigger
+            if wwhhaatt and self.styles and not re.match(".*TTS\.inear.*",self.styles):
+               # Check to see if any "fan" triggers need to be sent now
+               for t in self.trigs:
+                  #print "TRIGGER THING",t.fan,t.words
+                  if t.fan and re.search("[\s,;]+".join(t.words),l,re.IGNORECASE):
+                     self.send_value("stagedir."+t.stage,"fan")
+                     print "SENDING FAN"
+                     break
+            
             display = 0
             # Dont want stage directions to run over scott. 
             if self.styles and (re.match(".*TTS\.inear.*",self.styles) or re.match(".*TTS\.mix.*",self.styles)):
@@ -628,14 +638,6 @@ class LooseyClient:
             self.send_value("line",l)
             trigger_label = wwhhaatt
             #print "STAGE",l
-            if trigger_label and self.styles and not re.match(".*TTS\.inear.*",self.styles):
-               # Check to see if any "fan" triggers need to be sent now
-               for t in self.trigs:
-                  #print "TRIGGER THING",t.fan,t.words
-                  if t.fan and re.search("[\s,;]+".join(t.words),l,re.IGNORECASE):
-                     self.send_value("stagedir."+t.stage,"fan")
-                     print "SENDING FAN"
-                     break
             
          # otherwise, this is a normal dialogue line
          else:
