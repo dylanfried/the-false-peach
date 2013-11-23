@@ -1,7 +1,7 @@
 @@@@@@@@@@@@@@@ Act name:word @@@@@@@@@@@@@@@@
 SEND SCROLL VALUE 4
-################# SCENE partfourone 2_TTS.aloud.MUSIC.emotion_0_ghost wordcount:779 strategy:markov #################
-Timing info. Seconds: 95.3875789642, words: 861, lines: 41
+################# SCENE partfourone 2_TTS.aloud.MUSIC.emotion_0_ghost wordcount:765 strategy:markov #################
+Timing info. Seconds: 95.3671989441, words: 861, lines: 41
 BLACKOUT
 SEND STYLES 2_TTS.aloud.MUSIC.emotion_0_ghost
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
@@ -20,215 +20,221 @@ Stagedir (Enter to him BERNARDO.)
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 Who's: [-1, -1, -1, -1], there?: [-1, -1, -1, -1]
-SEND LINE u" Who's there? "
+SEND LINE " Who's there? "
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 Nay,: [-1, -1, -1, -1], answer: [1.8, 2.0, 2.5, 1.3], me:: [-1, -1, -1, -1], stand,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], unfold: [2.1, 1.8, 1.9, 1.2], yourself.: [-1, -1, -1, -1]
-SEND LINE u' Nay, answer me: stand, and unfold yourself. '
+SEND LINE ' Nay, answer me: stand, and unfold yourself. '
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 Long: [-1, -1, -1, -1], live: [1.1, 1.9, 4.6, 1.5], the: [0.4, 0.5, 0.3, 0.3], king!: [-1, -1, -1, -1]
-SEND LINE u' Long live the king! '
+SEND LINE ' Long live the king! '
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 Bernardo?: [-1, -1, -1, -1]
-SEND LINE u' Bernardo? '
+SEND LINE ' Bernardo? '
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 He.: [-1, -1, -1, -1]
-SEND LINE u' He. '
+SEND LINE ' He. '
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 You: [-1, -1, -1, -1], come: [0.8, 1.2, 2.2, 0.9], most: [1.8, 1.8, 1.5, 1.6], carefully: [0.7, 1.6, 1.5, 1.1], upon: [1.0, 0.5, 1.1, 0.7], your: [2.1, 1.6, 2.1, 1.3], hour.: [-1, -1, -1, -1]
-SEND LINE u' You come most carefully upon your hour.'
+SEND LINE ' You come most carefully upon your hour.'
 
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
-Say,: [-1, -1, -1, -1]
-SEND LINE u' Say, '
-Upon: [-1, -1, -1, -1], a: [-1, -1, -1, -1], wretch: [2.0, 2.0, 0.2, 2.4], whose: [0.5, 0.9, 1.1, 1.0], natural: [0.4, 0.9, 2.2, 0.6], gifts: [0.1, 0.1, 4.6, 0.1], were: [0.6, 0.2, 0.3, 0.1], poor: [2.7, 2.5, 0.3, 3.7]
-SEND LINE u' Upon a wretch whose natural gifts were poor '
-To: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], confine:: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], cock: [1.0, 1.1, 2.1, 0.4], crew.: [-1, -1, -1, -1]
-SEND LINE u' To his confine: and of the cock crew. '
-(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], MARCELLUS.): [-1, -1, -1, -1]
-Stagedir (Enter MARCELLUS.)
-MARCELLUS: [-1, -1, -1, -1]
-SEND WHO MARCELLUS
-O,: [-1, -1, -1, -1], list,: [-1, -1, -1, -1], O,: [-1, -1, -1, -1], speak!: [-1, -1, -1, -1], Stop: [-1, -1, -1, -1], it,: [-1, -1, -1, -1], Horatio:: [-1, -1, -1, -1]
-SEND LINE u' O, list, O, speak! Stop it, Horatio: '
-welcome,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], night.: [-1, -1, -1, -1]
-SEND LINE u' welcome, good night. '
-But: [-1, -1, -1, -1], virtue,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], blossoms: [0.5, 0.5, 3.3, 0.4], of: [1.2, 0.9, 0.3, 0.6], my: [0.4, 0.3, 1.9, 0.3], memory: [0.7, 0.6, 2.6, 0.9]
-SEND LINE u' But virtue, as in the blossoms of my memory '
-I'll: [-1, -1, -1, -1], cross: [1.7, 2.4, 1.2, 2.8], it,: [-1, -1, -1, -1], Horatio.: [-1, -1, -1, -1]
-SEND LINE u" I'll cross it, Horatio. "
-BERNARDO: [-1, -1, -1, -1]
-SEND WHO BERNARDO
-Say,: [-1, -1, -1, -1]
-SEND LINE u' Say, '
-Speak: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], it:: [-1, -1, -1, -1], stay,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], jump: [1.7, 1.9, 2.8, 0.9], at: [0.5, 0.4, 0.5, 0.5], this: [0.3, 0.8, 0.8, 0.5], dead: [2.1, 2.6, 1.0, 4.0], hour,: [-1, -1, -1, -1]
-SEND LINE u' Speak of it: stay, and jump at this dead hour, '
-Wouldst: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], not: [0.6, 1.2, 1.0, 0.8], stir: [0.8, 1.1, 1.4, 0.3], in: [0.3, 0.1, 0.4, 0.4], this.: [-1, -1, -1, -1], Now: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], revenge.: [-1, -1, -1, -1]
-SEND LINE u' Wouldst thou not stir in this. Now to my revenge. '
-(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HORATIO.): [-1, -1, -1, -1]
-Stagedir (Enter HORATIO.)
-HORATIO: [-1, -1, -1, -1]
-SEND WHO HORATIO
-Tush,: [-1, -1, -1, -1], tush,: [-1, -1, -1, -1], 'twill: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], appear.: [-1, -1, -1, -1]
-SEND LINE u" Tush, tush, 'twill not appear. "
-(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], GHOST.): [-1, -1, -1, -1]
-Stagedir (Enter GHOST.)
-GHOST: [-1, -1, -1, -1]
-SEND WHO GHOST
-Ay,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], adulterate: [2.2, 1.0, 0.0, 2.8], beast,: [-1, -1, -1, -1]
-SEND LINE u' Ay, that adulterate beast, '
-Wouldst: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], not: [0.6, 1.2, 1.0, 0.8], stir: [0.8, 1.1, 1.4, 0.3], in: [0.3, 0.1, 0.4, 0.4], this.: [-1, -1, -1, -1]
-SEND LINE u' Wouldst thou not stir in this. '
-HORATIO: [-1, -1, -1, -1]
-SEND WHO HORATIO
-What: [-1, -1, -1, -1], art: [0.4, 0.6, 4.3, 0.7], thou: [0.8, 0.1, 1.2, 1.0], to: [0.1, 0.6, 0.6, 0.3], revenge,: [-1, -1, -1, -1], when,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], an: [0.0, 0.0, 0.0, 0.0], angry: [4.4, 2.4, 0.6, 2.8], parle,: [-1, -1, -1, -1]
-SEND LINE u' What art thou to revenge, when, in an angry parle, '
-That: [-1, -1, -1, -1], if: [0.7, 0.5, 0.8, 0.7], again: [0.4, 0.7, 1.0, 0.6], this: [0.3, 0.8, 0.8, 0.5], apparition: [0.9, 3.2, 0.3, 1.3], come,: [-1, -1, -1, -1]
-SEND LINE u' That if again this apparition come, '
-MARCELLUS: [-1, -1, -1, -1]
-SEND WHO MARCELLUS
-Holla!: [-1, -1, -1, -1], Bernardo!: [-1, -1, -1, -1]
-SEND LINE u' Holla! Bernardo! '
-My: [-1, -1, -1, -1], custom: [0.8, 0.6, 2.2, 0.3], always: [0.6, 1.0, 2.0, 0.7], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], afternoon,: [-1, -1, -1, -1]
-SEND LINE u' My custom always of the afternoon, '
-Unmixed: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], baser: [2.0, 1.5, 0.4, 1.8], matter:: [-1, -1, -1, -1], yes,: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], heaven!: [-1, -1, -1, -1]
-SEND LINE u' Unmixed with baser matter: yes, by heaven! '
-GHOST: [-1, -1, -1, -1]
-SEND WHO GHOST
-I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], entreated: [0.7, 1.0, 0.4, 0.8], him: [1.1, 0.7, 1.5, 0.4], along: [0.4, 0.3, 0.3, 0.2]
-SEND LINE u' I have entreated him along '
-With: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], my: [0.4, 0.3, 1.9, 0.3], imperfections: [2.1, 1.4, 0.0, 2.3], on: [0.3, 0.4, 0.4, 0.7], my: [0.4, 0.3, 1.9, 0.3], head:: [-1, -1, -1, -1]
-SEND LINE u' With all my imperfections on my head: '
-Adieu,: [-1, -1, -1, -1], adieu!: [-1, -1, -1, -1], remember: [0.5, 0.2, 2.2, 1.4], me.: [-1, -1, -1, -1]
-SEND LINE u' Adieu, adieu! remember me. '
-HORATIO: [-1, -1, -1, -1]
-SEND WHO HORATIO
-Stay!: [-1, -1, -1, -1], speak,: [-1, -1, -1, -1], when: [0.5, 0.4, 0.3, 0.7], thou: [0.8, 0.1, 1.2, 1.0], shalt: [0.1, 0.6, 0.4, 0.3], hear.: [-1, -1, -1, -1]
-SEND LINE u' Stay! speak, when thou shalt hear. '
-BERNARDO: [-1, -1, -1, -1]
-SEND WHO BERNARDO
-He: [-1, -1, -1, -1], smote: [2.7, 1.8, 0.5, 1.1], the: [0.4, 0.5, 0.3, 0.3], sledded: [0.4, 1.1, 2.2, 0.1], Polacks: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], crownet: [-1, -1, -1, -1], weeds: [1.8, 1.4, 1.7, 2.1]
-SEND LINE u' He smote the sledded Polacks on the pendent boughs her crownet weeds '
-Clambering: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], hang,: [-1, -1, -1, -1], an: [0.0, 0.0, 0.0, 0.0], envious: [3.7, 2.5, 0.3, 2.8], sliver: [1.6, 1.4, 1.6, 1.4], broke:: [-1, -1, -1, -1]
-SEND LINE u' Clambering to hang, an envious sliver broke: '
-So: [-1, -1, -1, -1], hallowed: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], so: [0.6, 0.5, 0.3, 0.7], gracious: [0.4, 0.4, 3.5, 0.7], is: [0.3, 0.6, 0.3, 0.0], that: [0.7, 0.7, 0.2, 0.4], time.: [-1, -1, -1, -1]
-SEND LINE u' So hallowed and so gracious is that time. '
-(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HAMLET.): [-1, -1, -1, -1]
-Stagedir (Enter HAMLET.)
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-What,: [-1, -1, -1, -1], has: [0.0, 0.0, 0.0, 0.0], this: [0.3, 0.8, 0.8, 0.5], thing: [1.1, 0.7, 1.2, 0.9], appeared: [-1, -1, -1, -1], again: [0.4, 0.7, 1.0, 0.6], to-night?: [-1, -1, -1, -1]
-SEND LINE u' What, has this thing appeared again to-night? '
-FRANCISCO: [-1, -1, -1, -1]
-SEND WHO FRANCISCO
-You: [-1, -1, -1, -1], come: [0.8, 1.2, 2.2, 0.9], most: [1.8, 1.8, 1.5, 1.6], carefully: [0.7, 1.6, 1.5, 1.1], upon: [1.0, 0.5, 1.1, 0.7], your: [2.1, 1.6, 2.1, 1.3], hour.: [-1, -1, -1, -1]
-SEND LINE u' You come most carefully upon your hour. '
+It: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], offended.: [-1, -1, -1, -1]
+SEND LINE ' It is offended. '
 (: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], GERTRUDE.): [-1, -1, -1, -1]
 Stagedir (Enter GERTRUDE.)
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-There,: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], crownet: [-1, -1, -1, -1], weeds: [1.8, 1.4, 1.7, 2.1]
-SEND LINE u' There, on the pendent boughs her crownet weeds '
-Clambering: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], hang,: [-1, -1, -1, -1], an: [0.0, 0.0, 0.0, 0.0], envious: [3.7, 2.5, 0.3, 2.8], sliver: [1.6, 1.4, 1.6, 1.4], broke:: [-1, -1, -1, -1]
-SEND LINE u' Clambering to hang, an envious sliver broke: '
-O,: [-1, -1, -1, -1], list,: [-1, -1, -1, -1], O,: [-1, -1, -1, -1], farewell,: [-1, -1, -1, -1], honest: [1.2, 0.6, 4.2, 1.1], soldier:: [-1, -1, -1, -1]
-SEND LINE u' O, list, O, farewell, honest soldier: '
-(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Ghost.): [-1, -1, -1, -1]
-Stagedir (Exit Ghost.)
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-O: [-1, -1, -1, -1], villain,: [-1, -1, -1, -1], villain,: [-1, -1, -1, -1], smiling,: [-1, -1, -1, -1], damned: [2.9, 2.7, 0.0, 1.9], villain!: [-1, -1, -1, -1]
-SEND LINE u' O villain, villain, smiling, damned villain! '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
 Drowned,: [-1, -1, -1, -1], drowned.: [-1, -1, -1, -1]
-SEND LINE u' Drowned, drowned. '
-BERNARDO: [-1, -1, -1, -1]
-SEND WHO BERNARDO
-It: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], about: [0.2, 0.8, 0.8, 0.4], to: [0.1, 0.6, 0.6, 0.3], speak,: [-1, -1, -1, -1], speak!: [-1, -1, -1, -1], Stop: [-1, -1, -1, -1], it,: [-1, -1, -1, -1], Marcellus.: [-1, -1, -1, -1]
-SEND LINE u' It was about to speak, speak! Stop it, Marcellus. '
+SEND LINE ' Drowned, drowned. '
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], MARCELLUS.): [-1, -1, -1, -1]
+Stagedir (Enter MARCELLUS.)
 MARCELLUS: [-1, -1, -1, -1]
 SEND WHO MARCELLUS
-Thus: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], I,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], traitorous: [3.0, 1.8, 0.3, 1.7], gifts,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], trumpet: [0.5, 1.3, 2.9, 0.9], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], morn,: [-1, -1, -1, -1]
-SEND LINE u' Thus was I, with traitorous gifts, that is the trumpet to the morn, '
-in: [0.3, 0.1, 0.4, 0.4], earth: [0.7, 1.2, 2.6, 1.4], or: [0.9, 0.8, 0.8, 0.5], air,: [-1, -1, -1, -1]
-SEND LINE u' in earth or air, '
-And: [-1, -1, -1, -1], curd,: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], eager: [1.0, 0.5, 3.1, 0.4], droppings: [1.0, 1.5, 0.2, 1.7], into: [0.2, 0.4, 0.7, 0.1], milk,: [-1, -1, -1, -1]
-SEND LINE u' And curd, like eager droppings into milk, '
-The: [-1, -1, -1, -1], leperous: [2.0, 2.6, 0.2, 3.0], distilment;: [-1, -1, -1, -1], whose: [0.5, 0.9, 1.1, 1.0], effect: [1.0, 1.5, 1.5, 1.1]
-SEND LINE u' The leperous distilment; whose effect '
+Holla!: [-1, -1, -1, -1], Bernardo!: [-1, -1, -1, -1]
+SEND LINE ' Holla! Bernardo! '
+(: [-1, -1, -1, -1], sound: [1.4, 1.5, 2.3, 0.9], Cock: [-1, -1, -1, -1], crows.): [-1, -1, -1, -1]
+TRIGGER: sound [u'cock']
+Stagedir (Cock crows.)
+If: [-1, -1, -1, -1], there: [0.6, 0.3, 0.6, 0.6], be: [0.6, 1.1, 0.8, 0.8], any: [0.3, 0.3, 0.7, 0.3], good: [0.5, 0.9, 4.7, 0.5], thing: [1.1, 0.7, 1.2, 0.9], to: [0.1, 0.6, 0.6, 0.3], be: [0.6, 1.1, 0.8, 0.8], near,: [-1, -1, -1, -1]
+Entering dialogue, SEND WHO MARCELLUS
+SEND LINE ' If there be any good thing to be near, '
+Doomed: [-1, -1, -1, -1], for: [0.0, 0.0, 0.0, 0.1], a: [-1, -1, -1, -1], certain: [0.8, 0.9, 0.6, 1.0], term: [0.4, 0.6, 1.1, 0.1], to: [0.1, 0.6, 0.6, 0.3], walk: [0.1, 0.1, 1.0, 0.1], the: [0.4, 0.5, 0.3, 0.3], night,: [-1, -1, -1, -1]
+SEND LINE ' Doomed for a certain term to walk the night, '
+BERNARDO: [-1, -1, -1, -1]
+SEND WHO BERNARDO
+See,: [-1, -1, -1, -1], it: [0.5, 0.4, 0.1, 0.5], stalks: [1.7, 3.6, 0.8, 1.9], away!: [-1, -1, -1, -1]
+SEND LINE ' See, it stalks away! '
+Yea,: [-1, -1, -1, -1], from: [0.6, 0.5, 0.7, 0.4], the: [0.4, 0.5, 0.3, 0.3], table: [0.1, 0.5, 0.9, 0.1], of: [1.2, 0.9, 0.3, 0.6], my: [0.4, 0.3, 1.9, 0.3], memory: [0.7, 0.6, 2.6, 0.9]
+SEND LINE ' Yea, from the table of my memory '
+I'll: [-1, -1, -1, -1], wipe: [1.1, 0.5, 0.7, 0.8], away: [0.6, 1.6, 0.8, 1.6], all: [1.2, 0.8, 2.2, 0.9], trivial: [1.6, 0.7, 1.2, 1.2], fond: [1.2, 0.8, 2.6, 0.8], records,: [-1, -1, -1, -1]
+SEND LINE " I'll wipe away all trivial fond records, "
+This: [-1, -1, -1, -1], bird: [0.7, 0.4, 2.7, 0.7], of: [1.2, 0.9, 0.3, 0.6], dawning: [0.7, 1.3, 3.6, 1.0], singeth: [0.3, 0.3, 2.2, 1.0], all: [1.2, 0.8, 2.2, 0.9], night: [0.4, 2.1, 1.7, 0.9], long:: [-1, -1, -1, -1]
+SEND LINE ' This bird of dawning singeth all night long: '
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HAMLET.): [-1, -1, -1, -1]
+Stagedir (Enter HAMLET.)
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Alas,: [-1, -1, -1, -1], poor: [2.7, 2.5, 0.3, 3.7], ghost,: [-1, -1, -1, -1], while: [0.5, 0.9, 1.2, 0.7], memory: [0.7, 0.6, 2.6, 0.9], holds: [1.0, 1.1, 1.2, 1.2], a: [-1, -1, -1, -1], seat: [0.6, 0.3, 1.1, 0.1]
+SEND LINE ' Alas, poor ghost, while memory holds a seat '
+In: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], same: [0.9, 1.0, 0.8, 0.9], figure,: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], stars,: [-1, -1, -1, -1], start: [0.1, 0.5, 2.1, 0.3], from: [0.6, 0.5, 0.7, 0.4], their: [0.1, 0.1, 0.3, 0.1], spheres,: [-1, -1, -1, -1]
+SEND LINE ' In the same figure, like stars, start from their spheres, '
+Walks: [-1, -1, -1, -1], o'er: [0.9, 0.7, 0.6, 0.6], the: [0.4, 0.5, 0.3, 0.3], dew: [0.3, 0.5, 3.6, 1.5], of: [1.2, 0.9, 0.3, 0.6], yon: [0.2, 0.3, 0.3, 0.4], high: [0.0, 1.9, 2.8, 0.7], eastward: [0.9, 1.6, 0.6, 1.0], hill:: [-1, -1, -1, -1]
+SEND LINE " Walks o'er the dew of yon high eastward hill: "
+Adieu,: [-1, -1, -1, -1], adieu,: [-1, -1, -1, -1], remember: [0.5, 0.2, 2.2, 1.4], me.: [-1, -1, -1, -1]
+SEND LINE ' Adieu, adieu, remember me. '
+I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
+SEND LINE ' I have been so affrighted! '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+There,: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], the: [0.4, 0.5, 0.3, 0.3], crowing: [1.8, 1.3, 2.8, 0.8], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], afternoon,: [-1, -1, -1, -1]
+SEND LINE ' There, on the crowing of the afternoon, '
+Wouldst: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], not: [0.6, 1.2, 1.0, 0.8], stir: [0.8, 1.1, 1.4, 0.3], in: [0.3, 0.1, 0.4, 0.4], this.: [-1, -1, -1, -1], Now,: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], hear:: [-1, -1, -1, -1]
+SEND LINE ' Wouldst thou not stir in this. Now, Hamlet, hear: '
+'Tis: [-1, -1, -1, -1], here!: [-1, -1, -1, -1]
+SEND LINE " 'Tis here! "
+Or: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], a: [-1, -1, -1, -1], creature: [1.0, 1.1, 2.3, 0.6], native: [1.0, 1.7, 3.1, 1.1], and: [0.7, 0.8, 0.4, 0.3], indued: [0.5, 0.5, 1.0, 0.4]
+SEND LINE ' Or like a creature native and indued '
+Unto: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], element:: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], long: [0.6, 0.6, 1.1, 1.0], it: [0.5, 0.4, 0.1, 0.5], could: [0.5, 1.1, 2.0, 0.7], not: [0.6, 1.2, 1.0, 0.8], be: [0.6, 1.1, 0.8, 0.8]
+SEND LINE ' Unto that element: but long it could not be '
+A: [-1, -1, -1, -1], couch: [0.3, 1.3, 2.6, 1.3], for: [0.0, 0.0, 0.0, 0.1], luxury: [0.8, 0.8, 4.2, 0.4], and: [0.7, 0.8, 0.4, 0.3], damned: [2.9, 2.7, 0.0, 1.9], incest.: [-1, -1, -1, -1]
+SEND LINE ' A couch for luxury and damned incest. '
+MARCELLUS: [-1, -1, -1, -1]
+SEND WHO MARCELLUS
+And: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], I: [-1, -1, -1, -1], couple: [1.4, 1.1, 3.8, 2.0], hell?: [-1, -1, -1, -1], O,: [-1, -1, -1, -1], list,: [-1, -1, -1, -1], O,: [-1, -1, -1, -1], list,: [-1, -1, -1, -1]
+SEND LINE ' And shall I couple hell? O, list, O, list, '
+O,: [-1, -1, -1, -1], speak!: [-1, -1, -1, -1], Stop: [-1, -1, -1, -1], it,: [-1, -1, -1, -1]
+SEND LINE ' O, speak! Stop it, '
+Taint: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], thy: [0.1, 0.0, 0.6, 0.2], min: [-1, -1, -1, -1]
+SEND LINE ' Taint not thy min'
+d,: [-1, -1, -1, -1], nor: [0.5, 0.6, 0.6, 0.9], witch: [1.4, 3.0, 1.6, 2.0], hath: [1.0, 0.4, 1.0, 0.7], power: [2.1, 2.4, 3.0, 1.1], to: [0.1, 0.6, 0.6, 0.3], charm,: [-1, -1, -1, -1]
+SEND LINE 'd, nor witch hath power to charm, '
+No: [-1, -1, -1, -1], reckoning: [1.2, 1.5, 1.3, 1.3], made,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], lend: [1.4, 1.5, 1.2, 1.3], thy: [0.1, 0.0, 0.6, 0.2], serious: [1.7, 1.3, 0.2, 2.4], hearing: [1.4, 0.9, 1.4, 0.8]
+SEND LINE ' No reckoning made, but lend thy serious hearing '
+BERNARDO: [-1, -1, -1, -1]
+SEND WHO BERNARDO
+Who's: [-1, -1, -1, -1], there?: [-1, -1, -1, -1]
+SEND LINE " Who's there? "
+MARCELLUS: [-1, -1, -1, -1]
+SEND WHO MARCELLUS
+Thus: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], I,: [-1, -1, -1, -1], sleeping,: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], heaven!: [-1, -1, -1, -1], O: [-1, -1, -1, -1], earth!: [-1, -1, -1, -1]
+SEND LINE ' Thus was I, sleeping, by heaven! O earth! '
+what: [0.4, 1.1, 0.5, 0.6], else?: [-1, -1, -1, -1]
+SEND LINE ' what else? '
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], HORATIO.): [-1, -1, -1, -1]
+Stagedir (Enter HORATIO.)
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+Well,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], Marcellus.: [-1, -1, -1, -1]
+SEND LINE ' Well, good Marcellus. '
+BERNARDO: [-1, -1, -1, -1]
+SEND WHO BERNARDO
+I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], bound: [2.1, 3.5, 1.5, 3.1], to: [0.1, 0.6, 0.6, 0.3], hear.: [-1, -1, -1, -1]
+SEND LINE ' I am bound to hear. '
 HORATIO: [-1, -1, -1, -1]
 SEND WHO HORATIO
 In: [-1, -1, -1, -1], which: [0.2, 0.1, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], majesty: [0.4, 0.6, 2.7, 0.3], of: [1.2, 0.9, 0.3, 0.6], buried: [2.3, 2.7, 0.8, 3.0], Denmark: [-1, -1, -1, -1]
-SEND LINE u' In which the majesty of buried Denmark '
-Is: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], a: [-1, -1, -1, -1], forged: [2.4, 2.0, 1.0, 2.3], process: [1.2, 1.2, 0.9, 1.1], of: [1.2, 0.9, 0.3, 0.6], my: [0.4, 0.3, 1.9, 0.3], ears: [0.5, 0.2, 2.1, 0.6], did: [1.1, 0.7, 1.4, 0.8], pour: [1.6, 1.6, 1.5, 2.6]
-SEND LINE u' Is by a forged process of my ears did pour '
-The: [-1, -1, -1, -1], natural: [0.4, 0.9, 2.2, 0.6], gates: [0.5, 0.8, 0.9, 0.7], and: [0.7, 0.8, 0.4, 0.3], alleys: [0.9, 1.6, 1.3, 1.2], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], afternoon,: [-1, -1, -1, -1]
-SEND LINE u' The natural gates and alleys of the afternoon, '
-That: [-1, -1, -1, -1], roots: [0.5, 0.7, 1.7, 0.6], itself: [0.6, 0.6, 0.9, 0.5], in: [0.3, 0.1, 0.4, 0.4], a: [-1, -1, -1, -1], celestial: [0.5, 0.9, 3.7, 0.6], bed,: [-1, -1, -1, -1], Francisco.: [-1, -1, -1, -1]
-SEND LINE u' That roots itself in a celestial bed, Francisco. '
-
+SEND LINE ' In which the majesty of buried Denmark '
+Is: [-1, -1, -1, -1], it: [0.5, 0.4, 0.1, 0.5], not: [0.6, 1.2, 1.0, 0.8], like: [0.4, 0.6, 4.3, 0.7], the: [0.4, 0.5, 0.3, 0.3], king!: [-1, -1, -1, -1]
+SEND LINE ' Is it not like the king! '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+Drowned,: [-1, -1, -1, -1], drowned.: [-1, -1, -1, -1]
+SEND LINE ' Drowned, drowned. '
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+A: [-1, -1, -1, -1], couch: [0.3, 1.3, 2.6, 1.3], for: [0.0, 0.0, 0.0, 0.1], luxury: [0.8, 0.8, 4.2, 0.4], and: [0.7, 0.8, 0.4, 0.3], damned: [2.9, 2.7, 0.0, 1.9], incest.: [-1, -1, -1, -1]
+SEND LINE ' A couch for luxury and damned incest. '
+'Tis: [-1, -1, -1, -1], now: [0.6, 0.2, 0.9, 0.1], struck: [3.1, 1.9, 0.8, 2.1], twelve;: [-1, -1, -1, -1], get: [0.9, 0.9, 3.8, 0.9], thee: [0.3, 0.8, 1.2, 0.3], to: [0.1, 0.6, 0.6, 0.3], bed,: [-1, -1, -1, -1]
+SEND LINE " 'Tis now struck twelve; get thee to bed, "
+Make: [-1, -1, -1, -1], thy: [0.1, 0.0, 0.6, 0.2], two: [0.4, 0.7, 0.6, 0.5], eyes,: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], eager: [1.0, 0.5, 3.1, 0.4], droppings: [1.0, 1.5, 0.2, 1.7], into: [0.2, 0.4, 0.7, 0.1], milk,: [-1, -1, -1, -1]
+SEND LINE ' Make thy two eyes, like eager droppings into milk, '
+And: [-1, -1, -1, -1], liegemen: [1.3, 0.8, 2.1, 0.8], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], Dane.: [-1, -1, -1, -1]
+SEND LINE ' And liegemen to the Dane. '
+FRANCISCO: [-1, -1, -1, -1]
+SEND WHO FRANCISCO
+Bernardo?: [-1, -1, -1, -1]
+SEND LINE ' Bernardo? '
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+Tush,: [-1, -1, -1, -1], tush,: [-1, -1, -1, -1], 'twill: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], appear.: [-1, -1, -1, -1]
+SEND LINE " Tush, tush, 'twill not appear. "
+BERNARDO: [-1, -1, -1, -1]
+SEND WHO BERNARDO
+It: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], offended.: [-1, -1, -1, -1]
+SEND LINE ' It is offended. '
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+So: [-1, -1, -1, -1], hallowed: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], so: [0.6, 0.5, 0.3, 0.7], gracious: [0.4, 0.4, 3.5, 0.7], is: [0.3, 0.6, 0.3, 0.0], that: [0.7, 0.7, 0.2, 0.4], time.: [-1, -1, -1, -1]
+SEND LINE ' So hallowed and so gracious is that time. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Speak: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], me:: [-1, -1, -1, -1], stand,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], long: [0.6, 0.6, 1.1, 1.0], purples: [1.5, 1.1, 1.9, 0.7]
+SEND LINE ' Speak to me: stand, and long purples '
+That: [-1, -1, -1, -1], youth: [1.0, 0.9, 2.4, 0.8], and: [0.7, 0.8, 0.4, 0.3], observation: [1.9, 1.2, 2.6, 1.1], copied: [3.1, 2.1, 1.4, 1.7], there;: [-1, -1, -1, -1]
+SEND LINE ' That youth and observation copied there; '
+At: [-1, -1, -1, -1], least: [1.8, 2.0, 0.9, 1.8], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], sure: [0.7, 0.9, 2.8, 0.4], it: [0.5, 0.4, 0.1, 0.5], may: [0.3, 0.1, 1.2, 0.4], be: [0.6, 1.1, 0.8, 0.8], so: [0.6, 0.5, 0.3, 0.7], in: [0.3, 0.1, 0.4, 0.4], Denmark:: [-1, -1, -1, -1]
+SEND LINE ' At least I am sure it may be so in Denmark: '
+Which: [-1, -1, -1, -1], time: [2.2, 3.2, 2.8, 2.4], she: [0.6, 0.6, 1.1, 0.1], chanted: [1.4, 1.4, 1.9, 0.6], snatches: [2.3, 2.1, 0.4, 2.1], of: [1.2, 0.9, 0.3, 0.6], old: [1.4, 2.4, 0.9, 2.7], lauds;: [-1, -1, -1, -1]
+SEND LINE ' Which time she chanted snatches of old lauds; '
+And: [-1, -1, -1, -1], let: [1.0, 1.0, 1.2, 1.1], us: [0.2, 0.3, 2.1, 0.2], once: [0.4, 0.5, 0.2, 0.1], again: [0.4, 0.7, 1.0, 0.6], assail: [2.3, 2.0, 0.5, 0.7], your: [2.1, 1.6, 2.1, 1.3], ears,: [-1, -1, -1, -1]
+SEND LINE ' And let us once again assail your ears, '
+He: [-1, -1, -1, -1], may: [0.3, 0.1, 1.2, 0.4], approve: [0.7, 1.0, 3.9, 0.8], our: [1.1, 0.7, 1.7, 1.2], eyes: [2.0, 2.0, 3.1, 1.2], and: [0.7, 0.8, 0.4, 0.3], speak!: [-1, -1, -1, -1]
+SEND LINE ' He may approve our eyes and speak!'
 
 (: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], GHOST.): [-1, -1, -1, -1]
 Stagedir (Enter GHOST.)
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 Mark: [-1, -1, -1, -1], me.: [-1, -1, -1, -1]
-SEND LINE u' Mark me.'
+SEND LINE ' Mark me.'
 
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
-Ay,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], have: [0.6, 0.8, 1.6, 1.1], the: [0.4, 0.5, 0.3, 0.3], power: [2.1, 2.4, 3.0, 1.1]
-SEND LINE u' Ay, that have the power '
-So: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], seduce!: [-1, -1, -1, -1], -: [-1, -1, -1, -1], won: [0.3, 0.6, 4.8, 0.2], to: [0.1, 0.6, 0.6, 0.3], his: [1.3, 0.2, 0.6, 0.8], shameful: [2.9, 3.7, 1.2, 3.8], lust: [1.0, 2.1, 1.8, 1.8]
-SEND LINE u' So to seduce! - won to his shameful lust '
-The: [-1, -1, -1, -1], serpent: [1.7, 3.2, 0.7, 1.6], that: [0.7, 0.7, 0.2, 0.4], did: [1.1, 0.7, 1.4, 0.8], sting: [2.8, 3.1, 0.4, 1.9], her: [0.9, 1.1, 1.6, 1.5], bosom: [0.3, 0.6, 3.1, 1.5], lodge: [0.6, 0.7, 1.5, 0.4], and: [0.7, 0.8, 0.4, 0.3], blood: [2.1, 3.1, 0.3, 1.7], of: [1.2, 0.9, 0.3, 0.6], man: [1.3, 1.0, 2.2, 1.0]
-SEND LINE u' The serpent that did sting her bosom lodge and blood of man '
-That: [-1, -1, -1, -1], roots: [0.5, 0.7, 1.7, 0.6], itself: [0.6, 0.6, 0.9, 0.5], in: [0.3, 0.1, 0.4, 0.4], a: [-1, -1, -1, -1], vial,: [-1, -1, -1, -1]
-SEND LINE u' That roots itself in a vial, '
-Thy: [-1, -1, -1, -1], knotted: [1.8, 1.0, 0.3, 0.7], and: [0.7, 0.8, 0.4, 0.3], combined: [0.5, 0.5, 1.2, 0.5], locks: [1.0, 1.9, 0.5, 1.2], to: [0.1, 0.6, 0.6, 0.3], part: [2.6, 2.2, 0.7, 1.9]
-SEND LINE u' Thy knotted and combined locks to part '
-And: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], sudden: [1.8, 2.2, 0.7, 1.6], vigour: [1.4, 0.7, 2.2, 0.4], it: [0.5, 0.4, 0.1, 0.5], doth: [0.5, 0.4, 0.4, 0.6], posset: [0.4, 0.3, 1.3, 0.1]
-SEND LINE u' And with a sudden vigour it doth posset '
-And: [-1, -1, -1, -1], duller: [1.6, 1.1, 0.8, 2.2], shouldst: [0.3, 0.3, 0.5, 0.1], thou: [0.8, 0.1, 1.2, 1.0], be: [0.6, 1.1, 0.8, 0.8], than: [0.2, 0.4, 0.4, 0.8], the: [0.4, 0.5, 0.3, 0.3], fat: [2.3, 2.0, 0.9, 2.8], weed: [1.0, 1.2, 1.2, 1.4]
-SEND LINE u' And duller shouldst thou be than the fat weed '
-That: [-1, -1, -1, -1], swift: [1.2, 1.1, 2.3, 1.0], as: [0.0, 0.0, 0.0, 0.0], quicksilver: [1.4, 1.5, 1.3, 0.6], it: [0.5, 0.4, 0.1, 0.5], courses: [0.7, 0.6, 2.6, 0.4], through: [0.6, 0.6, 0.7, 0.6]
-SEND LINE u' That swift as quicksilver it courses through '
-The: [-1, -1, -1, -1], glow-worm: [1.1, 0.8, 1.8, 0.9], shows: [0.3, 0.7, 1.8, 0.9], the: [0.4, 0.5, 0.3, 0.3], matin: [0.6, 0.8, 1.0, 0.6], to: [0.1, 0.6, 0.6, 0.3], be: [0.6, 1.1, 0.8, 0.8], near,: [-1, -1, -1, -1]
-SEND LINE u' The glow-worm shows the matin to be near, '
-Upon: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], secure: [0.3, 0.8, 3.0, 0.8], hour: [0.5, 0.3, 0.5, 0.2], thy: [0.1, 0.0, 0.6, 0.2], mother: [1.1, 1.3, 4.5, 0.8], aught:: [-1, -1, -1, -1], leave: [1.1, 1.5, 1.3, 2.0], her: [0.9, 1.1, 1.6, 1.5], to: [0.1, 0.6, 0.6, 0.3], heaven: [0.3, 0.8, 4.5, 0.3]
-SEND LINE u' Upon my secure hour thy mother aught: leave her to heaven '
-
+Pity: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], not,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], sent: [1.0, 0.4, 1.8, 0.7], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], account: [1.6, 2.4, 1.8, 1.1]
+SEND LINE ' Pity me not, but sent to my account '
+With: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], my: [0.4, 0.3, 1.9, 0.3], imperfections: [2.1, 1.4, 0.0, 2.3], on: [0.3, 0.4, 0.4, 0.7], my: [0.4, 0.3, 1.9, 0.3], head: [0.9, 0.5, 1.2, 0.7], away: [0.6, 1.6, 0.8, 1.6], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], account: [1.6, 2.4, 1.8, 1.1]
+SEND LINE ' With all my imperfections on my head away to my account '
+With: [-1, -1, -1, -1], witchcraft: [2.7, 3.7, 1.2, 1.9], of: [1.2, 0.9, 0.3, 0.6], his: [1.3, 0.2, 0.6, 0.8], wit: [0.8, 0.3, 2.7, 0.7], and: [0.7, 0.8, 0.4, 0.3], gifts: [0.1, 0.1, 4.6, 0.1], were: [0.6, 0.2, 0.3, 0.1], poor: [2.7, 2.5, 0.3, 3.7]
+SEND LINE ' With witchcraft of his wit and gifts were poor '
+To: [-1, -1, -1, -1], tell: [1.5, 1.6, 1.4, 0.6], the: [0.4, 0.5, 0.3, 0.3], secrets: [1.3, 2.3, 1.5, 1.9], of: [1.2, 0.9, 0.3, 0.6], my: [0.4, 0.3, 1.9, 0.3], ears: [0.5, 0.2, 2.1, 0.6], did: [1.1, 0.7, 1.4, 0.8], pour: [1.6, 1.6, 1.5, 2.6]
+SEND LINE ' To tell the secrets of my ears did pour '
+The: [-1, -1, -1, -1], natural: [0.4, 0.9, 2.2, 0.6], gates: [0.5, 0.8, 0.9, 0.7], and: [0.7, 0.8, 0.4, 0.3], alleys: [0.9, 1.6, 1.3, 1.2], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], body,: [-1, -1, -1, -1]
+SEND LINE ' The natural gates and alleys of the body, '
+Upon: [-1, -1, -1, -1], a: [-1, -1, -1, -1], wretch: [2.0, 2.0, 0.2, 2.4], whose: [0.5, 0.9, 1.1, 1.0], natural: [0.4, 0.9, 2.2, 0.6], gifts: [0.1, 0.1, 4.6, 0.1], were: [0.6, 0.2, 0.3, 0.1], poor: [2.7, 2.5, 0.3, 3.7]
+SEND LINE ' Upon a wretch whose natural gifts were poor '
+To: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], unfold.: [-1, -1, -1, -1]
+SEND LINE ' To what I shall unfold.'
 
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-O: [-1, -1, -1, -1], God!: [-1, -1, -1, -1]
-SEND LINE u' O God! '
+Murder!: [-1, -1, -1, -1]
+SEND LINE ' Murder! '
 My: [-1, -1, -1, -1], uncle!: [-1, -1, -1, -1]
-SEND LINE u' My uncle! '
+SEND LINE ' My uncle! '
 My: [-1, -1, -1, -1], uncle!: [-1, -1, -1, -1]
-SEND LINE u' My uncle! '
+SEND LINE ' My uncle! '
 My: [-1, -1, -1, -1], uncle!: [-1, -1, -1, -1]
-SEND LINE u' My uncle! '
+SEND LINE ' My uncle! '
 My: [-1, -1, -1, -1], uncle!: [-1, -1, -1, -1]
-SEND LINE u' My uncle!'
+SEND LINE ' My uncle!'
 
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 Adieu,: [-1, -1, -1, -1], adieu,: [-1, -1, -1, -1], adieu,: [-1, -1, -1, -1], remember: [0.5, 0.2, 2.2, 1.4], me.: [-1, -1, -1, -1]
-SEND LINE u' Adieu, adieu, adieu, remember me. '
+SEND LINE ' Adieu, adieu, adieu, remember me. '
 
 
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt.): [-1, -1, -1, -1]
 TRIGGER: exit [u'exeunt']
 Stagedir (Exeunt.)
-################# SCENE partfourtwoA 1_TTS.aloud_0_closet wordcount:382 strategy:markov #################
-Timing info. Seconds: 16.9978270531, words: 786, lines: 75
+################# SCENE partfourtwoA 1_TTS.aloud_0_closet wordcount:522 strategy:markov #################
+Timing info. Seconds: 17.2280509472, words: 773, lines: 77
 BLACKOUT
 SEND STYLES 1_TTS.aloud_0_closet
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
@@ -248,6 +254,7 @@ Stagedir (Flourish.)
 (: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], KING,: [-1, -1, -1, -1], QUEEN,: [-1, -1, -1, -1], HAMLET,: [-1, -1, -1, -1], POLONIUS,: [-1, -1, -1, -1], LAERTES,: [-1, -1, -1, -1], VOLTIMAND,: [-1, -1, -1, -1], CORNELIUS,: [-1, -1, -1, -1], Lords,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], Attendants.): [-1, -1, -1, -1]
 TRIGGER: place [u'part', u'of', u'the', u'platform']
 TRIGGER: entrance [u'King', u'queen']
+SENDING FAN
 Stagedir (Enter the KING, QUEEN, HAMLET, POLONIUS, LAERTES, VOLTIMAND, CORNELIUS, Lords, and Attendants.)
 
 
@@ -255,83 +262,92 @@ Stagedir (Enter the KING, QUEEN, HAMLET, POLONIUS, LAERTES, VOLTIMAND, CORNELIUS
 KING: [-1, -1, -1, -1]
 SEND WHO KING
 Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], of: [1.2, 0.9, 0.3, 0.6], Hamlet: [-1, -1, -1, -1], our: [1.1, 0.7, 1.7, 1.2], dear: [0.1, 0.4, 3.4, 0.5], brother's: [0.7, 0.4, 2.5, 0.0], death: [1.8, 2.9, 0.5, 4.4]
-SEND LINE u" Though yet of Hamlet our dear brother's death "
-The: [-1, -1, -1, -1], memory: [0.7, 0.6, 2.6, 0.9], be: [0.6, 1.1, 0.8, 0.8], green,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], that: [0.7, 0.7, 0.2, 0.4], it: [0.5, 0.4, 0.1, 0.5], us: [0.2, 0.3, 2.1, 0.2], befitted: [0.2, 0.5, 2.2, 0.1]
-SEND LINE u' The memory be green, and that it us befitted '
-To: [-1, -1, -1, -1], bear: [0.7, 2.0, 1.5, 1.2], our: [1.1, 0.7, 1.7, 1.2], hearts: [1.0, 2.0, 3.4, 2.0], in: [0.3, 0.1, 0.4, 0.4], grief: [1.4, 3.1, 0.2, 4.4], and: [0.7, 0.8, 0.4, 0.3], our: [1.1, 0.7, 1.7, 1.2], whole: [0.5, 0.5, 2.8, 0.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], of: [1.2, 0.9, 0.3, 0.6], Hamlet: [-1, -1, -1, -1], our: [1.1, 0.7, 1.7, 1.2], dear: [0.1, 0.4, 3.4, 0.5], brother's: [0.7, 0.4, 2.5, 0.0], death: [1.8, 2.9, 0.5, 4.4]
-SEND LINE u" To bear our hearts in grief and our whole Though yet of Hamlet our dear brother's death "
+SEND LINE " Though yet of Hamlet our dear brother's death "
 The: [-1, -1, -1, -1], imperial: [1.4, 1.5, 1.4, 0.9], jointress: [1.1, 0.6, 1.1, 1.0], to: [0.1, 0.6, 0.6, 0.3], this: [0.3, 0.8, 0.8, 0.5], warlike: [3.8, 3.6, 0.8, 3.3], state,: [-1, -1, -1, -1]
-SEND LINE u' The imperial jointress to this warlike state, '
-Together: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], remembrance: [0.3, 0.5, 2.3, 1.7], of: [1.2, 0.9, 0.3, 0.6], ourselves.: [-1, -1, -1, -1]
-SEND LINE u' Together with remembrance of ourselves.'
+SEND LINE ' The imperial jointress to this warlike state, '
+I: [-1, -1, -1, -1], stand: [1.5, 0.8, 0.9, 0.7], in: [0.3, 0.1, 0.4, 0.4], pause: [1.0, 1.7, 1.1, 1.2], where: [0.5, 0.8, 0.4, 0.8], I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], first: [0.5, 0.4, 3.9, 0.3], begin,: [-1, -1, -1, -1]
+SEND LINE ' I stand in pause where I shall first begin, '
+I: [-1, -1, -1, -1], stand: [1.5, 0.8, 0.9, 0.7], in: [0.3, 0.1, 0.4, 0.4], pause: [1.0, 1.7, 1.1, 1.2], where: [0.5, 0.8, 0.4, 0.8], I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], first: [0.5, 0.4, 3.9, 0.3], begin,: [-1, -1, -1, -1]
+SEND LINE ' I stand in pause where I shall first begin, '
+With: [-1, -1, -1, -1], an: [0.0, 0.0, 0.0, 0.0], auspicious: [0.9, 1.4, 2.0, 0.9], and: [0.7, 0.8, 0.4, 0.3], a: [-1, -1, -1, -1], dropping: [1.5, 2.7, 0.7, 1.9], eye,: [-1, -1, -1, -1]
+SEND LINE ' With an auspicious and a dropping eye, '
+Yet: [-1, -1, -1, -1], so: [0.6, 0.5, 0.3, 0.7], far: [0.4, 1.4, 0.3, 2.0], hath: [1.0, 0.4, 1.0, 0.7], discretion: [1.3, 2.6, 1.5, 1.0], fought: [1.9, 2.7, 0.8, 1.9], with: [0.4, 0.4, 1.0, 0.3], nature: [1.5, 2.7, 3.8, 2.2]
+SEND LINE ' Yet so far hath discretion fought with nature '
+That: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], be;: [-1, -1, -1, -1], since: [0.3, 0.2, 0.2, 0.5], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], still: [0.1, 0.3, 1.1, 0.5], possessed: [-1, -1, -1, -1]
+SEND LINE ' That cannot be; since I am still possessed '
+Of: [-1, -1, -1, -1], those: [0.6, 0.4, 0.2, 0.6], effects: [1.2, 1.3, 2.2, 0.9], for: [0.0, 0.0, 0.0, 0.1], which: [0.2, 0.1, 0.6, 0.3], I: [-1, -1, -1, -1], did: [1.1, 0.7, 1.4, 0.8], the: [0.4, 0.5, 0.3, 0.3], murder,: [-1, -1, -1, -1]
+SEND LINE ' Of those effects for which I did the murder, '
+With: [-1, -1, -1, -1], mirth: [0.9, 1.3, 1.6, 2.0], in: [0.3, 0.1, 0.4, 0.4], funeral: [1.4, 1.5, 0.9, 4.9], and: [0.7, 0.8, 0.4, 0.3], with: [0.4, 0.4, 1.0, 0.3], dirge: [0.2, 0.9, 0.5, 1.8], in: [0.3, 0.1, 0.4, 0.4], marriage,: [-1, -1, -1, -1]
+SEND LINE ' With mirth in funeral and with dirge in marriage, '
+Though: [-1, -1, -1, -1], inclination: [0.3, 1.5, 1.4, 0.9], be: [0.6, 1.1, 0.8, 0.8], as: [0.0, 0.0, 0.0, 0.0], sharp: [1.9, 2.4, 0.5, 0.8], as: [0.0, 0.0, 0.0, 0.0], will:: [-1, -1, -1, -1]
+SEND LINE ' Though inclination be as sharp as will: '
+My: [-1, -1, -1, -1], stronger: [1.3, 1.7, 2.7, 1.0], guilt: [2.8, 2.8, 0.3, 4.0], defeats: [2.4, 2.0, 2.0, 2.6], my: [0.4, 0.3, 1.9, 0.3], strong: [1.6, 1.9, 3.3, 1.2], intent;: [-1, -1, -1, -1]
+SEND LINE ' My stronger guilt defeats my strong intent; '
+Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0]
+SEND LINE ' Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet '
+Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1], yet: [0.7, 0.8, 0.8, 1.0], Though: [-1, -1, -1, -1]
+SEND LINE ' Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though yet Though'
 
 (: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], OPHELIA.): [-1, -1, -1, -1]
 Stagedir (Enter OPHELIA.)
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
+O,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
+SEND LINE ' O, my lord, my lord, I have been so affrighted! '
+O,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
+SEND LINE ' O, my lord, I have been so affrighted! '
 O,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1]
-SEND LINE u' O, my lord, my lord, my lord, my lord, '
-my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
-SEND LINE u' my lord, my lord, my lord, my lord, I have been so affrighted! '
-
-
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-The: [-1, -1, -1, -1], fair: [1.1, 1.5, 2.4, 1.2], Ophelia!: [-1, -1, -1, -1], Nymph,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], thy: [0.1, 0.0, 0.6, 0.2], orisons: [0.4, 0.4, 1.1, 0.4]
-SEND LINE u' The fair Ophelia! Nymph, in thy orisons '
-Be: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], my: [0.4, 0.3, 1.9, 0.3], sins: [2.9, 2.2, 0.6, 2.2], remembered.: [-1, -1, -1, -1]
-SEND LINE u' Be all my sins remembered. '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-This: [-1, -1, -1, -1], bodiless: [1.9, 1.7, 1.3, 1.7], creation: [1.2, 1.5, 4.1, 1.1], ecstasy: [1.1, 1.2, 3.0, 1.3]
-SEND LINE u' This bodiless creation ecstasy '
-Is: [-1, -1, -1, -1], very: [1.0, 0.6, 1.1, 1.2], cunning: [3.2, 2.8, 1.6, 2.1], in.: [-1, -1, -1, -1]
-SEND LINE u' Is very cunning in. '
-
+SEND LINE ' O, my lord, my lord, my lord, my lord, '
+my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
+SEND LINE ' my lord, I have been so affrighted!'
 
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-That's: [-1, -1, -1, -1], wormwood.: [-1, -1, -1, -1]
-SEND LINE u" That's wormwood. "
-What: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], a: [-1, -1, -1, -1], man: [1.3, 1.0, 2.2, 1.0], do: [0.8, 0.7, 1.5, 1.2], but: [1.1, 1.2, 0.6, 1.0], jest,: [-1, -1, -1, -1], poison: [2.8, 3.3, 0.8, 3.1], in: [0.3, 0.1, 0.4, 0.4], jest;: [-1, -1, -1, -1]
-SEND LINE u' What should a man do but jest, poison in jest; '
-no: [0.7, 0.7, 0.6, 0.9], offence: [3.5, 2.4, 0.4, 2.5], i': [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], world.: [-1, -1, -1, -1]
-SEND LINE u" no offence i' the world. "
+The: [-1, -1, -1, -1], fair: [1.1, 1.5, 2.4, 1.2], Ophelia!: [-1, -1, -1, -1], Nymph,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], suffering: [2.8, 3.4, 0.3, 4.6], all,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], he: [0.2, 0.5, 0.9, 0.5], may: [0.3, 0.1, 1.2, 0.4], play: [0.4, 0.5, 4.4, 0.5], the: [0.4, 0.5, 0.3, 0.3], fool: [2.8, 1.4, 1.1, 1.8], no: [0.7, 0.7, 0.6, 0.9], where: [0.5, 0.8, 0.4, 0.8], but: [1.1, 1.2, 0.6, 1.0], in's: [0.0, 0.4, 0.3, 0.2], own: [0.5, 0.9, 3.1, 0.8], house.: [-1, -1, -1, -1]
+SEND LINE " The fair Ophelia! Nymph, in suffering all, that he may play the fool no where but in's own house. "
+Farewell.: [-1, -1, -1, -1]
+SEND LINE ' Farewell. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-My: [-1, -1, -1, -1], lord,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], nickname: [-1, -1, -1, -1], God's: [-1, -1, -1, -1], creatures,: [-1, -1, -1, -1]
-SEND LINE u" My lord, you nickname God's creatures, "
-and: [0.7, 0.8, 0.4, 0.3], written: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], very: [1.0, 0.6, 1.1, 1.2], choice: [1.0, 1.2, 2.8, 1.0], Italian:: [-1, -1, -1, -1]
-SEND LINE u' and written in very choice Italian: '
-you: [0.0, 0.1, 1.3, 0.0], shall: [1.1, 1.4, 1.8, 0.7], see: [1.0, 1.4, 2.5, 1.4], anon: [0.8, 1.1, 1.5, 0.6], how: [1.0, 1.1, 0.7, 0.5], the: [0.4, 0.5, 0.3, 0.3], murderer: [4.2, 4.2, 0.3, 4.3], gets: [0.2, 0.2, 1.3, 0.1], the: [0.4, 0.5, 0.3, 0.3], love: [0.9, 1.0, 4.8, 0.8], of: [1.2, 0.9, 0.3, 0.6], Gonzago's: [-1, -1, -1, -1], wife.: [-1, -1, -1, -1]
-SEND LINE u" you shall see anon how the murderer gets the love of Gonzago's wife. "
+You: [-1, -1, -1, -1], are: [0.6, 0.6, 1.4, 0.6], as: [0.0, 0.0, 0.0, 0.0], good: [0.5, 0.9, 4.7, 0.5], as: [0.0, 0.0, 0.0, 0.0], a: [-1, -1, -1, -1], chorus,: [-1, -1, -1, -1]
+SEND LINE ' You are as good as a chorus, '
+my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
+SEND LINE ' my lord. '
+
+
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-Let: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], doors: [0.6, 0.6, 1.3, 0.5], be: [0.6, 1.1, 0.8, 0.8], shut: [1.8, 0.6, 0.5, 1.3], upon: [1.0, 0.5, 1.1, 0.7], him,: [-1, -1, -1, -1]
-SEND LINE u' Let the doors be shut upon him, '
-you: [0.0, 0.1, 1.3, 0.0], are: [0.6, 0.6, 1.4, 0.6], naught,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], are: [0.6, 0.6, 1.4, 0.6], naught,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], nickname: [-1, -1, -1, -1], God's: [-1, -1, -1, -1], creatures,: [-1, -1, -1, -1]
-SEND LINE u" you are naught, you are naught, you nickname God's creatures, "
-and: [0.7, 0.8, 0.4, 0.3], worse.: [-1, -1, -1, -1]
-SEND LINE u' and worse. '
+Is: [-1, -1, -1, -1], this: [0.3, 0.8, 0.8, 0.5], a: [-1, -1, -1, -1], prologue,: [-1, -1, -1, -1], or: [0.9, 0.8, 0.8, 0.5], time: [2.2, 3.2, 2.8, 2.4], to: [0.1, 0.6, 0.6, 0.3], act: [1.2, 2.3, 3.2, 1.2], them: [0.1, 0.4, 0.3, 0.5], in,: [-1, -1, -1, -1]
+SEND LINE ' Is this a prologue, or time to act them in, '
+imagination: [0.8, 0.8, 3.8, 1.1], to: [0.1, 0.6, 0.6, 0.3], give: [1.1, 1.6, 3.4, 1.5], them: [0.1, 0.4, 0.3, 0.5], shape,: [-1, -1, -1, -1], or: [0.9, 0.8, 0.8, 0.5], time: [2.2, 3.2, 2.8, 2.4], to: [0.1, 0.6, 0.6, 0.3], act: [1.2, 2.3, 3.2, 1.2], them: [0.1, 0.4, 0.3, 0.5], in.: [-1, -1, -1, -1]
+SEND LINE ' imagination to give them shape, or time to act them in. '
+What: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], such: [0.0, 0.2, 0.8, 0.3], fellows: [0.3, 0.2, 2.9, 0.4], as: [0.0, 0.0, 0.0, 0.0], I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], thee.: [-1, -1, -1, -1]
+SEND LINE ' What should such fellows as I do thee. '
+-: [-1, -1, -1, -1], Something: [-1, -1, -1, -1], too: [0.5, 0.6, 0.8, 0.5], much: [0.9, 1.2, 1.9, 0.2], of: [1.2, 0.9, 0.3, 0.6], this.: [-1, -1, -1, -1]
+SEND LINE ' - Something too much of this. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-No,: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], I;: [-1, -1, -1, -1]
-SEND LINE u' No, not I; '
+Belike: [-1, -1, -1, -1], this: [0.3, 0.8, 0.8, 0.5], show: [0.5, 0.8, 2.2, 0.5], imports: [0.8, 0.8, 2.5, 0.5], the: [0.4, 0.5, 0.3, 0.3], argument: [3.9, 2.5, 1.0, 2.7], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], fair: [1.1, 1.5, 2.4, 1.2], state,: [-1, -1, -1, -1]
+SEND LINE ' Belike this show imports the argument of the fair state, '
+Like: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], bells: [1.3, 1.2, 3.2, 1.7], jangled,: [-1, -1, -1, -1], out: [1.0, 1.1, 1.0, 1.8], of: [1.2, 0.9, 0.3, 0.6], time: [2.2, 3.2, 2.8, 2.4], and: [0.7, 0.8, 0.4, 0.3], harsh;: [-1, -1, -1, -1]
+SEND LINE ' Like sweet bells jangled, out of time and harsh; '
+I: [-1, -1, -1, -1], humbly: [1.0, 1.3, 2.8, 1.0], thank: [0.4, 0.3, 3.4, 0.0], you;: [-1, -1, -1, -1], well,: [-1, -1, -1, -1], well,: [-1, -1, -1, -1], well,: [-1, -1, -1, -1], well.: [-1, -1, -1, -1]
+SEND LINE ' I humbly thank you; well, well, well, well. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-If: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], dost: [0.3, 0.9, 1.2, 0.7], marry,: [-1, -1, -1, -1], marry: [0.1, 1.0, 3.6, 1.3], a: [-1, -1, -1, -1], fool;: [-1, -1, -1, -1]
-SEND LINE u' If thou dost marry, marry a fool; '
-for: [0.0, 0.0, 0.0, 0.1], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], noble: [0.8, 2.5, 2.2, 1.2], mind: [0.8, 0.9, 1.6, 1.3], is: [0.3, 0.6, 0.3, 0.0], here: [0.6, 0.3, 0.4, 0.2], o'erthrown!: [-1, -1, -1, -1]
-SEND LINE u" for to the noble mind is here o'erthrown! "
+No,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], they: [0.1, 0.1, 0.1, 0.1], do: [0.8, 0.7, 1.5, 1.2], but: [1.1, 1.2, 0.6, 1.0], be: [0.6, 1.1, 0.8, 0.8], merry?: [-1, -1, -1, -1]
+SEND LINE ' No, no, they do but be merry? '
+for,: [-1, -1, -1, -1], look: [1.7, 1.3, 3.1, 1.7], you,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], like: [0.4, 0.6, 4.3, 0.7], you: [0.0, 0.1, 1.3, 0.0], this: [0.3, 0.8, 0.8, 0.5], play?: [-1, -1, -1, -1]
+SEND LINE ' for, look you, how like you this play? '
 
 
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 you: [0.0, 0.1, 1.3, 0.0], are: [0.6, 0.6, 1.4, 0.6], naught,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], are: [0.6, 0.6, 1.4, 0.6], naught:: [-1, -1, -1, -1], I'll: [-1, -1, -1, -1], mark: [1.4, 1.5, 1.1, 1.2], the: [0.4, 0.5, 0.3, 0.3], play.: [-1, -1, -1, -1]
-SEND LINE u" you are naught, you are naught: I'll mark the play. "
+SEND LINE " you are naught, you are naught: I'll mark the play. "
 
-################# SCENE dumb 14_TTS.mute_0_lightshow wordcount:254 strategy:markov #################
-Timing info. Seconds: 11.3601241112, words: 389, lines: 29
+################# SCENE dumb 14_TTS.mute_0_lightshow wordcount:262 strategy:markov #################
+Timing info. Seconds: 12.0661940575, words: 529, lines: 36
 BLACKOUT
 SEND STYLES 14_TTS.mute_0_lightshow
 
@@ -344,51 +360,58 @@ Stagedir to send (The dumb-show enters.)
 (: [-1, -1, -1, -1], dumb): [-1, -1, -1, -1]
 
 
-
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], The: [-1, -1, -1, -1], Poisoner: [-1, -1, -1, -1], woos: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], Queen: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], her: [0.9, 1.1, 1.6, 1.5], up,): [-1, -1, -1, -1]
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], Enter: [-1, -1, -1, -1], a: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], very: [1.0, 0.6, 1.1, 1.2], lovingly;): [-1, -1, -1, -1]
+TRIGGER: entrance [u'King', u'queen']
+Stagedir to send (Enter a Queen very lovingly;
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], the: [0.4, 0.5, 0.3, 0.3], Queen: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], gifts:): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir to send the Queen with gifts:
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], lays: [0.9, 1.0, 2.0, 1.5], him: [1.1, 0.7, 1.5, 0.4], asleep,): [-1, -1, -1, -1]
+Stagedir to send lays him asleep,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], comes: [1.2, 0.5, 2.3, 0.6], in: [0.3, 0.1, 0.4, 0.4], again,): [-1, -1, -1, -1]
+Stagedir to send comes in again,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], kisses: [0.5, 0.4, 4.6, 0.7], it,): [-1, -1, -1, -1]
+Stagedir to send kisses it,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], show: [0.5, 0.8, 2.2, 0.5], of: [1.2, 0.9, 0.3, 0.6], protestation: [2.5, 1.4, 1.3, 1.2], unto: [0.9, 1.2, 1.0, 1.0], him,): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir to send and makes show of protestation unto him,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], comes: [1.2, 0.5, 2.3, 0.6], in: [0.3, 0.1, 0.4, 0.4], again,): [-1, -1, -1, -1]
+Stagedir to send comes in again,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], seeing: [1.0, 1.7, 1.8, 1.0], him.): [-1, -1, -1, -1]
+Stagedir to send seeing him.)
+(: [-1, -1, -1, -1], dumb): [-1, -1, -1, -1]
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], Enter: [-1, -1, -1, -1], a: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], returns;): [-1, -1, -1, -1]
+TRIGGER: entrance [u'King', u'queen']
+Stagedir to send (Enter a Queen returns;
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], finds: [0.6, 1.3, 2.3, 1.1], the: [0.4, 0.5, 0.3, 0.3], King: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], passionate: [2.1, 1.6, 3.9, 1.0], action.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir to send finds the King and makes passionate action.
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], The: [-1, -1, -1, -1], Poisoner: [-1, -1, -1, -1], woos: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], Queen: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], gifts:): [-1, -1, -1, -1]
 TRIGGER: place [u'part', u'of', u'the', u'platform']
 TRIGGER: place [u'part', u'of', u'the', u'platform']
 TRIGGER: entrance [u'King', u'queen']
-Stagedir to send (The Poisoner woos the Queen with her up,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], declines: [2.6, 2.1, 1.1, 3.3], his: [1.3, 0.2, 0.6, 0.8], head: [0.9, 0.5, 1.2, 0.7], upon: [1.0, 0.5, 1.1, 0.7], her.): [-1, -1, -1, -1]
-Stagedir to send and declines his head upon her.
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], He: [-1, -1, -1, -1], takes: [2.0, 1.5, 1.4, 1.9], off: [1.3, 1.6, 0.9, 1.3], his: [1.3, 0.2, 0.6, 0.8], crown,): [-1, -1, -1, -1]
-Stagedir to send He takes off his crown,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], a: [-1, -1, -1, -1], fellow,): [-1, -1, -1, -1]
-Stagedir to send and a fellow,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], exit.): [-1, -1, -1, -1]
-Stagedir to send and exit.)
-(: [-1, -1, -1, -1], dumb): [-1, -1, -1, -1]
-
+Stagedir to send The Poisoner woos the Queen with gifts:
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], she: [0.6, 0.6, 1.1, 0.1], seems: [0.7, 1.3, 1.0, 0.8], loath: [2.8, 2.2, 0.5, 2.6], and: [0.7, 0.8, 0.4, 0.3], pours: [0.1, 0.2, 0.5, 0.2], poison: [2.8, 3.3, 0.8, 3.1], in: [0.3, 0.1, 0.4, 0.4], a: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], embracing: [0.4, 0.9, 3.6, 0.7], him.): [-1, -1, -1, -1]
+TRIGGER: entrance [u'King', u'queen']
+Stagedir to send she seems loath and pours poison in a Queen embracing him.
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], The: [-1, -1, -1, -1], Poisoner: [-1, -1, -1, -1], woos: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], Queen: [-1, -1, -1, -1], returns;): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+TRIGGER: entrance [u'King', u'queen']
+Stagedir to send The Poisoner woos the Queen returns;
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], finds: [0.6, 1.3, 2.3, 1.1], the: [0.4, 0.5, 0.3, 0.3], King's: [-1, -1, -1, -1], ears,): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir to send finds the King's ears,
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], passionate: [2.1, 1.6, 3.9, 1.0], action.): [-1, -1, -1, -1]
+Stagedir to send and makes passionate action.
 (: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], The: [-1, -1, -1, -1], Queen: [-1, -1, -1, -1], returns;): [-1, -1, -1, -1]
 TRIGGER: place [u'part', u'of', u'the', u'platform']
 TRIGGER: entrance [u'King', u'queen']
-Stagedir to send (The Queen returns;
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], the: [0.4, 0.5, 0.3, 0.3], King: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], passionate: [2.1, 1.6, 3.9, 1.0], action.): [-1, -1, -1, -1]
+Stagedir to send The Queen returns;
+(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], the: [0.4, 0.5, 0.3, 0.3], end: [1.4, 2.1, 2.3, 2.3], accepts: [1.1, 1.0, 3.2, 1.6], his: [1.3, 0.2, 0.6, 0.8], love.): [-1, -1, -1, -1]
 TRIGGER: place [u'part', u'of', u'the', u'platform']
-Stagedir to send the King and makes passionate action.)
-(: [-1, -1, -1, -1], dumb): [-1, -1, -1, -1]
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], The: [-1, -1, -1, -1], dead: [2.1, 2.6, 1.0, 4.0], body: [0.8, 1.3, 1.8, 1.3], is: [0.3, 0.6, 0.3, 0.0], carried: [0.5, 1.0, 1.8, 1.4], away.): [-1, -1, -1, -1]
-TRIGGER: place [u'part', u'of', u'the', u'platform']
-TRIGGER: sound [u'dead', u'march']
-TRIGGER: sound [u'ordnance', u'is', u'shot']
-Stagedir to send (The dead body is carried away.
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], He: [-1, -1, -1, -1], takes: [2.0, 1.5, 1.4, 1.9], off: [1.3, 1.6, 0.9, 1.3], his: [1.3, 0.2, 0.6, 0.8], love.): [-1, -1, -1, -1]
-Stagedir to send He takes off his love.
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], Anon: [-1, -1, -1, -1], comes: [1.2, 0.5, 2.3, 0.6], in: [0.3, 0.1, 0.4, 0.4], again,): [-1, -1, -1, -1]
-Stagedir to send Anon comes in again,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], leaves: [2.5, 2.0, 1.4, 2.3], him: [1.1, 0.7, 1.5, 0.4], down: [0.9, 0.9, 0.1, 2.5], upon: [1.0, 0.5, 1.1, 0.7], her: [0.9, 1.1, 1.6, 1.5], neck:): [-1, -1, -1, -1]
-Stagedir to send leaves him down upon her neck:
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], lays: [0.9, 1.0, 2.0, 1.5], him.): [-1, -1, -1, -1]
-Stagedir to send lays him.
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], She: [-1, -1, -1, -1], kneels,): [-1, -1, -1, -1]
-Stagedir to send She kneels,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], passionate: [2.1, 1.6, 3.9, 1.0], action.): [-1, -1, -1, -1]
-Stagedir to send and makes passionate action.
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], She: [-1, -1, -1, -1], kneels,): [-1, -1, -1, -1]
-Stagedir to send She kneels,
-(: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], makes: [0.3, 0.7, 2.3, 0.5], passionate: [2.1, 1.6, 3.9, 1.0], action.): [-1, -1, -1, -1]
-Stagedir to send and makes passionate action.
+Stagedir to send the end accepts his love.
 (: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], She: [-1, -1, -1, -1], kneels,): [-1, -1, -1, -1]
 Stagedir to send She kneels,
 (: [-1, -1, -1, -1], dumb: [3.2, 2.4, 0.4, 2.9], and: [0.7, 0.8, 0.4, 0.3], exit.): [-1, -1, -1, -1]
@@ -399,8 +422,8 @@ Stagedir to send and exit.)
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt.): [-1, -1, -1, -1]
 TRIGGER: exit [u'exeunt']
 Stagedir (Exeunt.)
-################# SCENE partfourtwoB 1_TTS.aloud_0_lightshow wordcount:516 strategy:markov #################
-Timing info. Seconds: 6.7543489933, words: 261, lines: 21
+################# SCENE partfourtwoB 1_TTS.aloud_0_lightshow wordcount:1023 strategy:markov #################
+Timing info. Seconds: 6.85770106316, words: 269, lines: 22
 BLACKOUT
 SEND STYLES 1_TTS.aloud_0_lightshow
 
@@ -430,149 +453,481 @@ SEND LINE ' away! '
 
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-Lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1], lights!: [-1, -1, -1, -1]
-SEND LINE ' Lights, lights, lights, lights! '
-How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], my: [0.4, 0.3, 1.9, 0.3], lord?: [-1, -1, -1, -1]
-SEND LINE ' How fares my lord? '
-How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], my: [0.4, 0.3, 1.9, 0.3], lord?: [-1, -1, -1, -1]
-SEND LINE ' How fares my lord? '
-ALL: [-1, -1, -1, -1]
-SEND WHO ALL
-KING: [-1, -1, -1, -1]
-SEND WHO KING
+Give: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], some: [1.1, 0.8, 1.4, 1.3], light:: [-1, -1, -1, -1]
+SEND LINE ' Give me some light: '
+away!: [-1, -1, -1, -1]
+SEND LINE ' away! '
 Lights,: [-1, -1, -1, -1], lights!: [-1, -1, -1, -1]
 SEND LINE ' Lights, lights! '
 Give: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], some: [1.1, 0.8, 1.4, 1.3], light:: [-1, -1, -1, -1]
 SEND LINE ' Give me some light: '
 away!: [-1, -1, -1, -1]
 SEND LINE ' away! '
-How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], my: [0.4, 0.3, 1.9, 0.3]
-SEND LINE ' How fares my '
+Give: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], some: [1.1, 0.8, 1.4, 1.3], light:: [-1, -1, -1, -1]
+SEND LINE ' Give me some light: '
+away!: [-1, -1, -1, -1]
+SEND LINE ' away! '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-KING: [-1, -1, -1, -1]
-SEND WHO KING
-How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], my: [0.4, 0.3, 1.9, 0.3]
-SEND LINE ' How fares my '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], my: [0.4, 0.3, 1.9, 0.3], lord?: [-1, -1, -1, -1]
-SEND LINE ' How fares my lord? '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
 
 
 KING: [-1, -1, -1, -1]
 SEND WHO KING
-Give: [-1, -1, -1, -1], o'er: [0.9, 0.7, 0.6, 0.6], the: [0.4, 0.5, 0.3, 0.3], play.: [-1, -1, -1, -1]
-SEND LINE u" Give o'er the play. "
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-Nay,: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], I'll: [-1, -1, -1, -1], set: [0.9, 0.9, 2.1, 0.6], those: [0.6, 0.4, 0.2, 0.6], to: [0.1, 0.6, 0.6, 0.3], you: [0.0, 0.1, 1.3, 0.0], that: [0.7, 0.7, 0.2, 0.4], can: [0.4, 0.4, 0.4, 0.5], speak.: [-1, -1, -1, -1]
-SEND LINE u" Nay, then, I'll set those to you that can speak. "
+How: [-1, -1, -1, -1], fares: [1.4, 1.0, 0.8, 0.9], our: [1.1, 0.7, 1.7, 1.2], cousin: [0.8, 1.3, 2.6, 1.0], Hamlet?: [-1, -1, -1, -1]
+SEND LINE ' How fares our cousin Hamlet? '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-Nay,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], to: [0.1, 0.6, 0.6, 0.3], live: [1.1, 1.9, 4.6, 1.5]
-SEND LINE u' Nay, but to live '
-In: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], corrupted: [3.7, 3.4, 0.3, 2.8], currents: [0.3, 1.2, 1.6, 0.9], of: [1.2, 0.9, 0.3, 0.6], this: [0.3, 0.8, 0.8, 0.5], world: [1.4, 1.1, 2.4, 1.2]
-SEND LINE u' In the corrupted currents of this world '
-Offence's: [-1, -1, -1, -1], gilded: [1.6, 1.1, 3.6, 0.8], hand: [0.6, 0.6, 1.1, 0.4], may: [0.3, 0.1, 1.2, 0.4], shove: [3.8, 2.6, 0.5, 0.9], by: [0.2, 0.2, 0.5, 0.4], justice,: [-1, -1, -1, -1]
-SEND LINE u" Offence's gilded hand may shove by justice, "
-A: [-1, -1, -1, -1], brother's: [0.7, 0.4, 2.5, 0.0], murder.: [-1, -1, -1, -1], Pray: [-1, -1, -1, -1], can: [0.4, 0.4, 0.4, 0.5], I: [-1, -1, -1, -1], not,: [-1, -1, -1, -1]
-SEND LINE u" A brother's murder. Pray can I not, "
-Be: [-1, -1, -1, -1], soft: [0.2, 0.6, 3.0, 0.7], as: [0.0, 0.0, 0.0, 0.0], sinews: [0.5, 0.1, 0.6, 0.2], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], newborn: [0.5, 1.1, 4.3, 0.8], babe!: [-1, -1, -1, -1]
-SEND LINE u' Be soft as sinews of the newborn babe! '
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Behind): [-1, -1, -1, -1]
-Stagedir (Behind)
+O,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], still: [0.1, 0.3, 1.1, 0.5], possessed: [-1, -1, -1, -1]
+SEND LINE ' O, I am still possessed '
+Of: [-1, -1, -1, -1], those: [0.6, 0.4, 0.2, 0.6], effects: [1.2, 1.3, 2.2, 0.9], for: [0.0, 0.0, 0.0, 0.1], which: [0.2, 0.1, 0.6, 0.3], I: [-1, -1, -1, -1], did: [1.1, 0.7, 1.4, 0.8], the: [0.4, 0.5, 0.3, 0.3], murder,: [-1, -1, -1, -1]
+SEND LINE ' Of those effects for which I did the murder, '
+And: [-1, -1, -1, -1], both: [1.0, 1.3, 1.7, 0.8], neglect.: [-1, -1, -1, -1], What: [-1, -1, -1, -1], if: [0.7, 0.5, 0.8, 0.7], this: [0.3, 0.8, 0.8, 0.5], cursed: [3.3, 3.5, 0.6, 2.0], hand: [0.6, 0.6, 1.1, 0.4]
+SEND LINE ' And both neglect. What if this cursed hand '
+Were: [-1, -1, -1, -1], thicker: [0.9, 0.7, 1.4, 0.6], than: [0.2, 0.4, 0.4, 0.8], itself: [0.6, 0.6, 0.9, 0.5], with: [0.4, 0.4, 1.0, 0.3], brother's: [0.7, 0.4, 2.5, 0.0], blood,: [-1, -1, -1, -1]
+SEND LINE " Were thicker than itself with brother's blood, "
+Or: [-1, -1, -1, -1], pardoned: [-1, -1, -1, -1], being: [0.9, 1.1, 2.0, 1.2], down?: [-1, -1, -1, -1], Then: [-1, -1, -1, -1], I'll: [-1, -1, -1, -1], look: [1.7, 1.3, 3.1, 1.7], up;: [-1, -1, -1, -1]
+SEND LINE " Or pardoned being down? Then I'll look up; "
 And: [-1, -1, -1, -1], oft: [0.5, 0.4, 1.0, 0.4], 'tis: [-1, -1, -1, -1], seen: [0.0, 0.4, 0.4, 0.2], the: [0.4, 0.5, 0.3, 0.3], wicked: [2.3, 2.6, 1.1, 2.2], prize: [0.4, 0.3, 4.7, 0.6], itself: [0.6, 0.6, 0.9, 0.5]
-Entering dialogue, SEND WHO GERTRUDE
-SEND LINE u" And oft 'tis seen the wicked prize itself "
-Buys: [-1, -1, -1, -1], out: [1.0, 1.1, 1.0, 1.8], the: [0.4, 0.5, 0.3, 0.3], law:: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], 'tis: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], so: [0.6, 0.5, 0.3, 0.7], above;: [-1, -1, -1, -1]
-SEND LINE u" Buys out the law: but 'tis not so above; "
-It: [-1, -1, -1, -1], hath: [1.0, 0.4, 1.0, 0.7], the: [0.4, 0.5, 0.3, 0.3], primal: [1.4, 1.2, 2.1, 0.4], eldest: [1.1, 1.3, 2.8, 1.8], curse: [3.3, 2.7, 1.1, 1.8], upon't,: [-1, -1, -1, -1]
-SEND LINE u" It hath the primal eldest curse upon't, "
+SEND LINE " And oft 'tis seen the wicked prize itself "
+Buys: [-1, -1, -1, -1], out: [1.0, 1.1, 1.0, 1.8], the: [0.4, 0.5, 0.3, 0.3], law:: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], 'tis: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], so:: [-1, -1, -1, -1]
+SEND LINE " Buys out the law: but 'tis not so: "
+You: [-1, -1, -1, -1], are: [0.6, 0.6, 1.4, 0.6], the: [0.4, 0.5, 0.3, 0.3], play.: [-1, -1, -1, -1]
+SEND LINE ' You are the play. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-Nay,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], to: [0.1, 0.6, 0.6, 0.3], live: [1.1, 1.9, 4.6, 1.5]
-SEND LINE u' Nay, but to live '
-In: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], corrupted: [3.7, 3.4, 0.3, 2.8], currents: [0.3, 1.2, 1.6, 0.9], of: [1.2, 0.9, 0.3, 0.6], this: [0.3, 0.8, 0.8, 0.5], world: [1.4, 1.1, 2.4, 1.2]
-SEND LINE u' In the corrupted currents of this world '
-Offence's: [-1, -1, -1, -1], gilded: [1.6, 1.1, 3.6, 0.8], hand: [0.6, 0.6, 1.1, 0.4], may: [0.3, 0.1, 1.2, 0.4], shove: [3.8, 2.6, 0.5, 0.9], by: [0.2, 0.2, 0.5, 0.4], justice,: [-1, -1, -1, -1]
-SEND LINE u" Offence's gilded hand may shove by justice, "
-Be: [-1, -1, -1, -1], soft: [0.2, 0.6, 3.0, 0.7], as: [0.0, 0.0, 0.0, 0.0], sinews: [0.5, 0.1, 0.6, 0.2], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], newborn: [0.5, 1.1, 4.3, 0.8], babe!: [-1, -1, -1, -1]
-SEND LINE u' Be soft as sinews of the newborn babe! '
+Mother,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], question: [1.8, 1.7, 1.6, 1.2], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], wicked: [2.3, 2.6, 1.1, 2.2], tongue.: [-1, -1, -1, -1]
+SEND LINE ' Mother, you question with a wicked tongue. '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-Why,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], now,: [-1, -1, -1, -1], Hamlet!: [-1, -1, -1, -1]
-SEND LINE u' Why, how now, Hamlet! '
-(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Makes: [-1, -1, -1, -1], a: [-1, -1, -1, -1], pass: [0.4, 0.8, 1.8, 0.7], through: [0.6, 0.6, 0.7, 0.6], the: [0.4, 0.5, 0.3, 0.3], arras.): [-1, -1, -1, -1]
-TRIGGER: action [u'pass']
-TRIGGER: place [u'part', u'of', u'the', u'platform']
-Stagedir (Makes a pass through the arras.)
-HORATIO: [-1, -1, -1, -1]
-SEND WHO HORATIO
-O,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], slain!: [-1, -1, -1, -1]
-SEND LINE u' O, I am slain! '
-(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Falls: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], dies.): [-1, -1, -1, -1]
-TRIGGER: action [u'dies']
-Stagedir (Falls and dies.)
+Come,: [-1, -1, -1, -1], come,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], answer: [1.8, 2.0, 2.5, 1.3], with: [0.4, 0.4, 1.0, 0.3], an: [0.0, 0.0, 0.0, 0.0], idle: [1.6, 0.8, 0.6, 1.2], tongue.: [-1, -1, -1, -1]
+SEND LINE ' Come, come, you answer with an idle tongue. '
+May: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], be: [0.6, 1.1, 0.8, 0.8], pardoned: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], retain: [1.7, 1.9, 1.7, 1.4], the: [0.4, 0.5, 0.3, 0.3], offence?: [-1, -1, -1, -1]
+SEND LINE ' May one be pardoned and retain the offence? '
+Help,: [-1, -1, -1, -1], ho!: [-1, -1, -1, -1]
+SEND LINE ' Help, ho! '
+(: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], Ghost.): [-1, -1, -1, -1]
+Stagedir (Enter Ghost.)
 POLONIUS: [-1, -1, -1, -1]
 SEND WHO POLONIUS
-O: [-1, -1, -1, -1], wretched: [2.1, 2.2, 0.8, 2.6], state!: [-1, -1, -1, -1], O: [-1, -1, -1, -1], bosom: [0.3, 0.6, 3.1, 1.5], black: [1.6, 2.2, 0.9, 3.3], as: [0.0, 0.0, 0.0, 0.0], death!: [-1, -1, -1, -1]
-SEND LINE u' O wretched state! O bosom black as death! '
-All: [-1, -1, -1, -1], may: [0.3, 0.1, 1.2, 0.4], be: [0.6, 1.1, 0.8, 0.8], well.: [-1, -1, -1, -1]
-SEND LINE u' All may be well. '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], form: [0.6, 0.5, 1.7, 0.4], of: [1.2, 0.9, 0.3, 0.6], prayer: [1.4, 1.8, 2.8, 1.8]
-SEND LINE u' O, what form of prayer '
-Can: [-1, -1, -1, -1], serve: [0.3, 0.9, 2.1, 0.7], my: [0.4, 0.3, 1.9, 0.3], turn?: [-1, -1, -1, -1], Forgive: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], my: [0.4, 0.3, 1.9, 0.3], foul: [2.9, 2.2, 0.3, 1.4], murder?: [-1, -1, -1, -1]
-SEND LINE u' Can serve my turn? Forgive me my foul murder? '
-O: [-1, -1, -1, -1], wretched: [2.1, 2.2, 0.8, 2.6], state!: [-1, -1, -1, -1], O: [-1, -1, -1, -1], bosom: [0.3, 0.6, 3.1, 1.5], black: [1.6, 2.2, 0.9, 3.3], as: [0.0, 0.0, 0.0, 0.0], death!: [-1, -1, -1, -1]
-SEND LINE u' O wretched state! O bosom black as death! '
-ALL: [-1, -1, -1, -1]
-SEND WHO ALL
-Lights,: [-1, -1, -1, -1], lights!: [-1, -1, -1, -1]
-SEND LINE u' Lights, lights! '
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Behind): [-1, -1, -1, -1]
-Stagedir (Behind)
-POLONIUS: [-1, -1, -1, -1]
-SEND WHO POLONIUS
-O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], form: [0.6, 0.5, 1.7, 0.4], of: [1.2, 0.9, 0.3, 0.6], prayer: [1.4, 1.8, 2.8, 1.8]
-SEND LINE u' O, what form of prayer '
-Can: [-1, -1, -1, -1], serve: [0.3, 0.9, 2.1, 0.7], my: [0.4, 0.3, 1.9, 0.3], turn?: [-1, -1, -1, -1], Forgive: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], my: [0.4, 0.3, 1.9, 0.3], foul: [2.9, 2.2, 0.3, 1.4], murder?: [-1, -1, -1, -1]
-SEND LINE u' Can serve my turn? Forgive me my foul murder? '
+Give: [-1, -1, -1, -1], o'er: [0.9, 0.7, 0.6, 0.6], the: [0.4, 0.5, 0.3, 0.3], play.: [-1, -1, -1, -1]
+SEND LINE " Give o'er the play. "
+May: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], be: [0.6, 1.1, 0.8, 0.8], pardoned: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], retain: [1.7, 1.9, 1.7, 1.4], the: [0.4, 0.5, 0.3, 0.3], offence?: [-1, -1, -1, -1]
+SEND LINE ' May one be pardoned and retain the offence? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 The: [-1, -1, -1, -1], king: [1.8, 2.1, 2.8, 1.0], rises.: [-1, -1, -1, -1]
-SEND LINE u' The king rises. '
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-How: [-1, -1, -1, -1], now!: [-1, -1, -1, -1], a: [-1, -1, -1, -1], rat?: [-1, -1, -1, -1], Dead,: [-1, -1, -1, -1], for: [0.0, 0.0, 0.0, 0.1], a: [-1, -1, -1, -1], ducat,: [-1, -1, -1, -1], dead!: [-1, -1, -1, -1]
-SEND LINE u' How now! a rat? Dead, for a ducat, dead! '
-O,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], still: [0.1, 0.3, 1.1, 0.5], possessed: [-1, -1, -1, -1]
-SEND LINE u' O, I am still possessed '
-Of: [-1, -1, -1, -1], those: [0.6, 0.4, 0.2, 0.6], effects: [1.2, 1.3, 2.2, 0.9], for: [0.0, 0.0, 0.0, 0.1], which: [0.2, 0.1, 0.6, 0.3], I: [-1, -1, -1, -1], did: [1.1, 0.7, 1.4, 0.8], the: [0.4, 0.5, 0.3, 0.3], murder,: [-1, -1, -1, -1]
-SEND LINE u' Of those effects for which I did the murder, '
-To: [-1, -1, -1, -1], give: [1.1, 1.6, 3.4, 1.5], in: [0.3, 0.1, 0.4, 0.4], evidence.: [-1, -1, -1, -1], What: [-1, -1, -1, -1], then?: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], rests?: [-1, -1, -1, -1]
-SEND LINE u' To give in evidence. What then? what rests? '
-O: [-1, -1, -1, -1], wretched: [2.1, 2.2, 0.8, 2.6], state!: [-1, -1, -1, -1], O: [-1, -1, -1, -1], bosom: [0.3, 0.6, 3.1, 1.5], black: [1.6, 2.2, 0.9, 3.3], as: [0.0, 0.0, 0.0, 0.0], death!: [-1, -1, -1, -1]
-SEND LINE u' O wretched state! O bosom black as death! '
-Bow,: [-1, -1, -1, -1], stubborn: [3.1, 2.0, 0.1, 1.5], knees;: [-1, -1, -1, -1], and,: [-1, -1, -1, -1], heart: [0.9, 1.4, 4.2, 1.2], with: [0.4, 0.4, 1.0, 0.3], strings: [1.2, 1.2, 0.7, 1.8], of: [1.2, 0.9, 0.3, 0.6], steel,: [-1, -1, -1, -1]
-SEND LINE u' Bow, stubborn knees; and, heart with strings of steel, '
+SEND LINE ' The king rises. '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-Nay,: [-1, -1, -1, -1], then,: [-1, -1, -1, -1], I'll: [-1, -1, -1, -1], set: [0.9, 0.9, 2.1, 0.6], those: [0.6, 0.4, 0.2, 0.6], to: [0.1, 0.6, 0.6, 0.3], you: [0.0, 0.1, 1.3, 0.0], that: [0.7, 0.7, 0.2, 0.4], can: [0.4, 0.4, 0.4, 0.5], speak.: [-1, -1, -1, -1]
-SEND LINE u" Nay, then, I'll set those to you that can speak. "
+What,: [-1, -1, -1, -1], frighted: [1.3, 3.6, 1.3, 1.6], with: [0.4, 0.4, 1.0, 0.3], false: [3.1, 2.3, 0.9, 2.9], fire!: [-1, -1, -1, -1]
+SEND LINE ' What, frighted with false fire! '
+Bow,: [-1, -1, -1, -1], stubborn: [3.1, 2.0, 0.1, 1.5], knees;: [-1, -1, -1, -1], and,: [-1, -1, -1, -1], heart: [0.9, 1.4, 4.2, 1.2], with: [0.4, 0.4, 1.0, 0.3], strings: [1.2, 1.2, 0.7, 1.8], of: [1.2, 0.9, 0.3, 0.6], steel,: [-1, -1, -1, -1]
+SEND LINE ' Bow, stubborn knees; and, heart with strings of steel, '
+Even: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], teeth: [1.8, 1.7, 1.5, 0.5], and: [0.7, 0.8, 0.4, 0.3], forehead: [0.2, 0.2, 0.3, 0.0], of: [1.2, 0.9, 0.3, 0.6], our: [1.1, 0.7, 1.7, 1.2], faults,: [-1, -1, -1, -1]
+SEND LINE ' Even to the teeth and forehead of our faults, '
+And: [-1, -1, -1, -1], what's: [0.4, 0.9, 1.0, 0.5], in: [0.3, 0.1, 0.4, 0.4], prayer: [1.4, 1.8, 2.8, 1.8], but: [1.1, 1.2, 0.6, 1.0], this: [0.3, 0.8, 0.8, 0.5], twofold: [-1, -1, -1, -1], force,: [-1, -1, -1, -1]
+SEND LINE " And what's in prayer but this twofold force, "
+And: [-1, -1, -1, -1], reason: [0.8, 0.9, 1.2, 0.7], panders: [1.9, 2.4, 1.1, 1.3], will.: [-1, -1, -1, -1]
+SEND LINE ' And reason panders will. '
+May: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], be: [0.6, 1.1, 0.8, 0.8], pardoned: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], retain: [1.7, 1.9, 1.7, 1.4], the: [0.4, 0.5, 0.3, 0.3], offence?: [-1, -1, -1, -1]
+SEND LINE ' May one be pardoned and retain the offence? '
+In: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], corrupted: [3.7, 3.4, 0.3, 2.8], currents: [0.3, 1.2, 1.6, 0.9], of: [1.2, 0.9, 0.3, 0.6], this: [0.3, 0.8, 0.8, 0.5], world: [1.4, 1.1, 2.4, 1.2]
+SEND LINE ' In the corrupted currents of this world '
+Offence's: [-1, -1, -1, -1], gilded: [1.6, 1.1, 3.6, 0.8], hand: [0.6, 0.6, 1.1, 0.4], may: [0.3, 0.1, 1.2, 0.4], shove: [3.8, 2.6, 0.5, 0.9], by: [0.2, 0.2, 0.5, 0.4], justice,: [-1, -1, -1, -1]
+SEND LINE " Offence's gilded hand may shove by justice, "
+ALL: [-1, -1, -1, -1]
+SEND WHO ALL
+Lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1]
+SEND LINE ' Lights, lights, lights, lights, '
+lights,: [-1, -1, -1, -1], lights,: [-1, -1, -1, -1], lights!: [-1, -1, -1, -1]
+SEND LINE ' lights, lights, lights! '
+O,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], am: [1.5, 1.2, 1.9, 1.7], slain!: [-1, -1, -1, -1]
+SEND LINE ' O, I am slain! '
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Falls: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], dies.): [-1, -1, -1, -1]
+TRIGGER: action [u'dies']
+Stagedir (Falls and dies.)
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+What: [-1, -1, -1, -1], wilt: [0.3, 0.9, 0.0, 3.2], thou: [0.8, 0.1, 1.2, 1.0], do?: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], wilt: [0.3, 0.9, 0.0, 3.2], not: [0.6, 1.2, 1.0, 0.8], murder: [4.1, 4.6, 0.2, 4.7], me?: [-1, -1, -1, -1]
+SEND LINE ' What wilt thou do? thou wilt not murder me? '
+Help,: [-1, -1, -1, -1], angels!: [-1, -1, -1, -1], Make: [-1, -1, -1, -1], assay!: [-1, -1, -1, -1]
+SEND LINE ' Help, angels! Make assay! '
+O: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], hast: [0.8, 1.5, 1.4, 0.8], thy: [0.1, 0.0, 0.6, 0.2], father: [1.7, 1.8, 3.4, 1.6], much: [0.9, 1.2, 1.9, 0.2], offended.: [-1, -1, -1, -1]
+SEND LINE ' O Hamlet, thou hast thy father much offended. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-What: [-1, -1, -1, -1], wilt: [0.3, 0.9, 0.0, 3.2], thou: [0.8, 0.1, 1.2, 1.0], do?: [-1, -1, -1, -1]
-SEND LINE u' What wilt thou do? '
-
+Go,: [-1, -1, -1, -1], go,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], question: [1.8, 1.7, 1.6, 1.2], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], wicked: [2.3, 2.6, 1.1, 2.2], tongue.: [-1, -1, -1, -1]
+SEND LINE ' Go, go, you question with a wicked tongue. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], form: [0.6, 0.5, 1.7, 0.4], of: [1.2, 0.9, 0.3, 0.6], prayer: [1.4, 1.8, 2.8, 1.8]
+SEND LINE ' O, what form of prayer '
+Can: [-1, -1, -1, -1], serve: [0.3, 0.9, 2.1, 0.7], my: [0.4, 0.3, 1.9, 0.3], turn?: [-1, -1, -1, -1], Forgive: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], my: [0.4, 0.3, 1.9, 0.3], foul: [2.9, 2.2, 0.3, 1.4], murder?: [-1, -1, -1, -1]
+SEND LINE ' Can serve my turn? Forgive me my foul murder? '
+Help,: [-1, -1, -1, -1], angels!: [-1, -1, -1, -1], Make: [-1, -1, -1, -1], assay!: [-1, -1, -1, -1]
+SEND LINE ' Help, angels! Make assay! '
+O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], form: [0.6, 0.5, 1.7, 0.4], of: [1.2, 0.9, 0.3, 0.6], prayer: [1.4, 1.8, 2.8, 1.8]
+SEND LINE ' O, what form of prayer '
+Can: [-1, -1, -1, -1], serve: [0.3, 0.9, 2.1, 0.7], my: [0.4, 0.3, 1.9, 0.3], turn?: [-1, -1, -1, -1], Forgive: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], my: [0.4, 0.3, 1.9, 0.3], foul: [2.9, 2.2, 0.3, 1.4], murder?: [-1, -1, -1, -1]
+SEND LINE ' Can serve my turn? Forgive me my foul murder? '
+Help,: [-1, -1, -1, -1], ho!: [-1, -1, -1, -1]
+SEND LINE ' Help, ho! '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Come,: [-1, -1, -1, -1], come,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], question: [1.8, 1.7, 1.6, 1.2], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], wicked: [2.3, 2.6, 1.1, 2.2], tongue.: [-1, -1, -1, -1]
+SEND LINE ' Come, come, you question with a wicked tongue. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], form: [0.6, 0.5, 1.7, 0.4], of: [1.2, 0.9, 0.3, 0.6], prayer: [1.4, 1.8, 2.8, 1.8]
+SEND LINE ' O, what form of prayer '
+Can: [-1, -1, -1, -1], serve: [0.3, 0.9, 2.1, 0.7], my: [0.4, 0.3, 1.9, 0.3], turn?: [-1, -1, -1, -1]
+SEND LINE ' Can serve my turn?'
 
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt.): [-1, -1, -1, -1]
 TRIGGER: exit [u'exeunt']
 Stagedir (Exeunt.)
-################# SCENE MadOph 11_TTS.aloud.MUSIC.emotion.MADOPH_0_emotions wordcount:1137 strategy:markov #################
-Timing info. Seconds: 6.61578702927, words: 523, lines: 53
+################# SCENE MadOph 11_TTS.aloud.MUSIC.emotion.MADOPH_0_emotions wordcount:1081 strategy:markov #################
+Timing info. Seconds: 6.93005013466, words: 1030, lines: 56
 BLACKOUT
 SEND STYLES 11_TTS.aloud.MUSIC.emotion.MADOPH_0_emotions
 Act: [-1, -1, -1, -1], 4,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 5: [-1, -1, -1, -1]
@@ -591,7 +946,7 @@ Stagedir (Enter OPHELIA.)
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 Where: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], beauteous: [0.7, 0.8, 3.3, 0.3], majesty: [0.4, 0.6, 2.7, 0.3], of: [1.2, 0.9, 0.3, 0.6], Denmark?: [-1, -1, -1, -1]
-SEND LINE u' Where is the beauteous majesty of Denmark?'
+SEND LINE ' Where is the beauteous majesty of Denmark?'
 
 
 (: [-1, -1, -1, -1], entrance: [0.3, 0.8, 1.2, 0.2], Enter: [-1, -1, -1, -1], KING.): [-1, -1, -1, -1]
@@ -602,320 +957,280 @@ Stagedir (A noise within.)
 
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-And,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], them,: [-1, -1, -1, -1], words: [0.9, 0.8, 1.1, 0.9], of: [1.2, 0.9, 0.3, 0.6], this: [0.3, 0.8, 0.8, 0.5], good: [0.5, 0.9, 4.7, 0.5], lesson: [1.7, 1.8, 2.2, 1.2], keep,: [-1, -1, -1, -1]
-SEND LINE u' And, with them, words of this good lesson keep, '
-I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], made: [0.3, 0.2, 2.9, 0.6], me: [1.7, 0.7, 3.0, 1.2], believe: [1.1, 1.1, 3.9, 0.9], so.: [-1, -1, -1, -1]
-SEND LINE u' I think nothing, my lord, you made me believe so. '
-His: [-1, -1, -1, -1], beard: [1.1, 1.4, 0.8, 1.2], was: [1.0, 0.9, 0.7, 1.4], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], snow,: [-1, -1, -1, -1]
-SEND LINE u' His beard was as white as snow, '
-And: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], 'a: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], bed.: [-1, -1, -1, -1]
-SEND LINE u" And will 'a not come to my bed. "
+Ay,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], ladies: [0.4, 0.5, 2.7, 0.7], most: [1.8, 1.8, 1.5, 1.6], deject: [1.8, 2.2, 0.0, 3.8], and: [0.7, 0.8, 0.4, 0.3], wretched,: [-1, -1, -1, -1]
+SEND LINE ' Ay, my lord, of ladies most deject and wretched, '
+And: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], his: [1.3, 0.2, 0.6, 0.8], grave: [0.8, 3.2, 1.2, 3.7], rained: [-1, -1, -1, -1], many: [0.7, 1.3, 2.7, 0.7], a: [-1, -1, -1, -1], day?: [-1, -1, -1, -1]
+SEND LINE ' And in his grave rained many a day? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-Ay,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE u' Ay, my lord, my lord. '
+How: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], I: [-1, -1, -1, -1], your: [2.1, 1.6, 2.1, 1.3], true-love: [0.4, 0.8, 4.7, 1.3], know: [1.2, 1.1, 2.6, 1.3]
+SEND LINE ' How should I your true-love know '
+From: [-1, -1, -1, -1], another: [1.0, 1.1, 1.4, 1.7], one?: [-1, -1, -1, -1]
+SEND LINE ' From another one? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-He: [-1, -1, -1, -1], never: [2.2, 2.2, 0.0, 2.2], will: [1.2, 0.5, 1.8, 0.7], come: [0.8, 1.2, 2.2, 0.9], again.: [-1, -1, -1, -1]
-SEND LINE u' He never will come again. '
+So: [-1, -1, -1, -1], please: [1.0, 0.9, 2.2, 1.5], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
+SEND LINE ' So please you, mark. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], obey,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], I: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], the: [0.4, 0.5, 0.3, 0.3], more: [1.6, 1.1, 1.7, 1.3], deceived.: [-1, -1, -1, -1]
-SEND LINE u' I shall obey, my lord, as I was the more deceived. '
+O,: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], a: [-1, -1, -1, -1], noble: [0.8, 2.5, 2.2, 1.2], mind: [0.8, 0.9, 1.6, 1.3]
+SEND LINE ' O, what a noble mind '
+Rich: [-1, -1, -1, -1], gifts: [0.1, 0.1, 4.6, 0.1], wax: [0.4, 1.3, 1.1, 1.3], poor: [2.7, 2.5, 0.3, 3.7], when: [0.5, 0.4, 0.3, 0.7], givers: [0.5, 0.8, 3.7, 0.8], prove: [0.9, 1.3, 2.3, 1.2], unkind.: [-1, -1, -1, -1]
+SEND LINE ' Rich gifts wax poor when givers prove unkind. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-There's: [-1, -1, -1, -1], fennel: [0.0, 0.2, 0.6, 0.3], for: [0.0, 0.0, 0.0, 0.1], you;: [-1, -1, -1, -1]
-SEND LINE u" There's fennel for you; "
-and: [0.7, 0.8, 0.4, 0.3], here's: [0.4, 0.2, 0.3, 0.2], some: [1.1, 0.8, 1.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], me:: [-1, -1, -1, -1]
-SEND LINE u" and here's some for me: "
-we: [0.7, 0.6, 2.1, 0.7], may: [0.3, 0.1, 1.2, 0.4], be.: [-1, -1, -1, -1]
-SEND LINE u' we may be. '
-God: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], at: [0.5, 0.4, 0.5, 0.5], your: [2.1, 1.6, 2.1, 1.3], table!: [-1, -1, -1, -1]
-SEND LINE u' God be at your table! '
-And,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], them,: [-1, -1, -1, -1], words: [0.9, 0.8, 1.1, 0.9], of: [1.2, 0.9, 0.3, 0.6], this;: [-1, -1, -1, -1]
-SEND LINE u' And, with them, words of this; '
-but: [1.1, 1.2, 0.6, 1.0], when: [0.5, 0.4, 0.3, 0.7], they: [0.1, 0.1, 0.1, 0.1], ask: [0.6, 0.6, 0.6, 0.9], you: [0.0, 0.1, 1.3, 0.0], what: [0.4, 1.1, 0.5, 0.6], it: [0.5, 0.4, 0.1, 0.5], means,: [-1, -1, -1, -1]
-SEND LINE u' but when they ask you what it means, '
-say: [0.5, 0.7, 1.5, 0.5], you: [0.0, 0.1, 1.3, 0.0], this:: [-1, -1, -1, -1]
-SEND LINE u' say you this: '
-Fare: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], well,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE u' Fare you well, my lord. '
-O,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], the: [0.4, 0.5, 0.3, 0.3], wheel: [0.2, 0.3, 0.8, 0.1], becomes: [0.3, 0.5, 1.5, 0.9], it!: [-1, -1, -1, -1]
-SEND LINE u' O, how the wheel becomes it! '
-It: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], beauteous: [0.7, 0.8, 3.3, 0.3], majesty: [0.4, 0.6, 2.7, 0.3], of: [1.2, 0.9, 0.3, 0.6], Denmark?: [-1, -1, -1, -1]
-SEND LINE u' It is the beauteous majesty of Denmark? '
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-My: [-1, -1, -1, -1], lord,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], know: [1.2, 1.1, 2.6, 1.3], right: [0.2, 0.2, 3.5, 0.2], well: [0.6, 0.6, 2.7, 0.3], you: [0.0, 0.1, 1.3, 0.0], did: [1.1, 0.7, 1.4, 0.8], command,: [-1, -1, -1, -1]
-SEND LINE u' My lord, you know right well you did command, '
-The: [-1, -1, -1, -1], courtier's,: [-1, -1, -1, -1], soldier's,: [-1, -1, -1, -1], scholar's,: [-1, -1, -1, -1], eye,: [-1, -1, -1, -1], tongue,: [-1, -1, -1, -1], sword;: [-1, -1, -1, -1]
-SEND LINE u" The courtier's, soldier's, scholar's, eye, tongue, sword; "
-At: [-1, -1, -1, -1], last,: [-1, -1, -1, -1], a: [-1, -1, -1, -1], little: [2.0, 2.1, 1.3, 1.9], shaking: [2.7, 3.7, 1.0, 1.6], of: [1.2, 0.9, 0.3, 0.6], mine: [0.9, 0.7, 2.6, 1.0], arm: [0.4, 0.9, 2.0, 1.3]
-SEND LINE u' At last, a little shaking of mine arm '
-And: [-1, -1, -1, -1], end: [1.4, 2.1, 2.3, 2.3], his: [1.3, 0.2, 0.6, 0.8], being:: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], done,: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], yonder: [0.2, 1.0, 1.2, 0.6], sun,: [-1, -1, -1, -1]
-SEND LINE u' And end his being: that done, by yonder sun, '
-Alack,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], columbines:: [-1, -1, -1, -1]
-SEND LINE u' Alack, and columbines: '
-there's: [0.2, 0.5, 0.5, 0.4], rue: [1.1, 0.7, 0.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], you,: [-1, -1, -1, -1], now: [0.6, 0.2, 0.9, 0.1], receive: [0.6, 0.3, 2.8, 1.0], them.: [-1, -1, -1, -1]
-SEND LINE u" there's rue for you, now receive them. "
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-Indeed,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], ladies: [0.4, 0.5, 2.7, 0.7], most: [1.8, 1.8, 1.5, 1.6], deject: [1.8, 2.2, 0.0, 3.8], and: [0.7, 0.8, 0.4, 0.3], wretched,: [-1, -1, -1, -1]
-SEND LINE u' Indeed, my lord, of ladies most deject and wretched, '
-He: [-1, -1, -1, -1], answers:: [-1, -1, -1, -1]
-SEND LINE u' He answers: '
-Go: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], thy: [0.1, 0.0, 0.6, 0.2], deathbed:: [-1, -1, -1, -1]
-SEND LINE u' Go to thy deathbed: '
-He: [-1, -1, -1, -1], answers:: [-1, -1, -1, -1]
-SEND LINE u' He answers: '
-God: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], mercy: [0.2, 0.7, 2.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], soul!: [-1, -1, -1, -1]
-SEND LINE u" God ha' mercy on his soul!"
-
-
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-There's: [-1, -1, -1, -1], fennel: [0.0, 0.2, 0.6, 0.3], for: [0.0, 0.0, 0.0, 0.1], you;: [-1, -1, -1, -1]
-SEND LINE u" There's fennel for you; "
-and: [0.7, 0.8, 0.4, 0.3], here's: [0.4, 0.2, 0.3, 0.2], some: [1.1, 0.8, 1.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], me:: [-1, -1, -1, -1]
-SEND LINE u" and here's some for me: "
-we: [0.7, 0.6, 2.1, 0.7], may: [0.3, 0.1, 1.2, 0.4], be.: [-1, -1, -1, -1]
-SEND LINE u' we may be. '
-God: [-1, -1, -1, -1], buy: [0.9, 0.8, 3.2, 1.0], you.: [-1, -1, -1, -1]
-SEND LINE u' God buy you. '
-
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
-TRIGGER: voice [u'sings']
-Stagedir (Sings)
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-There's: [-1, -1, -1, -1], rosemary,: [-1, -1, -1, -1], that's: [0.7, 0.5, 0.7, 0.4], for: [0.0, 0.0, 0.0, 0.1], remembrance;: [-1, -1, -1, -1]
-SEND LINE u" There's rosemary, that's for remembrance; "
-pray: [0.7, 1.3, 3.7, 1.6], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
-SEND LINE u' pray you, mark. '
-He: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], dead: [2.1, 2.6, 1.0, 4.0], and: [0.7, 0.8, 0.4, 0.3], gone,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1], lady,: [-1, -1, -1, -1]
-SEND LINE u' He is dead and gone, he is gone, lady, '
-To: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], your: [2.1, 1.6, 2.1, 1.3], Valentine.: [-1, -1, -1, -1]
-SEND LINE u' To be your Valentine. '
-His: [-1, -1, -1, -1], beard: [1.1, 1.4, 0.8, 1.2], was: [1.0, 0.9, 0.7, 1.4], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], snow,: [-1, -1, -1, -1]
-SEND LINE u' His beard was as white as snow, '
-And: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], cast: [1.2, 1.0, 1.0, 0.9], away: [0.6, 1.6, 0.8, 1.6], moan:: [-1, -1, -1, -1]
-SEND LINE u' And we cast away moan: '
-
-For: [-1, -1, -1, -1], bonny: [0.2, 0.2, 3.3, 0.4], sweet: [0.5, 0.4, 4.3, 0.3], Robin: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], all: [1.2, 0.8, 2.2, 0.9], my: [0.4, 0.3, 1.9, 0.3], joy.: [-1, -1, -1, -1]
-SEND LINE u' For bonny sweet Robin is all my joy. '
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-You: [-1, -1, -1, -1], must: [0.9, 1.6, 0.4, 0.7], sing: [1.3, 0.9, 4.2, 1.5], nonny: [1.0, 1.1, 1.1, 0.8], nonny,: [-1, -1, -1, -1], An: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], call: [0.8, 0.7, 1.2, 0.7], him: [1.1, 0.7, 1.5, 0.4], a-down-a.: [-1, -1, -1, -1]
-SEND LINE u' You must sing nonny nonny, An you call him a-down-a. '
-O,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], the: [0.4, 0.5, 0.3, 0.3], wheel: [0.2, 0.3, 0.8, 0.1], becomes: [0.3, 0.5, 1.5, 0.9], it!: [-1, -1, -1, -1]
-SEND LINE u' O, how the wheel becomes it! '
-It: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], false: [3.1, 2.3, 0.9, 2.9], steward,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], stole: [3.5, 2.5, 0.6, 2.8], his: [1.3, 0.2, 0.6, 0.8], master's: [1.3, 2.0, 1.4, 0.4], daughter.: [-1, -1, -1, -1]
-SEND LINE u" It is the false steward, that stole his master's daughter. "
-Lord,: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], know: [1.2, 1.1, 2.6, 1.3], what: [0.4, 1.1, 0.5, 0.6], we: [0.7, 0.6, 2.1, 0.7], may: [0.3, 0.1, 1.2, 0.4], call: [0.8, 0.7, 1.2, 0.7], it: [0.5, 0.4, 0.1, 0.5], herb: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], grace: [1.2, 1.0, 3.8, 1.6], a': [-1, -1, -1, -1], Sundays.: [-1, -1, -1, -1]
-SEND LINE u" Lord, we know what we may call it herb of grace a' Sundays. "
-You: [-1, -1, -1, -1], may: [0.3, 0.1, 1.2, 0.4], wear: [0.5, 0.7, 1.2, 0.7], your: [2.1, 1.6, 2.1, 1.3], rue: [1.1, 0.7, 0.4, 1.3], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], difference.: [-1, -1, -1, -1]
-SEND LINE u' You may wear your rue with a difference. '
-There's: [-1, -1, -1, -1], a: [-1, -1, -1, -1], daisy:: [-1, -1, -1, -1]
-SEND LINE u" There's a daisy: "
-I: [-1, -1, -1, -1], would: [0.3, 0.3, 0.3, 0.1], give: [1.1, 1.6, 3.4, 1.5], you: [0.0, 0.1, 1.3, 0.0], some: [1.1, 0.8, 1.4, 1.3], violets,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], they: [0.1, 0.1, 0.1, 0.1], withered: [1.3, 2.0, 0.8, 2.4], all: [1.2, 0.8, 2.2, 0.9], when: [0.5, 0.4, 0.3, 0.7], my: [0.4, 0.3, 1.9, 0.3], father: [1.7, 1.8, 3.4, 1.6], died:: [-1, -1, -1, -1]
-SEND LINE u' I would give you some violets, but they withered all when my father died: '
-they: [0.1, 0.1, 0.1, 0.1], say: [0.5, 0.7, 1.5, 0.5], 'a: [-1, -1, -1, -1], made: [0.3, 0.2, 2.9, 0.6], a: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], end,: [-1, -1, -1, -1]
-SEND LINE u" they say 'a made a good end, "
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
-TRIGGER: voice [u'sings']
-Stagedir (Sings)
-By: [-1, -1, -1, -1], Gis: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], by: [0.2, 0.2, 0.5, 0.4], Saint: [-1, -1, -1, -1], Charity,: [-1, -1, -1, -1]
-Entering dialogue, SEND WHO OPHELIA
-SEND LINE u' By Gis and by Saint Charity, '
-All: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], morning: [0.5, 0.9, 2.3, 1.3], betime,: [-1, -1, -1, -1]
-SEND LINE u' All in the morning betime, '
-An: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], hadst: [0.2, 0.2, 0.9, 0.5], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], again?: [-1, -1, -1, -1]
-SEND LINE u' An thou hadst not come again? '
-No,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], dead:: [-1, -1, -1, -1]
-SEND LINE u' No, no, he is dead: '
-Fare: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], well,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], coach!: [-1, -1, -1, -1]
-SEND LINE u' Fare you well, my coach! '
-Good: [-1, -1, -1, -1], night,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], ladies;: [-1, -1, -1, -1]
-SEND LINE u' Good night, good night, ladies; '
-good: [0.5, 0.9, 4.7, 0.5], night.: [-1, -1, -1, -1]
-SEND LINE u' good night. '
+What: [-1, -1, -1, -1], is,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], seen: [0.0, 0.4, 0.4, 0.2], what: [0.4, 1.1, 0.5, 0.6], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], longed: [0.7, 1.0, 1.4, 1.8], long: [0.6, 0.6, 1.1, 1.0], to: [0.1, 0.6, 0.6, 0.3], redeliver;: [-1, -1, -1, -1]
+SEND LINE ' What is, my lord, I have seen what I have longed long to redeliver; '
+And: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], 'a: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], again?: [-1, -1, -1, -1]
+SEND LINE " And will 'a not come again? "
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 You: [-1, -1, -1, -1], promised: [0.8, 0.8, 3.2, 0.5], me: [1.7, 0.7, 3.0, 1.2], to: [0.1, 0.6, 0.6, 0.3], wed.: [-1, -1, -1, -1]
-SEND LINE u' You promised me to wed. '
-White: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], shroud: [1.2, 1.6, 0.2, 1.6], as: [0.0, 0.0, 0.0, 0.0], the: [0.4, 0.5, 0.3, 0.3], mountain: [1.5, 2.3, 3.0, 1.3], snow,: [-1, -1, -1, -1]
-SEND LINE u' White his shroud as the mountain snow, '
-Alack,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], columbines:: [-1, -1, -1, -1]
-SEND LINE u' Alack, and columbines: '
-there's: [0.2, 0.5, 0.5, 0.4], rue: [1.1, 0.7, 0.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], you;: [-1, -1, -1, -1]
-SEND LINE u" there's rue for you; "
-and: [0.7, 0.8, 0.4, 0.3], here's: [0.4, 0.2, 0.3, 0.2], some: [1.1, 0.8, 1.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], me:: [-1, -1, -1, -1]
-SEND LINE u" and here's some for me: "
-we: [0.7, 0.6, 2.1, 0.7], may: [0.3, 0.1, 1.2, 0.4], be.: [-1, -1, -1, -1]
-SEND LINE u' we may be. '
-
-
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
-TRIGGER: voice [u'sings']
-Stagedir (Sings)
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-And: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], 'a: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], again?: [-1, -1, -1, -1]
-SEND LINE u" And will 'a not come again? "
-His: [-1, -1, -1, -1], beard: [1.1, 1.4, 0.8, 1.2], was: [1.0, 0.9, 0.7, 1.4], his: [1.3, 0.2, 0.6, 0.8], soul!: [-1, -1, -1, -1]
-SEND LINE u' His beard was his soul! '
-All: [-1, -1, -1, -1], flaxen: [0.3, 0.4, 1.1, 0.5], was: [1.0, 0.9, 0.7, 1.4], his: [1.3, 0.2, 0.6, 0.8], poll:: [-1, -1, -1, -1]
-SEND LINE u' All flaxen was his poll: '
-God: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], mercy: [0.2, 0.7, 2.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], poll:: [-1, -1, -1, -1]
-SEND LINE u" God ha' mercy on his poll: "
-And: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], cast: [1.2, 1.0, 1.0, 0.9], away: [0.6, 1.6, 0.8, 1.6], moan:: [-1, -1, -1, -1]
-SEND LINE u' And we cast away moan: '
-He: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1]
-SEND LINE u' He is gone, he is gone, no, no, he is gone, '
-he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], dead:: [-1, -1, -1, -1]
-SEND LINE u' he is dead: '
-No,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], gone,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1]
-SEND LINE u' No, he is gone, he is gone, no, '
-And: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], 'a: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], again?: [-1, -1, -1, -1]
-SEND LINE u" And will 'a not come again?"
-
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-At: [-1, -1, -1, -1], last,: [-1, -1, -1, -1], bended: [1.1, 1.2, 0.6, 1.3], their: [0.1, 0.1, 0.3, 0.1], light: [0.9, 0.5, 3.6, 0.4], on: [0.3, 0.4, 0.4, 0.7], me.: [-1, -1, -1, -1]
-SEND LINE u' At last, bended their light on me. '
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-What: [-1, -1, -1, -1], means: [0.6, 0.5, 1.5, 0.4], this,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE u' What means this, my lord. '
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-My: [-1, -1, -1, -1], lord,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], know: [1.2, 1.1, 2.6, 1.3], right: [0.2, 0.2, 3.5, 0.2], well: [0.6, 0.6, 2.7, 0.3], you: [0.0, 0.1, 1.3, 0.0], did;: [-1, -1, -1, -1]
-SEND LINE u' My lord, you know right well you did; '
-Pale: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], his: [1.3, 0.2, 0.6, 0.8], shirt;: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], stockings: [0.6, 0.2, 2.2, 0.7], fouled,: [-1, -1, -1, -1]
-SEND LINE u' Pale as his shirt; his stockings fouled, '
-Himself: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], primrose: [1.0, 1.0, 2.3, 1.0], path: [0.4, 1.0, 1.7, 0.5], of: [1.2, 0.9, 0.3, 0.6], dalliance: [0.9, 0.8, 2.4, 1.4], treads,: [-1, -1, -1, -1]
-SEND LINE u' Himself the primrose path of dalliance treads, '
-That: [-1, -1, -1, -1], unmatched: [-1, -1, -1, -1], form: [0.6, 0.5, 1.7, 0.4], and: [0.7, 0.8, 0.4, 0.3], stature: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], blown: [1.7, 1.7, 1.6, 1.2], youth: [1.0, 0.9, 2.4, 0.8]
-SEND LINE u' That unmatched form and stature of blown youth '
-Blasted: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], ecstasy: [1.1, 1.2, 3.0, 1.3]
-SEND LINE u' Blasted with ecstasy '
-White: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], shroud: [1.2, 1.6, 0.2, 1.6]
-SEND LINE u' White his shroud '
-My: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3], courtier's: [0.3, 0.9, 1.2, 0.9], so: [0.6, 0.5, 0.3, 0.7], piteous: [0.9, 1.5, 2.1, 2.1], and: [0.7, 0.8, 0.4, 0.3], profound: [0.6, 1.1, 1.7, 0.5]
-SEND LINE u" My lord courtier's so piteous and profound "
-Himself: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], primrose: [1.0, 1.0, 2.3, 1.0], path: [0.4, 1.0, 1.7, 0.5], of: [1.2, 0.9, 0.3, 0.6], dalliance: [0.9, 0.8, 2.4, 1.4]
-SEND LINE u' Himself the primrose path of dalliance '
-How: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], I: [-1, -1, -1, -1], your: [2.1, 1.6, 2.1, 1.3], true-love: [0.4, 0.8, 4.7, 1.3], know: [1.2, 1.1, 2.6, 1.3]
-SEND LINE u' How should I your true-love know '
-Pray: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3], daughter: [1.5, 1.3, 3.5, 1.3], shame: [2.2, 2.5, 0.1, 2.9], lord: [1.3, 2.7, 2.5, 1.3], maid: [1.2, 2.1, 1.7, 1.1]
-SEND LINE u' Pray lord daughter shame lord maid '
-Never: [-1, -1, -1, -1], departed: [1.4, 1.3, 0.8, 3.3], tell: [1.5, 1.6, 1.4, 0.6], I: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], I: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4], lord: [1.3, 2.7, 2.5, 1.3], should: [1.3, 2.0, 1.6, 1.6], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4]
-SEND LINE u' Never departed tell I cannot I should think nothing lord should think nothing '
-Blasted: [-1, -1, -1, -1], draw: [1.6, 2.3, 1.1, 1.9]
-SEND LINE u' Blasted draw '
-Never: [-1, -1, -1, -1], departed: [1.4, 1.3, 0.8, 3.3]
-SEND LINE u' Never departed '
-I: [-1, -1, -1, -1], pray: [0.7, 1.3, 3.7, 1.6], God: [-1, -1, -1, -1], must: [0.9, 1.6, 0.4, 0.7]
-SEND LINE u' I pray God must '
-I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], obey: [1.7, 2.7, 1.5, 1.1]
-SEND LINE u' I shall obey '
-Alack: [-1, -1, -1, -1]
-SEND LINE u' Alack '
-Never: [-1, -1, -1, -1], departed: [1.4, 1.3, 0.8, 3.3]
-SEND LINE u' Never departed '
-Blasted: [-1, -1, -1, -1]
-SEND LINE u' Blasted '
-Larded: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3], perusal: [1.6, 1.6, 2.2, 1.1]
-SEND LINE u' Larded lord perusal '
-Larded: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3]
-SEND LINE u' Larded lord '
-Take: [-1, -1, -1, -1], bewept: [0.9, 1.5, 0.0, 2.9]
-SEND LINE u' Take bewept '
-God: [-1, -1, -1, -1]
-SEND LINE u' God '
-Lord: [-1, -1, -1, -1], Whiles: [-1, -1, -1, -1], false: [3.1, 2.3, 0.9, 2.9]
-SEND LINE u' Lord Whiles false '
-God: [-1, -1, -1, -1], dead: [2.1, 2.6, 1.0, 4.0], Whiles: [-1, -1, -1, -1], harsh: [3.5, 2.7, 0.1, 3.0], Lord: [-1, -1, -1, -1]
-SEND LINE u' God dead Whiles harsh Lord '
-God: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3]
-SEND LINE u' God lord '
-God: [-1, -1, -1, -1], tell: [1.5, 1.6, 1.4, 0.6]
-SEND LINE u' God tell '
-Alack: [-1, -1, -1, -1], owl: [0.4, 1.8, 2.1, 1.0]
-SEND LINE u' Alack owl '
-Larded: [-1, -1, -1, -1]
-SEND LINE u' Larded '
-Larded: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3]
-SEND LINE u' Larded lord '
-Pale: [-1, -1, -1, -1]
-SEND LINE u' Pale '
-Lord: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3]
-SEND LINE u' Lord lord '
-Lord: [-1, -1, -1, -1]
-SEND LINE u' Lord '
-Pale: [-1, -1, -1, -1]
-SEND LINE u' Pale '
-Never: [-1, -1, -1, -1]
-SEND LINE u' Never '
-God: [-1, -1, -1, -1], hard: [2.7, 2.0, 0.6, 1.3]
-SEND LINE u' God hard '
-God: [-1, -1, -1, -1]
-SEND LINE u' God '
-God: [-1, -1, -1, -1], without: [2.0, 2.0, 1.0, 2.6]
-SEND LINE u' God without '
-Blasted: [-1, -1, -1, -1]
-SEND LINE u' Blasted '
-Blasted: [-1, -1, -1, -1]
-SEND LINE u' Blasted '
-Never: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3], difference: [2.2, 2.1, 1.6, 1.9]
-SEND LINE u' Never lord difference '
-God: [-1, -1, -1, -1], held: [1.3, 1.8, 1.1, 1.2], moan: [1.5, 2.2, 1.4, 2.1]
-SEND LINE u' God held moan '
-Never: [-1, -1, -1, -1], departed: [1.4, 1.3, 0.8, 3.3], lord: [1.3, 2.7, 2.5, 1.3], loosed: [2.2, 2.4, 1.2, 2.2], Whiles: [-1, -1, -1, -1]
-SEND LINE u' Never departed lord loosed Whiles '
-Pale: [-1, -1, -1, -1]
-SEND LINE u' Pale '
-Could: [-1, -1, -1, -1]
-SEND LINE u' Could '
-Go: [-1, -1, -1, -1]
-SEND LINE u' Go '
-And: [-1, -1, -1, -1], end: [1.4, 2.1, 2.3, 2.3], on't: [0.7, 0.8, 0.7, 0.4], shame: [2.2, 2.5, 0.1, 2.9], little: [2.0, 2.1, 1.3, 1.9], shaking: [2.7, 3.7, 1.0, 1.6], of: [1.2, 0.9, 0.3, 0.6], mine: [0.9, 0.7, 2.6, 1.0], arm: [0.4, 0.9, 2.0, 1.3]
-SEND LINE u" And end on't shame little shaking of mine arm "
-And: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], cast: [1.2, 1.0, 1.0, 0.9], away: [0.6, 1.6, 0.8, 1.6], moan:: [-1, -1, -1, -1]
-SEND LINE u' And we cast away moan: '
-So: [-1, -1, -1, -1], please: [1.0, 0.9, 2.2, 1.5], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
-SEND LINE u' So please you, mark. '
+SEND LINE ' You promised me to wed. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 They: [-1, -1, -1, -1], bore: [1.3, 0.4, 0.2, 0.6], him: [1.1, 0.7, 1.5, 0.4], barefaced: [2.5, 2.5, 0.5, 2.9], on: [0.3, 0.4, 0.4, 0.7], the: [0.4, 0.5, 0.3, 0.3], bier;: [-1, -1, -1, -1]
-SEND LINE u' They bore him barefaced on the bier; '
+SEND LINE ' They bore him barefaced on the bier; '
+For: [-1, -1, -1, -1], out: [1.0, 1.1, 1.0, 1.8], a': [-1, -1, -1, -1], doors: [0.6, 0.6, 1.3, 0.5], he: [0.2, 0.5, 0.9, 0.5], went: [0.6, 0.6, 1.5, 0.4], without: [2.0, 2.0, 1.0, 2.6], their: [0.1, 0.1, 0.3, 0.1], helps,: [-1, -1, -1, -1]
+SEND LINE " For out a' doors he went without their helps, "
+Lord: [-1, -1, -1, -1], Hamlet.: [-1, -1, -1, -1]
+SEND LINE ' Lord Hamlet. '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+No: [-1, -1, -1, -1], more: [1.6, 1.1, 1.7, 1.3], but: [1.1, 1.2, 0.6, 1.0], so?: [-1, -1, -1, -1]
+SEND LINE ' No more but so? '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+What: [-1, -1, -1, -1], means: [0.6, 0.5, 1.5, 0.4], your: [2.1, 1.6, 2.1, 1.3], lordship?: [-1, -1, -1, -1]
+SEND LINE ' What means your lordship? '
+And: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], difference.: [-1, -1, -1, -1]
+SEND LINE ' And with a difference. '
+There's: [-1, -1, -1, -1], a: [-1, -1, -1, -1], daisy:: [-1, -1, -1, -1]
+SEND LINE " There's a daisy: "
+I: [-1, -1, -1, -1], would: [0.3, 0.3, 0.3, 0.1], give: [1.1, 1.6, 3.4, 1.5], you: [0.0, 0.1, 1.3, 0.0], some: [1.1, 0.8, 1.4, 1.3], violets,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], they: [0.1, 0.1, 0.1, 0.1], withered: [1.3, 2.0, 0.8, 2.4], all: [1.2, 0.8, 2.2, 0.9], when: [0.5, 0.4, 0.3, 0.7], my: [0.4, 0.3, 1.9, 0.3], father: [1.7, 1.8, 3.4, 1.6], died:: [-1, -1, -1, -1]
+SEND LINE ' I would give you some violets, but they withered all when my father died: '
+they: [0.1, 0.1, 0.1, 0.1], say: [0.5, 0.7, 1.5, 0.5], 'a: [-1, -1, -1, -1], made: [0.3, 0.2, 2.9, 0.6], a: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], end,: [-1, -1, -1, -1]
+SEND LINE " they say 'a made a good end, "
+Like: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], bells: [1.3, 1.2, 3.2, 1.7], jangled,: [-1, -1, -1, -1], out: [1.0, 1.1, 1.0, 1.8], of: [1.2, 0.9, 0.3, 0.6], time: [2.2, 3.2, 2.8, 2.4], and: [0.7, 0.8, 0.4, 0.3], harsh;: [-1, -1, -1, -1]
+SEND LINE ' Like sweet bells jangled, out of time and harsh; '
+Pale: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], his: [1.3, 0.2, 0.6, 0.8], shirt;: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], knees: [0.4, 1.0, 0.5, 0.6], knocking: [1.0, 0.9, 1.0, 0.5], each: [0.5, 0.6, 1.0, 0.8], other;: [-1, -1, -1, -1]
+SEND LINE ' Pale as his shirt; his knees knocking each other; '
+Which: [-1, -1, -1, -1], bewept: [0.9, 1.5, 0.0, 2.9], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], length: [0.4, 0.3, 0.3, 0.4], of: [1.2, 0.9, 0.3, 0.6], all: [1.2, 0.8, 2.2, 0.9], his: [1.3, 0.2, 0.6, 0.8], arm;: [-1, -1, -1, -1]
+SEND LINE ' Which bewept to the length of all his arm; '
+Then: [-1, -1, -1, -1], goes: [0.8, 0.3, 0.6, 0.6], he: [0.2, 0.5, 0.9, 0.5], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], length: [0.4, 0.3, 0.3, 0.4], of: [1.2, 0.9, 0.3, 0.6], all: [1.2, 0.8, 2.2, 0.9], his: [1.3, 0.2, 0.6, 0.8], arm;: [-1, -1, -1, -1]
+SEND LINE ' Then goes he to the length of all his arm; '
+But: [-1, -1, -1, -1], truly,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], not: [0.6, 1.2, 1.0, 0.8], know,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], made: [0.3, 0.2, 2.9, 0.6], me: [1.7, 0.7, 3.0, 1.2], believe: [1.1, 1.1, 3.9, 0.9], so.: [-1, -1, -1, -1]
+SEND LINE ' But truly, I do not know, my lord, you made me believe so. '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+O,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], ladies: [0.4, 0.5, 2.7, 0.7], most: [1.8, 1.8, 1.5, 1.6], deject: [1.8, 2.2, 0.0, 3.8], and: [0.7, 0.8, 0.4, 0.3], wretched,: [-1, -1, -1, -1]
+SEND LINE ' O, my lord, of ladies most deject and wretched, '
+The: [-1, -1, -1, -1], observed: [0.7, 1.0, 2.0, 0.2], of: [1.2, 0.9, 0.3, 0.6], all: [1.2, 0.8, 2.2, 0.9], Christians': [-1, -1, -1, -1], souls,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], not: [0.6, 1.2, 1.0, 0.8], know,: [-1, -1, -1, -1]
+SEND LINE " The observed of all Christians' souls, I do not know, "
+my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
+SEND LINE ' my lord. '
+
+
+
+
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+By: [-1, -1, -1, -1], Gis: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], by: [0.2, 0.2, 0.5, 0.4], Saint: [-1, -1, -1, -1], Charity,: [-1, -1, -1, -1]
+SEND LINE ' By Gis and by Saint Charity, '
+An: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], hadst: [0.2, 0.2, 0.9, 0.5], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], to: [0.1, 0.6, 0.6, 0.3], my: [0.4, 0.3, 1.9, 0.3], bed.: [-1, -1, -1, -1]
+SEND LINE ' An thou hadst not come to my bed. '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Pray: [-1, -1, -1, -1], you,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], columbines:: [-1, -1, -1, -1]
+SEND LINE ' Pray you, and columbines: '
+there's: [0.2, 0.5, 0.5, 0.4], rue: [1.1, 0.7, 0.4, 1.3], for: [0.0, 0.0, 0.0, 0.1], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
+SEND LINE " there's rue for you, mark. "
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+There's: [-1, -1, -1, -1], fennel: [0.0, 0.2, 0.6, 0.3], for: [0.0, 0.0, 0.0, 0.1], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
+SEND LINE " There's fennel for you, mark. "
+White: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], shroud: [1.2, 1.6, 0.2, 1.6], as: [0.0, 0.0, 0.0, 0.0], the: [0.4, 0.5, 0.3, 0.3], mountain: [1.5, 2.3, 3.0, 1.3], snow,: [-1, -1, -1, -1]
+SEND LINE ' White his shroud as the mountain snow, '
+And: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], his: [1.3, 0.2, 0.6, 0.8], grave: [0.8, 3.2, 1.2, 3.7], rained: [-1, -1, -1, -1], many: [0.7, 1.3, 2.7, 0.7], a: [-1, -1, -1, -1], tear:: [-1, -1, -1, -1]
+SEND LINE ' And in his grave rained many a tear: '
+God: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], mercy: [0.2, 0.7, 2.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], soul!: [-1, -1, -1, -1]
+SEND LINE " God ha' mercy on his soul! "
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Where: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], beauteous: [0.7, 0.8, 3.3, 0.3], majesty: [0.4, 0.6, 2.7, 0.3], of: [1.2, 0.9, 0.3, 0.6], Denmark?: [-1, -1, -1, -1]
+SEND LINE ' Where is the beauteous majesty of Denmark? '
+No,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], is: [0.3, 0.6, 0.3, 0.0], dead: [2.1, 2.6, 1.0, 4.0], and: [0.7, 0.8, 0.4, 0.3], gone;: [-1, -1, -1, -1]
+SEND LINE ' No, no, he is dead and gone; '
+Which: [-1, -1, -1, -1], bewept: [0.9, 1.5, 0.0, 2.9], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], ground: [0.0, 0.2, 0.2, 0.5], did: [1.1, 0.7, 1.4, 0.8], not: [0.6, 1.2, 1.0, 0.8], go: [0.8, 1.3, 2.6, 0.7]
+SEND LINE ' Which bewept to the ground did not go '
+With: [-1, -1, -1, -1], true-love: [0.4, 0.8, 4.7, 1.3], showers.: [-1, -1, -1, -1]
+SEND LINE ' With true-love showers. '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Pray: [-1, -1, -1, -1], let's: [0.5, 0.8, 1.1, 0.3], have: [0.6, 0.8, 1.6, 1.1], no: [0.7, 0.7, 0.6, 0.9], words: [0.9, 0.8, 1.1, 0.9], of: [1.2, 0.9, 0.3, 0.6], this;: [-1, -1, -1, -1]
+SEND LINE " Pray let's have no words of this; "
+but: [1.1, 1.2, 0.6, 1.0], when: [0.5, 0.4, 0.3, 0.7], they: [0.1, 0.1, 0.1, 0.1], ask: [0.6, 0.6, 0.6, 0.9], you: [0.0, 0.1, 1.3, 0.0], what: [0.4, 1.1, 0.5, 0.6], it: [0.5, 0.4, 0.1, 0.5], means,: [-1, -1, -1, -1]
+SEND LINE ' but when they ask you what it means, '
+say: [0.5, 0.7, 1.5, 0.5], you: [0.0, 0.1, 1.3, 0.0], this:: [-1, -1, -1, -1]
+SEND LINE ' say you this: '
+God: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], mercy: [0.2, 0.7, 2.2, 0.6], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], soul!: [-1, -1, -1, -1]
+SEND LINE " God ha' mercy on his soul! "
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Pray: [-1, -1, -1, -1], you,: [-1, -1, -1, -1], mark.: [-1, -1, -1, -1]
+SEND LINE ' Pray you, mark. '
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+
+By: [-1, -1, -1, -1], Gis: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], by: [0.2, 0.2, 0.5, 0.4], Saint: [-1, -1, -1, -1], Charity,: [-1, -1, -1, -1]
+Entering dialogue, SEND WHO OPHELIA
+SEND LINE ' By Gis and by Saint Charity, '
+To: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], your: [2.1, 1.6, 2.1, 1.3], Valentine.: [-1, -1, -1, -1]
+SEND LINE ' To be your Valentine. '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Pray: [-1, -1, -1, -1], let's: [0.5, 0.8, 1.1, 0.3], have: [0.6, 0.8, 1.6, 1.1], no: [0.7, 0.7, 0.6, 0.9], words: [0.9, 0.8, 1.1, 0.9], of: [1.2, 0.9, 0.3, 0.6], this;: [-1, -1, -1, -1]
+SEND LINE " Pray let's have no words of this; "
+but: [1.1, 1.2, 0.6, 1.0], when: [0.5, 0.4, 0.3, 0.7], they: [0.1, 0.1, 0.1, 0.1], ask: [0.6, 0.6, 0.6, 0.9], you: [0.0, 0.1, 1.3, 0.0], what: [0.4, 1.1, 0.5, 0.6], it: [0.5, 0.4, 0.1, 0.5], means,: [-1, -1, -1, -1]
+SEND LINE ' but when they ask you what it means, '
+say: [0.5, 0.7, 1.5, 0.5], you: [0.0, 0.1, 1.3, 0.0], this:: [-1, -1, -1, -1]
+SEND LINE ' say you this: '
+So: [-1, -1, -1, -1], would: [0.3, 0.3, 0.3, 0.1], I: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], done,: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], yonder: [0.2, 1.0, 1.2, 0.6], sun,: [-1, -1, -1, -1]
+SEND LINE " So would I ha' done, by yonder sun, "
+And: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], all: [1.2, 0.8, 2.2, 0.9], Christians': [-1, -1, -1, -1], souls,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], pray: [0.7, 1.3, 3.7, 1.6], God.: [-1, -1, -1, -1]
+SEND LINE " And of all Christians' souls, I pray God. "
+God: [-1, -1, -1, -1], buy: [0.9, 0.8, 3.2, 1.0], you.: [-1, -1, -1, -1]
+SEND LINE ' God buy you. '
 
 
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
-Pray: [-1, -1, -1, -1], let's: [0.5, 0.8, 1.1, 0.3], have: [0.6, 0.8, 1.6, 1.1], no: [0.7, 0.7, 0.6, 0.9], words: [0.9, 0.8, 1.1, 0.9], of: [1.2, 0.9, 0.3, 0.6], this;: [-1, -1, -1, -1]
-SEND LINE u" Pray let's have no words of this; "
-but: [1.1, 1.2, 0.6, 1.0], when: [0.5, 0.4, 0.3, 0.7], they: [0.1, 0.1, 0.1, 0.1], ask: [0.6, 0.6, 0.6, 0.9], you: [0.0, 0.1, 1.3, 0.0], what: [0.4, 1.1, 0.5, 0.6], it: [0.5, 0.4, 0.1, 0.5], means,: [-1, -1, -1, -1]
-SEND LINE u' but when they ask you what it means, '
-say: [0.5, 0.7, 1.5, 0.5], you: [0.0, 0.1, 1.3, 0.0], this:: [-1, -1, -1, -1]
-SEND LINE u' say you this: '
-To-morrow: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], Saint: [-1, -1, -1, -1], Valentine's: [-1, -1, -1, -1], day,: [-1, -1, -1, -1]
-SEND LINE u" To-morrow is Saint Valentine's day, "
-You: [-1, -1, -1, -1], promised: [0.8, 0.8, 3.2, 0.5], me: [1.7, 0.7, 3.0, 1.2], to: [0.1, 0.6, 0.6, 0.3], wed.: [-1, -1, -1, -1]
-SEND LINE u' You promised me to wed. '
-Quoth: [-1, -1, -1, -1], she,: [-1, -1, -1, -1], before: [0.6, 0.8, 0.9, 1.3], you: [0.0, 0.1, 1.3, 0.0], tumbled: [1.8, 2.2, 0.5, 1.5], me,: [-1, -1, -1, -1]
-SEND LINE u' Quoth she, before you tumbled me, '
-All: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], maid,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], out: [1.0, 1.1, 1.0, 1.8], a: [-1, -1, -1, -1], maid: [1.2, 2.1, 1.7, 1.1], at: [0.5, 0.4, 0.5, 0.5], your: [2.1, 1.6, 2.1, 1.3], window,: [-1, -1, -1, -1]
-SEND LINE u' All in the maid, that out a maid at your window, '
-To: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], your: [2.1, 1.6, 2.1, 1.3], Valentine.: [-1, -1, -1, -1]
-SEND LINE u' To be your Valentine.'
+Larded: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], with: [0.4, 0.4, 1.0, 0.3], sweet: [0.5, 0.4, 4.3, 0.3], flowers;: [-1, -1, -1, -1]
+SEND LINE ' Larded all with sweet flowers; '
+By: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], cockle: [1.3, 1.4, 0.8, 1.8], hat: [0.2, 0.2, 1.8, 0.2], and: [0.7, 0.8, 0.4, 0.3], staff,: [-1, -1, -1, -1]
+SEND LINE ' By his cockle hat and staff, '
+And: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], cast: [1.2, 1.0, 1.0, 0.9], away: [0.6, 1.6, 0.8, 1.6], moan:: [-1, -1, -1, -1]
+SEND LINE ' And we cast away moan: '
+So: [-1, -1, -1, -1], would: [0.3, 0.3, 0.3, 0.1], I: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], done,: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], yonder: [0.2, 1.0, 1.2, 0.6], sun,: [-1, -1, -1, -1]
+SEND LINE " So would I ha' done, by yonder sun, "
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+
+
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+Go: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], thy: [0.1, 0.0, 0.6, 0.2], deathbed:: [-1, -1, -1, -1]
+SEND LINE ' Go to thy deathbed: '
+His: [-1, -1, -1, -1], beard: [1.1, 1.4, 0.8, 1.2], was: [1.0, 0.9, 0.7, 1.4], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], white: [0.4, 0.8, 2.8, 0.9], as: [0.0, 0.0, 0.0, 0.0], snow,: [-1, -1, -1, -1]
+SEND LINE ' His beard was as white as white as white as white as white as white as snow, '
+He: [-1, -1, -1, -1], never: [2.2, 2.2, 0.0, 2.2], will: [1.2, 0.5, 1.8, 0.7], 'a: [-1, -1, -1, -1], not: [0.6, 1.2, 1.0, 0.8], come: [0.8, 1.2, 2.2, 0.9], again.: [-1, -1, -1, -1]
+SEND LINE " He never will 'a not come again. "
+No,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1], no,: [-1, -1, -1, -1]
+SEND LINE ' No, no, no, '
+And: [-1, -1, -1, -1], we: [0.7, 0.6, 2.1, 0.7], cast: [1.2, 1.0, 1.0, 0.9], away: [0.6, 1.6, 0.8, 1.6], moan:: [-1, -1, -1, -1]
+SEND LINE ' And we cast away moan: '
+And: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], come: [0.8, 1.2, 2.2, 0.9], again.: [-1, -1, -1, -1]
+SEND LINE ' And will come again.'
+
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+I: [-1, -1, -1, -1], hope: [0.0, 0.7, 4.1, 0.3], all: [1.2, 0.8, 2.2, 0.9], will: [1.2, 0.5, 1.8, 0.7], be: [0.6, 1.1, 0.8, 0.8], well.: [-1, -1, -1, -1]
+SEND LINE ' I hope all will be well. '
+We: [-1, -1, -1, -1], must: [0.9, 1.6, 0.4, 0.7], be: [0.6, 1.1, 0.8, 0.8], patient:: [-1, -1, -1, -1]
+SEND LINE ' We must be patient: '
+but: [1.1, 1.2, 0.6, 1.0], I: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], choose: [0.9, 1.1, 1.8, 0.7], but: [1.1, 1.2, 0.6, 1.0], weep,: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], the: [0.4, 0.5, 0.3, 0.3], ground: [0.0, 0.2, 0.2, 0.5], did: [1.1, 0.7, 1.4, 0.8], not: [0.6, 1.2, 1.0, 0.8], go: [0.8, 1.3, 2.6, 0.7]
+SEND LINE ' but I cannot choose but weep, to the ground did not go '
+With: [-1, -1, -1, -1], almost: [1.2, 1.0, 1.9, 1.5], all: [1.2, 0.8, 2.2, 0.9], the: [0.4, 0.5, 0.3, 0.3], holy: [0.0, 0.5, 3.1, 0.2], vows: [1.3, 1.5, 3.1, 0.7], of: [1.2, 0.9, 0.3, 0.6], heaven.: [-1, -1, -1, -1]
+SEND LINE ' With almost all the holy vows of heaven. '
+There,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], some: [1.1, 0.8, 1.4, 1.3], ungracious: [3.2, 1.1, 0.2, 3.5], pastors: [0.4, 1.3, 1.5, 0.8], do,: [-1, -1, -1, -1]
+SEND LINE ' There, my lord, as some ungracious pastors do, '
+Lord: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], his: [1.3, 0.2, 0.6, 0.8], head: [0.9, 0.5, 1.2, 0.7], a: [-1, -1, -1, -1], grass-green: [0.5, 0.0, 2.7, 0.3], turf,: [-1, -1, -1, -1]
+SEND LINE ' Lord Hamlet, with his head a grass-green turf, '
+To: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], seen: [0.0, 0.4, 0.4, 0.2], what: [0.4, 1.1, 0.5, 0.6], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], remembrances: [1.0, 1.3, 3.0, 2.3], of: [1.2, 0.9, 0.3, 0.6], yours: [0.5, 0.5, 2.5, 0.8], lord: [1.3, 2.7, 2.5, 1.3], my: [0.4, 0.3, 1.9, 0.3], father: [1.7, 1.8, 3.4, 1.6], died: [3.0, 3.9, 0.1, 4.9], me: [1.7, 0.7, 3.0, 1.2], to: [0.1, 0.6, 0.6, 0.3], wed: [1.3, 1.2, 4.0, 1.2], lord: [1.3, 2.7, 2.5, 1.3], head: [0.9, 0.5, 1.2, 0.7], over: [1.5, 0.9, 1.1, 1.3], turf: [1.1, 1.0, 1.0, 0.9], are: [0.6, 0.6, 1.4, 0.6], merry: [0.6, 0.9, 4.6, 0.8], importuned: [1.3, 1.7, 1.0, 1.7], me: [1.7, 0.7, 3.0, 1.2], believe: [1.1, 1.1, 3.9, 0.9], Ay: [-1, -1, -1, -1]
+SEND LINE ' To have seen what I have remembrances of yours lord my father died me to wed lord head over turf are merry importuned me believe Ay '
+To-morrow: [-1, -1, -1, -1], died: [3.0, 3.9, 0.1, 4.9]
+SEND LINE ' To-morrow died '
+I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4], not: [0.6, 1.2, 1.0, 0.8], know: [1.2, 1.1, 2.6, 1.3]
+SEND LINE ' I think nothing not know '
+Larded: [-1, -1, -1, -1]
+SEND LINE ' Larded '
+I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], obey: [1.7, 2.7, 1.5, 1.1], vows: [1.3, 1.5, 3.1, 0.7]
+SEND LINE ' I shall obey vows '
+I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], obey: [1.7, 2.7, 1.5, 1.1]
+SEND LINE ' I shall obey '
+I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4]
+SEND LINE ' I think nothing '
+Pale: [-1, -1, -1, -1], lost: [2.6, 3.5, 0.9, 3.5], commerce: [1.6, 1.2, 2.4, 1.5], God: [-1, -1, -1, -1], ha': [-1, -1, -1, -1], done: [1.1, 1.5, 2.5, 2.0], lord: [1.3, 2.7, 2.5, 1.3], most: [1.8, 1.8, 1.5, 1.6], deject: [1.8, 2.2, 0.0, 3.8]
+SEND LINE " Pale lost commerce God ha' done lord most deject "
+I: [-1, -1, -1, -1], pray: [0.7, 1.3, 3.7, 1.6], God: [-1, -1, -1, -1]
+SEND LINE ' I pray God '
+I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4]
+SEND LINE ' I think nothing '
+I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing: [1.0, 1.9, 0.8, 2.4], held: [1.3, 1.8, 1.1, 1.2]
+SEND LINE ' I think nothing held '
+God: [-1, -1, -1, -1], lord: [1.3, 2.7, 2.5, 1.3], lord: [1.3, 2.7, 2.5, 1.3]
+SEND LINE ' God lord lord '
+Take: [-1, -1, -1, -1]
+SEND LINE ' Take '
+Alack: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], cannot: [1.6, 1.5, 0.1, 1.3], moan: [1.5, 2.2, 1.4, 2.1], God: [-1, -1, -1, -1]
+SEND LINE ' Alack cannot cannot moan God '
+Larded: [-1, -1, -1, -1], nonny: [1.0, 1.1, 1.1, 0.8], nonny: [1.0, 1.1, 1.1, 0.8], a-down: [0.8, 2.0, 0.8, 1.1]
+SEND LINE ' Larded  nonny nonny a-down '
+nonny: [1.0, 1.1, 1.1, 0.8], nonny: [1.0, 1.1, 1.1, 0.8], a-down,: [-1, -1, -1, -1]
+SEND LINE '  nonny nonny a-down, '
+An: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], call: [0.8, 0.7, 1.2, 0.7], him: [1.1, 0.7, 1.5, 0.4], a-down-a.: [-1, -1, -1, -1]
+SEND LINE ' An you call him a-down-a. '
+O,: [-1, -1, -1, -1], woe: [1.7, 2.1, 0.1, 3.1], is: [0.3, 0.6, 0.3, 0.0], me,: [-1, -1, -1, -1]
+SEND LINE ' O, woe is me, '
+I: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], sewing: [0.7, 0.4, 2.2, 0.8], in: [0.3, 0.1, 0.4, 0.4], my: [0.4, 0.3, 1.9, 0.3]
+SEND LINE ' I was sewing in my'
+
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+I: [-1, -1, -1, -1], hope: [0.0, 0.7, 4.1, 0.3], all: [1.2, 0.8, 2.2, 0.9], will: [1.2, 0.5, 1.8, 0.7], be: [0.6, 1.1, 0.8, 0.8], well.: [-1, -1, -1, -1]
+SEND LINE ' I hope all will be well. '
+We: [-1, -1, -1, -1], must: [0.9, 1.6, 0.4, 0.7], be: [0.6, 1.1, 0.8, 0.8], patient:: [-1, -1, -1, -1]
+SEND LINE ' We must be patient: '
+but: [1.1, 1.2, 0.6, 1.0], I: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], choose: [0.9, 1.1, 1.8, 0.7], but: [1.1, 1.2, 0.6, 1.0], weep,: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], think: [1.4, 1.3, 2.4, 1.2], they: [0.1, 0.1, 0.1, 0.1], would: [0.3, 0.3, 0.3, 0.1], lay: [0.5, 1.1, 1.6, 1.0], him: [1.1, 0.7, 1.5, 0.4], i': [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], cold: [1.9, 2.6, 1.4, 1.5], ground.: [-1, -1, -1, -1]
+SEND LINE " but I cannot choose but weep, to think they would lay him i' the cold ground. "
+My: [-1, -1, -1, -1], brother: [1.9, 0.3, 3.0, 1.1], shall: [1.1, 1.4, 1.8, 0.7], know: [1.2, 1.1, 2.6, 1.3], of: [1.2, 0.9, 0.3, 0.6], it:: [-1, -1, -1, -1]
+SEND LINE ' My brother shall know of it: '
+and: [0.7, 0.8, 0.4, 0.3], so: [0.6, 0.5, 0.3, 0.7], I: [-1, -1, -1, -1], thank: [0.4, 0.3, 3.4, 0.0], you: [0.0, 0.1, 1.3, 0.0], for: [0.0, 0.0, 0.0, 0.1], your: [2.1, 1.6, 2.1, 1.3], good: [0.5, 0.9, 4.7, 0.5], counsel.: [-1, -1, -1, -1]
+SEND LINE ' and so I thank you for your good counsel. '
+Come,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], coach!: [-1, -1, -1, -1]
+SEND LINE ' Come, my coach! '
+Good: [-1, -1, -1, -1], night,: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], ladies;: [-1, -1, -1, -1]
+SEND LINE ' Good night, sweet ladies; '
+good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], ladies;: [-1, -1, -1, -1]
+SEND LINE ' good night, sweet ladies; '
+good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], ladies;: [-1, -1, -1, -1]
+SEND LINE ' good night, ladies; '
+good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], ladies;: [-1, -1, -1, -1]
+SEND LINE ' good night, ladies; '
+good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], ladies;: [-1, -1, -1, -1]
+SEND LINE ' good night, sweet ladies; '
+good: [0.5, 0.9, 4.7, 0.5], night,: [-1, -1, -1, -1], good: [0.5, 0.9, 4.7, 0.5], night.: [-1, -1, -1, -1]
+SEND LINE ' good night, good night. '
+
 
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit.): [-1, -1, -1, -1]
 Stagedir (Exit.)
-################# SCENE newgertrude 12_TTS.aloud_0_lightshow wordcount:492 strategy:markov #################
-Timing info. Seconds: 27.3331170082, words: 1144, lines: 138
+################# SCENE newgertrude 12_TTS.aloud_0_monemo wordcount:397 strategy:markov #################
+Timing info. Seconds: 24.6194748878, words: 1088, lines: 111
 BLACKOUT
-SEND STYLES 12_TTS.aloud_0_lightshow
+SEND STYLES 12_TTS.aloud_0_monemo
 
 (: [-1, -1, -1, -1], place: [0.9, 1.1, 2.0, 0.5], Another: [-1, -1, -1, -1], room: [0.8, 1.1, 1.3, 0.4], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], castle.): [-1, -1, -1, -1]
 TRIGGER: place [u'room']
@@ -932,111 +1247,97 @@ Stagedir (Enter QUEEN.)
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 One: [-1, -1, -1, -1], woe: [1.7, 2.1, 0.1, 3.1], doth: [0.5, 0.4, 0.4, 0.6], tread: [1.2, 1.1, 0.4, 1.1], upon: [1.0, 0.5, 1.1, 0.7], another's: [0.7, 0.7, 1.1, 0.9], heel,: [-1, -1, -1, -1]
-SEND LINE u" One woe doth tread upon another's heel, "
+SEND LINE " One woe doth tread upon another's heel, "
 So: [-1, -1, -1, -1], fast: [1.1, 1.7, 2.4, 0.5], they: [0.1, 0.1, 0.1, 0.1], follow:: [-1, -1, -1, -1], your: [2.1, 1.6, 2.1, 1.3], sister's: [0.5, 0.0, 1.8, 0.3], drowned,: [-1, -1, -1, -1], Laertes.: [-1, -1, -1, -1]
-SEND LINE u" So fast they follow: your sister's drowned, Laertes. "
+SEND LINE " So fast they follow: your sister's drowned, Laertes. "
 
 
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 Drowned!: [-1, -1, -1, -1], O,: [-1, -1, -1, -1], where?: [-1, -1, -1, -1]
-SEND LINE u' Drowned! O, where?'
+SEND LINE ' Drowned! O, where?'
 
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-There: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], weeping: [1.7, 2.1, 0.5, 4.2], brook: [0.3, 0.3, 1.3, 0.5]
-SEND LINE u' There is a willow grows askaunt the weeping brook '
+Or: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], a: [-1, -1, -1, -1], grosser: [1.9, 0.6, 2.0, 1.4], name,: [-1, -1, -1, -1], an: [0.0, 0.0, 0.0, 0.0], envious: [3.7, 2.5, 0.3, 2.8], sliver: [1.6, 1.4, 1.6, 1.4], broke:: [-1, -1, -1, -1]
+SEND LINE ' Or like a grosser name, an envious sliver broke: '
+When: [-1, -1, -1, -1], down: [0.9, 0.9, 0.1, 2.5], her: [0.9, 1.1, 1.6, 1.5], weedy: [1.5, 1.5, 0.7, 1.4], trophies: [0.3, 0.3, 4.4, 0.4], and: [0.7, 0.8, 0.4, 0.3], long: [0.6, 0.6, 1.1, 1.0], it: [0.5, 0.4, 0.1, 0.5], could: [0.5, 1.1, 2.0, 0.7], not: [0.6, 1.2, 1.0, 0.8], be: [0.6, 1.1, 0.8, 0.8]
+SEND LINE ' When down her weedy trophies and long it could not be '
+Or: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], weeping: [1.7, 2.1, 0.5, 4.2], brook.: [-1, -1, -1, -1]
+SEND LINE ' Or like a willow grows askaunt the weeping brook. '
+Her: [-1, -1, -1, -1], clothes: [0.5, 0.8, 3.6, 0.6], spread: [0.3, 0.8, 1.9, 0.9], wide;: [-1, -1, -1, -1]
+SEND LINE ' Her clothes spread wide; '
+That: [-1, -1, -1, -1], shows: [0.3, 0.7, 1.8, 0.9], his: [1.3, 0.2, 0.6, 0.8], hoar: [2.0, 2.0, 1.1, 2.6], leaves: [2.5, 2.0, 1.4, 2.3], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], brook: [0.3, 0.3, 1.3, 0.5]
+SEND LINE ' That shows his hoar leaves in the brook '
+Therewith: [-1, -1, -1, -1], fantastic: [0.3, 0.4, 4.2, 0.5], garlands: [0.5, 0.6, 2.1, 0.3], did: [1.1, 0.7, 1.4, 0.8], she: [0.6, 0.6, 1.1, 0.1], make: [0.5, 1.7, 1.6, 1.2]
+SEND LINE ' Therewith fantastic garlands did she make '
+Clambering: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], hang,: [-1, -1, -1, -1], drowned.: [-1, -1, -1, -1]
+SEND LINE ' Clambering to hang, drowned. '
+Pulled: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], weeping: [1.7, 2.1, 0.5, 4.2], brook.: [-1, -1, -1, -1]
+SEND LINE ' Pulled the weeping brook. '
+Pulled: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], crownet: [-1, -1, -1, -1], weeds: [1.8, 1.4, 1.7, 2.1]
+SEND LINE ' Pulled the pendent boughs her crownet weeds '
+There: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], grosser: [1.9, 0.6, 2.0, 1.4], name,: [-1, -1, -1, -1], nettles,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1]
+SEND LINE ' There is a grosser name, nettles, heavy with their drink, '
+an: [0.0, 0.0, 0.0, 0.0], envious: [3.7, 2.5, 0.3, 2.8], sliver: [1.6, 1.4, 1.6, 1.4], broke:: [-1, -1, -1, -1]
+SEND LINE ' an envious sliver broke: '
+Therewith: [-1, -1, -1, -1], fantastic: [0.3, 0.4, 4.2, 0.5], garlands: [0.5, 0.6, 2.1, 0.3], did: [1.1, 0.7, 1.4, 0.8], she: [0.6, 0.6, 1.1, 0.1], chanted: [1.4, 1.4, 1.9, 0.6], snatches: [2.3, 2.1, 0.4, 2.1], of: [1.2, 0.9, 0.3, 0.6], her: [0.9, 1.1, 1.6, 1.5], garments,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1]
+SEND LINE ' Therewith fantastic garlands did she chanted snatches of her garments, heavy with their drink, '
+and: [0.7, 0.8, 0.4, 0.3], indued: [0.5, 0.5, 1.0, 0.4]
+SEND LINE ' and indued '
+But: [-1, -1, -1, -1], our: [1.1, 0.7, 1.7, 1.2], cull-cold: [-1, -1, -1, -1], maids: [0.5, 0.2, 1.8, 0.5], do: [0.8, 0.7, 1.5, 1.2], dead: [2.1, 2.6, 1.0, 4.0], men's: [1.1, 0.5, 1.1, 0.4], fingers: [1.3, 1.7, 2.4, 1.6], call: [0.8, 0.7, 1.2, 0.7], them:: [-1, -1, -1, -1]
+SEND LINE " But our cull-cold maids do dead men's fingers call them: "
+but: [1.1, 1.2, 0.6, 1.0], long: [0.6, 0.6, 1.1, 1.0], it: [0.5, 0.4, 0.1, 0.5], could: [0.5, 1.1, 2.0, 0.7], not: [0.6, 1.2, 1.0, 0.8], be: [0.6, 1.1, 0.8, 0.8]
+SEND LINE ' but long it could not be '
+Or: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], melodious: [0.4, 0.7, 3.2, 0.9], lay: [0.5, 1.1, 1.6, 1.0]
+SEND LINE ' Or like a willow grows askaunt the pendent boughs her melodious lay '
+There: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], grosser: [1.9, 0.6, 2.0, 1.4], name,: [-1, -1, -1, -1], nettles,: [-1, -1, -1, -1], daisies,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1]
+SEND LINE ' There is a grosser name, nettles, daisies, heavy with their drink, '
+Pulled: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], glassy: [0.1, 0.6, 0.0, 1.0], stream;: [-1, -1, -1, -1]
+SEND LINE ' Pulled the glassy stream; '
 There,: [-1, -1, -1, -1]
-SEND LINE u' There, '
-Therewith: [-1, -1, -1, -1], fantastic: [0.3, 0.4, 4.2, 0.5], garlands: [0.5, 0.6, 2.1, 0.3], did: [1.1, 0.7, 1.4, 0.8], she: [0.6, 0.6, 1.1, 0.1], chanted: [1.4, 1.4, 1.9, 0.6], snatches: [2.3, 2.1, 0.4, 2.1], of: [1.2, 0.9, 0.3, 0.6], old: [1.4, 2.4, 0.9, 2.7], lauds;: [-1, -1, -1, -1]
-SEND LINE u' Therewith fantastic garlands did she chanted snatches of old lauds; '
-That: [-1, -1, -1, -1], liberal: [0.9, 0.7, 2.7, 0.8], shepherds: [0.5, 0.8, 1.9, 1.0], give: [1.1, 1.6, 3.4, 1.5], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], glassy: [0.1, 0.6, 0.0, 1.0], stream;: [-1, -1, -1, -1]
-SEND LINE u' That liberal shepherds give a willow grows askaunt the glassy stream; '
-There,: [-1, -1, -1, -1], mermaid-like,: [-1, -1, -1, -1]
-SEND LINE u' There, mermaid-like, '
-There,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], indued: [0.5, 0.5, 1.0, 0.4]
-SEND LINE u' There, and indued '
-Of: [-1, -1, -1, -1], crow-flowers,: [-1, -1, -1, -1], awhile: [0.4, 0.1, 0.6, 0.1], they: [0.1, 0.1, 0.1, 0.1], bore: [1.3, 0.4, 0.2, 0.6], her: [0.9, 1.1, 1.6, 1.5], own: [0.5, 0.9, 3.1, 0.8], distress,: [-1, -1, -1, -1], nettles,: [-1, -1, -1, -1]
-SEND LINE u' Of crow-flowers, awhile they bore her own distress, nettles, '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-There: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], creature: [1.0, 1.1, 2.3, 0.6], native: [1.0, 1.7, 3.1, 1.1], and: [0.7, 0.8, 0.4, 0.3], indued: [0.5, 0.5, 1.0, 0.4]
-SEND LINE u' There is a creature native and indued '
-But: [-1, -1, -1, -1], our: [1.1, 0.7, 1.7, 1.2], cull-cold: [-1, -1, -1, -1], maids: [0.5, 0.2, 1.8, 0.5], do: [0.8, 0.7, 1.5, 1.2], dead: [2.1, 2.6, 1.0, 4.0], men's: [1.1, 0.5, 1.1, 0.4], fingers: [1.3, 1.7, 2.4, 1.6], call: [0.8, 0.7, 1.2, 0.7], them:: [-1, -1, -1, -1]
-SEND LINE u" But our cull-cold maids do dead men's fingers call them: "
-That: [-1, -1, -1, -1], liberal: [0.9, 0.7, 2.7, 0.8], shepherds: [0.5, 0.8, 1.9, 1.0], give: [1.1, 1.6, 3.4, 1.5], a: [-1, -1, -1, -1], creature: [1.0, 1.1, 2.3, 0.6], native: [1.0, 1.7, 3.1, 1.1], and: [0.7, 0.8, 0.4, 0.3], herself: [0.6, 1.3, 1.7, 0.5]
-SEND LINE u' That liberal shepherds give a creature native and herself '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-Drowned,: [-1, -1, -1, -1], nettles,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1], mermaid-like,: [-1, -1, -1, -1], daisies,: [-1, -1, -1, -1]
-SEND LINE u' Drowned, nettles, heavy with their drink, mermaid-like, daisies, '
-awhile: [0.4, 0.1, 0.6, 0.1], they: [0.1, 0.1, 0.1, 0.1], bore: [1.3, 0.4, 0.2, 0.6], her: [0.9, 1.1, 1.6, 1.5], own: [0.5, 0.9, 3.1, 0.8], distress,: [-1, -1, -1, -1], awhile: [0.4, 0.1, 0.6, 0.1], they: [0.1, 0.1, 0.1, 0.1], bore: [1.3, 0.4, 0.2, 0.6], her: [0.9, 1.1, 1.6, 1.5], up:: [-1, -1, -1, -1]
-SEND LINE u' awhile they bore her own distress, awhile they bore her up: '
-That: [-1, -1, -1, -1], liberal: [0.9, 0.7, 2.7, 0.8], shepherds: [0.5, 0.8, 1.9, 1.0], give: [1.1, 1.6, 3.4, 1.5], a: [-1, -1, -1, -1], creature: [1.0, 1.1, 2.3, 0.6], native: [1.0, 1.7, 3.1, 1.1], and: [0.7, 0.8, 0.4, 0.3], herself: [0.6, 1.3, 1.7, 0.5]
-SEND LINE u' That liberal shepherds give a creature native and herself '
-That: [-1, -1, -1, -1], shows: [0.3, 0.7, 1.8, 0.9], his: [1.3, 0.2, 0.6, 0.8], hoar: [2.0, 2.0, 1.1, 2.6], leaves: [2.5, 2.0, 1.4, 2.3], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], garments,: [-1, -1, -1, -1], nettles,: [-1, -1, -1, -1]
-SEND LINE u' That shows his hoar leaves in the pendent boughs her garments, nettles, '
-Clambering: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], hang,: [-1, -1, -1, -1], awhile: [0.4, 0.1, 0.6, 0.1], they: [0.1, 0.1, 0.1, 0.1], bore: [1.3, 0.4, 0.2, 0.6], her: [0.9, 1.1, 1.6, 1.5], up:: [-1, -1, -1, -1]
-SEND LINE u' Clambering to hang, awhile they bore her up: '
-That: [-1, -1, -1, -1], liberal: [0.9, 0.7, 2.7, 0.8], shepherds: [0.5, 0.8, 1.9, 1.0], give: [1.1, 1.6, 3.4, 1.5], a: [-1, -1, -1, -1], grosser: [1.9, 0.6, 2.0, 1.4], name,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1]
-SEND LINE u' That liberal shepherds give a grosser name, heavy with their drink, '
-and: [0.7, 0.8, 0.4, 0.3], herself: [0.6, 1.3, 1.7, 0.5]
-SEND LINE u' and herself '
-Or: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], brook: [0.3, 0.3, 1.3, 0.5]
-SEND LINE u' Or like a willow grows askaunt the brook '
-As: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], incapable: [1.8, 3.2, 0.1, 3.8], of: [1.2, 0.9, 0.3, 0.6], her: [0.9, 1.1, 1.6, 1.5], up:: [-1, -1, -1, -1]
-SEND LINE u' As one incapable of her up: '
-But: [-1, -1, -1, -1], our: [1.1, 0.7, 1.7, 1.2], cull-cold: [-1, -1, -1, -1], maids: [0.5, 0.2, 1.8, 0.5], do: [0.8, 0.7, 1.5, 1.2], dead: [2.1, 2.6, 1.0, 4.0], men's: [1.1, 0.5, 1.1, 0.4], fingers: [1.3, 1.7, 2.4, 1.6], call: [0.8, 0.7, 1.2, 0.7], them:: [-1, -1, -1, -1]
-SEND LINE u" But our cull-cold maids do dead men's fingers call them: "
-As: [-1, -1, -1, -1], one: [0.9, 0.8, 1.1, 1.4], incapable: [1.8, 3.2, 0.1, 3.8], of: [1.2, 0.9, 0.3, 0.6], her: [0.9, 1.1, 1.6, 1.5], garments,: [-1, -1, -1, -1], an: [0.0, 0.0, 0.0, 0.0], envious: [3.7, 2.5, 0.3, 2.8], sliver: [1.6, 1.4, 1.6, 1.4], broke:: [-1, -1, -1, -1]
-SEND LINE u' As one incapable of her garments, an envious sliver broke: '
-That: [-1, -1, -1, -1], liberal: [0.9, 0.7, 2.7, 0.8], shepherds: [0.5, 0.8, 1.9, 1.0], give: [1.1, 1.6, 3.4, 1.5], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], poor: [2.7, 2.5, 0.3, 3.7], wretch: [2.0, 2.0, 0.2, 2.4], from: [0.6, 0.5, 0.7, 0.4], her: [0.9, 1.1, 1.6, 1.5], crownet: [-1, -1, -1, -1], weeds: [1.8, 1.4, 1.7, 2.1]
-SEND LINE u' That liberal shepherds give a willow grows askaunt the poor wretch from her crownet weeds '
-Unto: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], her: [0.9, 1.1, 1.6, 1.5], garments,: [-1, -1, -1, -1], mermaid-like,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1], mermaid-like,: [-1, -1, -1, -1]
-SEND LINE u' Unto that her garments, mermaid-like, heavy with their drink, mermaid-like, '
-There,: [-1, -1, -1, -1], heavy: [0.9, 1.0, 0.2, 1.3], with: [0.4, 0.4, 1.0, 0.3], their: [0.1, 0.1, 0.3, 0.1], drink,: [-1, -1, -1, -1], daisies,: [-1, -1, -1, -1], awhile: [0.4, 0.1, 0.6, 0.1], they: [0.1, 0.1, 0.1, 0.1], bore: [1.3, 0.4, 0.2, 0.6], her: [0.9, 1.1, 1.6, 1.5], weedy: [1.5, 1.5, 0.7, 1.4], trophies: [0.3, 0.3, 4.4, 0.4], and: [0.7, 0.8, 0.4, 0.3], herself: [0.6, 1.3, 1.7, 0.5]
-SEND LINE u' There, heavy with their drink, daisies, awhile they bore her weedy trophies and herself '
-There: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], willow: [0.4, 0.6, 0.9, 0.8], grows: [1.5, 0.9, 2.5, 0.7], askaunt: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], poor: [2.7, 2.5, 0.3, 3.7], wretch: [2.0, 2.0, 0.2, 2.4], from: [0.6, 0.5, 0.7, 0.4], her: [0.9, 1.1, 1.6, 1.5], weedy: [1.5, 1.5, 0.7, 1.4], trophies: [0.3, 0.3, 4.4, 0.4], and: [0.7, 0.8, 0.4, 0.3], indued: [0.5, 0.5, 1.0, 0.4]
-SEND LINE u' There is a willow grows askaunt the poor wretch from her weedy trophies and indued '
-And,: [-1, -1, -1, -1], on: [0.3, 0.4, 0.4, 0.7], the: [0.4, 0.5, 0.3, 0.3], pendent: [0.9, 1.8, 2.5, 1.0], boughs: [0.6, 0.7, 0.6, 0.8], her: [0.9, 1.1, 1.6, 1.5], garments: [0.3, 0.3, 2.6, 0.5]
-SEND LINE u' And, on the pendent boughs her garments'
+SEND LINE ' There, '
+Fell: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], poor: [2.7, 2.5, 0.3, 3.7], wretch: [2.0, 2.0, 0.2, 2.4], from: [0.6, 0.5, 0.7, 0.4], her: [0.9, 1.1, 1.6, 1.5], melodious: [0.4, 0.7, 3.2, 0.9], lay: [0.5, 1.1, 1.6, 1.0]
+SEND LINE ' Fell in the poor wretch from her melodious lay '
+To: [-1, -1, -1, -1], muddy: [1.4, 1.6, 0.8, 1.7], death.: [-1, -1, -1, -1]
+SEND LINE ' To muddy death.'
 
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
-One: [-1, -1, -1, -1], woe: [1.7, 2.1, 0.1, 3.1], pendent: [0.9, 1.8, 2.5, 1.0], our: [1.1, 0.7, 1.7, 1.2]
-SEND LINE u' One woe pendent our '
-Drowned: [-1, -1, -1, -1], distress: [2.8, 3.7, 0.0, 3.6], her: [0.9, 1.1, 1.6, 1.5]
-SEND LINE u' Drowned distress her '
-Fell: [-1, -1, -1, -1], dead: [2.1, 2.6, 1.0, 4.0], down: [0.9, 0.9, 0.1, 2.5], weeping: [1.7, 2.1, 0.5, 4.2]
-SEND LINE u' Fell dead down weeping '
+Drowned: [-1, -1, -1, -1]
+SEND LINE ' Drowned '
+One: [-1, -1, -1, -1], woe: [1.7, 2.1, 0.1, 3.1], do: [0.8, 0.7, 1.5, 1.2], dead: [2.1, 2.6, 1.0, 4.0], Drowned: [-1, -1, -1, -1]
+SEND LINE ' One woe do dead Drowned '
+Drowned: [-1, -1, -1, -1]
+SEND LINE ' Drowned '
+Drowned: [-1, -1, -1, -1]
+SEND LINE ' Drowned '
+Drowned: [-1, -1, -1, -1], weeping: [1.7, 2.1, 0.5, 4.2], death: [1.8, 2.9, 0.5, 4.4], distress: [2.8, 3.7, 0.0, 3.6]
+SEND LINE ' Drowned weeping death distress '
+Drowned: [-1, -1, -1, -1], drowned: [2.4, 2.9, 0.3, 3.7], incapable: [1.8, 3.2, 0.1, 3.8]
+SEND LINE ' Drowned drowned incapable '
+Fell: [-1, -1, -1, -1]
+SEND LINE ' Fell '
+Fell: [-1, -1, -1, -1]
+SEND LINE ' Fell '
 Fell: [-1, -1, -1, -1], drowned: [2.4, 2.9, 0.3, 3.7]
-SEND LINE u' Fell drowned '
-Fell: [-1, -1, -1, -1], time: [2.2, 3.2, 2.8, 2.4]
-SEND LINE u' Fell time '
-Drowned: [-1, -1, -1, -1]
-SEND LINE u' Drowned '
-Drowned: [-1, -1, -1, -1]
-SEND LINE u' Drowned '
-Drowned: [-1, -1, -1, -1]
-SEND LINE u' Drowned '
-Drowned: [-1, -1, -1, -1]
-SEND LINE u' Drowned '
+SEND LINE ' Fell drowned '
 
 
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
-it: [0.5, 0.4, 0.1, 0.5], will: [1.2, 0.5, 1.8, 0.7]
-SEND LINE u' it will '
-forbid,:: [-1, -1, -1, -1]
-SEND LINE u' forbid,: '
-,: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], poor: [2.7, 2.5, 0.3, 3.7], Ophelia: [-1, -1, -1, -1], It: [-1, -1, -1, -1], woman: [1.6, 1.5, 3.2, 2.0], fire: [2.3, 3.6, 0.7, 1.0], my: [0.4, 0.3, 1.9, 0.3], therefore: [0.3, 0.3, 0.2, 0.4], Adieu: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], are: [0.6, 0.6, 1.4, 0.6]
-SEND LINE u', is poor Ophelia It woman fire my therefore Adieu but are'
+It;: [-1, -1, -1, -1], when: [0.5, 0.4, 0.3, 0.7], my: [0.4, 0.3, 1.9, 0.3], lord: [1.3, 2.7, 2.5, 1.3], Let: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], hast: [0.8, 1.5, 1.4, 0.8], when: [0.5, 0.4, 0.3, 0.7], a': [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3]
+SEND LINE " It; when my lord Let that hast when a' my "
+:,: [-1, -1, -1, -1], hast: [0.8, 1.5, 1.4, 0.8], that: [0.7, 0.7, 0.2, 0.4], thou,: [-1, -1, -1, -1]
+SEND LINE ':, hast that thou, '
+Adieu: [-1, -1, -1, -1]
+SEND LINE ' Adieu'
 
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt.): [-1, -1, -1, -1]
 TRIGGER: exit [u'exeunt']
 Stagedir (Exeunt.)
-################# SCENE gravedigger 2_TTS.aloud_0_theatre wordcount:257 strategy:markov #################
-Timing info. Seconds: 12.1576840878, words: 499, lines: 45
+################# SCENE gravedigger 2_TTS.aloud_0_theatre wordcount:258 strategy:markov #################
+Timing info. Seconds: 19.5588629246, words: 404, lines: 40
 BLACKOUT
 SEND STYLES 2_TTS.aloud_0_theatre
 Act: [-1, -1, -1, -1], 5,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
@@ -1052,22 +1353,23 @@ Stagedir (Enter two Clowns, with spades,)
 (: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], He: [-1, -1, -1, -1], digs,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], sings.): [-1, -1, -1, -1]
 TRIGGER: voice [u'sings']
 Stagedir (He digs, and sings.)
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], He: [-1, -1, -1, -1], digs.): [-1, -1, -1, -1]
-Stagedir (He digs.)
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
-TRIGGER: voice [u'sings']
-Stagedir (Sings)
-(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Throws: [-1, -1, -1, -1], up: [0.9, 0.8, 2.6, 0.8], a: [-1, -1, -1, -1], skull.): [-1, -1, -1, -1]
-Stagedir (Throws up a skull.)
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
-TRIGGER: voice [u'sings']
-Stagedir (Sings)
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Second: [-1, -1, -1, -1], Clown.): [-1, -1, -1, -1]
 Stagedir (Exit Second Clown.)
-(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Throws: [-1, -1, -1, -1], up: [0.9, 0.8, 2.6, 0.8], a: [-1, -1, -1, -1], skull.): [-1, -1, -1, -1]
-Stagedir (Throws up a skull.)
-(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], He: [-1, -1, -1, -1], digs.): [-1, -1, -1, -1]
-Stagedir (He digs.)
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Throws: [-1, -1, -1, -1], up: [0.9, 0.8, 2.6, 0.8], another: [1.0, 1.1, 1.4, 1.7], skull.): [-1, -1, -1, -1]
+Stagedir (Throws up another skull.)
+(: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exit: [-1, -1, -1, -1], Second: [-1, -1, -1, -1], Clown.): [-1, -1, -1, -1]
+Stagedir (Exit Second Clown.)
+(: [-1, -1, -1, -1], voice: [1.2, 0.9, 2.1, 1.1], Sings): [-1, -1, -1, -1]
+TRIGGER: voice [u'sings']
+Stagedir (Sings)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Takes: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], skull.): [-1, -1, -1, -1]
+TRIGGER: place [u'part', u'of', u'the', u'platform']
+Stagedir (Takes the skull.)
+(: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Throws: [-1, -1, -1, -1], up: [0.9, 0.8, 2.6, 0.8], another): [-1, -1, -1, -1]
+Stagedir (Throws up another)
 
 
 FIRST_CLOWN: [-1, -1, -1, -1]
