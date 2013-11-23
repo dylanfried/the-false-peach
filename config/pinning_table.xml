@@ -941,7 +941,7 @@
       <scene>partfourtwoB</scene>
       <video>1</video>
       <sound>TTS.aloud</sound>
-      <lights>lightshow</lights>
+      <lights>character</lights>
    </pinned>
    
    <pinned>

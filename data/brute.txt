@@ -717,7 +717,7 @@
 1 1 57 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 1 58 511 Horatio 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f Of
 1 1 58 512 Horatio 0.9 0.7 2.6 1.0 37.0 l po11 mine
-1 1 58 513 Horatio 0.5 0.9 3.1 0.8 37.0 l d own
+1 1 58 513 Horatio 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 1 58 514 Horatio 2.0 2.0 3.1 1.2 23.0 l n2 eyes
 1 1 58 515 Horatio -1 -1 -1 -1 -1 l . .
 1 1 58 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -3922,7 +3922,7 @@
 1 2 172 3224 Hamlet 0.4 1.4 2.9 0.7 1.0 l n1 truster
 1 2 172 3225 Hamlet 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f of
 1 2 172 3226 Hamlet 2.1 1.6 2.1 1.3 242.0 l po22 your
-1 2 172 3227 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+1 2 172 3227 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 2 172 3228 Hamlet 1.5 1.1 1.2 1.2 5.0 l n1 report
 1 2 172 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 173 3229 Hamlet 2.5 1.8 1.1 2.2 23.0 l pp Against
@@ -5170,7 +5170,7 @@
 1 3 17 4210 Laertes 0.3 0.6 0.3 0.0 344.0 l vbz is
 1 3 17 4211 Laertes 0.6 1.2 1.0 0.8 315.0 l xx not
 1 3 17 4212 Laertes 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-1 3 17 4213 Laertes 0.5 0.9 3.1 0.8 37.0 l d own
+1 3 17 4213 Laertes 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 3 17 4214 Laertes -1 -1 -1 -1 -1 l ; ;
 1 3 17 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 3 18 4215 Laertes 0.0 0.0 0.0 0.1 248.0 l c-acp For
@@ -5511,7 +5511,7 @@
 1 3 51 4515 Ophelia 0.5 1.3 0.9 1.1 1.0 l vvz recks
 1 3 51 4516 Ophelia 0.6 1.2 1.0 0.8 315.0 l xx not
 1 3 51 4517 Ophelia 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-1 3 51 4518 Ophelia 0.5 0.9 3.1 0.8 37.0 l d own
+1 3 51 4518 Ophelia 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 3 51 4519 Ophelia 0.2 0.2 0.3 0.3 1.0 l n1 rede
 1 3 51 4520 Ophelia -1 -1 -1 -1 -1 l . .
 1 3 51 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -5809,7 +5809,7 @@
 1 3 78 4775 Polonius -1 -1 -1 -1 -1 l : :
 1 3 78 4776 Polonius 0.1 0.6 0.6 0.3 738.0 l p-acp to
 1 3 78 4777 Polonius 0.1 0.1 0.8 0.1 13.0 l po21 thine
-1 3 78 4778 Polonius 0.5 0.9 3.1 0.8 37.0 l d own
+1 3 78 4778 Polonius 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 3 78 4779 Polonius 0 0 0 0 0 l n1 self
 1 3 78 4780 Polonius 0.6 1.1 0.8 0.8 226.0 l vbb be
 1 3 78 4781 Polonius 0.8 1.3 2.7 0.8 23.0 l j true
@@ -6900,7 +6900,7 @@
 1 4 37 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 4 38 5668 Hamlet 0.1 0.6 0.6 0.3 738.0 l p-acp To
 1 4 38 5669 Hamlet 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-1 4 38 5670 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+1 4 38 5670 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 4 38 5671 Hamlet 3.5 2.6 0.6 3.0 2.0 l n1 scandal
 1 4 38 5672 Hamlet -1 -1 -1 -1 -1 l . .
 1 4 38 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -9033,7 +9033,7 @@
 1 5 131 7414 Hamlet 0.7 0.8 0.4 0.3 967.0 l cc and
 1 5 131 7415 Hamlet 0.0 0.0 0.0 0.1 248.0 l p-acp for
 1 5 131 7416 Hamlet 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 131 7417 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+1 5 131 7417 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 1 5 131 7418 Hamlet 2.7 2.5 0.3 3.7 20.0 l j poor
 1 5 131 7419 Hamlet 2.6 2.2 0.7 1.9 25.0 l n1 part
 1 5 131 7420 Hamlet -1 -1 -1 -1 -1 l , ,
@@ -14318,7 +14318,7 @@
 2 2 277 11726 Hamlet 0.3 0.6 0.3 0.0 344.0 ab vbz Is
 2 2 277 11727 Hamlet 0.5 0.4 0.1 0.5 417.0 ab pn31 it
 2 2 277 11728 Hamlet 2.1 1.6 2.1 1.3 242.0 ab po22 your
-2 2 277 11729 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+2 2 277 11729 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 2 2 277 11730 Hamlet 0.9 1.1 1.8 0.5 1.0 ab n-vvg inclining
 2 2 277 11731 Hamlet -1 -1 -1 -1 -1 ab ? ?
 2 2 277 11732 Hamlet 0.3 0.6 0.3 0.0 344.0 ab vbz Is
@@ -15135,7 +15135,7 @@
 2 2 355 12474 Hamlet 2.3 2.0 3.3 1.3 1.0 ab vvi exclaim
 2 2 355 12475 Hamlet 2.5 1.8 1.1 2.2 23.0 ab pp against
 2 2 355 12476 Hamlet 0.1 0.1 0.3 0.1 58.0 ab po32 their
-2 2 355 12477 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+2 2 355 12477 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 2 2 355 12478 Hamlet 0.3 0.9 2.0 0.8 2.0 ab n1 succession
 2 2 355 12479 Hamlet -1 -1 -1 -1 -1 ab ? ?
 2 2 355 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -17002,7 +17002,7 @@
 2 2 536 14123 Hamlet 0.1 0.4 0.3 0.5 75.0 ab pno32 them
 2 2 536 14124 Hamlet 0.3 0.3 0.7 0.5 14.0 ab p-acp after
 2 2 536 14125 Hamlet 2.1 1.6 2.1 1.3 242.0 ab po22 your
-2 2 536 14126 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+2 2 536 14126 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 2 2 536 14127 Hamlet 0.6 0.9 4.6 0.9 11.0 ab n1 honour
 2 2 536 14128 Hamlet 0.7 0.8 0.4 0.3 967.0 ab cc and
 2 2 536 14129 Hamlet 0.7 0.6 2.7 1.1 2.0 ab n1 dignity
@@ -17241,7 +17241,7 @@
 2 2 557 14306 Hamlet 0.55 0.5 0.25 0.65 1.0 l av so
 2 2 557 14307 Hamlet 0.1 0.6 0.6 0.3 738.0 l p-acp to
 2 2 557 14308 Hamlet 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-2 2 557 14309 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+2 2 557 14309 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 2 2 557 14310 Hamlet 1.7 1.3 0.8 1.9 5.0 l n1 conceit
 2 2 557 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 558 14311 Hamlet 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 l cst That
@@ -19279,7 +19279,7 @@
 3 1 133 16020 Hamlet 0.5 0.8 0.4 0.8 56.0 ab q-crq where
 3 1 133 16021 Hamlet 1.1 1.22222222222 0.555555555556 1.0 271.0 ab p-acp but
 3 1 133 16022 Hamlet 0.0 0.4 0.3 0.2 5.0 ab p-acp|po31 in's
-3 1 133 16023 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+3 1 133 16023 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 3 1 133 16024 Hamlet 2.55555555556 1.33333333333 3.0 2.22222222222 5.0 ab n1 house
 3 1 133 16025 Hamlet -1 -1 -1 -1 -1 ab . .
 3 1 133 16026 Hamlet 2.0 2.1 1.3 4.1 17.0 ab uh-n Farewell
@@ -20134,7 +20134,7 @@
 3 2 18 16765 Hamlet 1.1 1.22222222222 0.555555555556 1.0 271.0 ab cc-acp but
 3 2 18 16766 Hamlet 1.77777777778 1.9 2.8 1.1 96.0 ab vvb let
 3 2 18 16767 Hamlet 2.1 1.6 2.1 1.3 242.0 ab po22 your
-3 2 18 16768 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+3 2 18 16768 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 3 2 18 16769 Hamlet 1.3 2.6 1.5 1.0 4.0 ab n1 discretion
 3 2 19 16770 Hamlet 0.6 1.1 0.8 0.8 226.0 ab vbi be
 3 2 19 16771 Hamlet 2.1 1.6 2.1 1.3 242.0 ab po22 your
@@ -20212,7 +20212,7 @@
 3 2 25 16843 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 25 16844 Hamlet 3.0 2.5 1.0 2.7 1.0 ab n1 scorn
 3 2 25 16845 Hamlet 0.9 1.1 1.6 1.5 91.0 ab po31 her
-3 2 26 16846 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+3 2 26 16846 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 3 2 26 16847 Hamlet 0.6 0.2 1.6 0.5 4.0 ab n1 image
 3 2 26 16848 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 26 16849 Hamlet 0.7 0.8 0.4 0.3 967.0 ab cc and
@@ -22267,7 +22267,7 @@
 3 2 195 18383 Player_King 0.3 0.3 4.7 0.4 8.0 l n1 joy
 3 2 195 -1 Player_King -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 196 18384 Player_King 0.1 0.1 0.3 0.1 58.0 l po32 Their
-3 2 196 18385 Player_King 0.5 0.9 3.1 0.8 37.0 l d own
+3 2 196 18385 Player_King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 2 196 18386 Player_King 1.77777777778 1.33333333333 1.11111111111 1.55555555556 1.0 l n2 enactures
 3 2 196 18387 Player_King 0.4 0.4 1.0 0.3 267.0 l pp with
 3 2 196 18388 Player_King 0.444444444444 0.777777777778 1.3 1.11111111111 5.0 l px32 themselves
@@ -22437,7 +22437,7 @@
 3 2 212 18536 Player_King 1.5 1.2 0.7 2.2 13.0 l pix none
 3 2 212 18537 Player_King 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f of
 3 2 212 18538 Player_King 1.1 0.7 1.7 1.2 118.0 l po12 our
-3 2 212 18539 Player_King 0.5 0.9 3.1 0.8 37.0 l d own
+3 2 212 18539 Player_King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 2 212 18540 Player_King -1 -1 -1 -1 -1 l : :
 3 2 212 -1 Player_King -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 213 18541 Player_King 0.55 0.5 0.25 0.65 1.0 l av So
@@ -23732,7 +23732,7 @@
 3 2 333 19591 Rosencrantz 0.2 0.8 1.1 0.3 5.0 ab n1 door
 3 2 333 19592 Rosencrantz 1.0 0.5 1.1 0.7 55.0 ab p-acp upon
 3 2 333 19593 Rosencrantz 2.1 1.6 2.1 1.3 242.0 ab po22 your
-3 2 333 19594 Rosencrantz 0.5 0.9 3.1 0.8 37.0 ab d own
+3 2 333 19594 Rosencrantz 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 3 2 333 19595 Rosencrantz 1.6 1.4 3.7 1.2 5.0 ab n1 liberty
 3 2 333 19596 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 3 2 333 19597 Rosencrantz 0.7 0.5 0.8 0.7 114.0 ab cs if
@@ -25034,7 +25034,7 @@
 3 3 55 20663 King 0.8 1.5 3.4 0.7 6.0 l n1 crown
 3 3 55 20664 King -1 -1 -1 -1 -1 l , ,
 3 3 55 20665 King 0.9 0.7 2.6 1.0 37.0 l po11 mine
-3 3 55 20666 King 0.5 0.9 3.1 0.8 37.0 l d own
+3 3 55 20666 King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 3 55 20667 King 1.2 2.1 3.3 0.3 6.0 l n1 ambition
 3 3 55 20668 King 0.7 0.8 0.4 0.3 967.0 l cc and
 3 3 55 20669 King 0.4 0.3 1.9 0.3 514.0 l po11 my
@@ -26570,7 +26570,7 @@
 3 4 84 21913 Hamlet 1.0 1.1 0.5 2.1 2.0 l vvb melt
 3 4 84 21914 Hamlet 0.3 0.1 0.4 0.4 439.0 l p-acp in
 3 4 84 21915 Hamlet 0.9 1.1 1.6 1.5 91.0 l po31 her
-3 4 84 21916 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+3 4 84 21916 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 4 84 21917 Hamlet 2.33333333333 3.55555555556 0.666666666667 1.0 12.0 l n1 fire
 3 4 84 21918 Hamlet -1 -1 -1 -1 -1 l : :
 3 4 84 21919 Hamlet 0.777777777778 0.8 3.2 0.5 2.0 l vvb proclaim
@@ -27843,7 +27843,7 @@
 3 4 194 22998 Hamlet 0.7 0.8 0.4 0.3 967.0 l cc And
 3 4 194 22999 Hamlet 2.5 1.6 0.8 1.7 8.0 l vvb break
 3 4 194 23000 Hamlet 2.1 1.6 2.1 1.3 242.0 l po22 your
-3 4 194 23001 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+3 4 194 23001 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 4 194 23002 Hamlet 0.4 0.6 1.0 0.7 3.0 l n1 neck
 3 4 194 23003 Hamlet 0.9 0.9 0.1 2.5 28.0 l a-acp down
 3 4 194 23004 Hamlet -1 -1 -1 -1 -1 l . .
@@ -27967,7 +27967,7 @@
 3 4 205 23102 Hamlet 0.5 1.2 2.2 0.7 1.0 l vvn Hoist
 3 4 205 23103 Hamlet 0.4 0.4 1.0 0.3 267.0 l pp with
 3 4 205 23104 Hamlet 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-3 4 205 23105 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+3 4 205 23105 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 3 4 205 23106 Hamlet 0 0 0 0 0 l n1 petar
 3 4 205 23107 Hamlet -1 -1 -1 -1 -1 l : :
 3 4 205 23108 Hamlet 0 0 0 0 0 l cc|pn31 and't
@@ -28170,7 +28170,7 @@
 4 1 5 23239 Gertrude 0.4 0.3 1.3 0.9 6.0 l uh Ah
 4 1 5 23240 Gertrude -1 -1 -1 -1 -1 l , ,
 4 1 5 23241 Gertrude 0.9 0.7 2.6 1.0 37.0 l po11 mine
-4 1 5 23242 Gertrude 0.5 0.9 3.1 0.8 37.0 l d own
+4 1 5 23242 Gertrude 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 1 5 23243 Gertrude 1.3 2.7 2.5 1.3 310.0 l n1 lord
 4 1 5 23244 Gertrude -1 -1 -1 -1 -1 l , ,
 4 1 5 23245 Gertrude 0.4 1.1 0.5 0.6 207.0 l q-crq what
@@ -28779,7 +28779,7 @@
 4 2 11 23720 Hamlet 0.7 0.8 0.4 0.3 967.0 ab cc and
 4 2 11 23721 Hamlet 0.6 1.2 1.0 0.8 315.0 ab xx not
 4 2 11 23722 Hamlet 0.9 0.7 2.6 1.0 37.0 ab po11 mine
-4 2 11 23723 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+4 2 11 23723 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 4 2 11 23724 Hamlet -1 -1 -1 -1 -1 ab . .
 4 2 12 23725 Hamlet 1.0 0.6 0.9 0.9 1.0 ab a-acp Besides
 4 2 12 23726 Hamlet -1 -1 -1 -1 -1 ab , ,
@@ -30736,7 +30736,7 @@
 4 5 10 25259 Gentleman 0.8 0.9 2.4 0.9 12.0 l j fit
 4 5 10 25260 Gentleman 0.1 0.6 0.6 0.3 738.0 l p-acp to
 4 5 10 25261 Gentleman 0.1 0.1 0.3 0.1 58.0 l po32 their
-4 5 10 25262 Gentleman 0.5 0.9 3.1 0.8 37.0 l d own
+4 5 10 25262 Gentleman 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 5 10 25263 Gentleman 1.9 1.4 3.2 1.8 17.0 l n2 thoughts
 4 5 10 25264 Gentleman -1 -1 -1 -1 -1 l ; ;
 4 5 10 -1 Gentleman -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -31469,7 +31469,7 @@
 4 5 80 -1 King -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 5 81 25837 King 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f Of
 4 5 81 25838 King 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-4 5 81 25839 King 0.5 0.9 3.1 0.8 37.0 l d own
+4 5 81 25839 King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 5 81 25840 King 0.666666666667 0.0 1.88888888889 0.666666666667 2.0 l j just
 4 5 81 25841 King 1.5 1.9 0.5 1.7 2.0 l n1 remove
 4 5 81 25842 King -1 -1 -1 -1 -1 l : :
@@ -34174,7 +34174,7 @@
 4 7 60 -1 King -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 60 28051 King 0.1 0.6 0.6 0.3 738.0 l p-acp To
 4 7 60 28052 King 0.1 0.1 0.8 0.1 13.0 l po21 thine
-4 7 60 28053 King 0.5 0.9 3.1 0.8 37.0 l d own
+4 7 60 28053 King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 7 60 28054 King 0.4 0.8 4.1 0.3 10.0 l n1 peace
 4 7 60 28055 King -1 -1 -1 -1 -1 l . .
 4 7 60 28056 King 0.7 0.5 0.8 0.7 114.0 l cs If
@@ -34815,7 +34815,7 @@
 4 7 117 28599 King 2.5 2.8 0.7 4.5 8.0 l vvz Dies
 4 7 117 28600 King 0.3 0.1 0.4 0.4 439.0 l p-acp in
 4 7 117 28601 King 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 l po31 his
-4 7 117 28602 King 0.5 0.9 3.1 0.8 37.0 l d own
+4 7 117 28602 King 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 7 117 28603 King 0.5 0.6 0.8 0.5 51.0 l av too
 4 7 117 28604 King 0.9 1.2 1.9 0.2 50.0 l av-d much
 4 7 117 28605 King -1 -1 -1 -1 -1 l : :
@@ -35480,7 +35480,7 @@
 4 7 177 29181 Gertrude 1.8 3.2 0.1 3.8 1.0 l j incapable
 4 7 177 29182 Gertrude 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f of
 4 7 177 29183 Gertrude 0.9 1.1 1.6 1.5 91.0 l po31 her
-4 7 177 29184 Gertrude 0.5 0.9 3.1 0.8 37.0 l d own
+4 7 177 29184 Gertrude 0.5 0.9 3.1 0.8 37.0 l j-jn own
 4 7 177 29185 Gertrude 2.77777777778 3.66666666667 0.0 3.55555555556 1.0 l n1 distress
 4 7 177 29186 Gertrude -1 -1 -1 -1 -1 l , ,
 4 7 177 -1 Gertrude -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -35711,7 +35711,7 @@
 5 1 2 29349 First_Clown 2.4 1.5 1.7 1.8 1.0 ab av-j wilfully
 5 1 2 29350 First_Clown 0.7 0.8 3.0 0.9 2.0 ab vvz seeks
 5 1 2 29351 First_Clown 0.9 1.1 1.6 1.5 91.0 ab po31 her
-5 1 2 29352 First_Clown 0.5 0.9 3.1 0.8 37.0 ab d own
+5 1 2 29352 First_Clown 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 5 1 2 29353 First_Clown 1.2 1.9 4.1 1.2 2.0 ab n1 salvation
 5 1 2 29354 First_Clown -1 -1 -1 -1 -1 ab ? ?
 5 1 2 -1 First_Clown -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -35756,7 +35756,7 @@
 5 1 6 29388 First_Clown 0.6 1.3 1.7 0.5 6.0 ab px31 herself
 5 1 6 29389 First_Clown 0.3 0.1 0.4 0.4 439.0 ab p-acp in
 5 1 6 29390 First_Clown 0.9 1.1 1.6 1.5 91.0 ab po31 her
-5 1 6 29391 First_Clown 0.5 0.9 3.1 0.8 37.0 ab d own
+5 1 6 29391 First_Clown 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 5 1 7 29392 First_Clown 2.0 1.8 1.3 1.2 2.0 ab n1 defence
 5 1 7 29393 First_Clown -1 -1 -1 -1 -1 ab ? ?
 5 1 7 -1 First_Clown -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -35913,12 +35913,12 @@
 5 1 20 29533 First_Clown 2.55555555556 1.7 0.0 3.44444444444 6.0 ab j guilty
 5 1 20 29534 First_Clown 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 ab pp-f of
 5 1 20 29535 First_Clown 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 ab po31 his
-5 1 20 29536 First_Clown 0.5 0.9 3.1 0.8 37.0 ab d own
+5 1 20 29536 First_Clown 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 5 1 20 29537 First_Clown 1.8 2.9 0.5 4.4 37.0 ab n1 death
 5 1 20 29538 First_Clown 0.8 0.8 0.5 1.6 1.0 ab vvz shortens
 5 1 20 29539 First_Clown 0.6 1.2 1.0 0.8 315.0 ab xx not
 5 1 21 29540 First_Clown 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 ab po31 his
-5 1 21 29541 First_Clown 0.5 0.9 3.1 0.8 37.0 ab d own
+5 1 21 29541 First_Clown 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 5 1 21 29542 First_Clown 1.9 2.3 4.0 2.4 32.0 ab n1 life
 5 1 21 29543 First_Clown -1 -1 -1 -1 -1 ab . .
 5 1 21 -1 First_Clown -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -37762,7 +37762,7 @@
 5 1 195 31094 Hamlet 0.1 0.6 0.6 0.3 738.0 ab pc-acp to
 5 1 195 31095 Hamlet 3.6 1.7 0.6 2.4 4.0 ab vvi mock
 5 1 195 31096 Hamlet 2.1 1.6 2.1 1.3 242.0 ab po22 your
-5 1 195 31097 Hamlet 0.5 0.9 3.1 0.8 37.0 ab d own
+5 1 195 31097 Hamlet 0.5 0.9 3.1 0.8 37.0 ab j-jn own
 5 1 195 31098 Hamlet 1.1 1.0 2.8 1.1 1.0 ab n-vvg grinning
 5 1 195 31099 Hamlet -1 -1 -1 -1 -1 ab ? ?
 5 1 196 31100 Hamlet 1.6 1.9 1.5 1.8 4.0 ab av quite
@@ -38101,7 +38101,7 @@
 5 1 223 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 224 31363 Hamlet 0.25 0.0 0.375 0.375 1.0 l vvi Fordo
 5 1 224 31364 Hamlet 0.5 0.4 0.1 0.5 417.0 l pn31 it
-5 1 224 31365 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+5 1 224 31365 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 5 1 224 31366 Hamlet 1.9 2.3 4.0 2.4 32.0 l n1 life
 5 1 224 31367 Hamlet -1 -1 -1 -1 -1 l : :
 5 1 224 31368 Hamlet 0 0 0 0 0 l pn31|vbd 'twas
@@ -39233,7 +39233,7 @@
 5 2 15 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 16 32228 Hamlet 0.1 0.6 0.6 0.3 738.0 l p-acp To
 5 2 16 32229 Hamlet 0.9 0.7 2.6 1.0 37.0 l po11 mine
-5 2 16 32230 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+5 2 16 32230 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 5 2 16 32231 Hamlet 0.8 1.1 1.3 0.4 14.0 l n1 room
 5 2 16 32232 Hamlet 0.4 0.7 1.0 0.6 32.0 l av again
 5 2 16 32233 Hamlet -1 -1 -1 -1 -1 l ; ;
@@ -39694,7 +39694,7 @@
 5 2 59 32622 Hamlet 0.3 0.2 0.3 0.3 26.0 l vdz Does
 5 2 59 32623 Hamlet 0.2 0.2 0.5 0.4 117.0 l p-acp by
 5 2 59 32624 Hamlet 0.1 0.1 0.3 0.1 58.0 l po32 their
-5 2 59 32625 Hamlet 0.5 0.9 3.1 0.8 37.0 l d own
+5 2 59 32625 Hamlet 0.5 0.9 3.1 0.8 37.0 l j-jn own
 5 2 59 32626 Hamlet 2.2 1.5 1.1 1.8 1.0 l n1 insinuation
 5 2 59 32627 Hamlet 0.8 0.9 3.0 0.6 8.0 l vvb grow
 5 2 59 32628 Hamlet -1 -1 -1 -1 -1 l : :
@@ -42607,7 +42607,7 @@
 5 2 304 34979 Laertes 1.11111111111 1.33333333333 1.66666666667 0.777777777778 1.0 l n1 woodcock
 5 2 304 34980 Laertes 0.1 0.6 0.6 0.3 738.0 l p-acp to
 5 2 304 34981 Laertes 0.9 0.7 2.6 1.0 37.0 l po11 mine
-5 2 304 34982 Laertes 0.5 0.9 3.1 0.8 37.0 l d own
+5 2 304 34982 Laertes 0.5 0.9 3.1 0.8 37.0 l j-jn own
 5 2 304 34983 Laertes 1.8 1.4 1.5 1.8 1.0 l n1 springe
 5 2 304 34984 Laertes -1 -1 -1 -1 -1 l , ,
 5 2 304 34985 Laertes 0.75 0.75 0.75 0.5 31.0 l np1 Osric
@@ -42619,7 +42619,7 @@
 5 2 305 34990 Laertes 4.0 3.9 0.3 3.4 2.0 l vvn killed
 5 2 305 34991 Laertes 0.4 0.4 1.0 0.3 267.0 l pp with
 5 2 305 34992 Laertes 0.9 0.7 2.6 1.0 37.0 l po11 mine
-5 2 305 34993 Laertes 0.5 0.9 3.1 0.8 37.0 l d own
+5 2 305 34993 Laertes 0.5 0.9 3.1 0.8 37.0 l j-jn own
 5 2 305 34994 Laertes 3.2 2.7 0.3 2.8 2.0 l n1 treachery
 5 2 305 34995 Laertes -1 -1 -1 -1 -1 l . .
 5 2 305 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE

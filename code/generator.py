@@ -72,7 +72,7 @@ class Generator:
       # Keep track of how many words the current character has said
       self.current_speaker_line_count = 0
       # List of major characters
-      self.major_characters = ['HAMLET','GERTRUDE','GHOST','KING','HORATIO','OPHELIA']
+      self.major_characters = ['HAMLET','GERTRUDE','GHOST','KING','HORATIO','OPHELIA','FIRST_CLOWN']
       # Dictionary mapping all character names to the correct characters
       self.characters = {"HAMLET"  : ["HAMLET"],
                          "GERTRUDE": ["GERTRUDE"],

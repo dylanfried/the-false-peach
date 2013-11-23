@@ -472,6 +472,8 @@ class LooseyClient:
                      time.sleep(0.15)
                   elif self.scene == "FiveTwo" or self.scene == "3pcntORIG":
                      time.sleep(0.3)
+                  elif self.scene in ["hamsolilddop","2bMirror","deathspeech"]:
+                     time.sleep(1.2)
                   else:
                      time.sleep(0.5)
                #else:
