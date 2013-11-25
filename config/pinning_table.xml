@@ -788,7 +788,7 @@
    
    <pinned>
       <scene>letterFive</scene>
-      <video>1,12</video>
+      <video>1</video>
       <sound>TTS.aloud.ROGUI</sound>
       <lights>theatre</lights>
    </pinned>
