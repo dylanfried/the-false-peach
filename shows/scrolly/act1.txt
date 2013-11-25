@@ -1,6 +1,6 @@
 @@@@@@@@@@@@@@@ Act name:scene @@@@@@@@@@@@@@@@
 SEND SCROLL VALUE 1
-################# SCENE 3pcntORIG 4_TTS.aloud_0_theatre wordcount:2080 strategy:markov #################
+################# SCENE 3pcntORIG 4_TTS.aloud_0_theatre wordcount:2079 strategy:markov #################
 BLACKOUT
 SEND STYLES 4_TTS.aloud_0_theatre
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
@@ -534,8 +534,8 @@ GENTLEMAN: [-1, -1, -1, -1]
 SEND WHO GENTLEMAN
 That: [-1, -1, -1, -1], carry: [1.0, 0.9, 2.4, 0.9], but: [1.1, 1.2, 0.6, 1.0], half: [1.2, 1.2, 1.7, 1.0], sense:: [-1, -1, -1, -1], her: [0.9, 1.1, 1.6, 1.5], speech: [0.6, 0.4, 1.6, 0.3], is: [0.3, 0.6, 0.3, 0.0], nothing,: [-1, -1, -1, -1]
 SEND LINE ' That carry but half sense: her speech is nothing, '
-but: [1.1, 1.2, 0.6, 1.0], half: [1.2, 1.2, 1.7, 1.0], sense:: [-1, -1, -1, -1], her: [0.9, 1.1, 1.6, 1.5], speech: [0.6, 0.4, 1.6, 0.3], is: [0.3, 0.6, 0.3, 0.0], nothing: [1.0, 1.9, 0.8, 2.4]
-SEND LINE ' but half sense: her speech is nothing'
+carry: [1.0, 0.9, 2.4, 0.9], but: [1.1, 1.2, 0.6, 1.0], half: [1.2, 1.2, 1.7, 1.0], sense:: [-1, -1, -1, -1], her: [0.9, 1.1, 1.6, 1.5], speech: [0.6, 0.4, 1.6, 0.3]
+SEND LINE ' carry but half sense: her speech'
 Act: [-1, -1, -1, -1], 5,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 5, Scene 1 
@@ -631,3 +631,4 @@ TRIGGER: sound [u'cannon', u'shot']
 TRIGGER: sound [u'ordnance', u'shot']
 TRIGGER: sound [u'ordnance', u'is', u'shot']
 Stagedir (Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off.)
+

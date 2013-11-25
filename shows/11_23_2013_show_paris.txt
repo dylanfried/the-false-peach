@@ -1,0 +1,2250 @@
+@@@@@@@@@@@@@@@ Act name:scene @@@@@@@@@@@@@@@@
+################# SCENE 3pcntORIG 4_TTS.aloud_0_theatre wordcount:2079 strategy:markov #################
+================ CHUNK 1 ActOneSceneOne  ================ 
+  Act 1, Scene 1 
+ ( place Elsinore. A platform before the castle. FRANCISCO at his post.)  
+   
+ ( entrance Enter to him BERNARDO.) 
+ BERNARDO 
+ Who's there? 
+ FRANCISCO 
+ Nay, answer me: stand, and unfold yourself. 
+ BERNARDO 
+ Long live the king! 
+ FRANCISCO 
+ Bernardo? 
+ BERNARDO 
+ He. 
+ FRANCISCO 
+ You come most carefully upon your hour. 
+ BERNARDO 
+ 'Tis now struck twelve; get thee to bed, Francisco. 
+ FRANCISCO 
+ For this relief much thanks: 'tis bitter cold, 
+ And I am sick at heart.
+================ CHUNK 1 ActOneSceneTwo  ================ 
+  Act 1, Scene 2 
+ ( place A room of state in the castle.) 
+================ CHUNK 1   ================ 
+  
+ ( sound Flourish.) 
+ ( exit Exeunt all but Hamlet.) 
+
+================ CHUNK 1   ================ 
+  
+ HAMLET 
+ O, that this too too solid flesh would melt, 
+ Thaw and resolve itself into a dew! 
+ Or that the Everlasting had not fixed 
+ His canon 'gainst self-slaughter! O God! God! 
+ How weary, stale, flat and unprofitable, 
+ Seem to me all the uses of this world! 
+ Fie on't! ah fie! 'tis an unweeded garden, 
+ That grows to seed; things rank and gross in nature 
+ Possess it merely.
+================ CHUNK 1 ActOneSceneThree  ================ 
+  Act 1, Scene 3 
+ ( place A room in Polonius' house.) 
+ ( entrance Enter LAERTES and OPHELIA.) 
+ LAERTES 
+ My necessaries are embarked: farewell: 
+ And, sister, as the winds give benefit 
+ And convey is assistant, do not sleep, 
+ But let me hear from you. 
+ OPHELIA 
+ Do you doubt that? 
+ LAERTES 
+ For Hamlet and the trifling of his favour, 
+ Hold it a fashion and a toy in blood, 
+ A violet in the youth of primy nature, 
+ Forward, not permanent, sweet, not lasting, 
+ The perfume and suppliance of a minute; 
+ No more.
+================ CHUNK 1 ActOneSceneFive  ================ 
+  Act 1, Scene 5 
+ ( place Another part of the platform.) 
+ ( entrance Enter GHOST and HAMLET.) 
+ HAMLET 
+ Whither wilt thou lead me? speak; I'll go no further. 
+ GHOST 
+ Mark me. 
+ HAMLET 
+ I will. 
+ GHOST 
+ My hour is almost come, 
+ When I to sulphurous and tormenting flames 
+ Must render up myself. 
+ HAMLET 
+ Alas, poor ghost!
+================ CHUNK 1 ActTwoSceneOne  ================ 
+  Act 2, Scene 1 
+ ( place A room in Polonius' house.) 
+ ( entrance Enter POLONIUS and REYNALDO.) 
+================ CHUNK 1 ActTwoSceneOne  ================ 
+  
+ ( exit Exit REYNALDO.) 
+ ( entrance Enter OPHELIA.) 
+
+================ CHUNK 1 ActTwoSceneOne  ================ 
+  
+ OPHELIA 
+ O, my lord, my lord, I have been so affrighted! 
+ POLONIUS 
+ With what, i' the name of God? 
+ OPHELIA 
+ My lord, as I was sewing in my closet, 
+ Lord Hamlet, with his doublet all unbraced; 
+ No hat upon his head; his stockings fouled, 
+ Ungartered, and down-gyved to his ankle; 
+ Pale as his shirt; his knees knocking each other; 
+ And with a look so piteous in purport 
+ As if he had been loosed out of hell 
+ To speak of horrors, he comes before me. 
+ POLONIUS 
+ Mad for thy love? 
+ OPHELIA 
+ My lord, I do not know; 
+ But truly, I do fear it.
+================ CHUNK 1 ActTwoSceneTwo  ================ 
+  Act 2, Scene 2 
+ ( place A room in the castle.) 
+ ( sound Flourish.) 
+================ CHUNK 1 ActTwoSceneTwo  ================ 
+  
+ GUILDENSTERN 
+ My honoured lord! 
+ ROSENCRANTZ 
+ My most dear lord! 
+ HAMLET 
+ My excellent good friends! 
+ How dost thou, Guildenstern? 
+ Ah, Rosencrantz! 
+ Good lads, how do you both? 
+ ROSENCRANTZ 
+ As the indifferent children of the earth. 
+ GUILDENSTERN 
+ Happy, in that we are not overhappy; 
+ On fortune's cap we are not the very button. 
+ HAMLET 
+ Nor the soles of her shoe? 
+ ROSENCRANTZ 
+ Neither, my lord. 
+ HAMLET 
+ Then you live about her waist, or in the middle of her favours? 
+ GUILDENSTERN 
+ 'Faith, her privates we. 
+ HAMLET 
+ In the secret parts of fortune? 
+ O, most true; 
+ she is a strumpet. 
+
+================ CHUNK 1 ActThreeSceneOne  ================ 
+  Act 3, Scene 1 
+ ( place A room in the castle.) 
+================ CHUNK 1 ActThreeSceneOne  ================ 
+  
+ HAMLET 
+ To be, or not to be: that is the question: 
+ Whether 'tis nobler in the mind to suffer 
+ The slings and arrows of outrageous fortune, 
+ Or to take arms against a sea of troubles, 
+ And by opposing end them? To die: to sleep; 
+ No more; and by a sleep to say we end 
+ The heart-ache and the thousand natural shocks 
+ That flesh is heir to, 'tis a consummation 
+ Devoutly to be wished.
+================ CHUNK 1 ActThreeSceneTwo  ================ 
+  Act 3, Scene 2 
+ ( place A hall in the castle.) 
+================ CHUNK 1 ActThreeSceneTwo  ================ 
+  
+ ( sound Danish march. A flourish.) 
+ ( entrance Enter KING, QUEEN, POLONIUS, OPHELIA, ROSENCRANTZ, GUILDENSTERN, and others.)  
+   
+
+================ CHUNK 1 ActThreeSceneTwo  ================ 
+  
+ HAMLET 
+ Lady, shall I lie in your lap? 
+ ( action Lying down at Ophelia's feet.) 
+ OPHELIA 
+ No, my lord. 
+ HAMLET 
+ I mean, my head upon your lap? 
+ OPHELIA 
+ Ay, my lord. 
+ HAMLET 
+ Do you think I meant country matters? 
+ OPHELIA 
+ I think nothing, my lord. 
+ HAMLET 
+ That's a fair thought to lie between maids' legs. 
+ OPHELIA 
+ What is, my lord? 
+ HAMLET 
+ Nothing. 
+ OPHELIA 
+ You are merry, my lord. 
+ HAMLET 
+ Who, I? 
+ OPHELIA 
+ Ay, my lord. 
+ HAMLET 
+ O God, your only jig-maker. 
+ What should a man do but be merry? 
+ for, look you, how cheerfully my mother looks, 
+ and my father died within's two hours. 
+ OPHELIA 
+ Nay, 'tis twice two months, my lord. 
+ HAMLET 
+ So long? 
+ Nay then, let the devil wear black, 
+ for I'll have a suit of sables. 
+ O heavens! 
+ die two months ago, and not forgotten yet! 
+ Then there's hope a great man's memory may outlive his life half a year: 
+
+================ CHUNK 1 ActThreeSceneFour  ================ 
+  Act 3, Scene 4 
+ ( place The Queen's closet.) 
+ ( entrance Enter QUEEN and POLONIUS.) 
+ ( action Polonius hides behind the arras) 
+ ( entrance Enter HAMLET.) 
+================ CHUNK 1 ActThreeSceneFour  ================ 
+  
+ HAMLET 
+ Now, mother, what's the matter? 
+ GERTRUDE 
+ Hamlet, thou hast thy father much offended. 
+ HAMLET 
+ Mother, you have my father much offended. 
+ GERTRUDE 
+ Come, come, you answer with an idle tongue. 
+ HAMLET 
+ Go, go, you question with a wicked tongue. 
+ GERTRUDE 
+ Why, how now, Hamlet! 
+ HAMLET 
+ What's the matter now? 
+ GERTRUDE 
+ Have you forgot me? 
+ HAMLET 
+ No, by the rood, not so: 
+ You are the queen, your husband's brother's wife; 
+ And - would it were not so! - you are my mother. 
+
+================ CHUNK 1 ActFourSceneFour  ================ 
+  Act 4, Scene 4 
+ ( place A plain in Denmark.) 
+ ( entrance Enter FORTINBRAS, a Captain, and Soldiers, marching.)  
+   
+ ( exit Exeunt Fortinbras and Soldiers.) 
+ ( entrance Enter HAMLET, ROSENCRANTZ, GUILDENSTERN, and others.) 
+================ CHUNK 1 ActFourSceneFour  ================ 
+  
+ HAMLET 
+ I'll be with you straight. Go a little before. 
+ ( exit Exeunt all except Hamlet.) 
+ How all occasions do inform against me, 
+ And spur my dull revenge!
+================ CHUNK 1 ActFourSceneFive  ================ 
+  Act 4, Scene 5 
+ ( place Elsinore. A room in the castle.) 
+ ( entrance Enter QUEEN, HORATIO, and a Gentleman.) 
+ GERTRUDE 
+ I will not speak with her. 
+ GENTLEMAN 
+ She is importunate, indeed distract: 
+ Her mood will needs be pitied. 
+ GERTRUDE 
+ What would she have? 
+ GENTLEMAN 
+ She speaks much of her father; says she hears 
+ There's tricks i' the world; and hems, and beats her heart; 
+ Spurns enviously at straws; speaks things in doubt, 
+ That carry but half sense: her speech is nothing,
+================ CHUNK 1 ActFourSceneFive  ================ 
+  
+ GENTLEMAN 
+ That carry but half sense: her speech is nothing, 
+ carry but half sense: her speech
+================ CHUNK 1 ActFiveSceneOne  ================ 
+  Act 5, Scene 1 
+ ( place A churchyard.) 
+================ CHUNK 1 ActFiveSceneOne  ================ 
+  
+ ( entrance Enter HAMLET and HORATIO, at a distance.) 
+================ CHUNK 1 ActFiveSceneOne  ================ 
+  
+ ( action Takes the skull.) 
+ HAMLET 
+ Alas, poor Yorick! 
+ I knew him, Horatio: 
+ a fellow of infinite jest, of most excellent fancy: 
+ he hath bore me on his back a thousand times; 
+ and now, how abhorred in my imagination it is! 
+ my gorge rises at it. 
+ Here hung those lips that I have kissed I know not how oft. 
+ Where be your gibes now? 
+ your gambols? 
+ your songs? 
+ your flashes of merriment, that were wont to set the table on a roar? 
+
+================ CHUNK 1 ActFiveSceneTwo  ================ 
+  Act 5, Scene 2 
+ ( place A hall in the castle.) 
+ ( entrance Enter HAMLET and HORATIO.) 
+================ CHUNK 1 ActFiveSceneTwo  ================ 
+  
+ HAMLET 
+ O, I die, Horatio; 
+ The potent poison quite o'ercrows my spirit: 
+ I cannot live to hear the news from England; 
+ But I do prophesy the election lights 
+ On Fortinbras: he has my dying voice; 
+ So tell him, with the occurrents, more and less, 
+ Which have solicited. The rest is silence. 
+ ( action Dies.) 
+ HORATIO 
+ Now cracks a noble heart. Good night, sweet prince; 
+ And flights of angels sing thee to thy rest! 
+
+================ CHUNK 1 LastLine  scene_pause:1 ================ 
+  
+ ( sound A dead march.) 
+ ( exit Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off.)  
+   
+@@@@@@@@@@@@@@@ Act name:line @@@@@@@@@@@@@@@@
+################# SCENE new_filter 5_TTS.filter_0_lightshow wordcount:673 strategy:new_filter #################
+=================== CHUNK 1 Ofilter  ================
+HAMLET
+O good Horatio, I'll take the ghost's word for a thousand pound. Didst perceive?
+GERTRUDE
+O Hamlet, speak no more:  Thou turn'st my eyes into my very soul;
+GHOST
+O wicked wit and gifts, that have the power  So to seduce!
+HAMLET
+O Jephthah, judge of Israel, what a treasure hadst thou!
+MARCELLUS
+O, farewell, honest soldier:  Who hath relieved you?
+FIRST_CLOWN
+O, methought, there - a - was nothing - a - meet.
+POLONIUS
+O, give me leave:  How does my good Lord Hamlet?
+OPHELIA
+O, my lord, my lord, I have been so affrighted!
+GUILDENSTERN
+O, there has been much throwing about of brains.
+HORATIO
+O day and night, but this is wondrous strange!
+HAMLET
+O villain, villain, smiling, damned villain!
+HAMLET
+O all you host of heaven! O earth! what else?
+GERTRUDE
+O Hamlet, thou hast cleft my heart in twain.
+KING
+O, my offence is rank, it smells to heaven;
+KING
+O, yet defend me, friends; I am but hurt.
+GERTRUDE
+O, this is counter, you false Danish dogs!
+GHOST
+O, horrible! O, horrible! most horrible!
+KING
+O, speak of that; that do I long to hear.
+KING
+O wretched state! O bosom black as death!
+HORATIO
+O, yes, my lord; he wore his beaver up.
+OPHELIA
+O, what a noble mind is here o'erthrown!
+GERTRUDE
+O, what a rash and bloody deed is this!
+HAMLET
+O, what a rogue and peasant slave am I!
+GHOST
+O Hamlet, what a falling-off was there!
+KING
+O, this is the poison of deep grief;
+HAMLET
+O, the recorders! let me see one.
+OPHELIA
+O, help him, you sweet heavens!
+HAMLET
+O heart, lose not thy nature;
+HAMLET
+O, but she'll keep her word.
+KING
+O, for two special reasons;
+GERTRUDE
+O me, what hast thou done?
+LAERTES
+O heat, dry up my brains!
+POLONIUS
+O, ho! do you mark that?
+KING
+O, he is mad, Laertes.
+GERTRUDE
+O, speak to me no more;
+HAMLET
+O most pernicious woman!
+KING
+O Gertrude, come away!
+GERTRUDE
+O my son, what theme?
+PLAYER_QUEEN
+O, confound the rest!
+HAMLET
+O, I die, Horatio;
+HAMLET
+O my prophetic soul!
+KING
+O, 'tis too true!
+HAMLET
+O villainy! Ho!
+LAERTES
+O, fear me not.
+POLONIUS
+O, I am slain!
+KING
+O heavy burden!
+HAMLET
+O, wonderful!
+KING
+O heavy deed!
+LAERTES
+O heavens!
+HORATIO
+O, speak!
+HAMLET
+O, say!
+HAMLET
+O God!
+HAMLET
+O God!
+OPHELIA
+O ho!
+GERTRUDE
+Drowned, drowned. 
+ALL
+Treason! treason! 
+MARCELLUS
+Holla! Bernardo! 
+HORATIO
+Most constantly. 
+MARCELLUS_AND_BERNARDO
+Longer, longer. 
+GERTRUDE
+Hamlet, Hamlet! 
+KING
+Pretty Ophelia! 
+HAMLET
+Safely stowed. 
+HAMLET
+How strangely? 
+HORATIO
+Truly deliver. 
+LAERTES
+Well; again. 
+HORATIO
+'Tis strange. 
+ROSENCRANTZ
+Believe what? 
+KING
+For England. 
+KING
+Alas, alas! 
+HAMLET
+Buzz, buzz! 
+FIRST_PLAYER
+Did nothing. 
+KING
+Ay, Hamlet. 
+KING
+Speak, man. 
+HAMLET
+Between who? 
+HAMLET
+For England! 
+POLONIUS
+Come, sirs. 
+HAMLET
+Good madam! 
+HAMLET
+For Hecuba! 
+OSRIC
+Of Laertes? 
+FIRST_CLOWN
+Mine, sir. 
+HAMLET
+Saw? who? 
+HAMLET
+At supper. 
+GERTRUDE
+Ay, amen! 
+GERTRUDE
+Help, ho! 
+HORATIO
+'Tis here! 
+MARCELLUS
+'Tis gone! 
+HAMLET
+To heaven. 
+BERNARDO
+'Tis here! 
+HAMLET
+My uncle! 
+KING
+Leave us. 
+KING
+A Norman. 
+HAMLET
+But come; 
+OPHELIA
+My lord? 
+LAERTES
+No more. 
+GERTRUDE
+No more! 
+HAMLET
+Who, I? 
+GHOST
+Mark me. 
+HAMLET
+I will. 
+SECOND_CLOWN
+Go to. 
+HAMLET
+Judgement. 
+HAMLET
+Marcellus? 
+LAERTES
+Farewell. 
+FRANCISCO
+Bernardo? 
+POLONIUS
+Perpend. 
+HAMLET
+Nothing. 
+HAMLET
+Ecstasy! 
+KING
+Attend! 
+HAMLET
+Murder! 
+HAMLET
+Yours. 
+GHOST
+Swear. 
+GHOST
+Swear. 
+GHOST
+Swear. 
+HAMLET
+Good. 
+POLONIUS
+Come. 
+KING
+Dead. 
+HAMLET
+Come. 
+HAMLET
+What? 
+HAMLET
+This? 
+HAMLET
+One. 
+OSRIC
+Sir? 
+HAMLET
+Why? 
+BERNARDO
+He. 
+HAMLET
+No! 
+LAERTES
+No. 
+HAMLET
+Ha! 
+@@@@@@@@@@@@@@@ Act name:grammar @@@@@@@@@@@@@@@@
+################# SCENE ham_thing 6_TTS.inear.VOICE.aloud_0_actor3 wordcount:671 strategy:markov #################
+================ CHUNK 1 Hamthing  scene_pause:5 ================ 
+  
+ HAMLET 
+ cause 
+ will 
+ strength 
+ means 
+ cause 
+ malefactions 
+ tears 
+ body 
+ speed 
+ pause 
+ respect 
+ name 
+ woman 
+ oppression 
+ beard 
+ face 
+ cause 
+ revenge 
+ heaven 
+ hell 
+ king 
+ devil 
+ power 
+ egg-shell 
+ month 
+ seed 
+ things 
+ nature 
+ uncle 
+ army 
+ mass 
+ charge 
+ father 
+ discourse 
+ reason 
+ death 
+ garden 
+ table 
+ memory 
+ seat 
+ rub 
+ player 
+ Tears 
+ eyes 
+ mouths 
+ event 
+ devil 
+ power 
+ property 
+ life 
+ occasions 
+ death 
+ dreams 
+ face 
+ ghost 
+ memory 
+ seat 
+ rogue 
+ peasant 
+ slave 
+ discourse 
+ reason 
+ blood 
+ mind 
+ book 
+ volume 
+ brain 
+ dew 
+ ass 
+ murder 
+ tongue 
+ canon 
+ self-slaughter 
+ property 
+ life 
+ army 
+ mass 
+ charge 
+ villain 
+ villain 
+ heart-ache 
+ shocks 
+ body 
+ argument 
+ villain 
+ weakness 
+ faculties 
+ eyes 
+ distraction 
+ aspect 
+ cast 
+ thought 
+ part 
+ wisdom 
+ thought 
+ part 
+ wisdom 
+ insolence 
+ office 
+ HAMLET 
+ revenge 
+ heaven 
+ hell 
+ villain 
+ father 
+ whore 
+ heart 
+ words 
+ devil 
+ power 
+
+================ CHUNK 1 hamnoun  scene_pause:2 ================ 
+  
+ HAMLET 
+ like like 
+ the pregnant hinges the knee 
+ thrift 
+ dear soul mistress choice 
+ men election 
+ Fortinbras dying voice 
+ the pale cast thought 
+ heavy 
+ the unsatisfied 
+ HAMLET 
+ HAMLET 
+ some quantity choice 
+ such maimed rites This 
+ Hamlet 
+ HAMLET 
+ the Laertes 
+ Hamlet Laertes Hamlet 
+ madness 
+ the garden estate name's Gonzago the duke's name wife Baptista a knavish piece work 
+ HAMLET 
+ boy truepenny 
+ this theme 
+ eyelids longer 
+ HAMLET 
+ a dew 
+ the view these contents 
+ debatement 
+ those clowns more some quantity choice 
+ men election 
+ Fortinbras dying voice 
+ the salt most unrighteous tears 
+ God 
+ most like 
+ HAMLET 
+ a bare bodkin fardels 
+ a king a thing stops the heart mystery lowest note the top bent 
+ HAMLET 
+ man love this employment 
+ conscience defeat 
+ own neck 
+ HAMLET 
+ Good 
+ HAMLET 
+ HAMLET 
+ lady word 
+ wretched rash intruding fool 
+ better fortune 
+ arms this headshake 
+ some vicious mole nature 
+ further evil 
+ generous thoughts 
+ arrow the house 
+ brother 
+ HAMLET 
+ HAMLET 
+ Murder 
+ HAMLET 
+ the dread death 
+ time 
+ HAMLET 
+ th' a man 
+ the general censure corruption 
+ that Horatio thing 
+ HAMLET 
+ grief 
+ such a fellow infinite jest most excellent fancy back a times imagination gorge those lips gibes gambols
+################# SCENE hamsolilddop 10_TTS.inear.VOICE.aloud.MUSIC.iana_0_actor1 wordcount:417 strategy:ddop #################
+=================== CHUNK 1 hamddop  scene_pause:5 ================
+HAMLET
+Into a dew
+An unweeded garden
+Unweeded garden
+To a satyr
+To my mother
+Heaven and earth
+Increase of appetite
+Within a month
+A little month
+Little month
+Month, or
+A beast
+Discourse of reason
+Of reason
+My uncle
+Within a month
+The salt of
+Wicked speed
+I must hold
+=================== CHUNK 1 hamddop  ================
+HAMLET
+Host of heaven
+Poor ghost
+A seat In
+From the table
+The table of
+Youth and observation
+Within the book
+The book and
+Book and volume
+My brain
+Villain
+Uncle
+To my word
+=================== CHUNK 1 hamddop  ================
+HAMLET
+A rogue and
+Rogue and peasant
+In a fiction
+A fiction
+In a dream
+A dream of
+Dream of passion
+Of passion
+Voice, and
+The motive and
+The cue for
+Drown the stage
+The general ear
+Horrid speech
+Speech, Make
+Muddy-mettled rascal
+Rascal, peak
+My cause
+Cause, And
+For a king
+A king
+A coward
+My beard
+Beard, and
+In my face
+By the nose
+The nose
+The lie i'
+Lie i' the
+I' the throat
+The throat
+The son
+The son of
+Son of a
+To my revenge
+Heaven and hell
+A whore
+A stallion
+At a play
+Of the scene
+To the soul
+The murder of
+Before mine uncle
+Catch the conscience
+The conscience of
+Conscience of the
+Of the king
+The king
+=================== CHUNK 1 hamddop  ================
+HAMLET
+In the mind
+Outrageous fortune
+Fortune, Or
+Against a sea
+A sea of
+By a sleep
+The heart-ache and
+To sleep
+In that sleep
+Sleep of death
+Of time
+The insolence
+The insolence of
+Insolence of office
+Merit of the
+A bare bodkin
+To grunt
+A weary life
+Weary life
+The dread of
+The undiscovered country
+The will And
+Hue of resolution
+The pale cast
+Cast of thought
+Of thought
+Thought, And
+Pitch and moment
+The name of
+Name of action
+=================== CHUNK 1 hamddop  ================
+HAMLET
+A man
+A beast
+Large discourse
+Bestial oblivion
+Oblivion, or
+On the event
+The event
+A thought
+Cause and will
+Will and strength
+Mass and charge
+Tender prince
+The invisible event
+Invisible event
+Death and danger
+For an egg-shell
+An egg-shell
+Great argument
+Quarrel in a
+In a straw
+At the stake
+The stake
+A mother
+My blood
+Blood, And
+To my shame
+My shame
+The imminent death
+For a fantasy
+A fantasy and
+Fantasy and trick
+Trick of fame
+Of fame
+Fame, Go
+For a plot
+Try the cause
+The cause
+################# SCENE 2bMirror 10_TTS.inear.VOICE.aloud_0_actor4 wordcount:1124 strategy:mirror #################
+================ CHUNK 1 2b  scene_pause:7 ================ 
+  
+ HAMLET 
+ to be, and not to be: all Is The blood: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, and Not to be: every is the sandal: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ To be, and not to be: yon is a sense: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, And not to be: that is the quarrel: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, And not to be: this is a defence: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, And not to be: that is the life: 
+ Than 'tis nobler in The action To bear 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ To be, and not to be: this is a lordship: 
+ if 'tis higher in the shoe To get 
+ The years or souls of excellent duty, 
+ and to crook nations at a lord of spirits, 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, and not to be: that Is a duty: 
+ If 'Tis better to a fellow to prick 
+ a fingers And lives of busy bat, 
+ and there tent men with a rage of sides, 
+ and in giving Break them? to please: to range; 
+ No less; And to the god to sit we Believe 
+ the pipe and the one serious pastors 
+ that time is deed for, 'tis the watchman 
+ wittingly there be borne. to tear, to say; 
+ to walk: now to tread: Marry, there's the death; 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ there be, or not to be: this is the play: 
+ If 'tis Richer by the world to gain 
+ A airs and Words of infinite man, 
+ and to grow Angels with a reason of fingers, 
+ and as playing prepare them? to cost: To shatter; 
+ no more; or in the lord to grow We pray 
+ the throat and an threescore cruel cowards 
+ that skull is revenge on, 'Tis a cousin 
+ Long to be seized. there bellow, there prove; 
+ to follow: so to wince: O, There's a heed; 
+ about in That augury of Murder who regards will deliver 
+ Why We have pronounced in all another dove, 
+ will set us ability: There's the providence 
+ that courses father of so envious crust; 
+ As what might live a imaginations and hems of mountain, 
+ the mother's instant, a sweet heart's snow, 
+ the thoughts of damned lord, a king's chopine, 
+ the probation of yard And the shows 
+ that famous hand of the mad serves, 
+ whereto he itself would his command mark 
+ against The unnatural friend? Whose would thanks draw, 
+ To silence And unfold For the petty year, 
+ But that a harmony of aught in sandal, 
+ the true faith with Which o'ergrowth 
+ no heaven finds, wears The fancy 
+ and burns us sooner hold this others we have 
+ Than unseal For others That we hold not of? 
+ Thus liege Doth serve odds of us this; 
+ and perchance a native house of defence 
+ is forged on With the unseen diameter of treachery, 
+ and arms of infinite hate and curse 
+ into This bourn their letters Let thus, 
+ and Give The haviour of fate. - unmatched you together! 
+ the soft Fortinbras! cry, through thy recoveries 
+ are this my stones buried. 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ To be, and not There be: this is the answer: 
+
+================ CHUNK 1 2b  scene_pause:4 ================ 
+  
+ HAMLET 
+ to be, And not to be: that is a ear: 
+
+================ CHUNK 1 2bN  scene_pause:3 ================ 
+  
+ HAMLET 
+ and is 
+ HAMLET 
+ HAMLET 
+ be and 
+ HAMLET 
+ be and 
+ and is 
+ am not is 
+ And 
+ and are 
+ and not 
+ HAMLET 
+ HAMLET 
+ And not be 
+ Is 
+ No and 
+ and 
+ is is not 
+ and not not 
+ HAMLET 
+ HAMLET 
+ and 
+ HAMLET 
+ am 
+ not 
+ HAMLET 
+ HAMLET 
+ not is is 
+ not is 
+ HAMLET 
+ HAMLET 
+ and 
+ is not 
+ and 
+ be 
+ am be not 
+ be 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ is and no 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ are is be 
+ not Is 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ HAMLET 
+ is 
+ and and be not not 
+ HAMLET 
+ HAMLET 
+ Is 
+ Being 
+ HAMLET 
+ is be am 
+ HAMLET 
+ are 
+ be 
+ HAMLET 
+ is and no 
+ HAMLET 
+ HAMLET 
+ and 
+ HAMLET 
+ HAMLET 
+ and 
+ and 
+ HAMLET 
+ Is not 
+ HAMLET 
+ is 
+ and 
+ and 
+ HAMLET 
+ No 
+ HAMLET 
+ and 
+ HAMLET 
+ is 
+ cannot 
+ HAMLET 
+ HAMLET 
+ not 
+ and 
+ and or cannot not 
+ And is 
+ be 
+ and is 
+ and 
+ Be not 
+ And 
+ and 
+ and 
+ and 
+
+################# SCENE deathspeech 10_TTS.inear.VOICE.aloud_0_actor2 wordcount:850 strategy:mirror #################
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ earth Let thee soft of it! I let thee. 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ marble bear thee pure of it! I Let thee. 
+
+================ CHUNK 1 deathspeech  scene_pause:1 ================ 
+  
+ HAMLET 
+ Heaven make thee free of it! I follow thee. 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ I am dead, Horatio. Wretched queen, adieu! 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ I am infinite, Wittenberg. unused dread, farewell! 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ I am natural, God. quick basket, adieu! 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ you that let Wretched or Let at all imagination, that are to opposites and top within each passion, 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ you that Make infinite and Visit with same heaven, That are in sables or fire for this jaw, 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ You that look pale and tremble at this chance, That are but mutes or audience to this act, 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ Had I but time
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ had I to conscience -
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ had I for habit -
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ as some lean inheritor, headshake, is lecherous by his breath -
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ since That bad snow, heart, is sweet by her mistress -
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ as this fell sergeant, death, Is strict in his arrest -
+================ CHUNK 1 deathspeech  scene_pause:2 ================ 
+  
+ HAMLET 
+ O, I could tell you But let it be. 
+
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ But bless it be.
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ But kill it be.
+================ CHUNK 1 deathspeech  scene_pause:3 ================ 
+  
+ HAMLET 
+ God, I am warlike; thou find'st;
+================ CHUNK 1 deathspeech  scene_pause:2 ================ 
+  
+ HAMLET 
+ God, I am old; thou liest;
+================ CHUNK 1 deathspeech  scene_pause:2 ================ 
+  
+ HAMLET 
+ Horatio, I am dead; Thou livest;
+================ CHUNK 1 deathspeech  scene_pause:2 ================ 
+  
+ HAMLET 
+ report me and my cause aright To the unsatisfied.
+================ CHUNK 1 deathspeech  scene_pause:5 ================ 
+  
+ HAMLET 
+ O, I come, Niobe; 
+ the dry soul else knows My forehead: 
+ I cannot carry To laugh the end with Mars; 
+ But I do tell the body o'erreaches 
+ for God: he Has my croaking king; 
+ So pray him, with the things, less and more, 
+ which have wished. the wrath is mother. 
+
+================ CHUNK 1 kingthingmirror  scene_pause:3 ================ 
+  
+ HAMLET 
+ a plague Is hall.
+================ CHUNK 1 mirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the traveller is kind.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the heart is crocodile.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the cause is potency.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ The husband is canker.
+================ CHUNK 1 deathspeech  scene_pause:1 ================ 
+  
+ HAMLET 
+ a estimation is contumely.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ The mother is line.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the mother is lawyer.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the life is marriage.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the ghost is conceit.
+================ CHUNK 1 kingthingmirror  scene_pause:1 ================ 
+  
+ HAMLET 
+ the habit is world.
+================ CHUNK 1 silence  scene_pause:1 ================ 
+  
+ HAMLET 
+ The rest is silence.
+@@@@@@@@@@@@@@@ Act name:word @@@@@@@@@@@@@@@@
+################# SCENE partfourone 2_TTS.aloud.MUSIC.emotion_0_ghost wordcount:786 strategy:markov #################
+================ CHUNK 1 stagedir  ================ 
+  Act 1, Scene 1 
+ ( place Elsinore. A platform before the castle. FRANCISCO at his post.)  
+   
+ ( entrance Enter to him BERNARDO.) 
+================ CHUNK 1 oneone  ================ 
+  
+ BERNARDO 
+ Who's there? 
+ FRANCISCO 
+ Nay, answer me: stand, and unfold yourself. 
+ BERNARDO 
+ Long live the king! 
+ FRANCISCO 
+ Bernardo? 
+ BERNARDO 
+ He. 
+ FRANCISCO 
+ You come most carefully upon your hour.
+================ CHUNK 1 partfouroneA  ================ 
+  
+ BERNARDO 
+ He. 
+  (  entrance Enter HORATIO.)  
+ HORATIO 
+ Most lazar-like, with traitorous gifts, that have the power 
+ So have I heard and do in part believe it. 
+ But virtue, as it never will be moved, 
+ This present object made probation. 
+ If thou hast nature in thee, speak! I charge thee, 
+ speak! Stop it, 
+ Thy knotted and combined locks to part 
+ And, mermaid-like, awhile they bore her up: 
+ BERNARDO 
+ Sit down awhile; 
+ And our vain blows malicious mockery. 
+ HORATIO 
+ Before my God, I pray; and, at once! 
+  (  entrance Enter GERTRUDE.)  
+ GERTRUDE 
+ Drowned, drowned. 
+ FRANCISCO 
+ For this relief much thanks: 'tis bitter cold, 
+ O, horrible! O earth! what else? 
+  (  entrance Enter MARCELLUS.)  
+ MARCELLUS 
+ Speak to me: 
+ ( sound Cock crows.) 
+ If thou didst ever thy dear father love 
+  (  entrance Enter HAMLET.)  
+ HAMLET 
+ O, fie! Hold, hold, my sinews, grow not instant old, 
+ All saws of books, all forms, all forms, all pressures past, 
+ And prey on garbage. 
+ BERNARDO 
+ Sit down awhile; 
+ And you, my sinews, grow not instant old, 
+ The leperous distilment; whose effect 
+ Holds such an enmity with blood of man 
+  (  entrance Enter OPHELIA.)  
+ OPHELIA 
+ O wicked wit and gifts, that is the trumpet to the morn, 
+ The bell then beating one, 
+ With juice of cursed hebenon in a vial, 
+ Together with that fair and warlike form 
+ In what particular thought to work I know not: 
+ Such was the very armour he had on 
+ When yond same star that's westward from the table of my prison-house, 
+ MARCELLUS 
+ It is offended. 
+ Thus was I, sleeping in my orchard, 
+ That roots itself in a celestial bed, Francisco. 
+ HORATIO 
+ 'Tis given out that, sleeping in my days of nature 
+ Are burnt and purged away. But that I am sick at heart. 
+ BERNARDO 
+ In this distracted globe. Remember thee! 
+ My custom always of the afternoon, 
+ MARCELLUS 
+ Horatio says 'tis but our fantasy, 
+ To his confine: and of the body, 
+ And 'gins to pale his uneffectual fire: 
+ So hallowed and so gracious is that time.
+================ CHUNK 1 ghostscene  ================ 
+  
+  (  entrance Enter GHOST.)  
+ GHOST 
+ My hour is almost come, 
+ GHOST 
+ Mark me.
+================ CHUNK 1 ghostscene  ================ 
+  
+ GHOST 
+ Murder most foul, as in the porches of my most seeming virtuous queen in her bosom lodge court it in hand even with the vow 
+ I am forbid 
+ To what I shall unfold. 
+ But this most foul, strange and unnatural. 
+ But this most foul, strange and unnatural. 
+ But virtue, as in the blossoms of my prison-house, 
+ Thy knotted and combined locks to part 
+ And 'gins to pale his uneffectual fire: 
+ O, horrible!
+================ CHUNK 1 ghostscene  ================ 
+  
+ HAMLET 
+ Alas, poor ghost! 
+ My uncle! 
+ My uncle! 
+ My uncle! 
+
+================ CHUNK 1 ghostscene  ================ 
+  
+ GHOST 
+ Adieu, adieu, adieu, remember me. 
+
+================ CHUNK 1 exeunt  ================ 
+  
+ ( exit Exeunt.) 
+################# SCENE partfourtwoA 1_TTS.aloud_0_closet wordcount:358 strategy:markov #################
+================ CHUNK 1 parttwo  ================ 
+  Act 1, Scene 2 
+ ( place A room of state in the castle.) 
+================ CHUNK 1 parttwoA  ================ 
+  
+  
+ ( sound Flourish.) 
+ ( entrance Enter the KING, QUEEN, HAMLET, POLONIUS, LAERTES, VOLTIMAND, CORNELIUS, Lords, and Attendants.)  
+   
+
+================ CHUNK 1 parttwoA  ================ 
+  
+ KING 
+ Though yet of Hamlet our dear brother's death 
+ The imperial jointress to this warlike state, 
+ Together with remembrance of ourselves. 
+ May one be pardoned and retain the offence?
+================ CHUNK 1 parttwo  ================ 
+  
+  (  entrance Enter OPHELIA.)  
+ OPHELIA 
+ O, my lord, my lord, my lord, I have been so affrighted! 
+ O, I have been so affrighted! 
+ O, my lord, I have been so affrighted! 
+
+================ CHUNK 1 parttwoA  ================ 
+  
+ HAMLET 
+ The fair Ophelia! Nymph, in suffering all, that, struggling to be free, 
+ To have seen what I have thoughts to put them in. 
+
+================ CHUNK 1 HamOph  ================ 
+  
+ HAMLET 
+ You are naught: 
+ I'll mark the play. 
+ OPHELIA 
+ Nay, do not think I meant country matters? 
+ ( action Lying down at Ophelia's feet.) 
+ HAMLET 
+ No, let the devil wear black, 
+ for O, help him, you are naught, 
+ you know right well you did; 
+ For what advancement may I hope from thee 
+ That unmatched form and stature of blown youth 
+ Blasted with ecstasy: O, help him, 
+ you nickname God's creatures, and begin. 
+ Come: 
+ the croaking raven doth bellow for revenge. 
+
+================ CHUNK 1 HamOph  ================ 
+  
+ OPHELIA 
+ You are naught, you are naught: I'll mark the play. 
+
+################# SCENE dumb 14_TTS.mute_0_lightshow wordcount:252 strategy:markov #################
+================ CHUNK 1 thedumbshow  ================ 
+  
+ ( sound Hautboys play.) 
+ ( dumb The dumb-show enters.)  
+  ( dumb) 
+
+================ CHUNK 1   ================ 
+  
+  
+ ( dumb Enter a King dead,)  
+  ( dumb seeming to lament with her.)  
+  ( dumb The Poisoner,)  
+  ( dumb seeming to lament with her up,)  
+  ( dumb seeming to lament with her.)  
+  ( dumb Anon comes in again,)  
+  ( dumb seeing him down upon her.)  
+  ( dumb The Poisoner woos the Queen embracing him down upon her neck:)  
+  ( dumb she seems loath and unwilling awhile,)  
+  ( dumb and makes passionate action.)  
+  ( dumb She kneels,)  
+  ( dumb and makes passionate action.)  
+  ( dumb The dumb-show enters.)  
+  ( dumb The Queen with gifts:)  
+  ( dumb she,)  
+  ( dumb comes in the King dead body is carried away.)  
+  ( dumb She kneels,)  
+  ( dumb and makes passionate action.)  
+  ( dumb) 
+
+================ CHUNK 1   ================ 
+  
+ ( exit Exeunt.) 
+################# SCENE partfourtwoB 1_TTS.aloud_0_character wordcount:502 strategy:markov #################
+================ CHUNK 1   ================ 
+  
+ OPHELIA 
+ The king rises. 
+ HAMLET 
+ What, frighted with false fire! 
+ GERTRUDE 
+ How fares my lord? 
+ POLONIUS 
+ Give o'er the play. 
+ KING 
+ Give me some light: 
+ away! 
+
+================ CHUNK 1   ================ 
+  
+ GERTRUDE 
+ Give me some light: 
+ away! 
+ Give me some light: 
+ away! 
+ KING 
+ Give me some light: 
+ away! 
+ Give me some light: 
+ away! 
+
+================ CHUNK 1 parttwo  ================ 
+  
+ KING 
+ Give me some light: 
+ away! 
+ HAMLET 
+ Nay, then, I'll set those to you that can speak. 
+ GERTRUDE 
+ How fares my lord? 
+ In his true nature; and we ourselves compelled, 
+ Or pardoned being down? Then I'll look up; 
+ There is no shuffling, there the action lies 
+ In the rank sweat of an enseamed bed, 
+ A murderer and a villain; 
+ You go not till I set you up a glass 
+ Where you may see the inmost part of you. 
+ HAMLET 
+ Now, mother, what's the matter? 
+ And reason panders will. 
+ GERTRUDE 
+ O, what form of prayer 
+ Can serve my turn? Forgive me my foul murder? 
+ Try what repentance can: what can it not? 
+ HAMLET 
+ What's the matter now? 
+ Help, angels! Make assay! 
+ ( action Makes a pass through the arras.) 
+ OPHELIA 
+ O, I am slain! 
+ ( action Falls and dies.) 
+  (  entrance Enter OPHELIA.)  
+ OPHELIA 
+ And there I see such black and grained spots 
+ As will not leave their tinct. 
+ GERTRUDE 
+ O Hamlet, speak to me no more: 
+ Thou turn'st my eyes into my very soul; 
+ And both neglect. What if this cursed hand 
+ Were thicker than itself with brother's blood, 
+ Is there not rain enough in the sweet heavens 
+ To wash it white as snow? Whereto serves mercy 
+ But to confront the visage of offence? 
+ O, speak no more: 
+ My stronger guilt defeats my strong intent; 
+ These words, like a man to double business bound, 
+ HAMLET 
+ Come, come, and sit you down; you shall not budge; 
+ ( entrance Enter Ghost.) 
+ POLONIUS 
+ O wretched state! O bosom black as death! 
+ HAMLET 
+ What's the matter now?
+================ CHUNK 1 exeunt  ================ 
+  
+ ( exit Exeunt.) 
+################# SCENE MadOph 11_TTS.aloud.MUSIC.emotion.MADOPH_0_emotions wordcount:1097 strategy:markov #################
+================ CHUNK 1 MadOph  ================ 
+  Act 4, Scene 5
+================ CHUNK 1 MadOph  ================ 
+  
+ ( place Elsinore. A room in the castle.) 
+================ CHUNK 1 MadOph  scene_pause:1 ================ 
+  
+ ( entrance Enter OPHELIA.) 
+================ CHUNK 1 MadOph  ================ 
+  
+ OPHELIA 
+ Where is the beauteous majesty of Denmark?
+================ CHUNK 1 MadOph  ================ 
+  
+  
+ ( entrance Enter KING.) 
+ ( sound A noise within.) 
+================ CHUNK 1 MadOph  scene_pause:3 ================ 
+  
+ OPHELIA 
+ No, my lord, you sweet heavens! 
+ OPHELIA 
+ And recks not his own rede. 
+ OPHELIA 
+ Nay, 'tis twice two months, my lord, 
+ what I see! 
+ And I, of ladies most deject and wretched, 
+ With true-love showers. 
+ OPHELIA 
+ Pray let's have no words of so sweet breath composed 
+ As it did seem to shatter all his bulk 
+ And, with his head a grass-green turf, 
+ Show me the steep and thorny way to heaven; 
+ The courtier's, soldier's, scholar's, eye, tongue, sword; 
+ Whiles, like a puffed and reckless libertine, 
+ Himself the primrose path of dalliance treads, 
+ Do you doubt that? 
+ OPHELIA 
+ My honoured lord, I wish it may. 
+ OPHELIA 
+ He never will come again? 
+ OPHELIA 
+ Still better, and columbines: 
+ there's rue for you, now receive them. 
+ OPHELIA 
+ What means your lordship? 
+ OPHELIA 
+ There's fennel for you; 
+ and here's some for me: 
+ we may call it herb of grace a' Sundays. 
+ You may wear your rue with a look so piteous and profound 
+ As watchman to my heart. But, good night, 
+ ladies; 
+ good night, ladies; 
+ good night, ladies; 
+ good night, good my brother, 
+ And in his grave rained many a tear: 
+ To-morrow is Saint Valentine's day, 
+ Show me the steep and thorny way to heaven; 
+ Which bewept to the ground did not go 
+ With true-love showers.
+================ CHUNK 1 MadOph  ================ 
+  
+  
+  
+ ( voice Sings) 
+  
+ ( voice Sings) 
+ OPHELIA 
+ To-morrow is Saint Valentine's day, 
+ All in the morning betime, 
+ You promised me to wed. 
+ OPHELIA 
+ There's fennel for you; 
+ and here's some for me: 
+ we may be. 
+ God be at your window, 
+ An thou hadst not come again? 
+ And in his grave rained many a tear: 
+ ( voice Sings) 
+ OPHELIA 
+ Pray you, love, remember: 
+ and there is pansies, that's for thoughts. 
+ He never will come again? 
+ And I a maid 
+ Never departed more. 
+  
+ For bonny sweet Robin is all my joy. 
+ Then up he rose, and fie for shame! 
+ OPHELIA 
+ Pray you, mark. 
+ ( voice Sings) 
+ OPHELIA 
+ There's rosemary, that's for thoughts. 
+  
+ OPHELIA 
+ And I a maid 
+ Never departed more. 
+ OPHELIA 
+ Pray let's have no words of this; 
+ but when they ask you what it means, 
+ say you this: 
+ God ha' mercy on his soul! 
+ And will 'a not come again? 
+ By cock, they are to blame. 
+ He is dead and gone; 
+ At his heels a stone. 
+  
+ ( voice Sings) 
+
+================ CHUNK 1 MadOph  ================ 
+  
+ ( voice Sings) 
+ OPHELIA 
+ And will 'a not come again? 
+ All flaxen was as white as snow, no, no, no, 
+ No, no, he is dead: 
+ And will 'a not come again. 
+ He is dead: 
+ And we cast away moan: 
+ God ha' mercy on his poll: 
+ He never will 'a not come again.
+================ CHUNK 1 RampOph  ================ 
+  
+ OPHELIA 
+ Will 'a tell us what this show imports the argument of the play. 
+ OPHELIA 
+ My lord, as I was sewing in my memory locked, 
+ The glass of fashion and the mould of form, 
+ Do not, as some ungracious pastors do, 
+ At last, bended their light on me. 
+ OPHELIA 
+ At his heels white joy went without his eyes your rue with them lord sovereign reason 
+ No more but I cannot choose but weep 
+ I shall obey I shall obey 
+ Take breath composed 
+ Never departed 
+ I pray God ha' done not go 
+ Lord 
+ I shall obey I think nothing cold 
+ Lord 
+ Never departed worse affrighted daughter I your Valentine 
+ Larded 
+ Larded lord shroud most deject 
+ Blasted noble 
+ Take deject 
+ Pale 
+ Lord closet 
+ Lord 
+ Whiles lord 
+ Pale 
+ Take argument God 
+ Pale 
+ God 
+ Pale 
+ Blasted 
+ God quite 
+ God  nonny nonny a-down 
+  nonny nonny a-down, An you call him a-down-a. 
+ O, my lord, 
+ Take these again; for to
+================ CHUNK 1 MadOph  ================ 
+  
+ OPHELIA 
+ Pray let's have no words of this; 
+ but when they ask you what it means, 
+ say you this: 
+ By cock, they are to blame. 
+ OPHELIA 
+ I hope all will be well. 
+ We must be patient: 
+ but I cannot choose but weep, to think they would lay him i' the cold ground. 
+
+================ CHUNK 1 MadOph  scene_pause:1 ================ 
+  
+ ( exit Exit.) 
+################# SCENE newgertrude 12_TTS.aloud_0_monemo wordcount:446 strategy:markov #################
+================ CHUNK 1 Gertrude  ================ 
+  
+ ( place Another room in the castle.) 
+ ( entrance Enter KING and LAERTES.) 
+================ CHUNK 1 Gertrude  scene_pause:1 ================ 
+  
+ ( entrance Enter QUEEN.) 
+
+================ CHUNK 1 Gertrude  ================ 
+  
+ GERTRUDE 
+ One woe doth tread upon another's heel, 
+ So fast they follow: your sister's drowned, Laertes. 
+
+================ CHUNK 1 Gertrude  ================ 
+  
+ LAERTES 
+ Drowned! O, where?
+================ CHUNK 1 Gertrude  ================ 
+  
+ GERTRUDE 
+ Unto that element: 
+ And, 
+ That shows his hoar leaves in the weeping brook. 
+ GERTRUDE 
+ There is a creature native and long purples 
+ Which time she chanted snatches of old lauds; 
+ There, nettles, mermaid-like, 
+ To muddy death. Her clothes spread wide; 
+ Unto that element: but long it could not be 
+ When down her own distress, drowned. Her clothes spread wide; 
+ Fell in the poor wretch from her up: 
+ Therewith fantastic garlands did she make 
+ There, heavy with their drink, 
+ To muddy death. Her clothes spread wide; 
+ To muddy death. Her clothes spread wide; 
+ GERTRUDE 
+ Fell in the glassy stream; 
+ Unto that element: 
+ GERTRUDE 
+ That liberal shepherds give a grosser name, awhile they bore her weedy trophies and herself 
+ Of crow-flowers, heavy with their drink, daisies, and indued 
+ That liberal shepherds give a grosser name, 
+ Which time she chanted snatches of old lauds; 
+ There is a willow grows askaunt the pendent boughs her garments, 
+ That liberal shepherds give a creature native and long it could not be 
+ Clambering to hang, 
+ Drowned, daisies, daisies, 
+ Therewith fantastic garlands did she make 
+ Fell in the brook.
+================ CHUNK 1 Gertrude  ================ 
+  
+ GERTRUDE 
+ One woe Her her weedy weedy sliver broke 
+ Fell 
+ Fell drowned 
+ Drowned snatches 
+ Drowned 
+ Drowned 
+ Fell 
+ Drowned dead 
+ Fell drowned
+================ CHUNK 1 Gertrude  scene_pause:1 ================ 
+  
+ LAERTES 
+:, will Let will be will much The this trick custom our Let her forbid my 
+ therefore drowns
+================ CHUNK 1 Gertrude  scene_pause:1 ================ 
+  
+ ( exit Exeunt.) 
+################# SCENE gravedigger 2_TTS.aloud_0_theatre wordcount:325 strategy:markov #################
+================ CHUNK 1   ================ 
+  Act 5, Scene 1 
+ ( place A churchyard.) 
+ ( entrance Enter two Clowns, with spades,) 
+================ CHUNK 1   ================ 
+  
+ ( action He digs.) 
+ ( entrance Enter HAMLET and HORATIO, at a distance.) 
+ ( voice Sings) 
+ ( voice Sings) 
+ ( voice Sings) 
+ ( voice Sings) 
+ ( voice Sings) 
+ ( voice Sings) 
+  (  exit Exit HAMLET.)  
+  (  exit Exit HORATIO.)  
+ ( entrance Enter HAMLET and HORATIO, at a) 
+================ CHUNK 1   ================ 
+  
+ FIRST_CLOWN 
+ In youth, when I did love, did love, 
+ Methought it was very sweet, 
+ To contract - O - the time for - a - my behoove, 
+ O, methought, there - a - was nothing - a - meet. 
+ But age, with his stealing steps, Hath clawed me in his clutch, 
+ And hath shipped me into the land, A pick-axe, and a spade, 
+ a spade,
+================ CHUNK 1   ================ 
+  
+ HAMLET 
+ How long will a man lie i' the earth ere he rot? 
+ HAMLET 
+ How long
+================ CHUNK 1 partfour  ================ 
+  
+  (  entrance Enter LAERTES.)  
+ LAERTES 
+ Drowned! O, a pit of clay for to be buried in't? 
+ HAMLET 
+ I think it be thine, indeed; 
+ for that outlives a thousand tenants. 
+ FIRST_CLOWN 
+ Why, there thou say'st: 
+ and an act hath three branches; 
+ it is, will he, nill he, 
+ nill he, he galls his kibe. 
+
+@@@@@@@@@@@@@@@ Act name:letter @@@@@@@@@@@@@@@@
+################# SCENE letterFive 1_TTS.aloud.ROGUI_0_theatre wordcount:1559 strategy:markov #################
+================ CHUNK 1 Five  ================ 
+  Act 5, Scene 2 
+ ( place A hall in the castle.) 
+ ( entrance Enter HAMLET and HORATIO.) 
+================ CHUNK 1 closet  ================ 
+  
+ HAMLET 
+
+=================== CHUNK 1 fiveletters  ================
+So much cozenage of what, stand know how was the batement; and my lord! 
+HAMLET
+Why, even in between the model of the pass and fell incensed a many such bugs angle forgot myself; 
+Folded with ho! such-like As'es of they had my head short: the bus
+================ CHUNK 1 Five  ================ 
+  
+ ( entrance Enter OSRIC.) 
+================ CHUNK 1 closet  ================ 
+  
+ OSRIC 
+
+=================== CHUNK 1 fiveletters  ================
+OSRIC
+Your lord; but, as I say, and hot. Dost believe it. 
+HAMLET
+I the mess: sir, therly? 
+HORATIO
+No, if
+================ CHUNK 1 Five  ================ 
+  
+ ( action Hamlet moves him to put on his hat.) 
+=================== CHUNK 1 fiveletters  ================
+OSRIC
+Nay, with the an, well to you hangerson of the cards, he Danish. 
+HAMLET
+The conces, three lible to margent deart Laertes? 
+OSRIC
+Shally. 
+HAMLET
+I daggers
+================ CHUNK 1 Five  ================ 
+  
+ ( exit Exit Osric.) 
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+Yours. 
+HAMLET
+'A did comply got the same breed it himself; a kind of their, the drossy age do but o
+================ CHUNK 1 Five  ================ 
+  
+ ( entrance Enter a Lord.) 
+================ CHUNK 1 closet  ================ 
+  
+ LORD 
+
+=================== CHUNK 1 fiveletters  ================
+bubble entle as now that young Osric, who bring and all: he hold to play. 
+HAMLET
+In happy time. 
+LORD
+T
+================ CHUNK 1 Five  ================ 
+  
+ ( exit Exit Lord.) 
+================ CHUNK 1 closet  ================ 
+  
+ HAMLET 
+
+=================== CHUNK 1 fiveletters  ================
+fit be now; if it be nows what it, yet it. If it will: since not a special providence 
+not a what is all come: since no man of augury: there is n
+================ CHUNK 1 Five  ================ 
+  
+ ( sound Trumpets and drums.) 
+ ( entrance Enter KING, QUEEN, LAERTES, Lords, OSRIC, and Attendants with foils.)  
+   
+
+================ CHUNK 1 closet  ================ 
+  
+ KING 
+
+=================== CHUNK 1 fiveletters  ================
+KING
+Come. 
+Come, Hamlet, and from me. 
+Come, co
+================ CHUNK 1 Five  ================ 
+  
+ ( action The King puts Laertes' hand into Hamlet's.) 
+
+================ CHUNK 1 closet  ================ 
+  
+ HAMLET 
+
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+Give you bother. But sir, by sored Laertes, indeed; 
+And will not fear in Hamlet, houghly; and when Hamlet indeeds has laim was madness: if't be your pard; 
+You both: but till the fored; 
+
+================ CHUNK 1 Five  ================ 
+  
+ ( action They prepare to play.) 
+=================== CHUNK 1 fiveletters  ================
+OSRIC
+Ay, that which four second lord. Give king shall the heave me on shall that whicher that the judgement. 
+HAMLET
+Judgement. 
+HAMLET
+One upon the battlement
+================ CHUNK 1 Five  ================ 
+  
+ ( action They play.) 
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+Come, sir. 
+KING
+Stay; give him the cup. 
+OSRIC
+A hit. 
+HAMLET
+Judgement. Give me drink. 
+LAERTES
+No. 
+OSRIC
+A hit. 
+HAMLET
+Judgement. 
+LAERTES
+No. 
+KING
+Stay; 
+Here's this
+=================== CHUNK 1 fiveletters  ================
+KING
+Stay; give me drink. Give him this to thy heal
+================ CHUNK 1 Five  ================ 
+  
+ ( sound Trumpets sound, and cannon shot off within.) 
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+I'll play this bout first; set it by awhile. 
+
+================ CHUNK 1 Five  ================ 
+  
+ ( action They play.) 
+================ CHUNK 1 closet  ================ 
+  
+ HAMLET 
+
+=================== CHUNK 1 fiveletters  ================
+Come. 
+HAMLET
+Good madam! 
+KING
+Our son shall win. 
+Another hit; I pray you, do confess't. 
+Another hit; I do confess't. 
+KING
+Our son shall, rub thy breath. 
+KING
+Gertrude, and scant of breath. 
+Here, I do not drink. 
+Another hit; what, rub thy fo
+================ CHUNK 1 Five  ================ 
+  
+ ( action She drinks.) 
+=================== CHUNK 1 fiveletters  ================
+KING
+Our soned cup: it is too la
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+I dare not thy face. 
+LAERTES
+My lord, I'll him not think yet me wipe think yet, let me wipe thy face. 
+KING
+I do now. 
+GERTRUDE
+Come wipe think yet me wipe th
+================ CHUNK 1 Five  ================ 
+  
+ ( voice Aside) 
+
+=================== CHUNK 1 fiveletters  ================
+LAERTES
+And yet it is almost my cons
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+Come. 
+LAERTES
+Say you make a wanton. 
+LAERTES
+Say you do but dally; 
+I pray your best violence; 
+I pray your best violence; 
+I am sure
+================ CHUNK 1 Five  ================ 
+  
+ ( action They play.) 
+
+=================== CHUNK 1 fiveletters  ================
+LAERTES
+Say you now! 
+LAERTES
+Have at you
+================ CHUNK 1 Five  ================ 
+  
+ ( action Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)  
+   
+=================== CHUNK 1 fiveletters  ================
+KING
+Part them: them: them: them: they are incens
+================ CHUNK 1 Five  ================ 
+  
+ ( action The Queen falls.) 
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+No my killed. 
+LAERTES
+Why, againge quee, O my killed. 
+The deache, no swoodcome, come, no, Osri
+=================== CHUNK 1 fiveletters  ================
+GERTRUDE
+No, the dear Hamlet, 
+The drink, the drink, no, the drink, 
+The drink! I amlet, O my drink
+================ CHUNK 1 Five  ================ 
+  
+ ( action Dies.) 
+
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+O villamlet envenome kine; locked theroul prachee, thenom, the: 
+In he then do thout is practice I lo blamlet tood: 
+No, half an me thy! 
+HAMLET
+O
+================ CHUNK 1 Five  ================ 
+  
+ ( action Stabs the King.) 
+=================== CHUNK 1 fiveletters  ================
+ALL
+Treason! 
+Driends potion. 
+Drincestuou ink off treason! tre? 
+HAMLET
+Hereason. I am but hereason! 
+KING
+O, this, me? 
+Driends; I am but damne, fr
+================ CHUNK 1 Five  ================ 
+  
+ ( action Forcing him to drink the poison) 
+================ CHUNK 1 closet  ================ 
+  
+ HAMLET 
+
+=================== CHUNK 1 fiveletters  ================
+Follow mother. 
+y m
+================ CHUNK 1 Five  ================ 
+  
+ ( action King dies.) 
+
+=================== CHUNK 1 fiveletters  ================
+LAERTES
+He Hamle on me Hamle a pon thee! 
+Exchange! 
+N
+================ CHUNK 1 Five  ================ 
+  
+ ( action Dies.) 
+
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+Heavere le. 
+But go th whis arld thy st: 
+To, 
+To; 
+Absen thusen th' as shathile. Wretcheen paing thatis from me it. Whan th' a what; 
+Had, 
+Thant it mut is this yet wou 
+Butell yet this und
+================ CHUNK 1 Five  ================ 
+  
+ ( action March afar off, and shot within.) 
+
+=================== CHUNK 1 fiveletters  ================
+HAMLET
+O, I dyinbras my dyinbras: him, I dyinbration Fortinbratinbras solice poich hice ress my thear to prom, I dyinbras 
+, mortio to the; 
+On lights 
+So; 
+So; 
+On Forence pot: has my silent lights
+================ CHUNK 1 Five  ================ 
+  
+ ( action Dies.) 
+=================== CHUNK 1 fiveletters  ================
+HORATIO
+Now cracks sweet. Good nights a nights a night, sweet. Good noble heart! 
+Why drum cracks of a noble he thee does theart. Good noble hithy res of angels of ang ther? 
+Why rest pring thy drum come theart, sweet pring ther? 
+And flight, swee
+================ CHUNK 1 Five  ================ 
+  
+ ( action March within.) 
+ ( entrance Enter FORTINBRAS, the English Ambassadors, and others.) 
+
+=================== CHUNK 1 fiveletters  ================
+FORTINBRAS
+Taprneller mbrotromer al methist r Havert to m, st 
+FORTINBRAS
+Sp vinorsithais 
+FORTINBRAS
+Anoud tucad thaprol l ad ike kemlaly lindesss pamusoocecende 
+Wh ime; lliny 
+I, dicathemet he fowach uch aiche 
+Be he t in
+################# SCENE FiveTwo 13_TTS.aloud.MUSIC.emotion_0_theatre wordcount:477 strategy:markov #################
+================ CHUNK 1 ActFiveSceneTwo  ================ 
+  
+ ( place A hall in the castle.) 
+ ( entrance Enter HAMLET and HORATIO.) 
+================ CHUNK 1 ActFiveSceneTwo  ================ 
+  
+ ( entrance Enter OSRIC.) 
+ ( action Hamlet moves him to put on his hat.) 
+ ( exit Exit Lord.) 
+ ( sound Trumpets sound, and cannon shot off within.) 
+ ( action Dies.) 
+ ( action March afar off, and shot within.) 
+ ( action They prepare to play.) 
+ ( action She lifts the cup.) 
+ ( action She drinks.) 
+  
+  
+  
+ ( action They play.) 
+ ( sound Trumpets and drums.) 
+ ( entrance Enter FORTINBRAS, the English Ambassadors, and others.) 
+ ( action King dies.) 
+ ( action Dies.) 
+ ( action Stabs the King.) 
+ ( action Forcing him to drink the poison.) 
+ ( action King dies.) 
+ ( action Dies.) 
+ ( action Stabs the King.) 
+ ( action Forcing him to drink the poison.) 
+ ( action King dies.) 
+ ( action Dies.) 
+ ( action March within.) 
+ ( entrance Enter FORTINBRAS, the English Ambassadors, and others.) 
+ ( action Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)  
+   
+ ( action The King puts Laertes' hand into Hamlet's.) 
+ ( action They prepare to play.) 
+ ( action She drinks.) 
+  
+ ( action They play.) 
+ ( sound Trumpets sound, and cannon shot off within.) 
+ ( entrance Enter KING, QUEEN, LAERTES, Lords, OSRIC, and Attendants with foils.)  
+   
+ ( action The King puts Laertes' hand into Hamlet's.) 
+ ( action They prepare to play.) 
+ ( action They play.) 
+ ( action Laertes wounds Hamlet; then, in scuffling, they change rapiers, and Hamlet wounds Laertes.)  
+   
+ ( action The Queen falls.) 
+ ( action Dies.) 
+ ( action Stabs the King.) 
+ ( action Forcing him to drink the poison.) 
+ ( action King dies.) 
+ ( action Dies.) 
+ ( action Stabs the King.) 
+ ( action Forcing him to drink the poison.) 
+ ( action King dies.) 
+ ( action Dies.) 
+ ( action Stabs the King.) 
+================ CHUNK 1 LastLine  scene_pause:1 ================ 
+  
+ ( sound A dead march.) 
+ ( exit Exeunt, bearing off the dead bodies; after which a peal of ordnance is shot off.) 
