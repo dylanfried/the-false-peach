@@ -81,24 +81,6 @@
 				<characters>GHOST</characters>
 			</selection>
 			<selection>
-				<acts>1</acts>
-         		<scenes>5</scenes>
-				<lines>2-13</lines>
-				<characters>GHOST,HAMLET</characters>
-			</selection>
-			<selection>
-				<acts>1</acts>
-         		<scenes>5</scenes>
-				<lines>22-47</lines>
-				<characters>GHOST,HAMLET</characters>
-			</selection>
-			<selection>
-			    <acts>1</acts>
-         		<scenes>5</scenes>
-				<lines>92-112</lines>
-				<characters>HAMLET</characters>
-			</selection>
-			<selection>
 			   	<acts>2</acts>
    	   			<scenes>1</scenes>
    	   			<lines>74</lines>
@@ -112,6 +94,25 @@
          <k>2</k>
       </generate>
    </markov>
+   
+   <markov>
+   	   <name>exeunt</name>
+       <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>1</scenes>
+		<lines>54</lines>
+		<characters>STAGE</characters>
+		<pos>(,entrance,)</pos>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <finish_sent>True</finish_sent>
+         <length>3</length>
+         <k>10</k>
+      </generate>
+   </markov>
+   
    
    <markov>
    	   <name>ghostscene</name>
@@ -200,7 +201,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>50</length>
+         <length>40</length>
          <k>1</k>
       </generate>
    </markov>

@@ -29,7 +29,7 @@
       </train>
       <generate>
       	 <finish_sent>True</finish_sent>
-         <length>75</length>
+         <length>50</length>
          <k>1</k>
       </generate>
    </markov>

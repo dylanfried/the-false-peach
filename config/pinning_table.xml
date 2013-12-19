@@ -22,10 +22,21 @@
    </excluded>
    
    <pinned>
+      <scene>real_test4</scene>
+      <sound>TTS.aloud</sound>
+      <video>4</video>
+      <lights>theatre</lights>
+   </pinned>
+   <excluded>
+      <scene>real_test4</scene>
+      <sound>TTS.mix</sound>
+   </excluded>
+   
+   <pinned>
       <scene>FiveTwo</scene>
       <lights>theatre</lights>
       <video>13</video>
-      <sound>TTS.aloud.MUSIC.emotion</sound>
+      <sound>TTS.aloud.MUSIC.emotion.FINAL</sound>
    </pinned>
    <excluded>
       <scene>FiveTwo</scene>
@@ -342,7 +353,7 @@
    
    <pinned>
       <scene>dumb</scene>
-      <lights>lightshow</lights>
+      <lights>lightout</lights>
       <video>14</video>
       <sound>TTS.mute</sound>
    </pinned>
@@ -929,12 +940,18 @@
       <video>2</video>
       <sound>TTS.aloud.MUSIC.emotion</sound>
    </pinned>
+   <pinned>
+      <scene>newghost</scene>
+      <lights>ghost</lights>
+      <video>2</video>
+      <sound>TTS.aloud.GHOST</sound>
+   </pinned>
    
    <pinned>
       <scene>partfourtwoA</scene>
       <video>1</video>
       <sound>TTS.aloud</sound>
-      <lights>closet</lights>
+      <lights>character</lights>
    </pinned>
    
    <pinned>

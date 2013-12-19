@@ -14,21 +14,22 @@
          <reset>True</reset>
          <finish_sent>True</finish_sent>
          <length>40</length>
-         <k>5</k>
+         <k>3</k>
       </generate>
    </markov>
-      <markov>
+   
+    <markov>
    	     <file>data/brute.txt</file>
       <train>
          <acts>3</acts>
          <scenes>2</scenes>
          <lines>264-267</lines>
-         <characters>HAMLET,KING,GERTRUDE,ALL,OPHELIA</characters>
+         <characters>HAMLET,KING,ALL,OPHELIA</characters>
         </train>
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>30</length>
+         <length>20</length>
          <k>1</k>
       </generate>
    </markov>
@@ -44,16 +45,16 @@
          		<lines>96</lines>
          		<characters>KING</characters>
          	</selection>
-			<selection>
-			    <acts>3</acts>
-         		<scenes>2</scenes>
-         		<lines>262-267</lines>
-         		<characters>ALL,CLAUDIUS,KING,HAMLET,OPHELIA,GERTRUDE,POLONIUS</characters>
-         	</selection>
          	<selection>
          	   <acts>3</acts>
          		<scenes>3</scenes>
          		<lines>36-72</lines>
+         		<characters>CLAUDIUS,KING</characters>
+         	</selection>
+         	<selection>
+         	   <acts>3</acts>
+         		<scenes>3</scenes>
+         		<lines>97-98</lines>
          		<characters>CLAUDIUS,KING</characters>
          	</selection>
          	<selection>
@@ -136,7 +137,19 @@
       </generate>
    </markov>
    
-   
+   <markov>
+   	     <file>data/brute.txt</file>
+      <train>
+         <acts>3</acts>
+         <scenes>4</scenes>
+         <lines>24</lines>
+      </train>
+      <generate>
+         <reset>True</reset>
+         <length>9</length>
+         <k>5</k>
+      </generate>
+   </markov>
    
    <markov>
    	   <name>exeunt</name>

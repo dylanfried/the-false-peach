@@ -1,4 +1,5 @@
-<scene semantic_logic="true">
+<scene semantic_logic="True">
+
    <markov>
    	<train>
    		<file>data/brute.txt</file>
@@ -13,54 +14,56 @@
    		<k>3</k>
    	</generate>
    </markov>
+   
    <markov>
    	<train>
    		<file>data/brute.txt</file>
-   		<acts>5</acts>
-   		<scenes>1</scenes>
-   		<lines>2-211</lines>
-   		<characters>Stage</characters>
+   		<selections>
+   		<selection>
+   			<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>32-56</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		<selection>
+   			<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>62</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		<selection>
+   		   	<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>75</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		   	<selection>
+   		   	<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>98</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		   	<selection>
+   		   	<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>186</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		   	<selection>
+   		   	<acts>5</acts>
+   			<scenes>1</scenes>
+   			<lines>204</lines>
+   			<characters>Stage</characters>
+   		</selection>
+   		</selections>
    	</train>
    	<generate>
    		<reset>True</reset>
-   		<length>50</length>
+   		<length>60</length>
    		<k>2</k>
    	</generate>
    </markov>
-   <markov>
-      <train>
-         <selections>
-            <selection>
-               <file>data/brute.txt</file>
-               <acts>5</acts>
-               <scenes>1</scenes>
-               <lines>63-66</lines>
-               <characters>First_Clown</characters>
-            </selection>
-            <selection>
-               <file>data/brute.txt</file>
-               <acts>5</acts>
-               <scenes>1</scenes>
-               <lines>70-74</lines>
-               <words>29962-29998</words>
-               <characters>First_Clown</characters>
-            </selection>
-            <selection>
-               <file>data/brute.txt</file>
-               <acts>5</acts>
-               <scenes>1</scenes>
-               <lines>92-95</lines>
-               <words>30183-30192</words>
-               <characters>First_Clown</characters>
-            </selection>
-         </selections>
-      </train>
-      <generate>
-         <reset>True</reset>
-         <length>83</length>
-         <k>7</k>
-      </generate>
-   </markov>
+   
 
    <markov>
    	<train>
@@ -76,80 +79,21 @@
    		<k>3</k>
    	</generate>
    </markov>
-   
+
+
    <markov>
-   	   <name>partfour</name>
-       <file>data/brute.txt</file>
-       <train>
-       	<selections>
-         	<selection>
-         	   <acts>4</acts>
-         		<scenes>7</scenes>
-         		<lines>164</lines>
-         		<characters>LAERTES</characters>
-         	</selection>	
-         	<selection>
-         	   	<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>1</lines>
-   				<characters>STAGE</characters>
-   				<pos>(,place,NEWLINE,)</pos>
-   			</selection>
-   			<selection>
-   		        <acts>5</acts>
-         		<scenes>1</scenes>
-				<lines>1-62</lines>
-         		<characters>FIRST_CLOWN,SECOND_CLOWN</characters>	
-         	</selection>
-   			<selection>
-   			     <acts>5</acts>
-         		<scenes>1</scenes>
-         		<lines>63-66, 70-74, 92-95</lines>
-         		<characters>FIRST_CLOWN,STAGE</characters>
-         	</selection>
-         	<selection>
-         	   <acts>5</acts>
-         		<scenes>1</scenes>
-				<lines>122-145</lines>
-         		<characters>FIRST_CLOWN,HAMLET,HORATIO,STAGE</characters>
-         	</selection>
-         	<selection>
-         	   	<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>166</lines>
-   				<characters>HAMLET</characters>
-   			</selection>
-   			<selection>
-   				<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>187-199</lines>
-   				<characters>HAMLET</characters>
-   			</selection>
-      		<selection>
-   				<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>246-249</lines>
-   				<characters>STAGE,GERTRUDE</characters>
-   			</selection>
-      		<selection>
-   				<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>272-278</lines>
-   				<characters>STAGE,HAMLET,KING,CLAUDIUS</characters>
-   			</selection>
-   			<selection>
-   				<acts>5</acts>
-   				<scenes>1</scenes>
-   				<lines>287-291</lines>
-   				<characters>GERTRUDE</characters>
-   			</selection>
-         </selections>
-      </train>
-      <generate>
-         <finish_sent>True</finish_sent>
-         <length>50</length>
-         <k>2</k>
-      </generate>
+   	<train>
+   		<file>data/brute.txt</file>
+   		<acts>5</acts>
+   		<scenes>1</scenes>
+   		<lines>238-287</lines>
+   		<characters>LAERTES,HAMLET,GERTRUDE,KING</characters>
+   	</train>
+   	<generate>
+   		<finish_sent>True</finish_sent>
+   		<length>100</length>
+   		<k>3</k>
+   	</generate>
    </markov>
-</scene>
    
+</scene>

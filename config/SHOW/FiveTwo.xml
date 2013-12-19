@@ -1,4 +1,4 @@
-
+<scene blackout="False">
 
 <markov>
       <name>ActFiveSceneTwo</name>
@@ -50,4 +50,4 @@
    	 	<k>5</k>
    	 </generate>
    	</markov>
-
+</scene>

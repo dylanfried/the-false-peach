@@ -25,6 +25,8 @@
    <triggers stagedir='entrance'>
       <word priority=1 pause=3000>Ghost</word>
       <word priority=1 pause=3000 fan=1>King queen</word>
+      <word priority=1 pause=3000 fan=1>King rosencrantz</word>
+      <word priority=1 pause=3000 fan=1>King attended</word>
    </triggers>
    <triggers stagedir='exit'>
       <word priority=1 pause=1500>exeunt</word>

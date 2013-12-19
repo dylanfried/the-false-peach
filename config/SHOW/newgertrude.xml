@@ -81,7 +81,7 @@
       <generate>
          <reset>True</reset>
          <finish_sent>True</finish_sent>
-         <length>140</length>
+         <length>120</length>
          <k>1</k>
       </generate>
    </markov>
@@ -99,7 +99,7 @@
          <type>threshold</type>
                <ramp emotion="sadness">
                   <point line=-1 value=0.5 />
-                  <point line=31 value=3.2 />
+                  <point line=31 value=1.2 />
                </ramp>
          <length>30</length>
          <k>1</k>

@@ -303,6 +303,14 @@ class LooseyClient:
       # Loop through all of the lines in the script
       for line_index in range(len(lines)):
          l = lines[line_index]
+         # We have extra whitespace, find the next line that has something in it:
+         next_line_index = line_index + 1
+         last_line = True
+         while next_line_index < len(lines):
+            if lines[next_line_index].strip() and not re.match(".*====.*",lines[next_line_index]):
+               last_line = False
+               break
+            next_line_index += 1
          current_word_count += len(l.split(" "))
          # Printing out word scores for scrolly thing
          if not self.play and not re.match(".*####.*",l) and not re.match(".*====.*",l) and not re.match(".*@@@@@.*",l):
@@ -362,7 +370,7 @@ class LooseyClient:
             self.send_value("style.actor","zero")
             time.sleep(0.5)
             self.send_value("style.lights","zero")
-            time.sleep(4)
+            time.sleep(5)
             self.send_value("character","STYLE")
             self.changed_speaker = True
             time.sleep(0.001)
@@ -710,7 +718,6 @@ class LooseyClient:
                   maxpriority = max(tmppriority)
                   # Grab everything with that priority
                   allt = [t for t in tmptrigs if t.priority==maxpriority]
-                  print "SEND TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Send one of them
                   # For voice triggers, we have a system for zeroing them out
                   # after the next character change, stage dir, etc. Sometimes,
@@ -718,7 +725,23 @@ class LooseyClient:
                   # stage direction comes right before a character name
                   #if allt[0].zero_out and (line_index+1) < len(lines) and re.match("^[A-Z_]+$",lines[line_index+1].strip()):
                   #   allt[0].skip = ["character"]
-                  self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                  if self.scene == "MadOph" and allt[0].words[0] == "room":
+                     self.send_value("stagedir."+allt[0].stage,"room_ophelia")
+                     print "SEND TRIGGER 2", allt[0].stage, "room_ophelia"
+                  elif allt[0].words[0] == "exeunt" and \
+                        (last_line or \
+                           re.match("^\s*Act\s.*",lines[next_line_index]) or \
+                           re.match("^\s*Act$",lines[next_line_index]) or \
+                           re.match("^\s*Scene.*",lines[next_line_index]) or \
+                           re.match(".*####.*",lines[next_line_index]) or \
+                           re.match(".*@@@@@@.*",lines[next_line_index])):
+                     # This is the last exeunt, we want to send "lastexeunt" so that 
+                     # lights knows not to come back up
+                     #self.send_value("stagedir."+allt[0].stage,"lastexeunt")
+                     print "NOEXEUNT: SEND TRIGGER 2", allt[0].stage, allt[0].words[0]
+                  else:
+                     self.send_value("stagedir."+allt[0].stage,allt[0].words[0])
+                     print "SEND TRIGGER 2", allt[0].stage, allt[0].words[0]
                   # Remember that we're triggering this in case we have to
                   # zero it out later (like for the voice triggers)
                   allt[0].triggered = True

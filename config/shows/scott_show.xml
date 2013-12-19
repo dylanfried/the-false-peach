@@ -1,6 +1,6 @@
 <show>
    <sequence name="scene">
-      <scene>3pcntORIG.xml</scene>
+      <scene>real_test4.xml</scene>
    </sequence>
    <sequence name="line">
       <scene>new_filter.xml</scene>
@@ -12,7 +12,7 @@
       <scene>deathspeech.xml</scene>
    </sequence>
    <sequence name="word">
-      <scene>partfourone.xml</scene>
+      <scene>newghost.xml</scene>
       <scene>partfourtwoA.xml</scene>
       <scene>dumb.xml</scene>
       <scene>partfourtwoB.xml</scene>
