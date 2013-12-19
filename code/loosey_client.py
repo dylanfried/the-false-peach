@@ -235,44 +235,57 @@ class LooseyClient:
    # where each element is a line from our script.
    # This method takes care of managing/SEND triggers
    # as well.
-   def send_script(self, lines,burrito_word_count=None):
+   def send_script(self, lines,burrito_word_count=None,act_number=None):
+      if act_number and act_number in [1,2,3,4,5]:
+         print "\n\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+         print "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+         print "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+         print "ACT NUMBER OVERRIDE | Act = %d" % act_number
+         print "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+         print "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++"
+         print "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n\n"
+         self.act_number = act_number
       print "\n\n SEND SCRIPT \n\n"
-      # First, send beginning text and zeroes:
-      self.send_value("stagedir.place","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.exit","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.entrance","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.sound","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.voice","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.action","zero")
-      time.sleep(0.001)
-      self.send_value("stagedir.title","zero")
-      time.sleep(0.001)
-      self.send_value("style.sound","zero")
-      time.sleep(0.001)
-      self.send_value("style.video",0)
-      time.sleep(0.001)
-      self.send_value("style.actor","zero")
-      time.sleep(0.5)
-      self.send_value("style.lights","zero")
-      time.sleep(4.5)
-      self.send_value("character","STYLE")
-      self.send_value("line","sys.begin(show.generate(" + time.strftime("%d.%m.%y %X" ) + "))\n")
-      time.sleep(2.5)
-      
-      # Wait for Loosey to acknowledge with EOL
-      while 1:
-         word = self.get_input()
-         #print "Getting word",word
-         if word == "EOL": 
-            break
-      
-      # Black out video now
-      self.send_value("style.video",10)
+      # We only want to do beginning of show stuff if we're
+      # starting at the beginning of the show
+      if self.act_number == 0:
+         print "BEGINNING STUFF"
+         # First, send beginning text and zeroes:
+         self.send_value("stagedir.place","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.exit","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.entrance","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.sound","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.voice","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.action","zero")
+         time.sleep(0.001)
+         self.send_value("stagedir.title","zero")
+         time.sleep(0.001)
+         self.send_value("style.sound","zero")
+         time.sleep(0.001)
+         self.send_value("style.video",0)
+         time.sleep(0.001)
+         self.send_value("style.actor","zero")
+         time.sleep(0.5)
+         self.send_value("style.lights","zero")
+         time.sleep(4.5)
+         self.send_value("character","STYLE")
+         self.send_value("line","sys.begin(show.generate(" + time.strftime("%d.%m.%y %X" ) + "))\n")
+         time.sleep(2.5)
+         
+         # Wait for Loosey to acknowledge with EOL
+         while 1:
+            word = self.get_input()
+            #print "Getting word",word
+            if word == "EOL": 
+               break
+         
+         # Black out video now
+         self.send_value("style.video",10)
       
       # This is a variable to keep track of a weighted moving
       # average of affect values that we send to Loosey

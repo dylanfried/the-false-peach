@@ -21,6 +21,10 @@ if len(sys.argv)>3:
 else:
    triggerconfigfile = ""
  
+if len(sys.argv)>4:
+   act_number = int(sys.argv[4])
+else:
+   act_number = 0
 sceneconfigfile = sys.argv[1]
 programname = sys.argv[1]
 programname = re.sub("^.*\/(.*)\.xml$","\\1",programname)
@@ -84,4 +88,4 @@ else: sys.exit()
 # Create Loosey Client
 loosey = LooseyClient(who, sender_ip, sender_port, actions, my_ip, my_port, triggerconfigfile, trialconfigfile)
 # Send script!
-loosey.send_script(out,burrito_word_count=burrito_word_count)
+loosey.send_script(out,burrito_word_count=burrito_word_count,act_number=act_number)
