@@ -1,7 +1,7 @@
 @@@@@@@@@@@@@@@ Act name:line @@@@@@@@@@@@@@@@
 SEND SCROLL VALUE 2
 ################# SCENE new_filter 5_TTS.filter_0_lightshow wordcount:673 strategy:new_filter #################
-Timing info. Seconds: 110.976882935, words: 2303, lines: 213
+Timing info. Seconds: 110.957663059, words: 2303, lines: 213
 BLACKOUT
 SEND STYLES 5_TTS.filter_0_lightshow
 HAMLET: [-1, -1, -1, -1]
@@ -254,12 +254,16 @@ Truly: [-1, -1, -1, -1], deliver.: [-1, -1, -1, -1]
 SEND LINE 'Truly deliver. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-Safely: [-1, -1, -1, -1], stowed.: [-1, -1, -1, -1]
-SEND LINE 'Safely stowed. '
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
 How: [-1, -1, -1, -1], strangely?: [-1, -1, -1, -1]
 SEND LINE 'How strangely? '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Safely: [-1, -1, -1, -1], stowed.: [-1, -1, -1, -1]
+SEND LINE 'Safely stowed. '
+ROSENCRANTZ: [-1, -1, -1, -1]
+SEND WHO ROSENCRANTZ
+Believe: [-1, -1, -1, -1], what?: [-1, -1, -1, -1]
+SEND LINE 'Believe what? '
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 Well;: [-1, -1, -1, -1], again.: [-1, -1, -1, -1]
@@ -268,14 +272,6 @@ HORATIO: [-1, -1, -1, -1]
 SEND WHO HORATIO
 'Tis: [-1, -1, -1, -1], strange.: [-1, -1, -1, -1]
 SEND LINE "'Tis strange. "
-ROSENCRANTZ: [-1, -1, -1, -1]
-SEND WHO ROSENCRANTZ
-Believe: [-1, -1, -1, -1], what?: [-1, -1, -1, -1]
-SEND LINE 'Believe what? '
-POLONIUS: [-1, -1, -1, -1]
-SEND WHO POLONIUS
-Come,: [-1, -1, -1, -1], sirs.: [-1, -1, -1, -1]
-SEND LINE 'Come, sirs. '
 KING: [-1, -1, -1, -1]
 SEND WHO KING
 Alas,: [-1, -1, -1, -1], alas!: [-1, -1, -1, -1]
@@ -286,40 +282,44 @@ For: [-1, -1, -1, -1], England!: [-1, -1, -1, -1]
 SEND LINE 'For England! '
 KING: [-1, -1, -1, -1]
 SEND WHO KING
-Ay,: [-1, -1, -1, -1], Hamlet.: [-1, -1, -1, -1]
-SEND LINE 'Ay, Hamlet. '
-KING: [-1, -1, -1, -1]
-SEND WHO KING
 For: [-1, -1, -1, -1], England.: [-1, -1, -1, -1]
 SEND LINE 'For England. '
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
-Between: [-1, -1, -1, -1], who?: [-1, -1, -1, -1]
-SEND LINE 'Between who? '
 FIRST_PLAYER: [-1, -1, -1, -1]
 SEND WHO FIRST_PLAYER
 Did: [-1, -1, -1, -1], nothing.: [-1, -1, -1, -1]
 SEND LINE 'Did nothing. '
-KING: [-1, -1, -1, -1]
-SEND WHO KING
-Speak,: [-1, -1, -1, -1], man.: [-1, -1, -1, -1]
-SEND LINE 'Speak, man. '
+POLONIUS: [-1, -1, -1, -1]
+SEND WHO POLONIUS
+Come,: [-1, -1, -1, -1], sirs.: [-1, -1, -1, -1]
+SEND LINE 'Come, sirs. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Buzz,: [-1, -1, -1, -1], buzz!: [-1, -1, -1, -1]
 SEND LINE 'Buzz, buzz! '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Speak,: [-1, -1, -1, -1], man.: [-1, -1, -1, -1]
+SEND LINE 'Speak, man. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Ay,: [-1, -1, -1, -1], Hamlet.: [-1, -1, -1, -1]
+SEND LINE 'Ay, Hamlet. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-Good: [-1, -1, -1, -1], madam!: [-1, -1, -1, -1]
-SEND LINE 'Good madam! '
+Between: [-1, -1, -1, -1], who?: [-1, -1, -1, -1]
+SEND LINE 'Between who? '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+For: [-1, -1, -1, -1], Hecuba!: [-1, -1, -1, -1]
+SEND LINE 'For Hecuba! '
 OSRIC: [-1, -1, -1, -1]
 SEND WHO OSRIC
 Of: [-1, -1, -1, -1], Laertes?: [-1, -1, -1, -1]
 SEND LINE 'Of Laertes? '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-For: [-1, -1, -1, -1], Hecuba!: [-1, -1, -1, -1]
-SEND LINE 'For Hecuba! '
+Good: [-1, -1, -1, -1], madam!: [-1, -1, -1, -1]
+SEND LINE 'Good madam! '
 FIRST_CLOWN: [-1, -1, -1, -1]
 SEND WHO FIRST_CLOWN
 Mine,: [-1, -1, -1, -1], sir.: [-1, -1, -1, -1]
@@ -328,10 +328,6 @@ HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 At: [-1, -1, -1, -1], supper.: [-1, -1, -1, -1]
 SEND LINE 'At supper. '
-MARCELLUS: [-1, -1, -1, -1]
-SEND WHO MARCELLUS
-'Tis: [-1, -1, -1, -1], gone!: [-1, -1, -1, -1]
-SEND LINE "'Tis gone! "
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 Help,: [-1, -1, -1, -1], ho!: [-1, -1, -1, -1]
@@ -340,6 +336,18 @@ BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 'Tis: [-1, -1, -1, -1], here!: [-1, -1, -1, -1]
 SEND LINE "'Tis here! "
+HORATIO: [-1, -1, -1, -1]
+SEND WHO HORATIO
+'Tis: [-1, -1, -1, -1], here!: [-1, -1, -1, -1]
+SEND LINE "'Tis here! "
+MARCELLUS: [-1, -1, -1, -1]
+SEND WHO MARCELLUS
+'Tis: [-1, -1, -1, -1], gone!: [-1, -1, -1, -1]
+SEND LINE "'Tis gone! "
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+Ay,: [-1, -1, -1, -1], amen!: [-1, -1, -1, -1]
+SEND LINE 'Ay, amen! '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Saw?: [-1, -1, -1, -1], who?: [-1, -1, -1, -1]
@@ -348,50 +356,42 @@ HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 To: [-1, -1, -1, -1], heaven.: [-1, -1, -1, -1]
 SEND LINE 'To heaven. '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-Ay,: [-1, -1, -1, -1], amen!: [-1, -1, -1, -1]
-SEND LINE 'Ay, amen! '
-HORATIO: [-1, -1, -1, -1]
-SEND WHO HORATIO
-'Tis: [-1, -1, -1, -1], here!: [-1, -1, -1, -1]
-SEND LINE "'Tis here! "
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 But: [-1, -1, -1, -1], come;: [-1, -1, -1, -1]
 SEND LINE 'But come; '
-KING: [-1, -1, -1, -1]
-SEND WHO KING
-A: [-1, -1, -1, -1], Norman.: [-1, -1, -1, -1]
-SEND LINE 'A Norman. '
-KING: [-1, -1, -1, -1]
-SEND WHO KING
-Leave: [-1, -1, -1, -1], us.: [-1, -1, -1, -1]
-SEND LINE 'Leave us. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 My: [-1, -1, -1, -1], uncle!: [-1, -1, -1, -1]
 SEND LINE 'My uncle! '
-GERTRUDE: [-1, -1, -1, -1]
-SEND WHO GERTRUDE
-No: [-1, -1, -1, -1], more!: [-1, -1, -1, -1]
-SEND LINE 'No more! '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Leave: [-1, -1, -1, -1], us.: [-1, -1, -1, -1]
+SEND LINE 'Leave us. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+A: [-1, -1, -1, -1], Norman.: [-1, -1, -1, -1]
+SEND LINE 'A Norman. '
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 Mark: [-1, -1, -1, -1], me.: [-1, -1, -1, -1]
 SEND LINE 'Mark me. '
+GERTRUDE: [-1, -1, -1, -1]
+SEND WHO GERTRUDE
+No: [-1, -1, -1, -1], more!: [-1, -1, -1, -1]
+SEND LINE 'No more! '
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 No: [-1, -1, -1, -1], more.: [-1, -1, -1, -1]
 SEND LINE 'No more. '
-OPHELIA: [-1, -1, -1, -1]
-SEND WHO OPHELIA
-My: [-1, -1, -1, -1], lord?: [-1, -1, -1, -1]
-SEND LINE 'My lord? '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Who,: [-1, -1, -1, -1], I?: [-1, -1, -1, -1]
 SEND LINE 'Who, I? '
+OPHELIA: [-1, -1, -1, -1]
+SEND WHO OPHELIA
+My: [-1, -1, -1, -1], lord?: [-1, -1, -1, -1]
+SEND LINE 'My lord? '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 I: [-1, -1, -1, -1], will.: [-1, -1, -1, -1]
@@ -408,14 +408,14 @@ HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Marcellus?: [-1, -1, -1, -1]
 SEND LINE 'Marcellus? '
-FRANCISCO: [-1, -1, -1, -1]
-SEND WHO FRANCISCO
-Bernardo?: [-1, -1, -1, -1]
-SEND LINE 'Bernardo? '
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 Farewell.: [-1, -1, -1, -1]
 SEND LINE 'Farewell. '
+FRANCISCO: [-1, -1, -1, -1]
+SEND WHO FRANCISCO
+Bernardo?: [-1, -1, -1, -1]
+SEND LINE 'Bernardo? '
 POLONIUS: [-1, -1, -1, -1]
 SEND WHO POLONIUS
 Perpend.: [-1, -1, -1, -1]
@@ -436,22 +436,30 @@ HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Murder!: [-1, -1, -1, -1]
 SEND LINE 'Murder! '
+GHOST: [-1, -1, -1, -1]
+SEND WHO GHOST
+Swear.: [-1, -1, -1, -1]
+SEND LINE 'Swear. '
+GHOST: [-1, -1, -1, -1]
+SEND WHO GHOST
+Swear.: [-1, -1, -1, -1]
+SEND LINE 'Swear. '
+GHOST: [-1, -1, -1, -1]
+SEND WHO GHOST
+Swear.: [-1, -1, -1, -1]
+SEND LINE 'Swear. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Yours.: [-1, -1, -1, -1]
 SEND LINE 'Yours. '
-GHOST: [-1, -1, -1, -1]
-SEND WHO GHOST
-Swear.: [-1, -1, -1, -1]
-SEND LINE 'Swear. '
-GHOST: [-1, -1, -1, -1]
-SEND WHO GHOST
-Swear.: [-1, -1, -1, -1]
-SEND LINE 'Swear. '
-GHOST: [-1, -1, -1, -1]
-SEND WHO GHOST
-Swear.: [-1, -1, -1, -1]
-SEND LINE 'Swear. '
+POLONIUS: [-1, -1, -1, -1]
+SEND WHO POLONIUS
+Come.: [-1, -1, -1, -1]
+SEND LINE 'Come. '
+KING: [-1, -1, -1, -1]
+SEND WHO KING
+Dead.: [-1, -1, -1, -1]
+SEND LINE 'Dead. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Come.: [-1, -1, -1, -1]
@@ -462,20 +470,12 @@ This?: [-1, -1, -1, -1]
 SEND LINE 'This? '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
-Good.: [-1, -1, -1, -1]
-SEND LINE 'Good. '
-KING: [-1, -1, -1, -1]
-SEND WHO KING
-Dead.: [-1, -1, -1, -1]
-SEND LINE 'Dead. '
-HAMLET: [-1, -1, -1, -1]
-SEND WHO HAMLET
 What?: [-1, -1, -1, -1]
 SEND LINE 'What? '
-POLONIUS: [-1, -1, -1, -1]
-SEND WHO POLONIUS
-Come.: [-1, -1, -1, -1]
-SEND LINE 'Come. '
+HAMLET: [-1, -1, -1, -1]
+SEND WHO HAMLET
+Good.: [-1, -1, -1, -1]
+SEND LINE 'Good. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Why?: [-1, -1, -1, -1]
@@ -488,10 +488,6 @@ OSRIC: [-1, -1, -1, -1]
 SEND WHO OSRIC
 Sir?: [-1, -1, -1, -1]
 SEND LINE 'Sir? '
-BERNARDO: [-1, -1, -1, -1]
-SEND WHO BERNARDO
-He.: [-1, -1, -1, -1]
-SEND LINE 'He. '
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 No.: [-1, -1, -1, -1]
@@ -500,6 +496,10 @@ HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 No!: [-1, -1, -1, -1]
 SEND LINE 'No! '
+BERNARDO: [-1, -1, -1, -1]
+SEND WHO BERNARDO
+He.: [-1, -1, -1, -1]
+SEND LINE 'He. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Ha!: [-1, -1, -1, -1]
