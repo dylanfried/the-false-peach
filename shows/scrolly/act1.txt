@@ -18,31 +18,31 @@ Stagedir (Enter to him BERNARDO.)
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 Who's: [-1, -1, -1, -1], there?: [-1, -1, -1, -1]
-SEND LINE " Who's there? "
+SEND LINE u" Who's there? "
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 Nay,: [-1, -1, -1, -1], answer: [1.8, 2.0, 2.5, 1.3], me:: [-1, -1, -1, -1], stand,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], unfold: [2.1, 1.8, 1.9, 1.2], yourself.: [-1, -1, -1, -1]
-SEND LINE ' Nay, answer me: stand, and unfold yourself. '
+SEND LINE u' Nay, answer me: stand, and unfold yourself. '
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 Long: [-1, -1, -1, -1], live: [1.1, 1.9, 4.6, 1.5], the: [0.4, 0.5, 0.3, 0.3], king!: [-1, -1, -1, -1]
-SEND LINE ' Long live the king! '
+SEND LINE u' Long live the king! '
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 Bernardo?: [-1, -1, -1, -1]
-SEND LINE ' Bernardo? '
+SEND LINE u' Bernardo? '
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 He.: [-1, -1, -1, -1]
-SEND LINE ' He. '
+SEND LINE u' He. '
 FRANCISCO: [-1, -1, -1, -1]
 SEND WHO FRANCISCO
 You: [-1, -1, -1, -1], come: [0.8, 1.2, 2.2, 0.9], most: [1.8, 1.8, 1.5, 1.6], carefully: [0.7, 1.6, 1.5, 1.1], upon: [1.0, 0.5, 1.1, 0.7], your: [2.1, 1.6, 2.1, 1.3], hour.: [-1, -1, -1, -1]
-SEND LINE ' You come most carefully upon your hour. '
+SEND LINE u' You come most carefully upon your hour. '
 BERNARDO: [-1, -1, -1, -1]
 SEND WHO BERNARDO
 'Tis: [-1, -1, -1, -1], now: [0.6, 0.2, 0.9, 0.1], struck: [3.1, 1.9, 0.8, 2.1], twelve;: [-1, -1, -1, -1], get: [0.9, 0.9, 3.8, 0.9], thee: [0.3, 0.8, 1.2, 0.3], to: [0.1, 0.6, 0.6, 0.3], bed,: [-1, -1, -1, -1], Francisco.: [-1, -1, -1, -1]
-SEND LINE " 'Tis now struck twelve; get thee to bed, Francisco. "
+SEND LINE u" 'Tis now struck twelve; get thee to bed, Francisco. "
 
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
 SEND INTRO
@@ -95,17 +95,17 @@ Stagedir (Enter LAERTES and OPHELIA.)
 LAERTES: [-1, -1, -1, -1]
 SEND WHO LAERTES
 My: [-1, -1, -1, -1], necessaries: [0.6, 0.9, 2.1, 1.3], are: [0.6, 0.6, 1.4, 0.6], embarked:: [-1, -1, -1, -1], farewell:: [-1, -1, -1, -1]
-SEND LINE ' My necessaries are embarked: farewell: '
+SEND LINE u' My necessaries are embarked: farewell: '
 And,: [-1, -1, -1, -1], sister,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], the: [0.4, 0.5, 0.3, 0.3], winds: [1.0, 0.5, 0.8, 0.2], give: [1.1, 1.6, 3.4, 1.5], benefit: [0.4, 0.1, 4.4, 0.7]
-SEND LINE ' And, sister, as the winds give benefit '
+SEND LINE u' And, sister, as the winds give benefit '
 And: [-1, -1, -1, -1], convey: [0.5, 0.7, 1.7, 0.4], is: [0.3, 0.6, 0.3, 0.0], assistant,: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], not: [0.6, 1.2, 1.0, 0.8], sleep,: [-1, -1, -1, -1]
-SEND LINE ' And convey is assistant, do not sleep, '
+SEND LINE u' And convey is assistant, do not sleep, '
 But: [-1, -1, -1, -1], let: [1.0, 1.0, 1.2, 1.1], me: [1.7, 0.7, 3.0, 1.2], hear: [1.5, 1.4, 2.1, 1.2], from: [0.6, 0.5, 0.7, 0.4], you.: [-1, -1, -1, -1]
-SEND LINE ' But let me hear from you. '
+SEND LINE u' But let me hear from you. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 Do: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], doubt: [2.1, 2.8, 0.3, 1.8], that?: [-1, -1, -1, -1]
-SEND LINE ' Do you doubt that?'
+SEND LINE u' Do you doubt that?'
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 4: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 1, Scene 4 
@@ -120,7 +120,7 @@ Stagedir (Enter HAMLET, HORATIO, and MARCELLUS.)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 The: [-1, -1, -1, -1], air: [0.9, 0.8, 3.1, 0.9], bites: [2.6, 3.1, 0.3, 1.7], shrewdly;: [-1, -1, -1, -1], it: [0.5, 0.4, 0.1, 0.5], is: [0.3, 0.6, 0.3, 0.0], very: [1.0, 0.6, 1.1, 1.2], cold.: [-1, -1, -1, -1]
-SEND LINE ' The air bites shrewdly; it is very cold. '
+SEND LINE u' The air bites shrewdly; it is very cold. '
 
 Act: [-1, -1, -1, -1], 1,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 5: [-1, -1, -1, -1]
 SEND INTRO
@@ -138,33 +138,33 @@ Stagedir (Enter GHOST and HAMLET.)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Whither: [-1, -1, -1, -1], wilt: [0.3, 0.9, 0.0, 3.2], thou: [0.8, 0.1, 1.2, 1.0], lead: [0.4, 0.9, 1.6, 0.4], me?: [-1, -1, -1, -1], speak;: [-1, -1, -1, -1], I'll: [-1, -1, -1, -1], go: [0.8, 1.3, 2.6, 0.7], no: [0.7, 0.7, 0.6, 0.9], further.: [-1, -1, -1, -1]
-SEND LINE " Whither wilt thou lead me? speak; I'll go no further. "
+SEND LINE u" Whither wilt thou lead me? speak; I'll go no further. "
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 Mark: [-1, -1, -1, -1], me.: [-1, -1, -1, -1]
-SEND LINE ' Mark me. '
+SEND LINE u' Mark me. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 I: [-1, -1, -1, -1], will.: [-1, -1, -1, -1]
-SEND LINE ' I will. '
+SEND LINE u' I will. '
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 My: [-1, -1, -1, -1], hour: [0.5, 0.3, 0.5, 0.2], is: [0.3, 0.6, 0.3, 0.0], almost: [1.2, 1.0, 1.9, 1.5], come,: [-1, -1, -1, -1]
-SEND LINE ' My hour is almost come, '
+SEND LINE u' My hour is almost come, '
 When: [-1, -1, -1, -1], I: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], sulphurous: [0.9, 1.7, 0.7, 0.5], and: [0.7, 0.8, 0.4, 0.3], tormenting: [3.4, 3.2, 0.2, 3.7], flames: [3.5, 3.4, 2.1, 1.4]
-SEND LINE ' When I to sulphurous and tormenting flames '
+SEND LINE u' When I to sulphurous and tormenting flames '
 Must: [-1, -1, -1, -1], render: [0.7, 1.0, 1.0, 1.2], up: [0.9, 0.8, 2.6, 0.8], myself.: [-1, -1, -1, -1]
-SEND LINE ' Must render up myself. '
+SEND LINE u' Must render up myself. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Alas,: [-1, -1, -1, -1], poor: [2.7, 2.5, 0.3, 3.7], ghost!: [-1, -1, -1, -1]
-SEND LINE ' Alas, poor ghost! '
+SEND LINE u' Alas, poor ghost! '
 GHOST: [-1, -1, -1, -1]
 SEND WHO GHOST
 Pity: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], not,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], lend: [1.4, 1.5, 1.2, 1.3], thy: [0.1, 0.0, 0.6, 0.2], serious: [1.7, 1.3, 0.2, 2.4], hearing: [1.4, 0.9, 1.4, 0.8]
-SEND LINE ' Pity me not, but lend thy serious hearing '
+SEND LINE u' Pity me not, but lend thy serious hearing '
 To: [-1, -1, -1, -1], what: [0.4, 1.1, 0.5, 0.6], I: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], unfold.: [-1, -1, -1, -1]
-SEND LINE ' To what I shall unfold.'
+SEND LINE u' To what I shall unfold.'
 Act: [-1, -1, -1, -1], 2,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 2, Scene 1 
@@ -183,29 +183,29 @@ Stagedir (Enter OPHELIA.)
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 O,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], been: [0.2, 0.7, 0.5, 0.5], so: [0.6, 0.5, 0.3, 0.7], affrighted!: [-1, -1, -1, -1]
-SEND LINE ' O, my lord, my lord, I have been so affrighted! '
+SEND LINE u' O, my lord, my lord, I have been so affrighted! '
 POLONIUS: [-1, -1, -1, -1]
 SEND WHO POLONIUS
 With: [-1, -1, -1, -1], what,: [-1, -1, -1, -1], i': [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], name: [0.0, 0.3, 0.5, 0.3], of: [1.2, 0.9, 0.3, 0.6], God?: [-1, -1, -1, -1]
-SEND LINE " With what, i' the name of God? "
+SEND LINE u" With what, i' the name of God? "
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 My: [-1, -1, -1, -1], lord,: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], I: [-1, -1, -1, -1], was: [1.0, 0.9, 0.7, 1.4], sewing: [0.7, 0.4, 2.2, 0.8], in: [0.3, 0.1, 0.4, 0.4], my: [0.4, 0.3, 1.9, 0.3], closet,: [-1, -1, -1, -1]
-SEND LINE ' My lord, as I was sewing in my closet, '
+SEND LINE u' My lord, as I was sewing in my closet, '
 Lord: [-1, -1, -1, -1], Hamlet,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], his: [1.3, 0.2, 0.6, 0.8], doublet: [1.3, 0.9, 1.7, 1.4], all: [1.2, 0.8, 2.2, 0.9], unbraced;: [-1, -1, -1, -1]
-SEND LINE ' Lord Hamlet, with his doublet all unbraced; '
+SEND LINE u' Lord Hamlet, with his doublet all unbraced; '
 No: [-1, -1, -1, -1], hat: [0.2, 0.2, 1.8, 0.2], upon: [1.0, 0.5, 1.1, 0.7], his: [1.3, 0.2, 0.6, 0.8], head;: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], stockings: [0.6, 0.2, 2.2, 0.7], fouled,: [-1, -1, -1, -1]
-SEND LINE ' No hat upon his head; his stockings fouled, '
+SEND LINE u' No hat upon his head; his stockings fouled, '
 Ungartered,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], down-gyved: [0.7, 1.0, 0.1, 0.6], to: [0.1, 0.6, 0.6, 0.3], his: [1.3, 0.2, 0.6, 0.8], ankle;: [-1, -1, -1, -1]
-SEND LINE ' Ungartered, and down-gyved to his ankle; '
+SEND LINE u' Ungartered, and down-gyved to his ankle; '
 Pale: [-1, -1, -1, -1], as: [0.0, 0.0, 0.0, 0.0], his: [1.3, 0.2, 0.6, 0.8], shirt;: [-1, -1, -1, -1], his: [1.3, 0.2, 0.6, 0.8], knees: [0.4, 1.0, 0.5, 0.6], knocking: [1.0, 0.9, 1.0, 0.5], each: [0.5, 0.6, 1.0, 0.8], other;: [-1, -1, -1, -1]
-SEND LINE ' Pale as his shirt; his knees knocking each other; '
+SEND LINE u' Pale as his shirt; his knees knocking each other; '
 And: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], look: [1.7, 1.3, 3.1, 1.7], so: [0.6, 0.5, 0.3, 0.7], piteous: [0.9, 1.5, 2.1, 2.1], in: [0.3, 0.1, 0.4, 0.4], purport: [1.4, 1.4, 1.4, 1.3]
-SEND LINE ' And with a look so piteous in purport '
+SEND LINE u' And with a look so piteous in purport '
 As: [-1, -1, -1, -1], if: [0.7, 0.5, 0.8, 0.7], he: [0.2, 0.5, 0.9, 0.5], had: [1.3, 0.6, 1.1, 1.7], been: [0.2, 0.7, 0.5, 0.5], loosed: [2.2, 2.4, 1.2, 2.2], out: [1.0, 1.1, 1.0, 1.8], of: [1.2, 0.9, 0.3, 0.6], hell: [4.4, 4.7, 0.0, 4.2]
-SEND LINE ' As if he had been loosed out of hell '
+SEND LINE u' As if he had been loosed out of hell '
 To: [-1, -1, -1, -1], speak: [0.8, 0.9, 2.1, 0.7], of: [1.2, 0.9, 0.3, 0.6], horrors,: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], comes: [1.2, 0.5, 2.3, 0.6], before: [0.6, 0.8, 0.9, 1.3], me.: [-1, -1, -1, -1]
-SEND LINE ' To speak of horrors, he comes before me. '
+SEND LINE u' To speak of horrors, he comes before me. '
 
 Act: [-1, -1, -1, -1], 2,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
 SEND INTRO
@@ -222,93 +222,93 @@ Stagedir (Flourish.)
 GUILDENSTERN: [-1, -1, -1, -1]
 SEND WHO GUILDENSTERN
 My: [-1, -1, -1, -1], honoured: [0.3, 0.8, 3.9, 0.5], lord!: [-1, -1, -1, -1]
-SEND LINE ' My honoured lord! '
+SEND LINE u' My honoured lord! '
 ROSENCRANTZ: [-1, -1, -1, -1]
 SEND WHO ROSENCRANTZ
 My: [-1, -1, -1, -1], most: [1.8, 1.8, 1.5, 1.6], dear: [0.1, 0.4, 3.4, 0.5], lord!: [-1, -1, -1, -1]
-SEND LINE ' My most dear lord! '
+SEND LINE u' My most dear lord! '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 My: [-1, -1, -1, -1], excellent: [0.7, 0.7, 4.0, 0.5], good: [0.5, 0.9, 4.7, 0.5], friends!: [-1, -1, -1, -1]
-SEND LINE ' My excellent good friends! '
+SEND LINE u' My excellent good friends! '
 How: [-1, -1, -1, -1], dost: [0.3, 0.9, 1.2, 0.7], thou,: [-1, -1, -1, -1], Guildenstern?: [-1, -1, -1, -1]
-SEND LINE ' How dost thou, Guildenstern? '
+SEND LINE u' How dost thou, Guildenstern? '
 Ah,: [-1, -1, -1, -1], Rosencrantz!: [-1, -1, -1, -1]
-SEND LINE ' Ah, Rosencrantz! '
+SEND LINE u' Ah, Rosencrantz! '
 Good: [-1, -1, -1, -1], lads,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], do: [0.8, 0.7, 1.5, 1.2], you: [0.0, 0.1, 1.3, 0.0], both?: [-1, -1, -1, -1]
-SEND LINE ' Good lads, how do you both? '
+SEND LINE u' Good lads, how do you both? '
 ROSENCRANTZ: [-1, -1, -1, -1]
 SEND WHO ROSENCRANTZ
 As: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], indifferent: [1.5, 1.8, 0.5, 1.8], children: [0.9, 1.6, 4.3, 0.8], of: [1.2, 0.9, 0.3, 0.6], the: [0.4, 0.5, 0.3, 0.3], earth.: [-1, -1, -1, -1]
-SEND LINE ' As the indifferent children of the earth. '
+SEND LINE u' As the indifferent children of the earth. '
 GUILDENSTERN: [-1, -1, -1, -1]
 SEND WHO GUILDENSTERN
 Happy,: [-1, -1, -1, -1], in: [0.3, 0.1, 0.4, 0.4], that: [0.7, 0.7, 0.2, 0.4], we: [0.7, 0.6, 2.1, 0.7], are: [0.6, 0.6, 1.4, 0.6], not: [0.6, 1.2, 1.0, 0.8], overhappy;: [-1, -1, -1, -1]
-SEND LINE ' Happy, in that we are not overhappy; '
+SEND LINE u' Happy, in that we are not overhappy; '
 On: [-1, -1, -1, -1], fortune's: [0.4, 0.7, 3.1, 0.2], cap: [0.6, 0.3, 0.7, 0.2], we: [0.7, 0.6, 2.1, 0.7], are: [0.6, 0.6, 1.4, 0.6], not: [0.6, 1.2, 1.0, 0.8], the: [0.4, 0.5, 0.3, 0.3], very: [1.0, 0.6, 1.1, 1.2], button.: [-1, -1, -1, -1]
-SEND LINE " On fortune's cap we are not the very button. "
+SEND LINE u" On fortune's cap we are not the very button. "
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Nor: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], soles: [1.4, 0.7, 0.4, 0.3], of: [1.2, 0.9, 0.3, 0.6], her: [0.9, 1.1, 1.6, 1.5], shoe?: [-1, -1, -1, -1]
-SEND LINE ' Nor the soles of her shoe? '
+SEND LINE u' Nor the soles of her shoe? '
 ROSENCRANTZ: [-1, -1, -1, -1]
 SEND WHO ROSENCRANTZ
 Neither,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' Neither, my lord. '
+SEND LINE u' Neither, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Then: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], live: [1.1, 1.9, 4.6, 1.5], about: [0.2, 0.8, 0.8, 0.4], her: [0.9, 1.1, 1.6, 1.5], waist,: [-1, -1, -1, -1], or: [0.9, 0.8, 0.8, 0.5], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], middle: [1.4, 0.8, 1.3, 0.6], of: [1.2, 0.9, 0.3, 0.6], her: [0.9, 1.1, 1.6, 1.5], favours?: [-1, -1, -1, -1]
-SEND LINE ' Then you live about her waist, or in the middle of her favours? '
+SEND LINE u' Then you live about her waist, or in the middle of her favours? '
 GUILDENSTERN: [-1, -1, -1, -1]
 SEND WHO GUILDENSTERN
 'Faith,: [-1, -1, -1, -1], her: [0.9, 1.1, 1.6, 1.5], privates: [0.9, 1.3, 1.1, 1.0], we.: [-1, -1, -1, -1]
-SEND LINE " 'Faith, her privates we. "
+SEND LINE u" 'Faith, her privates we. "
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 In: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], secret: [1.8, 2.2, 0.3, 1.9], parts: [0.7, 1.1, 1.3, 0.6], of: [1.2, 0.9, 0.3, 0.6], fortune?: [-1, -1, -1, -1]
-SEND LINE ' In the secret parts of fortune? '
+SEND LINE u' In the secret parts of fortune? '
 O,: [-1, -1, -1, -1], most: [1.8, 1.8, 1.5, 1.6], true;: [-1, -1, -1, -1]
-SEND LINE ' O, most true; '
+SEND LINE u' O, most true; '
 she: [0.6, 0.6, 1.1, 0.1], is: [0.3, 0.6, 0.3, 0.0], a: [-1, -1, -1, -1], strumpet.: [-1, -1, -1, -1]
-SEND LINE ' she is a strumpet. '
+SEND LINE u' she is a strumpet. '
 What: [-1, -1, -1, -1], news?: [-1, -1, -1, -1]
-SEND LINE ' What news? '
+SEND LINE u' What news? '
 ROSENCRANTZ: [-1, -1, -1, -1]
 SEND WHO ROSENCRANTZ
 None,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord,: [-1, -1, -1, -1], but: [1.1, 1.2, 0.6, 1.0], the: [0.4, 0.5, 0.3, 0.3], world's: [1.9, 1.9, 3.0, 1.7], grown: [0.3, 1.0, 1.9, 1.0], honest.: [-1, -1, -1, -1]
-SEND LINE " None, my lord, but the world's grown honest. "
+SEND LINE u" None, my lord, but the world's grown honest. "
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Then: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], doomsday: [2.4, 3.6, 0.5, 3.1], near:: [-1, -1, -1, -1]
-SEND LINE ' Then is doomsday near: '
+SEND LINE u' Then is doomsday near: '
 but: [1.1, 1.2, 0.6, 1.0], your: [2.1, 1.6, 2.1, 1.3], news: [2.5, 2.6, 2.2, 3.3], is: [0.3, 0.6, 0.3, 0.0], not: [0.6, 1.2, 1.0, 0.8], true.: [-1, -1, -1, -1]
-SEND LINE ' but your news is not true. '
+SEND LINE u' but your news is not true. '
 Let: [-1, -1, -1, -1], me: [1.7, 0.7, 3.0, 1.2], question: [1.8, 1.7, 1.6, 1.2], more: [1.6, 1.1, 1.7, 1.3], in: [0.3, 0.1, 0.4, 0.4], particular:: [-1, -1, -1, -1]
-SEND LINE ' Let me question more in particular: '
+SEND LINE u' Let me question more in particular: '
 what: [0.4, 1.1, 0.5, 0.6], have: [0.6, 0.8, 1.6, 1.1], you,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], good: [0.5, 0.9, 4.7, 0.5], friends,: [-1, -1, -1, -1], deserved: [1.2, 1.0, 3.8, 0.7], at: [0.5, 0.4, 0.5, 0.5], the: [0.4, 0.5, 0.3, 0.3], hands: [0.6, 0.7, 2.1, 0.7], of: [1.2, 0.9, 0.3, 0.6], fortune,: [-1, -1, -1, -1]
-SEND LINE ' what have you, my good friends, deserved at the hands of fortune, '
+SEND LINE u' what have you, my good friends, deserved at the hands of fortune, '
 that: [0.7, 0.7, 0.2, 0.4], she: [0.6, 0.6, 1.1, 0.1], sends: [1.3, 0.5, 1.7, 0.9], you: [0.0, 0.1, 1.3, 0.0], to: [0.1, 0.6, 0.6, 0.3], prison: [2.8, 3.0, 0.1, 2.9], hither?: [-1, -1, -1, -1]
-SEND LINE ' that she sends you to prison hither? '
+SEND LINE u' that she sends you to prison hither? '
 GUILDENSTERN: [-1, -1, -1, -1]
 SEND WHO GUILDENSTERN
 Prison,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord!: [-1, -1, -1, -1]
-SEND LINE ' Prison, my lord! '
+SEND LINE u' Prison, my lord! '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Denmark's: [-1, -1, -1, -1], a: [-1, -1, -1, -1], prison.: [-1, -1, -1, -1]
-SEND LINE " Denmark's a prison. "
+SEND LINE u" Denmark's a prison. "
 ROSENCRANTZ: [-1, -1, -1, -1]
 SEND WHO ROSENCRANTZ
 Then: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], world: [1.4, 1.1, 2.4, 1.2], one.: [-1, -1, -1, -1]
-SEND LINE ' Then is the world one. '
+SEND LINE u' Then is the world one. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 A: [-1, -1, -1, -1], goodly: [1.2, 1.3, 2.6, 1.0], one;: [-1, -1, -1, -1]
-SEND LINE ' A goodly one; '
+SEND LINE u' A goodly one; '
 in: [0.3, 0.1, 0.4, 0.4], which: [0.2, 0.1, 0.6, 0.3], there: [0.6, 0.3, 0.6, 0.6], are: [0.6, 0.6, 1.4, 0.6], many: [0.7, 1.3, 2.7, 0.7], confines,: [-1, -1, -1, -1], wards: [2.0, 1.8, 0.8, 1.7], and: [0.7, 0.8, 0.4, 0.3], dungeons,: [-1, -1, -1, -1]
-SEND LINE ' in which there are many confines, wards and dungeons, '
+SEND LINE u' in which there are many confines, wards and dungeons, '
 Denmark: [-1, -1, -1, -1], being: [0.9, 1.1, 2.0, 1.2], one: [0.9, 0.8, 1.1, 1.4], o': [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], worst.: [-1, -1, -1, -1]
-SEND LINE " Denmark being one o' the worst. "
+SEND LINE u" Denmark being one o' the worst. "
 
 Act: [-1, -1, -1, -1], 3,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
 SEND INTRO
@@ -322,23 +322,23 @@ Stagedir (A room in the castle.)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 To: [-1, -1, -1, -1], be,: [-1, -1, -1, -1], or: [0.9, 0.8, 0.8, 0.5], not: [0.6, 1.2, 1.0, 0.8], to: [0.1, 0.6, 0.6, 0.3], be:: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], is: [0.3, 0.6, 0.3, 0.0], the: [0.4, 0.5, 0.3, 0.3], question:: [-1, -1, -1, -1]
-SEND LINE ' To be, or not to be: that is the question: '
+SEND LINE u' To be, or not to be: that is the question: '
 Whether: [-1, -1, -1, -1], 'tis: [-1, -1, -1, -1], nobler: [1.1, 0.7, 2.1, 0.6], in: [0.3, 0.1, 0.4, 0.4], the: [0.4, 0.5, 0.3, 0.3], mind: [0.8, 0.9, 1.6, 1.3], to: [0.1, 0.6, 0.6, 0.3], suffer: [3.3, 3.3, 0.7, 4.4]
-SEND LINE " Whether 'tis nobler in the mind to suffer "
+SEND LINE u" Whether 'tis nobler in the mind to suffer "
 The: [-1, -1, -1, -1], slings: [1.4, 1.4, 0.7, 1.8], and: [0.7, 0.8, 0.4, 0.3], arrows: [1.2, 1.5, 1.2, 0.9], of: [1.2, 0.9, 0.3, 0.6], outrageous: [3.6, 1.9, 1.1, 1.7], fortune,: [-1, -1, -1, -1]
-SEND LINE ' The slings and arrows of outrageous fortune, '
+SEND LINE u' The slings and arrows of outrageous fortune, '
 Or: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], take: [1.2, 1.5, 1.5, 1.4], arms: [1.8, 1.6, 1.5, 2.0], against: [2.5, 1.8, 1.1, 2.2], a: [-1, -1, -1, -1], sea: [1.1, 2.8, 2.7, 1.0], of: [1.2, 0.9, 0.3, 0.6], troubles,: [-1, -1, -1, -1]
-SEND LINE ' Or to take arms against a sea of troubles, '
+SEND LINE u' Or to take arms against a sea of troubles, '
 And: [-1, -1, -1, -1], by: [0.2, 0.2, 0.5, 0.4], opposing: [3.0, 2.0, 1.0, 2.2], end: [1.4, 2.1, 2.3, 2.3], them?: [-1, -1, -1, -1], To: [-1, -1, -1, -1], die:: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], sleep;: [-1, -1, -1, -1]
-SEND LINE ' And by opposing end them? To die: to sleep; '
+SEND LINE u' And by opposing end them? To die: to sleep; '
 No: [-1, -1, -1, -1], more;: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], by: [0.2, 0.2, 0.5, 0.4], a: [-1, -1, -1, -1], sleep: [0.8, 1.1, 3.2, 1.1], to: [0.1, 0.6, 0.6, 0.3], say: [0.5, 0.7, 1.5, 0.5], we: [0.7, 0.6, 2.1, 0.7], end: [1.4, 2.1, 2.3, 2.3]
-SEND LINE ' No more; and by a sleep to say we end '
+SEND LINE u' No more; and by a sleep to say we end '
 The: [-1, -1, -1, -1], heart-ache: [2.4, 3.0, 1.0, 4.0], and: [0.7, 0.8, 0.4, 0.3], the: [0.4, 0.5, 0.3, 0.3], thousand: [0.4, 0.8, 0.6, 0.5], natural: [0.4, 0.9, 2.2, 0.6], shocks: [3.1, 4.0, 1.0, 2.9]
-SEND LINE ' The heart-ache and the thousand natural shocks '
+SEND LINE u' The heart-ache and the thousand natural shocks '
 That: [-1, -1, -1, -1], flesh: [1.3, 1.4, 1.6, 1.3], is: [0.3, 0.6, 0.3, 0.0], heir: [0.9, 1.1, 2.7, 1.6], to,: [-1, -1, -1, -1], 'tis: [-1, -1, -1, -1], a: [-1, -1, -1, -1], consummation: [1.0, 1.2, 3.2, 1.3]
-SEND LINE " That flesh is heir to, 'tis a consummation "
+SEND LINE u" That flesh is heir to, 'tis a consummation "
 Devoutly: [-1, -1, -1, -1], to: [0.1, 0.6, 0.6, 0.3], be: [0.6, 1.1, 0.8, 0.8], wished.: [-1, -1, -1, -1]
-SEND LINE ' Devoutly to be wished.'
+SEND LINE u' Devoutly to be wished.'
 Act: [-1, -1, -1, -1], 3,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 3, Scene 2 
@@ -364,71 +364,71 @@ Stagedir (Enter KING, QUEEN, POLONIUS, OPHELIA, ROSENCRANTZ, GUILDENSTERN, and o
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Lady,: [-1, -1, -1, -1], shall: [1.1, 1.4, 1.8, 0.7], I: [-1, -1, -1, -1], lie: [3.6, 2.6, 0.6, 3.0], in: [0.3, 0.1, 0.4, 0.4], your: [2.1, 1.6, 2.1, 1.3], lap?: [-1, -1, -1, -1]
-SEND LINE ' Lady, shall I lie in your lap? '
+SEND LINE u' Lady, shall I lie in your lap? '
 (: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Lying: [-1, -1, -1, -1], down: [0.9, 0.9, 0.1, 2.5], at: [0.5, 0.4, 0.5, 0.5], Ophelia's: [-1, -1, -1, -1], feet.): [-1, -1, -1, -1]
 Stagedir (Lying down at Ophelia's feet.)
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 No,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' No, my lord. '
+SEND LINE u' No, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 I: [-1, -1, -1, -1], mean,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], head: [0.9, 0.5, 1.2, 0.7], upon: [1.0, 0.5, 1.1, 0.7], your: [2.1, 1.6, 2.1, 1.3], lap?: [-1, -1, -1, -1]
-SEND LINE ' I mean, my head upon your lap? '
+SEND LINE u' I mean, my head upon your lap? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 Ay,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' Ay, my lord. '
+SEND LINE u' Ay, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Do: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], think: [1.4, 1.3, 2.4, 1.2], I: [-1, -1, -1, -1], meant: [1.8, 1.6, 2.0, 1.6], country: [0.7, 0.7, 2.5, 0.3], matters?: [-1, -1, -1, -1]
-SEND LINE ' Do you think I meant country matters? '
+SEND LINE u' Do you think I meant country matters? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 I: [-1, -1, -1, -1], think: [1.4, 1.3, 2.4, 1.2], nothing,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' I think nothing, my lord. '
+SEND LINE u' I think nothing, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 That's: [-1, -1, -1, -1], a: [-1, -1, -1, -1], fair: [1.1, 1.5, 2.4, 1.2], thought: [1.9, 1.8, 2.4, 2.2], to: [0.1, 0.6, 0.6, 0.3], lie: [3.6, 2.6, 0.6, 3.0], between: [1.0, 0.7, 1.3, 0.8], maids': [-1, -1, -1, -1], legs.: [-1, -1, -1, -1]
-SEND LINE " That's a fair thought to lie between maids' legs. "
+SEND LINE u" That's a fair thought to lie between maids' legs. "
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 What: [-1, -1, -1, -1], is,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord?: [-1, -1, -1, -1]
-SEND LINE ' What is, my lord? '
+SEND LINE u' What is, my lord? '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Nothing.: [-1, -1, -1, -1]
-SEND LINE ' Nothing. '
+SEND LINE u' Nothing. '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 You: [-1, -1, -1, -1], are: [0.6, 0.6, 1.4, 0.6], merry,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' You are merry, my lord. '
+SEND LINE u' You are merry, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Who,: [-1, -1, -1, -1], I?: [-1, -1, -1, -1]
-SEND LINE ' Who, I? '
+SEND LINE u' Who, I? '
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 Ay,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE ' Ay, my lord. '
+SEND LINE u' Ay, my lord. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 O: [-1, -1, -1, -1], God,: [-1, -1, -1, -1], your: [2.1, 1.6, 2.1, 1.3], only: [0.4, 0.8, 0.2, 1.6], jig-maker.: [-1, -1, -1, -1]
-SEND LINE ' O God, your only jig-maker. '
+SEND LINE u' O God, your only jig-maker. '
 What: [-1, -1, -1, -1], should: [1.3, 2.0, 1.6, 1.6], a: [-1, -1, -1, -1], man: [1.3, 1.0, 2.2, 1.0], do: [0.8, 0.7, 1.5, 1.2], but: [1.1, 1.2, 0.6, 1.0], be: [0.6, 1.1, 0.8, 0.8], merry?: [-1, -1, -1, -1]
-SEND LINE ' What should a man do but be merry? '
+SEND LINE u' What should a man do but be merry? '
 for,: [-1, -1, -1, -1], look: [1.7, 1.3, 3.1, 1.7], you,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], cheerfully: [0.1, 0.4, 4.3, 0.6], my: [0.4, 0.3, 1.9, 0.3], mother: [1.1, 1.3, 4.5, 0.8], looks,: [-1, -1, -1, -1]
-SEND LINE ' for, look you, how cheerfully my mother looks, '
+SEND LINE u' for, look you, how cheerfully my mother looks, '
 and: [0.7, 0.8, 0.4, 0.3], my: [0.4, 0.3, 1.9, 0.3], father: [1.7, 1.8, 3.4, 1.6], died: [3.0, 3.9, 0.1, 4.9], within's: [-1, -1, -1, -1], two: [0.4, 0.7, 0.6, 0.5], hours.: [-1, -1, -1, -1]
-SEND LINE " and my father died within's two hours. "
+SEND LINE u" and my father died within's two hours. "
 OPHELIA: [-1, -1, -1, -1]
 SEND WHO OPHELIA
 Nay,: [-1, -1, -1, -1], 'tis: [-1, -1, -1, -1], twice: [0.5, 0.3, 1.0, 0.4], two: [0.4, 0.7, 0.6, 0.5], months,: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], lord.: [-1, -1, -1, -1]
-SEND LINE " Nay, 'tis twice two months, my lord. "
+SEND LINE u" Nay, 'tis twice two months, my lord. "
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 So: [-1, -1, -1, -1], long?: [-1, -1, -1, -1]
-SEND LINE ' So long? '
+SEND LINE u' So long? '
 
 Act: [-1, -1, -1, -1], 3,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 3: [-1, -1, -1, -1]
 SEND INTRO
@@ -445,9 +445,9 @@ Stagedir (Enter KING, ROSENCRANTZ, and GUILDENSTERN.)
 KING: [-1, -1, -1, -1]
 SEND WHO KING
 I: [-1, -1, -1, -1], like: [0.4, 0.6, 4.3, 0.7], him: [1.1, 0.7, 1.5, 0.4], not,: [-1, -1, -1, -1], nor: [0.5, 0.6, 0.6, 0.9], stands: [1.1, 1.2, 1.8, 0.8], it: [0.5, 0.4, 0.1, 0.5], safe: [0.3, 0.4, 3.0, 0.7], with: [0.4, 0.4, 1.0, 0.3], us: [0.2, 0.3, 2.1, 0.2]
-SEND LINE ' I like him not, nor stands it safe with us '
+SEND LINE u' I like him not, nor stands it safe with us '
 To: [-1, -1, -1, -1], let: [1.0, 1.0, 1.2, 1.1], his: [1.3, 0.2, 0.6, 0.8], madness: [2.6, 3.8, 0.6, 2.9], range.: [-1, -1, -1, -1]
-SEND LINE ' To let his madness range.'
+SEND LINE u' To let his madness range.'
 Act: [-1, -1, -1, -1], 3,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 4: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 3, Scene 4 
@@ -468,35 +468,35 @@ Stagedir (Polonius hides behind the arras)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Now,: [-1, -1, -1, -1], mother,: [-1, -1, -1, -1], what's: [0.4, 0.9, 1.0, 0.5], the: [0.4, 0.5, 0.3, 0.3], matter?: [-1, -1, -1, -1]
-SEND LINE " Now, mother, what's the matter? "
+SEND LINE u" Now, mother, what's the matter? "
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 Hamlet,: [-1, -1, -1, -1], thou: [0.8, 0.1, 1.2, 1.0], hast: [0.8, 1.5, 1.4, 0.8], thy: [0.1, 0.0, 0.6, 0.2], father: [1.7, 1.8, 3.4, 1.6], much: [0.9, 1.2, 1.9, 0.2], offended.: [-1, -1, -1, -1]
-SEND LINE ' Hamlet, thou hast thy father much offended. '
+SEND LINE u' Hamlet, thou hast thy father much offended. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Mother,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], have: [0.6, 0.8, 1.6, 1.1], my: [0.4, 0.3, 1.9, 0.3], father: [1.7, 1.8, 3.4, 1.6], much: [0.9, 1.2, 1.9, 0.2], offended.: [-1, -1, -1, -1]
-SEND LINE ' Mother, you have my father much offended. '
+SEND LINE u' Mother, you have my father much offended. '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 Come,: [-1, -1, -1, -1], come,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], answer: [1.8, 2.0, 2.5, 1.3], with: [0.4, 0.4, 1.0, 0.3], an: [0.0, 0.0, 0.0, 0.0], idle: [1.6, 0.8, 0.6, 1.2], tongue.: [-1, -1, -1, -1]
-SEND LINE ' Come, come, you answer with an idle tongue. '
+SEND LINE u' Come, come, you answer with an idle tongue. '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Go,: [-1, -1, -1, -1], go,: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], question: [1.8, 1.7, 1.6, 1.2], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], wicked: [2.3, 2.6, 1.1, 2.2], tongue.: [-1, -1, -1, -1]
-SEND LINE ' Go, go, you question with a wicked tongue. '
+SEND LINE u' Go, go, you question with a wicked tongue. '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 Why,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], now,: [-1, -1, -1, -1], Hamlet!: [-1, -1, -1, -1]
-SEND LINE ' Why, how now, Hamlet! '
+SEND LINE u' Why, how now, Hamlet! '
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 What's: [-1, -1, -1, -1], the: [0.4, 0.5, 0.3, 0.3], matter: [1.0, 1.2, 0.9, 0.7], now?: [-1, -1, -1, -1]
-SEND LINE " What's the matter now? "
+SEND LINE u" What's the matter now? "
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 Have: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], forgot: [3.9, 2.5, 0.6, 3.5], me?: [-1, -1, -1, -1]
-SEND LINE ' Have you forgot me?'
+SEND LINE u' Have you forgot me?'
 Act: [-1, -1, -1, -1], 4,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 4, Scene 1 
@@ -530,7 +530,7 @@ Stagedir (Enter KING attended.)
 KING: [-1, -1, -1, -1]
 SEND WHO KING
 I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], sent: [1.0, 0.4, 1.8, 0.7], to: [0.1, 0.6, 0.6, 0.3], seek: [0.9, 0.4, 1.0, 1.3], him,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], to: [0.1, 0.6, 0.6, 0.3], find: [0.9, 0.7, 3.6, 0.7], the: [0.4, 0.5, 0.3, 0.3], body.: [-1, -1, -1, -1]
-SEND LINE ' I have sent to seek him, and to find the body. '
+SEND LINE u' I have sent to seek him, and to find the body. '
 
 Act: [-1, -1, -1, -1], 4,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 4: [-1, -1, -1, -1]
 SEND INTRO
@@ -551,15 +551,15 @@ Stagedir (Enter HAMLET)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 I'll: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], with: [0.4, 0.4, 1.0, 0.3], you: [0.0, 0.1, 1.3, 0.0], straight.: [-1, -1, -1, -1], Go: [-1, -1, -1, -1], a: [-1, -1, -1, -1], little: [2.0, 2.1, 1.3, 1.9], before.: [-1, -1, -1, -1]
-SEND LINE " I'll be with you straight. Go a little before. "
+SEND LINE u" I'll be with you straight. Go a little before. "
 (: [-1, -1, -1, -1], exit: [1.1, 1.0, 0.7, 1.0], Exeunt: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], except: [0.9, 0.5, 1.3, 0.6], Hamlet.): [-1, -1, -1, -1]
 TRIGGER: exit [u'exeunt']
 Stagedir (Exeunt all except Hamlet.)
 How: [-1, -1, -1, -1], all: [1.2, 0.8, 2.2, 0.9], occasions: [0.6, 0.8, 3.2, 0.8], do: [0.8, 0.7, 1.5, 1.2], inform: [0.3, 1.2, 1.5, 1.1], against: [2.5, 1.8, 1.1, 2.2], me,: [-1, -1, -1, -1]
 Entering dialogue, SEND WHO HAMLET
-SEND LINE ' How all occasions do inform against me, '
+SEND LINE u' How all occasions do inform against me, '
 And: [-1, -1, -1, -1], spur: [2.1, 0.9, 1.2, 0.9], my: [0.4, 0.3, 1.9, 0.3], dull: [1.4, 1.3, 0.9, 2.1], revenge!: [-1, -1, -1, -1]
-SEND LINE ' And spur my dull revenge!'
+SEND LINE u' And spur my dull revenge!'
 Act: [-1, -1, -1, -1], 4,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 5: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 4, Scene 5 
@@ -574,13 +574,13 @@ Stagedir (Enter QUEEN, HORATIO, and a Gentleman.)
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 I: [-1, -1, -1, -1], will: [1.2, 0.5, 1.8, 0.7], not: [0.6, 1.2, 1.0, 0.8], speak: [0.8, 0.9, 2.1, 0.7], with: [0.4, 0.4, 1.0, 0.3], her.: [-1, -1, -1, -1]
-SEND LINE ' I will not speak with her. '
+SEND LINE u' I will not speak with her. '
 GENTLEMAN: [-1, -1, -1, -1]
 SEND WHO GENTLEMAN
 She: [-1, -1, -1, -1], is: [0.3, 0.6, 0.3, 0.0], importunate,: [-1, -1, -1, -1], indeed: [0.6, 0.3, 1.8, 0.4], distract:: [-1, -1, -1, -1]
-SEND LINE ' She is importunate, indeed distract: '
+SEND LINE u' She is importunate, indeed distract: '
 Her: [-1, -1, -1, -1], mood: [2.3, 2.3, 3.5, 2.2], will: [1.2, 0.5, 1.8, 0.7], needs: [1.2, 1.3, 1.2, 1.7], be: [0.6, 1.1, 0.8, 0.8], pitied.: [-1, -1, -1, -1]
-SEND LINE ' Her mood will needs be pitied. '
+SEND LINE u' Her mood will needs be pitied. '
 GERTRUDE: [-1, -1, -1, -1]
 SEND WHO GERTRUDE
 
@@ -598,7 +598,7 @@ Stagedir (Enter)
 HORATIO: [-1, -1, -1, -1]
 SEND WHO HORATIO
 What: [-1, -1, -1, -1], are: [0.6, 0.6, 1.4, 0.6], they: [0.1, 0.1, 0.1, 0.1], that: [0.7, 0.7, 0.2, 0.4], would: [0.3, 0.3, 0.3, 0.1], speak: [0.8, 0.9, 2.1, 0.7], with: [0.4, 0.4, 1.0, 0.3], me?: [-1, -1, -1, -1]
-SEND LINE ' What are they that would speak with me? '
+SEND LINE u' What are they that would speak with me? '
 HORATIO: [-1, -1, -1, -1]
 SEND WHO HORATIO
 
@@ -615,15 +615,15 @@ Stagedir (Enter KING and LAERTES.)
 KING: [-1, -1, -1, -1]
 SEND WHO KING
 Now: [-1, -1, -1, -1], must: [0.9, 1.6, 0.4, 0.7], your: [2.1, 1.6, 2.1, 1.3], conscience: [1.5, 2.4, 1.1, 1.2], my: [0.4, 0.3, 1.9, 0.3], acquittance: [-1, -1, -1, -1], seal,: [-1, -1, -1, -1]
-SEND LINE ' Now must your conscience my acquittance seal, '
+SEND LINE u' Now must your conscience my acquittance seal, '
 And: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], must: [0.9, 1.6, 0.4, 0.7], put: [0.3, 1.0, 1.2, 0.6], me: [1.7, 0.7, 3.0, 1.2], in: [0.3, 0.1, 0.4, 0.4], your: [2.1, 1.6, 2.1, 1.3], heart: [0.9, 1.4, 4.2, 1.2], for: [0.0, 0.0, 0.0, 0.1], friend,: [-1, -1, -1, -1]
-SEND LINE ' And you must put me in your heart for friend, '
+SEND LINE u' And you must put me in your heart for friend, '
 Sith: [-1, -1, -1, -1], you: [0.0, 0.1, 1.3, 0.0], have: [0.6, 0.8, 1.6, 1.1], heard,: [-1, -1, -1, -1], and: [0.7, 0.8, 0.4, 0.3], with: [0.4, 0.4, 1.0, 0.3], a: [-1, -1, -1, -1], knowing: [1.2, 1.7, 3.0, 1.3], ear,: [-1, -1, -1, -1]
-SEND LINE ' Sith you have heard, and with a knowing ear, '
+SEND LINE u' Sith you have heard, and with a knowing ear, '
 That: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], which: [0.2, 0.1, 0.6, 0.3], hath: [1.0, 0.4, 1.0, 0.7], your: [2.1, 1.6, 2.1, 1.3], noble: [0.8, 2.5, 2.2, 1.2], father: [1.7, 1.8, 3.4, 1.6], slain: [3.1, 3.0, 0.3, 3.2]
-SEND LINE ' That he which hath your noble father slain '
+SEND LINE u' That he which hath your noble father slain '
 Pursued: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], life.: [-1, -1, -1, -1]
-SEND LINE ' Pursued my life.'
+SEND LINE u' Pursued my life.'
 Act: [-1, -1, -1, -1], 5,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 1: [-1, -1, -1, -1]
 SEND INTRO
 TITLE   Act 5, Scene 1 
@@ -641,27 +641,27 @@ Stagedir (Takes the skull.)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 Alas,: [-1, -1, -1, -1], poor: [2.7, 2.5, 0.3, 3.7], Yorick!: [-1, -1, -1, -1]
-SEND LINE ' Alas, poor Yorick! '
+SEND LINE u' Alas, poor Yorick! '
 I: [-1, -1, -1, -1], knew: [1.3, 1.5, 2.3, 0.8], him,: [-1, -1, -1, -1], Horatio:: [-1, -1, -1, -1]
-SEND LINE ' I knew him, Horatio: '
+SEND LINE u' I knew him, Horatio: '
 a: [-1, -1, -1, -1], fellow: [1.2, 0.5, 2.0, 0.9], of: [1.2, 0.9, 0.3, 0.6], infinite: [0.8, 1.4, 1.6, 1.2], jest,: [-1, -1, -1, -1], of: [1.2, 0.9, 0.3, 0.6], most: [1.8, 1.8, 1.5, 1.6], excellent: [0.7, 0.7, 4.0, 0.5], fancy:: [-1, -1, -1, -1]
-SEND LINE ' a fellow of infinite jest, of most excellent fancy: '
+SEND LINE u' a fellow of infinite jest, of most excellent fancy: '
 he: [0.2, 0.5, 0.9, 0.5], hath: [1.0, 0.4, 1.0, 0.7], bore: [1.3, 0.4, 0.2, 0.6], me: [1.7, 0.7, 3.0, 1.2], on: [0.3, 0.4, 0.4, 0.7], his: [1.3, 0.2, 0.6, 0.8], back: [1.1, 1.1, 1.5, 0.9], a: [-1, -1, -1, -1], thousand: [0.4, 0.8, 0.6, 0.5], times;: [-1, -1, -1, -1]
-SEND LINE ' he hath bore me on his back a thousand times; '
+SEND LINE u' he hath bore me on his back a thousand times; '
 and: [0.7, 0.8, 0.4, 0.3], now,: [-1, -1, -1, -1], how: [1.0, 1.1, 0.7, 0.5], abhorred: [2.0, 2.1, 1.1, 1.9], in: [0.3, 0.1, 0.4, 0.4], my: [0.4, 0.3, 1.9, 0.3], imagination: [0.8, 0.8, 3.8, 1.1], it: [0.5, 0.4, 0.1, 0.5], is!: [-1, -1, -1, -1]
-SEND LINE ' and now, how abhorred in my imagination it is! '
+SEND LINE u' and now, how abhorred in my imagination it is! '
 my: [0.4, 0.3, 1.9, 0.3], gorge: [1.4, 1.0, 1.1, 0.6], rises: [1.0, 0.6, 2.2, 0.3], at: [0.5, 0.4, 0.5, 0.5], it.: [-1, -1, -1, -1]
-SEND LINE ' my gorge rises at it. '
+SEND LINE u' my gorge rises at it. '
 Here: [-1, -1, -1, -1], hung: [0.9, 2.0, 1.2, 2.5], those: [0.6, 0.4, 0.2, 0.6], lips: [0.3, 0.6, 2.2, 0.4], that: [0.7, 0.7, 0.2, 0.4], I: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], kissed: [0.7, 1.2, 4.5, 1.0], I: [-1, -1, -1, -1], know: [1.2, 1.1, 2.6, 1.3], not: [0.6, 1.2, 1.0, 0.8], how: [1.0, 1.1, 0.7, 0.5], oft.: [-1, -1, -1, -1]
-SEND LINE ' Here hung those lips that I have kissed I know not how oft. '
+SEND LINE u' Here hung those lips that I have kissed I know not how oft. '
 Where: [-1, -1, -1, -1], be: [0.6, 1.1, 0.8, 0.8], your: [2.1, 1.6, 2.1, 1.3], gibes: [2.4, 2.5, 0.5, 2.0], now?: [-1, -1, -1, -1]
-SEND LINE ' Where be your gibes now? '
+SEND LINE u' Where be your gibes now? '
 your: [2.1, 1.6, 2.1, 1.3], gambols?: [-1, -1, -1, -1]
-SEND LINE ' your gambols? '
+SEND LINE u' your gambols? '
 your: [2.1, 1.6, 2.1, 1.3], songs?: [-1, -1, -1, -1]
-SEND LINE ' your songs? '
+SEND LINE u' your songs? '
 your: [2.1, 1.6, 2.1, 1.3], flashes: [2.3, 1.6, 1.6, 0.5], of: [1.2, 0.9, 0.3, 0.6], merriment,: [-1, -1, -1, -1], that: [0.7, 0.7, 0.2, 0.4], were: [0.6, 0.2, 0.3, 0.1], wont: [1.2, 1.1, 1.3, 0.9], to: [0.1, 0.6, 0.6, 0.3], set: [0.9, 0.9, 2.1, 0.6], the: [0.4, 0.5, 0.3, 0.3], table: [0.1, 0.5, 0.9, 0.1], on: [0.3, 0.4, 0.4, 0.7], a: [-1, -1, -1, -1], roar?: [-1, -1, -1, -1]
-SEND LINE ' your flashes of merriment, that were wont to set the table on a roar? '
+SEND LINE u' your flashes of merriment, that were wont to set the table on a roar? '
 
 Act: [-1, -1, -1, -1], 5,: [-1, -1, -1, -1], Scene: [-1, -1, -1, -1], 2: [-1, -1, -1, -1]
 SEND INTRO
@@ -677,30 +677,30 @@ Stagedir (Enter HAMLET and HORATIO.)
 HAMLET: [-1, -1, -1, -1]
 SEND WHO HAMLET
 O,: [-1, -1, -1, -1], I: [-1, -1, -1, -1], die,: [-1, -1, -1, -1], Horatio;: [-1, -1, -1, -1]
-SEND LINE ' O, I die, Horatio; '
+SEND LINE u' O, I die, Horatio; '
 The: [-1, -1, -1, -1], potent: [1.3, 1.1, 1.5, 1.1], poison: [2.8, 3.3, 0.8, 3.1], quite: [1.6, 1.9, 1.5, 1.8], o'ercrows: [-1, -1, -1, -1], my: [0.4, 0.3, 1.9, 0.3], spirit:: [-1, -1, -1, -1]
-SEND LINE " The potent poison quite o'ercrows my spirit: "
+SEND LINE u" The potent poison quite o'ercrows my spirit: "
 I: [-1, -1, -1, -1], cannot: [1.6, 1.5, 0.1, 1.3], live: [1.1, 1.9, 4.6, 1.5], to: [0.1, 0.6, 0.6, 0.3], hear: [1.5, 1.4, 2.1, 1.2], the: [0.4, 0.5, 0.3, 0.3], news: [2.5, 2.6, 2.2, 3.3], from: [0.6, 0.5, 0.7, 0.4], England;: [-1, -1, -1, -1]
-SEND LINE ' I cannot live to hear the news from England; '
+SEND LINE u' I cannot live to hear the news from England; '
 But: [-1, -1, -1, -1], I: [-1, -1, -1, -1], do: [0.8, 0.7, 1.5, 1.2], prophesy: [1.6, 2.4, 2.3, 1.4], the: [0.4, 0.5, 0.3, 0.3], election: [1.5, 1.1, 1.4, 1.1], lights: [0.5, 0.6, 3.7, 0.9]
-SEND LINE ' But I do prophesy the election lights '
+SEND LINE u' But I do prophesy the election lights '
 On: [-1, -1, -1, -1], Fortinbras:: [-1, -1, -1, -1], he: [0.2, 0.5, 0.9, 0.5], has: [0.0, 0.0, 0.0, 0.0], my: [0.4, 0.3, 1.9, 0.3], dying: [3.3, 3.8, 1.4, 3.7], voice;: [-1, -1, -1, -1]
-SEND LINE ' On Fortinbras: he has my dying voice; '
+SEND LINE u' On Fortinbras: he has my dying voice; '
 So: [-1, -1, -1, -1], tell: [1.5, 1.6, 1.4, 0.6], him,: [-1, -1, -1, -1], with: [0.4, 0.4, 1.0, 0.3], the: [0.4, 0.5, 0.3, 0.3], occurrents,: [-1, -1, -1, -1], more: [1.6, 1.1, 1.7, 1.3], and: [0.7, 0.8, 0.4, 0.3], less,: [-1, -1, -1, -1]
-SEND LINE ' So tell him, with the occurrents, more and less, '
+SEND LINE u' So tell him, with the occurrents, more and less, '
 Which: [-1, -1, -1, -1], have: [0.6, 0.8, 1.6, 1.1], solicited.: [-1, -1, -1, -1], The: [-1, -1, -1, -1], rest: [0.9, 0.9, 2.4, 1.6], is: [0.3, 0.6, 0.3, 0.0], silence.: [-1, -1, -1, -1]
-SEND LINE ' Which have solicited. The rest is silence. '
+SEND LINE u' Which have solicited. The rest is silence. '
 (: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], Dies.): [-1, -1, -1, -1]
 TRIGGER: action [u'dies']
 Stagedir (Dies.)
 HORATIO: [-1, -1, -1, -1]
 SEND WHO HORATIO
 Now: [-1, -1, -1, -1], cracks: [1.1, 1.5, 0.7, 1.8], a: [-1, -1, -1, -1], noble: [0.8, 2.5, 2.2, 1.2], heart.: [-1, -1, -1, -1], Good: [-1, -1, -1, -1], night,: [-1, -1, -1, -1], sweet: [0.5, 0.4, 4.3, 0.3], prince;: [-1, -1, -1, -1]
-SEND LINE ' Now cracks a noble heart. Good night, sweet prince; '
+SEND LINE u' Now cracks a noble heart. Good night, sweet prince; '
 And: [-1, -1, -1, -1], flights: [1.3, 3.3, 2.8, 1.7], of: [1.2, 0.9, 0.3, 0.6], angels: [1.1, 0.9, 4.4, 1.4], sing: [1.3, 0.9, 4.2, 1.5], thee: [0.3, 0.8, 1.2, 0.3], to: [0.1, 0.6, 0.6, 0.3], thy: [0.1, 0.0, 0.6, 0.2], rest!: [-1, -1, -1, -1]
-SEND LINE ' And flights of angels sing thee to thy rest! '
+SEND LINE u' And flights of angels sing thee to thy rest! '
 Why: [-1, -1, -1, -1], does: [0.3, 0.2, 0.3, 0.3], the: [0.4, 0.5, 0.3, 0.3], drum: [1.4, 1.5, 2.3, 1.7], come: [0.8, 1.2, 2.2, 0.9], hither?: [-1, -1, -1, -1]
-SEND LINE ' Why does the drum come hither? '
+SEND LINE u' Why does the drum come hither? '
 (: [-1, -1, -1, -1], action: [1.2, 1.3, 2.4, 1.2], March: [-1, -1, -1, -1], within.): [-1, -1, -1, -1]
 TRIGGER: sound [u'dead', u'march']
 TRIGGER: sound [u'march']
