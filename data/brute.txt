@@ -2545,7 +2545,7 @@
 1 2 50 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 50 2046 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 My
 1 2 50 2047 Laertes 2.0 4.3 0.0 2.2 5.0 l n1 dread
-1 2 50 2048 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 50 2048 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 50 2049 Laertes -1 -1 -1 -1 -1 l , ,
 1 2 50 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 51 2050 Laertes 2.1 1.6 2.1 1.3 242.0 l po22 Your
@@ -2627,7 +2627,7 @@
 1 2 58 2115 Polonius 1.0 0.444444444444 1.0 0.666666666667 62.0 l vhz Hath
 1 2 58 2116 Polonius -1 -1 -1 -1 -1 l , ,
 1 2 58 2117 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 58 2118 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 58 2118 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 58 2119 Polonius -1 -1 -1 -1 -1 l , ,
 1 2 58 2120 Polonius 1.3 1.3 0.7 1.9 1.0 l vvn wrung
 1 2 58 2121 Polonius 0.6 0.5 0.7 0.4 95.0 l pp from
@@ -2741,7 +2741,7 @@
 1 2 67 2208 Hamlet 0.55 0.5 0.25 0.65 1.0 l av so
 1 2 67 2209 Hamlet -1 -1 -1 -1 -1 l , ,
 1 2 67 2210 Hamlet 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 67 2211 Hamlet 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 67 2211 Hamlet 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 67 2212 Hamlet -1 -1 -1 -1 -1 l ; ;
 1 2 67 2213 Hamlet 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 2 67 2214 Hamlet 1.5 1.2 1.9 1.7 53.0 l vbm am
@@ -2818,7 +2818,7 @@
 1 2 74 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 74 2275 Hamlet 1.25 0.75 1.375 0.625 38.0 l uh Ay
 1 2 74 2276 Hamlet -1 -1 -1 -1 -1 l , ,
-1 2 74 2277 Hamlet 0.3 0.3 1.1 0.2 12.0 l n1 madam
+1 2 74 2277 Hamlet 0.3 0.3 1.1 0.2 12.0 l sir madam
 1 2 74 2278 Hamlet -1 -1 -1 -1 -1 l , ,
 1 2 74 2279 Hamlet 0.5 0.4 0.1 0.5 417.0 l pn31 it
 1 2 74 2280 Hamlet 0.3 0.6 0.3 0.0 344.0 l vbz is
@@ -2845,7 +2845,7 @@
 1 2 76 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 76 2295 Hamlet 0.7 1.3 1.0 0.8 6.0 l vvz Seems
 1 2 76 2296 Hamlet -1 -1 -1 -1 -1 l , ,
-1 2 76 2297 Hamlet 0.3 0.3 1.1 0.2 12.0 l n1 madam
+1 2 76 2297 Hamlet 0.3 0.3 1.1 0.2 12.0 l sir madam
 1 2 76 2298 Hamlet -1 -1 -1 -1 -1 l ! !
 1 2 76 2299 Hamlet 1.5 0.9 0.6 0.6 26.0 l uh nay
 1 2 76 2300 Hamlet -1 -1 -1 -1 -1 l , ,
@@ -3320,7 +3320,7 @@
 1 2 120 2719 Hamlet 1.7 2.7 1.5 1.1 7.0 l vvi obey
 1 2 120 2720 Hamlet 0.0 0.1 1.3 0.0 550.0 l pn22 you
 1 2 120 2721 Hamlet -1 -1 -1 -1 -1 l , ,
-1 2 120 2722 Hamlet 0.3 0.3 1.1 0.2 12.0 l n1 madam
+1 2 120 2722 Hamlet 0.3 0.3 1.1 0.2 12.0 l sir madam
 1 2 120 2723 Hamlet -1 -1 -1 -1 -1 l . .
 1 2 120 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 121 -1 King -1 -1 -1 -1 -1 -1 SPEAKER KING
@@ -3782,7 +3782,7 @@
 1 2 160 3111 Horatio 1.4 2.1 1.8 0.8 1.0 l uh-v Hail
 1 2 160 3112 Horatio 0.1 0.6 0.6 0.3 738.0 l p-acp to
 1 2 160 3113 Horatio 2.1 1.6 2.1 1.3 242.0 l po22 your
-1 2 160 3114 Horatio 2.0 2.0 2.7 1.2 8.0 l n1 lordship
+1 2 160 3114 Horatio 2.0 2.0 2.7 1.2 8.0 l sir lordship
 1 2 160 3115 Horatio -1 -1 -1 -1 -1 l ! !
 1 2 160 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 160 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -3811,7 +3811,7 @@
 1 2 162 3133 Horatio 0.9 1.0 0.8 0.9 12.0 l d same
 1 2 162 3134 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 162 3135 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 162 3136 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 162 3136 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 162 3137 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 162 3138 Horatio 0.7 0.8 0.4 0.3 967.0 l cc and
 1 2 162 3139 Horatio 2.1 1.6 2.1 1.3 242.0 l po22 your
@@ -3822,7 +3822,7 @@
 1 2 162 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 163 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 1 2 163 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-1 2 163 3144 Hamlet 0.4 0.6 1.1 0.6 75.0 l n1 Sir
+1 2 163 3144 Hamlet 0.4 0.6 1.1 0.6 75.0 l sir Sir
 1 2 163 3145 Hamlet -1 -1 -1 -1 -1 l , ,
 1 2 163 3146 Hamlet 0.4 0.3 1.9 0.3 514.0 l po11 my
 1 2 163 3147 Hamlet 0.5 0.9 4.7 0.5 109.0 l j good
@@ -3853,7 +3853,7 @@
 1 2 166 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 166 3168 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 My
 1 2 166 3169 Marcellus 0.5 0.9 4.7 0.5 109.0 l j good
-1 2 166 3170 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 166 3170 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 166 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 167 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 1 2 167 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -3891,7 +3891,7 @@
 1 2 169 3198 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 169 3199 Horatio 0.5 0.9 4.7 0.5 109.0 l j good
 1 2 169 3200 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 169 3201 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 169 3201 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 169 3202 Horatio -1 -1 -1 -1 -1 l . .
 1 2 169 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 170 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -3959,7 +3959,7 @@
 1 2 176 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
 1 2 176 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 176 3257 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 176 3258 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 176 3258 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 176 3259 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 176 3260 Horatio 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 2 176 3261 Horatio 0.1 0.5 1.0 0.2 9.0 l vvd came
@@ -4000,7 +4000,7 @@
 1 2 179 3289 Horatio 0.6 0.3 1.8 0.4 31.0 l av Indeed
 1 2 179 3290 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 179 3291 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 179 3292 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 179 3292 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 179 3293 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 179 3294 Horatio 0.5 0.4 0.1 0.5 417.0 l pn31 it
 1 2 179 3295 Horatio 0.9 1.4 1.6 0.7 1.0 l vvd followed
@@ -4066,7 +4066,7 @@
 1 2 185 3345 Horatio 0.5 0.8 0.4 0.8 56.0 l q-crq Where
 1 2 185 3346 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 185 3347 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 185 3348 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 185 3348 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 185 3349 Horatio -1 -1 -1 -1 -1 l ? ?
 1 2 185 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 185 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -4121,7 +4121,7 @@
 1 2 189 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
 1 2 189 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 189 3389 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 189 3390 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 189 3390 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 189 3391 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 189 3392 Horatio 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 2 189 3393 Horatio 1.4 1.3 2.4 1.2 48.0 l vvb think
@@ -4141,7 +4141,7 @@
 1 2 191 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
 1 2 191 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 191 3403 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 191 3404 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 191 3404 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 191 3405 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 191 3406 Horatio 0.4 0.5 0.3 0.3 1143.0 l dt the
 1 2 191 3407 Horatio 1.8 2.1 2.8 1.0 196.0 l n1 king
@@ -4385,7 +4385,7 @@
 1 2 213 -1 Marcellus -1 -1 -1 -1 -1 -1 SPEAKER MARCELLUS
 1 2 213 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 213 3610 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 213 3611 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 213 3611 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 213 3612 Marcellus -1 -1 -1 -1 -1 l , ,
 1 2 213 3613 Marcellus 1.0 0.5 1.1 0.7 55.0 l p-acp upon
 1 2 213 3614 Marcellus 0.4 0.5 0.3 0.3 1143.0 l dt the
@@ -4408,7 +4408,7 @@
 1 2 214 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
 1 2 214 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 214 3627 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 214 3628 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 214 3628 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 214 3629 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 214 3630 Horatio 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 2 214 3631 Horatio 1.1 0.7 1.4 0.8 65.0 l vdd did
@@ -4488,7 +4488,7 @@
 1 2 221 3693 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 221 3694 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
 1 2 221 3695 Horatio 0.3 0.8 3.9 0.5 1.0 l j-vvn honoured
-1 2 221 3696 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 221 3696 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 221 3697 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 221 3698 Horatio 0 0 0 0 0 l pn31|vbz 'tis
 1 2 221 3699 Horatio 0.8 1.3 2.7 0.8 23.0 l j true
@@ -4540,7 +4540,7 @@
 1 2 225 3736 Marcellus_and_Bernardo 0.8 0.7 1.5 1.2 150.0 l vdb do
 1 2 225 3737 Marcellus_and_Bernardo -1 -1 -1 -1 -1 l , ,
 1 2 225 3738 Marcellus_and_Bernardo 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 225 3739 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 225 3739 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 225 3740 Marcellus_and_Bernardo -1 -1 -1 -1 -1 l . .
 1 2 225 -1 Marcellus_and_Bernardo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 226 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -4556,7 +4556,7 @@
 1 2 227 3746 Marcellus_and_Bernardo 3.4 3.9 0.3 1.7 3.0 l vvn Armed
 1 2 227 3747 Marcellus_and_Bernardo -1 -1 -1 -1 -1 l , ,
 1 2 227 3748 Marcellus_and_Bernardo 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 227 3749 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 227 3749 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 227 3750 Marcellus_and_Bernardo -1 -1 -1 -1 -1 l . .
 1 2 227 -1 Marcellus_and_Bernardo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 228 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -4570,7 +4570,7 @@
 1 2 228 -1 Marcellus_and_Bernardo -1 -1 -1 -1 -1 -1 SPEAKER MARCELLUS_AND_BERNARDO
 1 2 228 -1 Marcellus_and_Bernardo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 2 228 3756 Marcellus_and_Bernardo 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 2 228 3757 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 228 3757 Marcellus_and_Bernardo 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 228 3758 Marcellus_and_Bernardo -1 -1 -1 -1 -1 l , ,
 1 2 228 3759 Marcellus_and_Bernardo 0.6 0.5 0.7 0.4 95.0 l pp from
 1 2 228 3760 Marcellus_and_Bernardo 0.9 0.5 1.2 0.7 25.0 l n1 head
@@ -4595,7 +4595,7 @@
 1 2 230 3773 Horatio 0.7 0.9 2.3 0.6 5.0 l uh yes
 1 2 230 3774 Horatio -1 -1 -1 -1 -1 l , ,
 1 2 230 3775 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 2 230 3776 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 2 230 3776 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 2 230 3777 Horatio -1 -1 -1 -1 -1 l ; ;
 1 2 230 3778 Horatio 0.2 0.5 0.9 0.5 221.0 l pns31 he
 1 2 230 3779 Horatio 0.7 0.2 0.5 0.7 1.0 l vvd wore
@@ -5859,7 +5859,7 @@
 1 3 82 4819 Laertes 1.1 1.5 1.3 2.0 28.0 l n1 leave
 1 3 82 4820 Laertes -1 -1 -1 -1 -1 l , ,
 1 3 82 4821 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 3 82 4822 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 82 4822 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 82 4823 Laertes -1 -1 -1 -1 -1 l . .
 1 3 82 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 3 83 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -5947,7 +5947,7 @@
 1 3 89 4882 Ophelia 0.2 0.4 0.7 0.6 13.0 l pi something
 1 3 89 4883 Ophelia 1.2 1.4 2.6 1.6 3.0 l vvg touching
 1 3 89 4884 Ophelia 0.4 0.5 0.3 0.3 1143.0 l dt the
-1 3 89 4885 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+1 3 89 4885 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir Lord
 1 3 89 4886 Ophelia 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 1 3 89 4887 Ophelia -1 -1 -1 -1 -1 l . .
 1 3 89 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -6053,7 +6053,7 @@
 1 3 99 4974 Ophelia 1.0 0.444444444444 1.0 0.666666666667 62.0 l vhz hath
 1 3 99 4975 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 99 4976 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 3 99 4977 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 99 4977 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 99 4978 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 99 4979 Ophelia 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f of
 1 3 99 4980 Ophelia 1.8 3.0 0.5 2.2 10.0 l av-j late
@@ -6109,7 +6109,7 @@
 1 3 104 5021 Ophelia 1.22222222222 1.11111111111 2.55555555556 1.33333333333 74.0 l vvi know
 1 3 104 5022 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 104 5023 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 3 104 5024 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 104 5024 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 104 5025 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 104 5026 Ophelia 0.4 1.1 0.5 0.6 207.0 l r-crq what
 1 3 104 5027 Ophelia 1.2 1.3 1.2 1.0 571.0 l pns11 I
@@ -6179,7 +6179,7 @@
 1 3 110 -1 Ophelia -1 -1 -1 -1 -1 -1 SPEAKER OPHELIA
 1 3 110 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 3 110 5083 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 3 110 5084 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 110 5084 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 110 5085 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 110 5086 Ophelia 0.2 0.5 0.9 0.5 221.0 l pns31 he
 1 3 110 5087 Ophelia 1.0 0.444444444444 1.0 0.666666666667 62.0 l vhz hath
@@ -6221,7 +6221,7 @@
 1 3 113 5116 Ophelia 0.6 0.4 1.6 0.3 16.0 l n1 speech
 1 3 113 5117 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 113 5118 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 3 113 5119 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 113 5119 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 113 5120 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 113 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 3 114 5121 Ophelia 0.4 0.4 1.0 0.3 267.0 l pp With
@@ -6326,7 +6326,7 @@
 1 3 123 5209 Polonius 0.7 0.7 1.1 0.8 1.0 l n1 parle
 1 3 123 5210 Polonius -1 -1 -1 -1 -1 l . .
 1 3 123 5211 Polonius 0.0 0.0 0.0 0.1 248.0 l p-acp For
-1 3 123 5212 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+1 3 123 5212 Polonius 1.3 2.7 2.5 1.3 310.0 l sir Lord
 1 3 123 5213 Polonius 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 1 3 123 5214 Polonius -1 -1 -1 -1 -1 l , ,
 1 3 123 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -6443,7 +6443,7 @@
 1 3 134 5315 Polonius 1.1 0.7 3.0 0.8 2.0 l vvb talk
 1 3 134 5316 Polonius 0.4 0.4 1.0 0.3 267.0 l pp with
 1 3 134 5317 Polonius 0.4 0.5 0.3 0.3 1143.0 l dt the
-1 3 134 5318 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+1 3 134 5318 Polonius 1.3 2.7 2.5 1.3 310.0 l sir Lord
 1 3 134 5319 Polonius 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 1 3 134 5320 Polonius -1 -1 -1 -1 -1 l . .
 1 3 134 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -6466,7 +6466,7 @@
 1 3 136 5334 Ophelia 1.7 2.7 1.5 1.1 7.0 l vvi obey
 1 3 136 5335 Ophelia -1 -1 -1 -1 -1 l , ,
 1 3 136 5336 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 3 136 5337 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 3 136 5337 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 3 136 5338 Ophelia -1 -1 -1 -1 -1 l . .
 1 3 136 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 3 136 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -6595,7 +6595,7 @@
 1 4 7 5400 Horatio 2.0 1.1 1.2 1.4 11.0 l vvi mean
 1 4 7 5401 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 7 5402 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 4 7 5403 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 4 7 5403 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 4 7 5404 Horatio -1 -1 -1 -1 -1 l ? ?
 1 4 7 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 4 8 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -6909,7 +6909,7 @@
 1 4 38 5673 Horatio 1.7 1.3 3.1 1.7 37.0 l vvb Look
 1 4 38 5674 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 38 5675 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 4 38 5676 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 4 38 5676 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 4 38 5677 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 38 5678 Horatio 0.5 0.4 0.1 0.5 417.0 l pn31 it
 1 4 38 5679 Horatio 1.2 0.5 2.3 0.6 24.0 l vvz comes
@@ -7205,7 +7205,7 @@
 1 4 64 5916 Horatio 0.6 1.2 1.0 0.8 315.0 l xx not
 1 4 64 5917 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 64 5918 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 4 64 5919 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 4 64 5919 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 4 64 5920 Horatio -1 -1 -1 -1 -1 l . .
 1 4 64 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 4 64 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -7275,7 +7275,7 @@
 1 4 69 5976 Horatio 2.3 3.8 0.9 3.4 1.0 l n1 flood
 1 4 69 5977 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 69 5978 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 4 69 5979 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 4 69 5979 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 4 69 5980 Horatio -1 -1 -1 -1 -1 l , ,
 1 4 69 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 4 70 5981 Horatio 0.9 0.8 0.8 0.5 114.0 l cc Or
@@ -7382,7 +7382,7 @@
 1 4 80 6067 Marcellus 0.8 1.3 2.6 0.7 70.0 l vvi go
 1 4 80 6068 Marcellus -1 -1 -1 -1 -1 l , ,
 1 4 80 6069 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 4 80 6070 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 4 80 6070 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 4 80 6071 Marcellus -1 -1 -1 -1 -1 l . .
 1 4 80 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 4 80 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -8766,15 +8766,15 @@
 1 5 113 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 SPEAKER MARCELLUS_AND_HORATIO
 1 5 113 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 113 7216 Marcellus_and_Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 5 113 7217 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 113 7217 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 113 7218 Marcellus_and_Horatio -1 -1 -1 -1 -1 l , ,
 1 5 113 7219 Marcellus_and_Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 113 7220 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 113 7220 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 113 7221 Marcellus_and_Horatio -1 -1 -1 -1 -1 l , ,
 1 5 113 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 113 -1 Marcellus -1 -1 -1 -1 -1 -1 SPEAKER MARCELLUS
 1 5 113 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-1 5 113 7222 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+1 5 113 7222 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir Lord
 1 5 113 7223 Marcellus 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 1 5 113 7224 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 113 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -8801,7 +8801,7 @@
 1 5 115 7237 Horatio 1.88888888889 1.66666666667 0.666666666667 1.1 14.0 l uh ho
 1 5 115 7238 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 115 7239 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 115 7240 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 115 7240 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 115 7241 Horatio -1 -1 -1 -1 -1 l ! !
 1 5 115 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 116 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -8836,7 +8836,7 @@
 1 5 117 7258 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 117 7259 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 my
 1 5 117 7260 Marcellus 0.777777777778 2.5 2.22222222222 1.22222222222 17.0 l j noble
-1 5 117 7261 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 117 7261 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 117 7262 Marcellus -1 -1 -1 -1 -1 l ? ?
 1 5 117 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 117 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
@@ -8845,7 +8845,7 @@
 1 5 117 7264 Horatio 2.5 2.6 2.2 3.3 10.0 l n1 news
 1 5 117 7265 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 117 7266 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 117 7267 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 117 7267 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 117 7268 Horatio -1 -1 -1 -1 -1 l ? ?
 1 5 117 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 118 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -8859,7 +8859,7 @@
 1 5 119 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 119 7273 Horatio 0.5 0.9 4.7 0.5 109.0 l j Good
 1 5 119 7274 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 119 7275 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 119 7275 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 119 7276 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 119 7277 Horatio 1.5 1.6 1.4 0.6 43.0 l vvb tell
 1 5 119 7278 Horatio 0.5 0.4 0.1 0.5 417.0 l pn31 it
@@ -8881,7 +8881,7 @@
 1 5 120 7288 Horatio 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 5 120 7289 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 120 7290 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 120 7291 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 120 7291 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 120 7292 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 120 7293 Horatio 0.2 0.2 0.5 0.4 117.0 l p-acp by
 1 5 120 7294 Horatio 0.3 0.8 4.5 0.3 43.0 l n1 heaven
@@ -8893,7 +8893,7 @@
 1 5 120 7297 Marcellus 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 5 120 7298 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 120 7299 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 120 7300 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 120 7300 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 120 7301 Marcellus -1 -1 -1 -1 -1 l . .
 1 5 120 -1 Marcellus -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 121 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -8927,7 +8927,7 @@
 1 5 122 7324 Marcellus_and_Horatio 0.3 0.8 4.5 0.3 43.0 l n1 heaven
 1 5 122 7325 Marcellus_and_Horatio -1 -1 -1 -1 -1 l , ,
 1 5 122 7326 Marcellus_and_Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 122 7327 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 122 7327 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 122 7328 Marcellus_and_Horatio -1 -1 -1 -1 -1 l . .
 1 5 122 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 123 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -8956,7 +8956,7 @@
 1 5 125 7346 Horatio 1.5 3.7 0.2 2.6 30.0 l n1 ghost
 1 5 125 7347 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 125 7348 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 125 7349 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 125 7349 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 125 7350 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 125 7351 Horatio 0.8 1.2 2.2 0.9 106.0 l vvb come
 1 5 125 7352 Horatio 0.6 0.5 0.7 0.4 95.0 l pp from
@@ -9055,7 +9055,7 @@
 1 5 133 7432 Horatio 0.9 0.8 1.1 0.9 20.0 l n2 words
 1 5 133 7433 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 133 7434 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 133 7435 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 133 7435 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 133 7436 Horatio -1 -1 -1 -1 -1 l . .
 1 5 133 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 134 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -9084,7 +9084,7 @@
 1 5 135 7454 Horatio 3.5 2.4 0.4 2.5 9.0 l n1 offence
 1 5 135 7455 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 135 7456 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 135 7457 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 135 7457 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 135 7458 Horatio -1 -1 -1 -1 -1 l . .
 1 5 135 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 136 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -9172,7 +9172,7 @@
 1 5 143 7530 Horatio 0.6 1.0 0.9 1.1 14.0 l vbz|pn31 is't
 1 5 143 7531 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 143 7532 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 143 7533 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 143 7533 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 143 7534 Horatio -1 -1 -1 -1 -1 l ? ?
 1 5 143 7535 Horatio 0.7 0.6 2.1 0.7 141.0 l pns12 we
 1 5 143 7536 Horatio 1.2 0.5 1.8 0.7 169.0 l vmb will
@@ -9193,7 +9193,7 @@
 1 5 145 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 SPEAKER MARCELLUS_AND_HORATIO
 1 5 145 -1 Marcellus_and_Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 145 7547 Marcellus_and_Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 5 145 7548 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 145 7548 Marcellus_and_Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 145 7549 Marcellus_and_Horatio -1 -1 -1 -1 -1 l , ,
 1 5 145 7550 Marcellus_and_Horatio 0.7 0.6 2.1 0.7 141.0 l pns12 we
 1 5 145 7551 Marcellus_and_Horatio 1.2 0.5 1.8 0.7 169.0 l vmb will
@@ -9215,7 +9215,7 @@
 1 5 145 7561 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 145 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 146 7562 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 My
-1 5 146 7563 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 146 7563 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 146 7564 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 146 7565 Horatio 0.6 1.2 1.0 0.8 315.0 l xx not
 1 5 146 7566 Horatio 1.2 1.3 1.2 1.0 571.0 l pns11 I
@@ -9227,7 +9227,7 @@
 1 5 146 7569 Marcellus 1.2 1.3 1.2 1.0 571.0 l pns11 I
 1 5 146 7570 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 146 7571 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 146 7572 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 146 7572 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 146 7573 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 146 7574 Marcellus 0.3 0.1 0.4 0.4 439.0 l p-acp in
 1 5 146 7575 Marcellus 0.4 1.2 3.4 0.7 16.0 l n1 faith
@@ -9247,7 +9247,7 @@
 1 5 147 7583 Marcellus 1.1 1.3 1.5 1.0 3.0 l vvn sworn
 1 5 147 7584 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 147 7585 Marcellus 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 147 7586 Marcellus 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 147 7586 Marcellus 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 147 7587 Marcellus -1 -1 -1 -1 -1 l , ,
 1 5 147 7588 Marcellus 0.4 0.8 1.8 1.1 6.0 l av already
 1 5 147 7589 Marcellus -1 -1 -1 -1 -1 l . .
@@ -9314,7 +9314,7 @@
 1 5 152 7632 Horatio 1.1 1.4 1.8 1.1 2.0 l n1 oath
 1 5 152 7633 Horatio -1 -1 -1 -1 -1 l , ,
 1 5 152 7634 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-1 5 152 7635 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+1 5 152 7635 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 1 5 152 7636 Horatio -1 -1 -1 -1 -1 l . .
 1 5 152 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 1 5 153 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -9816,7 +9816,7 @@
 2 1 2 8008 Reynaldo 1.2 0.5 1.8 0.7 169.0 l vmb will
 2 1 2 8009 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 2 8010 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 2 8011 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 2 8011 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 2 8012 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 2 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 3 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -9848,7 +9848,7 @@
 2 1 5 -1 Reynaldo -1 -1 -1 -1 -1 -1 SPEAKER REYNALDO
 2 1 5 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 5 8034 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 My
-2 1 5 8035 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 5 8035 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 5 8036 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 5 8037 Reynaldo 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 1 5 8038 Reynaldo 1.1 0.7 1.4 0.8 65.0 l vdd did
@@ -9985,7 +9985,7 @@
 2 1 16 8154 Reynaldo 0.6 0.6 2.7 0.3 78.0 l av well
 2 1 16 8155 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 16 8156 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 16 8157 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 16 8157 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 16 8158 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 16 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 17 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10084,7 +10084,7 @@
 2 1 24 8240 Reynaldo 1.9 0.9 3.4 0.5 3.0 l n-vvg gaming
 2 1 24 8241 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 24 8242 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 24 8243 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 24 8243 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 24 8244 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 24 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 25 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10113,7 +10113,7 @@
 2 1 27 -1 Reynaldo -1 -1 -1 -1 -1 -1 SPEAKER REYNALDO
 2 1 27 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 27 8264 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 My
-2 1 27 8265 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 27 8265 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 27 8266 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 27 8267 Reynaldo 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 l d that
 2 1 27 8268 Reynaldo 0.3 0.3 0.3 0.1 80.0 l vmd would
@@ -10203,7 +10203,7 @@
 2 1 35 8339 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 35 8340 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
 2 1 35 8341 Reynaldo 0.5 0.9 4.7 0.5 109.0 l j good
-2 1 35 8342 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 35 8342 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 35 8343 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 35 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 36 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10220,7 +10220,7 @@
 2 1 36 8350 Reynaldo 1.25 0.75 1.375 0.625 38.0 l uh Ay
 2 1 36 8351 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 36 8352 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 36 8353 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 36 8353 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 36 8354 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 36 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 37 8355 Reynaldo 1.2 1.3 1.2 1.0 571.0 l pns11 I
@@ -10356,7 +10356,7 @@
 2 1 48 8468 Reynaldo 0.5 0.9 4.7 0.5 109.0 l j good
 2 1 48 8469 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 48 8470 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 48 8471 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 48 8471 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 48 8472 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 48 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 49 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10577,7 +10577,7 @@
 2 1 68 -1 Reynaldo -1 -1 -1 -1 -1 -1 SPEAKER REYNALDO
 2 1 68 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 68 8665 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 My
-2 1 68 8666 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 68 8666 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 68 8667 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 68 8668 Reynaldo 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 1 68 8669 Reynaldo 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 l vhb have
@@ -10598,7 +10598,7 @@
 2 1 69 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 69 8679 Reynaldo 0.5 0.9 4.7 0.5 109.0 l j Good
 2 1 69 8680 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 69 8681 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 69 8681 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 69 8682 Reynaldo -1 -1 -1 -1 -1 l ! !
 2 1 69 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 70 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10616,7 +10616,7 @@
 2 1 71 8690 Reynaldo 1.1 1.4 1.8 0.7 114.0 l vmb shall
 2 1 71 8691 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 71 8692 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 71 8693 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 71 8693 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 71 8694 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 71 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 72 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10634,7 +10634,7 @@
 2 1 72 8702 Reynaldo 0.6 0.6 2.7 0.3 78.0 l uh-av Well
 2 1 72 8703 Reynaldo -1 -1 -1 -1 -1 l , ,
 2 1 72 8704 Reynaldo 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 72 8705 Reynaldo 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 72 8705 Reynaldo 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 72 8706 Reynaldo -1 -1 -1 -1 -1 l . .
 2 1 72 -1 Reynaldo -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 73 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -10668,10 +10668,10 @@
 2 1 74 8718 Ophelia 0 0 0 0 0 l uh O
 2 1 74 8719 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 74 8720 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 74 8721 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 74 8721 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 74 8722 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 74 8723 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 1 74 8724 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 74 8724 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 74 8725 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 74 8726 Ophelia 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 1 74 8727 Ophelia 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 l vhb have
@@ -10695,7 +10695,7 @@
 2 1 76 -1 Ophelia -1 -1 -1 -1 -1 -1 SPEAKER OPHELIA
 2 1 76 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 76 8741 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 My
-2 1 76 8742 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 76 8742 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 76 8743 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 76 8744 Ophelia 0.0 0.0 0.0 0.0 226.0 l c-acp as
 2 1 76 8745 Ophelia 1.2 1.3 1.2 1.0 571.0 l pns11 I
@@ -10706,7 +10706,7 @@
 2 1 76 8750 Ophelia 1.4 1.5 1.0 1.0 5.0 l n1 closet
 2 1 76 8751 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 76 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-2 1 77 8752 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+2 1 77 8752 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir Lord
 2 1 77 8753 Ophelia 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 2 1 77 8754 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 77 8755 Ophelia 0.4 0.4 1.0 0.3 267.0 l pp with
@@ -10789,7 +10789,7 @@
 2 1 84 -1 Ophelia -1 -1 -1 -1 -1 -1 SPEAKER OPHELIA
 2 1 84 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 1 84 8822 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 My
-2 1 84 8823 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 84 8823 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 84 8824 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 84 8825 Ophelia 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 1 84 8826 Ophelia 0.8 0.7 1.5 1.2 150.0 l vdb do
@@ -11049,7 +11049,7 @@
 2 1 107 9048 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 107 9049 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
 2 1 107 9050 Ophelia 0.5 0.9 4.7 0.5 109.0 l j good
-2 1 107 9051 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 1 107 9051 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 1 107 9052 Ophelia -1 -1 -1 -1 -1 l , ,
 2 1 107 9053 Ophelia 1.1 1.22222222222 0.555555555556 1.0 271.0 l cc-acp but
 2 1 107 9054 Ophelia -1 -1 -1 -1 -1 l , ,
@@ -11662,7 +11662,7 @@
 2 2 40 9527 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 40 9528 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 my
 2 2 40 9529 Polonius 0.5 0.9 4.7 0.5 109.0 l j good
-2 2 40 9530 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 2 40 9530 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 2 40 9531 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 40 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 41 9532 Polonius 0.6 0.6 1.4 0.6 131.0 l vbb Are
@@ -11689,7 +11689,7 @@
 2 2 43 9547 Polonius 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 2 43 9548 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 43 9549 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 my
-2 2 43 9550 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+2 2 43 9550 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 2 2 43 9551 Polonius -1 -1 -1 -1 -1 l ? ?
 2 2 43 9552 Polonius 1.2 1.3 1.2 1.0 571.0 l pns11 I
 2 2 43 9553 Polonius 0.7 1.1 2.1 1.0 1.0 l vvb assure
@@ -12184,7 +12184,7 @@
 2 2 86 9949 Polonius 1.3 2.0 1.3 0.9 3.0 l n1 liege
 2 2 86 9950 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 86 9951 Polonius 0.7 0.8 0.4 0.3 967.0 l cc and
-2 2 86 9952 Polonius 0.3 0.3 1.1 0.2 12.0 l n1 madam
+2 2 86 9952 Polonius 0.3 0.3 1.1 0.2 12.0 l sir madam
 2 2 86 9953 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 86 9954 Polonius 0.1 0.6 0.6 0.3 738.0 l pc-acp to
 2 2 86 9955 Polonius 1.22222222222 2.0 1.11111111111 0.666666666667 1.0 l vvi expostulate
@@ -12511,7 +12511,7 @@
 2 2 115 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 2 2 115 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 115 10235 Polonius 0.5 0.9 4.7 0.5 109.0 l j Good
-2 2 115 10236 Polonius 0.3 0.3 1.1 0.2 12.0 l n1 madam
+2 2 115 10236 Polonius 0.3 0.3 1.1 0.2 12.0 l sir madam
 2 2 115 10237 Polonius -1 -1 -1 -1 -1 l , ,
 2 2 115 10238 Polonius 1.2 0.8 1.1 1.3 11.0 l vvb stay
 2 2 115 10239 Polonius 0.444444444444 0.111111111111 0.555555555556 0.111111111111 12.0 l av awhile
@@ -12804,7 +12804,7 @@
 2 2 140 10491 Polonius -1 -1 -1 -1 -1 l : :
 2 2 140 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 141 10492 Polonius -1 -1 -1 -1 -1 l " "
-2 2 141 10493 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+2 2 141 10493 Polonius 1.3 2.7 2.5 1.3 310.0 l sir Lord
 2 2 141 10494 Polonius 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 2 2 141 10495 Polonius 0.3 0.6 0.3 0.0 344.0 l vbz is
 2 2 141 10496 Polonius 0 0 0 0 0 l dt a
@@ -13197,7 +13197,7 @@
 2 2 171 10794 Polonius 0.3 0.2 0.3 0.3 26.0 l vdz does
 2 2 171 10795 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 my
 2 2 171 10796 Polonius 0.5 0.9 4.7 0.5 109.0 l j good
-2 2 171 10797 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+2 2 171 10797 Polonius 1.3 2.7 2.5 1.3 310.0 l sir Lord
 2 2 171 10798 Polonius 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 2 2 171 10799 Polonius -1 -1 -1 -1 -1 l ? ?
 2 2 171 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -13216,7 +13216,7 @@
 2 2 173 10807 Polonius 1.7 0.7 3.0 1.2 235.0 ab pno11 me
 2 2 173 10808 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 173 10809 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 173 10810 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 173 10810 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 173 10811 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 173 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 174 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13236,7 +13236,7 @@
 2 2 175 10821 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 2 2 175 10822 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 175 10823 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 175 10824 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 175 10824 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 175 10825 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 175 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 176 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13257,7 +13257,7 @@
 2 2 177 10836 Polonius 1.2 0.6 4.2 1.1 11.0 ab j Honest
 2 2 177 10837 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 177 10838 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 177 10839 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 177 10839 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 177 10840 Polonius -1 -1 -1 -1 -1 ab ! !
 2 2 177 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 178 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13294,7 +13294,7 @@
 2 2 180 10867 Polonius 0.8 1.3 2.7 0.8 23.0 ab j true
 2 2 180 10868 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 180 10869 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 180 10870 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 180 10870 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 180 10871 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 180 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 181 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13328,7 +13328,7 @@
 2 2 183 10895 Polonius 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 ab vhb have
 2 2 183 10896 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 183 10897 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 183 10898 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 183 10898 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 183 10899 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 183 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 184 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13426,7 +13426,7 @@
 2 2 191 10983 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 191 10984 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
 2 2 191 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-2 2 192 10985 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 192 10985 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 192 10986 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 193 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 2 2 193 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -13445,7 +13445,7 @@
 2 2 194 10996 Polonius 1.0 1.2 0.9 0.7 27.0 ab n1 matter
 2 2 194 10997 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 194 10998 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 194 10999 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 194 10999 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 194 11000 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 194 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 195 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13466,7 +13466,7 @@
 2 2 196 11011 Polonius 0.5 1.0 1.7 0.9 5.0 ab vvb read
 2 2 196 11012 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 196 11013 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 196 11014 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 196 11014 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 196 11015 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 196 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 197 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13593,7 +13593,7 @@
 2 2 207 11127 Polonius 0.9 0.8 3.1 0.9 12.0 ab n1 air
 2 2 207 11128 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 207 11129 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 207 11130 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 207 11130 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 207 11131 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 208 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 2 2 208 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -13662,7 +13662,7 @@
 2 2 214 11187 Polonius 1.5 1.3 3.5 1.3 15.0 ab n1 daughter
 2 2 214 11188 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 214 11189 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 214 11190 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 214 11190 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 214 11191 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 214 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 215 11192 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
@@ -13711,7 +13711,7 @@
 2 2 219 11230 Polonius 0.6 0.6 2.7 0.3 78.0 ab av well
 2 2 219 11231 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 219 11232 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 219 11233 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 219 11233 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 219 11234 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 219 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 220 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13737,7 +13737,7 @@
 2 2 221 11242 Polonius 0.1 0.6 0.6 0.3 738.0 ab pc-acp to
 2 2 221 11243 Polonius 0.9 0.4 1.0 1.3 9.0 ab vvi seek
 2 2 221 11244 Polonius 0.4 0.5 0.3 0.3 1143.0 ab dt the
-2 2 221 11245 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 Lord
+2 2 221 11245 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir Lord
 2 2 221 11246 Polonius 0.0 0.0 0.4 0.0 461.0 ab np1 Hamlet
 2 2 221 11247 Polonius -1 -1 -1 -1 -1 ab ; ;
 2 2 221 11248 Polonius 0.6 0.3 0.6 0.6 79.0 ab a-acp there
@@ -13768,7 +13768,7 @@
 2 2 223 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 223 11258 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 My
 2 2 223 11259 Guildenstern 0.3 0.8 3.9 0.5 1.0 ab j-vvn honoured
-2 2 223 11260 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 223 11260 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 223 11261 Guildenstern -1 -1 -1 -1 -1 ab ! !
 2 2 223 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 224 -1 Rosencrantz -1 -1 -1 -1 -1 -1 SPEAKER ROSENCRANTZ
@@ -13776,7 +13776,7 @@
 2 2 224 11262 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 My
 2 2 224 11263 Rosencrantz 1.8 1.8 1.5 1.6 82.0 ab av-ds most
 2 2 224 11264 Rosencrantz 0.1 0.4 3.4 0.5 29.0 ab j-jn dear
-2 2 224 11265 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 224 11265 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 224 11266 Rosencrantz -1 -1 -1 -1 -1 ab ! !
 2 2 224 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 225 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13853,7 +13853,7 @@
 2 2 232 11324 Rosencrantz 0.7 0.8 0.1 1.2 10.0 ab av-dx Neither
 2 2 232 11325 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 232 11326 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 232 11327 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 232 11327 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 232 11328 Rosencrantz -1 -1 -1 -1 -1 ab . .
 2 2 232 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 233 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -13911,7 +13911,7 @@
 2 2 238 11370 Rosencrantz 1.5 1.2 0.7 2.2 13.0 ab pix None
 2 2 238 11371 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 238 11372 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 238 11373 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 238 11373 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 238 11374 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 238 11375 Rosencrantz 1.1 1.22222222222 0.555555555556 1.0 271.0 ab cc-acp but
 2 2 238 11376 Rosencrantz 0.4 0.5 0.3 0.3 1143.0 ab dt the
@@ -13970,7 +13970,7 @@
 2 2 243 11423 Guildenstern 2.8 3.0 0.1 2.9 5.0 ab n1 Prison
 2 2 243 11424 Guildenstern -1 -1 -1 -1 -1 ab , ,
 2 2 243 11425 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 243 11426 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 243 11426 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 243 11427 Guildenstern -1 -1 -1 -1 -1 ab ! !
 2 2 243 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 244 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -14022,7 +14022,7 @@
 2 2 248 11463 Rosencrantz 0.55 0.5 0.25 0.65 1.0 ab av so
 2 2 248 11464 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 248 11465 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 248 11466 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 248 11466 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 248 11467 Rosencrantz -1 -1 -1 -1 -1 ab . .
 2 2 248 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 249 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -14269,7 +14269,7 @@
 2 2 273 11680 Rosencrantz 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 2 2 273 11681 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 273 11682 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 273 11683 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 273 11683 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 273 11684 Rosencrantz -1 -1 -1 -1 -1 ab ; ;
 2 2 273 11685 Rosencrantz 0.7 0.7 0.6 0.9 143.0 ab dx no
 2 2 273 11686 Rosencrantz 0.1 0.9 0.2 0.3 15.0 ab j-jn other
@@ -14352,7 +14352,7 @@
 2 2 280 11757 Guildenstern 0.5 0.7 1.5 0.5 54.0 ab vvi say
 2 2 280 11758 Guildenstern -1 -1 -1 -1 -1 ab , ,
 2 2 280 11759 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 280 11760 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 280 11760 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 280 11761 Guildenstern -1 -1 -1 -1 -1 ab ? ?
 2 2 280 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 281 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -14410,7 +14410,7 @@
 2 2 286 11809 Rosencrantz 1.4 2.1 2.3 2.3 17.0 ab n1 end
 2 2 286 11810 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 286 11811 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 286 11812 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 286 11812 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 286 11813 Rosencrantz -1 -1 -1 -1 -1 ab ? ?
 2 2 286 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 287 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -14521,7 +14521,7 @@
 2 2 296 -1 Guildenstern -1 -1 -1 -1 -1 -1 SPEAKER GUILDENSTERN
 2 2 296 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 296 11901 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 296 11902 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 296 11902 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 296 11903 Guildenstern -1 -1 -1 -1 -1 ab , ,
 2 2 296 11904 Guildenstern 0.7 0.6 2.1 0.7 141.0 ab pns12 we
 2 2 296 11905 Guildenstern 0.6 0.2 0.3 0.1 28.0 ab vbd were
@@ -14731,7 +14731,7 @@
 2 2 316 -1 Rosencrantz -1 -1 -1 -1 -1 -1 SPEAKER ROSENCRANTZ
 2 2 316 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 316 12105 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 316 12106 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 316 12106 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 316 12107 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 316 12108 Rosencrantz 0.6 0.3 0.6 0.6 79.0 ab pc-acp there
 2 2 316 12109 Rosencrantz 1.0 0.9 0.7 1.4 83.0 ab vbd was
@@ -14768,7 +14768,7 @@
 2 2 319 12134 Rosencrantz 1.4 1.3 2.4 1.2 48.0 ab vvi think
 2 2 319 12135 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 319 12136 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 319 12137 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 319 12137 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 319 12138 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 319 12139 Rosencrantz 0.7 0.5 0.8 0.7 114.0 ab cs if
 2 2 319 12140 Rosencrantz 0.0 0.1 1.3 0.0 550.0 ab pn22 you
@@ -15232,7 +15232,7 @@
 2 2 364 12556 Rosencrantz 0.8 0.7 1.5 1.2 150.0 ab vdb do
 2 2 364 12557 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 2 2 364 12558 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 364 12559 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 364 12559 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 364 12560 Rosencrantz -1 -1 -1 -1 -1 ab ; ;
 2 2 364 12561 Rosencrantz 1.22222222222 1.33333333333 1.33333333333 0.666666666667 3.0 ab np1 Hercules
 2 2 364 12562 Rosencrantz 0.7 0.8 0.4 0.3 967.0 ab cc and
@@ -15402,7 +15402,7 @@
 2 2 380 12706 Guildenstern -1 -1 -1 -1 -1 ab , ,
 2 2 380 12707 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
 2 2 380 12708 Guildenstern 0.1 0.4 3.4 0.5 29.0 ab j-jn dear
-2 2 380 12709 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 380 12709 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 380 12710 Guildenstern -1 -1 -1 -1 -1 ab ? ?
 2 2 380 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 381 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -15534,7 +15534,7 @@
 2 2 392 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 2 2 392 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 392 12816 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 392 12817 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 392 12817 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 392 12818 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 392 12819 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 2 2 392 12820 Polonius 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 ab vhb have
@@ -15547,7 +15547,7 @@
 2 2 393 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 2 2 393 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 393 12826 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 393 12827 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 393 12827 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 393 12828 Hamlet -1 -1 -1 -1 -1 ab , ,
 2 2 393 12829 Hamlet 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 2 2 393 12830 Hamlet 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 ab vhb have
@@ -15574,7 +15574,7 @@
 2 2 395 12848 Polonius 0.8 1.3 0.7 1.1 9.0 ab av hither
 2 2 395 12849 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 395 12850 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 395 12851 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 395 12851 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 395 12852 Polonius -1 -1 -1 -1 -1 ab . .
 2 2 395 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 396 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -15688,7 +15688,7 @@
 2 2 408 12944 Polonius 0.2 0.5 0.9 0.5 221.0 ab pns31 he
 2 2 408 12945 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 408 12946 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 408 12947 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 408 12947 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 408 12948 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 408 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 409 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -15746,7 +15746,7 @@
 2 2 414 12985 Polonius 1.77777777778 1.33333333333 1.66666666667 2.33333333333 3.0 ab np1 Jephthah
 2 2 414 12986 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 414 12987 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 414 12988 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 414 12988 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 414 12989 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 414 12990 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 2 2 414 12991 Polonius 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 ab vhb have
@@ -15775,7 +15775,7 @@
 2 2 417 13008 Polonius 0.3 0.3 0.6 0.5 64.0 ab av then
 2 2 417 13009 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 417 13010 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 417 13011 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 417 13011 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 417 13012 Polonius -1 -1 -1 -1 -1 ab ? ?
 2 2 417 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 418 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -15990,7 +15990,7 @@
 2 2 437 13206 First_Player -1 -1 -1 -1 -1 ab , ,
 2 2 437 13207 First_Player 0.4 0.3 1.9 0.3 514.0 ab po11 my
 2 2 437 13208 First_Player 0.5 0.9 4.7 0.5 109.0 ab j good
-2 2 437 13209 First_Player 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 437 13209 First_Player 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 437 13210 First_Player -1 -1 -1 -1 -1 ab ? ?
 2 2 437 -1 First_Player -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 438 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -16332,7 +16332,7 @@
 2 2 471 13528 Polonius 2.2 3.2 3.5 1.8 32.0 ab np1 God
 2 2 471 13529 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 471 13530 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 471 13531 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 471 13531 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 471 13532 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 471 13533 Polonius 0.6 0.6 2.7 0.3 78.0 ab av well
 2 2 471 13534 Polonius 1.4 1.3 1.6 1.6 2.0 ab vvn spoken
@@ -16909,7 +16909,7 @@
 2 2 527 14036 Hamlet -1 -1 -1 -1 -1 ab . .
 2 2 527 14037 Hamlet 0.5 0.9 4.7 0.5 109.0 ab j Good
 2 2 527 14038 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 527 14039 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 527 14039 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 527 14040 Hamlet -1 -1 -1 -1 -1 ab , ,
 2 2 527 14041 Hamlet 1.2 0.5 1.8 0.7 169.0 ab vmb will
 2 2 527 14042 Hamlet 0.0 0.1 1.3 0.0 550.0 ab pn22 you
@@ -16963,7 +16963,7 @@
 2 2 533 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 2 2 533 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 533 14089 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 My
-2 2 533 14090 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 533 14090 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 533 14091 Polonius -1 -1 -1 -1 -1 ab , ,
 2 2 533 14092 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 2 2 533 14093 Polonius 1.2 0.5 1.8 0.7 169.0 ab vmb will
@@ -17080,7 +17080,7 @@
 2 2 543 14179 First_Player 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 2 2 543 14180 First_Player -1 -1 -1 -1 -1 ab , ,
 2 2 543 14181 First_Player 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 543 14182 First_Player 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 543 14182 First_Player 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 543 14183 First_Player -1 -1 -1 -1 -1 ab . .
 2 2 543 -1 First_Player -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 544 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -17125,7 +17125,7 @@
 2 2 547 14218 First_Player 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 2 2 547 14219 First_Player -1 -1 -1 -1 -1 ab , ,
 2 2 547 14220 First_Player 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 547 14221 First_Player 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 547 14221 First_Player 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 547 14222 First_Player -1 -1 -1 -1 -1 ab . .
 2 2 547 -1 First_Player -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 548 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -17135,7 +17135,7 @@
 2 2 548 14225 Hamlet -1 -1 -1 -1 -1 ab . .
 2 2 548 14226 Hamlet 0.9 1.1 2.8 1.1 21.0 ab vvb Follow
 2 2 548 14227 Hamlet 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 ab d that
-2 2 548 14228 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 548 14228 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 548 14229 Hamlet -1 -1 -1 -1 -1 ab ; ;
 2 2 548 14230 Hamlet 0.7 0.8 0.4 0.3 967.0 ab cc and
 2 2 548 14231 Hamlet 1.7 1.3 3.1 1.7 37.0 ab vvb look
@@ -17172,7 +17172,7 @@
 2 2 552 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 552 14253 Rosencrantz 0.5 0.9 4.7 0.5 109.0 ab j Good
 2 2 552 14254 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-2 2 552 14255 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+2 2 552 14255 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 2 2 552 14256 Rosencrantz -1 -1 -1 -1 -1 ab ! !
 2 2 552 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 553 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -17602,7 +17602,7 @@
 2 2 591 14633 Hamlet -1 -1 -1 -1 -1 l , ,
 2 2 591 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 2 2 592 14634 Hamlet 0 0 0 0 0 l dt A
-2 2 592 14635 Hamlet 0 0 0 0 0 l n1 stallion
+2 2 592 14635 Hamlet 0 0 0 0 0 l n1 scullion
 2 2 592 14636 Hamlet -1 -1 -1 -1 -1 l ! !
 2 2 592 14637 Hamlet 2.5 1.0 0.5 1.5 6.0 l uh Fie
 2 2 592 14638 Hamlet 1.11111111111 0.555555555556 0.888888888889 0.777777777778 2.0 l p-acp|pn31 upon't
@@ -18130,7 +18130,7 @@
 3 1 28 15050 Rosencrantz 1.1 1.4 1.8 0.7 114.0 l vmb shall
 3 1 28 15051 Rosencrantz -1 -1 -1 -1 -1 l , ,
 3 1 28 15052 Rosencrantz 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 1 28 15053 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 28 15053 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 28 15054 Rosencrantz -1 -1 -1 -1 -1 l . .
 3 1 28 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 28 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -18446,7 +18446,7 @@
 3 1 54 15301 Polonius 1.88888888889 2.22222222222 1.33333333333 1.66666666667 3.0 l vvb withdraw
 3 1 54 15302 Polonius -1 -1 -1 -1 -1 l , ,
 3 1 54 15303 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 1 54 15304 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 54 15304 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 54 15305 Polonius -1 -1 -1 -1 -1 l . .
 3 1 54 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 54 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -18821,7 +18821,7 @@
 3 1 89 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 89 15623 Ophelia 0.5 0.9 4.7 0.5 109.0 l j Good
 3 1 89 15624 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 1 89 15625 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 89 15625 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 89 15626 Ophelia -1 -1 -1 -1 -1 l , ,
 3 1 89 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 90 15627 Ophelia 1.0 1.1 0.7 0.5 90.0 l q-crq How
@@ -18852,7 +18852,7 @@
 3 1 92 -1 Ophelia -1 -1 -1 -1 -1 -1 SPEAKER OPHELIA
 3 1 92 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 92 15648 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 My
-3 1 92 15649 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 92 15649 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 92 15650 Ophelia -1 -1 -1 -1 -1 l , ,
 3 1 92 15651 Ophelia 1.2 1.3 1.2 1.0 571.0 l pns11 I
 3 1 92 15652 Ophelia 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 l vhb have
@@ -18898,7 +18898,7 @@
 3 1 96 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 96 15684 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 My
 3 1 96 15685 Ophelia 0.3 0.8 3.9 0.5 1.0 l j-vvn honoured
-3 1 96 15686 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 96 15686 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 96 15687 Ophelia -1 -1 -1 -1 -1 l , ,
 3 1 96 15688 Ophelia 0.0 0.1 1.3 0.0 550.0 l pn22 you
 3 1 96 15689 Ophelia 1.22222222222 1.11111111111 2.55555555556 1.33333333333 74.0 l vvb know
@@ -18955,7 +18955,7 @@
 3 1 101 15735 Ophelia 0.6 0.3 0.6 0.6 79.0 l a-acp There
 3 1 101 15736 Ophelia -1 -1 -1 -1 -1 l , ,
 3 1 101 15737 Ophelia 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 1 101 15738 Ophelia 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 101 15738 Ophelia 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 101 15739 Ophelia -1 -1 -1 -1 -1 l . .
 3 1 101 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 102 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -18972,7 +18972,7 @@
 3 1 103 -1 Ophelia -1 -1 -1 -1 -1 -1 SPEAKER OPHELIA
 3 1 103 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 103 15748 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 My
-3 1 103 15749 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 1 103 15749 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 1 103 15750 Ophelia -1 -1 -1 -1 -1 ab ? ?
 3 1 103 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 104 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -18987,7 +18987,7 @@
 3 1 105 15755 Ophelia 0.4 1.1 0.5 0.6 207.0 ab q-crq What
 3 1 105 15756 Ophelia 0.6 0.5 1.5 0.4 20.0 ab vvz means
 3 1 105 15757 Ophelia 2.1 1.6 2.1 1.3 242.0 ab po22 your
-3 1 105 15758 Ophelia 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+3 1 105 15758 Ophelia 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 3 1 105 15759 Ophelia -1 -1 -1 -1 -1 ab ? ?
 3 1 105 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 106 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -19017,7 +19017,7 @@
 3 1 108 15779 Ophelia 0.5 0.3 3.7 0.9 6.0 ab n1 beauty
 3 1 108 15780 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 1 108 15781 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 1 108 15782 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 1 108 15782 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 1 108 15783 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 1 108 15784 Ophelia 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 ab vhb have
 3 1 108 15785 Ophelia 0.3 0.5 4.3 0.1 15.0 ab jc better
@@ -19087,7 +19087,7 @@
 3 1 115 15843 Ophelia 0.6 0.3 1.8 0.4 31.0 ab av Indeed
 3 1 115 15844 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 1 115 15845 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 1 115 15846 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 1 115 15846 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 1 115 15847 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 1 115 15848 Ophelia 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 3 1 115 15849 Ophelia 0.3 0.2 2.9 0.6 30.0 ab vvd made
@@ -19256,7 +19256,7 @@
 3 1 131 16000 Ophelia 1.5 1.7 3.3 1.7 6.0 ab n1-an home
 3 1 131 16001 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 1 131 16002 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 1 131 16003 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 1 131 16003 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 1 131 16004 Ophelia -1 -1 -1 -1 -1 ab . .
 3 1 131 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 1 132 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -19808,7 +19808,7 @@
 3 1 181 16488 Polonius 1.5 1.6 1.4 0.6 43.0 l vvi tell
 3 1 181 16489 Polonius 0.2 0.3 2.1 0.2 69.0 l pno12 us
 3 1 181 16490 Polonius 0.4 1.1 0.5 0.6 207.0 l r-crq what
-3 1 181 16491 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+3 1 181 16491 Polonius 1.3 2.7 2.5 1.3 310.0 l sir Lord
 3 1 181 16492 Polonius 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 3 1 181 16493 Polonius 0.4 0.2 0.6 0.3 15.0 l vvd said
 3 1 181 16494 Polonius -1 -1 -1 -1 -1 l ; ;
@@ -19819,7 +19819,7 @@
 3 1 182 16498 Polonius 1.2 0.8 2.2 0.9 120.0 l d all
 3 1 182 16499 Polonius -1 -1 -1 -1 -1 l . .
 3 1 182 16500 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 My
-3 1 182 16501 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 1 182 16501 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 1 182 16502 Polonius -1 -1 -1 -1 -1 l , ,
 3 1 182 16503 Polonius 0.8 0.7 1.5 1.2 150.0 l vdb do
 3 1 182 16504 Polonius 0.0 0.0 0.0 0.0 226.0 l c-acp as
@@ -20465,7 +20465,7 @@
 3 2 50 17073 Hamlet 0.6 0.2 0.9 0.1 98.0 ab av now
 3 2 50 17074 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 50 17075 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 50 17076 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 50 17076 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 50 17077 Hamlet -1 -1 -1 -1 -1 ab ! !
 3 2 50 17078 Hamlet 1.2 0.5 1.8 0.7 169.0 ab vmb will
 3 2 50 17079 Hamlet 0.4 0.5 0.3 0.3 1143.0 ab dt the
@@ -20515,7 +20515,7 @@
 3 2 55 17110 Rosencrantz_and_Guildenstern 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 3 2 55 17111 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 55 17112 Rosencrantz_and_Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 55 17113 Rosencrantz_and_Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 55 17113 Rosencrantz_and_Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 55 17114 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 ab . .
 3 2 55 -1 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 55 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -20545,7 +20545,7 @@
 3 2 57 17120 Horatio 0.555555555556 0.333333333333 0.444444444444 0.222222222222 54.0 ab av Here
 3 2 57 17121 Horatio -1 -1 -1 -1 -1 ab , ,
 3 2 57 17122 Horatio 0.5 0.4 4.3 0.3 25.0 ab j sweet
-3 2 57 17123 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 57 17123 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 57 17124 Horatio -1 -1 -1 -1 -1 ab , ,
 3 2 57 17125 Horatio 0.5 0.4 0.5 0.5 87.0 ab pp at
 3 2 57 17126 Horatio 2.1 1.6 2.1 1.3 242.0 ab po22 your
@@ -20578,7 +20578,7 @@
 3 2 60 17146 Horatio -1 -1 -1 -1 -1 l , ,
 3 2 60 17147 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
 3 2 60 17148 Horatio 0.1 0.4 3.4 0.5 29.0 l j-jn dear
-3 2 60 17149 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 2 60 17149 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 2 60 17150 Horatio -1 -1 -1 -1 -1 l , ,
 3 2 60 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 60 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -20917,7 +20917,7 @@
 3 2 91 17448 Horatio 0.6 0.6 2.7 0.3 78.0 l uh-av Well
 3 2 91 17449 Horatio -1 -1 -1 -1 -1 l , ,
 3 2 91 17450 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 2 91 17451 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 2 91 17451 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 2 91 17452 Horatio -1 -1 -1 -1 -1 l : :
 3 2 91 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 92 17453 Horatio 0.7 0.5 0.8 0.7 114.0 l cs If
@@ -21059,7 +21059,7 @@
 3 2 102 -1 Stage -1 -1 -1 -1 -1 -1 ) )
 3 2 102 -1 Stage -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 103 17541 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 My
-3 2 103 17542 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 103 17542 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 103 17543 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 103 17544 Hamlet 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 3 2 103 17545 Hamlet 0.7 0.4 2.3 0.4 2.0 ab vvd played
@@ -21078,7 +21078,7 @@
 3 2 104 17556 Polonius 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 3 2 104 17557 Polonius -1 -1 -1 -1 -1 ab , ,
 3 2 104 17558 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 104 17559 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 104 17559 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 104 17560 Polonius -1 -1 -1 -1 -1 ab ; ;
 3 2 104 17561 Polonius 0.7 0.8 0.4 0.3 967.0 ab cc and
 3 2 104 17562 Polonius 1.0 0.9 0.7 1.4 83.0 ab vbd was
@@ -21144,7 +21144,7 @@
 3 2 110 17610 Rosencrantz 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 3 2 110 17611 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 3 2 110 17612 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 110 17613 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 110 17613 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 110 17614 Rosencrantz -1 -1 -1 -1 -1 ab ; ;
 3 2 110 17615 Rosencrantz 0.1 0.1 0.1 0.1 103.0 ab pns32 they
 3 2 110 17616 Rosencrantz 1.2 0.8 1.1 1.3 11.0 ab vvb stay
@@ -21223,7 +21223,7 @@
 3 2 115 17660 Ophelia 0.7 0.7 0.6 0.9 143.0 ab uh-dx No
 3 2 115 17661 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 115 17662 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 115 17663 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 115 17663 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 115 17664 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 115 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 116 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21243,7 +21243,7 @@
 3 2 117 17674 Ophelia 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 3 2 117 17675 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 117 17676 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 117 17677 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 117 17677 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 117 17678 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 117 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 118 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21264,7 +21264,7 @@
 3 2 119 17689 Ophelia 1.0 1.9 0.8 2.4 30.0 ab pix nothing
 3 2 119 17690 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 119 17691 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 119 17692 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 119 17692 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 119 17693 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 119 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 120 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21286,7 +21286,7 @@
 3 2 121 17705 Ophelia 0.3 0.6 0.3 0.0 344.0 ab vbz is
 3 2 121 17706 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 121 17707 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 121 17708 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 121 17708 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 121 17709 Ophelia -1 -1 -1 -1 -1 ab ? ?
 3 2 121 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 122 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21301,7 +21301,7 @@
 3 2 123 17714 Ophelia 0.6 0.9 4.6 0.8 2.0 ab j merry
 3 2 123 17715 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 123 17716 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 123 17717 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 123 17717 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 123 17718 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 123 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 124 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21316,7 +21316,7 @@
 3 2 125 17723 Ophelia 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 3 2 125 17724 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 125 17725 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 125 17726 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 125 17726 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 125 17727 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 125 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 126 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21367,7 +21367,7 @@
 3 2 129 17768 Ophelia 0.6 0.5 0.9 0.9 4.0 ab n2 months
 3 2 129 17769 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 129 17770 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 129 17771 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 129 17771 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 129 17772 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 129 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 130 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21635,7 +21635,7 @@
 3 2 138 17865 Ophelia 0.3 0.8 0.8 0.5 297.0 ab d this
 3 2 138 17866 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 138 17867 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 138 17868 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 138 17868 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 138 17869 Ophelia -1 -1 -1 -1 -1 ab ? ?
 3 2 138 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 139 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21800,7 +21800,7 @@
 3 2 152 17990 Ophelia 0.6 1.2 1.0 0.8 5.0 ab j brief
 3 2 152 17991 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 152 17992 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 152 17993 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 152 17993 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 152 17994 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 152 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 153 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -21940,7 +21940,7 @@
 3 2 165 18100 Player_Queen 0.0 0.1 1.3 0.0 550.0 l pn22 you
 3 2 165 18101 Player_Queen -1 -1 -1 -1 -1 l , ,
 3 2 165 18102 Player_Queen 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 2 165 18103 Player_Queen 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 2 165 18103 Player_Queen 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 2 165 18104 Player_Queen -1 -1 -1 -1 -1 l , ,
 3 2 165 18105 Player_Queen 0.5 0.4 0.1 0.5 417.0 l pn31 it
 3 2 165 18106 Player_Queen 1.0 1.9 0.8 2.4 30.0 l pix nothing
@@ -22457,7 +22457,7 @@
 3 2 214 18554 Player_King 0.5 0.4 0.3 0.7 54.0 l c-crq when
 3 2 214 18555 Player_King 0.111111111111 0.0 0.555555555556 0.222222222222 87.0 l po21 thy
 3 2 214 18556 Player_King 0.5 0.4 3.9 0.3 65.0 l ord first
-3 2 214 18557 Player_King 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 2 214 18557 Player_King 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 2 214 18558 Player_King 0.3 0.6 0.3 0.0 344.0 l vbz is
 3 2 214 18559 Player_King 2.1 2.6 1.0 4.0 33.0 l j dead
 3 2 214 18560 Player_King -1 -1 -1 -1 -1 l . .
@@ -22801,7 +22801,7 @@
 3 2 243 18837 Ophelia 0.444444444444 0.222222222222 3.55555555556 0.666666666667 1.0 ab n1 chorus
 3 2 243 18838 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 243 18839 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 243 18840 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 243 18840 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 243 18841 Ophelia -1 -1 -1 -1 -1 ab . .
 3 2 243 -1 Ophelia -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 244 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -22831,7 +22831,7 @@
 3 2 246 18861 Ophelia 1.8 0.7 2.1 1.1 2.0 ab j keen
 3 2 246 18862 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 246 18863 Ophelia 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 246 18864 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 246 18864 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 246 18865 Ophelia -1 -1 -1 -1 -1 ab , ,
 3 2 246 18866 Ophelia 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 3 2 246 18867 Ophelia 0.6 0.6 1.4 0.6 131.0 ab vbb are
@@ -23031,7 +23031,7 @@
 3 2 264 19021 Gertrude 1.0 1.1 0.7 0.5 90.0 ab q-crq How
 3 2 264 19022 Gertrude 1.375 1.0 0.75 0.888888888889 2.0 ab vvz fares
 3 2 264 19023 Gertrude 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 264 19024 Gertrude 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 264 19024 Gertrude 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 264 19025 Gertrude -1 -1 -1 -1 -1 ab ? ?
 3 2 264 -1 Gertrude -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 265 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
@@ -23229,7 +23229,7 @@
 3 2 285 19175 Horatio 0.6 0.6 2.7 0.3 78.0 ab av well
 3 2 285 19176 Horatio -1 -1 -1 -1 -1 ab , ,
 3 2 285 19177 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 285 19178 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 285 19178 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 285 19179 Horatio -1 -1 -1 -1 -1 ab . .
 3 2 285 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 286 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -23309,7 +23309,7 @@
 3 2 292 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 292 19235 Guildenstern 0.5 0.9 4.7 0.5 109.0 ab j Good
 3 2 292 19236 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 292 19237 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 292 19237 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 292 19238 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 292 19239 Guildenstern 0.333333333333 0.555555555556 2.0 0.666666666667 3.0 ab vvb vouchsafe
 3 2 292 19240 Guildenstern 1.7 0.7 3.0 1.2 235.0 ab pno11 me
@@ -23321,7 +23321,7 @@
 3 2 292 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 293 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 3 2 293 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-3 2 293 19246 Hamlet 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+3 2 293 19246 Hamlet 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 3 2 293 19247 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 293 19248 Hamlet 0 0 0 0 0 ab dt a
 3 2 293 19249 Hamlet 0.5 0.5 2.8 0.0 7.0 ab j-jn whole
@@ -23370,7 +23370,7 @@
 3 2 298 19277 Guildenstern 0.7 0.7 0.6 0.9 143.0 ab uh-dx No
 3 2 298 19278 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 298 19279 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 298 19280 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 298 19280 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 298 19281 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 298 19282 Guildenstern 0.4 0.4 1.0 0.3 267.0 ab pp with
 3 2 298 19283 Guildenstern 1.9 1.0 0.8 1.2 2.0 ab n1 choler
@@ -23415,7 +23415,7 @@
 3 2 303 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 303 19317 Guildenstern 0.5 0.9 4.7 0.5 109.0 ab j Good
 3 2 303 19318 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 303 19319 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 303 19319 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 303 19320 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 303 19321 Guildenstern 0.3 1.0 1.2 0.6 24.0 ab vvb put
 3 2 303 19322 Guildenstern 2.1 1.6 2.1 1.3 242.0 ab po22 your
@@ -23479,7 +23479,7 @@
 3 2 309 19368 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 309 19369 Guildenstern 0.5 0.9 4.7 0.5 109.0 ab j good
 3 2 309 19370 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 309 19371 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 309 19371 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 309 19372 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 309 19373 Guildenstern 0.3 0.8 0.8 0.5 297.0 ab d this
 3 2 309 19374 Guildenstern 0.3 0.4 3.7 0.2 1.0 ab n1 courtesy
@@ -23528,7 +23528,7 @@
 3 2 313 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 314 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 3 2 314 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-3 2 314 19417 Hamlet 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+3 2 314 19417 Hamlet 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 3 2 314 19418 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 314 19419 Hamlet 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 3 2 314 19420 Hamlet 1.6 1.5 0.1 1.3 28.0 ab vmbx cannot
@@ -23539,7 +23539,7 @@
 3 2 315 19422 Guildenstern 0.4 1.1 0.5 0.6 207.0 ab q-crq What
 3 2 315 19423 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 315 19424 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 315 19425 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 315 19425 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 315 19426 Guildenstern -1 -1 -1 -1 -1 ab ? ?
 3 2 315 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 316 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -23687,7 +23687,7 @@
 3 2 330 -1 Rosencrantz -1 -1 -1 -1 -1 -1 SPEAKER ROSENCRANTZ
 3 2 330 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 330 19554 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 My
-3 2 330 19555 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 330 19555 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 330 19556 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 3 2 330 19557 Rosencrantz 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 3 2 330 19558 Rosencrantz 0.4 0.5 0.2 0.1 19.0 ab a-acp once
@@ -23713,7 +23713,7 @@
 3 2 332 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 332 19573 Rosencrantz 0.5 0.9 4.7 0.5 109.0 ab j Good
 3 2 332 19574 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 332 19575 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 332 19575 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 332 19576 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 3 2 332 19577 Rosencrantz 0.4 1.1 0.5 0.6 207.0 ab q-crq what
 3 2 332 19578 Rosencrantz 0.3 0.6 0.3 0.0 344.0 ab vbz is
@@ -23747,7 +23747,7 @@
 3 2 334 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 335 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 3 2 335 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-3 2 335 19606 Hamlet 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+3 2 335 19606 Hamlet 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 3 2 335 19607 Hamlet -1 -1 -1 -1 -1 ab , ,
 3 2 335 19608 Hamlet 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 3 2 335 19609 Hamlet 3.0 1.9 1.1 2.2 6.0 ab vvb lack
@@ -23848,7 +23848,7 @@
 3 2 343 19687 Guildenstern 0 0 0 0 0 ab uh O
 3 2 343 19688 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 343 19689 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 343 19690 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 343 19690 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 343 19691 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 343 19692 Guildenstern 0.7 0.5 0.8 0.7 114.0 ab cs if
 3 2 343 19693 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
@@ -23884,7 +23884,7 @@
 3 2 347 -1 Guildenstern -1 -1 -1 -1 -1 -1 SPEAKER GUILDENSTERN
 3 2 347 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 347 19719 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 My
-3 2 347 19720 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 347 19720 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 347 19721 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 347 19722 Guildenstern 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 3 2 347 19723 Guildenstern 1.6 1.5 0.1 1.3 28.0 ab vmbx cannot
@@ -23924,7 +23924,7 @@
 3 2 351 19745 Guildenstern 0.5 0.4 0.1 0.5 417.0 ab pn31 it
 3 2 351 19746 Guildenstern -1 -1 -1 -1 -1 ab , ,
 3 2 351 19747 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-3 2 351 19748 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 351 19748 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 351 19749 Guildenstern -1 -1 -1 -1 -1 ab . .
 3 2 351 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 352 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -24116,7 +24116,7 @@
 3 2 369 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 3 2 369 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 2 369 19922 Polonius 0.4 0.3 1.9 0.3 514.0 ab po11 My
-3 2 369 19923 Polonius 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+3 2 369 19923 Polonius 1.3 2.7 2.5 1.3 310.0 ab sir lord
 3 2 369 19924 Polonius -1 -1 -1 -1 -1 ab , ,
 3 2 369 19925 Polonius 0.4 0.5 0.3 0.3 1143.0 ab dt the
 3 2 369 19926 Polonius 0.4 0.8 3.7 0.4 118.0 ab n1 queen
@@ -24717,7 +24717,7 @@
 3 3 27 -1 Polonius -1 -1 -1 -1 -1 -1 SPEAKER POLONIUS
 3 3 27 -1 Polonius -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 3 27 20385 Polonius 0.4 0.3 1.9 0.3 514.0 l po11 My
-3 3 27 20386 Polonius 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 3 27 20386 Polonius 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 3 27 20387 Polonius -1 -1 -1 -1 -1 l , ,
 3 3 27 20388 Polonius 0.1 0.2 0.1 0.3 10.0 l pns31|vbz he's
 3 3 27 20389 Polonius 0.7 1.7 2.1 1.2 2.0 l vvg going
@@ -24820,7 +24820,7 @@
 3 3 35 20475 King -1 -1 -1 -1 -1 l , ,
 3 3 35 20476 King 0.1 0.4 3.4 0.5 29.0 l j-jn dear
 3 3 35 20477 King 0.4 0.3 1.9 0.3 514.0 l po11 my
-3 3 35 20478 King 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 3 35 20478 King 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 3 35 20479 King -1 -1 -1 -1 -1 l . .
 3 3 35 -1 King -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 3 35 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -26723,7 +26723,7 @@
 3 4 97 22041 Hamlet 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 l pp-f Of
 3 4 97 22042 Hamlet 2.1 1.6 2.1 1.3 242.0 l po22 your
 3 4 97 22043 Hamlet 1.4 1.6 1.3 0.7 2.0 l j precedent
-3 4 97 22044 Hamlet 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 4 97 22044 Hamlet 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 4 97 22045 Hamlet -1 -1 -1 -1 -1 l ; ;
 3 4 97 22046 Hamlet 0 0 0 0 0 l dt a
 3 4 97 22047 Hamlet 2.5 2.0 1.0 1.88888888889 3.0 l n1 vice
@@ -27562,7 +27562,7 @@
 3 4 170 22753 Hamlet 0.0 0.0 0.0 0.1 248.0 l p-acp For
 3 4 170 22754 Hamlet 0.3 0.8 0.8 0.5 297.0 l d this
 3 4 170 22755 Hamlet 0.9 1.0 0.8 0.9 12.0 l d same
-3 4 170 22756 Hamlet 1.3 2.7 2.5 1.3 310.0 l n1 lord
+3 4 170 22756 Hamlet 1.3 2.7 2.5 1.3 310.0 l sir lord
 3 4 170 22757 Hamlet -1 -1 -1 -1 -1 l , ,
 3 4 170 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 3 4 170 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -28171,7 +28171,7 @@
 4 1 5 23240 Gertrude -1 -1 -1 -1 -1 l , ,
 4 1 5 23241 Gertrude 0.9 0.7 2.6 1.0 37.0 l po11 mine
 4 1 5 23242 Gertrude 0.5 0.9 3.1 0.8 37.0 l j-jn own
-4 1 5 23243 Gertrude 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 1 5 23243 Gertrude 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 1 5 23244 Gertrude -1 -1 -1 -1 -1 l , ,
 4 1 5 23245 Gertrude 0.4 1.1 0.5 0.6 207.0 l q-crq what
 4 1 5 23246 Gertrude 0.555555555556 0.8 1.55555555556 1.11111111111 181.0 l vhb have
@@ -28673,7 +28673,7 @@
 4 2 2 -1 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 2 2 23644 Rosencrantz_and_Guildenstern 0.0 0.0 0.4 0.0 461.0 ab np1 Hamlet
 4 2 2 23645 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 ab ! !
-4 2 2 23646 Rosencrantz_and_Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 Lord
+4 2 2 23646 Rosencrantz_and_Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir Lord
 4 2 2 23647 Rosencrantz_and_Guildenstern 0.0 0.0 0.4 0.0 461.0 ab np1 Hamlet
 4 2 2 23648 Rosencrantz_and_Guildenstern -1 -1 -1 -1 -1 ab ! !
 4 2 3 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -28712,7 +28712,7 @@
 4 2 5 23669 Rosencrantz 1.1 1.5 2.5 2.0 22.0 l vdn done
 4 2 5 23670 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 2 5 23671 Rosencrantz 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 2 5 23672 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 2 5 23672 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 2 5 23673 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 2 5 23674 Rosencrantz 0.4 0.4 1.0 0.3 267.0 l pp with
 4 2 5 23675 Rosencrantz 0.4 0.5 0.3 0.3 1143.0 l dt the
@@ -28813,7 +28813,7 @@
 4 2 14 23751 Rosencrantz 2.1 1.4 1.5 1.5 3.0 ab n1 sponge
 4 2 14 23752 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 4 2 14 23753 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-4 2 14 23754 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+4 2 14 23754 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 4 2 14 23755 Rosencrantz -1 -1 -1 -1 -1 ab ? ?
 4 2 14 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 2 15 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -28906,7 +28906,7 @@
 4 2 22 23838 Rosencrantz 0.6 1.2 1.0 0.8 315.0 ab xx not
 4 2 22 23839 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 4 2 22 23840 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 my
-4 2 22 23841 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+4 2 22 23841 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 4 2 22 23842 Rosencrantz -1 -1 -1 -1 -1 ab . .
 4 2 22 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 2 23 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -28930,7 +28930,7 @@
 4 2 25 -1 Rosencrantz -1 -1 -1 -1 -1 -1 SPEAKER ROSENCRANTZ
 4 2 25 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 2 25 23858 Rosencrantz 0.4 0.3 1.9 0.3 514.0 ab po11 My
-4 2 25 23859 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+4 2 25 23859 Rosencrantz 1.3 2.7 2.5 1.3 310.0 ab sir lord
 4 2 25 23860 Rosencrantz -1 -1 -1 -1 -1 ab , ,
 4 2 25 23861 Rosencrantz 0.0 0.1 1.3 0.0 550.0 ab pn22 you
 4 2 25 23862 Rosencrantz 0.9 1.6 0.4 0.7 61.0 ab vmb must
@@ -28980,7 +28980,7 @@
 4 2 29 23900 Guildenstern 1.1 0.7 1.2 0.9 26.0 ab n1 thing
 4 2 29 23901 Guildenstern -1 -1 -1 -1 -1 ab , ,
 4 2 29 23902 Guildenstern 0.4 0.3 1.9 0.3 514.0 ab po11 my
-4 2 29 23903 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+4 2 29 23903 Guildenstern 1.3 2.7 2.5 1.3 310.0 ab sir lord
 4 2 29 23904 Guildenstern -1 -1 -1 -1 -1 ab ! !
 4 2 29 -1 Guildenstern -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 2 30 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -29156,7 +29156,7 @@
 4 3 12 24031 Rosencrantz 1.3 0.9 3.2 1.4 1.0 l vvn bestowed
 4 3 12 24032 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 3 12 24033 Rosencrantz 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 3 12 24034 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 3 12 24034 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 3 12 24035 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 3 12 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 3 13 24036 Rosencrantz 0.7 0.6 2.1 0.7 141.0 l pns12 We
@@ -29179,7 +29179,7 @@
 4 3 14 24047 Rosencrantz 2.0 2.0 1.0 2.6 20.0 l a-acp Without
 4 3 14 24048 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 3 14 24049 Rosencrantz 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 3 14 24050 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 3 14 24050 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 3 14 24051 Rosencrantz -1 -1 -1 -1 -1 l ; ;
 4 3 14 24052 Rosencrantz 0.9 1.3 1.5 0.9 1.0 l vvn guarded
 4 3 14 24053 Rosencrantz -1 -1 -1 -1 -1 l , ,
@@ -29204,7 +29204,7 @@
 4 3 15 24066 Rosencrantz 0.9 0.8 2.4 1.3 12.0 l vvb bring
 4 3 15 24067 Rosencrantz 0.3 0.1 0.4 0.4 439.0 l p-acp in
 4 3 15 24068 Rosencrantz 0.4 0.5 0.3 0.3 1143.0 l dt the
-4 3 15 24069 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 3 15 24069 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 3 15 24070 Rosencrantz -1 -1 -1 -1 -1 l . .
 4 3 15 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 3 15 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -29924,7 +29924,7 @@
 4 4 7 24624 Captain 1.0 0.666666666667 0.777777777778 0.888888888889 9.0 l vdi|pn31 do't
 4 4 7 24625 Captain -1 -1 -1 -1 -1 l , ,
 4 4 7 24626 Captain 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 4 7 24627 Captain 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 4 7 24627 Captain 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 4 7 24628 Captain -1 -1 -1 -1 -1 l . .
 4 4 7 -1 Captain -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 4 8 -1 Fortinbras -1 -1 -1 -1 -1 -1 SPEAKER FORTINBRAS
@@ -30204,7 +30204,7 @@
 4 4 29 24826 Rosencrantz 0.8 1.3 2.6 0.7 70.0 l vvi go
 4 4 29 24827 Rosencrantz -1 -1 -1 -1 -1 l , ,
 4 4 29 24828 Rosencrantz 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 4 29 24829 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 4 29 24829 Rosencrantz 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 4 29 24830 Rosencrantz -1 -1 -1 -1 -1 l ? ?
 4 4 29 -1 Rosencrantz -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 4 30 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -31017,7 +31017,7 @@
 4 5 37 25463 Gertrude 0.555555555556 0.333333333333 0.444444444444 0.222222222222 54.0 l av here
 4 5 37 25464 Gertrude -1 -1 -1 -1 -1 l , ,
 4 5 37 25465 Gertrude 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 5 37 25466 Gertrude 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 5 37 25466 Gertrude 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 5 37 25467 Gertrude -1 -1 -1 -1 -1 l . .
 4 5 37 -1 Gertrude -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 5 37 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -31074,7 +31074,7 @@
 4 5 42 25505 Ophelia 0 0 0 0 0 ab ng1 baker's
 4 5 43 25506 Ophelia 1.5 1.3 3.5 1.3 15.0 ab n1 daughter
 4 5 43 25507 Ophelia -1 -1 -1 -1 -1 ab . .
-4 5 43 25508 Ophelia 1.3 2.7 2.5 1.3 310.0 ab n1 Lord
+4 5 43 25508 Ophelia 1.3 2.7 2.5 1.3 310.0 ab sir Lord
 4 5 43 25509 Ophelia -1 -1 -1 -1 -1 ab , ,
 4 5 43 25510 Ophelia 0.7 0.6 2.1 0.7 141.0 ab pns12 we
 4 5 43 25511 Ophelia 1.22222222222 1.11111111111 2.55555555556 1.33333333333 74.0 ab vvb know
@@ -31678,7 +31678,7 @@
 4 5 99 26005 Gentleman 1.1 1.3 1.9 1.2 15.0 l px21 yourself
 4 5 99 26006 Gentleman -1 -1 -1 -1 -1 l , ,
 4 5 99 26007 Gentleman 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 5 99 26008 Gentleman 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 5 99 26008 Gentleman 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 5 99 26009 Gentleman -1 -1 -1 -1 -1 l : :
 4 5 99 -1 Gentleman -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 5 100 26010 Gentleman 0.4 0.5 0.3 0.3 1143.0 l dt The
@@ -31717,7 +31717,7 @@
 4 5 103 26040 Gentleman 2.1 2.3 0.8 1.2 1.0 l n1 rabble
 4 5 103 26041 Gentleman 0.8 0.7 1.2 0.7 22.0 l vvb call
 4 5 103 26042 Gentleman 1.1 0.7 1.5 0.4 197.0 l pno31 him
-4 5 103 26043 Gentleman 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 5 103 26043 Gentleman 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 5 103 26044 Gentleman -1 -1 -1 -1 -1 l ; ;
 4 5 103 -1 Gentleman -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 5 104 26045 Gentleman 0.7 0.8 0.4 0.3 967.0 l cc And
@@ -33119,7 +33119,7 @@
 4 6 6 27158 Horatio 0.7 0.5 0.8 0.7 114.0 l cs if
 4 6 6 27159 Horatio 0.6 1.2 1.0 0.8 315.0 l xx not
 4 6 6 27160 Horatio 0.6 0.5 0.7 0.4 95.0 l pp from
-4 6 6 27161 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 Lord
+4 6 6 27161 Horatio 1.3 2.7 2.5 1.3 310.0 l sir Lord
 4 6 6 27162 Horatio 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
 4 6 6 27163 Horatio -1 -1 -1 -1 -1 l . .
 4 6 6 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
@@ -33877,7 +33877,7 @@
 4 7 36 27805 Messenger 0.6 0.7 3.2 1.2 7.0 l n2 Letters
 4 7 36 27806 Messenger -1 -1 -1 -1 -1 l , ,
 4 7 36 27807 Messenger 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 36 27808 Messenger 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 36 27808 Messenger 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 36 27809 Messenger -1 -1 -1 -1 -1 l , ,
 4 7 36 27810 Messenger 0.6 0.5 0.7 0.4 95.0 l pp from
 4 7 36 27811 Messenger 0.0 0.0 0.4 0.0 461.0 l np1 Hamlet
@@ -33909,7 +33909,7 @@
 4 7 39 27830 Messenger 0.0 0.9 2.3 0.6 3.0 l n2 Sailors
 4 7 39 27831 Messenger -1 -1 -1 -1 -1 l , ,
 4 7 39 27832 Messenger 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 39 27833 Messenger 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 39 27833 Messenger 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 39 27834 Messenger -1 -1 -1 -1 -1 l , ,
 4 7 39 27835 Messenger 0.1 0.1 0.1 0.1 103.0 l pns32 they
 4 7 39 27836 Messenger 0.5 0.7 1.5 0.5 54.0 l vvb say
@@ -34086,7 +34086,7 @@
 4 7 53 27977 Laertes 0.5 0.4 0.1 0.5 417.0 l pn31 it
 4 7 53 27978 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 53 27979 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 53 27980 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 53 27980 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 53 27981 Laertes -1 -1 -1 -1 -1 l . .
 4 7 53 27982 Laertes 1.1 1.22222222222 0.555555555556 1.0 271.0 l cc-acp But
 4 7 53 27983 Laertes 1.77777777778 1.9 2.8 1.1 96.0 l vvb let
@@ -34156,7 +34156,7 @@
 4 7 58 28036 Laertes 1.25 0.75 1.375 0.625 38.0 l uh Ay
 4 7 58 28037 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 58 28038 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 58 28039 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 58 28039 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 58 28040 Laertes -1 -1 -1 -1 -1 l ; ;
 4 7 58 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 59 28041 Laertes 0.55 0.5 0.25 0.65 1.0 l av So
@@ -34258,7 +34258,7 @@
 4 7 67 -1 Laertes -1 -1 -1 -1 -1 -1 SPEAKER LAERTES
 4 7 67 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 67 28126 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 My
-4 7 67 28127 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 67 28127 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 67 28128 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 67 28129 Laertes 1.2 1.3 1.2 1.0 571.0 l pns11 I
 4 7 67 28130 Laertes 1.2 0.5 1.8 0.7 169.0 l vmb will
@@ -34361,7 +34361,7 @@
 4 7 75 28213 Laertes 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 l d that
 4 7 75 28214 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 75 28215 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 75 28216 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 75 28216 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 75 28217 Laertes -1 -1 -1 -1 -1 l ? ?
 4 7 75 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 76 -1 King -1 -1 -1 -1 -1 -1 SPEAKER KING
@@ -34634,7 +34634,7 @@
 4 7 101 28444 King 2.3 2.4 0.7 1.4 2.0 l vvd opposed
 4 7 101 28445 King 0.1 0.4 0.3 0.5 75.0 l pno32 them
 4 7 101 28446 King -1 -1 -1 -1 -1 l . .
-4 7 101 28447 King 0.4 0.6 1.1 0.6 75.0 l n1 Sir
+4 7 101 28447 King 0.4 0.6 1.1 0.6 75.0 l sir Sir
 4 7 101 28448 King -1 -1 -1 -1 -1 l , ,
 4 7 101 28449 King 0.3 0.8 0.8 0.5 297.0 l d this
 4 7 101 28450 King 1.5 1.1 1.2 1.2 5.0 l n1 report
@@ -34685,7 +34685,7 @@
 4 7 105 28488 Laertes 0.3 0.8 0.8 0.5 297.0 l d this
 4 7 105 28489 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 105 28490 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 105 28491 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 105 28491 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 105 28492 Laertes -1 -1 -1 -1 -1 l ? ?
 4 7 105 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 106 -1 King -1 -1 -1 -1 -1 -1 SPEAKER KING
@@ -35602,7 +35602,7 @@
 4 7 188 29285 Laertes 1.4 1.66666666667 1.11111111111 2.9 7.0 l uh-n Adieu
 4 7 188 29286 Laertes -1 -1 -1 -1 -1 l , ,
 4 7 188 29287 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-4 7 188 29288 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+4 7 188 29288 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 4 7 188 29289 Laertes -1 -1 -1 -1 -1 l : :
 4 7 188 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 4 7 189 29290 Laertes 1.2 1.3 1.2 1.0 571.0 l pns11 I
@@ -36572,7 +36572,7 @@
 5 1 82 30067 Horatio 1.55555555556 1.77777777778 1.33333333333 1.0 32.0 ab vmd might
 5 1 82 30068 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 82 30069 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 82 30070 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 82 30070 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 82 30071 Horatio -1 -1 -1 -1 -1 ab . .
 5 1 82 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 83 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -36590,27 +36590,27 @@
 5 1 83 30082 Hamlet 0.5 0.5 2.1 1.2 1.0 ab n1 morrow
 5 1 83 30083 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 1 84 30084 Hamlet 0.5 0.4 4.3 0.3 25.0 ab j sweet
-5 1 84 30085 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 84 30085 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 84 30086 Hamlet -1 -1 -1 -1 -1 ab ! !
 5 1 84 30087 Hamlet 1.0 1.1 0.7 0.5 90.0 ab q-crq How
 5 1 84 30088 Hamlet 0.333333333333 0.888888888889 1.22222222222 0.666666666667 14.0 ab vd2 dost
 5 1 84 30089 Hamlet 0.8 0.1 1.2 1.0 104.0 ab pns21 thou
 5 1 84 30090 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 1 84 30091 Hamlet 0.5 0.4 4.3 0.3 25.0 ab j sweet
-5 1 84 30092 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 84 30092 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 84 30093 Hamlet -1 -1 -1 -1 -1 ab ? ?
 5 1 84 30094 Hamlet -1 -1 -1 -1 -1 ab " "
 5 1 84 30095 Hamlet 0.3 0.8 0.8 0.5 297.0 ab d This
 5 1 85 30096 Hamlet 1.55555555556 1.77777777778 1.33333333333 1.0 32.0 ab vmd might
 5 1 85 30097 Hamlet 0.6 1.1 0.8 0.8 226.0 ab vbi be
 5 1 85 30098 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 85 30099 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 85 30099 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 85 30100 Hamlet 0.6 0.2 0.7 0.3 1.0 ab n1 such-a-one
 5 1 85 30101 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 1 85 30102 Hamlet 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 ab cst that
 5 1 85 30103 Hamlet 0.6 0.2 4.0 0.7 2.0 ab vvd praised
 5 1 85 30104 Hamlet 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 85 30105 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 85 30105 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 86 30106 Hamlet 0.777777777778 0.333333333333 1.11111111111 0.555555555556 1.0 ab ng1 such-a-one's
 5 1 86 30107 Hamlet 1.3 1.4 2.8 1.0 3.0 ab n1 horse
 5 1 86 30108 Hamlet -1 -1 -1 -1 -1 ab , ,
@@ -36631,7 +36631,7 @@
 5 1 88 30120 Horatio 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 5 1 88 30121 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 88 30122 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 88 30123 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 88 30123 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 88 30124 Horatio -1 -1 -1 -1 -1 ab . .
 5 1 88 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 89 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -36927,7 +36927,7 @@
 5 1 116 30389 Horatio 1.55555555556 1.11111111111 1.66666666667 1.33333333333 96.0 ab av-dc more
 5 1 116 30390 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 116 30391 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 116 30392 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 116 30392 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 116 30393 Horatio -1 -1 -1 -1 -1 ab . .
 5 1 116 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 117 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -36945,7 +36945,7 @@
 5 1 118 30401 Horatio 1.25 0.75 1.375 0.625 38.0 ab uh Ay
 5 1 118 30402 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 118 30403 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 118 30404 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 118 30404 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 118 30405 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 118 30406 Horatio 0.7 0.8 0.4 0.3 967.0 ab cc and
 5 1 118 30407 Horatio 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 ab pp-f of
@@ -37197,7 +37197,7 @@
 5 1 141 30608 Hamlet -1 -1 -1 -1 -1 ab . .
 5 1 141 30609 Hamlet 0.2 0.2 0.5 0.4 117.0 ab p-acp By
 5 1 141 30610 Hamlet 0.4 0.5 0.3 0.3 1143.0 ab dt the
-5 1 141 30611 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 Lord
+5 1 141 30611 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir Lord
 5 1 141 30612 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 1 142 30613 Hamlet 0.666666666667 1.11111111111 1.11111111111 1.77777777778 158.0 ab np1 Horatio
 5 1 142 30614 Hamlet -1 -1 -1 -1 -1 ab , ,
@@ -37816,7 +37816,7 @@
 5 1 200 31145 Horatio 0.666666666667 0.7 0.222222222222 0.444444444444 392.0 ab d that
 5 1 200 31146 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 200 31147 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 200 31148 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 200 31148 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 200 31149 Horatio -1 -1 -1 -1 -1 ab ? ?
 5 1 200 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 201 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -37863,7 +37863,7 @@
 5 1 205 31172 Horatio 0.55 0.5 0.25 0.65 1.0 ab av so
 5 1 205 31173 Horatio -1 -1 -1 -1 -1 ab , ,
 5 1 205 31174 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 1 205 31175 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 1 205 31175 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 1 205 31176 Horatio -1 -1 -1 -1 -1 ab . .
 5 1 205 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 206 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -38618,7 +38618,7 @@
 5 1 268 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 1 268 31754 Horatio 0.5 0.9 4.7 0.5 109.0 l j Good
 5 1 268 31755 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 1 268 31756 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 1 268 31756 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 1 268 31757 Horatio -1 -1 -1 -1 -1 l , ,
 5 1 268 31758 Horatio 0.6 1.1 0.8 0.8 226.0 l vbb be
 5 1 268 31759 Horatio 0.9 0.9 1.9 1.3 5.0 l j-jn quiet
@@ -39095,12 +39095,12 @@
 5 2 3 32109 Horatio 0.5 0.4 0.1 0.5 417.0 l pn31 it
 5 2 3 32110 Horatio -1 -1 -1 -1 -1 l , ,
 5 2 3 32111 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 3 32112 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 3 32112 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 3 32113 Horatio -1 -1 -1 -1 -1 l ! !
 5 2 3 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 4 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 5 2 4 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-5 2 4 32114 Hamlet 0.4 0.6 1.1 0.6 75.0 l n1 Sir
+5 2 4 32114 Hamlet 0.4 0.6 1.1 0.6 75.0 l sir Sir
 5 2 4 32115 Hamlet -1 -1 -1 -1 -1 l , ,
 5 2 4 32116 Hamlet 0.3 0.1 0.4 0.4 439.0 l p-acp in
 5 2 4 32117 Hamlet 0.4 0.3 1.9 0.3 514.0 l po11 my
@@ -39468,7 +39468,7 @@
 5 2 37 32429 Horatio -1 -1 -1 -1 -1 l , ,
 5 2 37 32430 Horatio 0.5 0.9 4.7 0.5 109.0 l j good
 5 2 37 32431 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 37 32432 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 37 32432 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 37 32433 Horatio -1 -1 -1 -1 -1 l . .
 5 2 37 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 38 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -39944,7 +39944,7 @@
 5 2 81 -1 Osric -1 -1 -1 -1 -1 -1 SPEAKER OSRIC
 5 2 81 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 81 32832 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 Your
-5 2 81 32833 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 81 32833 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 81 32834 Osric 0.3 0.6 0.3 0.0 344.0 ab vbz is
 5 2 81 32835 Osric 0.2 0.2 3.5 0.2 11.0 ab av-jn right
 5 2 81 32836 Osric 0.4 1.0 3.1 0.6 17.0 ab j-jn welcome
@@ -39974,7 +39974,7 @@
 5 2 83 32854 Horatio -1 -1 -1 -1 -1 ab . .
 5 2 83 32855 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
 5 2 83 32856 Horatio 0.5 0.9 4.7 0.5 109.0 ab j good
-5 2 83 32857 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 83 32857 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 83 32858 Horatio -1 -1 -1 -1 -1 ab . .
 5 2 83 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 84 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -40006,7 +40006,7 @@
 5 2 86 32883 Hamlet 0 0 0 0 0 ab dt a
 5 2 86 32884 Hamlet 3.0 5.0 0.1 1.8 6.0 ab n1 beast
 5 2 86 32885 Hamlet 0.6 1.1 0.8 0.8 226.0 ab vbi be
-5 2 86 32886 Hamlet 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 86 32886 Hamlet 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 86 32887 Hamlet 1.22222222222 0.888888888889 0.333333333333 0.555555555556 667.0 ab pp-f of
 5 2 86 32888 Hamlet 2.9 3.5 1.4 1.0 2.0 ab n2 beasts
 5 2 86 32889 Hamlet -1 -1 -1 -1 -1 ab , ,
@@ -40041,11 +40041,11 @@
 5 2 89 -1 Osric -1 -1 -1 -1 -1 -1 SPEAKER OSRIC
 5 2 89 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 89 32917 Osric 0.5 0.4 4.3 0.3 25.0 ab j Sweet
-5 2 89 32918 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 89 32918 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 89 32919 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 89 32920 Osric 0.7 0.5 0.8 0.7 114.0 ab cs if
 5 2 89 32921 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 your
-5 2 89 32922 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 89 32922 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 89 32923 Osric 0.6 0.2 0.3 0.1 28.0 ab vbd were
 5 2 89 32924 Osric 0.5 0.4 0.5 0.5 87.0 ab pp at
 5 2 89 32925 Osric 0.2 0.4 4.0 0.5 4.0 ab n1 leisure
@@ -40096,7 +40096,7 @@
 5 2 94 32964 Osric 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 5 2 94 32965 Osric 0.4 0.3 3.4 0.0 9.0 ab vvb thank
 5 2 94 32966 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 your
-5 2 94 32967 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 94 32967 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 94 32968 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 94 32969 Osric 0.5 0.4 0.1 0.5 417.0 ab pn31 it
 5 2 94 32970 Osric 0.3 0.6 0.3 0.0 344.0 ab vbz is
@@ -40129,7 +40129,7 @@
 5 2 96 32991 Osric 1.9 2.6 1.4 1.5 6.0 ab j-jn cold
 5 2 96 32992 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 96 32993 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 96 32994 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 96 32994 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 96 32995 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 96 32996 Osric 0.6 0.3 1.8 0.4 31.0 ab av indeed
 5 2 96 32997 Osric -1 -1 -1 -1 -1 ab . .
@@ -40155,7 +40155,7 @@
 5 2 99 33011 Osric 1.55555555556 1.88888888889 3.55555555556 1.77777777778 1.0 ab av-vvg Exceedingly
 5 2 99 33012 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 99 33013 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 99 33014 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 99 33014 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 99 33015 Osric -1 -1 -1 -1 -1 ab ; ;
 5 2 99 33016 Osric 0.5 0.4 0.1 0.5 417.0 ab pn31 it
 5 2 99 33017 Osric 0.3 0.6 0.3 0.0 344.0 ab vbz is
@@ -40171,7 +40171,7 @@
 5 2 100 33027 Osric 1.0 1.1 0.7 0.5 90.0 ab c-crq how
 5 2 100 33028 Osric -1 -1 -1 -1 -1 ab . .
 5 2 100 33029 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 My
-5 2 100 33030 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 100 33030 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 100 33031 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 100 33032 Osric 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 ab po31 his
 5 2 100 33033 Osric 0.444444444444 0.555555555556 2.66666666667 0.333333333333 16.0 ab n1 majesty
@@ -40225,7 +40225,7 @@
 5 2 104 33063 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 104 33064 Osric 0.5 0.9 4.7 0.5 109.0 ab j good
 5 2 104 33065 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 104 33066 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 104 33066 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 104 33067 Osric -1 -1 -1 -1 -1 ab ; ;
 5 2 104 33068 Osric 0.0 0.0 0.0 0.1 248.0 ab p-acp for
 5 2 104 33069 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 my
@@ -40235,7 +40235,7 @@
 5 2 104 33073 Osric 0.5 0.9 4.7 0.5 109.0 ab j good
 5 2 104 33074 Osric 0.4 1.2 3.4 0.7 16.0 ab n1 faith
 5 2 104 33075 Osric -1 -1 -1 -1 -1 ab . .
-5 2 105 33076 Osric 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+5 2 105 33076 Osric 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 5 2 105 33077 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 105 33078 Osric 0.555555555556 0.333333333333 0.444444444444 0.222222222222 54.0 ab av here
 5 2 105 33079 Osric 0.3 0.6 0.3 0.0 344.0 ab vbz is
@@ -40302,7 +40302,7 @@
 5 2 111 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 112 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 5 2 112 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-5 2 112 33140 Hamlet 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+5 2 112 33140 Hamlet 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 5 2 112 33141 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 2 112 33142 Hamlet 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 ab po31 his
 5 2 112 33143 Hamlet 1.1 1.2 1.2 1.0 1.0 ab n1 definement
@@ -40401,7 +40401,7 @@
 5 2 121 -1 Osric -1 -1 -1 -1 -1 -1 SPEAKER OSRIC
 5 2 121 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 121 33235 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 Your
-5 2 121 33236 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 121 33236 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 121 33237 Osric 1.8 1.2 2.1 1.2 6.0 ab vvz speaks
 5 2 121 33238 Osric 1.8 1.8 1.5 1.6 82.0 ab av-ds most
 5 2 121 33239 Osric 0.6 1.2 1.8 0.3 1.0 ab av-j infallibly
@@ -40431,7 +40431,7 @@
 5 2 123 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 124 -1 Osric -1 -1 -1 -1 -1 -1 SPEAKER OSRIC
 5 2 124 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-5 2 124 33260 Osric 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+5 2 124 33260 Osric 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 5 2 124 33261 Osric -1 -1 -1 -1 -1 ab ? ?
 5 2 124 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 125 -1 Horatio -1 -1 -1 -1 -1 -1 SPEAKER HORATIO
@@ -40864,7 +40864,7 @@
 5 2 165 33633 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 165 33634 Osric 0.7 0.5 0.8 0.7 114.0 ab cs if
 5 2 165 33635 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 your
-5 2 165 33636 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 165 33636 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 166 33637 Osric 0.3 0.3 0.3 0.1 80.0 ab vmd would
 5 2 166 33638 Osric 0.333333333333 0.555555555556 2.0 0.666666666667 3.0 ab vvi vouchsafe
 5 2 166 33639 Osric 0.4 0.5 0.3 0.3 1143.0 ab dt the
@@ -40888,7 +40888,7 @@
 5 2 168 33651 Osric 2.0 1.1 1.2 1.4 11.0 ab vvb mean
 5 2 168 33652 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 168 33653 Osric 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 168 33654 Osric 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 168 33654 Osric 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 168 33655 Osric -1 -1 -1 -1 -1 ab , ,
 5 2 168 33656 Osric 0.4 0.5 0.3 0.3 1143.0 ab dt the
 5 2 168 33657 Osric 2.0 2.4 0.9 1.0 2.0 ab n1 opposition
@@ -40901,7 +40901,7 @@
 5 2 169 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 170 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 5 2 170 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-5 2 170 33664 Hamlet 0.4 0.6 1.1 0.6 75.0 ab n1 Sir
+5 2 170 33664 Hamlet 0.4 0.6 1.1 0.6 75.0 ab sir Sir
 5 2 170 33665 Hamlet -1 -1 -1 -1 -1 ab , ,
 5 2 170 33666 Hamlet 1.2 1.3 1.2 1.0 571.0 ab pns11 I
 5 2 170 33667 Hamlet 1.2 0.5 1.8 0.7 169.0 ab vmb will
@@ -41002,7 +41002,7 @@
 5 2 179 33753 Osric 1.22222222222 1.11111111111 2.55555555556 0.666666666667 13.0 ab n1 duty
 5 2 179 33754 Osric 0.1 0.6 0.6 0.3 738.0 ab p-acp to
 5 2 179 33755 Osric 2.1 1.6 2.1 1.3 242.0 ab po22 your
-5 2 179 33756 Osric 2.0 2.0 2.7 1.2 8.0 ab n1 lordship
+5 2 179 33756 Osric 2.0 2.0 2.7 1.2 8.0 ab sir lordship
 5 2 179 33757 Osric -1 -1 -1 -1 -1 ab . .
 5 2 179 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 180 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -41140,7 +41140,7 @@
 5 2 192 -1 Lord -1 -1 -1 -1 -1 -1 SPEAKER LORD
 5 2 192 -1 Lord -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 192 33868 Lord 0.4 0.3 1.9 0.3 514.0 ab po11 My
-5 2 192 33869 Lord 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 192 33869 Lord 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 192 33870 Lord -1 -1 -1 -1 -1 ab , ,
 5 2 192 33871 Lord 1.33333333333 0.222222222222 0.555555555556 0.777777777778 296.0 ab po31 his
 5 2 192 33872 Lord 0.444444444444 0.555555555556 2.66666666667 0.333333333333 16.0 ab n1 majesty
@@ -41286,7 +41286,7 @@
 5 2 205 33988 Horatio 2.3 1.9 0.7 2.8 6.0 ab vvi lose
 5 2 205 33989 Horatio -1 -1 -1 -1 -1 ab , ,
 5 2 205 33990 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 205 33991 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 205 33991 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 205 33992 Horatio -1 -1 -1 -1 -1 ab . .
 5 2 205 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 206 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -41342,7 +41342,7 @@
 5 2 210 34038 Horatio -1 -1 -1 -1 -1 ab , ,
 5 2 210 34039 Horatio 0.5 0.9 4.7 0.5 109.0 ab j good
 5 2 210 34040 Horatio 0.4 0.3 1.9 0.3 514.0 ab po11 my
-5 2 210 34041 Horatio 1.3 2.7 2.5 1.3 310.0 ab n1 lord
+5 2 210 34041 Horatio 1.3 2.7 2.5 1.3 310.0 ab sir lord
 5 2 210 34042 Horatio -1 -1 -1 -1 -1 ab , ,
 5 2 210 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 211 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
@@ -41670,7 +41670,7 @@
 5 2 236 34301 Hamlet 3.7 2.3 0.0 1.5 3.0 l n1 enemy
 5 2 236 34302 Hamlet -1 -1 -1 -1 -1 l . .
 5 2 236 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
-5 2 237 34303 Hamlet 0.4 0.6 1.1 0.6 75.0 l n1 Sir
+5 2 237 34303 Hamlet 0.4 0.6 1.1 0.6 75.0 l sir Sir
 5 2 237 34304 Hamlet -1 -1 -1 -1 -1 l , ,
 5 2 237 34305 Hamlet 0.3 0.1 0.4 0.4 439.0 l p-acp in
 5 2 237 34306 Hamlet 0.3 0.8 0.8 0.5 297.0 l d this
@@ -41916,7 +41916,7 @@
 5 2 257 34505 Hamlet 0.6 0.6 2.7 0.3 78.0 l av well
 5 2 257 34506 Hamlet -1 -1 -1 -1 -1 l , ,
 5 2 257 34507 Hamlet 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 257 34508 Hamlet 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 257 34508 Hamlet 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 257 34509 Hamlet -1 -1 -1 -1 -1 l ; ;
 5 2 257 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 258 34510 Hamlet 2.1 1.6 2.1 1.3 242.0 l po22 Your
@@ -42000,7 +42000,7 @@
 5 2 263 34567 Osric -1 -1 -1 -1 -1 l , ,
 5 2 263 34568 Osric 0.4 0.3 1.9 0.3 514.0 l po11 my
 5 2 263 34569 Osric 0.5 0.9 4.7 0.5 109.0 l j good
-5 2 263 34570 Osric 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 263 34570 Osric 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 263 34571 Osric -1 -1 -1 -1 -1 l . .
 5 2 263 -1 Osric -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 264 -1 King -1 -1 -1 -1 -1 -1 SPEAKER KING
@@ -42155,7 +42155,7 @@
 5 2 277 34701 Laertes 0.8 1.2 2.2 0.9 106.0 l vvb Come
 5 2 277 34702 Laertes -1 -1 -1 -1 -1 l , ,
 5 2 277 34703 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 277 34704 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 277 34704 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 277 34705 Laertes -1 -1 -1 -1 -1 l . .
 5 2 277 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 277 -1 Stage -1 -1 -1 -1 -1 -1 ( (
@@ -42333,7 +42333,7 @@
 5 2 288 -1 Hamlet -1 -1 -1 -1 -1 -1 SPEAKER HAMLET
 5 2 288 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 288 34811 Hamlet 0.5 0.9 4.7 0.5 109.0 l j Good
-5 2 288 34812 Hamlet 0.3 0.3 1.1 0.2 12.0 l n1 madam
+5 2 288 34812 Hamlet 0.3 0.3 1.1 0.2 12.0 l sir madam
 5 2 288 34813 Hamlet -1 -1 -1 -1 -1 l ! !
 5 2 288 -1 Hamlet -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 288 -1 King -1 -1 -1 -1 -1 -1 SPEAKER KING
@@ -42351,7 +42351,7 @@
 5 2 289 34821 Gertrude 1.2 0.5 1.8 0.7 169.0 l vmb will
 5 2 289 34822 Gertrude -1 -1 -1 -1 -1 l , ,
 5 2 289 34823 Gertrude 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 289 34824 Gertrude 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 289 34824 Gertrude 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 289 34825 Gertrude -1 -1 -1 -1 -1 l ; ;
 5 2 289 34826 Gertrude 1.2 1.3 1.2 1.0 571.0 l pns11 I
 5 2 289 34827 Gertrude 0.7 1.3 3.7 1.6 30.0 l vvb pray
@@ -42393,7 +42393,7 @@
 5 2 291 34847 Hamlet 1.2 1.7 4.3 1.5 15.0 l vvi drink
 5 2 291 34848 Hamlet 0.7 0.8 0.8 1.0 44.0 l av yet
 5 2 291 34849 Hamlet -1 -1 -1 -1 -1 l , ,
-5 2 291 34850 Hamlet 0.3 0.3 1.1 0.2 12.0 l n1 madam
+5 2 291 34850 Hamlet 0.3 0.3 1.1 0.2 12.0 l sir madam
 5 2 291 34851 Hamlet -1 -1 -1 -1 -1 l ; ;
 5 2 291 34852 Hamlet 0.2 0.2 0.5 0.4 117.0 l p-acp by
 5 2 291 34853 Hamlet 0.7 0.8 0.4 0.3 967.0 l cc and
@@ -42414,7 +42414,7 @@
 5 2 293 -1 Laertes -1 -1 -1 -1 -1 -1 SPEAKER LAERTES
 5 2 293 -1 Laertes -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 293 34864 Laertes 0.4 0.3 1.9 0.3 514.0 l po11 My
-5 2 293 34865 Laertes 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 293 34865 Laertes 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 293 34866 Laertes -1 -1 -1 -1 -1 l , ,
 5 2 293 34867 Laertes 0.9 0.6 1.9 1.1 49.0 l pns11|vmb I'll
 5 2 293 34868 Laertes 4.1 3.2 0.9 1.9 5.0 l vvi hit
@@ -42587,7 +42587,7 @@
 5 2 302 34965 Horatio 0.5 0.4 0.1 0.5 417.0 l pn31 it
 5 2 302 34966 Horatio -1 -1 -1 -1 -1 l , ,
 5 2 302 34967 Horatio 0.4 0.3 1.9 0.3 514.0 l po11 my
-5 2 302 34968 Horatio 1.3 2.7 2.5 1.3 310.0 l n1 lord
+5 2 302 34968 Horatio 1.3 2.7 2.5 1.3 310.0 l sir lord
 5 2 302 34969 Horatio -1 -1 -1 -1 -1 l ? ?
 5 2 302 -1 Horatio -1 -1 -1 -1 -1 -1 NEWLINE NEWLINE
 5 2 303 -1 Osric -1 -1 -1 -1 -1 -1 SPEAKER OSRIC
